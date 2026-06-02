@@ -1,0 +1,1382 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V20" />
+  <SW.Blocks.FB ID="0">
+    <AttributeList>
+      <AutoNumber>false</AutoNumber>
+      <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+  <Section Name="Input" />
+  <Section Name="Output" />
+  <Section Name="InOut" />
+  <Section Name="Static">
+    <Member Name="sTimeOutShutDown" Datatype="TON_TIME" Version="1.0">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="sTimeOutAlarmUPS" Datatype="TON_TIME" Version="1.0">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="sTimeOutShutDownPC" Datatype="TON_TIME" Version="1.0">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="sShutDownDelayPC" Datatype="TON_TIME" Version="1.0">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="sShutDownAspiration" Datatype="Bool" />
+    <Member Name="sShutDownPower" Datatype="Bool" />
+    <Member Name="sShutDownPCRequest" Datatype="Int" />
+    <Member Name="sShutDownPCResponse" Datatype="Int" />
+  </Section>
+  <Section Name="Temp" />
+  <Section Name="Constant">
+    <Member Name="TIME_OUT_SHUTDOWN" Datatype="Time">
+      <StartValue>T#3S</StartValue>
+    </Member>
+    <Member Name="TIME_OUT_ALARM_UPS" Datatype="Time">
+      <StartValue>T#30S</StartValue>
+    </Member>
+    <Member Name="TIME_OUT_SHUTDOWN_PC" Datatype="Time">
+      <StartValue>T#7M</StartValue>
+    </Member>
+    <Member Name="DELAY_SHUTDOWN_PC" Datatype="Time">
+      <StartValue>T#1M</StartValue>
+    </Member>
+  </Section>
+</Sections></Interface>
+      <MemoryLayout>Optimized</MemoryLayout>
+      <MemoryReserve>100</MemoryReserve>
+      <Name>FB_Machineshutdown_UPS</Name>
+      <Namespace />
+      <Number>461</Number>
+      <ProgrammingLanguage>SCL</ProgrammingLanguage>
+      <SetENOAutomatically>false</SetENOAutomatically>
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="3" CompositionName="Items">
+            <AttributeList>
+              <Culture>fr-FR</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <SW.Blocks.CompileUnit ID="4" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource><StructuredText xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/StructuredText/v4">
+  <Token Text="REGION" UId="21" />
+  <Blank UId="22" />
+  <Text UId="23">Shutdown Machine</Text>
+  <NewLine UId="24" />
+  <Blank Num="4" UId="25" />
+  <LineComment UId="26">
+    <Text UId="27"> Time out button shutdown and ups Alarm</Text>
+  </LineComment>
+  <NewLine UId="28" />
+  <Blank Num="4" UId="29" />
+  <Access Scope="LocalVariable" UId="30">
+    <Symbol UId="31">
+      <Component Name="sTimeOutAlarmUPS" UId="32" />
+    </Symbol>
+  </Access>
+  <Token Text="." UId="33" />
+  <Access Scope="Call" UId="34">
+    <Instruction Name="TON" UId="35">
+      <Token Text="(" UId="36" />
+      <Parameter Name="IN" UId="37">
+        <Blank UId="38" />
+        <Token Text=":=" UId="39" />
+        <Blank UId="40" />
+        <Token Text="NOT" UId="41" />
+        <Blank UId="42" />
+        <Access Scope="GlobalVariable" UId="43">
+          <Symbol UId="44">
+            <Component Name="DB_DigitalInputs" UId="45">
+              <BooleanAttribute Name="HasQuotes" UId="46">true</BooleanAttribute>
+            </Component>
+            <Token Text="." UId="47" />
+            <Component Name="sUPS_PowerFailure" UId="48">
+              <BooleanAttribute Name="HasHash" UId="49">true</BooleanAttribute>
+            </Component>
+            <Token Text="." UId="50" />
+            <Component Name="sSWStatus" UId="51" />
+          </Symbol>
+        </Access>
+        <Blank UId="52" />
+        <Token Text="AND" UId="53" />
+        <Blank UId="54" />
+        <Token Text="NOT" UId="55" />
+        <Blank UId="56" />
+        <Access Scope="GlobalVariable" UId="57">
+          <Symbol UId="58">
+            <Component Name="DB_DigitalInputs" UId="59">
+              <BooleanAttribute Name="HasQuotes" UId="60">true</BooleanAttribute>
+            </Component>
+            <Token Text="." UId="61" />
+            <Component Name="sUPS_CommonAlarm" UId="62" />
+            <Token Text="." UId="63" />
+            <Component Name="sSWStatus" UId="64" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="65" />
+      <NewLine UId="66" />
+      <Blank Num="26" UId="67" />
+      <Parameter Name="PT" UId="68">
+        <Blank UId="69" />
+        <Token Text=":=" UId="70" />
+        <Blank UId="71" />
+        <Access Scope="LocalConstant" UId="72">
+          <Constant Name="TIME_OUT_ALARM_UPS" UId="73" />
+        </Access>
+      </Parameter>
+      <Token Text=")" UId="76" />
+    </Instruction>
+  </Access>
+  <Token Text=";" UId="77" />
+  <NewLine UId="78" />
+  <Blank Num="4" UId="79" />
+  <Access Scope="LocalVariable" UId="80">
+    <Symbol UId="81">
+      <Component Name="sTimeOutShutDown" UId="82" />
+    </Symbol>
+  </Access>
+  <Token Text="." UId="83" />
+  <Access Scope="Call" UId="84">
+    <Instruction Name="TON" UId="85">
+      <Token Text="(" UId="86" />
+      <Parameter Name="IN" UId="87">
+        <Blank UId="88" />
+        <Token Text=":=" UId="89" />
+        <Blank UId="90" />
+        <Access Scope="GlobalVariable" UId="91">
+          <Symbol UId="92">
+            <Component Name="DB_McpKeyboardSignals" UId="93">
+              <BooleanAttribute Name="HasQuotes" UId="94">true</BooleanAttribute>
+            </Component>
+            <Token Text="." UId="95" />
+            <Component Name="sShutdownPC" UId="96" />
+            <Token Text="." UId="97" />
+            <Component Name="sKeySWStatus" UId="98" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="99" />
+      <NewLine UId="100" />
+      <Blank Num="26" UId="101" />
+      <Parameter Name="PT" UId="102">
+        <Blank UId="103" />
+        <Token Text=":=" UId="104" />
+        <Blank UId="105" />
+        <Access Scope="LocalConstant" UId="106">
+          <Constant Name="TIME_OUT_SHUTDOWN" UId="107" />
+        </Access>
+      </Parameter>
+      <Token Text=")" UId="110" />
+    </Instruction>
+  </Access>
+  <Token Text=";" UId="111" />
+  <NewLine UId="112" />
+  <Blank Num="4" UId="113" />
+  <Access Scope="LocalVariable" UId="114">
+    <Symbol UId="115">
+      <Component Name="sTimeOutShutDownPC" UId="116" />
+    </Symbol>
+  </Access>
+  <Token Text="." UId="117" />
+  <Access Scope="Call" UId="118">
+    <Instruction Name="TON" UId="119">
+      <Token Text="(" UId="120" />
+      <Parameter Name="IN" UId="121">
+        <Blank UId="122" />
+        <Token Text=":=" UId="123" />
+        <Blank UId="124" />
+        <Access Scope="LocalVariable" UId="125">
+          <Symbol UId="126">
+            <Component Name="sShutDownPCRequest" UId="127" />
+          </Symbol>
+        </Access>
+        <Blank UId="128" />
+        <Token Text="&lt;&gt;" UId="129" />
+        <Blank UId="130" />
+        <Access Scope="LiteralConstant" UId="131">
+          <Constant UId="132">
+            <ConstantValue UId="134">0</ConstantValue>
+          </Constant>
+        </Access>
+        <Blank UId="135" />
+        <Token Text="AND" UId="136" />
+        <Blank UId="137" />
+        <Access Scope="LocalVariable" UId="138">
+          <Symbol UId="139">
+            <Component Name="sShutDownPCResponse" UId="140" />
+          </Symbol>
+        </Access>
+        <Blank UId="141" />
+        <Token Text="&lt;&gt;" UId="142" />
+        <Blank UId="143" />
+        <Access Scope="LiteralConstant" UId="144">
+          <Constant UId="145">
+            <ConstantValue UId="147">1</ConstantValue>
+          </Constant>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="148" />
+      <NewLine UId="149" />
+      <Blank Num="28" UId="150" />
+      <Parameter Name="PT" UId="151">
+        <Blank UId="152" />
+        <Token Text=":=" UId="153" />
+        <Blank UId="154" />
+        <Access Scope="LocalConstant" UId="155">
+          <Constant Name="TIME_OUT_SHUTDOWN_PC" UId="156" />
+        </Access>
+      </Parameter>
+      <Token Text=")" UId="159" />
+    </Instruction>
+  </Access>
+  <Token Text=";" UId="160" />
+  <NewLine UId="161" />
+  <Blank Num="4" UId="162" />
+  <Access Scope="LocalVariable" UId="163">
+    <Symbol UId="164">
+      <Component Name="sShutDownDelayPC" UId="165" />
+    </Symbol>
+  </Access>
+  <Token Text="." UId="166" />
+  <Access Scope="Call" UId="167">
+    <Instruction Name="TON" UId="168">
+      <Token Text="(" UId="169" />
+      <Parameter Name="IN" UId="170">
+        <Blank UId="171" />
+        <Token Text=":=" UId="172" />
+        <Blank UId="173" />
+        <Access Scope="LocalVariable" UId="174">
+          <Symbol UId="175">
+            <Component Name="sShutDownPCResponse" UId="176" />
+          </Symbol>
+        </Access>
+        <Blank UId="177" />
+        <Token Text="=" UId="178" />
+        <Blank UId="179" />
+        <Access Scope="LiteralConstant" UId="180">
+          <Constant UId="181">
+            <ConstantValue UId="183">1</ConstantValue>
+          </Constant>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="184" />
+      <NewLine UId="185" />
+      <Blank Num="26" UId="186" />
+      <Parameter Name="PT" UId="187">
+        <Blank UId="188" />
+        <Token Text=":=" UId="189" />
+        <Blank UId="190" />
+        <Access Scope="LocalConstant" UId="191">
+          <Constant Name="DELAY_SHUTDOWN_PC" UId="192" />
+        </Access>
+      </Parameter>
+      <Token Text=")" UId="195" />
+    </Instruction>
+  </Access>
+  <Token Text=";" UId="196" />
+  <NewLine UId="197" />
+  <Blank Num="4" UId="198" />
+  <NewLine UId="199" />
+  <Blank Num="4" UId="200" />
+  <LineComment UId="201">
+    <Text UId="202"> Send request to Left_PC</Text>
+  </LineComment>
+  <NewLine UId="203" />
+  <Blank Num="4" UId="204" />
+  <Token Text="IF" UId="205" />
+  <Blank UId="206" />
+  <Access Scope="LocalVariable" UId="207">
+    <Symbol UId="208">
+      <Component Name="sTimeOutShutDown" UId="209" />
+      <Token Text="." UId="210" />
+      <Component Name="Q" UId="211" />
+    </Symbol>
+  </Access>
+  <Blank UId="212" />
+  <Token Text="THEN" UId="213" />
+  <NewLine UId="214" />
+  <Blank Num="8" UId="215" />
+  <Access Scope="LocalVariable" UId="216">
+    <Symbol UId="217">
+      <Component Name="sShutDownPCRequest" UId="218" />
+    </Symbol>
+  </Access>
+  <Blank UId="219" />
+  <Token Text=":=" UId="220" />
+  <Blank UId="221" />
+  <Access Scope="LiteralConstant" UId="222">
+    <Constant UId="223">
+      <ConstantValue UId="225">1</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="226" />
+  <NewLine UId="227" />
+  <Blank Num="8" UId="228" />
+  <Access Scope="GlobalVariable" UId="229">
+    <Symbol UId="230">
+      <Component Name="LBP_AlarmMsgs" UId="231">
+        <BooleanAttribute Name="HasQuotes" UId="232">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="233" />
+      <Component Name="UserA" UId="234">
+        <Token Text="[" UId="235" />
+        <Access Scope="LiteralConstant" UId="236">
+          <Constant UId="237">
+            <ConstantValue UId="239">4</ConstantValue>
+          </Constant>
+        </Access>
+        <Token Text="]" UId="240" />
+      </Component>
+      <Token Text="." UId="241" />
+      <Component Name="A70UUxx" UId="242">
+        <Token Text="[" UId="243" />
+        <Access Scope="LiteralConstant" UId="244">
+          <Constant UId="245">
+            <ConstantValue UId="247">42</ConstantValue>
+          </Constant>
+        </Access>
+        <Token Text="]" UId="248" />
+      </Component>
+    </Symbol>
+  </Access>
+  <Blank UId="249" />
+  <Token Text=":=" UId="250" />
+  <Blank UId="251" />
+  <Token Text="NOT" UId="252" />
+  <Blank UId="253" />
+  <Access Scope="GlobalVariable" UId="254">
+    <Symbol UId="255">
+      <Component Name="LBP_AlarmMsgs" UId="256">
+        <BooleanAttribute Name="HasQuotes" UId="257">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="258" />
+      <Component Name="UserA" UId="259">
+        <Token Text="[" UId="260" />
+        <Access Scope="LiteralConstant" UId="261">
+          <Constant UId="262">
+            <ConstantValue UId="264">4</ConstantValue>
+          </Constant>
+        </Access>
+        <Token Text="]" UId="265" />
+      </Component>
+      <Token Text="." UId="266" />
+      <Component Name="A70UUxx" UId="267">
+        <Token Text="[" UId="268" />
+        <Access Scope="LiteralConstant" UId="269">
+          <Constant UId="270">
+            <ConstantValue UId="272">41</ConstantValue>
+          </Constant>
+        </Access>
+        <Token Text="]" UId="273" />
+      </Component>
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="274" />
+  <NewLine UId="275" />
+  <Blank Num="4" UId="276" />
+  <Token Text="ELSIF" UId="277" />
+  <Blank UId="278" />
+  <Access Scope="LocalVariable" UId="279">
+    <Symbol UId="280">
+      <Component Name="sTimeOutAlarmUPS" UId="281" />
+      <Token Text="." UId="282" />
+      <Component Name="Q" UId="283" />
+    </Symbol>
+  </Access>
+  <Blank UId="284" />
+  <Token Text="THEN" UId="285" />
+  <NewLine UId="286" />
+  <Blank Num="8" UId="287" />
+  <LineComment UId="288">
+    <Text UId="289"> Power Failure</Text>
+  </LineComment>
+  <NewLine UId="290" />
+  <Blank Num="8" UId="291" />
+  <Access Scope="LocalVariable" UId="292">
+    <Symbol UId="293">
+      <Component Name="sShutDownPCRequest" UId="294" />
+    </Symbol>
+  </Access>
+  <Blank UId="295" />
+  <Token Text=":=" UId="296" />
+  <Blank UId="297" />
+  <Access Scope="LiteralConstant" UId="298">
+    <Constant UId="299">
+      <ConstantValue UId="301">2</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="302" />
+  <NewLine UId="303" />
+  <Blank Num="8" UId="304" />
+  <Access Scope="GlobalVariable" UId="305">
+    <Symbol UId="306">
+      <Component Name="LBP_AlarmMsgs" UId="307">
+        <BooleanAttribute Name="HasQuotes" UId="308">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="309" />
+      <Component Name="UserA" UId="310">
+        <Token Text="[" UId="311" />
+        <Access Scope="LiteralConstant" UId="312">
+          <Constant UId="313">
+            <ConstantValue UId="315">4</ConstantValue>
+          </Constant>
+        </Access>
+        <Token Text="]" UId="316" />
+      </Component>
+      <Token Text="." UId="317" />
+      <Component Name="A70UUxx" UId="318">
+        <Token Text="[" UId="319" />
+        <Access Scope="LiteralConstant" UId="320">
+          <Constant UId="321">
+            <ConstantValue UId="323">23</ConstantValue>
+          </Constant>
+        </Access>
+        <Token Text="]" UId="324" />
+      </Component>
+    </Symbol>
+  </Access>
+  <Blank UId="325" />
+  <Token Text=":=" UId="326" />
+  <Blank UId="327" />
+  <Access Scope="LiteralConstant" UId="328">
+    <Constant UId="329">
+      <ConstantValue UId="331">TRUE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="332" />
+  <NewLine UId="333" />
+  <Blank Num="4" UId="334" />
+  <Token Text="END_IF" UId="335" />
+  <Token Text=";" UId="336" />
+  <NewLine UId="337" />
+  <Blank Num="4" UId="338" />
+  <NewLine UId="339" />
+  <Blank Num="4" UId="340" />
+  <LineComment UId="341">
+    <Text UId="342"> Management of signal feedback or timeout</Text>
+  </LineComment>
+  <NewLine UId="343" />
+  <Blank Num="4" UId="344" />
+  <Token Text="IF" UId="345" />
+  <Blank UId="346" />
+  <Access Scope="LocalVariable" UId="347">
+    <Symbol UId="348">
+      <Component Name="sShutDownDelayPC" UId="349" />
+      <Token Text="." UId="350" />
+      <Component Name="Q" UId="351" />
+    </Symbol>
+  </Access>
+  <Blank UId="352" />
+  <Token Text="THEN" UId="353" />
+  <NewLine UId="354" />
+  <Blank Num="8" UId="355" />
+  <LineComment UId="356">
+    <Text UId="357"> Machine stop process completed. Turn off the machine using the main switch</Text>
+  </LineComment>
+  <NewLine UId="358" />
+  <Blank Num="8" UId="359" />
+  <Access Scope="GlobalVariable" UId="360">
+    <Symbol UId="361">
+      <Component Name="LBP_AlarmMsgs" UId="362">
+        <BooleanAttribute Name="HasQuotes" UId="363">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="364" />
+      <Component Name="UserA" UId="365">
+        <Token Text="[" UId="366" />
+        <Access Scope="LiteralConstant" UId="367">
+          <Constant UId="368">
+            <ConstantValue UId="370">4</ConstantValue>
+          </Constant>
+        </Access>
+        <Token Text="]" UId="371" />
+      </Component>
+      <Token Text="." UId="372" />
+      <Component Name="A70UUxx" UId="373">
+        <Token Text="[" UId="374" />
+        <Access Scope="LiteralConstant" UId="375">
+          <Constant UId="376">
+            <ConstantValue UId="378">41</ConstantValue>
+          </Constant>
+        </Access>
+        <Token Text="]" UId="379" />
+      </Component>
+    </Symbol>
+  </Access>
+  <Blank UId="380" />
+  <Token Text=":=" UId="381" />
+  <Blank UId="382" />
+  <Token Text="NOT" UId="383" />
+  <Blank UId="384" />
+  <Access Scope="GlobalVariable" UId="385">
+    <Symbol UId="386">
+      <Component Name="DB_PowerOn" UId="387">
+        <BooleanAttribute Name="HasQuotes" UId="388">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="389" />
+      <Component Name="sMachineReadySoft" UId="390" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="391" />
+  <Blank UId="392" />
+  <LineComment UId="393">
+    <Text UId="394"> Message pour couper l'alimentation si BT jaune extinction</Text>
+  </LineComment>
+  <NewLine UId="395" />
+  <Blank Num="8" UId="396" />
+  <Access Scope="GlobalVariable" UId="397">
+    <Symbol UId="398">
+      <Component Name="DB_DigitalOutputs" UId="399">
+        <BooleanAttribute Name="HasQuotes" UId="400">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="401" />
+      <Component Name="sEPO_UPS" UId="402" />
+      <Token Text="." UId="403" />
+      <Component Name="sSWStatus" UId="404" />
+    </Symbol>
+  </Access>
+  <Blank UId="405" />
+  <Token Text=":=" UId="406" />
+  <Blank UId="407" />
+  <Access Scope="LocalVariable" UId="408">
+    <Symbol UId="409">
+      <Component Name="sShutDownPCRequest" UId="410" />
+    </Symbol>
+  </Access>
+  <Blank UId="411" />
+  <Token Text="=" UId="412" />
+  <Blank UId="413" />
+  <Access Scope="LiteralConstant" UId="414">
+    <Constant UId="415">
+      <ConstantValue UId="417">2</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="418" />
+  <Blank Num="10" UId="419" />
+  <LineComment UId="420">
+    <Text UId="421"> Ouverture du relais EPO si UPS extinction</Text>
+  </LineComment>
+  <NewLine UId="422" />
+  <Blank Num="4" UId="423" />
+  <Token Text="ELSIF" UId="424" />
+  <Blank UId="425" />
+  <Access Scope="LocalVariable" UId="426">
+    <Symbol UId="427">
+      <Component Name="sShutDownPCResponse" UId="428" />
+    </Symbol>
+  </Access>
+  <Blank UId="429" />
+  <Token Text="=" UId="430" />
+  <Blank UId="431" />
+  <Access Scope="LiteralConstant" UId="432">
+    <Constant UId="433">
+      <ConstantValue UId="435">1</ConstantValue>
+    </Constant>
+  </Access>
+  <Blank UId="436" />
+  <Token Text="THEN" UId="437" />
+  <NewLine UId="438" />
+  <Blank Num="8" UId="439" />
+  <Access Scope="LocalVariable" UId="440">
+    <Symbol UId="441">
+      <Component Name="sShutDownPower" UId="442" />
+    </Symbol>
+  </Access>
+  <Blank UId="443" />
+  <Token Text=":=" UId="444" />
+  <Blank UId="445" />
+  <Access Scope="LiteralConstant" UId="446">
+    <Constant UId="447">
+      <ConstantValue UId="449">true</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="450" />
+  <NewLine UId="451" />
+  <Blank Num="4" UId="452" />
+  <Token Text="ELSIF" UId="453" />
+  <Blank UId="454" />
+  <Access Scope="LocalVariable" UId="455">
+    <Symbol UId="456">
+      <Component Name="sShutDownPCResponse" UId="457" />
+    </Symbol>
+  </Access>
+  <Blank UId="458" />
+  <Token Text="=" UId="459" />
+  <Blank UId="460" />
+  <Access Scope="LiteralConstant" UId="461">
+    <Constant UId="462">
+      <ConstantValue UId="464">2</ConstantValue>
+    </Constant>
+  </Access>
+  <Blank UId="465" />
+  <Token Text="THEN" UId="466" />
+  <NewLine UId="467" />
+  <Blank Num="8" UId="468" />
+  <LineComment UId="469">
+    <Text UId="470"> Laser status unknown. Turn it off on left PC THEN wait FOR the machine's shutdown</Text>
+  </LineComment>
+  <NewLine UId="471" />
+  <Blank Num="8" UId="472" />
+  <Access Scope="GlobalVariable" UId="473">
+    <Symbol UId="474">
+      <Component Name="LBP_AlarmMsgs" UId="475">
+        <BooleanAttribute Name="HasQuotes" UId="476">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="477" />
+      <Component Name="UserA" UId="478">
+        <Token Text="[" UId="479" />
+        <Access Scope="LiteralConstant" UId="480">
+          <Constant UId="481">
+            <ConstantValue UId="483">4</ConstantValue>
+          </Constant>
+        </Access>
+        <Token Text="]" UId="484" />
+      </Component>
+      <Token Text="." UId="485" />
+      <Component Name="A70UUxx" UId="486">
+        <Token Text="[" UId="487" />
+        <Access Scope="LiteralConstant" UId="488">
+          <Constant UId="489">
+            <ConstantValue UId="491">22</ConstantValue>
+          </Constant>
+        </Access>
+        <Token Text="]" UId="492" />
+      </Component>
+    </Symbol>
+  </Access>
+  <Blank UId="493" />
+  <Token Text=":=" UId="494" />
+  <Blank UId="495" />
+  <Access Scope="LiteralConstant" UId="496">
+    <Constant UId="497">
+      <ConstantValue UId="499">TRUE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="500" />
+  <NewLine UId="501" />
+  <Blank Num="4" UId="502" />
+  <Token Text="ELSIF" UId="503" />
+  <Blank UId="504" />
+  <Access Scope="LocalVariable" UId="505">
+    <Symbol UId="506">
+      <Component Name="sShutDownPCResponse" UId="507" />
+    </Symbol>
+  </Access>
+  <Blank UId="508" />
+  <Token Text="=" UId="509" />
+  <Blank UId="510" />
+  <Access Scope="LiteralConstant" UId="511">
+    <Constant UId="512">
+      <ConstantValue UId="514">3</ConstantValue>
+    </Constant>
+  </Access>
+  <Blank UId="515" />
+  <Token Text="THEN" UId="516" />
+  <NewLine UId="517" />
+  <Blank Num="8" UId="518" />
+  <LineComment UId="519">
+    <Text UId="520"> The laser is still on. Please turn it off manually</Text>
+  </LineComment>
+  <NewLine UId="521" />
+  <Blank Num="8" UId="522" />
+  <Access Scope="GlobalVariable" UId="523">
+    <Symbol UId="524">
+      <Component Name="LBP_AlarmMsgs" UId="525">
+        <BooleanAttribute Name="HasQuotes" UId="526">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="527" />
+      <Component Name="UserA" UId="528">
+        <Token Text="[" UId="529" />
+        <Access Scope="LiteralConstant" UId="530">
+          <Constant UId="531">
+            <ConstantValue UId="533">4</ConstantValue>
+          </Constant>
+        </Access>
+        <Token Text="]" UId="534" />
+      </Component>
+      <Token Text="." UId="535" />
+      <Component Name="A70UUxx" UId="536">
+        <Token Text="[" UId="537" />
+        <Access Scope="LiteralConstant" UId="538">
+          <Constant UId="539">
+            <ConstantValue UId="541">21</ConstantValue>
+          </Constant>
+        </Access>
+        <Token Text="]" UId="542" />
+      </Component>
+    </Symbol>
+  </Access>
+  <Blank UId="543" />
+  <Token Text=":=" UId="544" />
+  <Blank UId="545" />
+  <Access Scope="LiteralConstant" UId="546">
+    <Constant UId="547">
+      <ConstantValue UId="549">TRUE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="550" />
+  <NewLine UId="551" />
+  <Blank Num="4" UId="552" />
+  <Token Text="ELSIF" UId="553" />
+  <Blank UId="554" />
+  <Access Scope="LocalVariable" UId="555">
+    <Symbol UId="556">
+      <Component Name="sShutDownPCResponse" UId="557" />
+    </Symbol>
+  </Access>
+  <Blank UId="558" />
+  <Token Text="=" UId="559" />
+  <Blank UId="560" />
+  <Access Scope="LiteralConstant" UId="561">
+    <Constant UId="562">
+      <ConstantValue UId="564">4</ConstantValue>
+    </Constant>
+  </Access>
+  <Blank UId="565" />
+  <Token Text="THEN" UId="566" />
+  <NewLine UId="567" />
+  <Blank Num="8" UId="568" />
+  <Access Scope="LocalVariable" UId="569">
+    <Symbol UId="570">
+      <Component Name="sShutDownAspiration" UId="571" />
+    </Symbol>
+  </Access>
+  <Blank UId="572" />
+  <Token Text=":=" UId="573" />
+  <Blank UId="574" />
+  <Access Scope="LiteralConstant" UId="575">
+    <Constant UId="576">
+      <ConstantValue UId="578">TRUE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="579" />
+  <NewLine UId="580" />
+  <Blank Num="4" UId="581" />
+  <Token Text="ELSIF" UId="582" />
+  <Blank UId="583" />
+  <Access Scope="LocalVariable" UId="584">
+    <Symbol UId="585">
+      <Component Name="sTimeOutShutDownPC" UId="586" />
+      <Token Text="." UId="587" />
+      <Component Name="Q" UId="588" />
+    </Symbol>
+  </Access>
+  <Blank UId="589" />
+  <Token Text="THEN" UId="590" />
+  <NewLine UId="591" />
+  <Blank Num="8" UId="592" />
+  <LineComment UId="593">
+    <Text UId="594"> Timeout shutdown. Please turn it off manually</Text>
+  </LineComment>
+  <NewLine UId="595" />
+  <Blank Num="8" UId="596" />
+  <Access Scope="GlobalVariable" UId="597">
+    <Symbol UId="598">
+      <Component Name="LBP_AlarmMsgs" UId="599">
+        <BooleanAttribute Name="HasQuotes" UId="600">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="601" />
+      <Component Name="UserA" UId="602">
+        <Token Text="[" UId="603" />
+        <Access Scope="LiteralConstant" UId="604">
+          <Constant UId="605">
+            <ConstantValue UId="607">4</ConstantValue>
+          </Constant>
+        </Access>
+        <Token Text="]" UId="608" />
+      </Component>
+      <Token Text="." UId="609" />
+      <Component Name="A70UUxx" UId="610">
+        <Token Text="[" UId="611" />
+        <Access Scope="LiteralConstant" UId="612">
+          <Constant UId="613">
+            <ConstantValue UId="615">20</ConstantValue>
+          </Constant>
+        </Access>
+        <Token Text="]" UId="616" />
+      </Component>
+    </Symbol>
+  </Access>
+  <Blank UId="617" />
+  <Token Text=":=" UId="618" />
+  <Blank UId="619" />
+  <Access Scope="LiteralConstant" UId="620">
+    <Constant UId="621">
+      <ConstantValue UId="623">TRUE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="624" />
+  <NewLine UId="625" />
+  <Blank Num="4" UId="626" />
+  <Token Text="END_IF" UId="627" />
+  <Token Text=";" UId="628" />
+  <NewLine UId="629" />
+  <Blank Num="4" UId="630" />
+  <NewLine UId="631" />
+  <Blank Num="4" UId="632" />
+  <LineComment UId="633">
+    <Text UId="634"> Shutdown Button LED</Text>
+  </LineComment>
+  <NewLine UId="635" />
+  <Blank Num="4" UId="636" />
+  <Access Scope="GlobalVariable" UId="637">
+    <Symbol UId="638">
+      <Component Name="DB_McpKeyboardSignals" UId="639">
+        <BooleanAttribute Name="HasQuotes" UId="640">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="641" />
+      <Component Name="sShutdownPC" UId="642" />
+      <Token Text="." UId="643" />
+      <Component Name="sLedSWStatus" UId="644" />
+    </Symbol>
+  </Access>
+  <Blank UId="645" />
+  <Token Text=":=" UId="646" />
+  <NewLine UId="647" />
+  <Blank Num="4" UId="648" />
+  <Token Text="(" UId="649" />
+  <Access Scope="GlobalVariable" UId="650">
+    <Symbol UId="651">
+      <Component Name="DB_McpKeyboardSignals" UId="652">
+        <BooleanAttribute Name="HasQuotes" UId="653">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="654" />
+      <Component Name="sShutdownPC" UId="655" />
+      <Token Text="." UId="656" />
+      <Component Name="sKeySWStatus" UId="657" />
+    </Symbol>
+  </Access>
+  <Blank UId="658" />
+  <Token Text="AND" UId="659" />
+  <Blank UId="660" />
+  <Access Scope="GlobalVariable" UId="661">
+    <Symbol UId="662">
+      <Component Name="Clock_5Hz" UId="663">
+        <BooleanAttribute Name="HasQuotes" UId="664">true</BooleanAttribute>
+      </Component>
+    </Symbol>
+  </Access>
+  <Token Text=")" UId="665" />
+  <NewLine UId="666" />
+  <Blank Num="4" UId="667" />
+  <Token Text="OR" UId="668" />
+  <Blank UId="669" />
+  <Token Text="(" UId="670" />
+  <Access Scope="LocalVariable" UId="671">
+    <Symbol UId="672">
+      <Component Name="sShutDownPCRequest" UId="673" />
+    </Symbol>
+  </Access>
+  <Blank UId="674" />
+  <Token Text="&lt;&gt;" UId="675" />
+  <Blank UId="676" />
+  <Access Scope="LiteralConstant" UId="677">
+    <Constant UId="678">
+      <ConstantValue UId="680">0</ConstantValue>
+    </Constant>
+  </Access>
+  <Blank UId="681" />
+  <Token Text="AND" UId="682" />
+  <Blank UId="683" />
+  <Access Scope="LocalVariable" UId="684">
+    <Symbol UId="685">
+      <Component Name="sShutDownPCResponse" UId="686" />
+    </Symbol>
+  </Access>
+  <Blank UId="687" />
+  <Token Text="&lt;&gt;" UId="688" />
+  <Blank UId="689" />
+  <Access Scope="LiteralConstant" UId="690">
+    <Constant UId="691">
+      <ConstantValue UId="693">1</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=")" UId="694" />
+  <NewLine UId="695" />
+  <Blank Num="4" UId="696" />
+  <Token Text="OR" UId="697" />
+  <Blank UId="698" />
+  <Access Scope="LocalVariable" UId="699">
+    <Symbol UId="700">
+      <Component Name="sShutDownPower" UId="701" />
+    </Symbol>
+  </Access>
+  <NewLine UId="702" />
+  <Blank Num="4" UId="703" />
+  <Token Text="OR" UId="704" />
+  <Blank UId="705" />
+  <Access Scope="GlobalVariable" UId="706">
+    <Symbol UId="707">
+      <Component Name="DB_McpKeyboardSignals" UId="708">
+        <BooleanAttribute Name="HasQuotes" UId="709">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="710" />
+      <Component Name="sLightTest" UId="711" />
+      <Token Text="." UId="712" />
+      <Component Name="sKeySWStatus" UId="713" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="714" />
+  <NewLine UId="715" />
+  <Token Text="END_REGION" UId="716" />
+  <NewLine Num="3" UId="717" />
+  <Token Text="REGION" UId="718" />
+  <Blank UId="719" />
+  <Text UId="720">UPS Alarms</Text>
+  <NewLine UId="721" />
+  <Blank Num="4" UId="722" />
+  <Token Text="IF" UId="723" />
+  <Blank UId="724" />
+  <Access Scope="GlobalVariable" UId="725">
+    <Symbol UId="726">
+      <Component Name="DB_MachineOptions" UId="727">
+        <BooleanAttribute Name="HasQuotes" UId="728">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="729" />
+      <Component Name="UPSPresent" UId="730" />
+    </Symbol>
+  </Access>
+  <Blank UId="731" />
+  <Token Text="THEN" UId="732" />
+  <NewLine UId="733" />
+  <Blank Num="8" UId="734" />
+  <Token Text="IF" UId="735" />
+  <Blank UId="736" />
+  <Access Scope="GlobalVariable" UId="737">
+    <Symbol UId="738">
+      <Component Name="DB_DigitalInputs" UId="739">
+        <BooleanAttribute Name="HasQuotes" UId="740">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="741" />
+      <Component Name="sUPS_BatteryLow" UId="742" />
+      <Token Text="." UId="743" />
+      <Component Name="sSWStatus" UId="744" />
+    </Symbol>
+  </Access>
+  <NewLine UId="745" />
+  <Blank Num="12" UId="746" />
+  <Token Text="AND" UId="747" />
+  <Blank UId="748" />
+  <Token Text="NOT" UId="749" />
+  <Blank UId="750" />
+  <Access Scope="GlobalVariable" UId="751">
+    <Symbol UId="752">
+      <Component Name="DB_DigitalInputs" UId="753">
+        <BooleanAttribute Name="HasQuotes" UId="754">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="755" />
+      <Component Name="sUPS_BatteryOK" UId="756" />
+      <Token Text="." UId="757" />
+      <Component Name="sSWStatus" UId="758" />
+    </Symbol>
+  </Access>
+  <Blank UId="759" />
+  <Token Text="THEN" UId="760" />
+  <NewLine UId="761" />
+  <Blank Num="12" UId="762" />
+  <Access Scope="GlobalVariable" UId="763">
+    <Symbol UId="764">
+      <Component Name="LBP_AlarmMsgs" UId="765">
+        <BooleanAttribute Name="HasQuotes" UId="766">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="767" />
+      <Component Name="UserA" UId="768">
+        <Token Text="[" UId="769" />
+        <Access Scope="LiteralConstant" UId="770">
+          <Constant UId="771">
+            <ConstantValue UId="773">4</ConstantValue>
+          </Constant>
+        </Access>
+        <Token Text="]" UId="774" />
+      </Component>
+      <Token Text="." UId="775" />
+      <Component Name="A70UUxx" UId="776">
+        <Token Text="[" UId="777" />
+        <Access Scope="LiteralConstant" UId="778">
+          <Constant UId="779">
+            <ConstantValue UId="781">2</ConstantValue>
+          </Constant>
+        </Access>
+        <Token Text="]" UId="782" />
+      </Component>
+    </Symbol>
+  </Access>
+  <Blank UId="783" />
+  <Token Text=":=" UId="784" />
+  <Blank UId="785" />
+  <Access Scope="LiteralConstant" UId="786">
+    <Constant UId="787">
+      <ConstantValue UId="789">TRUE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="790" />
+  <NewLine UId="791" />
+  <Blank Num="8" UId="792" />
+  <Token Text="END_IF" UId="793" />
+  <Token Text=";" UId="794" />
+  <NewLine UId="795" />
+  <Blank Num="8" UId="796" />
+  <NewLine UId="797" />
+  <Blank Num="8" UId="798" />
+  <Token Text="IF" UId="799" />
+  <Blank UId="800" />
+  <Token Text="NOT" UId="801" />
+  <Blank UId="802" />
+  <Access Scope="GlobalVariable" UId="803">
+    <Symbol UId="804">
+      <Component Name="DB_DigitalInputs" UId="805">
+        <BooleanAttribute Name="HasQuotes" UId="806">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="807" />
+      <Component Name="sUPS_ByPassActive" UId="808" />
+      <Token Text="." UId="809" />
+      <Component Name="sSWStatus" UId="810" />
+    </Symbol>
+  </Access>
+  <Blank UId="811" />
+  <Token Text="THEN" UId="812" />
+  <NewLine UId="813" />
+  <Blank Num="12" UId="814" />
+  <Access Scope="GlobalVariable" UId="815">
+    <Symbol UId="816">
+      <Component Name="LBP_AlarmMsgs" UId="817">
+        <BooleanAttribute Name="HasQuotes" UId="818">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="819" />
+      <Component Name="UserA" UId="820">
+        <Token Text="[" UId="821" />
+        <Access Scope="LiteralConstant" UId="822">
+          <Constant UId="823">
+            <ConstantValue UId="825">4</ConstantValue>
+          </Constant>
+        </Access>
+        <Token Text="]" UId="826" />
+      </Component>
+      <Token Text="." UId="827" />
+      <Component Name="A70UUxx" UId="828">
+        <Token Text="[" UId="829" />
+        <Access Scope="LiteralConstant" UId="830">
+          <Constant UId="831">
+            <ConstantValue UId="833">3</ConstantValue>
+          </Constant>
+        </Access>
+        <Token Text="]" UId="834" />
+      </Component>
+    </Symbol>
+  </Access>
+  <Blank UId="835" />
+  <Token Text=":=" UId="836" />
+  <Blank UId="837" />
+  <Access Scope="LiteralConstant" UId="838">
+    <Constant UId="839">
+      <ConstantValue UId="841">TRUE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="842" />
+  <NewLine UId="843" />
+  <Blank Num="8" UId="844" />
+  <Token Text="END_IF" UId="845" />
+  <Token Text=";" UId="846" />
+  <NewLine UId="847" />
+  <Blank Num="8" UId="848" />
+  <NewLine UId="849" />
+  <Blank Num="8" UId="850" />
+  <Token Text="IF" UId="851" />
+  <Blank UId="852" />
+  <Token Text="NOT" UId="853" />
+  <Blank UId="854" />
+  <Access Scope="GlobalVariable" UId="855">
+    <Symbol UId="856">
+      <Component Name="DB_DigitalInputs" UId="857">
+        <BooleanAttribute Name="HasQuotes" UId="858">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="859" />
+      <Component Name="sUPS_Fault" UId="860" />
+      <Token Text="." UId="861" />
+      <Component Name="sSWStatus" UId="862" />
+    </Symbol>
+  </Access>
+  <NewLine UId="863" />
+  <Blank Num="12" UId="864" />
+  <Token Text="OR" UId="865" />
+  <Blank UId="866" />
+  <Token Text="NOT" UId="867" />
+  <Blank UId="868" />
+  <Access Scope="GlobalVariable" UId="869">
+    <Symbol UId="870">
+      <Component Name="DB_DigitalInputs" UId="871">
+        <BooleanAttribute Name="HasQuotes" UId="872">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="873" />
+      <Component Name="sUPS_CommonAlarm" UId="874" />
+      <Token Text="." UId="875" />
+      <Component Name="sSWStatus" UId="876" />
+    </Symbol>
+  </Access>
+  <Blank UId="877" />
+  <Token Text="THEN" UId="878" />
+  <NewLine UId="879" />
+  <Blank Num="12" UId="880" />
+  <Access Scope="GlobalVariable" UId="881">
+    <Symbol UId="882">
+      <Component Name="LBP_AlarmMsgs" UId="883">
+        <BooleanAttribute Name="HasQuotes" UId="884">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="885" />
+      <Component Name="UserA" UId="886">
+        <Token Text="[" UId="887" />
+        <Access Scope="LiteralConstant" UId="888">
+          <Constant UId="889">
+            <ConstantValue UId="891">4</ConstantValue>
+          </Constant>
+        </Access>
+        <Token Text="]" UId="892" />
+      </Component>
+      <Token Text="." UId="893" />
+      <Component Name="A70UUxx" UId="894">
+        <Token Text="[" UId="895" />
+        <Access Scope="LiteralConstant" UId="896">
+          <Constant UId="897">
+            <ConstantValue UId="899">4</ConstantValue>
+          </Constant>
+        </Access>
+        <Token Text="]" UId="900" />
+      </Component>
+    </Symbol>
+  </Access>
+  <Blank UId="901" />
+  <Token Text=":=" UId="902" />
+  <Blank UId="903" />
+  <Access Scope="LiteralConstant" UId="904">
+    <Constant UId="905">
+      <ConstantValue UId="907">TRUE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="908" />
+  <NewLine UId="909" />
+  <Blank Num="8" UId="910" />
+  <Token Text="END_IF" UId="911" />
+  <Token Text=";" UId="912" />
+  <NewLine UId="913" />
+  <Blank Num="8" UId="914" />
+  <NewLine UId="915" />
+  <Blank Num="8" UId="916" />
+  <Token Text="IF" UId="917" />
+  <Blank UId="918" />
+  <Token Text="NOT" UId="919" />
+  <Blank UId="920" />
+  <Access Scope="GlobalVariable" UId="921">
+    <Symbol UId="922">
+      <Component Name="DB_DigitalInputs" UId="923">
+        <BooleanAttribute Name="HasQuotes" UId="924">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="925" />
+      <Component Name="sUPS_PowerFailure" UId="926" />
+      <Token Text="." UId="927" />
+      <Component Name="sSWStatus" UId="928" />
+    </Symbol>
+  </Access>
+  <NewLine UId="929" />
+  <Blank Num="12" UId="930" />
+  <Token Text="AND" UId="931" />
+  <Blank UId="932" />
+  <Token Text="NOT" UId="933" />
+  <Blank UId="934" />
+  <Access Scope="GlobalVariable" UId="935">
+    <Symbol UId="936">
+      <Component Name="DB_DigitalInputs" UId="937">
+        <BooleanAttribute Name="HasQuotes" UId="938">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="939" />
+      <Component Name="sUPS_CommonAlarm" UId="940" />
+      <Token Text="." UId="941" />
+      <Component Name="sSWStatus" UId="942" />
+    </Symbol>
+  </Access>
+  <Blank UId="943" />
+  <Token Text="THEN" UId="944" />
+  <NewLine UId="945" />
+  <Blank Num="12" UId="946" />
+  <Access Scope="GlobalVariable" UId="947">
+    <Symbol UId="948">
+      <Component Name="LBP_AlarmMsgs" UId="949">
+        <BooleanAttribute Name="HasQuotes" UId="950">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="951" />
+      <Component Name="UserA" UId="952">
+        <Token Text="[" UId="953" />
+        <Access Scope="LiteralConstant" UId="954">
+          <Constant UId="955">
+            <ConstantValue UId="957">4</ConstantValue>
+          </Constant>
+        </Access>
+        <Token Text="]" UId="958" />
+      </Component>
+      <Token Text="." UId="959" />
+      <Component Name="A70UUxx" UId="960">
+        <Token Text="[" UId="961" />
+        <Access Scope="LiteralConstant" UId="962">
+          <Constant UId="963">
+            <ConstantValue UId="965">5</ConstantValue>
+          </Constant>
+        </Access>
+        <Token Text="]" UId="966" />
+      </Component>
+    </Symbol>
+  </Access>
+  <Blank UId="967" />
+  <Token Text=":=" UId="968" />
+  <Blank UId="969" />
+  <Access Scope="LiteralConstant" UId="970">
+    <Constant UId="971">
+      <ConstantValue UId="973">TRUE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="974" />
+  <NewLine UId="975" />
+  <Blank Num="8" UId="976" />
+  <Token Text="END_IF" UId="977" />
+  <Token Text=";" UId="978" />
+  <NewLine UId="979" />
+  <Blank Num="8" UId="980" />
+  <NewLine UId="981" />
+  <Blank Num="8" UId="982" />
+  <Token Text="IF" UId="983" />
+  <Blank UId="984" />
+  <Access Scope="GlobalVariable" UId="985">
+    <Symbol UId="986">
+      <Component Name="DB_DigitalInputs" UId="987">
+        <BooleanAttribute Name="HasQuotes" UId="988">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="989" />
+      <Component Name="sInverterActive" UId="990" />
+      <Token Text="." UId="991" />
+      <Component Name="sSWStatus" UId="992" />
+    </Symbol>
+  </Access>
+  <Blank UId="993" />
+  <Token Text="THEN" UId="994" />
+  <NewLine UId="995" />
+  <Blank Num="12" UId="996" />
+  <Access Scope="GlobalVariable" UId="997">
+    <Symbol UId="998">
+      <Component Name="LBP_AlarmMsgs" UId="999">
+        <BooleanAttribute Name="HasQuotes" UId="1000">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="1001" />
+      <Component Name="UserA" UId="1002">
+        <Token Text="[" UId="1003" />
+        <Access Scope="LiteralConstant" UId="1004">
+          <Constant UId="1005">
+            <ConstantValue UId="1007">4</ConstantValue>
+          </Constant>
+        </Access>
+        <Token Text="]" UId="1008" />
+      </Component>
+      <Token Text="." UId="1009" />
+      <Component Name="A70UUxx" UId="1010">
+        <Token Text="[" UId="1011" />
+        <Access Scope="LiteralConstant" UId="1012">
+          <Constant UId="1013">
+            <ConstantValue UId="1015">6</ConstantValue>
+          </Constant>
+        </Access>
+        <Token Text="]" UId="1016" />
+      </Component>
+    </Symbol>
+  </Access>
+  <Blank UId="1017" />
+  <Token Text=":=" UId="1018" />
+  <Blank UId="1019" />
+  <Access Scope="LiteralConstant" UId="1020">
+    <Constant UId="1021">
+      <ConstantValue UId="1023">TRUE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="1024" />
+  <NewLine UId="1025" />
+  <Blank Num="8" UId="1026" />
+  <Token Text="END_IF" UId="1027" />
+  <Token Text=";" UId="1028" />
+  <NewLine UId="1029" />
+  <Blank Num="4" UId="1030" />
+  <Token Text="END_IF" UId="1031" />
+  <Token Text=";" UId="1032" />
+  <NewLine UId="1033" />
+  <Token Text="END_REGION" UId="1034" />
+</StructuredText></NetworkSource>
+          <ProgrammingLanguage>SCL</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="5" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="6" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="7" CompositionName="Items">
+                <AttributeList>
+                  <Culture>fr-FR</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="8" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="9" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="A" CompositionName="Items">
+                <AttributeList>
+                  <Culture>fr-FR</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <MultilingualText ID="B" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="C" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="D" CompositionName="Items">
+            <AttributeList>
+              <Culture>fr-FR</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Blocks.FB>
+</Document>
