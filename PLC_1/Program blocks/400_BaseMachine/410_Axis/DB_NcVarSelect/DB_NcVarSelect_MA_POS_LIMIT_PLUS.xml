@@ -1,0 +1,403 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V20" />
+  <SW.Blocks.GlobalDB ID="0">
+    <AttributeList>
+      <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+  <Section Name="Static">
+    <Member Name="$MA_POS_LIMIT_PLUS_Axis01_X" Datatype="SINU_typeNcVarTokenLReal" Version="10.0">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+      <Sections>
+        <Section Name="None">
+          <Member Name="token" Datatype="SINU_typeNcVarToken" Version="10.0">
+            <Sections>
+              <Section Name="None">
+                <Member Name="syntaxId" Datatype="Byte">
+                  <StartValue>16#82</StartValue>
+                </Member>
+                <Member Name="areaAndUnit" Datatype="Byte">
+                  <StartValue>16#61</StartValue>
+                </Member>
+                <Member Name="column" Datatype="UInt">
+                  <StartValue>16#8D0E</StartValue>
+                </Member>
+                <Member Name="row" Datatype="UInt">
+                  <StartValue>16#1</StartValue>
+                </Member>
+                <Member Name="blockType" Datatype="Byte">
+                  <StartValue>16#1A</StartValue>
+                </Member>
+                <Member Name="rowCount" Datatype="USInt">
+                  <StartValue>16#1</StartValue>
+                </Member>
+                <Member Name="dataType" Datatype="Byte">
+                  <StartValue>16#F</StartValue>
+                </Member>
+                <Member Name="length" Datatype="USInt">
+                  <StartValue>16#8</StartValue>
+                </Member>
+              </Section>
+            </Sections>
+          </Member>
+        </Section>
+      </Sections>
+    </Member>
+    <Member Name="$MA_POS_LIMIT_PLUS_Axis02_Y" Datatype="SINU_typeNcVarTokenLReal" Version="10.0">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+      <Sections>
+        <Section Name="None">
+          <Member Name="token" Datatype="SINU_typeNcVarToken" Version="10.0">
+            <Sections>
+              <Section Name="None">
+                <Member Name="syntaxId" Datatype="Byte">
+                  <StartValue>16#82</StartValue>
+                </Member>
+                <Member Name="areaAndUnit" Datatype="Byte">
+                  <StartValue>16#62</StartValue>
+                </Member>
+                <Member Name="column" Datatype="UInt">
+                  <StartValue>16#8D0E</StartValue>
+                </Member>
+                <Member Name="row" Datatype="UInt">
+                  <StartValue>16#1</StartValue>
+                </Member>
+                <Member Name="blockType" Datatype="Byte">
+                  <StartValue>16#1A</StartValue>
+                </Member>
+                <Member Name="rowCount" Datatype="USInt">
+                  <StartValue>16#1</StartValue>
+                </Member>
+                <Member Name="dataType" Datatype="Byte">
+                  <StartValue>16#F</StartValue>
+                </Member>
+                <Member Name="length" Datatype="USInt">
+                  <StartValue>16#8</StartValue>
+                </Member>
+              </Section>
+            </Sections>
+          </Member>
+        </Section>
+      </Sections>
+    </Member>
+    <Member Name="$MA_POS_LIMIT_PLUS_Axis03_ZM" Datatype="SINU_typeNcVarTokenLReal" Version="10.0">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+      <Sections>
+        <Section Name="None">
+          <Member Name="token" Datatype="SINU_typeNcVarToken" Version="10.0">
+            <Sections>
+              <Section Name="None">
+                <Member Name="syntaxId" Datatype="Byte">
+                  <StartValue>16#82</StartValue>
+                </Member>
+                <Member Name="areaAndUnit" Datatype="Byte">
+                  <StartValue>16#63</StartValue>
+                </Member>
+                <Member Name="column" Datatype="UInt">
+                  <StartValue>16#8D0E</StartValue>
+                </Member>
+                <Member Name="row" Datatype="UInt">
+                  <StartValue>16#1</StartValue>
+                </Member>
+                <Member Name="blockType" Datatype="Byte">
+                  <StartValue>16#1A</StartValue>
+                </Member>
+                <Member Name="rowCount" Datatype="USInt">
+                  <StartValue>16#1</StartValue>
+                </Member>
+                <Member Name="dataType" Datatype="Byte">
+                  <StartValue>16#F</StartValue>
+                </Member>
+                <Member Name="length" Datatype="USInt">
+                  <StartValue>16#8</StartValue>
+                </Member>
+              </Section>
+            </Sections>
+          </Member>
+        </Section>
+      </Sections>
+    </Member>
+    <Member Name="$MA_POS_LIMIT_PLUS_Axis04_B" Datatype="SINU_typeNcVarTokenLReal" Version="10.0">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+      <Sections>
+        <Section Name="None">
+          <Member Name="token" Datatype="SINU_typeNcVarToken" Version="10.0">
+            <Sections>
+              <Section Name="None">
+                <Member Name="syntaxId" Datatype="Byte">
+                  <StartValue>16#82</StartValue>
+                </Member>
+                <Member Name="areaAndUnit" Datatype="Byte">
+                  <StartValue>16#64</StartValue>
+                </Member>
+                <Member Name="column" Datatype="UInt">
+                  <StartValue>16#8D0E</StartValue>
+                </Member>
+                <Member Name="row" Datatype="UInt">
+                  <StartValue>16#1</StartValue>
+                </Member>
+                <Member Name="blockType" Datatype="Byte">
+                  <StartValue>16#1A</StartValue>
+                </Member>
+                <Member Name="rowCount" Datatype="USInt">
+                  <StartValue>16#1</StartValue>
+                </Member>
+                <Member Name="dataType" Datatype="Byte">
+                  <StartValue>16#F</StartValue>
+                </Member>
+                <Member Name="length" Datatype="USInt">
+                  <StartValue>16#8</StartValue>
+                </Member>
+              </Section>
+            </Sections>
+          </Member>
+        </Section>
+      </Sections>
+    </Member>
+    <Member Name="$MA_POS_LIMIT_PLUS_Axis05_U1" Datatype="SINU_typeNcVarTokenLReal" Version="10.0">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+      <Sections>
+        <Section Name="None">
+          <Member Name="token" Datatype="SINU_typeNcVarToken" Version="10.0">
+            <Sections>
+              <Section Name="None">
+                <Member Name="syntaxId" Datatype="Byte">
+                  <StartValue>16#82</StartValue>
+                </Member>
+                <Member Name="areaAndUnit" Datatype="Byte">
+                  <StartValue>16#65</StartValue>
+                </Member>
+                <Member Name="column" Datatype="UInt">
+                  <StartValue>16#8D0E</StartValue>
+                </Member>
+                <Member Name="row" Datatype="UInt">
+                  <StartValue>16#1</StartValue>
+                </Member>
+                <Member Name="blockType" Datatype="Byte">
+                  <StartValue>16#1A</StartValue>
+                </Member>
+                <Member Name="rowCount" Datatype="USInt">
+                  <StartValue>16#1</StartValue>
+                </Member>
+                <Member Name="dataType" Datatype="Byte">
+                  <StartValue>16#F</StartValue>
+                </Member>
+                <Member Name="length" Datatype="USInt">
+                  <StartValue>16#8</StartValue>
+                </Member>
+              </Section>
+            </Sections>
+          </Member>
+        </Section>
+      </Sections>
+    </Member>
+    <Member Name="$MA_POS_LIMIT_PLUS_Axis06_U2" Datatype="SINU_typeNcVarTokenLReal" Version="10.0">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+      <Sections>
+        <Section Name="None">
+          <Member Name="token" Datatype="SINU_typeNcVarToken" Version="10.0">
+            <Sections>
+              <Section Name="None">
+                <Member Name="syntaxId" Datatype="Byte">
+                  <StartValue>16#82</StartValue>
+                </Member>
+                <Member Name="areaAndUnit" Datatype="Byte">
+                  <StartValue>16#66</StartValue>
+                </Member>
+                <Member Name="column" Datatype="UInt">
+                  <StartValue>16#8D0E</StartValue>
+                </Member>
+                <Member Name="row" Datatype="UInt">
+                  <StartValue>16#1</StartValue>
+                </Member>
+                <Member Name="blockType" Datatype="Byte">
+                  <StartValue>16#1A</StartValue>
+                </Member>
+                <Member Name="rowCount" Datatype="USInt">
+                  <StartValue>16#1</StartValue>
+                </Member>
+                <Member Name="dataType" Datatype="Byte">
+                  <StartValue>16#F</StartValue>
+                </Member>
+                <Member Name="length" Datatype="USInt">
+                  <StartValue>16#8</StartValue>
+                </Member>
+              </Section>
+            </Sections>
+          </Member>
+        </Section>
+      </Sections>
+    </Member>
+    <Member Name="$MA_POS_LIMIT_PLUS_Axis07_V" Datatype="SINU_typeNcVarTokenLReal" Version="10.0">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+      <Sections>
+        <Section Name="None">
+          <Member Name="token" Datatype="SINU_typeNcVarToken" Version="10.0">
+            <Sections>
+              <Section Name="None">
+                <Member Name="syntaxId" Datatype="Byte">
+                  <StartValue>16#82</StartValue>
+                </Member>
+                <Member Name="areaAndUnit" Datatype="Byte">
+                  <StartValue>16#67</StartValue>
+                </Member>
+                <Member Name="column" Datatype="UInt">
+                  <StartValue>16#8D0E</StartValue>
+                </Member>
+                <Member Name="row" Datatype="UInt">
+                  <StartValue>16#1</StartValue>
+                </Member>
+                <Member Name="blockType" Datatype="Byte">
+                  <StartValue>16#1A</StartValue>
+                </Member>
+                <Member Name="rowCount" Datatype="USInt">
+                  <StartValue>16#1</StartValue>
+                </Member>
+                <Member Name="dataType" Datatype="Byte">
+                  <StartValue>16#F</StartValue>
+                </Member>
+                <Member Name="length" Datatype="USInt">
+                  <StartValue>16#8</StartValue>
+                </Member>
+              </Section>
+            </Sections>
+          </Member>
+        </Section>
+      </Sections>
+    </Member>
+    <Member Name="$MA_POS_LIMIT_PLUS_Axis08_W" Datatype="SINU_typeNcVarTokenLReal" Version="10.0">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+      <Sections>
+        <Section Name="None">
+          <Member Name="token" Datatype="SINU_typeNcVarToken" Version="10.0">
+            <Sections>
+              <Section Name="None">
+                <Member Name="syntaxId" Datatype="Byte">
+                  <StartValue>16#82</StartValue>
+                </Member>
+                <Member Name="areaAndUnit" Datatype="Byte">
+                  <StartValue>16#68</StartValue>
+                </Member>
+                <Member Name="column" Datatype="UInt">
+                  <StartValue>16#8D0E</StartValue>
+                </Member>
+                <Member Name="row" Datatype="UInt">
+                  <StartValue>16#1</StartValue>
+                </Member>
+                <Member Name="blockType" Datatype="Byte">
+                  <StartValue>16#1A</StartValue>
+                </Member>
+                <Member Name="rowCount" Datatype="USInt">
+                  <StartValue>16#1</StartValue>
+                </Member>
+                <Member Name="dataType" Datatype="Byte">
+                  <StartValue>16#F</StartValue>
+                </Member>
+                <Member Name="length" Datatype="USInt">
+                  <StartValue>16#8</StartValue>
+                </Member>
+              </Section>
+            </Sections>
+          </Member>
+        </Section>
+      </Sections>
+    </Member>
+    <Member Name="$MA_POS_LIMIT_PLUS_Axis09_ZL" Datatype="SINU_typeNcVarTokenLReal" Version="10.0">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+      <Sections>
+        <Section Name="None">
+          <Member Name="token" Datatype="SINU_typeNcVarToken" Version="10.0">
+            <Sections>
+              <Section Name="None">
+                <Member Name="syntaxId" Datatype="Byte">
+                  <StartValue>16#82</StartValue>
+                </Member>
+                <Member Name="areaAndUnit" Datatype="Byte">
+                  <StartValue>16#69</StartValue>
+                </Member>
+                <Member Name="column" Datatype="UInt">
+                  <StartValue>16#8D0E</StartValue>
+                </Member>
+                <Member Name="row" Datatype="UInt">
+                  <StartValue>16#1</StartValue>
+                </Member>
+                <Member Name="blockType" Datatype="Byte">
+                  <StartValue>16#1A</StartValue>
+                </Member>
+                <Member Name="rowCount" Datatype="USInt">
+                  <StartValue>16#1</StartValue>
+                </Member>
+                <Member Name="dataType" Datatype="Byte">
+                  <StartValue>16#F</StartValue>
+                </Member>
+                <Member Name="length" Datatype="USInt">
+                  <StartValue>16#8</StartValue>
+                </Member>
+              </Section>
+            </Sections>
+          </Member>
+        </Section>
+      </Sections>
+    </Member>
+  </Section>
+</Sections></Interface>
+      <MemoryLayout>Optimized</MemoryLayout>
+      <MemoryReserve>100</MemoryReserve>
+      <Name>DB_NcVarSelect_MA_POS_LIMIT_PLUS</Name>
+      <Namespace />
+      <Number>68</Number>
+      <ProgrammingLanguage>DB</ProgrammingLanguage>
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="3" CompositionName="Items">
+            <AttributeList>
+              <Culture>fr-FR</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <MultilingualText ID="4" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="5" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="6" CompositionName="Items">
+            <AttributeList>
+              <Culture>fr-FR</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Blocks.GlobalDB>
+</Document>

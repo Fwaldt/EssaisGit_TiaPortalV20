@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V20" />
+  <SW.Blocks.GlobalDB ID="0">
+    <AttributeList>
+      <AutoNumber>false</AutoNumber>
+      <HeaderAuthor>SAN</HeaderAuthor>
+      <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+  <Section Name="Static">
+    <Member Name="ExtLoadUnload" Datatype="Struct" Remanence="Retain">
+      <Member Name="SeparatePos" Datatype="Bool" />
+      <Member Name="CommonPos" Datatype="Bool" />
+      <Member Name="Disabled" Datatype="Bool" />
+    </Member>
+    <Member Name="Blowing" Datatype="Struct" Remanence="Retain">
+      <Member Name="Inside" Datatype="Bool" />
+      <Member Name="NearSas" Datatype="Bool" />
+      <Member Name="Disabled" Datatype="Bool" />
+    </Member>
+    <Member Name="Washing" Datatype="Struct" Remanence="Retain">
+      <Member Name="Enabled" Datatype="Bool" />
+      <Member Name="Disabled" Datatype="Bool" />
+    </Member>
+    <Member Name="PartControl" Datatype="Struct" Remanence="Retain">
+      <Member Name="Individual" Datatype="Bool" />
+      <Member Name="Common" Datatype="Bool" />
+      <Member Name="Disabled" Datatype="Bool" />
+      <Member Name="AnalogMeasure" Datatype="Bool" />
+      <Member Name="DigitalMeasure" Datatype="Bool" />
+    </Member>
+    <Member Name="Stop_Restart" Datatype="Struct">
+      <Member Name="BasicVersion" Datatype="Bool" />
+    </Member>
+    <Member Name="IntLoadUnload" Datatype="Struct">
+      <Member Name="SeparatePos" Datatype="Bool" />
+      <Member Name="CommonPos" Datatype="Bool" />
+    </Member>
+    <Member Name="BwLoadUnload" Datatype="Struct">
+      <Member Name="SeparatePos" Datatype="Bool" />
+      <Member Name="CommonPos" Datatype="Bool" />
+    </Member>
+    <Member Name="BwControl" Datatype="Struct">
+      <Member Name="UndrilledDrilledCtrlSeparate" Datatype="Bool" />
+      <Member Name="UndrilledDrilledCtrlCommon" Datatype="Bool" />
+      <Member Name="Disabled" Datatype="Bool" />
+    </Member>
+    <Member Name="ActPartControlIn" Datatype="Struct">
+      <Member Name="Stop" Datatype="Bool">
+        <StartValue>TRUE</StartValue>
+      </Member>
+    </Member>
+    <Member Name="ActPartControlOut" Datatype="Struct">
+      <Member Name="Stop" Datatype="Bool">
+        <StartValue>TRUE</StartValue>
+      </Member>
+    </Member>
+    <Member Name="ActBwControlIn" Datatype="Struct">
+      <Member Name="Stop" Datatype="Bool">
+        <StartValue>TRUE</StartValue>
+      </Member>
+    </Member>
+    <Member Name="Fixture" Datatype="Struct">
+      <Member Name="UnloadingDisabled" Datatype="Bool" />
+      <Member Name="LoadingDisabled" Datatype="Bool" />
+      <Member Name="BlowingDisabled" Datatype="Bool" />
+      <Member Name="ReleaseDisabled" Datatype="Bool" />
+      <Member Name="V_InitDisabled" Datatype="Bool" />
+      <Member Name="W_InitDisabled" Datatype="Bool" />
+    </Member>
+  </Section>
+</Sections></Interface>
+      <IsRetainMemResEnabled>true</IsRetainMemResEnabled>
+      <MemoryLayout>Optimized</MemoryLayout>
+      <MemoryReserve>20</MemoryReserve>
+      <Name>DB_LoaderOptions</Name>
+      <Namespace />
+      <Number>1305</Number>
+      <ProgrammingLanguage>DB</ProgrammingLanguage>
+      <RetainMemoryReserve>20</RetainMemoryReserve>
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="3" CompositionName="Items">
+            <AttributeList>
+              <Culture>fr-FR</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <MultilingualText ID="4" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="5" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="6" CompositionName="Items">
+            <AttributeList>
+              <Culture>fr-FR</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Blocks.GlobalDB>
+</Document>

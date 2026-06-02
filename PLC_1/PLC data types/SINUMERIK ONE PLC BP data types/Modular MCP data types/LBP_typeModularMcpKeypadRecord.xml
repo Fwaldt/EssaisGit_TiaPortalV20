@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V20" />
+  <SW.Types.PlcStruct ID="0">
+    <AttributeList>
+      <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+  <Section Name="None">
+    <Member Name="recordVersion" Datatype="Byte">
+      <Comment>
+        <MultiLanguageText Lang="en-US">version 1.0</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">version 1.0</MultiLanguageText>
+      </Comment>
+      <StartValue>16#10</StartValue>
+    </Member>
+    <Member Name="keyActiveAttributesCount" Datatype="USInt">
+      <Comment>
+        <MultiLanguageText Lang="en-US">number of valid entries in keyActiveAttributes</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">nombre d'entrées valides dans keyActiveAttributes</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="keyInactiveAttributesCount" Datatype="USInt">
+      <Comment>
+        <MultiLanguageText Lang="en-US">number of valid entries in keyInactiveAttributes</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">nombre d'entrées valides dans keyInactiveAttributes</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="reserved" Datatype="Byte">
+      <Comment>
+        <MultiLanguageText Lang="en-US">unused variable</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">variable inutilisée</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="keyActiveAttributes" Datatype="Array[0..20] of &quot;LBP_typeModularMcpLedAttribute&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="en-US">color attributes for keys in state "active"</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">attributs de couleur pour les touches à l'état "actif"</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="keyInactiveAttributes" Datatype="Array[0..20] of &quot;LBP_typeModularMcpLedAttribute&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="en-US">color attributes for keys in state "inactive"</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">attributs de couleur pour les touches à l'état "inactif"</MultiLanguageText>
+      </Comment>
+    </Member>
+  </Section>
+</Sections></Interface>
+      <Name>LBP_typeModularMcpKeypadRecord</Name>
+      <Namespace />
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text>Image of modular MCP for key properties</Text>
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="3" CompositionName="Items">
+            <AttributeList>
+              <Culture>fr-FR</Culture>
+              <Text>Image des MCP modulaires pour propriétés des touches</Text>
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <MultilingualText ID="4" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="5" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text>Modular MCP image</Text>
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="6" CompositionName="Items">
+            <AttributeList>
+              <Culture>fr-FR</Culture>
+              <Text>Image MCP modulaire</Text>
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Types.PlcStruct>
+</Document>

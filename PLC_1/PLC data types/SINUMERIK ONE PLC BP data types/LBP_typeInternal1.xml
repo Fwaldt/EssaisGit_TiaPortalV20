@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V20" />
+  <SW.Types.PlcStruct ID="0">
+    <AttributeList>
+      <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+  <Section Name="None">
+    <Member Name="active" Datatype="Bool" />
+    <Member Name="mcpAddress" Datatype="USInt" />
+    <Member Name="modeDCK" Datatype="Bool" />
+    <Member Name="clientPort" Datatype="UInt" />
+    <Member Name="connectionId" Datatype="CONN_OUC" />
+    <Member Name="mcpClientReference" Datatype="Word" />
+    <Member Name="mcpInPointer" Datatype="Struct">
+      <Member Name="DbNumber" Datatype="Word" />
+      <Member Name="PointerAddress" Datatype="DWord" />
+    </Member>
+    <Member Name="mcpOutPointer" Datatype="Struct">
+      <Member Name="DbNumber" Datatype="Word" />
+      <Member Name="PointerAddress" Datatype="DWord" />
+    </Member>
+    <Member Name="mcpDefaultInLength" Datatype="UInt" />
+    <Member Name="mcpDefaultOutLength" Datatype="UInt" />
+    <Member Name="useIpAddress" Datatype="Bool" />
+    <Member Name="ipAddress" Datatype="Array[1..4] of USInt" />
+  </Section>
+</Sections></Interface>
+      <Name>LBP_typeInternal1</Name>
+      <Namespace />
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text>Data type only for internal use in the basic program</Text>
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="3" CompositionName="Items">
+            <AttributeList>
+              <Culture>fr-FR</Culture>
+              <Text>Type de données réservé à l'utilisation interne dans le programme de base</Text>
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <MultilingualText ID="4" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="5" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text>Internal data type for basic program</Text>
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="6" CompositionName="Items">
+            <AttributeList>
+              <Culture>fr-FR</Culture>
+              <Text>Type de données interne pour programme de base</Text>
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Types.PlcStruct>
+</Document>

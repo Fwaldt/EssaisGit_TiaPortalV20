@@ -1,0 +1,1844 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V20" />
+  <SW.Blocks.GlobalDB ID="0">
+    <AttributeList>
+      <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+  <Section Name="Static">
+    <Member Name="SELECT" Datatype="Struct">
+      <Member Name="PIName" Datatype="String[10]">
+        <StartValue>'_N_SELECT'</StartValue>
+      </Member>
+      <Member Name="p01" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Area / Unit</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Zone/unité</MultiLanguageText>
+        </Comment>
+        <StartValue>BYTE#16#03</StartValue>
+      </Member>
+      <Member Name="p02" Datatype="Char">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Area identifier</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Identificateur de zone</MultiLanguageText>
+        </Comment>
+        <StartValue>'2'</StartValue>
+      </Member>
+      <Member Name="p11" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Path name</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Nom de chemin</MultiLanguageText>
+        </Comment>
+        <StartValue>BYTE#16#FD</StartValue>
+      </Member>
+      <Member Name="p12" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Add string with arbitrary number of odd numbers</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Ajouter une chaîne contenant un nombre quelconque de nombres impairs</MultiLanguageText>
+        </Comment>
+        <StartValue>BYTE#16#13</StartValue>
+      </Member>
+      <Member Name="p21" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Program name</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Nom de programme</MultiLanguageText>
+        </Comment>
+        <StartValue>BYTE#16#FE</StartValue>
+      </Member>
+      <Member Name="p22" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Add string with arbitrary number of odd numbers</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Ajouter une chaîne contenant un nombre quelconque de nombres impairs</MultiLanguageText>
+        </Comment>
+        <StartValue>BYTE#16#13</StartValue>
+      </Member>
+    </Member>
+    <Member Name="ASUP" Datatype="Struct">
+      <Member Name="PIName" Datatype="String[10]">
+        <StartValue>'_N_ASUP__'</StartValue>
+      </Member>
+      <Member Name="p01" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Area / Unit</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Zone/unité</MultiLanguageText>
+        </Comment>
+        <StartValue>BYTE#16#03</StartValue>
+      </Member>
+      <Member Name="p02" Datatype="Char">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Area identifier</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Identificateur de zone</MultiLanguageText>
+        </Comment>
+        <StartValue>'2'</StartValue>
+      </Member>
+      <Member Name="p11" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Interrupt number</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Numéro d'interruption</MultiLanguageText>
+        </Comment>
+        <StartValue>BYTE#16#03</StartValue>
+      </Member>
+      <Member Name="p12" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Int from WORD specification</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">INT de spécification WORD</MultiLanguageText>
+        </Comment>
+        <StartValue>BYTE#16#05</StartValue>
+      </Member>
+      <Member Name="p21" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Priority</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Priorité</MultiLanguageText>
+        </Comment>
+        <StartValue>BYTE#16#03</StartValue>
+      </Member>
+      <Member Name="p22" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Int from WORD specification</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">INT de spécification WORD</MultiLanguageText>
+        </Comment>
+        <StartValue>BYTE#16#05</StartValue>
+      </Member>
+      <Member Name="p31" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Liftfast</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Liftfast</MultiLanguageText>
+        </Comment>
+        <StartValue>BYTE#16#01</StartValue>
+      </Member>
+      <Member Name="p32" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Int from WORD specification</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">INT de spécification WORD</MultiLanguageText>
+        </Comment>
+        <StartValue>BYTE#16#05</StartValue>
+      </Member>
+      <Member Name="p41" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Blocksync</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Blocksync</MultiLanguageText>
+        </Comment>
+        <StartValue>BYTE#16#01</StartValue>
+      </Member>
+      <Member Name="p42" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Int from WORD specification</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">INT de spécification WORD</MultiLanguageText>
+        </Comment>
+        <StartValue>BYTE#16#05</StartValue>
+      </Member>
+      <Member Name="p51" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Path name</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Nom de chemin</MultiLanguageText>
+        </Comment>
+        <StartValue>BYTE#16#FD</StartValue>
+      </Member>
+      <Member Name="p52" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Add string with arbitrary number of odd numbers</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Ajouter une chaîne contenant un nombre quelconque de nombres impairs</MultiLanguageText>
+        </Comment>
+        <StartValue>BYTE#16#13</StartValue>
+      </Member>
+      <Member Name="p61" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Program name</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Nom de programme</MultiLanguageText>
+        </Comment>
+        <StartValue>BYTE#16#FE</StartValue>
+      </Member>
+      <Member Name="p62" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Add string with arbitrary number of odd numbers</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Ajouter une chaîne contenant un nombre quelconque de nombres impairs</MultiLanguageText>
+        </Comment>
+        <StartValue>BYTE#16#13</StartValue>
+      </Member>
+    </Member>
+    <Member Name="FINDBL" Datatype="Struct">
+      <Member Name="PIName" Datatype="String[10]">
+        <StartValue>'_N_FINDBL'</StartValue>
+      </Member>
+      <Member Name="p01" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Area / Unit</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Zone/unité</MultiLanguageText>
+        </Comment>
+        <StartValue>BYTE#16#03</StartValue>
+      </Member>
+      <Member Name="p02" Datatype="Char">
+        <StartValue>'2'</StartValue>
+      </Member>
+      <Member Name="p11" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Preprocessing mode</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Mode de prétraitement</MultiLanguageText>
+        </Comment>
+        <StartValue>BYTE#16#01</StartValue>
+      </Member>
+      <Member Name="p12" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Word from WORD specification</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Mot depuis spécification WORD</MultiLanguageText>
+        </Comment>
+        <StartValue>BYTE#16#04</StartValue>
+      </Member>
+    </Member>
+    <Member Name="SETUFR" Datatype="Struct">
+      <Member Name="PIName" Datatype="String[10]">
+        <StartValue>'_N_SETUFR'</StartValue>
+      </Member>
+      <Member Name="p01" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Area / Unit</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Zone/unité</MultiLanguageText>
+        </Comment>
+        <StartValue>BYTE#16#03</StartValue>
+      </Member>
+      <Member Name="p02" Datatype="Char">
+        <StartValue>'2'</StartValue>
+      </Member>
+    </Member>
+    <Member Name="CANCEL" Datatype="Struct">
+      <Member Name="PIName" Datatype="String[10]">
+        <StartValue>'_N_CANCEL'</StartValue>
+      </Member>
+      <Member Name="p01" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Area / Unit</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Zone/unité</MultiLanguageText>
+        </Comment>
+        <StartValue>BYTE#16#03</StartValue>
+      </Member>
+      <Member Name="p02" Datatype="Char">
+        <StartValue>'0'</StartValue>
+      </Member>
+    </Member>
+    <Member Name="DELETO" Datatype="Struct">
+      <Member Name="PIName" Datatype="String[10]">
+        <StartValue>'_N_DELETO'</StartValue>
+      </Member>
+      <Member Name="p01" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Area / Unit</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Zone/unité</MultiLanguageText>
+        </Comment>
+        <StartValue>BYTE#16#03</StartValue>
+      </Member>
+      <Member Name="p02" Datatype="Char">
+        <StartValue>'4'</StartValue>
+      </Member>
+      <Member Name="p11" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">T number</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Numéro d'outil</MultiLanguageText>
+        </Comment>
+        <StartValue>BYTE#16#05</StartValue>
+      </Member>
+      <Member Name="p12" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Int from WORD specification</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">INT de spécification WORD</MultiLanguageText>
+        </Comment>
+        <StartValue>BYTE#16#05</StartValue>
+      </Member>
+    </Member>
+    <Member Name="CREATO" Datatype="Struct">
+      <Member Name="PIName" Datatype="String[10]">
+        <StartValue>'_N_CREATO'</StartValue>
+      </Member>
+      <Member Name="p01" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Area / Unit</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Zone/unité</MultiLanguageText>
+        </Comment>
+        <StartValue>BYTE#16#03</StartValue>
+      </Member>
+      <Member Name="p02" Datatype="Char">
+        <StartValue>'4'</StartValue>
+      </Member>
+      <Member Name="p11" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">T number</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Numéro d'outil</MultiLanguageText>
+        </Comment>
+        <StartValue>BYTE#16#05</StartValue>
+      </Member>
+      <Member Name="p12" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Int from WORD specification</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">INT de spécification WORD</MultiLanguageText>
+        </Comment>
+        <StartValue>BYTE#16#05</StartValue>
+      </Member>
+    </Member>
+    <Member Name="CREACE" Datatype="Struct">
+      <Member Name="PIName" Datatype="String[10]">
+        <StartValue>'_N_CREACE'</StartValue>
+      </Member>
+      <Member Name="p01" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Area / Unit</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Zone/unité</MultiLanguageText>
+        </Comment>
+        <StartValue>BYTE#16#03</StartValue>
+      </Member>
+      <Member Name="p02" Datatype="Char">
+        <StartValue>'4'</StartValue>
+      </Member>
+      <Member Name="p11" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">T number</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Numéro d'outil</MultiLanguageText>
+        </Comment>
+        <StartValue>BYTE#16#05</StartValue>
+      </Member>
+      <Member Name="p12" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Int from WORD specification</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">INT de spécification WORD</MultiLanguageText>
+        </Comment>
+        <StartValue>BYTE#16#05</StartValue>
+      </Member>
+    </Member>
+    <Member Name="TMCRTO" Datatype="Struct">
+      <Member Name="PIName" Datatype="String[10]">
+        <StartValue>'_N_TMCRTO'</StartValue>
+      </Member>
+      <Member Name="p01" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Area / Unit</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Zone/unité</MultiLanguageText>
+        </Comment>
+        <StartValue>BYTE#16#03</StartValue>
+      </Member>
+      <Member Name="p02" Datatype="Char">
+        <StartValue>'4'</StartValue>
+      </Member>
+      <Member Name="p11" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Tool identifier, add blank</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Identifiant d'outil, ajouter espace</MultiLanguageText>
+        </Comment>
+        <StartValue>BYTE#16#20</StartValue>
+      </Member>
+      <Member Name="p12" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">String identifier!</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Identifiant de chaîne.</MultiLanguageText>
+        </Comment>
+        <StartValue>BYTE#16#13</StartValue>
+      </Member>
+      <Member Name="p21" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">T number</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Numéro d'outil</MultiLanguageText>
+        </Comment>
+        <StartValue>BYTE#16#05</StartValue>
+      </Member>
+      <Member Name="p22" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Int from WORD specification</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">INT de spécification WORD</MultiLanguageText>
+        </Comment>
+        <StartValue>BYTE#16#05</StartValue>
+      </Member>
+      <Member Name="p31" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Duplo number</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Numéro d'outil frère</MultiLanguageText>
+        </Comment>
+        <StartValue>BYTE#16#05</StartValue>
+      </Member>
+      <Member Name="p32" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Int from WORD specification</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">INT de spécification WORD</MultiLanguageText>
+        </Comment>
+        <StartValue>BYTE#16#05</StartValue>
+      </Member>
+    </Member>
+    <Member Name="TMFDPL" Datatype="Struct">
+      <Member Name="PIName" Datatype="String[10]">
+        <StartValue>'_N_TMFDPL'</StartValue>
+      </Member>
+      <Member Name="p01" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Area / Unit</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Zone/unité</MultiLanguageText>
+        </Comment>
+        <StartValue>BYTE#16#03</StartValue>
+      </Member>
+      <Member Name="p02" Datatype="Char">
+        <StartValue>'4'</StartValue>
+      </Member>
+      <Member Name="p11" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">T number</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Numéro d'outil</MultiLanguageText>
+        </Comment>
+        <StartValue>BYTE#16#05</StartValue>
+      </Member>
+      <Member Name="p12" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Int from WORD specification</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">INT de spécification WORD</MultiLanguageText>
+        </Comment>
+        <StartValue>BYTE#16#05</StartValue>
+      </Member>
+      <Member Name="p21" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Location number (target)</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Numéro d'emplacement (cible)</MultiLanguageText>
+        </Comment>
+        <StartValue>BYTE#16#05</StartValue>
+      </Member>
+      <Member Name="p22" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Int from WORD specification</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">INT de spécification WORD</MultiLanguageText>
+        </Comment>
+        <StartValue>BYTE#16#05</StartValue>
+      </Member>
+      <Member Name="p31" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Magazine number (target)</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Numéro de magasin (cible)</MultiLanguageText>
+        </Comment>
+        <StartValue>BYTE#16#05</StartValue>
+      </Member>
+      <Member Name="p32" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Int from WORD specification</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">INT de spécification WORD</MultiLanguageText>
+        </Comment>
+        <StartValue>BYTE#16#05</StartValue>
+      </Member>
+      <Member Name="p41" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Location number (reference)</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Numéro d'emplacement (référence)</MultiLanguageText>
+        </Comment>
+        <StartValue>BYTE#16#05</StartValue>
+      </Member>
+      <Member Name="p42" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Int from WORD specification</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">INT de spécification WORD</MultiLanguageText>
+        </Comment>
+        <StartValue>BYTE#16#05</StartValue>
+      </Member>
+      <Member Name="p51" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Magazine number (reference)</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">ID Numéro de magasin (référence)</MultiLanguageText>
+        </Comment>
+        <StartValue>BYTE#16#05</StartValue>
+      </Member>
+      <Member Name="p52" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Int from WORD specification</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">INT de spécification WORD</MultiLanguageText>
+        </Comment>
+        <StartValue>BYTE#16#05</StartValue>
+      </Member>
+    </Member>
+    <Member Name="TMMVTL" Datatype="Struct">
+      <Member Name="PIName" Datatype="String[10]">
+        <StartValue>'_N_TMMVTL'</StartValue>
+      </Member>
+      <Member Name="p01" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Area / Unit</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Zone/unité</MultiLanguageText>
+        </Comment>
+        <StartValue>BYTE#16#03</StartValue>
+      </Member>
+      <Member Name="p02" Datatype="Char">
+        <StartValue>'4'</StartValue>
+      </Member>
+      <Member Name="p11" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">T number</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Numéro d'outil</MultiLanguageText>
+        </Comment>
+        <StartValue>BYTE#16#05</StartValue>
+      </Member>
+      <Member Name="p12" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Int from WORD specification</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">INT de spécification WORD</MultiLanguageText>
+        </Comment>
+        <StartValue>BYTE#16#05</StartValue>
+      </Member>
+      <Member Name="p21" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Location number (source)</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Numéro d'emplacement (source)</MultiLanguageText>
+        </Comment>
+        <StartValue>BYTE#16#05</StartValue>
+      </Member>
+      <Member Name="p22" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Int from WORD specification</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">INT de spécification WORD</MultiLanguageText>
+        </Comment>
+        <StartValue>BYTE#16#05</StartValue>
+      </Member>
+      <Member Name="p31" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Magazine number (source)</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Numéro de magasin (source)</MultiLanguageText>
+        </Comment>
+        <StartValue>BYTE#16#05</StartValue>
+      </Member>
+      <Member Name="p32" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Int from WORD specification</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">INT de spécification WORD</MultiLanguageText>
+        </Comment>
+        <StartValue>BYTE#16#05</StartValue>
+      </Member>
+      <Member Name="p41" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Location number (target)</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Numéro d'emplacement (cible)</MultiLanguageText>
+        </Comment>
+        <StartValue>BYTE#16#05</StartValue>
+      </Member>
+      <Member Name="p42" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Int from WORD specification</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">INT de spécification WORD</MultiLanguageText>
+        </Comment>
+        <StartValue>BYTE#16#05</StartValue>
+      </Member>
+      <Member Name="p51" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Magazine number (target)</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Numéro de magasin (cible)</MultiLanguageText>
+        </Comment>
+        <StartValue>BYTE#16#05</StartValue>
+      </Member>
+      <Member Name="p52" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Int from WORD specification</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">INT de spécification WORD</MultiLanguageText>
+        </Comment>
+        <StartValue>BYTE#16#05</StartValue>
+      </Member>
+    </Member>
+    <Member Name="TMPCIT" Datatype="Struct">
+      <Member Name="PIName" Datatype="String[10]">
+        <StartValue>'_N_TMPCIT'</StartValue>
+      </Member>
+      <Member Name="p01" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Area / Unit</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Zone/unité</MultiLanguageText>
+        </Comment>
+        <StartValue>BYTE#16#03</StartValue>
+      </Member>
+      <Member Name="p02" Datatype="Char">
+        <StartValue>'4'</StartValue>
+      </Member>
+      <Member Name="p11" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Spindle number</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Numéro de broche</MultiLanguageText>
+        </Comment>
+        <StartValue>BYTE#16#03</StartValue>
+      </Member>
+      <Member Name="p12" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Int from WORD specification</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">INT de spécification WORD</MultiLanguageText>
+        </Comment>
+        <StartValue>BYTE#16#05</StartValue>
+      </Member>
+      <Member Name="p21" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Increment value</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Incrément valeur</MultiLanguageText>
+        </Comment>
+        <StartValue>BYTE#16#05</StartValue>
+      </Member>
+      <Member Name="p22" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Int from WORD specification</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">INT de spécification WORD</MultiLanguageText>
+        </Comment>
+        <StartValue>BYTE#16#05</StartValue>
+      </Member>
+    </Member>
+    <Member Name="TMPOSM" Datatype="Struct">
+      <Member Name="PIName" Datatype="String[10]">
+        <StartValue>'_N_TMPOSM'</StartValue>
+      </Member>
+      <Member Name="p01" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Area / Unit</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Zone/unité</MultiLanguageText>
+        </Comment>
+        <StartValue>BYTE#16#03</StartValue>
+      </Member>
+      <Member Name="p02" Datatype="Char">
+        <StartValue>'4'</StartValue>
+      </Member>
+      <Member Name="p11" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">T number</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Numéro d'outil</MultiLanguageText>
+        </Comment>
+        <StartValue>BYTE#16#05</StartValue>
+      </Member>
+      <Member Name="p12" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Int from WORD specification</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">INT de spécification WORD</MultiLanguageText>
+        </Comment>
+        <StartValue>BYTE#16#05</StartValue>
+      </Member>
+      <Member Name="p21" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Tool identifier, add blank</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Identificateur d'outil, ajouter espace</MultiLanguageText>
+        </Comment>
+        <StartValue>BYTE#16#20</StartValue>
+      </Member>
+      <Member Name="p22" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">String identifier!</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Identifiant de chaîne.</MultiLanguageText>
+        </Comment>
+        <StartValue>BYTE#16#13</StartValue>
+      </Member>
+      <Member Name="p31" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Duplo number</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Numéro d'outil frère</MultiLanguageText>
+        </Comment>
+        <StartValue>BYTE#16#05</StartValue>
+      </Member>
+      <Member Name="p32" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Int from WORD specification</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">INT de spécification WORD</MultiLanguageText>
+        </Comment>
+        <StartValue>BYTE#16#05</StartValue>
+      </Member>
+      <Member Name="p41" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Location number (source)</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Numéro d'emplacement (source)</MultiLanguageText>
+        </Comment>
+        <StartValue>BYTE#16#05</StartValue>
+      </Member>
+      <Member Name="p42" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Int from WORD specification</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">INT de spécification WORD</MultiLanguageText>
+        </Comment>
+        <StartValue>BYTE#16#05</StartValue>
+      </Member>
+      <Member Name="p51" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Magazine number (source)</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Numéro de magasin (source)</MultiLanguageText>
+        </Comment>
+        <StartValue>BYTE#16#05</StartValue>
+      </Member>
+      <Member Name="p52" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Int from WORD specification</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">INT de spécification WORD</MultiLanguageText>
+        </Comment>
+        <StartValue>BYTE#16#05</StartValue>
+      </Member>
+      <Member Name="p61" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Location number (target)</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Numéro d'emplacement (cible)</MultiLanguageText>
+        </Comment>
+        <StartValue>BYTE#16#05</StartValue>
+      </Member>
+      <Member Name="p62" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Int from WORD specification</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">INT de spécification WORD</MultiLanguageText>
+        </Comment>
+        <StartValue>BYTE#16#05</StartValue>
+      </Member>
+      <Member Name="p71" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Magazine number (target)</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Numéro de magasin (cible)</MultiLanguageText>
+        </Comment>
+        <StartValue>BYTE#16#05</StartValue>
+      </Member>
+      <Member Name="p72" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Int from WORD specification</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">INT de spécification WORD</MultiLanguageText>
+        </Comment>
+        <StartValue>BYTE#16#05</StartValue>
+      </Member>
+    </Member>
+    <Member Name="DIGION" Datatype="Struct">
+      <Member Name="PIName" Datatype="String[10]">
+        <StartValue>'_N_DIGION'</StartValue>
+      </Member>
+      <Member Name="p01" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Area / Unit</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Zone/unité</MultiLanguageText>
+        </Comment>
+        <StartValue>BYTE#16#03</StartValue>
+      </Member>
+      <Member Name="p02" Datatype="Char">
+        <StartValue>'2'</StartValue>
+      </Member>
+    </Member>
+    <Member Name="DIGIOF" Datatype="Struct">
+      <Member Name="PIName" Datatype="String[10]">
+        <StartValue>'_N_DIGIOF'</StartValue>
+      </Member>
+      <Member Name="p01" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Area / Unit</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Zone/unité</MultiLanguageText>
+        </Comment>
+        <StartValue>BYTE#16#03</StartValue>
+      </Member>
+      <Member Name="p02" Datatype="Char">
+        <StartValue>'2'</StartValue>
+      </Member>
+    </Member>
+    <Member Name="CONFIG" Datatype="Struct">
+      <Member Name="PIName" Datatype="String[10]">
+        <StartValue>'_N_CONFIG'</StartValue>
+      </Member>
+      <Member Name="p01" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Area / Unit</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Zone/unité</MultiLanguageText>
+        </Comment>
+        <StartValue>BYTE#16#03</StartValue>
+      </Member>
+      <Member Name="p02" Datatype="Char">
+        <StartValue>'0'</StartValue>
+      </Member>
+      <Member Name="p11" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Classification</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Classification</MultiLanguageText>
+        </Comment>
+        <StartValue>BYTE#16#02</StartValue>
+      </Member>
+      <Member Name="p12" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Int from WORD specification</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">INT de spécification WORD</MultiLanguageText>
+        </Comment>
+        <StartValue>BYTE#16#04</StartValue>
+      </Member>
+    </Member>
+    <Member Name="LOGIN" Datatype="Struct">
+      <Member Name="PIName" Datatype="String[10]">
+        <StartValue>'_N_LOGIN_'</StartValue>
+      </Member>
+      <Member Name="p01" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Area / Unit</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Zone/unité</MultiLanguageText>
+        </Comment>
+        <StartValue>BYTE#16#03</StartValue>
+      </Member>
+      <Member Name="p02" Datatype="Char">
+        <StartValue>'0'</StartValue>
+      </Member>
+      <Member Name="p11" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Password (8 to 32 characters)</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Mot de passe (8 à 32 caractères)</MultiLanguageText>
+        </Comment>
+        <StartValue>BYTE#16#20</StartValue>
+      </Member>
+      <Member Name="p12" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">String identifier!</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Identifiant de chaîne.</MultiLanguageText>
+        </Comment>
+        <StartValue>BYTE#16#13</StartValue>
+      </Member>
+    </Member>
+    <Member Name="LOGOUT" Datatype="Struct">
+      <Member Name="PIName" Datatype="String[10]">
+        <StartValue>'_N_LOGOUT'</StartValue>
+      </Member>
+      <Member Name="p01" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Area / Unit</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Zone/unité</MultiLanguageText>
+        </Comment>
+        <StartValue>BYTE#16#03</StartValue>
+      </Member>
+      <Member Name="p02" Datatype="Char">
+        <StartValue>'0'</StartValue>
+      </Member>
+    </Member>
+    <Member Name="MMCSEM" Datatype="Struct">
+      <Member Name="PIName" Datatype="String[10]">
+        <StartValue>'_N_MMCSEM'</StartValue>
+      </Member>
+      <Member Name="p01" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Area / Unit</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Zone/unité</MultiLanguageText>
+        </Comment>
+        <StartValue>BYTE#16#03</StartValue>
+      </Member>
+      <Member Name="p02" Datatype="Char">
+        <StartValue>'2'</StartValue>
+      </Member>
+      <Member Name="p11" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Function number</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Numéro de fonction</MultiLanguageText>
+        </Comment>
+        <StartValue>BYTE#16#03</StartValue>
+      </Member>
+      <Member Name="p12" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Int from WORD specification</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">INT de spécification WORD</MultiLanguageText>
+        </Comment>
+        <StartValue>BYTE#16#05</StartValue>
+      </Member>
+      <Member Name="p21" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Semaphore value</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Valeur sémaphore</MultiLanguageText>
+        </Comment>
+        <StartValue>BYTE#16#01</StartValue>
+      </Member>
+      <Member Name="p22" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Int from WORD specification</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">INT de spécification WORD</MultiLanguageText>
+        </Comment>
+        <StartValue>BYTE#16#05</StartValue>
+      </Member>
+    </Member>
+    <Member Name="DELECE" Datatype="Struct">
+      <Member Name="PIName" Datatype="String[10]">
+        <StartValue>'_N_DELECE'</StartValue>
+      </Member>
+      <Member Name="p01" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Area / Unit</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Zone/unité</MultiLanguageText>
+        </Comment>
+        <StartValue>BYTE#16#03</StartValue>
+      </Member>
+      <Member Name="p02" Datatype="Char">
+        <StartValue>'4'</StartValue>
+      </Member>
+      <Member Name="p11" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">T number</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Numéro d'outil</MultiLanguageText>
+        </Comment>
+        <StartValue>BYTE#16#05</StartValue>
+      </Member>
+      <Member Name="p12" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Int from WORD specification</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">INT de spécification WORD</MultiLanguageText>
+        </Comment>
+        <StartValue>BYTE#16#05</StartValue>
+      </Member>
+      <Member Name="p21" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">D number</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Numéro D</MultiLanguageText>
+        </Comment>
+        <StartValue>BYTE#16#05</StartValue>
+      </Member>
+      <Member Name="p22" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Int from WORD specification</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">INT de spécification WORD</MultiLanguageText>
+        </Comment>
+        <StartValue>BYTE#16#05</StartValue>
+      </Member>
+    </Member>
+    <Member Name="CRCEDN" Datatype="Struct">
+      <Member Name="PIName" Datatype="String[10]">
+        <StartValue>'_N_CRCEDN'</StartValue>
+      </Member>
+      <Member Name="p01" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Area / Unit</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Zone/unité</MultiLanguageText>
+        </Comment>
+        <StartValue>BYTE#16#03</StartValue>
+      </Member>
+      <Member Name="p02" Datatype="Char">
+        <StartValue>'4'</StartValue>
+      </Member>
+      <Member Name="p11" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">T number</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Numéro d'outil</MultiLanguageText>
+        </Comment>
+        <StartValue>BYTE#16#05</StartValue>
+      </Member>
+      <Member Name="p12" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Int from WORD specification</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">INT de spécification WORD</MultiLanguageText>
+        </Comment>
+        <StartValue>BYTE#16#05</StartValue>
+      </Member>
+      <Member Name="p21" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">D number</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Numéro D</MultiLanguageText>
+        </Comment>
+        <StartValue>BYTE#16#05</StartValue>
+      </Member>
+      <Member Name="p22" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Int from WORD specification</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">INT de spécification WORD</MultiLanguageText>
+        </Comment>
+        <StartValue>BYTE#16#05</StartValue>
+      </Member>
+    </Member>
+    <Member Name="TSEARC" Datatype="Struct">
+      <Member Name="PIName" Datatype="String[10]">
+        <StartValue>'_N_TSEARC'</StartValue>
+      </Member>
+      <Member Name="p01" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Area / Unit</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Zone/unité</MultiLanguageText>
+        </Comment>
+        <StartValue>BYTE#16#03</StartValue>
+      </Member>
+      <Member Name="p02" Datatype="Char">
+        <StartValue>'4'</StartValue>
+      </Member>
+      <Member Name="p11" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">from: Magazine number</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">de : numéro de magasin</MultiLanguageText>
+        </Comment>
+        <StartValue>BYTE#16#05</StartValue>
+      </Member>
+      <Member Name="p12" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Int from WORD specification</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">INT de spécification WORD</MultiLanguageText>
+        </Comment>
+        <StartValue>BYTE#16#05</StartValue>
+      </Member>
+      <Member Name="p21" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">from: Location number</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">de : numéro d'emplacement</MultiLanguageText>
+        </Comment>
+        <StartValue>BYTE#16#05</StartValue>
+      </Member>
+      <Member Name="p22" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Int from WORD specification</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">INT de spécification WORD</MultiLanguageText>
+        </Comment>
+        <StartValue>BYTE#16#05</StartValue>
+      </Member>
+      <Member Name="p31" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">up to: Magazine number</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">à : numéro de magasin</MultiLanguageText>
+        </Comment>
+        <StartValue>BYTE#16#05</StartValue>
+      </Member>
+      <Member Name="p32" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Int from WORD specification</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">INT de spécification WORD</MultiLanguageText>
+        </Comment>
+        <StartValue>BYTE#16#05</StartValue>
+      </Member>
+      <Member Name="p41" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">up to: Location number</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">à : numéro d'emplacement</MultiLanguageText>
+        </Comment>
+        <StartValue>BYTE#16#05</StartValue>
+      </Member>
+      <Member Name="p42" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Int from WORD specification</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">INT de spécification WORD</MultiLanguageText>
+        </Comment>
+        <StartValue>BYTE#16#05</StartValue>
+      </Member>
+      <Member Name="p51" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Number of reference magazine</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Numéro du magasin de référence</MultiLanguageText>
+        </Comment>
+        <StartValue>BYTE#16#05</StartValue>
+      </Member>
+      <Member Name="p52" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Int from WORD specification</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">INT de spécification WORD</MultiLanguageText>
+        </Comment>
+        <StartValue>BYTE#16#05</StartValue>
+      </Member>
+      <Member Name="p61" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Number of reference location</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Numéro de l'emplacement de référence</MultiLanguageText>
+        </Comment>
+        <StartValue>BYTE#16#05</StartValue>
+      </Member>
+      <Member Name="p62" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Int from WORD specification</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">INT de spécification WORD</MultiLanguageText>
+        </Comment>
+        <StartValue>BYTE#16#05</StartValue>
+      </Member>
+      <Member Name="p71" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Search direction</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Sens de recherche</MultiLanguageText>
+        </Comment>
+        <StartValue>BYTE#16#01</StartValue>
+      </Member>
+      <Member Name="p72" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Int from WORD specification</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">INT de spécification WORD</MultiLanguageText>
+        </Comment>
+        <StartValue>BYTE#16#05</StartValue>
+      </Member>
+      <Member Name="p81" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Tool properties</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Caractéristiques de l'outil</MultiLanguageText>
+        </Comment>
+        <StartValue>BYTE#16#01</StartValue>
+      </Member>
+      <Member Name="p82" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Int from WORD specification</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">INT de spécification WORD</MultiLanguageText>
+        </Comment>
+        <StartValue>BYTE#16#05</StartValue>
+      </Member>
+    </Member>
+    <Member Name="TMFPBP" Datatype="Struct">
+      <Member Name="PIName" Datatype="String[10]">
+        <StartValue>'_N_TMFPBP'</StartValue>
+      </Member>
+      <Member Name="p01" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Area / Unit</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Zone/unité</MultiLanguageText>
+        </Comment>
+        <StartValue>BYTE#16#03</StartValue>
+      </Member>
+      <Member Name="p02" Datatype="Char">
+        <StartValue>'4'</StartValue>
+      </Member>
+      <Member Name="p11" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">from: Magazine number</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">de : numéro de magasin</MultiLanguageText>
+        </Comment>
+        <StartValue>BYTE#16#05</StartValue>
+      </Member>
+      <Member Name="p12" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Int from WORD specification</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">INT de spécification WORD</MultiLanguageText>
+        </Comment>
+        <StartValue>BYTE#16#05</StartValue>
+      </Member>
+      <Member Name="p21" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">from: Location number</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">de : numéro d'emplacement</MultiLanguageText>
+        </Comment>
+        <StartValue>BYTE#16#05</StartValue>
+      </Member>
+      <Member Name="p22" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Int from WORD specification</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">INT de spécification WORD</MultiLanguageText>
+        </Comment>
+        <StartValue>BYTE#16#05</StartValue>
+      </Member>
+      <Member Name="p31" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">up to: Magazine number</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">à : numéro de magasin</MultiLanguageText>
+        </Comment>
+        <StartValue>BYTE#16#05</StartValue>
+      </Member>
+      <Member Name="p32" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Int from WORD specification</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">INT de spécification WORD</MultiLanguageText>
+        </Comment>
+        <StartValue>BYTE#16#05</StartValue>
+      </Member>
+      <Member Name="p41" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">up to: Location number</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">à : numéro d'emplacement</MultiLanguageText>
+        </Comment>
+        <StartValue>BYTE#16#05</StartValue>
+      </Member>
+      <Member Name="p42" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Int from WORD specification</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">INT de spécification WORD</MultiLanguageText>
+        </Comment>
+        <StartValue>BYTE#16#05</StartValue>
+      </Member>
+      <Member Name="p51" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Number of reference magazine</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Numéro du magasin de référence</MultiLanguageText>
+        </Comment>
+        <StartValue>BYTE#16#05</StartValue>
+      </Member>
+      <Member Name="p52" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Int from WORD specification</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">INT de spécification WORD</MultiLanguageText>
+        </Comment>
+        <StartValue>BYTE#16#05</StartValue>
+      </Member>
+      <Member Name="p61" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Number of reference location</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Numéro de l'emplacement de référence</MultiLanguageText>
+        </Comment>
+        <StartValue>BYTE#16#05</StartValue>
+      </Member>
+      <Member Name="p62" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Int from WORD specification</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">INT de spécification WORD</MultiLanguageText>
+        </Comment>
+        <StartValue>BYTE#16#05</StartValue>
+      </Member>
+      <Member Name="p71" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Number of locations to the left</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Nombre d'emplacements vers la gauche</MultiLanguageText>
+        </Comment>
+        <StartValue>BYTE#16#05</StartValue>
+      </Member>
+      <Member Name="p72" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Int from WORD specification</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">INT de spécification WORD</MultiLanguageText>
+        </Comment>
+        <StartValue>BYTE#16#05</StartValue>
+      </Member>
+      <Member Name="p81" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Number of locations to the right</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Nombre d'emplacements vers la droite</MultiLanguageText>
+        </Comment>
+        <StartValue>BYTE#16#05</StartValue>
+      </Member>
+      <Member Name="p82" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Int from WORD specification</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">INT de spécification WORD</MultiLanguageText>
+        </Comment>
+        <StartValue>BYTE#16#05</StartValue>
+      </Member>
+      <Member Name="p91" Datatype="Byte">
+        <AttributeList>
+          <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+        </AttributeList>
+        <Comment>
+          <MultiLanguageText Lang="en-US">Number of locations above</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Nombre d'emplacements vers le haut</MultiLanguageText>
+        </Comment>
+        <StartValue>BYTE#16#05</StartValue>
+      </Member>
+      <Member Name="p92" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Int from WORD specification</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">INT de spécification WORD</MultiLanguageText>
+        </Comment>
+        <StartValue>BYTE#16#05</StartValue>
+      </Member>
+      <Member Name="pa1" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Number of locations below</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Nombre d'emplacements vers le bas</MultiLanguageText>
+        </Comment>
+        <StartValue>BYTE#16#05</StartValue>
+      </Member>
+      <Member Name="pa2" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Int from WORD specification</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">INT de spécification WORD</MultiLanguageText>
+        </Comment>
+        <StartValue>BYTE#16#05</StartValue>
+      </Member>
+      <Member Name="pb1" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Location type index</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Type d'emplacement Indice</MultiLanguageText>
+        </Comment>
+        <StartValue>BYTE#16#05</StartValue>
+      </Member>
+      <Member Name="pb2" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Int from WORD specification</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">INT de spécification WORD</MultiLanguageText>
+        </Comment>
+        <StartValue>BYTE#16#05</StartValue>
+      </Member>
+      <Member Name="pc1" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Search direction</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Sens de recherche</MultiLanguageText>
+        </Comment>
+        <StartValue>BYTE#16#05</StartValue>
+      </Member>
+      <Member Name="pc2" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Int from WORD specification</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">INT de spécification WORD</MultiLanguageText>
+        </Comment>
+        <StartValue>BYTE#16#05</StartValue>
+      </Member>
+    </Member>
+    <Member Name="NCRES" Datatype="Struct">
+      <Member Name="PIName" Datatype="String[10]">
+        <StartValue>'_N_IBN_SS'</StartValue>
+      </Member>
+      <Member Name="p01" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Area / Unit</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Zone/unité</MultiLanguageText>
+        </Comment>
+        <StartValue>BYTE#16#03</StartValue>
+      </Member>
+      <Member Name="p02" Datatype="Char">
+        <StartValue>'K'</StartValue>
+      </Member>
+      <Member Name="p11" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Classification</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Classification</MultiLanguageText>
+        </Comment>
+        <StartValue>BYTE#16#01</StartValue>
+      </Member>
+      <Member Name="p12" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">WORD specification</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Spécification WORD</MultiLanguageText>
+        </Comment>
+        <StartValue>BYTE#16#04</StartValue>
+      </Member>
+    </Member>
+    <Member Name="TMRASS" Datatype="Struct">
+      <Member Name="PIName" Datatype="String[10]">
+        <StartValue>'_N_TMRASS'</StartValue>
+      </Member>
+      <Member Name="p01" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Area / Unit</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Zone/unité</MultiLanguageText>
+        </Comment>
+        <StartValue>BYTE#16#03</StartValue>
+      </Member>
+      <Member Name="p02" Datatype="Char">
+        <StartValue>'4'</StartValue>
+      </Member>
+    </Member>
+    <Member Name="TRESMO" Datatype="Struct">
+      <Member Name="PIName" Datatype="String[10]">
+        <StartValue>'_N_TRESMO'</StartValue>
+      </Member>
+      <Member Name="p01" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Area / Unit</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Zone/unité</MultiLanguageText>
+        </Comment>
+        <StartValue>BYTE#16#03</StartValue>
+      </Member>
+      <Member Name="p02" Datatype="Char">
+        <StartValue>'4'</StartValue>
+      </Member>
+      <Member Name="p11" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Tool number</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Numéro d'outil</MultiLanguageText>
+        </Comment>
+        <StartValue>BYTE#16#05</StartValue>
+      </Member>
+      <Member Name="p12" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Int from WORD specification</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">INT de spécification WORD</MultiLanguageText>
+        </Comment>
+        <StartValue>BYTE#16#05</StartValue>
+      </Member>
+      <Member Name="p21" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">D number</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Numéro D</MultiLanguageText>
+        </Comment>
+        <StartValue>BYTE#16#05</StartValue>
+      </Member>
+      <Member Name="p22" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Int from WORD specification</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">INT de spécification WORD</MultiLanguageText>
+        </Comment>
+        <StartValue>BYTE#16#05</StartValue>
+      </Member>
+      <Member Name="p31" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Monitoring type</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Type de surveillance</MultiLanguageText>
+        </Comment>
+        <StartValue>BYTE#16#05</StartValue>
+      </Member>
+      <Member Name="p32" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Int from WORD specification</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">INT de spécification WORD</MultiLanguageText>
+        </Comment>
+        <StartValue>BYTE#16#05</StartValue>
+      </Member>
+    </Member>
+    <Member Name="TMGETT" Datatype="Struct">
+      <Member Name="PIName" Datatype="String[10]">
+        <StartValue>'_N_TMGETT'</StartValue>
+      </Member>
+      <Member Name="p01" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Area / Unit</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Zone/unité</MultiLanguageText>
+        </Comment>
+        <StartValue>BYTE#16#03</StartValue>
+      </Member>
+      <Member Name="p02" Datatype="Char">
+        <StartValue>'4'</StartValue>
+      </Member>
+      <Member Name="p11" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Tool identifier, add blank</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Identifiant d'outil, ajouter espace</MultiLanguageText>
+        </Comment>
+        <StartValue>BYTE#16#20</StartValue>
+      </Member>
+      <Member Name="p12" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">String identifier!</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Identifiant de chaîne.</MultiLanguageText>
+        </Comment>
+        <StartValue>BYTE#16#13</StartValue>
+      </Member>
+      <Member Name="p21" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Duplo number</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Numéro d'outil frère</MultiLanguageText>
+        </Comment>
+        <StartValue>BYTE#16#05</StartValue>
+      </Member>
+      <Member Name="p22" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Int from WORD specification</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">INT de spécification WORD</MultiLanguageText>
+        </Comment>
+        <StartValue>BYTE#16#05</StartValue>
+      </Member>
+    </Member>
+    <Member Name="SETUDT" Datatype="Struct">
+      <Member Name="PIName" Datatype="String[10]">
+        <StartValue>'_N_SETUDT'</StartValue>
+      </Member>
+      <Member Name="p01" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Area / Unit</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Zone/unité</MultiLanguageText>
+        </Comment>
+        <StartValue>BYTE#16#03</StartValue>
+      </Member>
+      <Member Name="p02" Datatype="Char">
+        <StartValue>'2'</StartValue>
+      </Member>
+      <Member Name="p11" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">UserDataType</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">UserDataType</MultiLanguageText>
+        </Comment>
+        <StartValue>BYTE#16#03</StartValue>
+      </Member>
+      <Member Name="p12" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">WORD specification</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Spécification WORD</MultiLanguageText>
+        </Comment>
+        <StartValue>BYTE#16#04</StartValue>
+      </Member>
+      <Member Name="p21" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">ind1</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">ind1</MultiLanguageText>
+        </Comment>
+        <StartValue>BYTE#16#05</StartValue>
+      </Member>
+      <Member Name="p22" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">WORD specification</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Spécification WORD</MultiLanguageText>
+        </Comment>
+        <StartValue>BYTE#16#04</StartValue>
+      </Member>
+      <Member Name="p31" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">ind2</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">ind2</MultiLanguageText>
+        </Comment>
+        <StartValue>BYTE#16#05</StartValue>
+      </Member>
+      <Member Name="p32" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">WORD specification</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Spécification WORD</MultiLanguageText>
+        </Comment>
+        <StartValue>BYTE#16#04</StartValue>
+      </Member>
+    </Member>
+    <Member Name="TMCRMT" Datatype="Struct">
+      <Member Name="PIName" Datatype="String[10]">
+        <StartValue>'_N_TMCRMT'</StartValue>
+      </Member>
+      <Member Name="p01" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Area / Unit</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Zone/unité</MultiLanguageText>
+        </Comment>
+        <StartValue>BYTE#16#03</StartValue>
+      </Member>
+      <Member Name="p02" Datatype="Char">
+        <StartValue>'4'</StartValue>
+      </Member>
+      <Member Name="p11" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Multitool identifier, insert blanks</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Identifiant Multitool, ajouter espace</MultiLanguageText>
+        </Comment>
+        <StartValue>BYTE#16#20</StartValue>
+      </Member>
+      <Member Name="p12" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">String identifier!</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Identifiant de chaîne.</MultiLanguageText>
+        </Comment>
+        <StartValue>BYTE#16#13</StartValue>
+      </Member>
+      <Member Name="p21" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+        </Comment>
+        <StartValue>BYTE#16#05</StartValue>
+      </Member>
+      <Member Name="p22" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Int from WORD specification</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">INT de spécification WORD</MultiLanguageText>
+        </Comment>
+        <StartValue>BYTE#16#05</StartValue>
+      </Member>
+      <Member Name="p31" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Multitool number</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Numéro Multitool</MultiLanguageText>
+        </Comment>
+        <StartValue>BYTE#16#05</StartValue>
+      </Member>
+      <Member Name="p32" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Int from WORD specification</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">INT de spécification WORD</MultiLanguageText>
+        </Comment>
+        <StartValue>BYTE#16#05</StartValue>
+      </Member>
+      <Member Name="p41" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Number of Multitool locations</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Nombre d'emplacements Multitool</MultiLanguageText>
+        </Comment>
+        <StartValue>BYTE#16#03</StartValue>
+      </Member>
+      <Member Name="p42" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Int from WORD specification</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">INT de spécification WORD</MultiLanguageText>
+        </Comment>
+        <StartValue>BYTE#16#05</StartValue>
+      </Member>
+      <Member Name="p51" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Type of distance coding</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Type de codage de distance</MultiLanguageText>
+        </Comment>
+        <StartValue>BYTE#16#01</StartValue>
+      </Member>
+      <Member Name="p52" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Int from WORD specification</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">INT de spécification WORD</MultiLanguageText>
+        </Comment>
+        <StartValue>BYTE#16#05</StartValue>
+      </Member>
+    </Member>
+    <Member Name="TMDLMT" Datatype="Struct">
+      <Member Name="PIName" Datatype="String[10]">
+        <StartValue>'_N_TMDLMT'</StartValue>
+      </Member>
+      <Member Name="p01" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Area / Unit</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Zone/unité</MultiLanguageText>
+        </Comment>
+        <StartValue>BYTE#16#03</StartValue>
+      </Member>
+      <Member Name="p02" Datatype="Char">
+        <StartValue>'4'</StartValue>
+      </Member>
+      <Member Name="p11" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Multitool identifier, insert blanks</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Identifiant Multitool, ajouter espace</MultiLanguageText>
+        </Comment>
+        <StartValue>BYTE#16#20</StartValue>
+      </Member>
+      <Member Name="p12" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">String identifier!</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Identifiant de chaîne.</MultiLanguageText>
+        </Comment>
+        <StartValue>BYTE#16#13</StartValue>
+      </Member>
+      <Member Name="p21" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+        </Comment>
+        <StartValue>BYTE#16#05</StartValue>
+      </Member>
+      <Member Name="p22" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Int from WORD specification</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">INT de spécification WORD</MultiLanguageText>
+        </Comment>
+        <StartValue>BYTE#16#05</StartValue>
+      </Member>
+      <Member Name="p31" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Multitool number</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Numéro Multitool</MultiLanguageText>
+        </Comment>
+        <StartValue>BYTE#16#05</StartValue>
+      </Member>
+      <Member Name="p32" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Int from WORD specification</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">INT de spécification WORD</MultiLanguageText>
+        </Comment>
+        <StartValue>BYTE#16#05</StartValue>
+      </Member>
+      <Member Name="p41" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Delete included tools</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Supprimer les outils contenus</MultiLanguageText>
+        </Comment>
+        <StartValue>BYTE#16#01</StartValue>
+      </Member>
+      <Member Name="p42" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Int from WORD specification</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">INT de spécification WORD</MultiLanguageText>
+        </Comment>
+        <StartValue>BYTE#16#05</StartValue>
+      </Member>
+    </Member>
+    <Member Name="POSMT" Datatype="Struct">
+      <Member Name="PIName" Datatype="String[10]">
+        <StartValue>'_N_POSMT_'</StartValue>
+      </Member>
+      <Member Name="p01" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Area / Unit</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Zone/unité</MultiLanguageText>
+        </Comment>
+        <StartValue>BYTE#16#03</StartValue>
+      </Member>
+      <Member Name="p02" Datatype="Char">
+        <StartValue>'4'</StartValue>
+      </Member>
+      <Member Name="p11" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Number of toolholder</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Numéro du porte-outil</MultiLanguageText>
+        </Comment>
+        <StartValue>BYTE#16#03</StartValue>
+      </Member>
+      <Member Name="p12" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Int from WORD specification</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">INT de spécification WORD</MultiLanguageText>
+        </Comment>
+        <StartValue>BYTE#16#05</StartValue>
+      </Member>
+      <Member Name="p21" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Tool number</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Numéro d'outil</MultiLanguageText>
+        </Comment>
+        <StartValue>BYTE#16#05</StartValue>
+      </Member>
+      <Member Name="p22" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Int from WORD specification</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">INT de spécification WORD</MultiLanguageText>
+        </Comment>
+        <StartValue>BYTE#16#05</StartValue>
+      </Member>
+      <Member Name="p31" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Tool number, add blank</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Identificateur d'outil, ajouter espace</MultiLanguageText>
+        </Comment>
+        <StartValue>BYTE#16#20</StartValue>
+      </Member>
+      <Member Name="p32" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">String identifier!</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Identifiant de chaîne.</MultiLanguageText>
+        </Comment>
+        <StartValue>BYTE#16#13</StartValue>
+      </Member>
+      <Member Name="p41" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Duplo number</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Numéro d'outil frère</MultiLanguageText>
+        </Comment>
+        <StartValue>BYTE#16#05</StartValue>
+      </Member>
+      <Member Name="p42" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Int from WORD specification</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">INT de spécification WORD</MultiLanguageText>
+        </Comment>
+        <StartValue>BYTE#16#05</StartValue>
+      </Member>
+      <Member Name="p51" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Multitool place number</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Numéro d'emplacement Multitool</MultiLanguageText>
+        </Comment>
+        <StartValue>BYTE#16#03</StartValue>
+      </Member>
+      <Member Name="p52" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Int from WORD specification</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">INT de spécification WORD</MultiLanguageText>
+        </Comment>
+        <StartValue>BYTE#16#05</StartValue>
+      </Member>
+    </Member>
+    <Member Name="FDPLMT" Datatype="Struct">
+      <Member Name="PIName" Datatype="String[10]">
+        <StartValue>'_N_FDPLMT'</StartValue>
+      </Member>
+      <Member Name="p01" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Area / Unit</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Zone/unité</MultiLanguageText>
+        </Comment>
+        <StartValue>BYTE#16#03</StartValue>
+      </Member>
+      <Member Name="p02" Datatype="Char">
+        <StartValue>'4'</StartValue>
+      </Member>
+      <Member Name="p11" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Tool number</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Numéro d'outil</MultiLanguageText>
+        </Comment>
+        <StartValue>BYTE#16#05</StartValue>
+      </Member>
+      <Member Name="p12" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Int from WORD specification</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">INT de spécification WORD</MultiLanguageText>
+        </Comment>
+        <StartValue>BYTE#16#05</StartValue>
+      </Member>
+      <Member Name="p21" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Tool number, add blank</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Identificateur d'outil, ajouter espace</MultiLanguageText>
+        </Comment>
+        <StartValue>BYTE#16#20</StartValue>
+      </Member>
+      <Member Name="p22" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">String identifier!</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Identifiant de chaîne.</MultiLanguageText>
+        </Comment>
+        <StartValue>BYTE#16#13</StartValue>
+      </Member>
+      <Member Name="p31" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Duplo number</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Numéro d'outil frère</MultiLanguageText>
+        </Comment>
+        <StartValue>BYTE#16#05</StartValue>
+      </Member>
+      <Member Name="p32" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Int from WORD specification</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">INT de spécification WORD</MultiLanguageText>
+        </Comment>
+        <StartValue>BYTE#16#05</StartValue>
+      </Member>
+      <Member Name="p41" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Multitool number</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Numéro Multitool</MultiLanguageText>
+        </Comment>
+        <StartValue>BYTE#16#05</StartValue>
+      </Member>
+      <Member Name="p42" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Int from WORD specification</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">INT de spécification WORD</MultiLanguageText>
+        </Comment>
+        <StartValue>BYTE#16#05</StartValue>
+      </Member>
+      <Member Name="p51" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Multitool place number</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Numéro d'emplacement Multitool</MultiLanguageText>
+        </Comment>
+        <StartValue>BYTE#16#03</StartValue>
+      </Member>
+      <Member Name="p52" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Int from WORD specification</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">INT de spécification WORD</MultiLanguageText>
+        </Comment>
+        <StartValue>BYTE#16#05</StartValue>
+      </Member>
+    </Member>
+    <Member Name="RETRAC" Datatype="Struct">
+      <Member Name="PIName" Datatype="String[10]">
+        <StartValue>'_N_RETRAC'</StartValue>
+      </Member>
+      <Member Name="p01" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Area / Unit</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Zone/unité</MultiLanguageText>
+        </Comment>
+        <StartValue>BYTE#16#03</StartValue>
+      </Member>
+      <Member Name="p02" Datatype="Char">
+        <StartValue>'2'</StartValue>
+      </Member>
+      <Member Name="p11" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Geometry axis</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Axe géométrique</MultiLanguageText>
+        </Comment>
+        <StartValue>BYTE#16#03</StartValue>
+      </Member>
+      <Member Name="p12" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">WORD specification</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Spécification WORD</MultiLanguageText>
+        </Comment>
+        <StartValue>BYTE#16#04</StartValue>
+      </Member>
+      <Member Name="p21" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Parameter2</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Paramètre2</MultiLanguageText>
+        </Comment>
+        <StartValue>BYTE#16#05</StartValue>
+      </Member>
+      <Member Name="p22" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">WORD specification</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Spécification WORD</MultiLanguageText>
+        </Comment>
+        <StartValue>BYTE#16#04</StartValue>
+      </Member>
+    </Member>
+  </Section>
+</Sections></Interface>
+      <Name>LBP_PIServices</Name>
+      <Namespace />
+      <Number>16</Number>
+      <ProgrammingLanguage>DB</ProgrammingLanguage>
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text>Interface for LBP_ReqPIService [FB7], contains definitions for all available PI services.</Text>
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="3" CompositionName="Items">
+            <AttributeList>
+              <Culture>fr-FR</Culture>
+              <Text>L'interface pour LBP_ReqPIService [FB7] contient des définitions pour tous les services PI disponibles.</Text>
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <MultilingualText ID="4" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="5" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text>PI Services</Text>
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="6" CompositionName="Items">
+            <AttributeList>
+              <Culture>fr-FR</Culture>
+              <Text>Services PI</Text>
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Blocks.GlobalDB>
+</Document>

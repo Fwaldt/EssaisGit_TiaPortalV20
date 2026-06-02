@@ -1,0 +1,3154 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V20" />
+  <SW.Blocks.FB ID="0">
+    <AttributeList>
+      <AutoNumber>false</AutoNumber>
+      <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+  <Section Name="Input">
+    <Member Name="iStartSeqCond" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Start Sequence Conditions</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="iJobReq" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Job Request - From Main</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="iLoadReq" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Load Request - From Main</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="iUnloadReq" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Unload Request - From Main</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="iShuttleBwUnloadPos" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Unload Pos. Reached - Param</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="iShuttleBwUnloadPosSetPoint" Datatype="LReal">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Unload Pos. Setpoint - Param</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="iShuttleBwLoadPos" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Load Pos. Reached - Param</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="iShuttleBwLoadPosSetPoint" Datatype="LReal">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Load Pos. Setpoint - Param</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="iShuttleMoving" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Shuttle is moving - From FB_LoaderAxis</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="iShuttleInPos" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Shuttle pos. reached - From FB_LoaderAxis</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="iBwLoadDone" Datatype="Bool" />
+    <Member Name="iBwUnloadDone" Datatype="Bool" />
+    <Member Name="iBwLoaderInSafePos" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Gripper in Safe Position - Param</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="iPLC_DateAndTime" Datatype="DTL" Version="1.0" />
+    <Member Name="iStepPause" Datatype="Bool" />
+  </Section>
+  <Section Name="Output">
+    <Member Name="oShuttleStartReq" Datatype="Bool">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="en-US">Shuttle Start Order - To FB_LoaderAxis</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="oShuttlePosSetPoint" Datatype="Real">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="en-US">Shuttle Position Setpoint - To FB_LoaderAxis</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="oBwLoadReq" Datatype="Bool" />
+    <Member Name="oBwUnloadReq" Datatype="Bool" />
+  </Section>
+  <Section Name="InOut" />
+  <Section Name="Static">
+    <Member Name="sCurrent_Step_NB" Datatype="Int">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Active Step Number</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="sCheck_Step_Condition" Datatype="Bool" />
+    <Member Name="sOneStepForward" Datatype="Bool" />
+    <Member Name="sRTOneStepForward" Datatype="R_TRIG" Version="1.0" />
+    <Member Name="sOneStepMode" Datatype="Bool">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="sStepForward" Datatype="Bool" />
+    <Member Name="sInterface" Datatype="&quot;UDT_SequenceInterface&quot;" />
+    <Member Name="sShuttleStartReq" Datatype="Bool">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="sShuttlePosSetPoint" Datatype="Real">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="sBwLoadReq" Datatype="Bool" />
+    <Member Name="sBwUnloadReq" Datatype="Bool" />
+    <Member Name="sHistory" Datatype="Struct">
+      <Member Name="Activation" Datatype="Bool" />
+      <Member Name="Steps" Datatype="Array[0..99] of Int" />
+      <Member Name="Date_Time" Datatype="Array[0..99] of DTL" Version="1.0" />
+    </Member>
+    <Member Name="StepText" Datatype="&quot;FB_GetTextErrorCode&quot;">
+      <Sections>
+        <Section Name="Input" />
+        <Section Name="Output" />
+        <Section Name="InOut" />
+        <Section Name="Static">
+          <Member Name="sCode_error" Datatype="Array[0..100] of Struct">
+            <Member Name="ErrorCode" Datatype="Int">
+              <Subelement Path="0">
+                <StartValue>0</StartValue>
+              </Subelement>
+              <Subelement Path="1">
+                <StartValue>10</StartValue>
+              </Subelement>
+              <Subelement Path="2">
+                <StartValue>20</StartValue>
+              </Subelement>
+              <Subelement Path="3">
+                <StartValue>30</StartValue>
+              </Subelement>
+              <Subelement Path="4">
+                <StartValue>40</StartValue>
+              </Subelement>
+              <Subelement Path="5">
+                <StartValue>50</StartValue>
+              </Subelement>
+              <Subelement Path="6">
+                <StartValue>60</StartValue>
+              </Subelement>
+              <Subelement Path="7">
+                <StartValue>70</StartValue>
+              </Subelement>
+              <Subelement Path="8">
+                <StartValue>80</StartValue>
+              </Subelement>
+              <Subelement Path="9">
+                <StartValue>90</StartValue>
+              </Subelement>
+              <Subelement Path="10">
+                <StartValue>95</StartValue>
+              </Subelement>
+            </Member>
+          </Member>
+        </Section>
+      </Sections>
+    </Member>
+  </Section>
+  <Section Name="Temp">
+    <Member Name="tIndex" Datatype="Int">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Index</MultiLanguageText>
+      </Comment>
+    </Member>
+  </Section>
+  <Section Name="Constant">
+    <Member Name="S00_INIT" Datatype="Int">
+      <StartValue>0</StartValue>
+    </Member>
+    <Member Name="S10_BW_LOAD_UNLOAD_OPTION" Datatype="Int">
+      <StartValue>10</StartValue>
+    </Member>
+    <Member Name="S20_SHUTTLE_TO_BW_LOAD_POS_START_REQ" Datatype="Int">
+      <StartValue>20</StartValue>
+    </Member>
+    <Member Name="S30_SHUTTLE_TO_BW_LOAD_POS_REACHED" Datatype="Int">
+      <StartValue>30</StartValue>
+    </Member>
+    <Member Name="S40_SET_EXCHANGE_BW_LOADER_LOAD" Datatype="Int">
+      <StartValue>40</StartValue>
+    </Member>
+    <Member Name="S50_EXCHANGE_BW_LOADER_IN_PROGRESS" Datatype="Int">
+      <StartValue>50</StartValue>
+    </Member>
+    <Member Name="S60_EXCHANGE_BW_LOADER_ACQUIT" Datatype="Int">
+      <StartValue>60</StartValue>
+    </Member>
+    <Member Name="S120_SHUTTLE_TO_BW_UNLOAD_POS_START_REQ" Datatype="Int">
+      <StartValue>120</StartValue>
+    </Member>
+    <Member Name="S130_SHUTTLE_TO_BW_UNLOAD_POS_REACHED" Datatype="Int">
+      <StartValue>130</StartValue>
+    </Member>
+    <Member Name="S140_SET_EXCHANGE_BW_LOADER_UNLOAD" Datatype="Int">
+      <StartValue>140</StartValue>
+    </Member>
+    <Member Name="S150_EXCHANGE_BW_LOADER_IN_PROGRESS" Datatype="Int">
+      <StartValue>150</StartValue>
+    </Member>
+    <Member Name="S160_EXCHANGE_BW_LOADER_ACQUIT" Datatype="Int">
+      <StartValue>160</StartValue>
+    </Member>
+    <Member Name="S195_JOB_DONE" Datatype="Int">
+      <StartValue>195</StartValue>
+    </Member>
+  </Section>
+</Sections></Interface>
+      <MemoryLayout>Optimized</MemoryLayout>
+      <MemoryReserve>100</MemoryReserve>
+      <Name>FB_BwLoadUnload</Name>
+      <Namespace />
+      <Number>72</Number>
+      <ProgrammingLanguage>SCL</ProgrammingLanguage>
+      <SetENOAutomatically>false</SetENOAutomatically>
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="3" CompositionName="Items">
+            <AttributeList>
+              <Culture>fr-FR</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <SW.Blocks.CompileUnit ID="4" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource><StructuredText xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/StructuredText/v4">
+  <Token Text="REGION" UId="21" />
+  <Blank UId="22" />
+  <Text UId="23">Description header </Text>
+  <NewLine UId="24" />
+  <Blank Num="4" UId="25" />
+  <LineComment UId="26">
+    <Text UId="27">==================================================================================</Text>
+  </LineComment>
+  <NewLine UId="28" />
+  <Blank Num="4" UId="29" />
+  <LineComment UId="30">
+    <Text UId="31"> POSALUX Swiss SA / (C) Copyright 2025</Text>
+  </LineComment>
+  <NewLine UId="32" />
+  <Blank Num="4" UId="33" />
+  <LineComment UId="34">
+    <Text UId="35">----------------------------------------------------------------------------------</Text>
+  </LineComment>
+  <NewLine UId="36" />
+  <Blank Num="4" UId="37" />
+  <LineComment UId="38">
+    <Text UId="39"> Title: FB_BWLoadUnload</Text>
+  </LineComment>
+  <NewLine UId="40" />
+  <Blank Num="4" UId="41" />
+  <LineComment UId="42">
+    <Text UId="43"> Comment/Function: </Text>
+  </LineComment>
+  <NewLine UId="44" />
+  <Blank Num="4" UId="45" />
+  <LineComment UId="46">
+    <Text UId="47"> Author: Fabien WALDT</Text>
+  </LineComment>
+  <NewLine UId="48" />
+  <Blank Num="4" UId="49" />
+  <LineComment UId="50">
+    <Text UId="51"> Engineering: TIA Portal v17</Text>
+  </LineComment>
+  <NewLine UId="52" />
+  <Blank Num="4" UId="53" />
+  <LineComment UId="54">
+    <Text UId="55">----------------------------------------------------------------------------------</Text>
+  </LineComment>
+  <NewLine UId="56" />
+  <Blank Num="4" UId="57" />
+  <LineComment UId="58">
+    <Text UId="59"> Change log table:</Text>
+  </LineComment>
+  <NewLine UId="60" />
+  <Blank Num="4" UId="61" />
+  <LineComment UId="62">
+    <Text UId="63"> Version  | Date     | Expert in charge | Changes applied</Text>
+  </LineComment>
+  <NewLine UId="64" />
+  <Blank Num="4" UId="65" />
+  <LineComment UId="66">
+    <Text UId="67"> ---------|----------|------------------|-----------------------------------------</Text>
+  </LineComment>
+  <NewLine UId="68" />
+  <Blank Num="4" UId="69" />
+  <LineComment UId="70">
+    <Text UId="71"> 00.00.01 | 20250527 | WFA              | First released version</Text>
+  </LineComment>
+  <NewLine UId="72" />
+  <Blank Num="4" UId="73" />
+  <LineComment UId="74">
+    <Text UId="75"> =================================================================================</Text>
+  </LineComment>
+  <NewLine UId="76" />
+  <Token Text="END_REGION" UId="77" />
+  <NewLine Num="2" UId="78" />
+  <Token Text="REGION" UId="79" />
+  <Blank UId="80" />
+  <Text UId="81">Define condition to start</Text>
+  <NewLine UId="82" />
+  <Blank Num="4" UId="83" />
+  <Token Text="IF" UId="84" />
+  <Blank UId="85" />
+  <Access Scope="LocalVariable" UId="86">
+    <Symbol UId="87">
+      <Component Name="iStartSeqCond" UId="88" />
+    </Symbol>
+  </Access>
+  <Blank UId="89" />
+  <Token Text="THEN" UId="90" />
+  <NewLine UId="91" />
+  <Blank Num="8" UId="92" />
+  <Access Scope="LocalVariable" UId="93">
+    <Symbol UId="94">
+      <Component Name="sInterface" UId="95" />
+      <Token Text="." UId="96" />
+      <Component Name="SequenceReleased" UId="97" />
+    </Symbol>
+  </Access>
+  <Blank UId="98" />
+  <Token Text=":=" UId="99" />
+  <Blank UId="100" />
+  <Access Scope="LiteralConstant" UId="101">
+    <Constant UId="102">
+      <ConstantValue UId="104">TRUE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="105" />
+  <NewLine UId="106" />
+  <Blank Num="4" UId="107" />
+  <Token Text="ELSE" UId="108" />
+  <NewLine UId="109" />
+  <Blank Num="8" UId="110" />
+  <LineComment UId="111">
+    <Text UId="112"> Standard sequencer controls</Text>
+  </LineComment>
+  <NewLine UId="113" />
+  <Blank Num="8" UId="114" />
+  <Access Scope="LocalVariable" UId="115">
+    <Symbol UId="116">
+      <Component Name="sInterface" UId="117" />
+      <Token Text="." UId="118" />
+      <Component Name="SequenceReleased" UId="119" />
+    </Symbol>
+  </Access>
+  <Blank UId="120" />
+  <Token Text=":=" UId="121" />
+  <Blank UId="122" />
+  <Access Scope="LiteralConstant" UId="123">
+    <Constant UId="124">
+      <ConstantValue UId="126">FALSE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="127" />
+  <NewLine UId="128" />
+  <Blank Num="8" UId="129" />
+  <Access Scope="LocalVariable" UId="130">
+    <Symbol UId="131">
+      <Component Name="sCurrent_Step_NB" UId="132" />
+    </Symbol>
+  </Access>
+  <Blank UId="133" />
+  <Token Text=":=" UId="134" />
+  <Blank UId="135" />
+  <Access Scope="LocalConstant" UId="136">
+    <Constant Name="S00_INIT" UId="137" />
+  </Access>
+  <Token Text=";" UId="140" />
+  <NewLine UId="141" />
+  <Blank Num="8" UId="142" />
+  <Access Scope="LocalVariable" UId="143">
+    <Symbol UId="144">
+      <Component Name="sInterface" UId="145" />
+      <Token Text="." UId="146" />
+      <Component Name="SequenceRun" UId="147" />
+    </Symbol>
+  </Access>
+  <Blank UId="148" />
+  <Token Text=":=" UId="149" />
+  <Blank UId="150" />
+  <Access Scope="LiteralConstant" UId="151">
+    <Constant UId="152">
+      <ConstantValue UId="154">FALSE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="155" />
+  <NewLine UId="156" />
+  <Blank Num="8" UId="157" />
+  <Access Scope="LocalVariable" UId="158">
+    <Symbol UId="159">
+      <Component Name="sInterface" UId="160" />
+      <Token Text="." UId="161" />
+      <Component Name="JobDone" UId="162" />
+    </Symbol>
+  </Access>
+  <Blank UId="163" />
+  <Token Text=":=" UId="164" />
+  <Blank UId="165" />
+  <Access Scope="LiteralConstant" UId="166">
+    <Constant UId="167">
+      <ConstantValue UId="169">FALSE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="170" />
+  <NewLine UId="171" />
+  <Blank Num="8" UId="172" />
+  <Access Scope="LocalVariable" UId="173">
+    <Symbol UId="174">
+      <Component Name="sCheck_Step_Condition" UId="175" />
+    </Symbol>
+  </Access>
+  <Blank UId="176" />
+  <Token Text=":=" UId="177" />
+  <Blank UId="178" />
+  <Access Scope="LiteralConstant" UId="179">
+    <Constant UId="180">
+      <ConstantValue UId="182">FALSE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="183" />
+  <NewLine UId="184" />
+  <Blank Num="8" UId="185" />
+  <NewLine UId="186" />
+  <Blank Num="8" UId="187" />
+  <LineComment UId="188">
+    <Text UId="189"> Dedicated sequencer controls</Text>
+  </LineComment>
+  <NewLine UId="190" />
+  <Blank Num="8" UId="191" />
+  <Access Scope="LocalVariable" UId="192">
+    <Symbol UId="193">
+      <Component Name="sShuttleStartReq" UId="194" />
+    </Symbol>
+  </Access>
+  <Blank UId="195" />
+  <Token Text=":=" UId="196" />
+  <Blank UId="197" />
+  <Access Scope="LiteralConstant" UId="198">
+    <Constant UId="199">
+      <ConstantValue UId="201">FALSE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="202" />
+  <NewLine UId="203" />
+  <Blank Num="8" UId="204" />
+  <Access Scope="LocalVariable" UId="205">
+    <Symbol UId="206">
+      <Component Name="sShuttlePosSetPoint" UId="207" />
+    </Symbol>
+  </Access>
+  <Blank UId="208" />
+  <Token Text=":=" UId="209" />
+  <Blank UId="210" />
+  <Access Scope="LiteralConstant" UId="211">
+    <Constant UId="212">
+      <ConstantValue UId="214">0.0</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="215" />
+  <NewLine UId="216" />
+  <Blank Num="8" UId="217" />
+  <Access Scope="LocalVariable" UId="218">
+    <Symbol UId="219">
+      <Component Name="sBwLoadReq" UId="220" />
+    </Symbol>
+  </Access>
+  <Blank UId="221" />
+  <Token Text=":=" UId="222" />
+  <Blank UId="223" />
+  <Access Scope="LiteralConstant" UId="224">
+    <Constant UId="225">
+      <ConstantValue UId="227">FALSE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="228" />
+  <NewLine UId="229" />
+  <Blank Num="8" UId="230" />
+  <Access Scope="LocalVariable" UId="231">
+    <Symbol UId="232">
+      <Component Name="sBwUnloadReq" UId="233" />
+    </Symbol>
+  </Access>
+  <Blank UId="234" />
+  <Token Text=":=" UId="235" />
+  <Blank UId="236" />
+  <Access Scope="LiteralConstant" UId="237">
+    <Constant UId="238">
+      <ConstantValue UId="240">FALSE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="241" />
+  <NewLine UId="242" />
+  <Blank Num="8" UId="243" />
+  <LineComment UId="244">
+    <Text UId="245"> Add specifics controls </Text>
+  </LineComment>
+  <NewLine UId="246" />
+  <Blank Num="4" UId="247" />
+  <Token Text="END_IF" UId="248" />
+  <Token Text=";" UId="249" />
+  <NewLine UId="250" />
+  <Blank Num="4" UId="251" />
+  <NewLine UId="252" />
+  <Blank Num="4" UId="253" />
+  <LineComment UId="254">
+    <Text UId="255"> Reset interface error</Text>
+  </LineComment>
+  <NewLine UId="256" />
+  <Blank Num="4" UId="257" />
+  <Token Text="IF" UId="258" />
+  <Blank UId="259" />
+  <Access Scope="LocalVariable" UId="260">
+    <Symbol UId="261">
+      <Component Name="sInterface" UId="262" />
+      <Token Text="." UId="263" />
+      <Component Name="Reset" UId="264" />
+    </Symbol>
+  </Access>
+  <Blank UId="265" />
+  <Token Text="THEN" UId="266" />
+  <NewLine UId="267" />
+  <Blank Num="8" UId="268" />
+  <Access Scope="LocalVariable" UId="269">
+    <Symbol UId="270">
+      <Component Name="sInterface" UId="271" />
+      <Token Text="." UId="272" />
+      <Component Name="Error" UId="273" />
+    </Symbol>
+  </Access>
+  <Blank UId="274" />
+  <Token Text=":=" UId="275" />
+  <Blank UId="276" />
+  <Access Scope="LiteralConstant" UId="277">
+    <Constant UId="278">
+      <ConstantValue UId="280">FALSE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="281" />
+  <NewLine UId="282" />
+  <Blank Num="4" UId="283" />
+  <Token Text="END_IF" UId="284" />
+  <Token Text=";" UId="285" />
+  <NewLine UId="286" />
+  <Blank Num="4" UId="287" />
+  <NewLine UId="288" />
+  <Blank Num="4" UId="289" />
+  <LineComment UId="290">
+    <Text UId="291"> Reset start when axis in position</Text>
+  </LineComment>
+  <NewLine UId="292" />
+  <Blank Num="4" UId="293" />
+  <Token Text="IF" UId="294" />
+  <Blank UId="295" />
+  <Access Scope="LocalVariable" UId="296">
+    <Symbol UId="297">
+      <Component Name="iShuttleInPos" UId="298" />
+    </Symbol>
+  </Access>
+  <Blank UId="299" />
+  <Token Text="THEN" UId="300" />
+  <NewLine UId="301" />
+  <Blank Num="8" UId="302" />
+  <Access Scope="LocalVariable" UId="303">
+    <Symbol UId="304">
+      <Component Name="sShuttleStartReq" UId="305" />
+    </Symbol>
+  </Access>
+  <Blank UId="306" />
+  <Token Text=":=" UId="307" />
+  <Blank UId="308" />
+  <Access Scope="LiteralConstant" UId="309">
+    <Constant UId="310">
+      <ConstantValue UId="312">FALSE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="313" />
+  <NewLine UId="314" />
+  <Blank Num="4" UId="315" />
+  <Token Text="END_IF" UId="316" />
+  <Token Text=";" UId="317" />
+  <NewLine UId="318" />
+  <Blank Num="4" UId="319" />
+  <NewLine UId="320" />
+  <Blank Num="4" UId="321" />
+  <LineComment UId="322">
+    <Text UId="323"> One step forward</Text>
+  </LineComment>
+  <NewLine UId="324" />
+  <Blank Num="4" UId="325" />
+  <Access Scope="LocalVariable" UId="326">
+    <Symbol UId="327">
+      <Component Name="sRTOneStepForward" UId="328" />
+      <Token Text="." UId="329" />
+      <Component Name="CLK" UId="330" />
+    </Symbol>
+  </Access>
+  <Blank UId="331" />
+  <Token Text=":=" UId="332" />
+  <Blank UId="333" />
+  <Access Scope="LocalVariable" UId="334">
+    <Symbol UId="335">
+      <Component Name="sOneStepForward" UId="336" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="337" />
+  <NewLine UId="338" />
+  <Blank Num="4" UId="339" />
+  <Access Scope="LocalVariable" UId="340">
+    <Symbol UId="341">
+      <Component Name="sRTOneStepForward" UId="342" />
+    </Symbol>
+  </Access>
+  <Access Scope="Call" UId="343">
+    <Instruction UId="344">
+      <Token Text="(" UId="345" />
+      <Token Text=")" UId="346" />
+    </Instruction>
+  </Access>
+  <Token Text=";" UId="347" />
+  <NewLine UId="348" />
+  <Blank Num="4" UId="349" />
+  <Access Scope="LocalVariable" UId="350">
+    <Symbol UId="351">
+      <Component Name="sStepForward" UId="352" />
+    </Symbol>
+  </Access>
+  <Blank UId="353" />
+  <Token Text=":=" UId="354" />
+  <Blank UId="355" />
+  <Token Text="(" UId="356" />
+  <Token Text="NOT" UId="357" />
+  <Blank UId="358" />
+  <Access Scope="LocalVariable" UId="359">
+    <Symbol UId="360">
+      <Component Name="sOneStepMode" UId="361" />
+    </Symbol>
+  </Access>
+  <Blank UId="362" />
+  <Token Text="OR" UId="363" />
+  <Blank UId="364" />
+  <Token Text="(" UId="365" />
+  <Access Scope="LocalVariable" UId="366">
+    <Symbol UId="367">
+      <Component Name="sOneStepMode" UId="368" />
+    </Symbol>
+  </Access>
+  <Blank UId="369" />
+  <Token Text="AND" UId="370" />
+  <Blank UId="371" />
+  <Access Scope="LocalVariable" UId="372">
+    <Symbol UId="373">
+      <Component Name="sRTOneStepForward" UId="374" />
+      <Token Text="." UId="375" />
+      <Component Name="Q" UId="376" />
+    </Symbol>
+  </Access>
+  <Token Text=")" UId="377" />
+  <Token Text=")" UId="378" />
+  <Blank UId="379" />
+  <Token Text="AND" UId="380" />
+  <Blank UId="381" />
+  <Token Text="NOT" UId="382" />
+  <Blank UId="383" />
+  <Access Scope="LocalVariable" UId="384">
+    <Symbol UId="385">
+      <Component Name="iStepPause" UId="386" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="387" />
+  <NewLine UId="388" />
+  <Blank Num="4" UId="389" />
+  <Access Scope="LocalVariable" UId="390">
+    <Symbol UId="391">
+      <Component Name="sOneStepForward" UId="392" />
+    </Symbol>
+  </Access>
+  <Blank UId="393" />
+  <Token Text=":=" UId="394" />
+  <Blank UId="395" />
+  <Access Scope="LiteralConstant" UId="396">
+    <Constant UId="397">
+      <ConstantValue UId="399">FALSE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="400" />
+  <NewLine UId="401" />
+  <Blank Num="4" UId="402" />
+  <NewLine UId="403" />
+  <Blank Num="4" UId="404" />
+  <LineComment UId="405">
+    <Text UId="406"> Action only true in dedicated steps</Text>
+  </LineComment>
+  <NewLine Num="2" UId="407" />
+  <Token Text="END_REGION" UId="408" />
+  <NewLine Num="2" UId="409" />
+  <Token Text="REGION" UId="410" />
+  <Blank UId="411" />
+  <Text UId="412">Sequence Function</Text>
+  <NewLine UId="413" />
+  <Blank Num="4" UId="414" />
+  <Token Text="CASE" UId="415" />
+  <Blank UId="416" />
+  <Access Scope="LocalVariable" UId="417">
+    <Symbol UId="418">
+      <Component Name="sCurrent_Step_NB" UId="419" />
+    </Symbol>
+  </Access>
+  <Blank UId="420" />
+  <Token Text="OF" UId="421" />
+  <NewLine UId="422" />
+  <Blank Num="8" UId="423" />
+  <Access Scope="LocalConstant" UId="424">
+    <Constant Name="S00_INIT" UId="425" />
+  </Access>
+  <Token Text=":" UId="428" />
+  <NewLine UId="429" />
+  <Blank Num="12" UId="430" />
+  <Token Text="REGION" UId="431" />
+  <Blank UId="432" />
+  <Text UId="433">S00 INIT</Text>
+  <NewLine UId="434" />
+  <Blank Num="16" UId="435" />
+  <Access Scope="LocalVariable" UId="436">
+    <Symbol UId="437">
+      <Component Name="sBwLoadReq" UId="438" />
+    </Symbol>
+  </Access>
+  <Blank UId="439" />
+  <Token Text=":=" UId="440" />
+  <Blank UId="441" />
+  <Access Scope="LiteralConstant" UId="442">
+    <Constant UId="443">
+      <ConstantValue UId="445">FALSE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="446" />
+  <NewLine UId="447" />
+  <Blank Num="16" UId="448" />
+  <Access Scope="LocalVariable" UId="449">
+    <Symbol UId="450">
+      <Component Name="sBwUnloadReq" UId="451" />
+    </Symbol>
+  </Access>
+  <Blank UId="452" />
+  <Token Text=":=" UId="453" />
+  <Blank UId="454" />
+  <Access Scope="LiteralConstant" UId="455">
+    <Constant UId="456">
+      <ConstantValue UId="458">FALSE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="459" />
+  <NewLine UId="460" />
+  <Blank Num="16" UId="461" />
+  <Access Scope="LocalVariable" UId="462">
+    <Symbol UId="463">
+      <Component Name="sCheck_Step_Condition" UId="464" />
+    </Symbol>
+  </Access>
+  <Blank UId="465" />
+  <Token Text=":=" UId="466" />
+  <Blank UId="467" />
+  <Access Scope="LiteralConstant" UId="468">
+    <Constant UId="469">
+      <ConstantValue UId="471">TRUE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="472" />
+  <NewLine UId="473" />
+  <Blank Num="12" UId="474" />
+  <Token Text="END_REGION" UId="475" />
+  <NewLine UId="476" />
+  <Blank Num="8" UId="477" />
+  <Access Scope="LocalConstant" UId="478">
+    <Constant Name="S10_BW_LOAD_UNLOAD_OPTION" UId="479" />
+  </Access>
+  <Token Text=":" UId="482" />
+  <NewLine UId="483" />
+  <Blank Num="12" UId="484" />
+  <Token Text="REGION" UId="485" />
+  <Blank UId="486" />
+  <Text UId="487">S10_BW_LOAD_UNLOAD_OPTION</Text>
+  <NewLine Num="2" UId="488" />
+  <Blank Num="16" UId="489" />
+  <Access Scope="LocalVariable" UId="490">
+    <Symbol UId="491">
+      <Component Name="sCheck_Step_Condition" UId="492" />
+    </Symbol>
+  </Access>
+  <Blank UId="493" />
+  <Token Text=":=" UId="494" />
+  <Blank UId="495" />
+  <Access Scope="LiteralConstant" UId="496">
+    <Constant UId="497">
+      <ConstantValue UId="499">TRUE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="500" />
+  <NewLine UId="501" />
+  <Blank Num="12" UId="502" />
+  <Token Text="END_REGION" UId="503" />
+  <NewLine UId="504" />
+  <Blank Num="8" UId="505" />
+  <Access Scope="LocalConstant" UId="506">
+    <Constant Name="S20_SHUTTLE_TO_BW_LOAD_POS_START_REQ" UId="507" />
+  </Access>
+  <Token Text=":" UId="510" />
+  <NewLine UId="511" />
+  <Blank Num="12" UId="512" />
+  <Token Text="REGION" UId="513" />
+  <Blank UId="514" />
+  <Text UId="515">S20_SHUTTLE_TO_BW_LOAD_POS_START_REQ</Text>
+  <NewLine UId="516" />
+  <Blank Num="16" UId="517" />
+  <Access Scope="LocalVariable" UId="518">
+    <Symbol UId="519">
+      <Component Name="sShuttleStartReq" UId="520" />
+    </Symbol>
+  </Access>
+  <Blank UId="521" />
+  <Token Text=":=" UId="522" />
+  <Blank UId="523" />
+  <Token Text="NOT" UId="524" />
+  <Blank UId="525" />
+  <Access Scope="LocalVariable" UId="526">
+    <Symbol UId="527">
+      <Component Name="iShuttleBwLoadPos" UId="528" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="529" />
+  <NewLine UId="530" />
+  <Blank Num="16" UId="531" />
+  <Access Scope="LocalVariable" UId="532">
+    <Symbol UId="533">
+      <Component Name="sShuttlePosSetPoint" UId="534" />
+    </Symbol>
+  </Access>
+  <Blank UId="535" />
+  <Token Text=":=" UId="536" />
+  <Blank UId="537" />
+  <Access Scope="Call" UId="538">
+    <Instruction Name="LREAL_TO_REAL" UId="539">
+      <Token Text="(" UId="540" />
+      <NamelessParameter UId="541">
+        <Access Scope="LocalVariable" UId="542">
+          <Symbol UId="543">
+            <Component Name="iShuttleBwLoadPosSetPoint" UId="544" />
+          </Symbol>
+        </Access>
+      </NamelessParameter>
+      <Token Text=")" UId="546" />
+    </Instruction>
+  </Access>
+  <Token Text=";" UId="547" />
+  <NewLine UId="548" />
+  <Blank Num="16" UId="549" />
+  <Access Scope="LocalVariable" UId="550">
+    <Symbol UId="551">
+      <Component Name="sCheck_Step_Condition" UId="552" />
+    </Symbol>
+  </Access>
+  <Blank UId="553" />
+  <Token Text=":=" UId="554" />
+  <Blank UId="555" />
+  <Access Scope="LiteralConstant" UId="556">
+    <Constant UId="557">
+      <ConstantValue UId="559">TRUE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="560" />
+  <NewLine UId="561" />
+  <Blank Num="12" UId="562" />
+  <Token Text="END_REGION" UId="563" />
+  <NewLine UId="564" />
+  <Blank Num="8" UId="565" />
+  <Access Scope="LocalConstant" UId="566">
+    <Constant Name="S30_SHUTTLE_TO_BW_LOAD_POS_REACHED" UId="567" />
+  </Access>
+  <Token Text=":" UId="570" />
+  <NewLine UId="571" />
+  <Blank Num="12" UId="572" />
+  <Token Text="REGION" UId="573" />
+  <Blank UId="574" />
+  <Text UId="575">S30_SHUTTLE_TO_BW_LOAD_POS_REACHED</Text>
+  <NewLine UId="576" />
+  <Blank Num="16" UId="577" />
+  <Access Scope="LocalVariable" UId="578">
+    <Symbol UId="579">
+      <Component Name="sCheck_Step_Condition" UId="580" />
+    </Symbol>
+  </Access>
+  <Blank UId="581" />
+  <Token Text=":=" UId="582" />
+  <Blank UId="583" />
+  <Access Scope="LiteralConstant" UId="584">
+    <Constant UId="585">
+      <ConstantValue UId="587">TRUE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="588" />
+  <NewLine UId="589" />
+  <Blank Num="12" UId="590" />
+  <Token Text="END_REGION" UId="591" />
+  <NewLine UId="592" />
+  <Blank Num="8" UId="593" />
+  <Access Scope="LocalConstant" UId="594">
+    <Constant Name="S40_SET_EXCHANGE_BW_LOADER_LOAD" UId="595" />
+  </Access>
+  <Token Text=":" UId="598" />
+  <NewLine UId="599" />
+  <Blank Num="12" UId="600" />
+  <Token Text="REGION" UId="601" />
+  <Blank UId="602" />
+  <Text UId="603">S40_SET_EXCHANGE_BW_LOADER_LOAD</Text>
+  <NewLine UId="604" />
+  <Blank Num="16" UId="605" />
+  <Access Scope="LocalVariable" UId="606">
+    <Symbol UId="607">
+      <Component Name="sBwLoadReq" UId="608" />
+    </Symbol>
+  </Access>
+  <Blank UId="609" />
+  <Token Text=":=" UId="610" />
+  <Blank UId="611" />
+  <Access Scope="LiteralConstant" UId="612">
+    <Constant UId="613">
+      <ConstantValue UId="615">TRUE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="616" />
+  <NewLine UId="617" />
+  <Blank Num="16" UId="618" />
+  <Access Scope="LocalVariable" UId="619">
+    <Symbol UId="620">
+      <Component Name="sCheck_Step_Condition" UId="621" />
+    </Symbol>
+  </Access>
+  <Blank UId="622" />
+  <Token Text=":=" UId="623" />
+  <Blank UId="624" />
+  <Access Scope="LiteralConstant" UId="625">
+    <Constant UId="626">
+      <ConstantValue UId="628">TRUE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="629" />
+  <NewLine UId="630" />
+  <Blank Num="12" UId="631" />
+  <Token Text="END_REGION" UId="632" />
+  <NewLine UId="633" />
+  <Blank Num="8" UId="634" />
+  <Access Scope="LocalConstant" UId="635">
+    <Constant Name="S50_EXCHANGE_BW_LOADER_IN_PROGRESS" UId="636" />
+  </Access>
+  <Token Text=":" UId="639" />
+  <NewLine UId="640" />
+  <Blank Num="12" UId="641" />
+  <Token Text="REGION" UId="642" />
+  <Blank UId="643" />
+  <Text UId="644">S50_EXCHANGE_BW_LOADER_IN_PROGRESS</Text>
+  <NewLine UId="645" />
+  <Blank Num="16" UId="646" />
+  <Access Scope="LocalVariable" UId="647">
+    <Symbol UId="648">
+      <Component Name="sCheck_Step_Condition" UId="649" />
+    </Symbol>
+  </Access>
+  <Blank UId="650" />
+  <Token Text=":=" UId="651" />
+  <Blank UId="652" />
+  <Access Scope="LiteralConstant" UId="653">
+    <Constant UId="654">
+      <ConstantValue UId="656">TRUE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="657" />
+  <NewLine UId="658" />
+  <Blank Num="12" UId="659" />
+  <Token Text="END_REGION" UId="660" />
+  <NewLine UId="661" />
+  <Blank Num="8" UId="662" />
+  <Access Scope="LocalConstant" UId="663">
+    <Constant Name="S60_EXCHANGE_BW_LOADER_ACQUIT" UId="664" />
+  </Access>
+  <Token Text=":" UId="667" />
+  <NewLine UId="668" />
+  <Blank Num="12" UId="669" />
+  <Token Text="REGION" UId="670" />
+  <Blank UId="671" />
+  <Text UId="672">S60_EXCHANGE_BW_LOADER_ACQUIT</Text>
+  <NewLine UId="673" />
+  <Blank Num="16" UId="674" />
+  <Access Scope="LocalVariable" UId="675">
+    <Symbol UId="676">
+      <Component Name="sBwLoadReq" UId="677" />
+    </Symbol>
+  </Access>
+  <Blank UId="678" />
+  <Token Text=":=" UId="679" />
+  <Blank UId="680" />
+  <Access Scope="LiteralConstant" UId="681">
+    <Constant UId="682">
+      <ConstantValue UId="684">FALSE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="685" />
+  <NewLine UId="686" />
+  <Blank Num="16" UId="687" />
+  <Access Scope="LocalVariable" UId="688">
+    <Symbol UId="689">
+      <Component Name="sCheck_Step_Condition" UId="690" />
+    </Symbol>
+  </Access>
+  <Blank UId="691" />
+  <Token Text=":=" UId="692" />
+  <Blank UId="693" />
+  <Access Scope="LiteralConstant" UId="694">
+    <Constant UId="695">
+      <ConstantValue UId="697">TRUE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="698" />
+  <NewLine UId="699" />
+  <Blank Num="12" UId="700" />
+  <Token Text="END_REGION" UId="701" />
+  <NewLine UId="702" />
+  <Blank Num="12" UId="703" />
+  <NewLine UId="704" />
+  <Blank Num="8" UId="705" />
+  <Access Scope="LocalConstant" UId="706">
+    <Constant Name="S120_SHUTTLE_TO_BW_UNLOAD_POS_START_REQ" UId="707" />
+  </Access>
+  <Token Text=":" UId="710" />
+  <NewLine UId="711" />
+  <Blank Num="12" UId="712" />
+  <Token Text="REGION" UId="713" />
+  <Blank UId="714" />
+  <Text UId="715">S120_SHUTTLE_TO_BW_UNLOAD_POS_START_REQ</Text>
+  <NewLine UId="716" />
+  <Blank Num="16" UId="717" />
+  <Access Scope="LocalVariable" UId="718">
+    <Symbol UId="719">
+      <Component Name="sShuttleStartReq" UId="720" />
+    </Symbol>
+  </Access>
+  <Blank UId="721" />
+  <Token Text=":=" UId="722" />
+  <Blank UId="723" />
+  <Token Text="NOT" UId="724" />
+  <Blank UId="725" />
+  <Access Scope="LocalVariable" UId="726">
+    <Symbol UId="727">
+      <Component Name="iShuttleBwUnloadPos" UId="728" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="729" />
+  <NewLine UId="730" />
+  <Blank Num="16" UId="731" />
+  <Access Scope="LocalVariable" UId="732">
+    <Symbol UId="733">
+      <Component Name="sShuttlePosSetPoint" UId="734" />
+    </Symbol>
+  </Access>
+  <Blank UId="735" />
+  <Token Text=":=" UId="736" />
+  <Blank UId="737" />
+  <Access Scope="Call" UId="738">
+    <Instruction Name="LREAL_TO_REAL" UId="739">
+      <Token Text="(" UId="740" />
+      <NamelessParameter UId="741">
+        <Access Scope="LocalVariable" UId="742">
+          <Symbol UId="743">
+            <Component Name="iShuttleBwUnloadPosSetPoint" UId="744" />
+          </Symbol>
+        </Access>
+      </NamelessParameter>
+      <Token Text=")" UId="746" />
+    </Instruction>
+  </Access>
+  <Token Text=";" UId="747" />
+  <NewLine UId="748" />
+  <Blank Num="16" UId="749" />
+  <Access Scope="LocalVariable" UId="750">
+    <Symbol UId="751">
+      <Component Name="sCheck_Step_Condition" UId="752" />
+    </Symbol>
+  </Access>
+  <Blank UId="753" />
+  <Token Text=":=" UId="754" />
+  <Blank UId="755" />
+  <Access Scope="LiteralConstant" UId="756">
+    <Constant UId="757">
+      <ConstantValue UId="759">TRUE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="760" />
+  <NewLine UId="761" />
+  <Blank Num="12" UId="762" />
+  <Token Text="END_REGION" UId="763" />
+  <NewLine UId="764" />
+  <Blank Num="8" UId="765" />
+  <Access Scope="LocalConstant" UId="766">
+    <Constant Name="S130_SHUTTLE_TO_BW_UNLOAD_POS_REACHED" UId="767" />
+  </Access>
+  <Token Text=":" UId="770" />
+  <NewLine UId="771" />
+  <Blank Num="12" UId="772" />
+  <Token Text="REGION" UId="773" />
+  <Blank UId="774" />
+  <Text UId="775">S130_SHUTTLE_TO_BW_UNLOAD_POS_REACHED</Text>
+  <NewLine UId="776" />
+  <Blank Num="16" UId="777" />
+  <Access Scope="LocalVariable" UId="778">
+    <Symbol UId="779">
+      <Component Name="sCheck_Step_Condition" UId="780" />
+    </Symbol>
+  </Access>
+  <Blank UId="781" />
+  <Token Text=":=" UId="782" />
+  <Blank UId="783" />
+  <Access Scope="LiteralConstant" UId="784">
+    <Constant UId="785">
+      <ConstantValue UId="787">TRUE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="788" />
+  <NewLine UId="789" />
+  <Blank Num="12" UId="790" />
+  <Token Text="END_REGION" UId="791" />
+  <NewLine UId="792" />
+  <Blank Num="8" UId="793" />
+  <Access Scope="LocalConstant" UId="794">
+    <Constant Name="S140_SET_EXCHANGE_BW_LOADER_UNLOAD" UId="795" />
+  </Access>
+  <Token Text=":" UId="798" />
+  <NewLine UId="799" />
+  <Blank Num="12" UId="800" />
+  <Token Text="REGION" UId="801" />
+  <Blank UId="802" />
+  <Text UId="803">S140_SET_EXCHANGE_BW_LOADER_UNLOAD</Text>
+  <NewLine UId="804" />
+  <Blank Num="16" UId="805" />
+  <Access Scope="LocalVariable" UId="806">
+    <Symbol UId="807">
+      <Component Name="sBwUnloadReq" UId="808" />
+    </Symbol>
+  </Access>
+  <Blank UId="809" />
+  <Token Text=":=" UId="810" />
+  <Blank UId="811" />
+  <Access Scope="LiteralConstant" UId="812">
+    <Constant UId="813">
+      <ConstantValue UId="815">TRUE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="816" />
+  <NewLine UId="817" />
+  <Blank Num="16" UId="818" />
+  <Access Scope="LocalVariable" UId="819">
+    <Symbol UId="820">
+      <Component Name="sCheck_Step_Condition" UId="821" />
+    </Symbol>
+  </Access>
+  <Blank UId="822" />
+  <Token Text=":=" UId="823" />
+  <Blank UId="824" />
+  <Access Scope="LiteralConstant" UId="825">
+    <Constant UId="826">
+      <ConstantValue UId="828">TRUE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="829" />
+  <NewLine UId="830" />
+  <Blank Num="12" UId="831" />
+  <Token Text="END_REGION" UId="832" />
+  <NewLine UId="833" />
+  <Blank Num="8" UId="834" />
+  <Access Scope="LocalConstant" UId="835">
+    <Constant Name="S150_EXCHANGE_BW_LOADER_IN_PROGRESS" UId="836" />
+  </Access>
+  <Token Text=":" UId="839" />
+  <NewLine UId="840" />
+  <Blank Num="12" UId="841" />
+  <Token Text="REGION" UId="842" />
+  <Blank UId="843" />
+  <Text UId="844">S150_EXCHANGE_BW_LOADER_IN_PROGRESS</Text>
+  <NewLine UId="845" />
+  <Blank Num="16" UId="846" />
+  <Access Scope="LocalVariable" UId="847">
+    <Symbol UId="848">
+      <Component Name="sCheck_Step_Condition" UId="849" />
+    </Symbol>
+  </Access>
+  <Blank UId="850" />
+  <Token Text=":=" UId="851" />
+  <Blank UId="852" />
+  <Access Scope="LiteralConstant" UId="853">
+    <Constant UId="854">
+      <ConstantValue UId="856">TRUE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="857" />
+  <NewLine UId="858" />
+  <Blank Num="12" UId="859" />
+  <Token Text="END_REGION" UId="860" />
+  <NewLine UId="861" />
+  <Blank Num="8" UId="862" />
+  <Access Scope="LocalConstant" UId="863">
+    <Constant Name="S160_EXCHANGE_BW_LOADER_ACQUIT" UId="864" />
+  </Access>
+  <Token Text=":" UId="867" />
+  <NewLine UId="868" />
+  <Blank Num="12" UId="869" />
+  <Token Text="REGION" UId="870" />
+  <Blank UId="871" />
+  <Text UId="872">S160_EXCHANGE_BW_LOADER_ACQUIT</Text>
+  <NewLine UId="873" />
+  <Blank Num="16" UId="874" />
+  <Access Scope="LocalVariable" UId="875">
+    <Symbol UId="876">
+      <Component Name="sBwUnloadReq" UId="877" />
+    </Symbol>
+  </Access>
+  <Blank UId="878" />
+  <Token Text=":=" UId="879" />
+  <Blank UId="880" />
+  <Access Scope="LiteralConstant" UId="881">
+    <Constant UId="882">
+      <ConstantValue UId="884">FALSE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="885" />
+  <NewLine UId="886" />
+  <Blank Num="16" UId="887" />
+  <Access Scope="LocalVariable" UId="888">
+    <Symbol UId="889">
+      <Component Name="sCheck_Step_Condition" UId="890" />
+    </Symbol>
+  </Access>
+  <Blank UId="891" />
+  <Token Text=":=" UId="892" />
+  <Blank UId="893" />
+  <Access Scope="LiteralConstant" UId="894">
+    <Constant UId="895">
+      <ConstantValue UId="897">TRUE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="898" />
+  <NewLine UId="899" />
+  <Blank Num="12" UId="900" />
+  <Token Text="END_REGION" UId="901" />
+  <NewLine UId="902" />
+  <Blank Num="8" UId="903" />
+  <Access Scope="LocalConstant" UId="904">
+    <Constant Name="S195_JOB_DONE" UId="905" />
+  </Access>
+  <Token Text=":" UId="908" />
+  <NewLine UId="909" />
+  <Blank Num="12" UId="910" />
+  <Token Text="REGION" UId="911" />
+  <Blank UId="912" />
+  <Text UId="913">S95_JOB_DONE</Text>
+  <NewLine UId="914" />
+  <Blank Num="16" UId="915" />
+  <Access Scope="LocalVariable" UId="916">
+    <Symbol UId="917">
+      <Component Name="sInterface" UId="918" />
+      <Token Text="." UId="919" />
+      <Component Name="JobDone" UId="920" />
+    </Symbol>
+  </Access>
+  <Blank UId="921" />
+  <Token Text=":=" UId="922" />
+  <Blank UId="923" />
+  <Access Scope="LiteralConstant" UId="924">
+    <Constant UId="925">
+      <ConstantValue UId="927">TRUE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="928" />
+  <NewLine UId="929" />
+  <Blank Num="16" UId="930" />
+  <Access Scope="LocalVariable" UId="931">
+    <Symbol UId="932">
+      <Component Name="sCheck_Step_Condition" UId="933" />
+    </Symbol>
+  </Access>
+  <Blank UId="934" />
+  <Token Text=":=" UId="935" />
+  <Blank UId="936" />
+  <Access Scope="LiteralConstant" UId="937">
+    <Constant UId="938">
+      <ConstantValue UId="940">TRUE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="941" />
+  <NewLine UId="942" />
+  <Blank Num="12" UId="943" />
+  <Token Text="END_REGION" UId="944" />
+  <NewLine UId="945" />
+  <Blank Num="8" UId="946" />
+  <Token Text="ELSE" UId="947" />
+  <Token Text=":" UId="948" />
+  <NewLine UId="949" />
+  <Blank Num="12" UId="950" />
+  <Access Scope="LocalVariable" UId="951">
+    <Symbol UId="952">
+      <Component Name="sInterface" UId="953" />
+      <Token Text="." UId="954" />
+      <Component Name="Error" UId="955" />
+    </Symbol>
+  </Access>
+  <Blank UId="956" />
+  <Token Text=":=" UId="957" />
+  <Blank UId="958" />
+  <Access Scope="LiteralConstant" UId="959">
+    <Constant UId="960">
+      <ConstantValue UId="962">TRUE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="963" />
+  <NewLine UId="964" />
+  <Blank Num="4" UId="965" />
+  <Token Text="END_CASE" UId="966" />
+  <Token Text=";" UId="967" />
+  <NewLine UId="968" />
+  <Token Text="END_REGION" UId="969" />
+  <NewLine Num="2" UId="970" />
+  <Token Text="REGION" UId="971" />
+  <Blank UId="972" />
+  <Text UId="973">Sequence Next Step Condition</Text>
+  <NewLine UId="974" />
+  <Blank Num="4" UId="975" />
+  <Token Text="IF" UId="976" />
+  <Blank UId="977" />
+  <Access Scope="LocalVariable" UId="978">
+    <Symbol UId="979">
+      <Component Name="sCheck_Step_Condition" UId="980" />
+    </Symbol>
+  </Access>
+  <Blank UId="981" />
+  <Token Text="THEN" UId="982" />
+  <NewLine UId="983" />
+  <Blank Num="8" UId="984" />
+  <Token Text="CASE" UId="985" />
+  <Blank UId="986" />
+  <Access Scope="LocalVariable" UId="987">
+    <Symbol UId="988">
+      <Component Name="sCurrent_Step_NB" UId="989" />
+    </Symbol>
+  </Access>
+  <Blank UId="990" />
+  <Token Text="OF" UId="991" />
+  <NewLine UId="992" />
+  <Blank Num="12" UId="993" />
+  <Access Scope="LocalConstant" UId="994">
+    <Constant Name="S00_INIT" UId="995" />
+  </Access>
+  <Token Text=":" UId="998" />
+  <NewLine UId="999" />
+  <Blank Num="16" UId="1000" />
+  <Token Text="REGION" UId="1001" />
+  <Blank UId="1002" />
+  <Text UId="1003">S00 INIT</Text>
+  <NewLine UId="1004" />
+  <Blank Num="20" UId="1005" />
+  <Token Text="IF" UId="1006" />
+  <Blank UId="1007" />
+  <Access Scope="LocalVariable" UId="1008">
+    <Symbol UId="1009">
+      <Component Name="sInterface" UId="1010" />
+      <Token Text="." UId="1011" />
+      <Component Name="SequenceReleased" UId="1012" />
+    </Symbol>
+  </Access>
+  <Blank UId="1013" />
+  <Token Text="AND" UId="1014" />
+  <Blank UId="1015" />
+  <Access Scope="LocalVariable" UId="1016">
+    <Symbol UId="1017">
+      <Component Name="iJobReq" UId="1018" />
+    </Symbol>
+  </Access>
+  <Blank UId="1019" />
+  <Token Text="THEN" UId="1020" />
+  <NewLine UId="1021" />
+  <Blank Num="24" UId="1022" />
+  <Access Scope="LocalVariable" UId="1023">
+    <Symbol UId="1024">
+      <Component Name="sCurrent_Step_NB" UId="1025" />
+    </Symbol>
+  </Access>
+  <Blank UId="1026" />
+  <Token Text=":=" UId="1027" />
+  <Blank UId="1028" />
+  <Access Scope="LocalConstant" UId="1029">
+    <Constant Name="S10_BW_LOAD_UNLOAD_OPTION" UId="1030" />
+  </Access>
+  <Token Text=";" UId="1033" />
+  <NewLine UId="1034" />
+  <Blank Num="24" UId="1035" />
+  <Access Scope="LocalVariable" UId="1036">
+    <Symbol UId="1037">
+      <Component Name="sInterface" UId="1038" />
+      <Token Text="." UId="1039" />
+      <Component Name="SequenceRun" UId="1040" />
+    </Symbol>
+  </Access>
+  <Blank UId="1041" />
+  <Token Text=":=" UId="1042" />
+  <Blank UId="1043" />
+  <Access Scope="LiteralConstant" UId="1044">
+    <Constant UId="1045">
+      <ConstantValue UId="1047">TRUE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="1048" />
+  <NewLine UId="1049" />
+  <Blank Num="24" UId="1050" />
+  <Access Scope="LocalVariable" UId="1051">
+    <Symbol UId="1052">
+      <Component Name="sCheck_Step_Condition" UId="1053" />
+    </Symbol>
+  </Access>
+  <Blank UId="1054" />
+  <Token Text=":=" UId="1055" />
+  <Blank UId="1056" />
+  <Access Scope="LiteralConstant" UId="1057">
+    <Constant UId="1058">
+      <ConstantValue UId="1060">FALSE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="1061" />
+  <NewLine UId="1062" />
+  <Blank Num="20" UId="1063" />
+  <Token Text="ELSE" UId="1064" />
+  <NewLine UId="1065" />
+  <Blank Num="24" UId="1066" />
+  <Access Scope="LocalVariable" UId="1067">
+    <Symbol UId="1068">
+      <Component Name="sInterface" UId="1069" />
+      <Token Text="." UId="1070" />
+      <Component Name="SequenceRun" UId="1071" />
+    </Symbol>
+  </Access>
+  <Blank UId="1072" />
+  <Token Text=":=" UId="1073" />
+  <Blank UId="1074" />
+  <Access Scope="LiteralConstant" UId="1075">
+    <Constant UId="1076">
+      <ConstantValue UId="1078">FALSE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="1079" />
+  <NewLine UId="1080" />
+  <Blank Num="20" UId="1081" />
+  <Token Text="END_IF" UId="1082" />
+  <Token Text=";" UId="1083" />
+  <NewLine UId="1084" />
+  <Blank Num="16" UId="1085" />
+  <Token Text="END_REGION" UId="1086" />
+  <NewLine UId="1087" />
+  <Blank Num="12" UId="1088" />
+  <Access Scope="LocalConstant" UId="1089">
+    <Constant Name="S10_BW_LOAD_UNLOAD_OPTION" UId="1090" />
+  </Access>
+  <Token Text=":" UId="1093" />
+  <NewLine UId="1094" />
+  <Blank Num="16" UId="1095" />
+  <Token Text="REGION" UId="1096" />
+  <Blank UId="1097" />
+  <Text UId="1098">S10_BW_LOAD_UNLOAD_OPTION</Text>
+  <NewLine UId="1099" />
+  <Blank Num="20" UId="1100" />
+  <Token Text="IF" UId="1101" />
+  <Blank UId="1102" />
+  <Access Scope="LocalVariable" UId="1103">
+    <Symbol UId="1104">
+      <Component Name="sInterface" UId="1105" />
+      <Token Text="." UId="1106" />
+      <Component Name="SequenceReleased" UId="1107" />
+    </Symbol>
+  </Access>
+  <Blank UId="1108" />
+  <Token Text="AND" UId="1109" />
+  <Blank UId="1110" />
+  <Access Scope="LocalVariable" UId="1111">
+    <Symbol UId="1112">
+      <Component Name="sStepForward" UId="1113" />
+    </Symbol>
+  </Access>
+  <Blank UId="1114" />
+  <Token Text="AND" UId="1115" />
+  <Blank UId="1116" />
+  <Access Scope="GlobalVariable" UId="1117">
+    <Symbol UId="1118">
+      <Component Name="DB_LoaderOptions" UId="1119">
+        <BooleanAttribute Name="HasQuotes" UId="1120">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="1121" />
+      <Component Name="BwLoadUnload" UId="1122" />
+      <Token Text="." UId="1123" />
+      <Component Name="SeparatePos" UId="1124" />
+    </Symbol>
+  </Access>
+  <Blank UId="1125" />
+  <Token Text="AND" UId="1126" />
+  <Blank UId="1127" />
+  <Access Scope="LocalVariable" UId="1128">
+    <Symbol UId="1129">
+      <Component Name="iLoadReq" UId="1130" />
+    </Symbol>
+  </Access>
+  <Blank UId="1131" />
+  <Token Text="AND" UId="1132" />
+  <Blank UId="1133" />
+  <Token Text="NOT" UId="1134" />
+  <Blank UId="1135" />
+  <Access Scope="LocalVariable" UId="1136">
+    <Symbol UId="1137">
+      <Component Name="iUnloadReq" UId="1138" />
+    </Symbol>
+  </Access>
+  <Blank UId="1139" />
+  <Token Text="THEN" UId="1140" />
+  <NewLine UId="1141" />
+  <Blank Num="24" UId="1142" />
+  <Access Scope="LocalVariable" UId="1143">
+    <Symbol UId="1144">
+      <Component Name="sCurrent_Step_NB" UId="1145" />
+    </Symbol>
+  </Access>
+  <Blank UId="1146" />
+  <Token Text=":=" UId="1147" />
+  <Blank UId="1148" />
+  <Access Scope="LocalConstant" UId="1149">
+    <Constant Name="S20_SHUTTLE_TO_BW_LOAD_POS_START_REQ" UId="1150" />
+  </Access>
+  <Token Text=";" UId="1153" />
+  <NewLine UId="1154" />
+  <Blank Num="24" UId="1155" />
+  <Access Scope="LocalVariable" UId="1156">
+    <Symbol UId="1157">
+      <Component Name="sCheck_Step_Condition" UId="1158" />
+    </Symbol>
+  </Access>
+  <Blank UId="1159" />
+  <Token Text=":=" UId="1160" />
+  <Blank UId="1161" />
+  <Access Scope="LiteralConstant" UId="1162">
+    <Constant UId="1163">
+      <ConstantValue UId="1165">FALSE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="1166" />
+  <NewLine UId="1167" />
+  <Blank Num="20" UId="1168" />
+  <Token Text="ELSIF" UId="1169" />
+  <Blank UId="1170" />
+  <Access Scope="LocalVariable" UId="1171">
+    <Symbol UId="1172">
+      <Component Name="sInterface" UId="1173" />
+      <Token Text="." UId="1174" />
+      <Component Name="SequenceReleased" UId="1175" />
+    </Symbol>
+  </Access>
+  <Blank UId="1176" />
+  <Token Text="AND" UId="1177" />
+  <Blank UId="1178" />
+  <Access Scope="LocalVariable" UId="1179">
+    <Symbol UId="1180">
+      <Component Name="sStepForward" UId="1181" />
+    </Symbol>
+  </Access>
+  <Blank UId="1182" />
+  <Token Text="AND" UId="1183" />
+  <Blank UId="1184" />
+  <Access Scope="GlobalVariable" UId="1185">
+    <Symbol UId="1186">
+      <Component Name="DB_LoaderOptions" UId="1187">
+        <BooleanAttribute Name="HasQuotes" UId="1188">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="1189" />
+      <Component Name="BwLoadUnload" UId="1190" />
+      <Token Text="." UId="1191" />
+      <Component Name="SeparatePos" UId="1192" />
+    </Symbol>
+  </Access>
+  <Blank UId="1193" />
+  <Token Text="AND" UId="1194" />
+  <Blank UId="1195" />
+  <Token Text="NOT" UId="1196" />
+  <Blank UId="1197" />
+  <Access Scope="LocalVariable" UId="1198">
+    <Symbol UId="1199">
+      <Component Name="iLoadReq" UId="1200" />
+    </Symbol>
+  </Access>
+  <Blank UId="1201" />
+  <Token Text="AND" UId="1202" />
+  <Blank UId="1203" />
+  <Access Scope="LocalVariable" UId="1204">
+    <Symbol UId="1205">
+      <Component Name="iUnloadReq" UId="1206" />
+    </Symbol>
+  </Access>
+  <Blank UId="1207" />
+  <Token Text="THEN" UId="1208" />
+  <NewLine UId="1209" />
+  <Blank Num="24" UId="1210" />
+  <Access Scope="LocalVariable" UId="1211">
+    <Symbol UId="1212">
+      <Component Name="sCurrent_Step_NB" UId="1213" />
+    </Symbol>
+  </Access>
+  <Blank UId="1214" />
+  <Token Text=":=" UId="1215" />
+  <Blank UId="1216" />
+  <Access Scope="LocalConstant" UId="1217">
+    <Constant Name="S120_SHUTTLE_TO_BW_UNLOAD_POS_START_REQ" UId="1218" />
+  </Access>
+  <Token Text=";" UId="1221" />
+  <NewLine UId="1222" />
+  <Blank Num="24" UId="1223" />
+  <Access Scope="LocalVariable" UId="1224">
+    <Symbol UId="1225">
+      <Component Name="sCheck_Step_Condition" UId="1226" />
+    </Symbol>
+  </Access>
+  <Blank UId="1227" />
+  <Token Text=":=" UId="1228" />
+  <Blank UId="1229" />
+  <Access Scope="LiteralConstant" UId="1230">
+    <Constant UId="1231">
+      <ConstantValue UId="1233">FALSE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="1234" />
+  <NewLine UId="1235" />
+  <Blank Num="20" UId="1236" />
+  <Token Text="ELSIF" UId="1237" />
+  <Blank UId="1238" />
+  <Access Scope="LocalVariable" UId="1239">
+    <Symbol UId="1240">
+      <Component Name="sInterface" UId="1241" />
+      <Token Text="." UId="1242" />
+      <Component Name="SequenceReleased" UId="1243" />
+    </Symbol>
+  </Access>
+  <Blank UId="1244" />
+  <Token Text="AND" UId="1245" />
+  <Blank UId="1246" />
+  <Access Scope="LocalVariable" UId="1247">
+    <Symbol UId="1248">
+      <Component Name="sStepForward" UId="1249" />
+    </Symbol>
+  </Access>
+  <Blank UId="1250" />
+  <Token Text="AND" UId="1251" />
+  <Blank UId="1252" />
+  <Token Text="NOT" UId="1253" />
+  <Blank UId="1254" />
+  <Access Scope="LocalVariable" UId="1255">
+    <Symbol UId="1256">
+      <Component Name="iLoadReq" UId="1257" />
+    </Symbol>
+  </Access>
+  <Blank UId="1258" />
+  <Token Text="AND" UId="1259" />
+  <Blank UId="1260" />
+  <Token Text="NOT" UId="1261" />
+  <Blank UId="1262" />
+  <Access Scope="LocalVariable" UId="1263">
+    <Symbol UId="1264">
+      <Component Name="iUnloadReq" UId="1265" />
+    </Symbol>
+  </Access>
+  <Blank UId="1266" />
+  <Token Text="THEN" UId="1267" />
+  <NewLine UId="1268" />
+  <Blank Num="24" UId="1269" />
+  <Access Scope="LocalVariable" UId="1270">
+    <Symbol UId="1271">
+      <Component Name="sCurrent_Step_NB" UId="1272" />
+    </Symbol>
+  </Access>
+  <Blank UId="1273" />
+  <Token Text=":=" UId="1274" />
+  <Blank UId="1275" />
+  <Access Scope="LocalConstant" UId="1276">
+    <Constant Name="S195_JOB_DONE" UId="1277" />
+  </Access>
+  <Token Text=";" UId="1280" />
+  <NewLine UId="1281" />
+  <Blank Num="24" UId="1282" />
+  <Access Scope="LocalVariable" UId="1283">
+    <Symbol UId="1284">
+      <Component Name="sCheck_Step_Condition" UId="1285" />
+    </Symbol>
+  </Access>
+  <Blank UId="1286" />
+  <Token Text=":=" UId="1287" />
+  <Blank UId="1288" />
+  <Access Scope="LiteralConstant" UId="1289">
+    <Constant UId="1290">
+      <ConstantValue UId="1292">FALSE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="1293" />
+  <NewLine UId="1294" />
+  <Blank Num="20" UId="1295" />
+  <Token Text="END_IF" UId="1296" />
+  <Token Text=";" UId="1297" />
+  <NewLine UId="1298" />
+  <Blank Num="16" UId="1299" />
+  <Token Text="END_REGION" UId="1300" />
+  <NewLine UId="1301" />
+  <Blank Num="12" UId="1302" />
+  <Access Scope="LocalConstant" UId="1303">
+    <Constant Name="S20_SHUTTLE_TO_BW_LOAD_POS_START_REQ" UId="1304" />
+  </Access>
+  <Token Text=":" UId="1307" />
+  <NewLine UId="1308" />
+  <Blank Num="16" UId="1309" />
+  <Token Text="REGION" UId="1310" />
+  <Blank UId="1311" />
+  <Text UId="1312">S20_SHUTTLE_TO_BW_LOAD_POS_START_REQ</Text>
+  <NewLine UId="1313" />
+  <Blank Num="20" UId="1314" />
+  <Token Text="IF" UId="1315" />
+  <Blank UId="1316" />
+  <Access Scope="LocalVariable" UId="1317">
+    <Symbol UId="1318">
+      <Component Name="sInterface" UId="1319" />
+      <Token Text="." UId="1320" />
+      <Component Name="SequenceReleased" UId="1321" />
+    </Symbol>
+  </Access>
+  <Blank UId="1322" />
+  <Token Text="AND" UId="1323" />
+  <Blank UId="1324" />
+  <Token Text="(" UId="1325" />
+  <Access Scope="LocalVariable" UId="1326">
+    <Symbol UId="1327">
+      <Component Name="iShuttleMoving" UId="1328" />
+    </Symbol>
+  </Access>
+  <Blank UId="1329" />
+  <Token Text="OR" UId="1330" />
+  <Blank UId="1331" />
+  <Access Scope="LocalVariable" UId="1332">
+    <Symbol UId="1333">
+      <Component Name="iShuttleBwLoadPos" UId="1334" />
+    </Symbol>
+  </Access>
+  <Token Text=")" UId="1335" />
+  <Blank UId="1336" />
+  <Token Text="THEN" UId="1337" />
+  <NewLine UId="1338" />
+  <Blank Num="24" UId="1339" />
+  <Access Scope="LocalVariable" UId="1340">
+    <Symbol UId="1341">
+      <Component Name="sCurrent_Step_NB" UId="1342" />
+    </Symbol>
+  </Access>
+  <Blank UId="1343" />
+  <Token Text=":=" UId="1344" />
+  <Blank UId="1345" />
+  <Access Scope="LocalConstant" UId="1346">
+    <Constant Name="S30_SHUTTLE_TO_BW_LOAD_POS_REACHED" UId="1347" />
+  </Access>
+  <Token Text=";" UId="1350" />
+  <NewLine UId="1351" />
+  <Blank Num="24" UId="1352" />
+  <Access Scope="LocalVariable" UId="1353">
+    <Symbol UId="1354">
+      <Component Name="sCheck_Step_Condition" UId="1355" />
+    </Symbol>
+  </Access>
+  <Blank UId="1356" />
+  <Token Text=":=" UId="1357" />
+  <Blank UId="1358" />
+  <Access Scope="LiteralConstant" UId="1359">
+    <Constant UId="1360">
+      <ConstantValue UId="1362">FALSE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="1363" />
+  <NewLine UId="1364" />
+  <Blank Num="20" UId="1365" />
+  <Token Text="END_IF" UId="1366" />
+  <Token Text=";" UId="1367" />
+  <NewLine UId="1368" />
+  <Blank Num="16" UId="1369" />
+  <Token Text="END_REGION" UId="1370" />
+  <NewLine UId="1371" />
+  <Blank Num="12" UId="1372" />
+  <Access Scope="LocalConstant" UId="1373">
+    <Constant Name="S30_SHUTTLE_TO_BW_LOAD_POS_REACHED" UId="1374" />
+  </Access>
+  <Token Text=":" UId="1377" />
+  <NewLine UId="1378" />
+  <Blank Num="16" UId="1379" />
+  <Token Text="REGION" UId="1380" />
+  <Blank UId="1381" />
+  <Text UId="1382">S30_SHUTTLE_TO_BW_LOAD_POS_REACHED</Text>
+  <NewLine UId="1383" />
+  <Blank Num="20" UId="1384" />
+  <Token Text="IF" UId="1385" />
+  <Blank UId="1386" />
+  <Access Scope="LocalVariable" UId="1387">
+    <Symbol UId="1388">
+      <Component Name="sInterface" UId="1389" />
+      <Token Text="." UId="1390" />
+      <Component Name="SequenceReleased" UId="1391" />
+    </Symbol>
+  </Access>
+  <Blank UId="1392" />
+  <Token Text="AND" UId="1393" />
+  <Blank UId="1394" />
+  <Access Scope="LocalVariable" UId="1395">
+    <Symbol UId="1396">
+      <Component Name="sStepForward" UId="1397" />
+    </Symbol>
+  </Access>
+  <Blank UId="1398" />
+  <Token Text="AND" UId="1399" />
+  <Blank UId="1400" />
+  <Token Text="NOT" UId="1401" />
+  <Blank UId="1402" />
+  <Access Scope="LocalVariable" UId="1403">
+    <Symbol UId="1404">
+      <Component Name="sShuttleStartReq" UId="1405" />
+    </Symbol>
+  </Access>
+  <Blank UId="1406" />
+  <Token Text="AND" UId="1407" />
+  <Blank UId="1408" />
+  <Access Scope="LocalVariable" UId="1409">
+    <Symbol UId="1410">
+      <Component Name="iShuttleBwLoadPos" UId="1411" />
+    </Symbol>
+  </Access>
+  <Blank UId="1412" />
+  <Token Text="AND" UId="1413" />
+  <Blank UId="1414" />
+  <Access Scope="GlobalVariable" UId="1415">
+    <Symbol UId="1416">
+      <Component Name="DB_BwLoaderExchange" UId="1417">
+        <BooleanAttribute Name="HasQuotes" UId="1418">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="1419" />
+      <Component Name="Inputs" UId="1420" />
+      <Token Text="." UId="1421" />
+      <Component Name="BwInErrorState" UId="1422" />
+    </Symbol>
+  </Access>
+  <Blank UId="1423" />
+  <Token Text="=" UId="1424" />
+  <Blank UId="1425" />
+  <Access Scope="LiteralConstant" UId="1426">
+    <Constant UId="1427">
+      <ConstantValue UId="1429">0</ConstantValue>
+    </Constant>
+  </Access>
+  <Blank UId="1430" />
+  <Token Text="THEN" UId="1431" />
+  <NewLine UId="1432" />
+  <Blank Num="24" UId="1433" />
+  <Access Scope="LocalVariable" UId="1434">
+    <Symbol UId="1435">
+      <Component Name="sCurrent_Step_NB" UId="1436" />
+    </Symbol>
+  </Access>
+  <Blank UId="1437" />
+  <Token Text=":=" UId="1438" />
+  <Blank UId="1439" />
+  <Access Scope="LocalConstant" UId="1440">
+    <Constant Name="S40_SET_EXCHANGE_BW_LOADER_LOAD" UId="1441" />
+  </Access>
+  <Token Text=";" UId="1444" />
+  <NewLine UId="1445" />
+  <Blank Num="24" UId="1446" />
+  <Access Scope="LocalVariable" UId="1447">
+    <Symbol UId="1448">
+      <Component Name="sCheck_Step_Condition" UId="1449" />
+    </Symbol>
+  </Access>
+  <Blank UId="1450" />
+  <Token Text=":=" UId="1451" />
+  <Blank UId="1452" />
+  <Access Scope="LiteralConstant" UId="1453">
+    <Constant UId="1454">
+      <ConstantValue UId="1456">FALSE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="1457" />
+  <NewLine UId="1458" />
+  <Blank Num="20" UId="1459" />
+  <Token Text="END_IF" UId="1460" />
+  <Token Text=";" UId="1461" />
+  <NewLine UId="1462" />
+  <Blank Num="16" UId="1463" />
+  <Token Text="END_REGION" UId="1464" />
+  <NewLine UId="1465" />
+  <Blank Num="12" UId="1466" />
+  <Access Scope="LocalConstant" UId="1467">
+    <Constant Name="S40_SET_EXCHANGE_BW_LOADER_LOAD" UId="1468" />
+  </Access>
+  <Token Text=":" UId="1471" />
+  <NewLine UId="1472" />
+  <Blank Num="16" UId="1473" />
+  <Token Text="REGION" UId="1474" />
+  <Blank UId="1475" />
+  <Text UId="1476">S40_SET_EXCHANGE_BW_LOADER_LOAD</Text>
+  <NewLine UId="1477" />
+  <Blank Num="20" UId="1478" />
+  <Token Text="IF" UId="1479" />
+  <Blank UId="1480" />
+  <Access Scope="LocalVariable" UId="1481">
+    <Symbol UId="1482">
+      <Component Name="sInterface" UId="1483" />
+      <Token Text="." UId="1484" />
+      <Component Name="SequenceReleased" UId="1485" />
+    </Symbol>
+  </Access>
+  <Blank UId="1486" />
+  <Token Text="AND" UId="1487" />
+  <Blank UId="1488" />
+  <Access Scope="LocalVariable" UId="1489">
+    <Symbol UId="1490">
+      <Component Name="sStepForward" UId="1491" />
+    </Symbol>
+  </Access>
+  <Blank UId="1492" />
+  <Token Text="AND" UId="1493" />
+  <Blank UId="1494" />
+  <Access Scope="GlobalVariable" UId="1495">
+    <Symbol UId="1496">
+      <Component Name="AlwaysTRUE" UId="1497">
+        <BooleanAttribute Name="HasQuotes" UId="1498">true</BooleanAttribute>
+      </Component>
+    </Symbol>
+  </Access>
+  <Blank UId="1499" />
+  <Token Text="THEN" UId="1500" />
+  <NewLine UId="1501" />
+  <Blank Num="24" UId="1502" />
+  <Access Scope="LocalVariable" UId="1503">
+    <Symbol UId="1504">
+      <Component Name="sCurrent_Step_NB" UId="1505" />
+    </Symbol>
+  </Access>
+  <Blank UId="1506" />
+  <Token Text=":=" UId="1507" />
+  <Blank UId="1508" />
+  <Access Scope="LocalConstant" UId="1509">
+    <Constant Name="S50_EXCHANGE_BW_LOADER_IN_PROGRESS" UId="1510" />
+  </Access>
+  <Token Text=";" UId="1513" />
+  <NewLine UId="1514" />
+  <Blank Num="24" UId="1515" />
+  <Access Scope="LocalVariable" UId="1516">
+    <Symbol UId="1517">
+      <Component Name="sCheck_Step_Condition" UId="1518" />
+    </Symbol>
+  </Access>
+  <Blank UId="1519" />
+  <Token Text=":=" UId="1520" />
+  <Blank UId="1521" />
+  <Access Scope="LiteralConstant" UId="1522">
+    <Constant UId="1523">
+      <ConstantValue UId="1525">FALSE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="1526" />
+  <NewLine UId="1527" />
+  <Blank Num="20" UId="1528" />
+  <Token Text="END_IF" UId="1529" />
+  <Token Text=";" UId="1530" />
+  <NewLine UId="1531" />
+  <Blank Num="16" UId="1532" />
+  <Token Text="END_REGION" UId="1533" />
+  <NewLine UId="1534" />
+  <Blank Num="12" UId="1535" />
+  <Access Scope="LocalConstant" UId="1536">
+    <Constant Name="S50_EXCHANGE_BW_LOADER_IN_PROGRESS" UId="1537" />
+  </Access>
+  <Token Text=":" UId="1540" />
+  <NewLine UId="1541" />
+  <Blank Num="16" UId="1542" />
+  <Token Text="REGION" UId="1543" />
+  <Blank UId="1544" />
+  <Text UId="1545">S50_EXCHANGE_BW_LOADER_IN_PROGRESS</Text>
+  <NewLine UId="1546" />
+  <Blank Num="20" UId="1547" />
+  <Token Text="IF" UId="1548" />
+  <Blank UId="1549" />
+  <Access Scope="LocalVariable" UId="1550">
+    <Symbol UId="1551">
+      <Component Name="sInterface" UId="1552" />
+      <Token Text="." UId="1553" />
+      <Component Name="SequenceReleased" UId="1554" />
+    </Symbol>
+  </Access>
+  <Blank UId="1555" />
+  <Token Text="AND" UId="1556" />
+  <Blank UId="1557" />
+  <Access Scope="LocalVariable" UId="1558">
+    <Symbol UId="1559">
+      <Component Name="sStepForward" UId="1560" />
+    </Symbol>
+  </Access>
+  <Blank UId="1561" />
+  <Token Text="AND" UId="1562" />
+  <Blank UId="1563" />
+  <Token Text="(" UId="1564" />
+  <Access Scope="LocalVariable" UId="1565">
+    <Symbol UId="1566">
+      <Component Name="iBwLoadDone" UId="1567" />
+    </Symbol>
+  </Access>
+  <Blank UId="1568" />
+  <Token Text="OR" UId="1569" />
+  <Blank UId="1570" />
+  <Access Scope="GlobalVariable" UId="1571">
+    <Symbol UId="1572">
+      <Component Name="DB_BwLoaderExchange" UId="1573">
+        <BooleanAttribute Name="HasQuotes" UId="1574">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="1575" />
+      <Component Name="Inputs" UId="1576" />
+      <Token Text="." UId="1577" />
+      <Component Name="BwInErrorState" UId="1578" />
+    </Symbol>
+  </Access>
+  <Blank UId="1579" />
+  <Token Text="&lt;&gt;" UId="1580" />
+  <Blank UId="1581" />
+  <Access Scope="LiteralConstant" UId="1582">
+    <Constant UId="1583">
+      <ConstantValue UId="1585">0</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=")" UId="1586" />
+  <Blank UId="1587" />
+  <Token Text="THEN" UId="1588" />
+  <NewLine UId="1589" />
+  <Blank Num="24" UId="1590" />
+  <Access Scope="LocalVariable" UId="1591">
+    <Symbol UId="1592">
+      <Component Name="sCurrent_Step_NB" UId="1593" />
+    </Symbol>
+  </Access>
+  <Blank UId="1594" />
+  <Token Text=":=" UId="1595" />
+  <Blank UId="1596" />
+  <Access Scope="LocalConstant" UId="1597">
+    <Constant Name="S60_EXCHANGE_BW_LOADER_ACQUIT" UId="1598" />
+  </Access>
+  <Token Text=";" UId="1601" />
+  <NewLine UId="1602" />
+  <Blank Num="24" UId="1603" />
+  <Access Scope="LocalVariable" UId="1604">
+    <Symbol UId="1605">
+      <Component Name="sCheck_Step_Condition" UId="1606" />
+    </Symbol>
+  </Access>
+  <Blank UId="1607" />
+  <Token Text=":=" UId="1608" />
+  <Blank UId="1609" />
+  <Access Scope="LiteralConstant" UId="1610">
+    <Constant UId="1611">
+      <ConstantValue UId="1613">FALSE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="1614" />
+  <NewLine UId="1615" />
+  <Blank Num="20" UId="1616" />
+  <Token Text="END_IF" UId="1617" />
+  <Token Text=";" UId="1618" />
+  <NewLine UId="1619" />
+  <Blank Num="16" UId="1620" />
+  <Token Text="END_REGION" UId="1621" />
+  <NewLine UId="1622" />
+  <Blank Num="12" UId="1623" />
+  <Access Scope="LocalConstant" UId="1624">
+    <Constant Name="S60_EXCHANGE_BW_LOADER_ACQUIT" UId="1625" />
+  </Access>
+  <Token Text=":" UId="1628" />
+  <NewLine UId="1629" />
+  <Blank Num="16" UId="1630" />
+  <Token Text="REGION" UId="1631" />
+  <Blank UId="1632" />
+  <Text UId="1633">S60_EXCHANGE_BW_LOADER_ACQUIT</Text>
+  <NewLine UId="1634" />
+  <Blank Num="20" UId="1635" />
+  <Token Text="IF" UId="1636" />
+  <Blank UId="1637" />
+  <Access Scope="LocalVariable" UId="1638">
+    <Symbol UId="1639">
+      <Component Name="sInterface" UId="1640" />
+      <Token Text="." UId="1641" />
+      <Component Name="SequenceReleased" UId="1642" />
+    </Symbol>
+  </Access>
+  <Blank UId="1643" />
+  <Token Text="AND" UId="1644" />
+  <Blank UId="1645" />
+  <Access Scope="LocalVariable" UId="1646">
+    <Symbol UId="1647">
+      <Component Name="sStepForward" UId="1648" />
+    </Symbol>
+  </Access>
+  <Blank UId="1649" />
+  <Token Text="AND" UId="1650" />
+  <Blank UId="1651" />
+  <Access Scope="GlobalVariable" UId="1652">
+    <Symbol UId="1653">
+      <Component Name="AlwaysTRUE" UId="1654">
+        <BooleanAttribute Name="HasQuotes" UId="1655">true</BooleanAttribute>
+      </Component>
+    </Symbol>
+  </Access>
+  <Blank UId="1656" />
+  <Token Text="THEN" UId="1657" />
+  <NewLine UId="1658" />
+  <Blank Num="24" UId="1659" />
+  <Access Scope="LocalVariable" UId="1660">
+    <Symbol UId="1661">
+      <Component Name="sCurrent_Step_NB" UId="1662" />
+    </Symbol>
+  </Access>
+  <Blank UId="1663" />
+  <Token Text=":=" UId="1664" />
+  <Blank UId="1665" />
+  <Access Scope="LocalConstant" UId="1666">
+    <Constant Name="S195_JOB_DONE" UId="1667" />
+  </Access>
+  <Token Text=";" UId="1670" />
+  <NewLine UId="1671" />
+  <Blank Num="24" UId="1672" />
+  <Access Scope="LocalVariable" UId="1673">
+    <Symbol UId="1674">
+      <Component Name="sCheck_Step_Condition" UId="1675" />
+    </Symbol>
+  </Access>
+  <Blank UId="1676" />
+  <Token Text=":=" UId="1677" />
+  <Blank UId="1678" />
+  <Access Scope="LiteralConstant" UId="1679">
+    <Constant UId="1680">
+      <ConstantValue UId="1682">FALSE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="1683" />
+  <NewLine UId="1684" />
+  <Blank Num="20" UId="1685" />
+  <Token Text="END_IF" UId="1686" />
+  <Token Text=";" UId="1687" />
+  <NewLine UId="1688" />
+  <Blank Num="16" UId="1689" />
+  <Token Text="END_REGION" UId="1690" />
+  <NewLine UId="1691" />
+  <Blank Num="12" UId="1692" />
+  <Access Scope="LocalConstant" UId="1693">
+    <Constant Name="S120_SHUTTLE_TO_BW_UNLOAD_POS_START_REQ" UId="1694" />
+  </Access>
+  <Token Text=":" UId="1697" />
+  <NewLine UId="1698" />
+  <Blank Num="16" UId="1699" />
+  <Token Text="REGION" UId="1700" />
+  <Blank UId="1701" />
+  <Text UId="1702">S120_SHUTTLE_TO_BW_UNLOAD_POS_START_REQ</Text>
+  <NewLine UId="1703" />
+  <Blank Num="20" UId="1704" />
+  <Token Text="IF" UId="1705" />
+  <Blank UId="1706" />
+  <Access Scope="LocalVariable" UId="1707">
+    <Symbol UId="1708">
+      <Component Name="sInterface" UId="1709" />
+      <Token Text="." UId="1710" />
+      <Component Name="SequenceReleased" UId="1711" />
+    </Symbol>
+  </Access>
+  <Blank UId="1712" />
+  <Token Text="AND" UId="1713" />
+  <Blank UId="1714" />
+  <Token Text="(" UId="1715" />
+  <Access Scope="LocalVariable" UId="1716">
+    <Symbol UId="1717">
+      <Component Name="iShuttleMoving" UId="1718" />
+    </Symbol>
+  </Access>
+  <Blank UId="1719" />
+  <Token Text="OR" UId="1720" />
+  <Blank UId="1721" />
+  <Access Scope="LocalVariable" UId="1722">
+    <Symbol UId="1723">
+      <Component Name="iShuttleBwUnloadPos" UId="1724" />
+    </Symbol>
+  </Access>
+  <Token Text=")" UId="1725" />
+  <Blank UId="1726" />
+  <Token Text="THEN" UId="1727" />
+  <NewLine UId="1728" />
+  <Blank Num="24" UId="1729" />
+  <Access Scope="LocalVariable" UId="1730">
+    <Symbol UId="1731">
+      <Component Name="sCurrent_Step_NB" UId="1732" />
+    </Symbol>
+  </Access>
+  <Blank UId="1733" />
+  <Token Text=":=" UId="1734" />
+  <Blank UId="1735" />
+  <Access Scope="LocalConstant" UId="1736">
+    <Constant Name="S130_SHUTTLE_TO_BW_UNLOAD_POS_REACHED" UId="1737" />
+  </Access>
+  <Token Text=";" UId="1740" />
+  <NewLine UId="1741" />
+  <Blank Num="24" UId="1742" />
+  <Access Scope="LocalVariable" UId="1743">
+    <Symbol UId="1744">
+      <Component Name="sCheck_Step_Condition" UId="1745" />
+    </Symbol>
+  </Access>
+  <Blank UId="1746" />
+  <Token Text=":=" UId="1747" />
+  <Blank UId="1748" />
+  <Access Scope="LiteralConstant" UId="1749">
+    <Constant UId="1750">
+      <ConstantValue UId="1752">FALSE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="1753" />
+  <NewLine UId="1754" />
+  <Blank Num="20" UId="1755" />
+  <Token Text="END_IF" UId="1756" />
+  <Token Text=";" UId="1757" />
+  <NewLine UId="1758" />
+  <Blank Num="16" UId="1759" />
+  <Token Text="END_REGION" UId="1760" />
+  <NewLine UId="1761" />
+  <Blank Num="12" UId="1762" />
+  <Access Scope="LocalConstant" UId="1763">
+    <Constant Name="S130_SHUTTLE_TO_BW_UNLOAD_POS_REACHED" UId="1764" />
+  </Access>
+  <Token Text=":" UId="1767" />
+  <NewLine UId="1768" />
+  <Blank Num="16" UId="1769" />
+  <Token Text="REGION" UId="1770" />
+  <Blank UId="1771" />
+  <Text UId="1772">S130_SHUTTLE_TO_BW_UNLOAD_POS_REACHED</Text>
+  <NewLine UId="1773" />
+  <Blank Num="20" UId="1774" />
+  <Token Text="IF" UId="1775" />
+  <Blank UId="1776" />
+  <Access Scope="LocalVariable" UId="1777">
+    <Symbol UId="1778">
+      <Component Name="sInterface" UId="1779" />
+      <Token Text="." UId="1780" />
+      <Component Name="SequenceReleased" UId="1781" />
+    </Symbol>
+  </Access>
+  <Blank UId="1782" />
+  <Token Text="AND" UId="1783" />
+  <Blank UId="1784" />
+  <Access Scope="LocalVariable" UId="1785">
+    <Symbol UId="1786">
+      <Component Name="sStepForward" UId="1787" />
+    </Symbol>
+  </Access>
+  <Blank UId="1788" />
+  <Token Text="AND" UId="1789" />
+  <Blank UId="1790" />
+  <Token Text="NOT" UId="1791" />
+  <Blank UId="1792" />
+  <Access Scope="LocalVariable" UId="1793">
+    <Symbol UId="1794">
+      <Component Name="sShuttleStartReq" UId="1795" />
+    </Symbol>
+  </Access>
+  <Blank UId="1796" />
+  <Token Text="AND" UId="1797" />
+  <Blank UId="1798" />
+  <Access Scope="LocalVariable" UId="1799">
+    <Symbol UId="1800">
+      <Component Name="iShuttleBwUnloadPos" UId="1801" />
+    </Symbol>
+  </Access>
+  <Blank UId="1802" />
+  <Token Text="AND" UId="1803" />
+  <Blank UId="1804" />
+  <Access Scope="GlobalVariable" UId="1805">
+    <Symbol UId="1806">
+      <Component Name="DB_BwLoaderExchange" UId="1807">
+        <BooleanAttribute Name="HasQuotes" UId="1808">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="1809" />
+      <Component Name="Inputs" UId="1810" />
+      <Token Text="." UId="1811" />
+      <Component Name="BwInErrorState" UId="1812" />
+    </Symbol>
+  </Access>
+  <Blank UId="1813" />
+  <Token Text="=" UId="1814" />
+  <Blank UId="1815" />
+  <Access Scope="LiteralConstant" UId="1816">
+    <Constant UId="1817">
+      <ConstantValue UId="1819">0</ConstantValue>
+    </Constant>
+  </Access>
+  <Blank UId="1820" />
+  <Token Text="THEN" UId="1821" />
+  <NewLine UId="1822" />
+  <Blank Num="24" UId="1823" />
+  <Access Scope="LocalVariable" UId="1824">
+    <Symbol UId="1825">
+      <Component Name="sCurrent_Step_NB" UId="1826" />
+    </Symbol>
+  </Access>
+  <Blank UId="1827" />
+  <Token Text=":=" UId="1828" />
+  <Blank UId="1829" />
+  <Access Scope="LocalConstant" UId="1830">
+    <Constant Name="S140_SET_EXCHANGE_BW_LOADER_UNLOAD" UId="1831" />
+  </Access>
+  <Token Text=";" UId="1834" />
+  <NewLine UId="1835" />
+  <Blank Num="24" UId="1836" />
+  <Access Scope="LocalVariable" UId="1837">
+    <Symbol UId="1838">
+      <Component Name="sCheck_Step_Condition" UId="1839" />
+    </Symbol>
+  </Access>
+  <Blank UId="1840" />
+  <Token Text=":=" UId="1841" />
+  <Blank UId="1842" />
+  <Access Scope="LiteralConstant" UId="1843">
+    <Constant UId="1844">
+      <ConstantValue UId="1846">FALSE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="1847" />
+  <NewLine UId="1848" />
+  <Blank Num="20" UId="1849" />
+  <Token Text="END_IF" UId="1850" />
+  <Token Text=";" UId="1851" />
+  <NewLine UId="1852" />
+  <Blank Num="16" UId="1853" />
+  <Token Text="END_REGION" UId="1854" />
+  <NewLine UId="1855" />
+  <Blank Num="12" UId="1856" />
+  <Access Scope="LocalConstant" UId="1857">
+    <Constant Name="S140_SET_EXCHANGE_BW_LOADER_UNLOAD" UId="1858" />
+  </Access>
+  <Token Text=":" UId="1861" />
+  <NewLine UId="1862" />
+  <Blank Num="16" UId="1863" />
+  <Token Text="REGION" UId="1864" />
+  <Blank UId="1865" />
+  <Text UId="1866">S140_SET_EXCHANGE_BW_LOADER_UNLOAD</Text>
+  <NewLine UId="1867" />
+  <Blank Num="20" UId="1868" />
+  <Token Text="IF" UId="1869" />
+  <Blank UId="1870" />
+  <Access Scope="LocalVariable" UId="1871">
+    <Symbol UId="1872">
+      <Component Name="sInterface" UId="1873" />
+      <Token Text="." UId="1874" />
+      <Component Name="SequenceReleased" UId="1875" />
+    </Symbol>
+  </Access>
+  <Blank UId="1876" />
+  <Token Text="AND" UId="1877" />
+  <Blank UId="1878" />
+  <Access Scope="LocalVariable" UId="1879">
+    <Symbol UId="1880">
+      <Component Name="sStepForward" UId="1881" />
+    </Symbol>
+  </Access>
+  <Blank UId="1882" />
+  <Token Text="AND" UId="1883" />
+  <Blank UId="1884" />
+  <Access Scope="GlobalVariable" UId="1885">
+    <Symbol UId="1886">
+      <Component Name="AlwaysTRUE" UId="1887">
+        <BooleanAttribute Name="HasQuotes" UId="1888">true</BooleanAttribute>
+      </Component>
+    </Symbol>
+  </Access>
+  <Blank UId="1889" />
+  <Token Text="THEN" UId="1890" />
+  <NewLine UId="1891" />
+  <Blank Num="24" UId="1892" />
+  <Access Scope="LocalVariable" UId="1893">
+    <Symbol UId="1894">
+      <Component Name="sCurrent_Step_NB" UId="1895" />
+    </Symbol>
+  </Access>
+  <Blank UId="1896" />
+  <Token Text=":=" UId="1897" />
+  <Blank UId="1898" />
+  <Access Scope="LocalConstant" UId="1899">
+    <Constant Name="S150_EXCHANGE_BW_LOADER_IN_PROGRESS" UId="1900" />
+  </Access>
+  <Token Text=";" UId="1903" />
+  <NewLine UId="1904" />
+  <Blank Num="24" UId="1905" />
+  <Access Scope="LocalVariable" UId="1906">
+    <Symbol UId="1907">
+      <Component Name="sCheck_Step_Condition" UId="1908" />
+    </Symbol>
+  </Access>
+  <Blank UId="1909" />
+  <Token Text=":=" UId="1910" />
+  <Blank UId="1911" />
+  <Access Scope="LiteralConstant" UId="1912">
+    <Constant UId="1913">
+      <ConstantValue UId="1915">FALSE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="1916" />
+  <NewLine UId="1917" />
+  <Blank Num="20" UId="1918" />
+  <Token Text="END_IF" UId="1919" />
+  <Token Text=";" UId="1920" />
+  <NewLine UId="1921" />
+  <Blank Num="16" UId="1922" />
+  <Token Text="END_REGION" UId="1923" />
+  <NewLine UId="1924" />
+  <Blank Num="12" UId="1925" />
+  <Access Scope="LocalConstant" UId="1926">
+    <Constant Name="S150_EXCHANGE_BW_LOADER_IN_PROGRESS" UId="1927" />
+  </Access>
+  <Token Text=":" UId="1930" />
+  <NewLine UId="1931" />
+  <Blank Num="16" UId="1932" />
+  <Token Text="REGION" UId="1933" />
+  <Blank UId="1934" />
+  <Text UId="1935">S150_EXCHANGE_BW_LOADER_IN_PROGRESS</Text>
+  <NewLine UId="1936" />
+  <Blank Num="20" UId="1937" />
+  <Token Text="IF" UId="1938" />
+  <Blank UId="1939" />
+  <Access Scope="LocalVariable" UId="1940">
+    <Symbol UId="1941">
+      <Component Name="sInterface" UId="1942" />
+      <Token Text="." UId="1943" />
+      <Component Name="SequenceReleased" UId="1944" />
+    </Symbol>
+  </Access>
+  <Blank UId="1945" />
+  <Token Text="AND" UId="1946" />
+  <Blank UId="1947" />
+  <Access Scope="LocalVariable" UId="1948">
+    <Symbol UId="1949">
+      <Component Name="sStepForward" UId="1950" />
+    </Symbol>
+  </Access>
+  <Blank UId="1951" />
+  <Token Text="AND" UId="1952" />
+  <Blank UId="1953" />
+  <Token Text="(" UId="1954" />
+  <Access Scope="LocalVariable" UId="1955">
+    <Symbol UId="1956">
+      <Component Name="iBwUnloadDone" UId="1957" />
+    </Symbol>
+  </Access>
+  <Blank UId="1958" />
+  <Token Text="OR" UId="1959" />
+  <Blank UId="1960" />
+  <Access Scope="GlobalVariable" UId="1961">
+    <Symbol UId="1962">
+      <Component Name="DB_BwLoaderExchange" UId="1963">
+        <BooleanAttribute Name="HasQuotes" UId="1964">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="1965" />
+      <Component Name="Inputs" UId="1966" />
+      <Token Text="." UId="1967" />
+      <Component Name="BwInErrorState" UId="1968" />
+    </Symbol>
+  </Access>
+  <Blank UId="1969" />
+  <Token Text="&lt;&gt;" UId="1970" />
+  <Blank UId="1971" />
+  <Access Scope="LiteralConstant" UId="1972">
+    <Constant UId="1973">
+      <ConstantValue UId="1975">0</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=")" UId="1976" />
+  <Blank UId="1977" />
+  <Token Text="THEN" UId="1978" />
+  <NewLine UId="1979" />
+  <Blank Num="24" UId="1980" />
+  <Access Scope="LocalVariable" UId="1981">
+    <Symbol UId="1982">
+      <Component Name="sCurrent_Step_NB" UId="1983" />
+    </Symbol>
+  </Access>
+  <Blank UId="1984" />
+  <Token Text=":=" UId="1985" />
+  <Blank UId="1986" />
+  <Access Scope="LocalConstant" UId="1987">
+    <Constant Name="S160_EXCHANGE_BW_LOADER_ACQUIT" UId="1988" />
+  </Access>
+  <Token Text=";" UId="1991" />
+  <NewLine UId="1992" />
+  <Blank Num="24" UId="1993" />
+  <Access Scope="LocalVariable" UId="1994">
+    <Symbol UId="1995">
+      <Component Name="sCheck_Step_Condition" UId="1996" />
+    </Symbol>
+  </Access>
+  <Blank UId="1997" />
+  <Token Text=":=" UId="1998" />
+  <Blank UId="1999" />
+  <Access Scope="LiteralConstant" UId="2000">
+    <Constant UId="2001">
+      <ConstantValue UId="2003">FALSE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="2004" />
+  <NewLine UId="2005" />
+  <Blank Num="20" UId="2006" />
+  <Token Text="END_IF" UId="2007" />
+  <Token Text=";" UId="2008" />
+  <NewLine UId="2009" />
+  <Blank Num="16" UId="2010" />
+  <Token Text="END_REGION" UId="2011" />
+  <NewLine UId="2012" />
+  <Blank Num="12" UId="2013" />
+  <Access Scope="LocalConstant" UId="2014">
+    <Constant Name="S160_EXCHANGE_BW_LOADER_ACQUIT" UId="2015" />
+  </Access>
+  <Token Text=":" UId="2018" />
+  <NewLine UId="2019" />
+  <Blank Num="16" UId="2020" />
+  <Token Text="REGION" UId="2021" />
+  <Blank UId="2022" />
+  <Text UId="2023">S160_EXCHANGE_BW_LOADER_ACQUIT</Text>
+  <NewLine UId="2024" />
+  <Blank Num="20" UId="2025" />
+  <Token Text="IF" UId="2026" />
+  <Blank UId="2027" />
+  <Access Scope="LocalVariable" UId="2028">
+    <Symbol UId="2029">
+      <Component Name="sInterface" UId="2030" />
+      <Token Text="." UId="2031" />
+      <Component Name="SequenceReleased" UId="2032" />
+    </Symbol>
+  </Access>
+  <Blank UId="2033" />
+  <Token Text="AND" UId="2034" />
+  <Blank UId="2035" />
+  <Access Scope="LocalVariable" UId="2036">
+    <Symbol UId="2037">
+      <Component Name="sStepForward" UId="2038" />
+    </Symbol>
+  </Access>
+  <Blank UId="2039" />
+  <Token Text="AND" UId="2040" />
+  <Blank UId="2041" />
+  <Access Scope="GlobalVariable" UId="2042">
+    <Symbol UId="2043">
+      <Component Name="AlwaysTRUE" UId="2044">
+        <BooleanAttribute Name="HasQuotes" UId="2045">true</BooleanAttribute>
+      </Component>
+    </Symbol>
+  </Access>
+  <Blank UId="2046" />
+  <Token Text="THEN" UId="2047" />
+  <NewLine UId="2048" />
+  <Blank Num="24" UId="2049" />
+  <Access Scope="LocalVariable" UId="2050">
+    <Symbol UId="2051">
+      <Component Name="sCurrent_Step_NB" UId="2052" />
+    </Symbol>
+  </Access>
+  <Blank UId="2053" />
+  <Token Text=":=" UId="2054" />
+  <Blank UId="2055" />
+  <Access Scope="LocalConstant" UId="2056">
+    <Constant Name="S195_JOB_DONE" UId="2057" />
+  </Access>
+  <Token Text=";" UId="2060" />
+  <NewLine UId="2061" />
+  <Blank Num="24" UId="2062" />
+  <Access Scope="LocalVariable" UId="2063">
+    <Symbol UId="2064">
+      <Component Name="sCheck_Step_Condition" UId="2065" />
+    </Symbol>
+  </Access>
+  <Blank UId="2066" />
+  <Token Text=":=" UId="2067" />
+  <Blank UId="2068" />
+  <Access Scope="LiteralConstant" UId="2069">
+    <Constant UId="2070">
+      <ConstantValue UId="2072">FALSE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="2073" />
+  <NewLine UId="2074" />
+  <Blank Num="20" UId="2075" />
+  <Token Text="END_IF" UId="2076" />
+  <Token Text=";" UId="2077" />
+  <NewLine UId="2078" />
+  <Blank Num="16" UId="2079" />
+  <Token Text="END_REGION" UId="2080" />
+  <NewLine UId="2081" />
+  <Blank Num="12" UId="2082" />
+  <Access Scope="LocalConstant" UId="2083">
+    <Constant Name="S195_JOB_DONE" UId="2084" />
+  </Access>
+  <Token Text=":" UId="2087" />
+  <NewLine UId="2088" />
+  <Blank Num="16" UId="2089" />
+  <Token Text="REGION" UId="2090" />
+  <Blank UId="2091" />
+  <Text UId="2092">S95_JOB_DONE</Text>
+  <NewLine UId="2093" />
+  <Blank Num="20" UId="2094" />
+  <Token Text="IF" UId="2095" />
+  <Blank UId="2096" />
+  <Token Text="NOT" UId="2097" />
+  <Blank UId="2098" />
+  <Access Scope="LocalVariable" UId="2099">
+    <Symbol UId="2100">
+      <Component Name="iJobReq" UId="2101" />
+    </Symbol>
+  </Access>
+  <Blank UId="2102" />
+  <Token Text="THEN" UId="2103" />
+  <NewLine UId="2104" />
+  <Blank Num="24" UId="2105" />
+  <Access Scope="LocalVariable" UId="2106">
+    <Symbol UId="2107">
+      <Component Name="sCurrent_Step_NB" UId="2108" />
+    </Symbol>
+  </Access>
+  <Blank UId="2109" />
+  <Token Text=":=" UId="2110" />
+  <Blank UId="2111" />
+  <Access Scope="LocalConstant" UId="2112">
+    <Constant Name="S00_INIT" UId="2113" />
+  </Access>
+  <Token Text=";" UId="2116" />
+  <NewLine UId="2117" />
+  <Blank Num="24" UId="2118" />
+  <Access Scope="LocalVariable" UId="2119">
+    <Symbol UId="2120">
+      <Component Name="sCheck_Step_Condition" UId="2121" />
+    </Symbol>
+  </Access>
+  <Blank UId="2122" />
+  <Token Text=":=" UId="2123" />
+  <Blank UId="2124" />
+  <Access Scope="LiteralConstant" UId="2125">
+    <Constant UId="2126">
+      <ConstantValue UId="2128">FALSE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="2129" />
+  <NewLine UId="2130" />
+  <Blank Num="24" UId="2131" />
+  <Access Scope="LocalVariable" UId="2132">
+    <Symbol UId="2133">
+      <Component Name="sInterface" UId="2134" />
+      <Token Text="." UId="2135" />
+      <Component Name="JobDone" UId="2136" />
+    </Symbol>
+  </Access>
+  <Blank UId="2137" />
+  <Token Text=":=" UId="2138" />
+  <Blank UId="2139" />
+  <Access Scope="LiteralConstant" UId="2140">
+    <Constant UId="2141">
+      <ConstantValue UId="2143">FALSE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="2144" />
+  <NewLine UId="2145" />
+  <Blank Num="20" UId="2146" />
+  <Token Text="END_IF" UId="2147" />
+  <Token Text=";" UId="2148" />
+  <NewLine UId="2149" />
+  <Blank Num="16" UId="2150" />
+  <Token Text="END_REGION" UId="2151" />
+  <NewLine UId="2152" />
+  <Blank Num="12" UId="2153" />
+  <Token Text="ELSE" UId="2154" />
+  <NewLine UId="2155" />
+  <Blank Num="16" UId="2156" />
+  <Access Scope="LocalVariable" UId="2157">
+    <Symbol UId="2158">
+      <Component Name="sInterface" UId="2159" />
+      <Token Text="." UId="2160" />
+      <Component Name="Error" UId="2161" />
+    </Symbol>
+  </Access>
+  <Blank UId="2162" />
+  <Token Text=":=" UId="2163" />
+  <Blank UId="2164" />
+  <Access Scope="LiteralConstant" UId="2165">
+    <Constant UId="2166">
+      <ConstantValue UId="2168">TRUE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="2169" />
+  <NewLine UId="2170" />
+  <Blank Num="8" UId="2171" />
+  <Token Text="END_CASE" UId="2172" />
+  <Token Text=";" UId="2173" />
+  <NewLine UId="2174" />
+  <Blank Num="4" UId="2175" />
+  <Token Text="END_IF" UId="2176" />
+  <Token Text=";" UId="2177" />
+  <NewLine UId="2178" />
+  <Token Text="END_REGION" UId="2179" />
+  <NewLine Num="2" UId="2180" />
+  <Token Text="REGION" UId="2181" />
+  <Blank UId="2182" />
+  <Text UId="2183">Outputs Update</Text>
+  <NewLine UId="2184" />
+  <Blank Num="4" UId="2185" />
+  <Access Scope="LocalVariable" UId="2186">
+    <Symbol UId="2187">
+      <Component Name="oShuttleStartReq" UId="2188" />
+    </Symbol>
+  </Access>
+  <Blank UId="2189" />
+  <Token Text=":=" UId="2190" />
+  <Blank UId="2191" />
+  <Access Scope="LocalVariable" UId="2192">
+    <Symbol UId="2193">
+      <Component Name="sShuttleStartReq" UId="2194" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="2195" />
+  <NewLine UId="2196" />
+  <Blank Num="4" UId="2197" />
+  <Access Scope="LocalVariable" UId="2198">
+    <Symbol UId="2199">
+      <Component Name="oShuttlePosSetPoint" UId="2200" />
+    </Symbol>
+  </Access>
+  <Blank UId="2201" />
+  <Token Text=":=" UId="2202" />
+  <Blank UId="2203" />
+  <Access Scope="LocalVariable" UId="2204">
+    <Symbol UId="2205">
+      <Component Name="sShuttlePosSetPoint" UId="2206" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="2207" />
+  <NewLine UId="2208" />
+  <Blank Num="4" UId="2209" />
+  <Access Scope="LocalVariable" UId="2210">
+    <Symbol UId="2211">
+      <Component Name="oBwLoadReq" UId="2212" />
+    </Symbol>
+  </Access>
+  <Blank UId="2213" />
+  <Token Text=":=" UId="2214" />
+  <Blank UId="2215" />
+  <Access Scope="LocalVariable" UId="2216">
+    <Symbol UId="2217">
+      <Component Name="sBwLoadReq" UId="2218" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="2219" />
+  <NewLine UId="2220" />
+  <Blank Num="4" UId="2221" />
+  <Access Scope="LocalVariable" UId="2222">
+    <Symbol UId="2223">
+      <Component Name="oBwUnloadReq" UId="2224" />
+    </Symbol>
+  </Access>
+  <Blank UId="2225" />
+  <Token Text=":=" UId="2226" />
+  <Blank UId="2227" />
+  <Access Scope="LocalVariable" UId="2228">
+    <Symbol UId="2229">
+      <Component Name="sBwUnloadReq" UId="2230" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="2231" />
+  <NewLine UId="2232" />
+  <Token Text="END_REGION" UId="2233" />
+  <NewLine Num="2" UId="2234" />
+  <Token Text="REGION" UId="2235" />
+  <Blank UId="2236" />
+  <Text UId="2237">Steps - Date and Time History</Text>
+  <NewLine UId="2238" />
+  <Blank Num="4" UId="2239" />
+  <Token Text="IF" UId="2240" />
+  <Blank UId="2241" />
+  <Access Scope="LocalVariable" UId="2242">
+    <Symbol UId="2243">
+      <Component Name="sHistory" UId="2244" />
+      <Token Text="." UId="2245" />
+      <Component Name="Activation" UId="2246" />
+    </Symbol>
+  </Access>
+  <Blank UId="2247" />
+  <Token Text="THEN" UId="2248" />
+  <NewLine UId="2249" />
+  <Blank Num="8" UId="2250" />
+  <Token Text="IF" UId="2251" />
+  <Blank UId="2252" />
+  <Access Scope="LocalVariable" UId="2253">
+    <Symbol UId="2254">
+      <Component Name="sHistory" UId="2255" />
+      <Token Text="." UId="2256" />
+      <Component Name="Steps" UId="2257">
+        <Token Text="[" UId="2258" />
+        <Access Scope="LiteralConstant" UId="2259">
+          <Constant UId="2260">
+            <ConstantValue UId="2262">0</ConstantValue>
+          </Constant>
+        </Access>
+        <Token Text="]" UId="2263" />
+      </Component>
+    </Symbol>
+  </Access>
+  <Blank UId="2264" />
+  <Token Text="&lt;&gt;" UId="2265" />
+  <Blank UId="2266" />
+  <Access Scope="LocalVariable" UId="2267">
+    <Symbol UId="2268">
+      <Component Name="sCurrent_Step_NB" UId="2269" />
+    </Symbol>
+  </Access>
+  <Blank UId="2270" />
+  <Token Text="THEN" UId="2271" />
+  <NewLine UId="2272" />
+  <Blank Num="12" UId="2273" />
+  <Token Text="FOR" UId="2274" />
+  <Blank UId="2275" />
+  <Access Scope="LocalVariable" UId="2276">
+    <Symbol UId="2277">
+      <Component Name="tIndex" UId="2278" />
+    </Symbol>
+  </Access>
+  <Blank UId="2279" />
+  <Token Text=":=" UId="2280" />
+  <Blank UId="2281" />
+  <Access Scope="LiteralConstant" UId="2282">
+    <Constant UId="2283">
+      <ConstantValue UId="2285">98</ConstantValue>
+    </Constant>
+  </Access>
+  <Blank UId="2286" />
+  <Token Text="TO" UId="2287" />
+  <Blank UId="2288" />
+  <Access Scope="LiteralConstant" UId="2289">
+    <Constant UId="2290">
+      <ConstantValue UId="2292">0</ConstantValue>
+    </Constant>
+  </Access>
+  <Blank UId="2293" />
+  <Token Text="BY" UId="2294" />
+  <Blank UId="2295" />
+  <Access Scope="LiteralConstant" UId="2296">
+    <Constant UId="2297">
+      <ConstantValue UId="2299">-1</ConstantValue>
+    </Constant>
+  </Access>
+  <Blank UId="2300" />
+  <Token Text="DO" UId="2301" />
+  <NewLine UId="2302" />
+  <Blank Num="16" UId="2303" />
+  <Access Scope="LocalVariable" UId="2304">
+    <Symbol UId="2305">
+      <Component Name="sHistory" UId="2306" />
+      <Token Text="." UId="2307" />
+      <Component Name="Steps" UId="2308">
+        <Token Text="[" UId="2309" />
+        <Access Scope="LocalVariable" UId="2310">
+          <Symbol UId="2311">
+            <Component Name="tIndex" UId="2312" />
+          </Symbol>
+        </Access>
+        <Blank UId="2313" />
+        <Token Text="+" UId="2314" />
+        <Blank UId="2315" />
+        <Access Scope="LiteralConstant" UId="2316">
+          <Constant UId="2317">
+            <ConstantValue UId="2319">1</ConstantValue>
+          </Constant>
+        </Access>
+        <Token Text="]" UId="2320" />
+      </Component>
+    </Symbol>
+  </Access>
+  <Blank UId="2321" />
+  <Token Text=":=" UId="2322" />
+  <Blank UId="2323" />
+  <Access Scope="LocalVariable" UId="2324">
+    <Symbol UId="2325">
+      <Component Name="sHistory" UId="2326" />
+      <Token Text="." UId="2327" />
+      <Component Name="Steps" UId="2328">
+        <Token Text="[" UId="2329" />
+        <Access Scope="LocalVariable" UId="2330">
+          <Symbol UId="2331">
+            <Component Name="tIndex" UId="2332" />
+          </Symbol>
+        </Access>
+        <Token Text="]" UId="2333" />
+      </Component>
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="2334" />
+  <NewLine UId="2335" />
+  <Blank Num="16" UId="2336" />
+  <Access Scope="LocalVariable" UId="2337">
+    <Symbol UId="2338">
+      <Component Name="sHistory" UId="2339" />
+      <Token Text="." UId="2340" />
+      <Component Name="Date_Time" UId="2341">
+        <Token Text="[" UId="2342" />
+        <Access Scope="LocalVariable" UId="2343">
+          <Symbol UId="2344">
+            <Component Name="tIndex" UId="2345" />
+          </Symbol>
+        </Access>
+        <Blank UId="2346" />
+        <Token Text="+" UId="2347" />
+        <Blank UId="2348" />
+        <Access Scope="LiteralConstant" UId="2349">
+          <Constant UId="2350">
+            <ConstantValue UId="2352">1</ConstantValue>
+          </Constant>
+        </Access>
+        <Token Text="]" UId="2353" />
+      </Component>
+    </Symbol>
+  </Access>
+  <Blank UId="2354" />
+  <Token Text=":=" UId="2355" />
+  <Blank UId="2356" />
+  <Access Scope="LocalVariable" UId="2357">
+    <Symbol UId="2358">
+      <Component Name="sHistory" UId="2359" />
+      <Token Text="." UId="2360" />
+      <Component Name="Date_Time" UId="2361">
+        <Token Text="[" UId="2362" />
+        <Access Scope="LocalVariable" UId="2363">
+          <Symbol UId="2364">
+            <Component Name="tIndex" UId="2365" />
+          </Symbol>
+        </Access>
+        <Token Text="]" UId="2366" />
+      </Component>
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="2367" />
+  <NewLine UId="2368" />
+  <Blank Num="12" UId="2369" />
+  <Token Text="END_FOR" UId="2370" />
+  <Token Text=";" UId="2371" />
+  <NewLine UId="2372" />
+  <Blank Num="12" UId="2373" />
+  <Access Scope="LocalVariable" UId="2374">
+    <Symbol UId="2375">
+      <Component Name="sHistory" UId="2376" />
+      <Token Text="." UId="2377" />
+      <Component Name="Steps" UId="2378">
+        <Token Text="[" UId="2379" />
+        <Access Scope="LiteralConstant" UId="2380">
+          <Constant UId="2381">
+            <ConstantValue UId="2383">0</ConstantValue>
+          </Constant>
+        </Access>
+        <Token Text="]" UId="2384" />
+      </Component>
+    </Symbol>
+  </Access>
+  <Blank UId="2385" />
+  <Token Text=":=" UId="2386" />
+  <Blank UId="2387" />
+  <Access Scope="LocalVariable" UId="2388">
+    <Symbol UId="2389">
+      <Component Name="sCurrent_Step_NB" UId="2390" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="2391" />
+  <NewLine UId="2392" />
+  <Blank Num="12" UId="2393" />
+  <Access Scope="LocalVariable" UId="2394">
+    <Symbol UId="2395">
+      <Component Name="sHistory" UId="2396" />
+      <Token Text="." UId="2397" />
+      <Component Name="Date_Time" UId="2398">
+        <Token Text="[" UId="2399" />
+        <Access Scope="LiteralConstant" UId="2400">
+          <Constant UId="2401">
+            <ConstantValue UId="2403">0</ConstantValue>
+          </Constant>
+        </Access>
+        <Token Text="]" UId="2404" />
+      </Component>
+    </Symbol>
+  </Access>
+  <Blank UId="2405" />
+  <Token Text=":=" UId="2406" />
+  <Blank UId="2407" />
+  <Access Scope="LocalVariable" UId="2408">
+    <Symbol UId="2409">
+      <Component Name="iPLC_DateAndTime" UId="2410" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="2411" />
+  <NewLine UId="2412" />
+  <Blank Num="8" UId="2413" />
+  <Token Text="END_IF" UId="2414" />
+  <Token Text=";" UId="2415" />
+  <NewLine UId="2416" />
+  <Blank Num="4" UId="2417" />
+  <Token Text="END_IF" UId="2418" />
+  <Token Text=";" UId="2419" />
+  <NewLine UId="2420" />
+  <Token Text="END_REGION" UId="2421" />
+  <NewLine Num="2" UId="2422" />
+  <Token Text="REGION" UId="2423" />
+  <Blank UId="2424" />
+  <Text UId="2425">Steps Text</Text>
+  <NewLine UId="2426" />
+  <Blank Num="4" UId="2427" />
+  <Access Scope="Call" UId="2428">
+    <CallInfo UId="2429" BlockType="FB" Name="FB_GetTextErrorCode">
+      <Instance Scope="LocalVariable" UId="2430">
+        <Component Name="StepText" UId="2431" />
+      </Instance>
+      <Token Text="(" UId="2432" />
+      <Parameter Name="iErrorCode" UId="2433">
+        <Blank UId="2434" />
+        <Token Text=":=" UId="2435" />
+        <Blank UId="2436" />
+        <Access Scope="LocalVariable" UId="2437">
+          <Symbol UId="2438">
+            <Component Name="sCurrent_Step_NB" UId="2439" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="2440" />
+      <NewLine UId="2441" />
+      <Blank Num="14" UId="2442" />
+      <Parameter Name="oErrorText" UId="2443">
+        <Blank UId="2444" />
+        <Token Text="=&gt;" UId="2445" />
+        <Blank UId="2446" />
+        <Access Scope="LocalVariable" UId="2447">
+          <Symbol UId="2448">
+            <Component Name="StepText" UId="2449" />
+            <Token Text="." UId="2450" />
+            <Component Name="oErrorText" UId="2451" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text=")" UId="2452" />
+    </CallInfo>
+  </Access>
+  <Token Text=";" UId="2453" />
+  <NewLine UId="2454" />
+  <Token Text="END_REGION" UId="2455" />
+</StructuredText></NetworkSource>
+          <ProgrammingLanguage>SCL</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="5" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="6" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="7" CompositionName="Items">
+                <AttributeList>
+                  <Culture>fr-FR</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="8" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="9" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="A" CompositionName="Items">
+                <AttributeList>
+                  <Culture>fr-FR</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <MultilingualText ID="B" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="C" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="D" CompositionName="Items">
+            <AttributeList>
+              <Culture>fr-FR</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Blocks.FB>
+</Document>

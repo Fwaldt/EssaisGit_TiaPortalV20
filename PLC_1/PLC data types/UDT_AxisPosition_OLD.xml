@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V20" />
+  <SW.Types.PlcStruct ID="0">
+    <AttributeList>
+      <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+  <Section Name="None">
+    <Member Name="Axis_U" Datatype="Struct">
+      <Member Name="PosExternalLoad" Datatype="Real" />
+      <Member Name="PosExternalUnload" Datatype="Real" />
+      <Member Name="PosSas" Datatype="Real" />
+      <Member Name="PosBlowing" Datatype="Real" />
+      <Member Name="PosControlUndrilled" Datatype="Real" />
+      <Member Name="PosControlDrilled" Datatype="Real" />
+      <Member Name="PosInternalLoadUndrilled" Datatype="Real" />
+      <Member Name="PosInternalUnloadDrilled" Datatype="Real" />
+      <Member Name="PosSemiAuto" Datatype="Real" />
+      <Member Name="PosExtGateExt" Datatype="Real" />
+      <Member Name="PosIntGateExt" Datatype="Real" />
+      <Member Name="PosExtGateInt" Datatype="Real" />
+      <Member Name="PosIntGateInt" Datatype="Real" />
+    </Member>
+    <Member Name="Axis_V" Datatype="Struct">
+      <Member Name="PosShuttleUndrilled" Datatype="Real" />
+      <Member Name="PosShuttleDrilled" Datatype="Real" />
+      <Member Name="PosWashingVacuum" Datatype="Real" />
+      <Member Name="PosWashingBrush" Datatype="Real" />
+      <Member Name="PosHome" Datatype="Real" />
+      <Member Name="PosChangeBackwall" Datatype="Real" />
+    </Member>
+    <Member Name="Axis_W" Datatype="Struct">
+      <Member Name="PosUp" Datatype="Real" />
+      <Member Name="PosShuttleUndrilled" Datatype="Real" />
+      <Member Name="PosShuttleDrilled" Datatype="Real" />
+      <Member Name="PosWashingVacuum" Datatype="Real" />
+      <Member Name="PosWashingBrush" Datatype="Real" />
+      <Member Name="PosChangeBackwall" Datatype="Real" />
+    </Member>
+    <Member Name="Axis_X" Datatype="Struct">
+      <Member Name="PosChangeBackwall" Datatype="Real" />
+    </Member>
+    <Member Name="Axis_Y" Datatype="Struct">
+      <Member Name="PosChangeBackwall" Datatype="Real" />
+    </Member>
+    <Member Name="Axis_ZM" Datatype="Struct">
+      <Member Name="PosChangeBackwall" Datatype="Real" />
+    </Member>
+    <Member Name="Axis_ZL" Datatype="Struct">
+      <Member Name="PosChangeBackwall" Datatype="Real" />
+    </Member>
+    <Member Name="Axis_B" Datatype="Struct">
+      <Member Name="PosChangeBackwall" Datatype="Real" />
+    </Member>
+    <Member Name="Axis_C" Datatype="Struct">
+      <Member Name="PosChangeBackwall" Datatype="Real" />
+    </Member>
+  </Section>
+</Sections></Interface>
+      <Name>UDT_AxisPosition_OLD</Name>
+      <Namespace />
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="3" CompositionName="Items">
+            <AttributeList>
+              <Culture>fr-FR</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <MultilingualText ID="4" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="5" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="6" CompositionName="Items">
+            <AttributeList>
+              <Culture>fr-FR</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Types.PlcStruct>
+</Document>

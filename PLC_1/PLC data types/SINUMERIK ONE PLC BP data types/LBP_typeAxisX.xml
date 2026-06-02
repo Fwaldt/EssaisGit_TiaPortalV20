@@ -1,0 +1,2680 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V20" />
+  <SW.Types.PlcStruct ID="0">
+    <AttributeList>
+      <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+  <Section Name="None">
+    <Member Name="A_FD_OR" Datatype="Byte">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Feedrate override</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Correction d'avance</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_DriveEnable" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Drive test movement enable</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Débloquer le déplacement pour test d'entraînement</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_AckFixedStop" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Acknowledge fixed stop reached</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Acquittement accostage de butée</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_SensorFixedStop" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Sensor fixed stop</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Détecteur butée</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_ASpDisable" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Axis/spindle disable</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Désactiver axe/broche</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_Follow_upMode" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Follow-up mode</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Mode poursuite</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_PosMeas1" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Position measuring system 1</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Système de mesure de position 1</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_PosMeas2" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Position measuring system 2</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Système de mesure de position 2</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_ORactive" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Override active</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Correction active</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_SWCam" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">SW cam activation</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Activation came logicielle</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_ContrEnable" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Controller enable</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Activer la commande</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_DelDTGSpReset" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Delete distance to go/Spindle-Reset</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Effacer la distance restante à parcourir / Reset broche</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_Clamp" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Clamping in progress</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Serrage en cours</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_RefVal1" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Reference point value 1</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Valeur de point de référence 1</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_RefVal2" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Reference point value 2</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Valeur de point de référence 2</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_RefVal3" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Reference point value 3</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Valeur de point de référence 3</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_RefVal4" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Reference point value 4</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Valeur de point de référence 4</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_ExtZO" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Import external ZO</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Importer ZO externes</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_EnabTravFixedStop" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Enable travel to fixed stop</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Activer déplacement pour accostage de butée</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_FixedFD1" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Activate fixed feedrate 1</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Activer l'avance fixe 1</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_FixedFD2" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Activate fixed feedrate 2</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Activer l'avance fixe 2</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_FixedFD3" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Activate fixed feedrate 3</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Activer l'avance fixe 3</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_FixedFD4" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Activate fixed feedrate 4</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Activer l'avance fixe 4</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_VelocSpeedLimit" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Velocity/spindle speed limitation</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Limitation vitesse / vitesse de broche</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_PrgtestAxRel" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Program test axis/spindle release</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Débloquer test de programme axe/broche</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_HW1" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Activate handwheel 1</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Activer manivelle 1</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_HW2" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Activate handwheel 2</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Activer manivelle 2</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_HW3" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Activate handwheel 3</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Activer manivelle 3</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_FDSpStop" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Feed stop/spindle stop</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Arrêt avance / arrêt broche</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_Disable" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Traversing key disable</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Désactiver la touche de déplacement</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_RapidTrOR" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Rapid traverse override</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Correction marche rapide</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_Minus" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Traversing key minus</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Touche de déplacement moins</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_Plus" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Traversing key plus</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Touche de déplacement plus</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_INC1" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">INC1</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">INC1</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_INC10" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">INC10</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">INC10</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_INC100" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">INC100</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">INC100</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_INC1000" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">INC1000</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">INC1000</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_INC10000" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">INC10000</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">INC10000</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_INCVar" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">INC variable</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Variable INC</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_ContManTravel" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Continuous manual travel</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Mode manuel continu</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="f5_7" Datatype="Bool" />
+    <Member Name="A_OEMAxis" Datatype="Byte">
+      <Comment>
+        <MultiLanguageText Lang="en-US">OEM axis signals</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Signaux des axes OEM</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_InvHWDirOfRot" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Inverting handwheel direction of rotation</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Inverser sens de rotation manivelle</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="f7_1" Datatype="Bool" />
+    <Member Name="f7_2" Datatype="Bool" />
+    <Member Name="f7_3" Datatype="Bool" />
+    <Member Name="f7_4" Datatype="Bool" />
+    <Member Name="f7_5" Datatype="Bool" />
+    <Member Name="f7_6" Datatype="Bool" />
+    <Member Name="f7_7" Datatype="Bool" />
+    <Member Name="A_NCASpChanA" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Assign NC axis/spindle channel A</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Affecter axe/broche CN au canal A</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_NCASpChanB" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Assign NC axis/spindle channel B</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Affecter axe/broche CN au canal B</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_NCASpChanC" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Assign NC axis/spindle channel C</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Affecter axe/broche CN au canal C</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_NCASpChanD" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Assign NC axis/spindle channel D</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Affecter axe/broche CN au canal D</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_NCASpStrobe" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Activation of assignment with pos. edge</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Activation de l'affection sur font montant</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="f8_5" Datatype="Bool" />
+    <Member Name="f8_6" Datatype="Bool" />
+    <Member Name="A_PLCASp" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Request PLC axis/spindle</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Demander axe/broche AP</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_Para_A" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Parameter block servo A</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Bloc de paramètres servo A</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_Para_B" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Parameter block servo B</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Bloc de paramètres servo B</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_Para_C" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Parameter block servo C</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Bloc de paramètres servo C</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_LockParSetDef" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Lock parameter set definition from NC</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Bloquer la définition de jeu de paramètre depuis CN</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="f9_4" Datatype="Bool" />
+    <Member Name="f9_5" Datatype="Bool" />
+    <Member Name="f9_6" Datatype="Bool" />
+    <Member Name="f9_7" Datatype="Bool" />
+    <Member Name="A_REPOSDelay" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">REPOS DELAY</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">REPOS DELAY</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="f10_1" Datatype="Bool" />
+    <Member Name="f10_2" Datatype="Bool" />
+    <Member Name="f10_3" Datatype="Bool" />
+    <Member Name="f10_4" Datatype="Bool" />
+    <Member Name="f10_5" Datatype="Bool" />
+    <Member Name="f10_6" Datatype="Bool" />
+    <Member Name="f10_7" Datatype="Bool" />
+    <Member Name="A_StartBrakeTest" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Start brake test</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Démarrer test de frein</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="f11_1" Datatype="Bool" />
+    <Member Name="f11_2" Datatype="Bool" />
+    <Member Name="f11_3" Datatype="Bool" />
+    <Member Name="f11_4" Datatype="Bool" />
+    <Member Name="f11_5" Datatype="Bool" />
+    <Member Name="f11_6" Datatype="Bool" />
+    <Member Name="f11_7" Datatype="Bool" />
+    <Member Name="A_HWLimitMinus" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Hardware limit switch minus</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Fin de course matériel moins</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_HWLimitPlus" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Hardware limit switch plus</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Fin de course matériel plus</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_SWLimit2Minus" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">2nd software limit switch minus</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">2e fin de course logiciel moins</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_SWLimit2Plus" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">2nd software limit switch plus</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">2e fin de course logiciel plus</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_ModuloLimitEn" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Modulo limit enabled</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Limite modulo activée</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="f12_5" Datatype="Bool" />
+    <Member Name="f12_6" Datatype="Bool" />
+    <Member Name="A_DelayRef" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Delay reference point approach</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Retarder l'accostage de point de référence</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_JogFixPPos0" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">JogFixPointPos 0</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">JogFixPointPos 0</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_JogFixPPos1" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">JogFixPointPos 1</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">JogFixPointPos 1</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_JogFixPPos2" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">JogFixPointPos 2</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">JogFixPointPos 2</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_JogToPos" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Jog to position</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Mode JOG vers position</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="f13_4" Datatype="Bool" />
+    <Member Name="f13_5" Datatype="Bool" />
+    <Member Name="f13_6" Datatype="Bool" />
+    <Member Name="f13_7" Datatype="Bool" />
+    <Member Name="A_ProgtestSuppress" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Program test to suppress</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Inhiber test de programme</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_ProgtestActivate" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Activate program test</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Activer test de programme</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="f14_2" Datatype="Bool" />
+    <Member Name="f14_3" Datatype="Bool" />
+    <Member Name="f14_4" Datatype="Bool" />
+    <Member Name="f14_5" Datatype="Bool" />
+    <Member Name="f14_6" Datatype="Bool" />
+    <Member Name="f14_7" Datatype="Bool" />
+    <Member Name="f15" Datatype="Byte" />
+    <Member Name="A_ActGearA" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Current gear stage A</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Rapport de transmission actuel A</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_ActGearB" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Current gear stage B</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Rapport de transmission actuel B</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_ActGearC" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Current gear stage C</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Rapport de transmission actuel C</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_GearChangeOv" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Gear has changed over</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Réducteur a changé de rapport</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_Sp1Syn" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Re-synchronize spindle 1</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Resynchroniser broche 1</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_Sp2Syn" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Re-synchronize spindle 2</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Resynchroniser broche 2</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_NoMonitorGear" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">No monitoring when changing gear</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Aucune surveillance pendant le changement de rapport de réducteur</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_DeleteS" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Delete S value</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Supprimer la valeur S</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_FD_ORSp" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Feedrate override for spindle valid</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Correction d'avance pour broche valide</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="f17_1" Datatype="Bool" />
+    <Member Name="f17_2" Datatype="Bool" />
+    <Member Name="f17_3" Datatype="Bool" />
+    <Member Name="A_Sp1SynP" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Re-synchronize spindle 1 for positioning</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Resynchroniser broche 1 pour positionnement</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_Sp2SynP" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Re-synchronize spindle 2 for positioning</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Resynchroniser broche 2 pour positionnement</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_M3M4Inv" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Invert M3/M4</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Inverser M3/M4</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="f17_7" Datatype="Bool" />
+    <Member Name="f18_0" Datatype="Bool" />
+    <Member Name="f18_1" Datatype="Bool" />
+    <Member Name="f18_2" Datatype="Bool" />
+    <Member Name="f18_3" Datatype="Bool" />
+    <Member Name="A_OscilPLC" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Oscillation via PLC</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Oscillation via AP</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_OscilSpeed" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Enable Oscillation</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Activer oscillation</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_SetRotDirectRight" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Setpoint osci. direct. right</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Consigne sens d'oscillation à droite</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_SetRotDirectLeft" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Setpoint osci. direct. left</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Consigne sens d'oscillation à gauche</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_SpOR" Datatype="Byte">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Spindle override</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Correction broche</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="f20_0" Datatype="Bool" />
+    <Member Name="A_RUEncQuStop" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Run-up encoder quick stop</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Générateur de rampe Arrêt rapide</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="f20_2" Datatype="Bool" />
+    <Member Name="A_SpeedSetpSmooth" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Speed setpoint smoothing</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Lissage consigne de vitesse</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="f20_4" Datatype="Bool" />
+    <Member Name="A_HoldBrakeToOpen" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Holding brake open</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Frein à l'arrêt desserré</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="f20_6" Datatype="Bool" />
+    <Member Name="f20_7" Datatype="Bool" />
+    <Member Name="A_ParA" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Parameter set selection A</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Jeux de paramètres sélection A</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_ParB" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Parameter set selection B</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Jeux de paramètres sélection B</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_ParC" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Parameter set selection C</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Jeux de paramètres sélection C</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_MotA" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Motor selection A</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Sélection moteur A</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_MotB" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Motor selection B</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Sélection moteur B</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_MotOK" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Motor selected</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Moteur sélectionné</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_IntegratDisable" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">N controller integrator disable</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Commande N Désactiver intégrateur</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_PulseEnable" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Pulse enable</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Activer impulsions</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="f22_0" Datatype="Bool" />
+    <Member Name="f22_1" Datatype="Bool" />
+    <Member Name="f22_2" Datatype="Bool" />
+    <Member Name="f22_3" Datatype="Bool" />
+    <Member Name="f22_4" Datatype="Bool" />
+    <Member Name="f22_5" Datatype="Bool" />
+    <Member Name="f22_6" Datatype="Bool" />
+    <Member Name="f22_7" Datatype="Bool" />
+    <Member Name="f23_0" Datatype="Bool" />
+    <Member Name="f23_1" Datatype="Bool" />
+    <Member Name="f23_2" Datatype="Bool" />
+    <Member Name="f23_3" Datatype="Bool" />
+    <Member Name="f23_4" Datatype="Bool" />
+    <Member Name="f23_5" Datatype="Bool" />
+    <Member Name="f23_6" Datatype="Bool" />
+    <Member Name="f23_7" Datatype="Bool" />
+    <Member Name="f24_0" Datatype="Bool" />
+    <Member Name="A_ControlAx" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Control Axis</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Axe pilote</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="f24_2" Datatype="Bool" />
+    <Member Name="f24_3" Datatype="Bool" />
+    <Member Name="A_TorqComp" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Torque compensation</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Compensation de couple</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_ChangSetpOutAss0" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Bit value for CTRLOUT_changed - Change setpoint output assignment</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Valeur de bit pour CTRLOUT_changed - Modifier l'affectation de la sortie de consigne</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_ChangSetpOutAss1" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Bit value for CTRLOUT_changed - Change setpoint output assignment</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Valeur de bit pour CTRLOUT_changed - Modifier l'affectation de la sortie de consigne</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_MS" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Main/Sub: activate coupling</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Maître/esclave : activer le couplage</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_DynBComp" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Dynamic backlash compensation activated</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Compensation dynamique de jeu activée</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="f25_1" Datatype="Bool" />
+    <Member Name="f25_2" Datatype="Bool" />
+    <Member Name="f25_3" Datatype="Bool" />
+    <Member Name="f25_4" Datatype="Bool" />
+    <Member Name="f25_5" Datatype="Bool" />
+    <Member Name="f25_6" Datatype="Bool" />
+    <Member Name="f25_7" Datatype="Bool" />
+    <Member Name="f26_0" Datatype="Bool" />
+    <Member Name="f26_1" Datatype="Bool" />
+    <Member Name="f26_2" Datatype="Bool" />
+    <Member Name="A_CompContr" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Compensation controller On</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Contrôleur de compensation MARCHE</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_FollowAxOv" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Enable following axis override</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Activer la correction de l'axe asservi</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="f26_5" Datatype="Bool" />
+    <Member Name="f26_6" Datatype="Bool" />
+    <Member Name="f26_7" Datatype="Bool" />
+    <Member Name="A_DEPMCS" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Resume: DEPMCS</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Continuer : DEPMCS</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_DEPBCS" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Resume: DEPBCS</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Continuer : DEPBCS</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_Corr" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Resume: Corr</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Continuer : corr</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_HIAxMove" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Resume: HIAxMove</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Continuer : HIAxMove</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_StopDEPMCS" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Stop: DEPMCS</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Arrêt : DEPMCS</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_StopDEPBCS" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Stop: DEPBCS</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Arrêt : DEPBCS</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_StopCorr" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Stop: Corr</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Arrêt : corr</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_StopHIAxMove" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Stop: HIAxMove</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Arrêt : HIAxMove</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_OscillAxExtRev" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">OscillAxExtReversal</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">OscillAxExtReversal</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_AxReset" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">AXRESET</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">AXRESET</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_AxResume" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">AXRESUME</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">AXRESUME</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_SetRP" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Set reversal point</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Définir point d'inversion</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_ChangeRP" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Change reversal point</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Modifier le point d'inversion</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_StopRP" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Stop at next reversal point</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Arrêt sur point d'inversion suivant</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_Stop" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Stop</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Arrêt</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_PLCAxis" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">PLC checks axis</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">AP vérifie axe</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="f29_0" Datatype="Bool" />
+    <Member Name="f29_1" Datatype="Bool" />
+    <Member Name="f29_2" Datatype="Bool" />
+    <Member Name="f29_3" Datatype="Bool" />
+    <Member Name="A_StartGantSynRun" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Start gantry synchronization run</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Démarrer l'opération de synchronisation Gantry</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_NoAutoSync" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">No auto sync</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Aucune sync auto</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="f29_6" Datatype="Bool" />
+    <Member Name="f29_7" Datatype="Bool" />
+    <Member Name="A_StopSpindle" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Stop spindle</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Arrêt broche</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_StartCW" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Start spindle clockwise</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Démarrer broche avec rotation horaire</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_StartCCW" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Start spindle counterclockwise</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Démarrer broche avec rotation antihoraire</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_AutoGearStep" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Autom. gear step change</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Chmnt. auto rapport transmission</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_PosSpindle" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Position spindle</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Position de broche</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="f30_5" Datatype="Bool" />
+    <Member Name="f30_6" Datatype="Bool" />
+    <Member Name="f30_7" Datatype="Bool" />
+    <Member Name="f31_0" Datatype="Bool" />
+    <Member Name="f31_1" Datatype="Bool" />
+    <Member Name="f31_2" Datatype="Bool" />
+    <Member Name="f31_3" Datatype="Bool" />
+    <Member Name="A_Resynchronize" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Resynchronize</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Resynchroniser</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_DisSync" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Disable synchronization</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Désactiver la synchronisation</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_Tracksync" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Track synchronism</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Tracer synchronisme</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_DelSyncRunCorr" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Deleting synchronous run correction</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Suppression de la correction marche synchrone</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="f32_0" Datatype="Bool" />
+    <Member Name="f32_1" Datatype="Bool" />
+    <Member Name="f32_2" Datatype="Bool" />
+    <Member Name="f32_3" Datatype="Bool" />
+    <Member Name="f32_4" Datatype="Bool" />
+    <Member Name="f32_5" Datatype="Bool" />
+    <Member Name="f32_6" Datatype="Bool" />
+    <Member Name="f32_7" Datatype="Bool" />
+    <Member Name="f33_0" Datatype="Bool" />
+    <Member Name="f33_1" Datatype="Bool" />
+    <Member Name="f33_2" Datatype="Bool" />
+    <Member Name="f33_3" Datatype="Bool" />
+    <Member Name="f33_4" Datatype="Bool" />
+    <Member Name="f33_5" Datatype="Bool" />
+    <Member Name="f33_6" Datatype="Bool" />
+    <Member Name="f33_7" Datatype="Bool" />
+    <Member Name="A_SI_SetpLimBit0" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Set point limitation Bit0</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Limitation de consigne Bit 0</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_SI_SetpLimBit1" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Set point limitation Bit1</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Limitation de consigne Bit 1</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="f34_2" Datatype="Bool" />
+    <Member Name="A_ActivateBrakeRampForSs2e" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Brakes with NCK ramp on selection of SS2E (MD36959 MA_SAFE_BRAKE_RAMP_TIME)</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Freinage avec rampe du NCK lors de la sélection de SS2E (MD36959 MA_SAFE_BRAKE_RAMP_TIME)</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="f34_4" Datatype="Bool" />
+    <Member Name="f34_5" Datatype="Bool" />
+    <Member Name="f34_6" Datatype="Bool" />
+    <Member Name="f34_7" Datatype="Bool" />
+    <Member Name="f35" Datatype="Byte" />
+    <Member Name="f36" Datatype="Array[36..55] of Byte" />
+    <Member Name="A_FeedDriveCAxEng" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Separate feed drive as C axis engaged</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Entraînement d'avance séparé activé en tant qu'axe C</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_SpSpeedDisp" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Spindle speed display</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Affichage vitesse de broche</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_SpInsideClamp" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Spindle inside clamping</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Serrage interne broche</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="f56_3" Datatype="Bool" />
+    <Member Name="f56_4" Datatype="Bool" />
+    <Member Name="f56_5" Datatype="Bool" />
+    <Member Name="f56_6" Datatype="Bool" />
+    <Member Name="f56_7" Datatype="Bool" />
+    <Member Name="f57" Datatype="Byte" />
+    <Member Name="f58" Datatype="Word" />
+    <Member Name="E_SpNA" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Spindle/no axis</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Broche / aucun axe</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_NCU_Link" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">NCU_link active axis</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">NCU_link axe actif</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_EncodFreq1" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Encoder limit frequency 1 exceeded</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Fréquence limite capteur 1 dépassée</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_EncodFreq2" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Encoder limit frequency 2 exceeded</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Fréquence limite capteur 2 dépassée</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_RefSyn1" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Referenced/synchronized 1</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Référencé/synchronisé 1</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_RefSyn2" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Referenced/synchronized 2</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Référencé/synchronisé 2</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_ExactCoarse" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Position reached with exact stop coarse</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Position atteinte avec arrêt précis approx.</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_ExactFine" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Position reached with exact stop fine</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Position atteinte avec arrêt précis fin</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_TravRequ" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Travel request</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Demande de déplacement</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_AxialAlarm" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Axial alarm</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Alarme d'axe</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_AxisReady" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Axis ready</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Axe prêt</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_Follow_upMode" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Follow-up mode active</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Mode poursuite actif</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_Stat" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Axis/spindle stationary (n&lt;nmin)</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Axe/broche à l'arrêt (n&lt;nmin)</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_PositContr" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Position controller active</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Commande de positionnement active</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_SpeedContr" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Speed controller active</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Régulateur de vitesse actif</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_CurrentContr" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Current controller active</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Commande actuelle active</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_SWCam" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Software cams active</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Came logicielle active</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_HWOverlay" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Handwheel overlay active</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Superposition manivelle actif</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_RevFD" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Revolutional feedrate active</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Avance par tour active</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_MeasAct" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Measuring active</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Mesurage actif</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_ActTravFStop" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Activate travel to fixed stop</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Activer déplacement pour accostage de butée</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_FixedStop" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Fixed stop reached</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Butée atteinte</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_ForceFixedStop" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Force fixed stop limited</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Force butée limitée</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_AxContainerRot" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Axis container rotation active</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Conteneur d'axe Rotation activée</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_AxReset" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Axis reset done</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Reset axe effectué</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_PLCCtrlAx" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">PLC controlled axis</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Axe commandé par AP</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_AxStop" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Axis stop active</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Arrêt d'axe actif</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_AxSpDisable" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Axis/spindle disable active</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Désactivation axe/broche active</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_StopDEPMCS" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Stop DEPMCS active</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Arrêt DEPMCS actif</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_StopDEPBCS" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Stop DEPBCS active</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Arrêt DEPBCS actif</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_StopCorr" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Stop Corr active</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Arrêt corr actif</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_StopHIAxMove" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Stop HIAxMove active</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Arrêt HIAxMove actif</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_HW1" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Handwheel 1 active</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Manivelle 1 active</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_HW2" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Handwheel 2 active</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Manivelle 2 active</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_HW3" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Handwheel 3 active</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Manivelle 3 active</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="f64_3" Datatype="Bool" />
+    <Member Name="E_TReqMinus" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Travel request minus</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Demande de déplacement moins</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_TReqPlus" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Travel request plus</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Demande de déplacement plus</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_TCMinus" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Traverse command minus</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Instruction de déplacement moins</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_TCPlus" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Traverse command plus</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Instruction de déplacement plus</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_INC1" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">INC1</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">INC1</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_INC10" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">INC10</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">INC10</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_INC100" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">INC100</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">INC100</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_INC1000" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">INC1000</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">INC1000</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_INC10000" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">INC10000</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">INC10000</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_INCVar" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">INC variable</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Variable INC</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_ContManTravelAct" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Continuous manual travel active</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Mode manuel continu actif</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="f65_7" Datatype="Bool" />
+    <Member Name="E_OEMAxis" Datatype="Byte">
+      <Comment>
+        <MultiLanguageText Lang="en-US">OEM axis signals</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Signaux des axes OEM</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_InvHWDirOfRot" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Handwheel direction of rotation invert actively</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Inverser activement sens manivelle</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="f67_1" Datatype="Bool" />
+    <Member Name="f67_2" Datatype="Bool" />
+    <Member Name="f67_3" Datatype="Bool" />
+    <Member Name="f67_4" Datatype="Bool" />
+    <Member Name="f67_5" Datatype="Bool" />
+    <Member Name="f67_6" Datatype="Bool" />
+    <Member Name="f67_7" Datatype="Bool" />
+    <Member Name="E_NCASpChanA" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">NC axis/spindle in channel A</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Axe/broche CN dans canal A</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_NCASpChanB" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">NC axis/spindle in channel B</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Axe/broche CN dans canal B</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_NCASpChanC" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">NC axis/spindle in channel C</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Axe/broche CN dans canal C</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_NCASpChanD" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">NC axis/spindle in channel D</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Axe/broche CN dans canal D</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_PLCType" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">New type requested by PLC</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Nouveau type demandé de l'AP</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_ChPoss" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Change axis possible</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Modification d'axe possible</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_NeutrASp" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Neutral axis/spindle</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Axe/broche neutre</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_PLCASp" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">PLC axis/spindle</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Axe/broche AP</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_ParS_A" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Parameter block servo A</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Bloc de paramètres servo A</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_ParS_B" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Parameter block servo B</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Bloc de paramètres servo B</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_ParS_C" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Parameter block servo C</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Bloc de paramètres servo C</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_NCUNumLink_3" Datatype="Bool" />
+    <Member Name="E_NCUNumLink_4" Datatype="Bool" />
+    <Member Name="E_NCUNumLink_5" Datatype="Bool" />
+    <Member Name="E_NCUNumLink_6" Datatype="Bool" />
+    <Member Name="E_NCUNumLink_7" Datatype="Bool" />
+    <Member Name="E_ReposSh" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">REPOS shift</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">REPOS Décalage</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_ReposShValid" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">REPOS shift valid</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">REPOS Décalage valide</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_ReposDelayQuit" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">REPOS delay quit</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">REPOS Terminer temporisation</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="f70_3" Datatype="Bool" />
+    <Member Name="f70_4" Datatype="Bool" />
+    <Member Name="E_SI_Drv_SICSCC" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">DRV-Safety Integrated with SIC/SCC active</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">DRV Safety Integrated avec SIC/SCC actif</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_SI_Drv_Parameterized" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Drive based Safety Intergated (SI) function enabled (at least one function in parameter "p9501" or "p9601" is parameterized)</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Fonction Drive based Safety Integrated (SI) débloquée (au moins une fonction est paramétrée dans le paramètre "p9501" ou "p9601")</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="f70_7" Datatype="Bool" />
+    <Member Name="E_BrakeTest" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Brake test active</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Test de frein actif</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="f71_1" Datatype="Bool" />
+    <Member Name="f71_2" Datatype="Bool" />
+    <Member Name="f71_3" Datatype="Bool" />
+    <Member Name="E_POS_RESTORED1" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">POS_RESTORED 1</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">POS_RESTORED 1</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_POS_RESTORED2" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">POS_RESTORED 2</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">POS_RESTORED 2</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="f71_6" Datatype="Bool" />
+    <Member Name="E_PLCAxDedic" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">PLC axis dedicated</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Axe AP dédié</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_MMC_REPOSDelay" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">HMI REPOS DELAY</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">HMI REPOS DELAY</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="f72_1" Datatype="Bool" />
+    <Member Name="f72_2" Datatype="Bool" />
+    <Member Name="f72_3" Datatype="Bool" />
+    <Member Name="f72_4" Datatype="Bool" />
+    <Member Name="f72_5" Datatype="Bool" />
+    <Member Name="f72_6" Datatype="Bool" />
+    <Member Name="f72_7" Datatype="Bool" />
+    <Member Name="f73" Datatype="Byte" />
+    <Member Name="f74_0" Datatype="Bool" />
+    <Member Name="f74_1" Datatype="Bool" />
+    <Member Name="f74_2" Datatype="Bool" />
+    <Member Name="f74_3" Datatype="Bool" />
+    <Member Name="E_ModLimEnAct" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Modulo limit enabled active</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Limite modulo activée actif</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="f74_5" Datatype="Bool" />
+    <Member Name="f74_6" Datatype="Bool" />
+    <Member Name="f74_7" Datatype="Bool" />
+    <Member Name="E_JogFixPPos0Act" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">JogFixPointPos 0 active</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">JogFixPointPos 0 activé</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_JogFixPPos1Act" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">JogFixPointPos 1 active</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">JogFixPointPos 1 activé</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_JogFixPPos2Act" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">JogFixPointPos 2 active</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">JogFixPointPos 2 activé</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_JogFixPPos0" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">JogFixPointPos 0 reached</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">JogFixPointPos 0 atteint</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_JogFixPPos1" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">JogFixPointPos 1 reached</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">JogFixPointPos 1 atteint</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_JogFixPPos2" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">JogFixPointPos 2 reached</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">JogFixPointPos 2 atteint</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_JogToPos" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Jog to position active</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Mode JOG vers position actif</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_JogPos" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Jog position reached</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Position JOG atteinte</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_ScratchPulse" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Scratch pulse</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Scratch pulse</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="f76_1" Datatype="Bool" />
+    <Member Name="f76_2" Datatype="Bool" />
+    <Member Name="f76_3" Datatype="Bool" />
+    <Member Name="E_PathAxis" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Path axis</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Axe d'interpolation</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_PosAxis" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Positioning axis</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Axe de positionnement</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_IndexAxisPos" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Indexing axis in position</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Axe indexé en position</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_CurvePos" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Curve axis in position</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Axe de contournage en position</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_CollCheckRedSpeed" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Reduced speed of Collisions Check</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Vitesse réduite du contrôle de collision</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="f77_1" Datatype="Bool" />
+    <Member Name="f77_2" Datatype="Bool" />
+    <Member Name="f77_3" Datatype="Bool" />
+    <Member Name="f77_4" Datatype="Bool" />
+    <Member Name="f77_5" Datatype="Bool" />
+    <Member Name="f77_6" Datatype="Bool" />
+    <Member Name="f77_7" Datatype="Bool" />
+    <Member Name="E_FPosAxis" Datatype="Real">
+      <Comment>
+        <MultiLanguageText Lang="en-US">F function (REAL format) for positioning axes</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Fonction F (format REAL) pour axes de positionnement</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_SetpGearA" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Setpoint gear stage A</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Consigne de rapport de transmission A</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_SetpGearB" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Setpoint gear stage B</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Consigne de rapport de transmission B</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_SetpGearC" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Setpoint gear stage C</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Consigne de rapport de transmission C</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_GearChange" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Gear changeover</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Changement de rapport réducteur</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="f82_4" Datatype="Bool" />
+    <Member Name="f82_5" Datatype="Bool" />
+    <Member Name="f82_6" Datatype="Bool" />
+    <Member Name="f82_7" Datatype="Bool" />
+    <Member Name="E_SpeedLimit" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Speed limit exceeded</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Limite de vitesse dépassée</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_SetSpeedLimit" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Setpoint speed limited</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Consigne de vitesse limitée</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_SetSpeedIncreased" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Setpoint speed increased</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Consigne de vitesse augmentée</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_GeoMonit" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Geometry monitoring</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Surveillance de géométrie</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_SupportAreaViol" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Support area limits violated</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Limites de la zone de support dépassées</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_SetRange" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Spindle in setpoint range</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Broche dans la plage consigne</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_SpeedMonit" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Speed monitoring</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Surveillance de vitesse</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_ActRotRight" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Actual rotation direction right</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Sens de rotation actuel horaire</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_ConstCuttSpeed" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Const. cutting speed active</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Vitesse de coupe constante active</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_SUG" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">SUG active (grinding wheel surface speed)</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">VPM active (vitesse périphérique de meule)</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_CLG" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">CLG active</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">CLG actif</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_Tapping" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Tapping without compensating chuck</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Taraudage sans porte-taraud compensateur</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_SyncMode" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Synchronous mode spindle active</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Mode broche synchrone actif</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_PosMode" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Positioning mode spindle active</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Mode positionnement broche actif</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_OscillMode" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Oscillation mode spindle active</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Mode oscillation broche actif</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_ContrMode" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Control mode spindle active</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Mode de commande broche actif</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_ToolDynLimit" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Tool with dynamics limit</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Outil avec limite dynamique</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="f85_1" Datatype="Bool" />
+    <Member Name="f85_2" Datatype="Bool" />
+    <Member Name="f85_3" Datatype="Bool" />
+    <Member Name="f85_4" Datatype="Bool" />
+    <Member Name="E_SpInPosition" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Spindle in position</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Broche en position</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="f85_6" Datatype="Bool" />
+    <Member Name="f85_7" Datatype="Bool" />
+    <Member Name="E_MFunct" Datatype="Int">
+      <Comment>
+        <MultiLanguageText Lang="en-US">M function (INT) for spindle</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Fonction M (INT) pour broche</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_SFunct" Datatype="Real">
+      <Comment>
+        <MultiLanguageText Lang="en-US">S function (REAL) for spindle</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Fonction S (REAL) pour broche</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="f92_0" Datatype="Bool" />
+    <Member Name="E_RUEncDisabl" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Run-up encoder disable active</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Blocage codeur de démarrage actif</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="f92_2" Datatype="Bool" />
+    <Member Name="E_SpeedSetpSmooth" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Speed setpoint smoothing active</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Lissage consigne de vitesse actif</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_RLIact" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">RLI active</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">RLI actif</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_HoldBrakeOpened" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Holding brake opened</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Frein à l'arrêt desserré</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="f92_6" Datatype="Bool" />
+    <Member Name="E_DriveRunEn" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Drive run enabled</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Déplacement entraînement activé</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_ParA" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Active parameter set A</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Jeux de paramètres actif A</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_ParB" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Active parameter set B</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Jeux de paramètres actif B</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_ParC" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Active parameter set C</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Jeux de paramètres actif C</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_MotA" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Active motor A</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Moteur actif A</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_MotB" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Active motor B</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Moteur actif B</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_MotOK" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Drive ready</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Entraînement prêt</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_IntegratDisable" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">N controller integrator disabled</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Commande N Intégrateur désactivé</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_PulseEnable" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Pulses enabled</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Impulsions débloquées</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_MTempWarn" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Prewarning motor temperature</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Avertissement température moteur</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_HTempWarn" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Prewarning heat sink temperature</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Avertissement température radiateur</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_RUComplete" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Ramp-up complete</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Démarrage terminé</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_MdMdx" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Md&lt;Mdx</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Md&lt;Mdx</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_NactNmin" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">nact&lt;nmin</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">nact&lt;nmin</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_NactNx" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">nact&lt;nx</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">nact&lt;nx</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_NactNset" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">nact=nset</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">nact=nset</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_Message" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Variable message function 1</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Fonction de signalisation variable 1</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_UDClessAlThreshold" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">UDC-link &lt; alarm threshold</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Lien UDC &lt; seuil d'alarme</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_DcVoltageAlarmAct" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">ESR: DC link voltage is below the specified minimum</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">AER : la tension du circuit intermédiaire est inférieure au minimum spécifié</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_GeneratorOperationAct" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">ESR: generator operation is active</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">AER : le fonctionnement du générateur est actif</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_SpeedBelowMin" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">ESR: actual speed is below specified minimum speed - axis is a generator axis</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">AER : la vitesse réelle est inférieure à la vitesse minimale spécifiée – l'axe est un axe de générateur</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_Message2" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Variable message function 2</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Fonction de signalisation variable 2</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_Message3" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Variable message function 3</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Fonction de signalisation variable 3</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="f95_6" Datatype="Bool" />
+    <Member Name="E_I2TLimit" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Power Section I2T limit</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Partie puissance limite I2T</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="f96_0" Datatype="Bool" />
+    <Member Name="E_AxisCtrl" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Axis control active</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Commande d'axe active</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_MSFine" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Main/Sub: speed difference is within the fine tolerance range</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Maître/esclave : la différence de vitesse se situe dans la plage de tolérance fine</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_MSCoarse" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Main/Sub: speed difference is within the coarse tolerance range</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Maître/esclave : la différence de vitesse se situe dans la plage de tolérance grossière</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_MSCompContr" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Main/Sub: torque compensatory controller is active</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Maître/esclave : le régulateur de compensation de couple est actif</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_BitValCtrlOutChang0" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Bit value for CTRLOUT_changed 0:  Change setpoint output assignment</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Valeur de CTRLOUT_changed 0 : modifier l'affectation de sortie de consigne</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_BitValCtrlOutChang1" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Bit value for CTRLOUT_changed 1:  Change setpoint output assignment</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Valeur de CTRLOUT_changed 1 : modifier l'affectation de sortie de consigne</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_MS" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Main/Sub: coupling is active</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Maître/esclave : le couplage est actif</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="f97" Datatype="Byte" />
+    <Member Name="E_SyncronFine" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Synchronism fine</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Synchronisme fin</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_SyncronCoarse" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Synchronism coarse</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Synchronisme approx</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_ActValCoupling" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Actual value coupling</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Valeur réelle couplage</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="f98_3" Datatype="Bool" />
+    <Member Name="E_OverlayMotion" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Overlaid motion</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Mouvement superposé</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_SWL" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Speed warning limit reached</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Valeur limite d'alarme pour vitesse atteinte</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_AWL" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Acceleration warning limit reached</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Valeur limite d'alarme pour accélération atteinte</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_EmRetr" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Emergency retraction active</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Retrait d'urgence actif</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_MasterSp" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Generic coupling: spindle is leading spindle</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Couplage générique : la broche est une broche pilote</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_SlaveSp" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Generic coupling: spindle is following spindle</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Couplage générique : la broche est une broche asservie</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_SyncRunCorrDOut" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Synchronous run correction driven out</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Correction synchronisme dépassée</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_AxisAccel" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Axis accelerated</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Axe accéléré</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_Sync" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Synchronization active</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Synchronisation active</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_MSR" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Max. speed reached</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Vitesse max. atteinte</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_MAR" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Max. acceleration reached</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Accélération max. atteinte</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="f99_7" Datatype="Bool" />
+    <Member Name="f100_0" Datatype="Bool" />
+    <Member Name="f100_1" Datatype="Bool" />
+    <Member Name="E_OscillAxExtRev" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">OscillAxExt Reversal active</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">OscillAxExt Inversion active</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_StopOscill" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Oscillation cannot start</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Impossible de démarrer oscillation</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_ErrorOscill" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Error during oscillation</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Erreur lors de l'oscillation</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_SparkOut" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Spark-out active</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Passes à lécher actives</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_OscillMotion" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Oscillation motion active</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Mouvement d'oscillation actif</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_Oscill" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Oscillation active</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Oscillation active</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="f101_0" Datatype="Bool" />
+    <Member Name="f101_1" Datatype="Bool" />
+    <Member Name="E_GantCOLimit" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Gantry cut-off limit exceeded</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Limite coupure axe Gantry atteinte</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_GantWarn" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Gantry warning limit exceeded</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Gantry Limite d'alarme dépassée</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_SynRunStart" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Synchronization run ready to start</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Synchronisme prêt à démarrer</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_GantGroupSyn" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Gantry grouping is synchronous</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Groupage Gantry synchronisé</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_GantLeadAxis" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Gantry leading axis</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Axe pilote Gantry</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_GantAxis" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Gantry axis</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Axe Gantry</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_DynBComp" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Dynamic backlash compensation activated</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Compensation dynamique de jeu activée</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="f102_1" Datatype="Bool" />
+    <Member Name="f102_2" Datatype="Bool" />
+    <Member Name="E_ClampTolerance" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Clamp tolerance exceeded</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Tolérance de serrage d'axe dépassée</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="f102_4" Datatype="Bool" />
+    <Member Name="E_PosMeas1" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Position measuring system 1 active</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Système de mesure de position 1 actif</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_PosMeas2" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Position measuring system 2 active</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Système de mesure de position 2 actif</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="f102_7" Datatype="Bool" />
+    <Member Name="E_SyncRunCorrIncl" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Synchronous run correction is included</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Correction synchronisme incluse</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="f103_1" Datatype="Bool" />
+    <Member Name="f103_2" Datatype="Bool" />
+    <Member Name="f103_3" Datatype="Bool" />
+    <Member Name="E_Syncron2Fine" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Synchronism fine</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Synchronisme fin</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_Syncron2Coarse" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Synchronism coarse</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Synchronisme approx</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="f103_6" Datatype="Bool" />
+    <Member Name="f103_7" Datatype="Bool" />
+    <Member Name="E_AIAxis" Datatype="Array[1..31] of Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Active infeed axis[1..31]</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Axe de pénétration active [1..31]</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="f108_0" Datatype="Bool" />
+    <Member Name="f108_1" Datatype="Bool" />
+    <Member Name="f108_2" Datatype="Bool" />
+    <Member Name="f108_3" Datatype="Bool" />
+    <Member Name="f108_4" Datatype="Bool" />
+    <Member Name="f108_5" Datatype="Bool" />
+    <Member Name="f108_6" Datatype="Bool" />
+    <Member Name="f108_7" Datatype="Bool" />
+    <Member Name="f109_0" Datatype="Bool" />
+    <Member Name="f109_1" Datatype="Bool" />
+    <Member Name="f109_2" Datatype="Bool" />
+    <Member Name="f109_3" Datatype="Bool" />
+    <Member Name="f109_4" Datatype="Bool" />
+    <Member Name="f109_5" Datatype="Bool" />
+    <Member Name="f109_6" Datatype="Bool" />
+    <Member Name="f109_7" Datatype="Bool" />
+    <Member Name="f110_0" Datatype="Bool" />
+    <Member Name="f110_1" Datatype="Bool" />
+    <Member Name="f110_2" Datatype="Bool" />
+    <Member Name="f110_3" Datatype="Bool" />
+    <Member Name="f110_4" Datatype="Bool" />
+    <Member Name="f110_5" Datatype="Bool" />
+    <Member Name="f110_6" Datatype="Bool" />
+    <Member Name="f110_7" Datatype="Bool" />
+    <Member Name="f111_0" Datatype="Bool" />
+    <Member Name="f111_1" Datatype="Bool" />
+    <Member Name="f111_2" Datatype="Bool" />
+    <Member Name="f111_3" Datatype="Bool" />
+    <Member Name="f111_4" Datatype="Bool" />
+    <Member Name="f111_5" Datatype="Bool" />
+    <Member Name="f111_6" Datatype="Bool" />
+    <Member Name="f111_7" Datatype="Bool" />
+    <Member Name="f112" Datatype="Byte" />
+    <Member Name="f113" Datatype="Byte" />
+    <Member Name="f114" Datatype="Byte" />
+    <Member Name="f115" Datatype="Byte" />
+    <Member Name="f116" Datatype="Byte" />
+    <Member Name="f117_0" Datatype="Bool" />
+    <Member Name="f117_1" Datatype="Bool" />
+    <Member Name="f117_2" Datatype="Bool" />
+    <Member Name="f117_3" Datatype="Bool" />
+    <Member Name="f117_4" Datatype="Bool" />
+    <Member Name="f117_5" Datatype="Bool" />
+    <Member Name="f117_6" Datatype="Bool" />
+    <Member Name="f117_7" Datatype="Bool" />
+    <Member Name="f118" Datatype="DWord" />
+    <Member Name="f122" Datatype="DWord" />
+    <Member Name="f126" Datatype="Word">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Internal</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Interne</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_MMC_ProgtestSuppress" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">HMI-&gt;PLC: Suppress program test</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">HMI -&gt;AP : inhiber test de programme</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_MMC_ProgtestActivate" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">HMI-&gt;PLC: Activate program test</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">HMI -&gt;AP : activer test de programme</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="f128_2" Datatype="Bool" />
+    <Member Name="f128_3" Datatype="Bool" />
+    <Member Name="f128_4" Datatype="Bool" />
+    <Member Name="f128_5" Datatype="Bool" />
+    <Member Name="f128_6" Datatype="Bool" />
+    <Member Name="f128_7" Datatype="Bool" />
+    <Member Name="f129" Datatype="Byte" />
+    <Member Name="E_FormatBit0DDS" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Bit 0 for drive data set switchover (DDS)</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Bit 0 pour la commutation du jeu de paramètres d'entraînement (DDS)</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_FormatBit1DDS" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Bit 1 for drive data set switchover (DDS)</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Bit 1 pour la commutation du jeu de paramètres d'entraînement (DDS)</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_FormatBit2DDS" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Bit 2 for drive data set switchover (DDS)</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Bit 2 pour la commutation du jeu de paramètres d'entraînement (DDS)</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_FormatBit3DDS" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Bit 3 for drive data set switchover (DDS)</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Bit 3 pour la commutation du jeu de paramètres d'entraînement (DDS)</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_FormatBit4DDS" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Bit 4 for drive data set switchover (DDS)</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Bit 4 pour la commutation du jeu de paramètres d'entraînement (DDS)</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="f130_5" Datatype="Bool" />
+    <Member Name="f130_6" Datatype="Bool" />
+    <Member Name="E_MDS_DDS_InterfacesValid" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Motor and drive data set interfaces invalid</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Jeux de paramètres moteur et d'entraînement Interfaces valides</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="f131" Datatype="Byte" />
+    <Member Name="E_SensorAv" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Sensors available</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Capteurs disponibles</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_S1aMeasARod" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Sensor S1: analogous measurement position of actuating rod</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Capteur S1 : position de mesure analogique de la tige d'actionnement</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="f132_2" Datatype="Bool" />
+    <Member Name="f132_3" Datatype="Bool" />
+    <Member Name="E_S4dPistonStopP" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Sensor S4: digital value piston stop position</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Capteur S4 : valeur numérique position d'arrêt piston</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_S5dAngleShaft" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Sensor S5: digital value angle situation shaft</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Capteur S5 : valeur numérique position angulaire arbre</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_S6Temp" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Sensor S6: temperature</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Capteur S6 : température</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="f132_7" Datatype="Bool" />
+    <Member Name="f133" Datatype="Byte" />
+    <Member Name="E_ClampingState" Datatype="Int">
+      <Comment>
+        <MultiLanguageText Lang="en-US">State of the clamping system</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">État du système de serrage</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_AnalogSensor" Datatype="Int">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Analog sensor on the motor</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Capteur analogique sur moteur</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="f138_0" Datatype="Bool" />
+    <Member Name="f138_1" Datatype="Bool" />
+    <Member Name="f138_2" Datatype="Bool" />
+    <Member Name="f138_3" Datatype="Bool" />
+    <Member Name="E_S4PistonStopP" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Sensor S4: piston stop position</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Capteur S4 : position d'arrêt piston</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_S5AngleShaft" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Sensor S5: angle situation shaft</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Capteur S5 : position angulaire arbre</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="f138_6" Datatype="Bool" />
+    <Member Name="f138_7" Datatype="Bool" />
+    <Member Name="f139" Datatype="Byte" />
+    <Member Name="SCC" Datatype="Struct">
+      <Comment>
+        <MultiLanguageText Lang="en-US">PLC to Drive (SCC)</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">AP vers entraînement (SCC)</MultiLanguageText>
+      </Comment>
+      <Member Name="CW1" Datatype="Struct">
+        <Member Name="TeststopStart" Datatype="Bool">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Test stops for extended functions</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Stops pour test pour fonctions étendues</MultiLanguageText>
+          </Comment>
+        </Member>
+        <Member Name="res140_1" Datatype="Bool" />
+        <Member Name="res140_2" Datatype="Bool" />
+        <Member Name="res140_3" Datatype="Bool" />
+        <Member Name="res140_4" Datatype="Bool" />
+        <Member Name="CloseBrake" Datatype="Bool">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Close internal Brake</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Serrer le frein interne</MultiLanguageText>
+          </Comment>
+        </Member>
+        <Member Name="res140_6" Datatype="Bool" />
+        <Member Name="res140_7" Datatype="Bool" />
+        <Member Name="res141" Datatype="Byte" />
+      </Member>
+      <Member Name="CW3" Datatype="Struct">
+        <Member Name="res142" Datatype="Byte" />
+        <Member Name="SelectionSBT" Datatype="Bool">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Selection: safe brake test</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Sélection : test de frein sûr</MultiLanguageText>
+          </Comment>
+        </Member>
+        <Member Name="BT_Start" Datatype="Bool">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Start: brake test</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Démarrage : test de frein</MultiLanguageText>
+          </Comment>
+        </Member>
+        <Member Name="Brake_1_2" Datatype="Bool">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Brake test with brake 1 or 2</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Test de frein avec frein 1 ou 2</MultiLanguageText>
+          </Comment>
+        </Member>
+        <Member Name="DirOfROT" Datatype="Bool">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Direction of rotation</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Sens de rotation</MultiLanguageText>
+          </Comment>
+        </Member>
+        <Member Name="Testseq_1_2" Datatype="Bool">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Test sequence 1 or 2</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Séquence de test 1 ou 2</MultiLanguageText>
+          </Comment>
+        </Member>
+        <Member Name="BrakeClosed" Datatype="Bool">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Feedback external brake</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Signalisation en retour frein externe</MultiLanguageText>
+          </Comment>
+        </Member>
+        <Member Name="res143_6" Datatype="Bool" />
+        <Member Name="res143_7" Datatype="Bool" />
+      </Member>
+    </Member>
+    <Member Name="res144_163" Datatype="Array[144..163] of Byte" />
+    <Member Name="SIC" Datatype="Struct">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Drive to PLC (SIC)</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Entraînement vers AP (SIC)</MultiLanguageText>
+      </Comment>
+      <Member Name="SW1" Datatype="Struct">
+        <Member Name="SLA_Sel" Datatype="Bool">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Safely Limited Acceleration selected</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Accélération limitée sûre sélectionnée</MultiLanguageText>
+          </Comment>
+        </Member>
+        <Member Name="SLS_LimBit0_Sel" Datatype="Bool">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Safely-Limited Speed: limit Bit0 selected</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Vitesse limitée sûre : limite bit0 sélectionnée</MultiLanguageText>
+          </Comment>
+        </Member>
+        <Member Name="SLS_LimBit1_Sel" Datatype="Bool">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Safely-Limited Speed: limit Bit1 selected</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Vitesse limitée sûre : limite bit1 sélectionnée</MultiLanguageText>
+          </Comment>
+        </Member>
+        <Member Name="res164_3" Datatype="Bool" />
+        <Member Name="res164_4" Datatype="Bool" />
+        <Member Name="res164_5" Datatype="Bool" />
+        <Member Name="ESR_Req" Datatype="Bool">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Extended Stop and Retract requested</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Arrêt étendu et retrait demandé</MultiLanguageText>
+          </Comment>
+        </Member>
+        <Member Name="SF_Message_Act" Datatype="Bool">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Safety error active</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Erreur de sécurité active</MultiLanguageText>
+          </Comment>
+        </Member>
+        <Member Name="STO_Act" Datatype="Bool">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Safe torque off: active</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Suppression sûre du couple : active</MultiLanguageText>
+          </Comment>
+        </Member>
+        <Member Name="SS1_Act" Datatype="Bool">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Safe Stop1: active</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Stop sûr 1 : actif</MultiLanguageText>
+          </Comment>
+        </Member>
+        <Member Name="SS2_Act" Datatype="Bool">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Safe Stop2: active</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Stop sûr 2 : actif</MultiLanguageText>
+          </Comment>
+        </Member>
+        <Member Name="SOS_Act" Datatype="Bool">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Safe Operating Stop: active</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Arrêt de fonctionnement sûr : actif</MultiLanguageText>
+          </Comment>
+        </Member>
+        <Member Name="SLS_Act" Datatype="Bool">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Safely-Limited Speed: active</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Vitesse limitée sûre : active</MultiLanguageText>
+          </Comment>
+        </Member>
+        <Member Name="SOS_Sel" Datatype="Bool">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Safe Operating Stop: selected</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Arrêt de fonctionnement sûr : sélectionné</MultiLanguageText>
+          </Comment>
+        </Member>
+        <Member Name="SLS_Sel" Datatype="Bool">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Safely-Limited Speed: selected</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Vitesse limitée sûre : sélectionnée</MultiLanguageText>
+          </Comment>
+        </Member>
+        <Member Name="InternalEvent" Datatype="Bool">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Safety error with Stop A active</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Erreur de sécurité avec butée A active</MultiLanguageText>
+          </Comment>
+        </Member>
+      </Member>
+      <Member Name="SW2" Datatype="Struct">
+        <Member Name="SDI_P_Sel" Datatype="Bool">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Safe direction positive: selected</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Direction sûre positive : sélectionnée</MultiLanguageText>
+          </Comment>
+        </Member>
+        <Member Name="SDI_N_Sel" Datatype="Bool">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Safe direction negative: selected</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Direction sûre négative : sélectionnée</MultiLanguageText>
+          </Comment>
+        </Member>
+        <Member Name="res166_2" Datatype="Bool" />
+        <Member Name="res166_3" Datatype="Bool" />
+        <Member Name="TestStopAct" Datatype="Bool">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Test stop active</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Stop pour test actif</MultiLanguageText>
+          </Comment>
+        </Member>
+        <Member Name="TestStopReq" Datatype="Bool">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Test stop requested</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Stop pour test demandé</MultiLanguageText>
+          </Comment>
+        </Member>
+        <Member Name="res166_6" Datatype="Bool" />
+        <Member Name="res166_7" Datatype="Bool" />
+        <Member Name="res167_0" Datatype="Bool" />
+        <Member Name="res167_1" Datatype="Bool" />
+        <Member Name="res167_2" Datatype="Bool" />
+        <Member Name="res167_3" Datatype="Bool" />
+        <Member Name="SLP_LimBit0_Sel" Datatype="Bool">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Safely-Limited Position: limit Bit0 selected</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Position limitée sûre : limite bit0 sélectionnée</MultiLanguageText>
+          </Comment>
+        </Member>
+        <Member Name="res167_5" Datatype="Bool" />
+        <Member Name="res167_6" Datatype="Bool" />
+        <Member Name="SLP_Sel" Datatype="Bool">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Safely-Limited Position: selected</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Position limitée sûre : sélectionnée</MultiLanguageText>
+          </Comment>
+        </Member>
+      </Member>
+      <Member Name="V_Limit_B" Datatype="DInt">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Setpoint speed limit effective</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Limite de consigne de vitesse active</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="SW3" Datatype="Struct">
+        <Member Name="res172_0" Datatype="Bool" />
+        <Member Name="res172_1" Datatype="Bool" />
+        <Member Name="res172_2" Datatype="Bool" />
+        <Member Name="SS2E_ACTIVE" Datatype="Bool">
+          <Comment>
+            <MultiLanguageText Lang="en-US">SS2E active</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">SS2E actif</MultiLanguageText>
+          </Comment>
+        </Member>
+        <Member Name="SS2ESR" Datatype="Bool">
+          <Comment>
+            <MultiLanguageText Lang="en-US">SS2ESR active</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">SS2ESR actif</MultiLanguageText>
+          </Comment>
+        </Member>
+        <Member Name="res172_5" Datatype="Bool" />
+        <Member Name="AcceptSLPAct" Datatype="Bool">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Acceptance test Safely-Limited Position active</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Essai de réception position limitée sûre : actif</MultiLanguageText>
+          </Comment>
+        </Member>
+        <Member Name="AcceptTestSel" Datatype="Bool">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Acceptance test selected</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Essai de réception sélectionné</MultiLanguageText>
+          </Comment>
+        </Member>
+        <Member Name="SBT_Sel" Datatype="Bool">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Safety break test: selected</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Test de frein de sécurité : sélectionné</MultiLanguageText>
+          </Comment>
+        </Member>
+        <Member Name="SetpSettingDrive" Datatype="Bool">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Setpoint input is in the drive during the SBT</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">L'entrée de consigne est dans l'entraînement pendant le SBT</MultiLanguageText>
+          </Comment>
+        </Member>
+        <Member Name="Brake_1_2" Datatype="Bool">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Test with brake 1 or 2</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Test avec frein 1 ou 2</MultiLanguageText>
+          </Comment>
+        </Member>
+        <Member Name="BT_Act" Datatype="Bool">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Brake test: active</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Test de frein : actif</MultiLanguageText>
+          </Comment>
+        </Member>
+        <Member Name="BT_OK" Datatype="Bool">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Brake test: OK</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Test de frein : OK</MultiLanguageText>
+          </Comment>
+        </Member>
+        <Member Name="BT_Finished" Datatype="Bool">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Brake test: finished</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Test de frein : terminé</MultiLanguageText>
+          </Comment>
+        </Member>
+        <Member Name="BrakeReq" Datatype="Bool">
+          <Comment>
+            <MultiLanguageText Lang="en-US">External brake close requested</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Serrage de frein externe demandé</MultiLanguageText>
+          </Comment>
+        </Member>
+        <Member Name="SignLoadTorque" Datatype="Bool">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Sign of load torque is negative</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Signe couple de charge négatif</MultiLanguageText>
+          </Comment>
+        </Member>
+      </Member>
+    </Member>
+    <Member Name="res174_187" Datatype="Array[174..187] of Byte" />
+    <Member Name="CW7" Datatype="Struct">
+      <Member Name="ReservedBit08" Datatype="Bool" />
+      <Member Name="ReservedBit09" Datatype="Bool" />
+      <Member Name="ReservedBit10" Datatype="Bool" />
+      <Member Name="ReservedBit11" Datatype="Bool" />
+      <Member Name="ReservedBit12" Datatype="Bool" />
+      <Member Name="ReservedBit13" Datatype="Bool" />
+      <Member Name="ReservedBit14" Datatype="Bool" />
+      <Member Name="ReservedBit15" Datatype="Bool" />
+      <Member Name="A_DisablePowerReduction" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">DYNEGMA: disable power reduction</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">DYNEGMA : désactiver la réduction de puissance</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="A_DisableCurrReduction" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Motor overtemperature: disable current reduction</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Surchauffe du moteur : désactiver la réduction de puissance</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="ReservedBit02" Datatype="Bool" />
+      <Member Name="ReservedBit03" Datatype="Bool" />
+      <Member Name="ReservedBit04" Datatype="Bool" />
+      <Member Name="ReservedBit05" Datatype="Bool" />
+      <Member Name="ReservedBit06" Datatype="Bool" />
+      <Member Name="ReservedBit07" Datatype="Bool" />
+    </Member>
+    <Member Name="SW7" Datatype="Struct">
+      <Member Name="E_EncMaintenanceRequired" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Encoder maintenance required</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Maintenance du codeur requise</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="ReservedBit09" Datatype="Bool" />
+      <Member Name="ReservedBit10" Datatype="Bool" />
+      <Member Name="ReservedBit11" Datatype="Bool" />
+      <Member Name="ReservedBit12" Datatype="Bool" />
+      <Member Name="ReservedBit13" Datatype="Bool" />
+      <Member Name="ReservedBit14" Datatype="Bool" />
+      <Member Name="ReservedBit15" Datatype="Bool" />
+      <Member Name="E_TorqueLimited" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">DYNEGMA: torque limited</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">DYNEGMA : couple limité</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="E_CurrReductionActive" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Motor overtemperature: current reduction active</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Surchauffe du moteur : réduction de puissance active</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="E_MotorTempModelAlarm" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Motor overtemperature: motor temperature model alarm active</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Surchauffe du moteur : alarme de modèle thermique du moteur active</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="E_PolePosIdentPassed" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Pole position identification with encoder successfully carried out</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Identification de la position des pôles avec codeur effectuée avec succès</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="ReservedBit04" Datatype="Bool" />
+      <Member Name="ReservedBit05" Datatype="Bool" />
+      <Member Name="E_AndConditionFulfilled" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">AND logic operation: condition fulfilled</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Opération logique ET : condition remplie</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="E_OrConditionFulfilled" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">OR logic operation: condition fulfilled</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Opération logique OU : condition remplie</MultiLanguageText>
+        </Comment>
+      </Member>
+    </Member>
+  </Section>
+</Sections></Interface>
+      <Name>LBP_typeAxisX</Name>
+      <Namespace />
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text>User data type for blocks LBP_Axis1 [DB31] .. LBP_Axis31 [DB61]</Text>
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="3" CompositionName="Items">
+            <AttributeList>
+              <Culture>fr-FR</Culture>
+              <Text>Type de données utilisateur pour les blocs LBP_Axis1 [DB31] .. LBP_Axis31 [DB61]</Text>
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <MultilingualText ID="4" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="5" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text>Axis interface</Text>
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="6" CompositionName="Items">
+            <AttributeList>
+              <Culture>fr-FR</Culture>
+              <Text>Interface d'axe</Text>
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Types.PlcStruct>
+</Document>

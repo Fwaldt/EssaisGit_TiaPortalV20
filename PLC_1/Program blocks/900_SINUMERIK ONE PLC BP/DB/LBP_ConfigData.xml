@@ -1,0 +1,380 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V20" />
+  <SW.Blocks.InstanceDB ID="0">
+    <AttributeList>
+      <AutoNumber>false</AutoNumber>
+      <HeaderAuthor>SINUMERIK</HeaderAuthor>
+      <HeaderFamily>SINUMERIK_ONE</HeaderFamily>
+      <HeaderVersion>6.14</HeaderVersion>
+      <InstanceOfName>LBP_typeConfigData</InstanceOfName>
+      <InstanceOfType>UDT</InstanceOfType>
+      <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+  <Section Name="Static">
+    <Member Name="MCPNum" Datatype="Int" Remanence="Retain">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Inputs starting here</MultiLanguageText>
+      </Comment>
+      <StartValue>1</StartValue>
+    </Member>
+    <Member Name="MCP1In" Datatype="Struct" Remanence="Retain">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Pointer</MultiLanguageText>
+      </Comment>
+      <Member Name="DBNo" Datatype="Word" />
+      <Member Name="Addr" Datatype="DWord" />
+    </Member>
+    <Member Name="MCP1Out" Datatype="Struct" Remanence="Retain">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Pointer</MultiLanguageText>
+      </Comment>
+      <Member Name="DBNo" Datatype="Word" />
+      <Member Name="Addr" Datatype="DWord" />
+    </Member>
+    <Member Name="reservedByte14_25" Datatype="Array[14..25] of Byte" Remanence="Retain" />
+    <Member Name="MCP1BusAdr" Datatype="Int" Remanence="Retain">
+      <StartValue>192</StartValue>
+    </Member>
+    <Member Name="MCP1Timeout" Datatype="S5Time" Remanence="Retain" />
+    <Member Name="reservedByte30_31" Datatype="Array[30..31] of Byte" Remanence="Retain" />
+    <Member Name="MCP2In" Datatype="Struct" Remanence="Retain">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Pointer</MultiLanguageText>
+      </Comment>
+      <Member Name="DBNo" Datatype="Word" />
+      <Member Name="Addr" Datatype="DWord" />
+    </Member>
+    <Member Name="MCP2Out" Datatype="Struct" Remanence="Retain">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Pointer</MultiLanguageText>
+      </Comment>
+      <Member Name="DBNo" Datatype="Word" />
+      <Member Name="Addr" Datatype="DWord" />
+    </Member>
+    <Member Name="reservedByte44_55" Datatype="Array[44..55] of Byte" Remanence="Retain" />
+    <Member Name="MCP2BusAdr" Datatype="Int" Remanence="Retain" />
+    <Member Name="MCP2Timeout" Datatype="S5Time" Remanence="Retain" />
+    <Member Name="reservedByte60_61" Datatype="Array[60..61] of Byte" Remanence="Retain" />
+    <Member Name="reservedBool62_0" Datatype="Bool" Remanence="Retain" />
+    <Member Name="MCP1Stop" Datatype="Bool" Remanence="Retain" />
+    <Member Name="MCP2Stop" Datatype="Bool" Remanence="Retain" />
+    <Member Name="MCP1NotSend" Datatype="Bool" Remanence="Retain" />
+    <Member Name="MCP2NotSend" Datatype="Bool" Remanence="Retain" />
+    <Member Name="reservedBool62_5" Datatype="Bool" Remanence="Retain" />
+    <Member Name="reservedBool62_6" Datatype="Bool" Remanence="Retain" />
+    <Member Name="MCPBusType" Datatype="Byte" Remanence="Retain" />
+    <Member Name="HTIf" Datatype="Int" Remanence="Retain" />
+    <Member Name="HTIn" Datatype="Struct" Remanence="Retain">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Pointer</MultiLanguageText>
+      </Comment>
+      <Member Name="DBNo" Datatype="Word" />
+      <Member Name="Addr" Datatype="DWord" />
+    </Member>
+    <Member Name="HTOut" Datatype="Struct" Remanence="Retain">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Pointer</MultiLanguageText>
+      </Comment>
+      <Member Name="DBNo" Datatype="Word" />
+      <Member Name="Addr" Datatype="DWord" />
+    </Member>
+    <Member Name="reservedByte78_95" Datatype="Array[78..95] of Byte" Remanence="Retain" />
+    <Member Name="HTAdr" Datatype="Int" Remanence="Retain" />
+    <Member Name="reservedByte98_107" Datatype="Array[98..107] of Byte" Remanence="Retain" />
+    <Member Name="reservedBool108_0" Datatype="Bool" Remanence="Retain" />
+    <Member Name="HTStop" Datatype="Bool" Remanence="Retain" />
+    <Member Name="HTNotSend" Datatype="Bool" Remanence="Retain" />
+    <Member Name="NCCyclTimeout" Datatype="S5Time" Remanence="Retain" />
+    <Member Name="NCRunupTimeout" Datatype="S5Time" Remanence="Retain" />
+    <Member Name="ListMDecGrp" Datatype="Int" Remanence="Retain" />
+    <Member Name="reservedBool116_0" Datatype="Bool" Remanence="Retain" />
+    <Member Name="MMCToIF" Datatype="Bool" Remanence="Retain" />
+    <Member Name="HWheelMMC" Datatype="Bool" Remanence="Retain" />
+    <Member Name="reservedBool116_3" Datatype="Bool" Remanence="Retain" />
+    <Member Name="MCP_IF_TCS" Datatype="Bool" Remanence="Retain" />
+    <Member Name="ExtendChanAxMsg" Datatype="Bool" Remanence="Retain" />
+    <Member Name="HMIAxisSel" Datatype="Bool" Remanence="Retain" />
+    <Member Name="DeactivateCtrlEnergy" Datatype="Bool" Remanence="Retain" />
+    <Member Name="MsgUser" Datatype="Int" Remanence="Retain">
+      <StartValue>64</StartValue>
+    </Member>
+    <Member Name="reservedBool120_0" Datatype="Bool" Remanence="Retain" />
+    <Member Name="IRAuxfuT" Datatype="Bool" Remanence="Retain" />
+    <Member Name="IRAuxfuH" Datatype="Bool" Remanence="Retain" />
+    <Member Name="IRAuxfuE" Datatype="Bool" Remanence="Retain" />
+    <Member Name="UserVersion" Datatype="Struct" Remanence="Retain">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Pointer</MultiLanguageText>
+      </Comment>
+      <Member Name="DBNo" Datatype="Word" />
+      <Member Name="Addr" Datatype="DWord" />
+    </Member>
+    <Member Name="OpKeyNum" Datatype="Int" Remanence="Retain" />
+    <Member Name="Op1KeyIn" Datatype="Struct" Remanence="Retain">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Pointer</MultiLanguageText>
+      </Comment>
+      <Member Name="DBNo" Datatype="Word" />
+      <Member Name="Addr" Datatype="DWord" />
+    </Member>
+    <Member Name="Op1KeyOut" Datatype="Struct" Remanence="Retain">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Pointer</MultiLanguageText>
+      </Comment>
+      <Member Name="DBNo" Datatype="Word" />
+      <Member Name="Addr" Datatype="DWord" />
+    </Member>
+    <Member Name="Op1KeyBusAdr" Datatype="Int" Remanence="Retain" />
+    <Member Name="Op2KeyIn" Datatype="Struct" Remanence="Retain">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Pointer</MultiLanguageText>
+      </Comment>
+      <Member Name="DBNo" Datatype="Word" />
+      <Member Name="Addr" Datatype="DWord" />
+    </Member>
+    <Member Name="Op2KeyOut" Datatype="Struct" Remanence="Retain">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Pointer</MultiLanguageText>
+      </Comment>
+      <Member Name="DBNo" Datatype="Word" />
+      <Member Name="Addr" Datatype="DWord" />
+    </Member>
+    <Member Name="Op2KeyBusAdr" Datatype="Int" Remanence="Retain" />
+    <Member Name="Op1KeyStop" Datatype="Bool" Remanence="Retain" />
+    <Member Name="Op2KeyStop" Datatype="Bool" Remanence="Retain" />
+    <Member Name="Op1KeyNotSend" Datatype="Bool" Remanence="Retain" />
+    <Member Name="Op2KeyNotSend" Datatype="Bool" Remanence="Retain" />
+    <Member Name="reservedByte159" Datatype="Byte" Remanence="Retain" />
+    <Member Name="IdentMcpBusAdr" Datatype="Int" Remanence="Retain" />
+    <Member Name="IdentMcpProfilNo" Datatype="Byte" Remanence="Retain" />
+    <Member Name="IdentMcpBusType" Datatype="Byte" Remanence="Retain" />
+    <Member Name="IdentMcpStrobe" Datatype="Bool" Remanence="Retain" />
+    <Member Name="MaxModeGroup" Datatype="Int" Remanence="Retain">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Outputs starting here</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="MaxChan" Datatype="Int" Remanence="Retain" />
+    <Member Name="MaxAxis" Datatype="Int" Remanence="Retain" />
+    <Member Name="ActiveChan" Datatype="Array[1..10] of Bool" Remanence="Retain" />
+    <Member Name="ActiveAxis" Datatype="Array[1..31] of Bool" Remanence="Retain" />
+    <Member Name="MaxNumUserDataInt" Datatype="Int" Remanence="Retain" />
+    <Member Name="MaxNumUserDataHex" Datatype="Int" Remanence="Retain" />
+    <Member Name="MaxNumUserDataReal" Datatype="Int" Remanence="Retain" />
+    <Member Name="IdentMcpType" Datatype="Byte" Remanence="Retain" />
+    <Member Name="IdentMcpLengthIn" Datatype="Byte" Remanence="Retain" />
+    <Member Name="IdentMcpLengthOut" Datatype="Byte" Remanence="Retain" />
+    <Member Name="reservedByte188_199" Datatype="Array[188..199] of Byte" Remanence="Retain">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Static starting here</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="LBPVersionInfo" Datatype="String[44]" Remanence="Retain">
+      <StartValue>'SINUMERIK ONE V06.14.00.00.007 13/10/20 $L'</StartValue>
+    </Member>
+    <Member Name="UserVersionInfo" Datatype="String[44]" Remanence="Retain" />
+    <Member Name="GenerateAlarmMsgs" Datatype="Struct" Remanence="Retain">
+      <Member Name="NumActAlarmMsgs" Datatype="UInt" />
+      <Member Name="Error" Datatype="Bool" />
+      <Member Name="StatusID" Datatype="UInt" />
+      <Member Name="Status" Datatype="Word" />
+    </Member>
+    <Member Name="OpUnitCommId" Datatype="UInt" Remanence="Retain">
+      <Comment>
+        <MultiLanguageText Lang="en-US">ID for OpUnitComm</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="OpUnitInterfaceId" Datatype="HW_ANY" Remanence="Retain">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Hardware identifier of Ethernet interface for OpUnitComm</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="MCP1ConnectionId" Datatype="CONN_OUC" Remanence="Retain">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Connection identifier for MCP 1</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="MCP2ConnectionId" Datatype="CONN_OUC" Remanence="Retain">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Connection identifier for MCP 2</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="HTConnectionId" Datatype="CONN_OUC" Remanence="Retain">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Connection identifier for handheld unit</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="Op1KeyConnectionId" Datatype="CONN_OUC" Remanence="Retain">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Connection identifier for Direct Key 1</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="Op2KeyConnectionId" Datatype="CONN_OUC" Remanence="Retain">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Connection identifier for Direct Key 2</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="IdentConnectionId" Datatype="CONN_OUC" Remanence="Retain">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Connection identifier for identification</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="MCP1LocalUdpPort" Datatype="UInt" Remanence="Retain">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Local UDP port for MCP 1</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="MCP2LocalUdpPort" Datatype="UInt" Remanence="Retain">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Local UDP port for MCP 2</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="HTLocalUdpPort" Datatype="UInt" Remanence="Retain">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Local UDP port for handheld unit</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="Op1KeyLocalUdpPort" Datatype="UInt" Remanence="Retain">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Local UDP port for Direct Key 1</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="Op2KeyLocalUdpPort" Datatype="UInt" Remanence="Retain">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Local UDP port for Direct Key 2</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="IdentLocalUdpPort" Datatype="UInt" Remanence="Retain">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Local UDP port for Ident</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="MCP1Error" Datatype="Bool" Remanence="Retain">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Error MCP 1</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="MCP1Status" Datatype="Word" Remanence="Retain">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Error information MCP 1</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="MCP2Error" Datatype="Bool" Remanence="Retain">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Error MCP 2</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="MCP2Status" Datatype="Word" Remanence="Retain">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Error information MCP 2</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="HTError" Datatype="Bool" Remanence="Retain">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Error handheld unit</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="HTStatus" Datatype="Word" Remanence="Retain">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Error information handheld unit</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="Op1KeyError" Datatype="Bool" Remanence="Retain">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Error Direct Key 1</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="Op1KeyStatus" Datatype="Word" Remanence="Retain">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Error information Direct Key 1</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="Op2KeyError" Datatype="Bool" Remanence="Retain">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Error Direct Key 2</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="Op2KeyStatus" Datatype="Word" Remanence="Retain">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Error information Direct Key 2</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="IdentError" Datatype="Bool" Remanence="Retain">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Error identification</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="IdentStatus" Datatype="Word" Remanence="Retain">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Error information Identification</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="MCP1Ready" Datatype="Bool" Remanence="Retain">
+      <Comment>
+        <MultiLanguageText Lang="en-US">MCP1 connected</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="MCP2Ready" Datatype="Bool" Remanence="Retain">
+      <Comment>
+        <MultiLanguageText Lang="en-US">MCP2 connected</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="HTReady" Datatype="Bool" Remanence="Retain">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Handheld unit connected</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="Op1KeyReady" Datatype="Bool" Remanence="Retain">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Direct Key 1 connected</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="Op2KeyReady" Datatype="Bool" Remanence="Retain">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Direct Key 2 connected</MultiLanguageText>
+      </Comment>
+    </Member>
+  </Section>
+</Sections></Interface>
+      <MemoryLayout>Standard</MemoryLayout>
+      <Name>LBP_ConfigData</Name>
+      <Namespace />
+      <Number>7</Number>
+      <ProgrammingLanguage>DB</ProgrammingLanguage>
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text>Contains parameters for the configuration and initialization of the basic program</Text>
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="3" CompositionName="Items">
+            <AttributeList>
+              <Culture>fr-FR</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <MultilingualText ID="4" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="5" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text>Configuration parameter</Text>
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="6" CompositionName="Items">
+            <AttributeList>
+              <Culture>fr-FR</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Blocks.InstanceDB>
+</Document>

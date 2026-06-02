@@ -1,0 +1,158 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V20" />
+  <SW.Blocks.GlobalDB ID="0">
+    <AttributeList>
+      <AutoNumber>false</AutoNumber>
+      <HeaderAuthor>SINUMERIK</HeaderAuthor>
+      <HeaderFamily>SINUMERIK_ONE</HeaderFamily>
+      <HeaderVersion>6.24</HeaderVersion>
+      <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+  <Section Name="Static">
+    <Member Name="MSigGrp" Datatype="Array[1..16] of Struct" Remanence="Retain">
+      <Member Name="MExtAdr" Datatype="Int" />
+      <Member Name="MFirstAdr" Datatype="DInt">
+        <Subelement Path="1">
+          <StartValue>DINT#0</StartValue>
+        </Subelement>
+        <Subelement Path="2">
+          <StartValue>DINT#0</StartValue>
+        </Subelement>
+        <Subelement Path="3">
+          <StartValue>DINT#0</StartValue>
+        </Subelement>
+        <Subelement Path="4">
+          <StartValue>DINT#0</StartValue>
+        </Subelement>
+        <Subelement Path="5">
+          <StartValue>DINT#0</StartValue>
+        </Subelement>
+        <Subelement Path="6">
+          <StartValue>DINT#0</StartValue>
+        </Subelement>
+        <Subelement Path="7">
+          <StartValue>DINT#0</StartValue>
+        </Subelement>
+        <Subelement Path="8">
+          <StartValue>DINT#0</StartValue>
+        </Subelement>
+        <Subelement Path="9">
+          <StartValue>DINT#0</StartValue>
+        </Subelement>
+        <Subelement Path="10">
+          <StartValue>DINT#0</StartValue>
+        </Subelement>
+        <Subelement Path="11">
+          <StartValue>DINT#0</StartValue>
+        </Subelement>
+        <Subelement Path="12">
+          <StartValue>DINT#0</StartValue>
+        </Subelement>
+        <Subelement Path="13">
+          <StartValue>DINT#0</StartValue>
+        </Subelement>
+        <Subelement Path="14">
+          <StartValue>DINT#0</StartValue>
+        </Subelement>
+        <Subelement Path="15">
+          <StartValue>DINT#0</StartValue>
+        </Subelement>
+        <Subelement Path="16">
+          <StartValue>DINT#0</StartValue>
+        </Subelement>
+      </Member>
+      <Member Name="MLastAdr" Datatype="DInt">
+        <Subelement Path="1">
+          <StartValue>DINT#0</StartValue>
+        </Subelement>
+        <Subelement Path="2">
+          <StartValue>DINT#0</StartValue>
+        </Subelement>
+        <Subelement Path="3">
+          <StartValue>DINT#0</StartValue>
+        </Subelement>
+        <Subelement Path="4">
+          <StartValue>DINT#0</StartValue>
+        </Subelement>
+        <Subelement Path="5">
+          <StartValue>DINT#0</StartValue>
+        </Subelement>
+        <Subelement Path="6">
+          <StartValue>DINT#0</StartValue>
+        </Subelement>
+        <Subelement Path="7">
+          <StartValue>DINT#0</StartValue>
+        </Subelement>
+        <Subelement Path="8">
+          <StartValue>DINT#0</StartValue>
+        </Subelement>
+        <Subelement Path="9">
+          <StartValue>DINT#0</StartValue>
+        </Subelement>
+        <Subelement Path="10">
+          <StartValue>DINT#0</StartValue>
+        </Subelement>
+        <Subelement Path="11">
+          <StartValue>DINT#0</StartValue>
+        </Subelement>
+        <Subelement Path="12">
+          <StartValue>DINT#0</StartValue>
+        </Subelement>
+        <Subelement Path="13">
+          <StartValue>DINT#0</StartValue>
+        </Subelement>
+        <Subelement Path="14">
+          <StartValue>DINT#0</StartValue>
+        </Subelement>
+        <Subelement Path="15">
+          <StartValue>DINT#0</StartValue>
+        </Subelement>
+        <Subelement Path="16">
+          <StartValue>DINT#0</StartValue>
+        </Subelement>
+      </Member>
+    </Member>
+  </Section>
+</Sections></Interface>
+      <MemoryLayout>Standard</MemoryLayout>
+      <Name>LBP_MFuncDecListConfig</Name>
+      <Namespace />
+      <Number>75</Number>
+      <ProgrammingLanguage>DB</ProgrammingLanguage>
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text>Interface between user program and NCK, contains the configuration for the M functions to be decoded</Text>
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="3" CompositionName="Items">
+            <AttributeList>
+              <Culture>fr-FR</Culture>
+              <Text>Interface entre programme utilisateur et NCK contient la configuration des fonctions M à décoder.</Text>
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <MultilingualText ID="4" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="5" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text>M decoding acc. to list</Text>
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="6" CompositionName="Items">
+            <AttributeList>
+              <Culture>fr-FR</Culture>
+              <Text>Décodage M selon liste</Text>
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Blocks.GlobalDB>
+</Document>

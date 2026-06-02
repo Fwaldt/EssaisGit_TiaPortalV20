@@ -1,0 +1,605 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V20" />
+  <SW.Blocks.GlobalDB ID="0">
+    <AttributeList>
+      <AutoNumber>false</AutoNumber>
+      <HeaderAuthor>SAN</HeaderAuthor>
+      <HeaderFamily>DPR</HeaderFamily>
+      <HeaderName>HMI</HeaderName>
+      <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+  <Section Name="Static">
+    <Member Name="WarmUpOn" Datatype="Bool" Remanence="Retain">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Moved to DB_HMI_Status</MultiLanguageText>
+      </Comment>
+      <StartValue>FALSE</StartValue>
+    </Member>
+    <Member Name="KeyLaserOn" Datatype="Bool" Remanence="Retain">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Moved to DB_HMI_Status</MultiLanguageText>
+      </Comment>
+      <StartValue>TRUE</StartValue>
+    </Member>
+    <Member Name="KeySaveParameters" Datatype="Bool" Remanence="Retain">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Not used</MultiLanguageText>
+      </Comment>
+      <StartValue>FALSE</StartValue>
+    </Member>
+    <Member Name="bStopAfterEmptying" Datatype="Bool" Remanence="Retain">
+      <Comment>
+        <MultiLanguageText Lang="en-US">A VOIR SI ENCORE UTILE</MultiLanguageText>
+      </Comment>
+      <StartValue>FALSE</StartValue>
+    </Member>
+    <Member Name="Chan1_running" Datatype="Bool" Remanence="Retain">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Moved to DB_HMI_Status</MultiLanguageText>
+      </Comment>
+      <StartValue>TRUE</StartValue>
+    </Member>
+    <Member Name="Chan2_running" Datatype="Bool" Remanence="Retain">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Moved to DB_HMI_Status</MultiLanguageText>
+      </Comment>
+      <StartValue>FALSE</StartValue>
+    </Member>
+    <Member Name="Chan3_running" Datatype="Bool" Remanence="Retain">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Moved to DB_HMI_Status</MultiLanguageText>
+      </Comment>
+      <StartValue>FALSE</StartValue>
+    </Member>
+    <Member Name="Chan4_running" Datatype="Bool" Remanence="Retain">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Moved to DB_HMI_Status</MultiLanguageText>
+      </Comment>
+      <StartValue>FALSE</StartValue>
+    </Member>
+    <Member Name="StopAtNextReq" Datatype="Bool" Remanence="Retain">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="en-US">Moved to DB_HMI_Status</MultiLanguageText>
+      </Comment>
+      <StartValue>FALSE</StartValue>
+    </Member>
+    <Member Name="AllChanStop" Datatype="Bool" Remanence="Retain">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Moved to DB_HMI_Status</MultiLanguageText>
+      </Comment>
+      <StartValue>FALSE</StartValue>
+    </Member>
+    <Member Name="LoaderAutomaticMode" Datatype="Bool" Remanence="Retain">
+      <Comment>
+        <MultiLanguageText Lang="en-US">A VOIR SI ENCORE UTILE</MultiLanguageText>
+      </Comment>
+      <StartValue>FALSE</StartValue>
+    </Member>
+    <Member Name="LoaderManualMode" Datatype="Bool" Remanence="Retain">
+      <Comment>
+        <MultiLanguageText Lang="en-US">A VOIR SI ENCORE UTILE</MultiLanguageText>
+      </Comment>
+      <StartValue>TRUE</StartValue>
+    </Member>
+    <Member Name="NoCameraPresent" Datatype="Bool" Remanence="Retain">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Not used</MultiLanguageText>
+      </Comment>
+      <StartValue>FALSE</StartValue>
+    </Member>
+    <Member Name="PremeasureZexists" Datatype="Bool" Remanence="Retain">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Not used</MultiLanguageText>
+      </Comment>
+      <StartValue>FALSE</StartValue>
+    </Member>
+    <Member Name="PremeasureCexists" Datatype="Bool" Remanence="Retain">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Not used</MultiLanguageText>
+      </Comment>
+      <StartValue>FALSE</StartValue>
+    </Member>
+    <Member Name="PLCFunctNotFinished" Datatype="Bool" Remanence="Retain">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Not used</MultiLanguageText>
+      </Comment>
+      <StartValue>FALSE</StartValue>
+    </Member>
+    <Member Name="StartChangePart_station1" Datatype="Bool" Remanence="Retain">
+      <Comment>
+        <MultiLanguageText Lang="en-US">A VOIR SI ENCORE UTILE</MultiLanguageText>
+      </Comment>
+      <StartValue>FALSE</StartValue>
+    </Member>
+    <Member Name="StartCheckPart_fixture1" Datatype="Bool" Remanence="Retain">
+      <Comment>
+        <MultiLanguageText Lang="en-US">A VOIR SI ENCORE UTILE</MultiLanguageText>
+      </Comment>
+      <StartValue>FALSE</StartValue>
+    </Member>
+    <Member Name="Loader1PartLoad" Datatype="Bool" Remanence="Retain">
+      <Comment>
+        <MultiLanguageText Lang="en-US">A VOIR SI ENCORE UTILE</MultiLanguageText>
+      </Comment>
+      <StartValue>FALSE</StartValue>
+    </Member>
+    <Member Name="Loader1PartUnload" Datatype="Bool" Remanence="Retain">
+      <Comment>
+        <MultiLanguageText Lang="en-US">A VOIR SI ENCORE UTILE</MultiLanguageText>
+      </Comment>
+      <StartValue>FALSE</StartValue>
+    </Member>
+    <Member Name="Loader1ShiftLoad" Datatype="Bool" Remanence="Retain">
+      <Comment>
+        <MultiLanguageText Lang="en-US">A VOIR SI ENCORE UTILE</MultiLanguageText>
+      </Comment>
+      <StartValue>FALSE</StartValue>
+    </Member>
+    <Member Name="Loader1ShiftUnload" Datatype="Bool" Remanence="Retain">
+      <Comment>
+        <MultiLanguageText Lang="en-US">A VOIR SI ENCORE UTILE</MultiLanguageText>
+      </Comment>
+      <StartValue>FALSE</StartValue>
+    </Member>
+    <Member Name="Loader1LoadOpened" Datatype="Bool" Remanence="Retain">
+      <Comment>
+        <MultiLanguageText Lang="en-US">A VOIR SI ENCORE UTILE</MultiLanguageText>
+      </Comment>
+      <StartValue>TRUE</StartValue>
+    </Member>
+    <Member Name="Loader1UnloadOpened" Datatype="Bool" Remanence="Retain">
+      <Comment>
+        <MultiLanguageText Lang="en-US">A VOIR SI ENCORE UTILE</MultiLanguageText>
+      </Comment>
+      <StartValue>TRUE</StartValue>
+    </Member>
+    <Member Name="PartOnFixture1" Datatype="Bool" Remanence="Retain">
+      <Comment>
+        <MultiLanguageText Lang="en-US">A VOIR SI ENCORE UTILE</MultiLanguageText>
+      </Comment>
+      <StartValue>FALSE</StartValue>
+    </Member>
+    <Member Name="MasterOnFixture1" Datatype="Bool" Remanence="Retain">
+      <Comment>
+        <MultiLanguageText Lang="en-US">A VOIR SI ENCORE UTILE</MultiLanguageText>
+      </Comment>
+      <StartValue>FALSE</StartValue>
+    </Member>
+    <Member Name="StartChangePart_station2" Datatype="Bool" Remanence="Retain">
+      <Comment>
+        <MultiLanguageText Lang="en-US">A VOIR SI ENCORE UTILE</MultiLanguageText>
+      </Comment>
+      <StartValue>FALSE</StartValue>
+    </Member>
+    <Member Name="StartCheckPart_fixture2" Datatype="Bool" Remanence="Retain">
+      <Comment>
+        <MultiLanguageText Lang="en-US">A VOIR SI ENCORE UTILE</MultiLanguageText>
+      </Comment>
+      <StartValue>FALSE</StartValue>
+    </Member>
+    <Member Name="Loader2PartLoad" Datatype="Bool" Remanence="Retain">
+      <Comment>
+        <MultiLanguageText Lang="en-US">A VOIR SI ENCORE UTILE</MultiLanguageText>
+      </Comment>
+      <StartValue>FALSE</StartValue>
+    </Member>
+    <Member Name="Loader2PartUnload" Datatype="Bool" Remanence="Retain">
+      <Comment>
+        <MultiLanguageText Lang="en-US">A VOIR SI ENCORE UTILE</MultiLanguageText>
+      </Comment>
+      <StartValue>FALSE</StartValue>
+    </Member>
+    <Member Name="Loader2ShiftLoad" Datatype="Bool" Remanence="Retain">
+      <Comment>
+        <MultiLanguageText Lang="en-US">A VOIR SI ENCORE UTILE</MultiLanguageText>
+      </Comment>
+      <StartValue>FALSE</StartValue>
+    </Member>
+    <Member Name="Loader2ShiftUnload" Datatype="Bool" Remanence="Retain">
+      <Comment>
+        <MultiLanguageText Lang="en-US">A VOIR SI ENCORE UTILE</MultiLanguageText>
+      </Comment>
+      <StartValue>FALSE</StartValue>
+    </Member>
+    <Member Name="Loader2LoadOpened" Datatype="Bool" Remanence="Retain">
+      <Comment>
+        <MultiLanguageText Lang="en-US">A VOIR SI ENCORE UTILE</MultiLanguageText>
+      </Comment>
+      <StartValue>FALSE</StartValue>
+    </Member>
+    <Member Name="Loader2UnloadOpened" Datatype="Bool" Remanence="Retain">
+      <Comment>
+        <MultiLanguageText Lang="en-US">A VOIR SI ENCORE UTILE</MultiLanguageText>
+      </Comment>
+      <StartValue>FALSE</StartValue>
+    </Member>
+    <Member Name="PartOnFixture2" Datatype="Bool" Remanence="Retain">
+      <Comment>
+        <MultiLanguageText Lang="en-US">A VOIR SI ENCORE UTILE</MultiLanguageText>
+      </Comment>
+      <StartValue>FALSE</StartValue>
+    </Member>
+    <Member Name="MasterOnFixture2" Datatype="Bool" Remanence="Retain">
+      <Comment>
+        <MultiLanguageText Lang="en-US">A VOIR SI ENCORE UTILE</MultiLanguageText>
+      </Comment>
+      <StartValue>FALSE</StartValue>
+    </Member>
+    <Member Name="StartChangePart_station3" Datatype="Bool" Remanence="Retain">
+      <Comment>
+        <MultiLanguageText Lang="en-US">A VOIR SI ENCORE UTILE</MultiLanguageText>
+      </Comment>
+      <StartValue>FALSE</StartValue>
+    </Member>
+    <Member Name="StartCheckPart_fixture3" Datatype="Bool" Remanence="Retain">
+      <Comment>
+        <MultiLanguageText Lang="en-US">A VOIR SI ENCORE UTILE</MultiLanguageText>
+      </Comment>
+      <StartValue>FALSE</StartValue>
+    </Member>
+    <Member Name="Loader3PartLoad" Datatype="Bool" Remanence="Retain">
+      <Comment>
+        <MultiLanguageText Lang="en-US">A VOIR SI ENCORE UTILE</MultiLanguageText>
+      </Comment>
+      <StartValue>FALSE</StartValue>
+    </Member>
+    <Member Name="Loader3PartUnload" Datatype="Bool" Remanence="Retain">
+      <Comment>
+        <MultiLanguageText Lang="en-US">A VOIR SI ENCORE UTILE</MultiLanguageText>
+      </Comment>
+      <StartValue>FALSE</StartValue>
+    </Member>
+    <Member Name="Loader3ShiftLoad" Datatype="Bool" Remanence="Retain">
+      <Comment>
+        <MultiLanguageText Lang="en-US">A VOIR SI ENCORE UTILE</MultiLanguageText>
+      </Comment>
+      <StartValue>FALSE</StartValue>
+    </Member>
+    <Member Name="Loader3ShiftUnload" Datatype="Bool" Remanence="Retain">
+      <Comment>
+        <MultiLanguageText Lang="en-US">A VOIR SI ENCORE UTILE</MultiLanguageText>
+      </Comment>
+      <StartValue>FALSE</StartValue>
+    </Member>
+    <Member Name="Loader3LoadOpened" Datatype="Bool" Remanence="Retain">
+      <Comment>
+        <MultiLanguageText Lang="en-US">A VOIR SI ENCORE UTILE</MultiLanguageText>
+      </Comment>
+      <StartValue>FALSE</StartValue>
+    </Member>
+    <Member Name="Loader3UnloadOpened" Datatype="Bool" Remanence="Retain">
+      <Comment>
+        <MultiLanguageText Lang="en-US">A VOIR SI ENCORE UTILE</MultiLanguageText>
+      </Comment>
+      <StartValue>FALSE</StartValue>
+    </Member>
+    <Member Name="PartOnFixture3" Datatype="Bool" Remanence="Retain">
+      <Comment>
+        <MultiLanguageText Lang="en-US">A VOIR SI ENCORE UTILE</MultiLanguageText>
+      </Comment>
+      <StartValue>FALSE</StartValue>
+    </Member>
+    <Member Name="MasterOnFixture3" Datatype="Bool" Remanence="Retain">
+      <Comment>
+        <MultiLanguageText Lang="en-US">A VOIR SI ENCORE UTILE</MultiLanguageText>
+      </Comment>
+      <StartValue>FALSE</StartValue>
+    </Member>
+    <Member Name="Part_KO_go_outside_mach" Datatype="Bool" Remanence="Retain">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Not used</MultiLanguageText>
+      </Comment>
+      <StartValue>TRUE</StartValue>
+    </Member>
+    <Member Name="MasterOnMachine" Datatype="Bool" Remanence="Retain">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Not used</MultiLanguageText>
+      </Comment>
+      <StartValue>FALSE</StartValue>
+    </Member>
+    <Member Name="Part_position_1" Datatype="Bool" Remanence="Retain">
+      <Comment>
+        <MultiLanguageText Lang="en-US">A VOIR COMMENT GERER AVEC TRACABILITY</MultiLanguageText>
+      </Comment>
+      <StartValue>FALSE</StartValue>
+    </Member>
+    <Member Name="Part_position_2" Datatype="Bool" Remanence="Retain">
+      <Comment>
+        <MultiLanguageText Lang="en-US">A VOIR COMMENT GERER AVEC TRACABILITY</MultiLanguageText>
+      </Comment>
+      <StartValue>FALSE</StartValue>
+    </Member>
+    <Member Name="Part_position_3" Datatype="Bool" Remanence="Retain">
+      <Comment>
+        <MultiLanguageText Lang="en-US">A VOIR COMMENT GERER AVEC TRACABILITY</MultiLanguageText>
+      </Comment>
+      <StartValue>FALSE</StartValue>
+    </Member>
+    <Member Name="Part_position_4" Datatype="Bool" Remanence="Retain">
+      <Comment>
+        <MultiLanguageText Lang="en-US">A VOIR COMMENT GERER AVEC TRACABILITY</MultiLanguageText>
+      </Comment>
+      <StartValue>FALSE</StartValue>
+    </Member>
+    <Member Name="Part_position_5" Datatype="Bool" Remanence="Retain">
+      <Comment>
+        <MultiLanguageText Lang="en-US">A VOIR COMMENT GERER AVEC TRACABILITY</MultiLanguageText>
+      </Comment>
+      <StartValue>FALSE</StartValue>
+    </Member>
+    <Member Name="Part_position_6" Datatype="Bool" Remanence="Retain">
+      <Comment>
+        <MultiLanguageText Lang="en-US">A VOIR COMMENT GERER AVEC TRACABILITY</MultiLanguageText>
+      </Comment>
+      <StartValue>FALSE</StartValue>
+    </Member>
+    <Member Name="Part_position_7" Datatype="Bool" Remanence="Retain">
+      <Comment>
+        <MultiLanguageText Lang="en-US">A VOIR COMMENT GERER AVEC TRACABILITY</MultiLanguageText>
+      </Comment>
+      <StartValue>FALSE</StartValue>
+    </Member>
+    <Member Name="Part_position_8" Datatype="Bool" Remanence="Retain">
+      <Comment>
+        <MultiLanguageText Lang="en-US">A VOIR COMMENT GERER AVEC TRACABILITY</MultiLanguageText>
+      </Comment>
+      <StartValue>FALSE</StartValue>
+    </Member>
+    <Member Name="Part_position_9" Datatype="Bool" Remanence="Retain">
+      <Comment>
+        <MultiLanguageText Lang="en-US">A VOIR COMMENT GERER AVEC TRACABILITY</MultiLanguageText>
+      </Comment>
+      <StartValue>FALSE</StartValue>
+    </Member>
+    <Member Name="Part_position_10" Datatype="Bool" Remanence="Retain">
+      <Comment>
+        <MultiLanguageText Lang="en-US">A VOIR COMMENT GERER AVEC TRACABILITY</MultiLanguageText>
+      </Comment>
+      <StartValue>FALSE</StartValue>
+    </Member>
+    <Member Name="Part_position_11" Datatype="Bool" Remanence="Retain">
+      <Comment>
+        <MultiLanguageText Lang="en-US">A VOIR COMMENT GERER AVEC TRACABILITY</MultiLanguageText>
+      </Comment>
+      <StartValue>FALSE</StartValue>
+    </Member>
+    <Member Name="Part_position_12" Datatype="Bool" Remanence="Retain">
+      <Comment>
+        <MultiLanguageText Lang="en-US">A VOIR COMMENT GERER AVEC TRACABILITY</MultiLanguageText>
+      </Comment>
+      <StartValue>FALSE</StartValue>
+    </Member>
+    <Member Name="Part_position_13" Datatype="Bool" Remanence="Retain">
+      <Comment>
+        <MultiLanguageText Lang="en-US">A VOIR COMMENT GERER AVEC TRACABILITY</MultiLanguageText>
+      </Comment>
+      <StartValue>FALSE</StartValue>
+    </Member>
+    <Member Name="Part_position_14" Datatype="Bool" Remanence="Retain">
+      <Comment>
+        <MultiLanguageText Lang="en-US">A VOIR COMMENT GERER AVEC TRACABILITY</MultiLanguageText>
+      </Comment>
+      <StartValue>FALSE</StartValue>
+    </Member>
+    <Member Name="Part_position_15" Datatype="Bool" Remanence="Retain">
+      <Comment>
+        <MultiLanguageText Lang="en-US">A VOIR COMMENT GERER AVEC TRACABILITY</MultiLanguageText>
+      </Comment>
+      <StartValue>FALSE</StartValue>
+    </Member>
+    <Member Name="Part_position_16" Datatype="Bool" Remanence="Retain">
+      <Comment>
+        <MultiLanguageText Lang="en-US">A VOIR COMMENT GERER AVEC TRACABILITY</MultiLanguageText>
+      </Comment>
+      <StartValue>FALSE</StartValue>
+    </Member>
+    <Member Name="WarmUpTime" Datatype="Int" Remanence="Retain">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Moved to DB_HMI_Status</MultiLanguageText>
+      </Comment>
+      <StartValue>30</StartValue>
+    </Member>
+    <Member Name="Stop_For_BackWall_Wear_1" Datatype="Bool" Remanence="Retain">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Moved to DB_HMI_Status</MultiLanguageText>
+      </Comment>
+      <StartValue>FALSE</StartValue>
+    </Member>
+    <Member Name="Stop_For_BackWall_Wear_2" Datatype="Bool" Remanence="Retain">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Moved to DB_HMI_Status</MultiLanguageText>
+      </Comment>
+      <StartValue>FALSE</StartValue>
+    </Member>
+    <Member Name="Cleaning_Station_1" Datatype="Bool" Remanence="Retain">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Moved to DB_HMI_Status</MultiLanguageText>
+      </Comment>
+      <StartValue>FALSE</StartValue>
+    </Member>
+    <Member Name="Cleaning_Station_2" Datatype="Bool" Remanence="Retain">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Moved to DB_HMI_Status</MultiLanguageText>
+      </Comment>
+      <StartValue>FALSE</StartValue>
+    </Member>
+    <Member Name="Cleaning_Backwall_1" Datatype="Bool" Remanence="Retain">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Moved to DB_HMI_Status</MultiLanguageText>
+      </Comment>
+      <StartValue>FALSE</StartValue>
+    </Member>
+    <Member Name="Cleaning_Backwall_2" Datatype="Bool" Remanence="Retain">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Moved to DB_HMI_Status</MultiLanguageText>
+      </Comment>
+      <StartValue>FALSE</StartValue>
+    </Member>
+    <Member Name="Shutter_laser_closed" Datatype="Bool" Remanence="Retain">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Moved to DB_HMI_Status</MultiLanguageText>
+      </Comment>
+      <StartValue>FALSE</StartValue>
+    </Member>
+    <Member Name="Pressure_Stop_Machine" Datatype="Bool" Remanence="Retain">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Moved to DB_HMI_Status</MultiLanguageText>
+      </Comment>
+      <StartValue>FALSE</StartValue>
+    </Member>
+    <Member Name="Set_Bad_Part_On_Fixture" Datatype="Bool" Remanence="Retain">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Moved to DB_HMI_Status</MultiLanguageText>
+      </Comment>
+      <StartValue>FALSE</StartValue>
+    </Member>
+    <Member Name="Reserve12" Datatype="Bool" Remanence="Retain">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Not used</MultiLanguageText>
+      </Comment>
+      <StartValue>FALSE</StartValue>
+    </Member>
+    <Member Name="Reserve13" Datatype="Bool" Remanence="Retain">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Not used</MultiLanguageText>
+      </Comment>
+      <StartValue>FALSE</StartValue>
+    </Member>
+    <Member Name="Reserve14" Datatype="Bool" Remanence="Retain">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Not used</MultiLanguageText>
+      </Comment>
+      <StartValue>FALSE</StartValue>
+    </Member>
+    <Member Name="Reserve15" Datatype="Bool" Remanence="Retain">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Not used</MultiLanguageText>
+      </Comment>
+      <StartValue>FALSE</StartValue>
+    </Member>
+    <Member Name="SemiAuto_RunEmpty" Datatype="Bool" Remanence="Retain">
+      <Comment>
+        <MultiLanguageText Lang="en-US">A VOIR SI ENCORE UTILE</MultiLanguageText>
+      </Comment>
+      <StartValue>FALSE</StartValue>
+    </Member>
+    <Member Name="SemiAuto_Unload_C-Fixture" Datatype="Bool" Remanence="Retain">
+      <Comment>
+        <MultiLanguageText Lang="en-US">A VOIR SI ENCORE UTILE</MultiLanguageText>
+      </Comment>
+      <StartValue>FALSE</StartValue>
+    </Member>
+    <Member Name="Reserve18" Datatype="Bool" Remanence="Retain">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Not used</MultiLanguageText>
+      </Comment>
+      <StartValue>FALSE</StartValue>
+    </Member>
+    <Member Name="Cnt_Washing_Loader_1" Datatype="Int" Remanence="Retain">
+      <Comment>
+        <MultiLanguageText Lang="en-US">A VOIR SI ENCORE UTILE</MultiLanguageText>
+      </Comment>
+      <StartValue>1</StartValue>
+    </Member>
+    <Member Name="Cnt_Washing_Loader_2" Datatype="Int" Remanence="Retain">
+      <Comment>
+        <MultiLanguageText Lang="en-US">A VOIR SI ENCORE UTILE</MultiLanguageText>
+      </Comment>
+      <StartValue>0</StartValue>
+    </Member>
+    <Member Name="Cnt_Part_Backwall_1" Datatype="Int" Remanence="Retain">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Moved to DB_HMI_Status</MultiLanguageText>
+      </Comment>
+      <StartValue>16</StartValue>
+    </Member>
+    <Member Name="Cnt_Part_Backwall_2" Datatype="Int" Remanence="Retain">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Moved to DB_HMI_Status</MultiLanguageText>
+      </Comment>
+      <StartValue>0</StartValue>
+    </Member>
+    <Member Name="Cnt_Part_Wash_Backwall_1" Datatype="Int" Remanence="Retain">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Moved to DB_HMI_Status</MultiLanguageText>
+      </Comment>
+      <StartValue>26</StartValue>
+    </Member>
+    <Member Name="Cnt_Part_Wash_Backwall_2" Datatype="Int" Remanence="Retain">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Moved to DB_HMI_Status</MultiLanguageText>
+      </Comment>
+      <StartValue>0</StartValue>
+    </Member>
+    <Member Name="Cnt_Part_Blow_Fixture_1" Datatype="Int" Remanence="Retain">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Moved to DB_HMI_Status</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="Cnt_Part_Blow_Fixture_2" Datatype="Int" Remanence="Retain">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Moved to DB_HMI_Status</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="Setpoint_laser_air_process" Datatype="Real" Remanence="Retain">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Not used</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="StopMachine" Datatype="Bool" Remanence="Retain">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Not used</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="BadPartOnFixture" Datatype="Bool" Remanence="Retain">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Not used</MultiLanguageText>
+      </Comment>
+    </Member>
+  </Section>
+</Sections></Interface>
+      <MemoryLayout>Standard</MemoryLayout>
+      <Name>DB_PLC_ISO_IHM</Name>
+      <Namespace />
+      <Number>1302</Number>
+      <ProgrammingLanguage>DB</ProgrammingLanguage>
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="3" CompositionName="Items">
+            <AttributeList>
+              <Culture>fr-FR</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <MultilingualText ID="4" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="5" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="6" CompositionName="Items">
+            <AttributeList>
+              <Culture>fr-FR</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Blocks.GlobalDB>
+</Document>

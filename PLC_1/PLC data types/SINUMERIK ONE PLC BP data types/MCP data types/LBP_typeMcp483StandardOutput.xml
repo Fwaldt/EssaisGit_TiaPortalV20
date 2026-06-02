@@ -1,0 +1,292 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V20" />
+  <SW.Types.PlcStruct ID="0">
+    <AttributeList>
+      <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+  <Section Name="None">
+    <Member Name="LEDauto" Datatype="Bool" />
+    <Member Name="LEDmda" Datatype="Bool" />
+    <Member Name="LEDteachIn" Datatype="Bool" />
+    <Member Name="LEDjog" Datatype="Bool" />
+    <Member Name="LEDinc1" Datatype="Bool" />
+    <Member Name="LEDinc10" Datatype="Bool" />
+    <Member Name="LEDinc100" Datatype="Bool" />
+    <Member Name="LEDinc1000" Datatype="Bool" />
+    <Member Name="LEDinc10000" Datatype="Bool" />
+    <Member Name="LEDincVar" Datatype="Bool" />
+    <Member Name="LEDrefPoint" Datatype="Bool" />
+    <Member Name="LEDrepos" Datatype="Bool" />
+    <Member Name="LEDcycleStop" Datatype="Bool" />
+    <Member Name="LEDcycleStart" Datatype="Bool" />
+    <Member Name="LEDfeedrateStop" Datatype="Bool" />
+    <Member Name="LEDfeedrateStart" Datatype="Bool" />
+    <Member Name="LEDspindleStop" Datatype="Bool" />
+    <Member Name="LEDspindleStart" Datatype="Bool" />
+    <Member Name="LEDsingleBlock" Datatype="Bool" />
+    <Member Name="LEDaxis10" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">R10</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">R10</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="LEDaxis7" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">R7</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">R7</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="LEDaxis4" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">R4</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">R4</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="LEDaxisX" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">R1</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">R1</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="LEDminus" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">R13</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">R13</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="LEDplus" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">R15</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">R15</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="LEDaxis6" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">R6</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">R6</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="LEDaxis8" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">R8</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">R8</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="LEDaxis9" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">R9</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">R9</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="LEDaxis11" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">R11</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">R11</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="LEDmcsWcs" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">R12</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">R12</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="LEDaxis5" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">R5</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">R5</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="LEDaxisZ" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">R3</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">R3</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="LEDaxisY" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">R2</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">R2</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="LEDcustomerKey15" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">T15</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">T15</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="LEDcustomerKey14" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">T14</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">T14</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="LEDcustomerKey13" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">T13</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">T13</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="LEDcustomerKey12" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">T12</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">T12</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="LEDcustomerKey11" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">T11</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">T11</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="LEDcustomerKey10" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">T10</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">T10</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="LEDcustomerKey9" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">T9</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">T9</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="LEDcustomerKey8" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">T8</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">T8</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="LEDcustomerKey7" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">T7</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">T7</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="LEDcustomerKey6" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">T6</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">T6</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="LEDcustomerKey5" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">T5</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">T5</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="LEDcustomerKey4" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">T4</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">T4</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="LEDcustomerKey3" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">T3</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">T3</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="LEDcustomerKey2" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">T2</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">T2</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="LEDcustomerKey1" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">T1</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">T1</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="LEDrapidTraverse" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">R14</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">R14</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="LEDreset" Datatype="Bool" />
+    <Member Name="reserved62" Datatype="Bool" />
+    <Member Name="reserved63" Datatype="Bool" />
+    <Member Name="reserved64" Datatype="Bool" />
+    <Member Name="reserved65" Datatype="Bool" />
+    <Member Name="reserved66" Datatype="Bool" />
+    <Member Name="reserved67" Datatype="Bool" />
+    <Member Name="LEDoptionalKey1" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">KT-OUT1, reserved</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">KT-OUT1, réservé</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="LEDoptionalKey2" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">KT-OUT2, reserved</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">KT-OUT2, réservé</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="LEDoptionalKey3" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">KT-OUT3, reserved</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">KT-OUT3, réservé</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="LEDoptionalKey4" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">KT-OUT4, reserved</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">KT-OUT4, réservé</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="LEDoptionalKey5" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">KT-OUT5, reserved</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">KT-OUT5, réservé</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="LEDoptionalKey6" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">KT-OUT6, reserved</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">KT-OUT6, réservé</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="reserved76" Datatype="Bool" />
+    <Member Name="reserved77" Datatype="Bool" />
+  </Section>
+</Sections></Interface>
+      <Name>LBP_typeMcp483StandardOutput</Name>
+      <Namespace />
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text>Output image of MCP 483</Text>
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="3" CompositionName="Items">
+            <AttributeList>
+              <Culture>fr-FR</Culture>
+              <Text>Image de sortie du MCP 483</Text>
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <MultilingualText ID="4" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="5" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text>MCP 483 image</Text>
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="6" CompositionName="Items">
+            <AttributeList>
+              <Culture>fr-FR</Culture>
+              <Text>Image du MCP 483</Text>
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Types.PlcStruct>
+</Document>

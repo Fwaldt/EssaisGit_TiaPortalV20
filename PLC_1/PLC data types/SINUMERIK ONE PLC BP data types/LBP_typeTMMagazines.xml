@@ -1,0 +1,1986 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V20" />
+  <SW.Types.PlcStruct ID="0">
+    <AttributeList>
+      <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+  <Section Name="None">
+    <Member Name="MaxSpindleNumber" Datatype="UInt">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Maximum spindle number</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Nombre maximal de broches</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="NumberOfMagazines" Datatype="UInt">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Number of all magazines including loading and buffer magazines</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Nombre total de magasins, y compris les magasins de chargement et de tampon</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="Magazines" Datatype="Array[1..64] of Struct">
+      <Comment>
+        <MultiLanguageText Lang="en-US">All magazines including loading and buffer magazines</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Tous les magasins, y compris les magasins de chargement et de tampon</MultiLanguageText>
+      </Comment>
+      <Member Name="Number" Datatype="UInt">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Magazine number</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Numéro de magasin</MultiLanguageText>
+        </Comment>
+        <Subelement Path="2">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Magazine number</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro de magasin</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="3">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Magazine number</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro de magasin</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="4">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Magazine number</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro de magasin</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="5">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Magazine number</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro de magasin</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="6">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Magazine number</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro de magasin</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="7">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Magazine number</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro de magasin</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="8">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Magazine number</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro de magasin</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="9">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Magazine number</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro de magasin</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="10">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Magazine number</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro de magasin</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="11">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Magazine number</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro de magasin</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="12">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Magazine number</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro de magasin</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="13">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Magazine number</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro de magasin</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="14">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Magazine number</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro de magasin</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="15">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Magazine number</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro de magasin</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="16">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Magazine number</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro de magasin</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="17">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Magazine number</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro de magasin</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="18">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Magazine number</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro de magasin</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="19">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Magazine number</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro de magasin</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="20">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Magazine number</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro de magasin</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="21">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Magazine number</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro de magasin</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="22">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Magazine number</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro de magasin</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="23">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Magazine number</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro de magasin</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="24">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Magazine number</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro de magasin</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="25">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Magazine number</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro de magasin</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="26">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Magazine number</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro de magasin</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="27">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Magazine number</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro de magasin</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="28">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Magazine number</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro de magasin</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="29">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Magazine number</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro de magasin</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="30">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Magazine number</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro de magasin</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="31">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Magazine number</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro de magasin</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="32">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Magazine number</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro de magasin</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="33">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Magazine number</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro de magasin</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="34">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Magazine number</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro de magasin</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="35">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Magazine number</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro de magasin</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="36">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Magazine number</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro de magasin</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="37">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Magazine number</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro de magasin</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="38">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Magazine number</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro de magasin</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="39">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Magazine number</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro de magasin</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="40">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Magazine number</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro de magasin</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="41">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Magazine number</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro de magasin</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="42">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Magazine number</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro de magasin</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="43">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Magazine number</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro de magasin</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="44">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Magazine number</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro de magasin</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="45">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Magazine number</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro de magasin</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="46">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Magazine number</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro de magasin</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="47">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Magazine number</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro de magasin</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="48">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Magazine number</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro de magasin</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="49">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Magazine number</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro de magasin</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="50">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Magazine number</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro de magasin</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="51">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Magazine number</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro de magasin</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="52">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Magazine number</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro de magasin</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="53">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Magazine number</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro de magasin</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="54">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Magazine number</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro de magasin</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="55">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Magazine number</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro de magasin</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="56">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Magazine number</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro de magasin</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="57">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Magazine number</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro de magasin</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="58">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Magazine number</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro de magasin</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="59">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Magazine number</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro de magasin</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="60">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Magazine number</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro de magasin</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="61">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Magazine number</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro de magasin</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="62">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Magazine number</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro de magasin</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="63">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Magazine number</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro de magasin</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="64">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Magazine number</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro de magasin</MultiLanguageText>
+          </Comment>
+        </Subelement>
+      </Member>
+      <Member Name="Type" Datatype="UInt">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Magazine type</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Type de magasin</MultiLanguageText>
+        </Comment>
+        <Subelement Path="2">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Magazine type</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Type de magasin</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="3">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Magazine type</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Type de magasin</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="4">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Magazine type</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Type de magasin</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="5">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Magazine type</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Type de magasin</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="6">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Magazine type</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Type de magasin</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="7">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Magazine type</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Type de magasin</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="8">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Magazine type</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Type de magasin</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="9">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Magazine type</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Type de magasin</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="10">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Magazine type</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Type de magasin</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="11">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Magazine type</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Type de magasin</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="12">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Magazine type</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Type de magasin</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="13">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Magazine type</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Type de magasin</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="14">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Magazine type</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Type de magasin</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="15">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Magazine type</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Type de magasin</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="16">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Magazine type</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Type de magasin</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="17">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Magazine type</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Type de magasin</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="18">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Magazine type</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Type de magasin</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="19">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Magazine type</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Type de magasin</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="20">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Magazine type</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Type de magasin</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="21">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Magazine type</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Type de magasin</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="22">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Magazine type</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Type de magasin</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="23">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Magazine type</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Type de magasin</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="24">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Magazine type</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Type de magasin</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="25">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Magazine type</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Type de magasin</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="26">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Magazine type</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Type de magasin</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="27">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Magazine type</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Type de magasin</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="28">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Magazine type</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Type de magasin</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="29">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Magazine type</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Type de magasin</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="30">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Magazine type</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Type de magasin</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="31">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Magazine type</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Type de magasin</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="32">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Magazine type</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Type de magasin</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="33">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Magazine type</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Type de magasin</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="34">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Magazine type</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Type de magasin</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="35">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Magazine type</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Type de magasin</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="36">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Magazine type</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Type de magasin</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="37">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Magazine type</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Type de magasin</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="38">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Magazine type</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Type de magasin</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="39">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Magazine type</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Type de magasin</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="40">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Magazine type</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Type de magasin</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="41">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Magazine type</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Type de magasin</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="42">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Magazine type</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Type de magasin</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="43">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Magazine type</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Type de magasin</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="44">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Magazine type</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Type de magasin</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="45">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Magazine type</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Type de magasin</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="46">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Magazine type</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Type de magasin</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="47">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Magazine type</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Type de magasin</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="48">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Magazine type</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Type de magasin</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="49">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Magazine type</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Type de magasin</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="50">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Magazine type</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Type de magasin</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="51">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Magazine type</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Type de magasin</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="52">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Magazine type</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Type de magasin</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="53">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Magazine type</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Type de magasin</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="54">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Magazine type</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Type de magasin</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="55">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Magazine type</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Type de magasin</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="56">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Magazine type</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Type de magasin</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="57">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Magazine type</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Type de magasin</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="58">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Magazine type</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Type de magasin</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="59">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Magazine type</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Type de magasin</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="60">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Magazine type</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Type de magasin</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="61">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Magazine type</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Type de magasin</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="62">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Magazine type</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Type de magasin</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="63">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Magazine type</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Type de magasin</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="64">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Magazine type</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Type de magasin</MultiLanguageText>
+          </Comment>
+        </Subelement>
+      </Member>
+      <Member Name="Places" Datatype="UInt">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Number of locations in magazine</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Nombre d'emplacements dans le magasin</MultiLanguageText>
+        </Comment>
+        <Subelement Path="2">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Number of locations in magazine</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Nombre d'emplacements dans le magasin</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="3">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Number of locations in magazine</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Nombre d'emplacements dans le magasin</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="4">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Number of locations in magazine</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Nombre d'emplacements dans le magasin</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="5">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Number of locations in magazine</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Nombre d'emplacements dans le magasin</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="6">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Number of locations in magazine</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Nombre d'emplacements dans le magasin</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="7">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Number of locations in magazine</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Nombre d'emplacements dans le magasin</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="8">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Number of locations in magazine</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Nombre d'emplacements dans le magasin</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="9">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Number of locations in magazine</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Nombre d'emplacements dans le magasin</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="10">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Number of locations in magazine</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Nombre d'emplacements dans le magasin</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="11">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Number of locations in magazine</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Nombre d'emplacements dans le magasin</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="12">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Number of locations in magazine</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Nombre d'emplacements dans le magasin</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="13">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Number of locations in magazine</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Nombre d'emplacements dans le magasin</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="14">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Number of locations in magazine</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Nombre d'emplacements dans le magasin</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="15">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Number of locations in magazine</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Nombre d'emplacements dans le magasin</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="16">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Number of locations in magazine</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Nombre d'emplacements dans le magasin</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="17">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Number of locations in magazine</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Nombre d'emplacements dans le magasin</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="18">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Number of locations in magazine</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Nombre d'emplacements dans le magasin</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="19">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Number of locations in magazine</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Nombre d'emplacements dans le magasin</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="20">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Number of locations in magazine</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Nombre d'emplacements dans le magasin</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="21">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Number of locations in magazine</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Nombre d'emplacements dans le magasin</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="22">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Number of locations in magazine</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Nombre d'emplacements dans le magasin</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="23">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Number of locations in magazine</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Nombre d'emplacements dans le magasin</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="24">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Number of locations in magazine</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Nombre d'emplacements dans le magasin</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="25">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Number of locations in magazine</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Nombre d'emplacements dans le magasin</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="26">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Number of locations in magazine</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Nombre d'emplacements dans le magasin</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="27">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Number of locations in magazine</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Nombre d'emplacements dans le magasin</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="28">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Number of locations in magazine</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Nombre d'emplacements dans le magasin</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="29">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Number of locations in magazine</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Nombre d'emplacements dans le magasin</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="30">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Number of locations in magazine</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Nombre d'emplacements dans le magasin</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="31">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Number of locations in magazine</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Nombre d'emplacements dans le magasin</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="32">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Number of locations in magazine</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Nombre d'emplacements dans le magasin</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="33">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Number of locations in magazine</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Nombre d'emplacements dans le magasin</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="34">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Number of locations in magazine</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Nombre d'emplacements dans le magasin</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="35">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Number of locations in magazine</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Nombre d'emplacements dans le magasin</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="36">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Number of locations in magazine</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Nombre d'emplacements dans le magasin</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="37">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Number of locations in magazine</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Nombre d'emplacements dans le magasin</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="38">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Number of locations in magazine</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Nombre d'emplacements dans le magasin</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="39">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Number of locations in magazine</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Nombre d'emplacements dans le magasin</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="40">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Number of locations in magazine</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Nombre d'emplacements dans le magasin</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="41">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Number of locations in magazine</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Nombre d'emplacements dans le magasin</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="42">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Number of locations in magazine</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Nombre d'emplacements dans le magasin</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="43">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Number of locations in magazine</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Nombre d'emplacements dans le magasin</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="44">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Number of locations in magazine</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Nombre d'emplacements dans le magasin</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="45">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Number of locations in magazine</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Nombre d'emplacements dans le magasin</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="46">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Number of locations in magazine</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Nombre d'emplacements dans le magasin</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="47">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Number of locations in magazine</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Nombre d'emplacements dans le magasin</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="48">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Number of locations in magazine</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Nombre d'emplacements dans le magasin</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="49">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Number of locations in magazine</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Nombre d'emplacements dans le magasin</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="50">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Number of locations in magazine</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Nombre d'emplacements dans le magasin</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="51">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Number of locations in magazine</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Nombre d'emplacements dans le magasin</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="52">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Number of locations in magazine</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Nombre d'emplacements dans le magasin</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="53">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Number of locations in magazine</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Nombre d'emplacements dans le magasin</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="54">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Number of locations in magazine</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Nombre d'emplacements dans le magasin</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="55">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Number of locations in magazine</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Nombre d'emplacements dans le magasin</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="56">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Number of locations in magazine</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Nombre d'emplacements dans le magasin</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="57">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Number of locations in magazine</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Nombre d'emplacements dans le magasin</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="58">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Number of locations in magazine</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Nombre d'emplacements dans le magasin</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="59">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Number of locations in magazine</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Nombre d'emplacements dans le magasin</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="60">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Number of locations in magazine</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Nombre d'emplacements dans le magasin</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="61">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Number of locations in magazine</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Nombre d'emplacements dans le magasin</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="62">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Number of locations in magazine</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Nombre d'emplacements dans le magasin</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="63">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Number of locations in magazine</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Nombre d'emplacements dans le magasin</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="64">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Number of locations in magazine</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Nombre d'emplacements dans le magasin</MultiLanguageText>
+          </Comment>
+        </Subelement>
+      </Member>
+      <Member Name="TMNumber" Datatype="UInt">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Tool management number</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Numéro de gestion des outils</MultiLanguageText>
+        </Comment>
+        <Subelement Path="2">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool management number</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro de gestion des outils</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="3">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool management number</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro de gestion des outils</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="4">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool management number</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro de gestion des outils</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="5">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool management number</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro de gestion des outils</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="6">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool management number</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro de gestion des outils</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="7">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool management number</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro de gestion des outils</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="8">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool management number</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro de gestion des outils</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="9">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool management number</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro de gestion des outils</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="10">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool management number</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro de gestion des outils</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="11">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool management number</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro de gestion des outils</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="12">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool management number</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro de gestion des outils</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="13">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool management number</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro de gestion des outils</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="14">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool management number</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro de gestion des outils</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="15">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool management number</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro de gestion des outils</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="16">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool management number</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro de gestion des outils</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="17">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool management number</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro de gestion des outils</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="18">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool management number</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro de gestion des outils</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="19">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool management number</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro de gestion des outils</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="20">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool management number</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro de gestion des outils</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="21">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool management number</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro de gestion des outils</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="22">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool management number</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro de gestion des outils</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="23">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool management number</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro de gestion des outils</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="24">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool management number</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro de gestion des outils</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="25">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool management number</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro de gestion des outils</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="26">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool management number</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro de gestion des outils</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="27">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool management number</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro de gestion des outils</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="28">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool management number</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro de gestion des outils</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="29">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool management number</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro de gestion des outils</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="30">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool management number</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro de gestion des outils</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="31">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool management number</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro de gestion des outils</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="32">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool management number</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro de gestion des outils</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="33">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool management number</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro de gestion des outils</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="34">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool management number</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro de gestion des outils</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="35">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool management number</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro de gestion des outils</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="36">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool management number</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro de gestion des outils</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="37">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool management number</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro de gestion des outils</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="38">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool management number</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro de gestion des outils</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="39">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool management number</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro de gestion des outils</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="40">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool management number</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro de gestion des outils</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="41">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool management number</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro de gestion des outils</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="42">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool management number</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro de gestion des outils</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="43">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool management number</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro de gestion des outils</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="44">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool management number</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro de gestion des outils</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="45">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool management number</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro de gestion des outils</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="46">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool management number</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro de gestion des outils</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="47">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool management number</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro de gestion des outils</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="48">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool management number</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro de gestion des outils</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="49">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool management number</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro de gestion des outils</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="50">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool management number</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro de gestion des outils</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="51">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool management number</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro de gestion des outils</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="52">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool management number</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro de gestion des outils</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="53">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool management number</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro de gestion des outils</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="54">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool management number</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro de gestion des outils</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="55">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool management number</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro de gestion des outils</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="56">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool management number</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro de gestion des outils</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="57">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool management number</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro de gestion des outils</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="58">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool management number</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro de gestion des outils</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="59">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool management number</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro de gestion des outils</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="60">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool management number</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro de gestion des outils</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="61">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool management number</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro de gestion des outils</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="62">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool management number</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro de gestion des outils</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="63">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool management number</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro de gestion des outils</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="64">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool management number</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro de gestion des outils</MultiLanguageText>
+          </Comment>
+        </Subelement>
+      </Member>
+      <Subelement Path="1">
+        <Comment>
+          <MultiLanguageText Lang="en-US">All magazines including loading and buffer magazines</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Tous les magasins, y compris les magasins de chargement et de tampon</MultiLanguageText>
+        </Comment>
+      </Subelement>
+      <Subelement Path="2">
+        <Comment>
+          <MultiLanguageText Lang="en-US">All magazines including loading and buffer magazines</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Tous les magasins, y compris les magasins de chargement et de tampon</MultiLanguageText>
+        </Comment>
+      </Subelement>
+      <Subelement Path="3">
+        <Comment>
+          <MultiLanguageText Lang="en-US">All magazines including loading and buffer magazines</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Tous les magasins, y compris les magasins de chargement et de tampon</MultiLanguageText>
+        </Comment>
+      </Subelement>
+      <Subelement Path="4">
+        <Comment>
+          <MultiLanguageText Lang="en-US">All magazines including loading and buffer magazines</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Tous les magasins, y compris les magasins de chargement et de tampon</MultiLanguageText>
+        </Comment>
+      </Subelement>
+      <Subelement Path="5">
+        <Comment>
+          <MultiLanguageText Lang="en-US">All magazines including loading and buffer magazines</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Tous les magasins, y compris les magasins de chargement et de tampon</MultiLanguageText>
+        </Comment>
+      </Subelement>
+      <Subelement Path="6">
+        <Comment>
+          <MultiLanguageText Lang="en-US">All magazines including loading and buffer magazines</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Tous les magasins, y compris les magasins de chargement et de tampon</MultiLanguageText>
+        </Comment>
+      </Subelement>
+      <Subelement Path="7">
+        <Comment>
+          <MultiLanguageText Lang="en-US">All magazines including loading and buffer magazines</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Tous les magasins, y compris les magasins de chargement et de tampon</MultiLanguageText>
+        </Comment>
+      </Subelement>
+      <Subelement Path="8">
+        <Comment>
+          <MultiLanguageText Lang="en-US">All magazines including loading and buffer magazines</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Tous les magasins, y compris les magasins de chargement et de tampon</MultiLanguageText>
+        </Comment>
+      </Subelement>
+      <Subelement Path="9">
+        <Comment>
+          <MultiLanguageText Lang="en-US">All magazines including loading and buffer magazines</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Tous les magasins, y compris les magasins de chargement et de tampon</MultiLanguageText>
+        </Comment>
+      </Subelement>
+      <Subelement Path="10">
+        <Comment>
+          <MultiLanguageText Lang="en-US">All magazines including loading and buffer magazines</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Tous les magasins, y compris les magasins de chargement et de tampon</MultiLanguageText>
+        </Comment>
+      </Subelement>
+      <Subelement Path="11">
+        <Comment>
+          <MultiLanguageText Lang="en-US">All magazines including loading and buffer magazines</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Tous les magasins, y compris les magasins de chargement et de tampon</MultiLanguageText>
+        </Comment>
+      </Subelement>
+      <Subelement Path="12">
+        <Comment>
+          <MultiLanguageText Lang="en-US">All magazines including loading and buffer magazines</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Tous les magasins, y compris les magasins de chargement et de tampon</MultiLanguageText>
+        </Comment>
+      </Subelement>
+      <Subelement Path="13">
+        <Comment>
+          <MultiLanguageText Lang="en-US">All magazines including loading and buffer magazines</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Tous les magasins, y compris les magasins de chargement et de tampon</MultiLanguageText>
+        </Comment>
+      </Subelement>
+      <Subelement Path="14">
+        <Comment>
+          <MultiLanguageText Lang="en-US">All magazines including loading and buffer magazines</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Tous les magasins, y compris les magasins de chargement et de tampon</MultiLanguageText>
+        </Comment>
+      </Subelement>
+      <Subelement Path="15">
+        <Comment>
+          <MultiLanguageText Lang="en-US">All magazines including loading and buffer magazines</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Tous les magasins, y compris les magasins de chargement et de tampon</MultiLanguageText>
+        </Comment>
+      </Subelement>
+      <Subelement Path="16">
+        <Comment>
+          <MultiLanguageText Lang="en-US">All magazines including loading and buffer magazines</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Tous les magasins, y compris les magasins de chargement et de tampon</MultiLanguageText>
+        </Comment>
+      </Subelement>
+      <Subelement Path="17">
+        <Comment>
+          <MultiLanguageText Lang="en-US">All magazines including loading and buffer magazines</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Tous les magasins, y compris les magasins de chargement et de tampon</MultiLanguageText>
+        </Comment>
+      </Subelement>
+      <Subelement Path="18">
+        <Comment>
+          <MultiLanguageText Lang="en-US">All magazines including loading and buffer magazines</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Tous les magasins, y compris les magasins de chargement et de tampon</MultiLanguageText>
+        </Comment>
+      </Subelement>
+      <Subelement Path="19">
+        <Comment>
+          <MultiLanguageText Lang="en-US">All magazines including loading and buffer magazines</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Tous les magasins, y compris les magasins de chargement et de tampon</MultiLanguageText>
+        </Comment>
+      </Subelement>
+      <Subelement Path="20">
+        <Comment>
+          <MultiLanguageText Lang="en-US">All magazines including loading and buffer magazines</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Tous les magasins, y compris les magasins de chargement et de tampon</MultiLanguageText>
+        </Comment>
+      </Subelement>
+      <Subelement Path="21">
+        <Comment>
+          <MultiLanguageText Lang="en-US">All magazines including loading and buffer magazines</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Tous les magasins, y compris les magasins de chargement et de tampon</MultiLanguageText>
+        </Comment>
+      </Subelement>
+      <Subelement Path="22">
+        <Comment>
+          <MultiLanguageText Lang="en-US">All magazines including loading and buffer magazines</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Tous les magasins, y compris les magasins de chargement et de tampon</MultiLanguageText>
+        </Comment>
+      </Subelement>
+      <Subelement Path="23">
+        <Comment>
+          <MultiLanguageText Lang="en-US">All magazines including loading and buffer magazines</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Tous les magasins, y compris les magasins de chargement et de tampon</MultiLanguageText>
+        </Comment>
+      </Subelement>
+      <Subelement Path="24">
+        <Comment>
+          <MultiLanguageText Lang="en-US">All magazines including loading and buffer magazines</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Tous les magasins, y compris les magasins de chargement et de tampon</MultiLanguageText>
+        </Comment>
+      </Subelement>
+      <Subelement Path="25">
+        <Comment>
+          <MultiLanguageText Lang="en-US">All magazines including loading and buffer magazines</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Tous les magasins, y compris les magasins de chargement et de tampon</MultiLanguageText>
+        </Comment>
+      </Subelement>
+      <Subelement Path="26">
+        <Comment>
+          <MultiLanguageText Lang="en-US">All magazines including loading and buffer magazines</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Tous les magasins, y compris les magasins de chargement et de tampon</MultiLanguageText>
+        </Comment>
+      </Subelement>
+      <Subelement Path="27">
+        <Comment>
+          <MultiLanguageText Lang="en-US">All magazines including loading and buffer magazines</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Tous les magasins, y compris les magasins de chargement et de tampon</MultiLanguageText>
+        </Comment>
+      </Subelement>
+      <Subelement Path="28">
+        <Comment>
+          <MultiLanguageText Lang="en-US">All magazines including loading and buffer magazines</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Tous les magasins, y compris les magasins de chargement et de tampon</MultiLanguageText>
+        </Comment>
+      </Subelement>
+      <Subelement Path="29">
+        <Comment>
+          <MultiLanguageText Lang="en-US">All magazines including loading and buffer magazines</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Tous les magasins, y compris les magasins de chargement et de tampon</MultiLanguageText>
+        </Comment>
+      </Subelement>
+      <Subelement Path="30">
+        <Comment>
+          <MultiLanguageText Lang="en-US">All magazines including loading and buffer magazines</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Tous les magasins, y compris les magasins de chargement et de tampon</MultiLanguageText>
+        </Comment>
+      </Subelement>
+      <Subelement Path="31">
+        <Comment>
+          <MultiLanguageText Lang="en-US">All magazines including loading and buffer magazines</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Tous les magasins, y compris les magasins de chargement et de tampon</MultiLanguageText>
+        </Comment>
+      </Subelement>
+      <Subelement Path="32">
+        <Comment>
+          <MultiLanguageText Lang="en-US">All magazines including loading and buffer magazines</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Tous les magasins, y compris les magasins de chargement et de tampon</MultiLanguageText>
+        </Comment>
+      </Subelement>
+      <Subelement Path="33">
+        <Comment>
+          <MultiLanguageText Lang="en-US">All magazines including loading and buffer magazines</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Tous les magasins, y compris les magasins de chargement et de tampon</MultiLanguageText>
+        </Comment>
+      </Subelement>
+      <Subelement Path="34">
+        <Comment>
+          <MultiLanguageText Lang="en-US">All magazines including loading and buffer magazines</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Tous les magasins, y compris les magasins de chargement et de tampon</MultiLanguageText>
+        </Comment>
+      </Subelement>
+      <Subelement Path="35">
+        <Comment>
+          <MultiLanguageText Lang="en-US">All magazines including loading and buffer magazines</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Tous les magasins, y compris les magasins de chargement et de tampon</MultiLanguageText>
+        </Comment>
+      </Subelement>
+      <Subelement Path="36">
+        <Comment>
+          <MultiLanguageText Lang="en-US">All magazines including loading and buffer magazines</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Tous les magasins, y compris les magasins de chargement et de tampon</MultiLanguageText>
+        </Comment>
+      </Subelement>
+      <Subelement Path="37">
+        <Comment>
+          <MultiLanguageText Lang="en-US">All magazines including loading and buffer magazines</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Tous les magasins, y compris les magasins de chargement et de tampon</MultiLanguageText>
+        </Comment>
+      </Subelement>
+      <Subelement Path="38">
+        <Comment>
+          <MultiLanguageText Lang="en-US">All magazines including loading and buffer magazines</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Tous les magasins, y compris les magasins de chargement et de tampon</MultiLanguageText>
+        </Comment>
+      </Subelement>
+      <Subelement Path="39">
+        <Comment>
+          <MultiLanguageText Lang="en-US">All magazines including loading and buffer magazines</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Tous les magasins, y compris les magasins de chargement et de tampon</MultiLanguageText>
+        </Comment>
+      </Subelement>
+      <Subelement Path="40">
+        <Comment>
+          <MultiLanguageText Lang="en-US">All magazines including loading and buffer magazines</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Tous les magasins, y compris les magasins de chargement et de tampon</MultiLanguageText>
+        </Comment>
+      </Subelement>
+      <Subelement Path="41">
+        <Comment>
+          <MultiLanguageText Lang="en-US">All magazines including loading and buffer magazines</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Tous les magasins, y compris les magasins de chargement et de tampon</MultiLanguageText>
+        </Comment>
+      </Subelement>
+      <Subelement Path="42">
+        <Comment>
+          <MultiLanguageText Lang="en-US">All magazines including loading and buffer magazines</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Tous les magasins, y compris les magasins de chargement et de tampon</MultiLanguageText>
+        </Comment>
+      </Subelement>
+      <Subelement Path="43">
+        <Comment>
+          <MultiLanguageText Lang="en-US">All magazines including loading and buffer magazines</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Tous les magasins, y compris les magasins de chargement et de tampon</MultiLanguageText>
+        </Comment>
+      </Subelement>
+      <Subelement Path="44">
+        <Comment>
+          <MultiLanguageText Lang="en-US">All magazines including loading and buffer magazines</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Tous les magasins, y compris les magasins de chargement et de tampon</MultiLanguageText>
+        </Comment>
+      </Subelement>
+      <Subelement Path="45">
+        <Comment>
+          <MultiLanguageText Lang="en-US">All magazines including loading and buffer magazines</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Tous les magasins, y compris les magasins de chargement et de tampon</MultiLanguageText>
+        </Comment>
+      </Subelement>
+      <Subelement Path="46">
+        <Comment>
+          <MultiLanguageText Lang="en-US">All magazines including loading and buffer magazines</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Tous les magasins, y compris les magasins de chargement et de tampon</MultiLanguageText>
+        </Comment>
+      </Subelement>
+      <Subelement Path="47">
+        <Comment>
+          <MultiLanguageText Lang="en-US">All magazines including loading and buffer magazines</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Tous les magasins, y compris les magasins de chargement et de tampon</MultiLanguageText>
+        </Comment>
+      </Subelement>
+      <Subelement Path="48">
+        <Comment>
+          <MultiLanguageText Lang="en-US">All magazines including loading and buffer magazines</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Tous les magasins, y compris les magasins de chargement et de tampon</MultiLanguageText>
+        </Comment>
+      </Subelement>
+      <Subelement Path="49">
+        <Comment>
+          <MultiLanguageText Lang="en-US">All magazines including loading and buffer magazines</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Tous les magasins, y compris les magasins de chargement et de tampon</MultiLanguageText>
+        </Comment>
+      </Subelement>
+      <Subelement Path="50">
+        <Comment>
+          <MultiLanguageText Lang="en-US">All magazines including loading and buffer magazines</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Tous les magasins, y compris les magasins de chargement et de tampon</MultiLanguageText>
+        </Comment>
+      </Subelement>
+      <Subelement Path="51">
+        <Comment>
+          <MultiLanguageText Lang="en-US">All magazines including loading and buffer magazines</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Tous les magasins, y compris les magasins de chargement et de tampon</MultiLanguageText>
+        </Comment>
+      </Subelement>
+      <Subelement Path="52">
+        <Comment>
+          <MultiLanguageText Lang="en-US">All magazines including loading and buffer magazines</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Tous les magasins, y compris les magasins de chargement et de tampon</MultiLanguageText>
+        </Comment>
+      </Subelement>
+      <Subelement Path="53">
+        <Comment>
+          <MultiLanguageText Lang="en-US">All magazines including loading and buffer magazines</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Tous les magasins, y compris les magasins de chargement et de tampon</MultiLanguageText>
+        </Comment>
+      </Subelement>
+      <Subelement Path="54">
+        <Comment>
+          <MultiLanguageText Lang="en-US">All magazines including loading and buffer magazines</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Tous les magasins, y compris les magasins de chargement et de tampon</MultiLanguageText>
+        </Comment>
+      </Subelement>
+      <Subelement Path="55">
+        <Comment>
+          <MultiLanguageText Lang="en-US">All magazines including loading and buffer magazines</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Tous les magasins, y compris les magasins de chargement et de tampon</MultiLanguageText>
+        </Comment>
+      </Subelement>
+      <Subelement Path="56">
+        <Comment>
+          <MultiLanguageText Lang="en-US">All magazines including loading and buffer magazines</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Tous les magasins, y compris les magasins de chargement et de tampon</MultiLanguageText>
+        </Comment>
+      </Subelement>
+      <Subelement Path="57">
+        <Comment>
+          <MultiLanguageText Lang="en-US">All magazines including loading and buffer magazines</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Tous les magasins, y compris les magasins de chargement et de tampon</MultiLanguageText>
+        </Comment>
+      </Subelement>
+      <Subelement Path="58">
+        <Comment>
+          <MultiLanguageText Lang="en-US">All magazines including loading and buffer magazines</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Tous les magasins, y compris les magasins de chargement et de tampon</MultiLanguageText>
+        </Comment>
+      </Subelement>
+      <Subelement Path="59">
+        <Comment>
+          <MultiLanguageText Lang="en-US">All magazines including loading and buffer magazines</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Tous les magasins, y compris les magasins de chargement et de tampon</MultiLanguageText>
+        </Comment>
+      </Subelement>
+      <Subelement Path="60">
+        <Comment>
+          <MultiLanguageText Lang="en-US">All magazines including loading and buffer magazines</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Tous les magasins, y compris les magasins de chargement et de tampon</MultiLanguageText>
+        </Comment>
+      </Subelement>
+      <Subelement Path="61">
+        <Comment>
+          <MultiLanguageText Lang="en-US">All magazines including loading and buffer magazines</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Tous les magasins, y compris les magasins de chargement et de tampon</MultiLanguageText>
+        </Comment>
+      </Subelement>
+      <Subelement Path="62">
+        <Comment>
+          <MultiLanguageText Lang="en-US">All magazines including loading and buffer magazines</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Tous les magasins, y compris les magasins de chargement et de tampon</MultiLanguageText>
+        </Comment>
+      </Subelement>
+      <Subelement Path="63">
+        <Comment>
+          <MultiLanguageText Lang="en-US">All magazines including loading and buffer magazines</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Tous les magasins, y compris les magasins de chargement et de tampon</MultiLanguageText>
+        </Comment>
+      </Subelement>
+      <Subelement Path="64">
+        <Comment>
+          <MultiLanguageText Lang="en-US">All magazines including loading and buffer magazines</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Tous les magasins, y compris les magasins de chargement et de tampon</MultiLanguageText>
+        </Comment>
+      </Subelement>
+    </Member>
+  </Section>
+</Sections></Interface>
+      <Name>LBP_typeTMMagazines</Name>
+      <Namespace />
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text>User data type to store the magazine data</Text>
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="3" CompositionName="Items">
+            <AttributeList>
+              <Culture>fr-FR</Culture>
+              <Text>Type de données utilisateur pour l'enregistrement des données de magasin</Text>
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <MultilingualText ID="4" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="5" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text>Tool management magazines</Text>
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="6" CompositionName="Items">
+            <AttributeList>
+              <Culture>fr-FR</Culture>
+              <Text>Magasins de gestion des outils</Text>
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Types.PlcStruct>
+</Document>

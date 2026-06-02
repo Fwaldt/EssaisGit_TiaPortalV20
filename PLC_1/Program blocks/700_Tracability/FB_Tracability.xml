@@ -1,0 +1,3381 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V20" />
+  <SW.Blocks.FB ID="0">
+    <AttributeList>
+      <AutoNumber>false</AutoNumber>
+      <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+  <Section Name="Input">
+    <Member Name="iCondTransfertExtInTo1" Datatype="Bool" />
+    <Member Name="iCondTransfertExtInTo2" Datatype="Bool" />
+    <Member Name="iCondTransfert1To3" Datatype="Bool" />
+    <Member Name="iCondTransfert2To3" Datatype="Bool" />
+    <Member Name="iCondTransfert3To4" Datatype="Bool" />
+    <Member Name="iCondTransfert4To5" Datatype="Bool" />
+    <Member Name="iCondTransfert5To6" Datatype="Bool" />
+    <Member Name="iCondTransfert5To7" Datatype="Bool" />
+    <Member Name="iCondTransfert6ToExtOut" Datatype="Bool" />
+    <Member Name="iCondTransfert7ToExtOut" Datatype="Bool" />
+  </Section>
+  <Section Name="Output" />
+  <Section Name="InOut" />
+  <Section Name="Static">
+    <Member Name="sRT_ConditionExtInTo1" Datatype="R_TRIG" Version="1.0" />
+    <Member Name="sRT_ConditionExtInTo2" Datatype="R_TRIG" Version="1.0">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="sRT_Condition1To3" Datatype="R_TRIG" Version="1.0">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="sRT_Condition2To3" Datatype="R_TRIG" Version="1.0">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="sRT_Condition3To4" Datatype="R_TRIG" Version="1.0">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="sRT_Condition4To5" Datatype="R_TRIG" Version="1.0">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="sRT_Condition5To6" Datatype="R_TRIG" Version="1.0">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="sRT_Condition5To7" Datatype="R_TRIG" Version="1.0">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="sRT_Condition6ToExtOut" Datatype="R_TRIG" Version="1.0">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="sRT_Condition7ToExtOut" Datatype="R_TRIG" Version="1.0">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="sIndex" Datatype="Int" />
+    <Member Name="sCheckTransfertExtInTo1" Datatype="Bool" />
+    <Member Name="sCheckTransfertExtInTo2" Datatype="Bool" />
+    <Member Name="sCheckTransfert1To3" Datatype="Bool" />
+    <Member Name="sCheckTransfert2To3" Datatype="Bool" />
+    <Member Name="sCheckTransfert3To4" Datatype="Bool" />
+    <Member Name="sCheckTransfert4To5" Datatype="Bool" />
+    <Member Name="sCheckTransfert5To6" Datatype="Bool" />
+    <Member Name="sCheckTransfert5To7" Datatype="Bool" />
+    <Member Name="sCheckTransfert6ToExtOut" Datatype="Bool" />
+    <Member Name="sCheckTransfert7ToExtOut" Datatype="Bool" />
+    <Member Name="sLaserTime" Datatype="&quot;FB_TimeCounter&quot;" />
+    <Member Name="sMemoPartDMC" Datatype="Array[0..19] of Byte">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="sIEC_CounterCycleLaser" Datatype="TONR_TIME" Version="1.0" Remanence="Retain">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="sIEC_CounterCycleTime" Datatype="TONR_TIME" Version="1.0" Remanence="Retain">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="sStartCounterCycleLaser" Datatype="Bool" Remanence="Retain">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="sStartCounterCycleTime" Datatype="Bool" Remanence="Retain">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+  </Section>
+  <Section Name="Temp">
+    <Member Name="tFailCodePart" Datatype="Int" />
+    <Member Name="tFailCodeBackwall" Datatype="Int" />
+    <Member Name="tHoleNumber" Datatype="Int" />
+    <Member Name="tMeasureZ" Datatype="Real" />
+    <Member Name="tWOZ" Datatype="Int" />
+    <Member Name="tWOC" Datatype="Int" />
+    <Member Name="tTotalCycleTimeCh1" Datatype="Int" />
+    <Member Name="tLaserCycleTimeCh1" Datatype="Int" />
+  </Section>
+  <Section Name="Constant">
+    <Member Name="POSITION_NUMBER" Datatype="Int">
+      <StartValue>7</StartValue>
+    </Member>
+  </Section>
+</Sections></Interface>
+      <MemoryLayout>Optimized</MemoryLayout>
+      <MemoryReserve>100</MemoryReserve>
+      <Name>FB_Tracability</Name>
+      <Namespace />
+      <Number>700</Number>
+      <ProgrammingLanguage>SCL</ProgrammingLanguage>
+      <SetENOAutomatically>false</SetENOAutomatically>
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="3" CompositionName="Items">
+            <AttributeList>
+              <Culture>fr-FR</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <SW.Blocks.CompileUnit ID="4" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource><StructuredText xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/StructuredText/v4">
+  <Token Text="REGION" UId="21" />
+  <Blank UId="22" />
+  <Text UId="23">Reset data Postions station 1</Text>
+  <NewLine UId="24" />
+  <Blank Num="4" UId="25" />
+  <LineComment UId="26">
+    <Text UId="27"> Positions :</Text>
+  </LineComment>
+  <NewLine UId="28" />
+  <Blank Num="8" UId="29" />
+  <LineComment UId="30">
+    <Text UId="31">  1 : Shuttle 1 Undrilled Part</Text>
+  </LineComment>
+  <NewLine UId="32" />
+  <Blank Num="8" UId="33" />
+  <LineComment UId="34">
+    <Text UId="35">  2 : Shuttle 2 Undrilled Part</Text>
+  </LineComment>
+  <NewLine UId="36" />
+  <Blank Num="8" UId="37" />
+  <LineComment UId="38">
+    <Text UId="39">  3 : Gripper   Undrilled Part</Text>
+  </LineComment>
+  <NewLine UId="40" />
+  <Blank Num="8" UId="41" />
+  <LineComment UId="42">
+    <Text UId="43">  4 : Fixture</Text>
+  </LineComment>
+  <NewLine UId="44" />
+  <Blank Num="8" UId="45" />
+  <LineComment UId="46">
+    <Text UId="47">  5 : Gripper   Drilled Part</Text>
+  </LineComment>
+  <NewLine UId="48" />
+  <Blank Num="8" UId="49" />
+  <LineComment UId="50">
+    <Text UId="51">  6 : Shuttle 1 Drilled Part</Text>
+  </LineComment>
+  <NewLine UId="52" />
+  <Blank Num="8" UId="53" />
+  <LineComment UId="54">
+    <Text UId="55">  7 : Shuttle 2 Drilled Part</Text>
+  </LineComment>
+  <NewLine UId="56" />
+  <Blank Num="4" UId="57" />
+  <NewLine UId="58" />
+  <Blank Num="4" UId="59" />
+  <Token Text="IF" UId="60" />
+  <Blank UId="61" />
+  <Access Scope="GlobalVariable" UId="62">
+    <Symbol UId="63">
+      <Component Name="LBP_Chan1" UId="64">
+        <BooleanAttribute Name="HasQuotes" UId="65">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="66" />
+      <Component Name="A_Ref" UId="67" />
+    </Symbol>
+  </Access>
+  <Blank UId="68" />
+  <Token Text="THEN" UId="69" />
+  <NewLine UId="70" />
+  <Blank Num="8" UId="71" />
+  <Access Scope="LocalVariable" UId="72">
+    <Symbol UId="73">
+      <Component Name="sCheckTransfertExtInTo1" UId="74" />
+    </Symbol>
+  </Access>
+  <Blank UId="75" />
+  <Token Text=":=" UId="76" />
+  <Blank UId="77" />
+  <Access Scope="LiteralConstant" UId="78">
+    <Constant UId="79">
+      <ConstantValue UId="81">FALSE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="82" />
+  <Blank Num="5" UId="83" />
+  <NewLine UId="84" />
+  <Blank Num="8" UId="85" />
+  <Access Scope="LocalVariable" UId="86">
+    <Symbol UId="87">
+      <Component Name="sCheckTransfertExtInTo2" UId="88" />
+    </Symbol>
+  </Access>
+  <Blank UId="89" />
+  <Token Text=":=" UId="90" />
+  <Blank UId="91" />
+  <Access Scope="LiteralConstant" UId="92">
+    <Constant UId="93">
+      <ConstantValue UId="95">FALSE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="96" />
+  <Blank Num="5" UId="97" />
+  <NewLine UId="98" />
+  <Blank Num="8" UId="99" />
+  <Access Scope="LocalVariable" UId="100">
+    <Symbol UId="101">
+      <Component Name="sCheckTransfert1To3" UId="102" />
+    </Symbol>
+  </Access>
+  <Blank UId="103" />
+  <Token Text=":=" UId="104" />
+  <Blank UId="105" />
+  <Access Scope="LiteralConstant" UId="106">
+    <Constant UId="107">
+      <ConstantValue UId="109">FALSE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="110" />
+  <Blank Num="12" UId="111" />
+  <NewLine UId="112" />
+  <Blank Num="8" UId="113" />
+  <Access Scope="LocalVariable" UId="114">
+    <Symbol UId="115">
+      <Component Name="sCheckTransfert2To3" UId="116" />
+    </Symbol>
+  </Access>
+  <Blank UId="117" />
+  <Token Text=":=" UId="118" />
+  <Blank UId="119" />
+  <Access Scope="LiteralConstant" UId="120">
+    <Constant UId="121">
+      <ConstantValue UId="123">FALSE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="124" />
+  <Blank Num="11" UId="125" />
+  <NewLine UId="126" />
+  <Blank Num="8" UId="127" />
+  <Access Scope="LocalVariable" UId="128">
+    <Symbol UId="129">
+      <Component Name="sCheckTransfert3To4" UId="130" />
+    </Symbol>
+  </Access>
+  <Blank UId="131" />
+  <Token Text=":=" UId="132" />
+  <Blank UId="133" />
+  <Access Scope="LiteralConstant" UId="134">
+    <Constant UId="135">
+      <ConstantValue UId="137">FALSE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="138" />
+  <Blank Num="11" UId="139" />
+  <NewLine UId="140" />
+  <Blank Num="8" UId="141" />
+  <Access Scope="LocalVariable" UId="142">
+    <Symbol UId="143">
+      <Component Name="sCheckTransfert4To5" UId="144" />
+    </Symbol>
+  </Access>
+  <Blank UId="145" />
+  <Token Text=":=" UId="146" />
+  <Blank UId="147" />
+  <Access Scope="LiteralConstant" UId="148">
+    <Constant UId="149">
+      <ConstantValue UId="151">FALSE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="152" />
+  <Blank Num="12" UId="153" />
+  <NewLine UId="154" />
+  <Blank Num="8" UId="155" />
+  <Access Scope="LocalVariable" UId="156">
+    <Symbol UId="157">
+      <Component Name="sCheckTransfert5To6" UId="158" />
+    </Symbol>
+  </Access>
+  <Blank UId="159" />
+  <Token Text=":=" UId="160" />
+  <Blank UId="161" />
+  <Access Scope="LiteralConstant" UId="162">
+    <Constant UId="163">
+      <ConstantValue UId="165">FALSE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="166" />
+  <Blank Num="8" UId="167" />
+  <NewLine UId="168" />
+  <Blank Num="8" UId="169" />
+  <Access Scope="LocalVariable" UId="170">
+    <Symbol UId="171">
+      <Component Name="sCheckTransfert5To7" UId="172" />
+    </Symbol>
+  </Access>
+  <Blank UId="173" />
+  <Token Text=":=" UId="174" />
+  <Blank UId="175" />
+  <Access Scope="LiteralConstant" UId="176">
+    <Constant UId="177">
+      <ConstantValue UId="179">FALSE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="180" />
+  <Blank Num="9" UId="181" />
+  <NewLine UId="182" />
+  <Blank Num="8" UId="183" />
+  <Access Scope="LocalVariable" UId="184">
+    <Symbol UId="185">
+      <Component Name="sCheckTransfert6ToExtOut" UId="186" />
+    </Symbol>
+  </Access>
+  <Blank UId="187" />
+  <Token Text=":=" UId="188" />
+  <Blank UId="189" />
+  <Access Scope="LiteralConstant" UId="190">
+    <Constant UId="191">
+      <ConstantValue UId="193">FALSE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="194" />
+  <Blank Num="3" UId="195" />
+  <NewLine UId="196" />
+  <Blank Num="8" UId="197" />
+  <Access Scope="LocalVariable" UId="198">
+    <Symbol UId="199">
+      <Component Name="sCheckTransfert7ToExtOut" UId="200" />
+    </Symbol>
+  </Access>
+  <Blank UId="201" />
+  <Token Text=":=" UId="202" />
+  <Blank UId="203" />
+  <Access Scope="LiteralConstant" UId="204">
+    <Constant UId="205">
+      <ConstantValue UId="207">FALSE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="208" />
+  <Blank Num="5" UId="209" />
+  <NewLine UId="210" />
+  <Blank Num="8" UId="211" />
+  <Token Text="FOR" UId="212" />
+  <Blank UId="213" />
+  <Access Scope="LocalVariable" UId="214">
+    <Symbol UId="215">
+      <Component Name="sIndex" UId="216" />
+    </Symbol>
+  </Access>
+  <Blank UId="217" />
+  <Token Text=":=" UId="218" />
+  <Blank UId="219" />
+  <Access Scope="LiteralConstant" UId="220">
+    <Constant UId="221">
+      <ConstantValue UId="223">0</ConstantValue>
+    </Constant>
+  </Access>
+  <Blank UId="224" />
+  <Token Text="TO" UId="225" />
+  <Blank UId="226" />
+  <Access Scope="LocalConstant" UId="227">
+    <Constant Name="POSITION_NUMBER" UId="228" />
+  </Access>
+  <Blank UId="231" />
+  <Token Text="DO" UId="232" />
+  <NewLine UId="233" />
+  <Blank Num="12" UId="234" />
+  <Access Scope="Call" UId="235">
+    <CallInfo UId="236" BlockType="FC">
+      <Instance Scope="GlobalVariable" UId="238">
+        <Component Name="FC_ResetPositionData" UId="237" />
+      </Instance>
+      <Token Text="(" UId="239" />
+      <Parameter Name="iDataPosition" UId="240">
+        <Blank UId="241" />
+        <Token Text=":=" UId="242" />
+        <Blank UId="243" />
+        <Access Scope="LocalVariable" UId="244">
+          <Symbol UId="245">
+            <Component Name="sIndex" UId="246" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text=")" UId="247" />
+    </CallInfo>
+  </Access>
+  <Token Text=";" UId="248" />
+  <NewLine UId="249" />
+  <Blank Num="8" UId="250" />
+  <Token Text="END_FOR" UId="251" />
+  <Token Text=";" UId="252" />
+  <NewLine UId="253" />
+  <Blank Num="4" UId="254" />
+  <Token Text="END_IF" UId="255" />
+  <Token Text=";" UId="256" />
+  <NewLine UId="257" />
+  <Token Text="END_REGION" UId="258" />
+  <NewLine Num="2" UId="259" />
+  <Token Text="REGION" UId="260" />
+  <Blank UId="261" />
+  <Text UId="262">Transfert Postions data station 1 </Text>
+  <NewLine UId="263" />
+  <Blank Num="4" UId="264" />
+  <Token Text="IF" UId="265" />
+  <Blank UId="266" />
+  <Access Scope="LocalVariable" UId="267">
+    <Symbol UId="268">
+      <Component Name="sCheckTransfert1To3" UId="269" />
+    </Symbol>
+  </Access>
+  <Blank UId="270" />
+  <Token Text="THEN" UId="271" />
+  <NewLine UId="272" />
+  <Blank Num="8" UId="273" />
+  <LineComment UId="274">
+    <Text UId="275"> Transfert data from position 1 To 3 - Shuttle 1 to Loading Gripper </Text>
+  </LineComment>
+  <NewLine UId="276" />
+  <Blank Num="8" UId="277" />
+  <Access Scope="GlobalVariable" UId="278">
+    <Symbol UId="279">
+      <Component Name="DB_DataPositions" UId="280">
+        <BooleanAttribute Name="HasQuotes" UId="281">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="282" />
+      <Component Name="Position" UId="283">
+        <Token Text="[" UId="284" />
+        <Access Scope="LiteralConstant" UId="285">
+          <Constant UId="286">
+            <ConstantValue UId="288">3</ConstantValue>
+          </Constant>
+        </Access>
+        <Token Text="]" UId="289" />
+      </Component>
+    </Symbol>
+  </Access>
+  <Blank UId="290" />
+  <Token Text=":=" UId="291" />
+  <Blank UId="292" />
+  <Access Scope="GlobalVariable" UId="293">
+    <Symbol UId="294">
+      <Component Name="DB_DataPositions" UId="295">
+        <BooleanAttribute Name="HasQuotes" UId="296">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="297" />
+      <Component Name="Position" UId="298">
+        <Token Text="[" UId="299" />
+        <Access Scope="LiteralConstant" UId="300">
+          <Constant UId="301">
+            <ConstantValue UId="303">1</ConstantValue>
+          </Constant>
+        </Access>
+        <Token Text="]" UId="304" />
+      </Component>
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="305" />
+  <NewLine UId="306" />
+  <Blank Num="8" UId="307" />
+  <LineComment UId="308">
+    <Text UId="309"> Reset data in position 1</Text>
+  </LineComment>
+  <NewLine UId="310" />
+  <Blank Num="8" UId="311" />
+  <Access Scope="Call" UId="312">
+    <CallInfo UId="313" BlockType="FC">
+      <Instance Scope="GlobalVariable" UId="315">
+        <Component Name="FC_ResetPositionData" UId="314" />
+      </Instance>
+      <Token Text="(" UId="316" />
+      <Parameter Name="iDataPosition" UId="317">
+        <Blank UId="318" />
+        <Token Text=":=" UId="319" />
+        <Blank UId="320" />
+        <Access Scope="LiteralConstant" UId="321">
+          <Constant UId="322">
+            <ConstantValue UId="324">1</ConstantValue>
+          </Constant>
+        </Access>
+      </Parameter>
+      <Token Text=")" UId="325" />
+    </CallInfo>
+  </Access>
+  <Token Text=";" UId="326" />
+  <NewLine UId="327" />
+  <Blank Num="8" UId="328" />
+  <Access Scope="LocalVariable" UId="329">
+    <Symbol UId="330">
+      <Component Name="sCheckTransfert1To3" UId="331" />
+    </Symbol>
+  </Access>
+  <Blank UId="332" />
+  <Token Text=":=" UId="333" />
+  <Blank UId="334" />
+  <Access Scope="LiteralConstant" UId="335">
+    <Constant UId="336">
+      <ConstantValue UId="338">FALSE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="339" />
+  <NewLine UId="340" />
+  <Blank Num="4" UId="341" />
+  <Token Text="END_IF" UId="342" />
+  <Token Text=";" UId="343" />
+  <NewLine UId="344" />
+  <Blank Num="4" UId="345" />
+  <NewLine UId="346" />
+  <Blank Num="4" UId="347" />
+  <Token Text="IF" UId="348" />
+  <Blank UId="349" />
+  <Access Scope="LocalVariable" UId="350">
+    <Symbol UId="351">
+      <Component Name="sCheckTransfert2To3" UId="352" />
+    </Symbol>
+  </Access>
+  <Blank UId="353" />
+  <Token Text="THEN" UId="354" />
+  <NewLine UId="355" />
+  <Blank Num="8" UId="356" />
+  <LineComment UId="357">
+    <Text UId="358"> Transfert data from position 2 To 3 - Shuttle 2 to Loading Gripper </Text>
+  </LineComment>
+  <NewLine UId="359" />
+  <Blank Num="8" UId="360" />
+  <Access Scope="GlobalVariable" UId="361">
+    <Symbol UId="362">
+      <Component Name="DB_DataPositions" UId="363">
+        <BooleanAttribute Name="HasQuotes" UId="364">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="365" />
+      <Component Name="Position" UId="366">
+        <Token Text="[" UId="367" />
+        <Access Scope="LiteralConstant" UId="368">
+          <Constant UId="369">
+            <ConstantValue UId="371">3</ConstantValue>
+          </Constant>
+        </Access>
+        <Token Text="]" UId="372" />
+      </Component>
+    </Symbol>
+  </Access>
+  <Blank UId="373" />
+  <Token Text=":=" UId="374" />
+  <Blank UId="375" />
+  <Access Scope="GlobalVariable" UId="376">
+    <Symbol UId="377">
+      <Component Name="DB_DataPositions" UId="378">
+        <BooleanAttribute Name="HasQuotes" UId="379">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="380" />
+      <Component Name="Position" UId="381">
+        <Token Text="[" UId="382" />
+        <Access Scope="LiteralConstant" UId="383">
+          <Constant UId="384">
+            <ConstantValue UId="386">2</ConstantValue>
+          </Constant>
+        </Access>
+        <Token Text="]" UId="387" />
+      </Component>
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="388" />
+  <NewLine UId="389" />
+  <Blank Num="8" UId="390" />
+  <LineComment UId="391">
+    <Text UId="392"> Reset data in position 2</Text>
+  </LineComment>
+  <NewLine UId="393" />
+  <Blank Num="8" UId="394" />
+  <Access Scope="Call" UId="395">
+    <CallInfo UId="396" BlockType="FC">
+      <Instance Scope="GlobalVariable" UId="398">
+        <Component Name="FC_ResetPositionData" UId="397" />
+      </Instance>
+      <Token Text="(" UId="399" />
+      <Parameter Name="iDataPosition" UId="400">
+        <Blank UId="401" />
+        <Token Text=":=" UId="402" />
+        <Blank UId="403" />
+        <Access Scope="LiteralConstant" UId="404">
+          <Constant UId="405">
+            <ConstantValue UId="407">2</ConstantValue>
+          </Constant>
+        </Access>
+      </Parameter>
+      <Token Text=")" UId="408" />
+    </CallInfo>
+  </Access>
+  <Token Text=";" UId="409" />
+  <NewLine UId="410" />
+  <Blank Num="8" UId="411" />
+  <Access Scope="LocalVariable" UId="412">
+    <Symbol UId="413">
+      <Component Name="sCheckTransfert2To3" UId="414" />
+    </Symbol>
+  </Access>
+  <Blank UId="415" />
+  <Token Text=":=" UId="416" />
+  <Blank UId="417" />
+  <Access Scope="LiteralConstant" UId="418">
+    <Constant UId="419">
+      <ConstantValue UId="421">FALSE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="422" />
+  <NewLine UId="423" />
+  <Blank Num="4" UId="424" />
+  <Token Text="END_IF" UId="425" />
+  <Token Text=";" UId="426" />
+  <NewLine UId="427" />
+  <Blank Num="4" UId="428" />
+  <NewLine UId="429" />
+  <Blank Num="4" UId="430" />
+  <Token Text="IF" UId="431" />
+  <Blank UId="432" />
+  <Access Scope="LocalVariable" UId="433">
+    <Symbol UId="434">
+      <Component Name="sCheckTransfert3To4" UId="435" />
+    </Symbol>
+  </Access>
+  <Blank UId="436" />
+  <Token Text="THEN" UId="437" />
+  <NewLine UId="438" />
+  <Blank Num="8" UId="439" />
+  <LineComment UId="440">
+    <Text UId="441"> Transfert data from position 3 To 4 - Loading Gripper to Fixture</Text>
+  </LineComment>
+  <NewLine UId="442" />
+  <Blank Num="8" UId="443" />
+  <Access Scope="GlobalVariable" UId="444">
+    <Symbol UId="445">
+      <Component Name="DB_DataPositions" UId="446">
+        <BooleanAttribute Name="HasQuotes" UId="447">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="448" />
+      <Component Name="Position" UId="449">
+        <Token Text="[" UId="450" />
+        <Access Scope="LiteralConstant" UId="451">
+          <Constant UId="452">
+            <ConstantValue UId="454">4</ConstantValue>
+          </Constant>
+        </Access>
+        <Token Text="]" UId="455" />
+      </Component>
+    </Symbol>
+  </Access>
+  <Blank UId="456" />
+  <Token Text=":=" UId="457" />
+  <Blank UId="458" />
+  <Access Scope="GlobalVariable" UId="459">
+    <Symbol UId="460">
+      <Component Name="DB_DataPositions" UId="461">
+        <BooleanAttribute Name="HasQuotes" UId="462">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="463" />
+      <Component Name="Position" UId="464">
+        <Token Text="[" UId="465" />
+        <Access Scope="LiteralConstant" UId="466">
+          <Constant UId="467">
+            <ConstantValue UId="469">3</ConstantValue>
+          </Constant>
+        </Access>
+        <Token Text="]" UId="470" />
+      </Component>
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="471" />
+  <NewLine UId="472" />
+  <Blank Num="8" UId="473" />
+  <LineComment UId="474">
+    <Text UId="475"> Reset data in position 3</Text>
+  </LineComment>
+  <NewLine UId="476" />
+  <Blank Num="8" UId="477" />
+  <Access Scope="Call" UId="478">
+    <CallInfo UId="479" BlockType="FC">
+      <Instance Scope="GlobalVariable" UId="481">
+        <Component Name="FC_ResetPositionData" UId="480" />
+      </Instance>
+      <Token Text="(" UId="482" />
+      <Parameter Name="iDataPosition" UId="483">
+        <Blank UId="484" />
+        <Token Text=":=" UId="485" />
+        <Blank UId="486" />
+        <Access Scope="LiteralConstant" UId="487">
+          <Constant UId="488">
+            <ConstantValue UId="490">3</ConstantValue>
+          </Constant>
+        </Access>
+      </Parameter>
+      <Token Text=")" UId="491" />
+    </CallInfo>
+  </Access>
+  <Token Text=";" UId="492" />
+  <NewLine UId="493" />
+  <Blank Num="8" UId="494" />
+  <Access Scope="LocalVariable" UId="495">
+    <Symbol UId="496">
+      <Component Name="sCheckTransfert3To4" UId="497" />
+    </Symbol>
+  </Access>
+  <Blank UId="498" />
+  <Token Text=":=" UId="499" />
+  <Blank UId="500" />
+  <Access Scope="LiteralConstant" UId="501">
+    <Constant UId="502">
+      <ConstantValue UId="504">FALSE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="505" />
+  <NewLine UId="506" />
+  <Blank Num="4" UId="507" />
+  <Token Text="END_IF" UId="508" />
+  <Token Text=";" UId="509" />
+  <NewLine UId="510" />
+  <Blank Num="3" UId="511" />
+  <NewLine UId="512" />
+  <Blank Num="4" UId="513" />
+  <Token Text="IF" UId="514" />
+  <Blank UId="515" />
+  <Access Scope="LocalVariable" UId="516">
+    <Symbol UId="517">
+      <Component Name="sCheckTransfert4To5" UId="518" />
+    </Symbol>
+  </Access>
+  <Blank UId="519" />
+  <Token Text="THEN" UId="520" />
+  <NewLine UId="521" />
+  <Blank Num="8" UId="522" />
+  <LineComment UId="523">
+    <Text UId="524"> Transfert data from position 4 To 5 - Fixture to Unloading Gripper</Text>
+  </LineComment>
+  <NewLine UId="525" />
+  <Blank Num="8" UId="526" />
+  <Access Scope="GlobalVariable" UId="527">
+    <Symbol UId="528">
+      <Component Name="DB_DataPositions" UId="529">
+        <BooleanAttribute Name="HasQuotes" UId="530">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="531" />
+      <Component Name="Position" UId="532">
+        <Token Text="[" UId="533" />
+        <Access Scope="LiteralConstant" UId="534">
+          <Constant UId="535">
+            <ConstantValue UId="537">5</ConstantValue>
+          </Constant>
+        </Access>
+        <Token Text="]" UId="538" />
+      </Component>
+    </Symbol>
+  </Access>
+  <Blank UId="539" />
+  <Token Text=":=" UId="540" />
+  <Blank UId="541" />
+  <Access Scope="GlobalVariable" UId="542">
+    <Symbol UId="543">
+      <Component Name="DB_DataPositions" UId="544">
+        <BooleanAttribute Name="HasQuotes" UId="545">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="546" />
+      <Component Name="Position" UId="547">
+        <Token Text="[" UId="548" />
+        <Access Scope="LiteralConstant" UId="549">
+          <Constant UId="550">
+            <ConstantValue UId="552">4</ConstantValue>
+          </Constant>
+        </Access>
+        <Token Text="]" UId="553" />
+      </Component>
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="554" />
+  <NewLine UId="555" />
+  <Blank Num="8" UId="556" />
+  <LineComment UId="557">
+    <Text UId="558"> Reset data in position 4</Text>
+  </LineComment>
+  <NewLine UId="559" />
+  <Blank Num="8" UId="560" />
+  <Access Scope="Call" UId="561">
+    <CallInfo UId="562" BlockType="FC">
+      <Instance Scope="GlobalVariable" UId="564">
+        <Component Name="FC_ResetPositionData" UId="563" />
+      </Instance>
+      <Token Text="(" UId="565" />
+      <Parameter Name="iDataPosition" UId="566">
+        <Blank UId="567" />
+        <Token Text=":=" UId="568" />
+        <Blank UId="569" />
+        <Access Scope="LiteralConstant" UId="570">
+          <Constant UId="571">
+            <ConstantValue UId="573">4</ConstantValue>
+          </Constant>
+        </Access>
+      </Parameter>
+      <Token Text=")" UId="574" />
+    </CallInfo>
+  </Access>
+  <Token Text=";" UId="575" />
+  <NewLine UId="576" />
+  <Blank Num="8" UId="577" />
+  <Access Scope="LocalVariable" UId="578">
+    <Symbol UId="579">
+      <Component Name="sCheckTransfert4To5" UId="580" />
+    </Symbol>
+  </Access>
+  <Blank UId="581" />
+  <Token Text=":=" UId="582" />
+  <Blank UId="583" />
+  <Access Scope="LiteralConstant" UId="584">
+    <Constant UId="585">
+      <ConstantValue UId="587">FALSE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="588" />
+  <NewLine UId="589" />
+  <Blank Num="4" UId="590" />
+  <Token Text="END_IF" UId="591" />
+  <Token Text=";" UId="592" />
+  <NewLine UId="593" />
+  <Blank Num="4" UId="594" />
+  <NewLine UId="595" />
+  <Blank Num="4" UId="596" />
+  <Token Text="IF" UId="597" />
+  <Blank UId="598" />
+  <Access Scope="LocalVariable" UId="599">
+    <Symbol UId="600">
+      <Component Name="sCheckTransfert5To6" UId="601" />
+    </Symbol>
+  </Access>
+  <Blank UId="602" />
+  <Token Text="THEN" UId="603" />
+  <NewLine UId="604" />
+  <Blank Num="8" UId="605" />
+  <LineComment UId="606">
+    <Text UId="607"> Transfert data from position 5 To 6 - Unloading Gripper to Shuttle 1</Text>
+  </LineComment>
+  <NewLine UId="608" />
+  <Blank Num="8" UId="609" />
+  <Access Scope="GlobalVariable" UId="610">
+    <Symbol UId="611">
+      <Component Name="DB_DataPositions" UId="612">
+        <BooleanAttribute Name="HasQuotes" UId="613">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="614" />
+      <Component Name="Position" UId="615">
+        <Token Text="[" UId="616" />
+        <Access Scope="LiteralConstant" UId="617">
+          <Constant UId="618">
+            <ConstantValue UId="620">6</ConstantValue>
+          </Constant>
+        </Access>
+        <Token Text="]" UId="621" />
+      </Component>
+    </Symbol>
+  </Access>
+  <Blank UId="622" />
+  <Token Text=":=" UId="623" />
+  <Blank UId="624" />
+  <Access Scope="GlobalVariable" UId="625">
+    <Symbol UId="626">
+      <Component Name="DB_DataPositions" UId="627">
+        <BooleanAttribute Name="HasQuotes" UId="628">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="629" />
+      <Component Name="Position" UId="630">
+        <Token Text="[" UId="631" />
+        <Access Scope="LiteralConstant" UId="632">
+          <Constant UId="633">
+            <ConstantValue UId="635">5</ConstantValue>
+          </Constant>
+        </Access>
+        <Token Text="]" UId="636" />
+      </Component>
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="637" />
+  <NewLine UId="638" />
+  <Blank Num="8" UId="639" />
+  <LineComment UId="640">
+    <Text UId="641"> Reset data in position 5</Text>
+  </LineComment>
+  <NewLine UId="642" />
+  <Blank Num="8" UId="643" />
+  <Access Scope="Call" UId="644">
+    <CallInfo UId="645" BlockType="FC">
+      <Instance Scope="GlobalVariable" UId="647">
+        <Component Name="FC_ResetPositionData" UId="646" />
+      </Instance>
+      <Token Text="(" UId="648" />
+      <Parameter Name="iDataPosition" UId="649">
+        <Blank UId="650" />
+        <Token Text=":=" UId="651" />
+        <Blank UId="652" />
+        <Access Scope="LiteralConstant" UId="653">
+          <Constant UId="654">
+            <ConstantValue UId="656">5</ConstantValue>
+          </Constant>
+        </Access>
+      </Parameter>
+      <Token Text=")" UId="657" />
+    </CallInfo>
+  </Access>
+  <Token Text=";" UId="658" />
+  <NewLine UId="659" />
+  <Blank Num="8" UId="660" />
+  <Access Scope="LocalVariable" UId="661">
+    <Symbol UId="662">
+      <Component Name="sCheckTransfert5To6" UId="663" />
+    </Symbol>
+  </Access>
+  <Blank UId="664" />
+  <Token Text=":=" UId="665" />
+  <Blank UId="666" />
+  <Access Scope="LiteralConstant" UId="667">
+    <Constant UId="668">
+      <ConstantValue UId="670">FALSE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="671" />
+  <NewLine UId="672" />
+  <Blank Num="4" UId="673" />
+  <Token Text="END_IF" UId="674" />
+  <Token Text=";" UId="675" />
+  <NewLine UId="676" />
+  <Blank Num="4" UId="677" />
+  <NewLine UId="678" />
+  <Blank Num="4" UId="679" />
+  <Token Text="IF" UId="680" />
+  <Blank UId="681" />
+  <Access Scope="LocalVariable" UId="682">
+    <Symbol UId="683">
+      <Component Name="sCheckTransfert5To7" UId="684" />
+    </Symbol>
+  </Access>
+  <Blank UId="685" />
+  <Token Text="THEN" UId="686" />
+  <NewLine UId="687" />
+  <Blank Num="8" UId="688" />
+  <LineComment UId="689">
+    <Text UId="690"> Transfert data from position 5 To 7 - Unloading Gripper to Shuttle 2</Text>
+  </LineComment>
+  <NewLine UId="691" />
+  <Blank Num="8" UId="692" />
+  <Access Scope="GlobalVariable" UId="693">
+    <Symbol UId="694">
+      <Component Name="DB_DataPositions" UId="695">
+        <BooleanAttribute Name="HasQuotes" UId="696">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="697" />
+      <Component Name="Position" UId="698">
+        <Token Text="[" UId="699" />
+        <Access Scope="LiteralConstant" UId="700">
+          <Constant UId="701">
+            <ConstantValue UId="703">7</ConstantValue>
+          </Constant>
+        </Access>
+        <Token Text="]" UId="704" />
+      </Component>
+    </Symbol>
+  </Access>
+  <Blank UId="705" />
+  <Token Text=":=" UId="706" />
+  <Blank UId="707" />
+  <Access Scope="GlobalVariable" UId="708">
+    <Symbol UId="709">
+      <Component Name="DB_DataPositions" UId="710">
+        <BooleanAttribute Name="HasQuotes" UId="711">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="712" />
+      <Component Name="Position" UId="713">
+        <Token Text="[" UId="714" />
+        <Access Scope="LiteralConstant" UId="715">
+          <Constant UId="716">
+            <ConstantValue UId="718">5</ConstantValue>
+          </Constant>
+        </Access>
+        <Token Text="]" UId="719" />
+      </Component>
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="720" />
+  <NewLine UId="721" />
+  <Blank Num="8" UId="722" />
+  <LineComment UId="723">
+    <Text UId="724"> Reset data in position 5</Text>
+  </LineComment>
+  <NewLine UId="725" />
+  <Blank Num="8" UId="726" />
+  <Access Scope="Call" UId="727">
+    <CallInfo UId="728" BlockType="FC">
+      <Instance Scope="GlobalVariable" UId="730">
+        <Component Name="FC_ResetPositionData" UId="729" />
+      </Instance>
+      <Token Text="(" UId="731" />
+      <Parameter Name="iDataPosition" UId="732">
+        <Blank UId="733" />
+        <Token Text=":=" UId="734" />
+        <Blank UId="735" />
+        <Access Scope="LiteralConstant" UId="736">
+          <Constant UId="737">
+            <ConstantValue UId="739">5</ConstantValue>
+          </Constant>
+        </Access>
+      </Parameter>
+      <Token Text=")" UId="740" />
+    </CallInfo>
+  </Access>
+  <Token Text=";" UId="741" />
+  <NewLine UId="742" />
+  <Blank Num="8" UId="743" />
+  <Access Scope="LocalVariable" UId="744">
+    <Symbol UId="745">
+      <Component Name="sCheckTransfert5To7" UId="746" />
+    </Symbol>
+  </Access>
+  <Blank UId="747" />
+  <Token Text=":=" UId="748" />
+  <Blank UId="749" />
+  <Access Scope="LiteralConstant" UId="750">
+    <Constant UId="751">
+      <ConstantValue UId="753">FALSE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="754" />
+  <NewLine UId="755" />
+  <Blank Num="4" UId="756" />
+  <Token Text="END_IF" UId="757" />
+  <Token Text=";" UId="758" />
+  <NewLine UId="759" />
+  <Blank Num="4" UId="760" />
+  <NewLine UId="761" />
+  <Blank Num="4" UId="762" />
+  <Token Text="IF" UId="763" />
+  <Blank UId="764" />
+  <Access Scope="LocalVariable" UId="765">
+    <Symbol UId="766">
+      <Component Name="sCheckTransfert6ToExtOut" UId="767" />
+    </Symbol>
+  </Access>
+  <Blank UId="768" />
+  <Token Text="THEN" UId="769" />
+  <NewLine UId="770" />
+  <Blank Num="8" UId="771" />
+  <LineComment UId="772">
+    <Text UId="773"> Shift of the the array for the new final part</Text>
+  </LineComment>
+  <NewLine UId="774" />
+  <Blank Num="8" UId="775" />
+  <Token Text="FOR" UId="776" />
+  <Blank UId="777" />
+  <Access Scope="LocalVariable" UId="778">
+    <Symbol UId="779">
+      <Component Name="sIndex" UId="780" />
+    </Symbol>
+  </Access>
+  <Blank UId="781" />
+  <Token Text=":=" UId="782" />
+  <Blank UId="783" />
+  <Access Scope="LiteralConstant" UId="784">
+    <Constant UId="785">
+      <ConstantValue UId="787">98</ConstantValue>
+    </Constant>
+  </Access>
+  <Blank UId="788" />
+  <Token Text="TO" UId="789" />
+  <Blank UId="790" />
+  <Access Scope="LiteralConstant" UId="791">
+    <Constant UId="792">
+      <ConstantValue UId="794">0</ConstantValue>
+    </Constant>
+  </Access>
+  <Blank UId="795" />
+  <Token Text="BY" UId="796" />
+  <Blank UId="797" />
+  <Access Scope="LiteralConstant" UId="798">
+    <Constant UId="799">
+      <ConstantValue UId="801">-1</ConstantValue>
+    </Constant>
+  </Access>
+  <Blank UId="802" />
+  <Token Text="DO" UId="803" />
+  <NewLine UId="804" />
+  <Blank Num="12" UId="805" />
+  <Access Scope="GlobalVariable" UId="806">
+    <Symbol UId="807">
+      <Component Name="DB_DataFinalPart" UId="808">
+        <BooleanAttribute Name="HasQuotes" UId="809">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="810" />
+      <Component Name="FinalPart" UId="811">
+        <Token Text="[" UId="812" />
+        <Access Scope="LocalVariable" UId="813">
+          <Symbol UId="814">
+            <Component Name="sIndex" UId="815" />
+          </Symbol>
+        </Access>
+        <Blank UId="816" />
+        <Token Text="+" UId="817" />
+        <Blank UId="818" />
+        <Access Scope="LiteralConstant" UId="819">
+          <Constant UId="820">
+            <ConstantValue UId="822">1</ConstantValue>
+          </Constant>
+        </Access>
+        <Token Text="]" UId="823" />
+      </Component>
+    </Symbol>
+  </Access>
+  <Blank UId="824" />
+  <Token Text=":=" UId="825" />
+  <Blank UId="826" />
+  <Access Scope="GlobalVariable" UId="827">
+    <Symbol UId="828">
+      <Component Name="DB_DataFinalPart" UId="829">
+        <BooleanAttribute Name="HasQuotes" UId="830">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="831" />
+      <Component Name="FinalPart" UId="832">
+        <Token Text="[" UId="833" />
+        <Access Scope="LocalVariable" UId="834">
+          <Symbol UId="835">
+            <Component Name="sIndex" UId="836" />
+          </Symbol>
+        </Access>
+        <Token Text="]" UId="837" />
+      </Component>
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="838" />
+  <NewLine UId="839" />
+  <Blank Num="8" UId="840" />
+  <Token Text="END_FOR" UId="841" />
+  <Token Text=";" UId="842" />
+  <NewLine UId="843" />
+  <Blank Num="8" UId="844" />
+  <LineComment UId="845">
+    <Text UId="846"> Transfert data from position 6 TO the DB final part - Shuttle 1 to DB final part</Text>
+  </LineComment>
+  <NewLine UId="847" />
+  <Blank Num="8" UId="848" />
+  <Access Scope="GlobalVariable" UId="849">
+    <Symbol UId="850">
+      <Component Name="DB_DataFinalPart" UId="851">
+        <BooleanAttribute Name="HasQuotes" UId="852">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="853" />
+      <Component Name="FinalPart" UId="854">
+        <Token Text="[" UId="855" />
+        <Access Scope="LiteralConstant" UId="856">
+          <Constant UId="857">
+            <ConstantValue UId="859">0</ConstantValue>
+          </Constant>
+        </Access>
+        <Token Text="]" UId="860" />
+      </Component>
+    </Symbol>
+  </Access>
+  <Blank UId="861" />
+  <Token Text=":=" UId="862" />
+  <Blank UId="863" />
+  <Access Scope="GlobalVariable" UId="864">
+    <Symbol UId="865">
+      <Component Name="DB_DataPositions" UId="866">
+        <BooleanAttribute Name="HasQuotes" UId="867">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="868" />
+      <Component Name="Position" UId="869">
+        <Token Text="[" UId="870" />
+        <Access Scope="LiteralConstant" UId="871">
+          <Constant UId="872">
+            <ConstantValue UId="874">6</ConstantValue>
+          </Constant>
+        </Access>
+        <Token Text="]" UId="875" />
+      </Component>
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="876" />
+  <NewLine UId="877" />
+  <Blank Num="8" UId="878" />
+  <Access Scope="Call" UId="879">
+    <CallInfo UId="880" BlockType="FC">
+      <Instance Scope="GlobalVariable" UId="882">
+        <Component Name="FC_ResetPositionData" UId="881" />
+      </Instance>
+      <Token Text="(" UId="883" />
+      <Parameter Name="iDataPosition" UId="884">
+        <Blank UId="885" />
+        <Token Text=":=" UId="886" />
+        <Blank UId="887" />
+        <Access Scope="LiteralConstant" UId="888">
+          <Constant UId="889">
+            <ConstantValue UId="891">6</ConstantValue>
+          </Constant>
+        </Access>
+      </Parameter>
+      <Token Text=")" UId="892" />
+    </CallInfo>
+  </Access>
+  <Token Text=";" UId="893" />
+  <NewLine UId="894" />
+  <Blank Num="8" UId="895" />
+  <Access Scope="LocalVariable" UId="896">
+    <Symbol UId="897">
+      <Component Name="sCheckTransfert6ToExtOut" UId="898" />
+    </Symbol>
+  </Access>
+  <Blank UId="899" />
+  <Token Text=":=" UId="900" />
+  <Blank UId="901" />
+  <Access Scope="LiteralConstant" UId="902">
+    <Constant UId="903">
+      <ConstantValue UId="905">FALSE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="906" />
+  <NewLine UId="907" />
+  <Blank Num="4" UId="908" />
+  <Token Text="END_IF" UId="909" />
+  <Token Text=";" UId="910" />
+  <NewLine UId="911" />
+  <Blank Num="4" UId="912" />
+  <NewLine UId="913" />
+  <Blank Num="4" UId="914" />
+  <Token Text="IF" UId="915" />
+  <Blank UId="916" />
+  <Access Scope="LocalVariable" UId="917">
+    <Symbol UId="918">
+      <Component Name="sCheckTransfert7ToExtOut" UId="919" />
+    </Symbol>
+  </Access>
+  <Blank UId="920" />
+  <Token Text="THEN" UId="921" />
+  <NewLine UId="922" />
+  <Blank Num="8" UId="923" />
+  <LineComment UId="924">
+    <Text UId="925"> Shift of the the array for the new final part</Text>
+  </LineComment>
+  <NewLine UId="926" />
+  <Blank Num="8" UId="927" />
+  <Token Text="FOR" UId="928" />
+  <Blank UId="929" />
+  <Access Scope="LocalVariable" UId="930">
+    <Symbol UId="931">
+      <Component Name="sIndex" UId="932" />
+    </Symbol>
+  </Access>
+  <Blank UId="933" />
+  <Token Text=":=" UId="934" />
+  <Blank UId="935" />
+  <Access Scope="LiteralConstant" UId="936">
+    <Constant UId="937">
+      <ConstantValue UId="939">98</ConstantValue>
+    </Constant>
+  </Access>
+  <Blank UId="940" />
+  <Token Text="TO" UId="941" />
+  <Blank UId="942" />
+  <Access Scope="LiteralConstant" UId="943">
+    <Constant UId="944">
+      <ConstantValue UId="946">0</ConstantValue>
+    </Constant>
+  </Access>
+  <Blank UId="947" />
+  <Token Text="BY" UId="948" />
+  <Blank UId="949" />
+  <Access Scope="LiteralConstant" UId="950">
+    <Constant UId="951">
+      <ConstantValue UId="953">-1</ConstantValue>
+    </Constant>
+  </Access>
+  <Blank UId="954" />
+  <Token Text="DO" UId="955" />
+  <NewLine UId="956" />
+  <Blank Num="12" UId="957" />
+  <Access Scope="GlobalVariable" UId="958">
+    <Symbol UId="959">
+      <Component Name="DB_DataFinalPart" UId="960">
+        <BooleanAttribute Name="HasQuotes" UId="961">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="962" />
+      <Component Name="FinalPart" UId="963">
+        <Token Text="[" UId="964" />
+        <Access Scope="LocalVariable" UId="965">
+          <Symbol UId="966">
+            <Component Name="sIndex" UId="967" />
+          </Symbol>
+        </Access>
+        <Blank UId="968" />
+        <Token Text="+" UId="969" />
+        <Blank UId="970" />
+        <Access Scope="LiteralConstant" UId="971">
+          <Constant UId="972">
+            <ConstantValue UId="974">1</ConstantValue>
+          </Constant>
+        </Access>
+        <Token Text="]" UId="975" />
+      </Component>
+    </Symbol>
+  </Access>
+  <Blank UId="976" />
+  <Token Text=":=" UId="977" />
+  <Blank UId="978" />
+  <Access Scope="GlobalVariable" UId="979">
+    <Symbol UId="980">
+      <Component Name="DB_DataFinalPart" UId="981">
+        <BooleanAttribute Name="HasQuotes" UId="982">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="983" />
+      <Component Name="FinalPart" UId="984">
+        <Token Text="[" UId="985" />
+        <Access Scope="LocalVariable" UId="986">
+          <Symbol UId="987">
+            <Component Name="sIndex" UId="988" />
+          </Symbol>
+        </Access>
+        <Token Text="]" UId="989" />
+      </Component>
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="990" />
+  <NewLine UId="991" />
+  <Blank Num="8" UId="992" />
+  <Token Text="END_FOR" UId="993" />
+  <Token Text=";" UId="994" />
+  <NewLine UId="995" />
+  <Blank Num="8" UId="996" />
+  <LineComment UId="997">
+    <Text UId="998"> Transfert data from position 7 TO the DB final part - Shuttle 2 to DB final part</Text>
+  </LineComment>
+  <NewLine UId="999" />
+  <Blank Num="8" UId="1000" />
+  <Access Scope="GlobalVariable" UId="1001">
+    <Symbol UId="1002">
+      <Component Name="DB_DataFinalPart" UId="1003">
+        <BooleanAttribute Name="HasQuotes" UId="1004">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="1005" />
+      <Component Name="FinalPart" UId="1006">
+        <Token Text="[" UId="1007" />
+        <Access Scope="LiteralConstant" UId="1008">
+          <Constant UId="1009">
+            <ConstantValue UId="1011">0</ConstantValue>
+          </Constant>
+        </Access>
+        <Token Text="]" UId="1012" />
+      </Component>
+    </Symbol>
+  </Access>
+  <Blank UId="1013" />
+  <Token Text=":=" UId="1014" />
+  <Blank UId="1015" />
+  <Access Scope="GlobalVariable" UId="1016">
+    <Symbol UId="1017">
+      <Component Name="DB_DataPositions" UId="1018">
+        <BooleanAttribute Name="HasQuotes" UId="1019">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="1020" />
+      <Component Name="Position" UId="1021">
+        <Token Text="[" UId="1022" />
+        <Access Scope="LiteralConstant" UId="1023">
+          <Constant UId="1024">
+            <ConstantValue UId="1026">7</ConstantValue>
+          </Constant>
+        </Access>
+        <Token Text="]" UId="1027" />
+      </Component>
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="1028" />
+  <NewLine UId="1029" />
+  <Blank Num="8" UId="1030" />
+  <Access Scope="Call" UId="1031">
+    <CallInfo UId="1032" BlockType="FC">
+      <Instance Scope="GlobalVariable" UId="1034">
+        <Component Name="FC_ResetPositionData" UId="1033" />
+      </Instance>
+      <Token Text="(" UId="1035" />
+      <Parameter Name="iDataPosition" UId="1036">
+        <Blank UId="1037" />
+        <Token Text=":=" UId="1038" />
+        <Blank UId="1039" />
+        <Access Scope="LiteralConstant" UId="1040">
+          <Constant UId="1041">
+            <ConstantValue UId="1043">7</ConstantValue>
+          </Constant>
+        </Access>
+      </Parameter>
+      <Token Text=")" UId="1044" />
+    </CallInfo>
+  </Access>
+  <Token Text=";" UId="1045" />
+  <NewLine UId="1046" />
+  <Blank Num="8" UId="1047" />
+  <Access Scope="LocalVariable" UId="1048">
+    <Symbol UId="1049">
+      <Component Name="sCheckTransfert7ToExtOut" UId="1050" />
+    </Symbol>
+  </Access>
+  <Blank UId="1051" />
+  <Token Text=":=" UId="1052" />
+  <Blank UId="1053" />
+  <Access Scope="LiteralConstant" UId="1054">
+    <Constant UId="1055">
+      <ConstantValue UId="1057">FALSE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="1058" />
+  <NewLine UId="1059" />
+  <Blank Num="4" UId="1060" />
+  <Token Text="END_IF" UId="1061" />
+  <Token Text=";" UId="1062" />
+  <NewLine UId="1063" />
+  <Token Text="END_REGION" UId="1064" />
+  <NewLine Num="2" UId="1065" />
+  <Token Text="REGION" UId="1066" />
+  <Blank UId="1067" />
+  <Text UId="1068">Condition for the Transfert Postions data</Text>
+  <NewLine UId="1069" />
+  <Blank Num="4" UId="1070" />
+  <LineComment UId="1071">
+    <Text UId="1072"> Conditions from Ext To position 1 - External Loader to Shuttle 1</Text>
+  </LineComment>
+  <NewLine UId="1073" />
+  <Blank Num="4" UId="1074" />
+  <Access Scope="LocalVariable" UId="1075">
+    <Symbol UId="1076">
+      <Component Name="sRT_ConditionExtInTo1" UId="1077" />
+    </Symbol>
+  </Access>
+  <Access Scope="Call" UId="1078">
+    <Instruction UId="1079">
+      <Token Text="(" UId="1080" />
+      <Parameter Name="CLK" UId="1081">
+        <Blank UId="1082" />
+        <Token Text=":=" UId="1083" />
+        <Blank UId="1084" />
+        <Access Scope="LocalVariable" UId="1085">
+          <Symbol UId="1086">
+            <Component Name="iCondTransfertExtInTo1" UId="1087" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text=")" UId="1088" />
+    </Instruction>
+  </Access>
+  <Token Text=";" UId="1089" />
+  <NewLine UId="1090" />
+  <Blank Num="4" UId="1091" />
+  <Token Text="IF" UId="1092" />
+  <Blank UId="1093" />
+  <Access Scope="LocalVariable" UId="1094">
+    <Symbol UId="1095">
+      <Component Name="sRT_ConditionExtInTo1" UId="1096" />
+      <Token Text="." UId="1097" />
+      <Component Name="Q" UId="1098" />
+    </Symbol>
+  </Access>
+  <Blank UId="1099" />
+  <Token Text="THEN" UId="1100" />
+  <NewLine UId="1101" />
+  <Blank Num="8" UId="1102" />
+  <Access Scope="LocalVariable" UId="1103">
+    <Symbol UId="1104">
+      <Component Name="sCheckTransfertExtInTo1" UId="1105" />
+    </Symbol>
+  </Access>
+  <Blank UId="1106" />
+  <Token Text=":=" UId="1107" />
+  <Blank UId="1108" />
+  <Access Scope="LiteralConstant" UId="1109">
+    <Constant UId="1110">
+      <ConstantValue UId="1112">TRUE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="1113" />
+  <NewLine UId="1114" />
+  <Blank Num="4" UId="1115" />
+  <Token Text="END_IF" UId="1116" />
+  <Token Text=";" UId="1117" />
+  <NewLine UId="1118" />
+  <Blank Num="4" UId="1119" />
+  <NewLine UId="1120" />
+  <Blank Num="4" UId="1121" />
+  <LineComment UId="1122">
+    <Text UId="1123"> Conditions from Ext To position 2 - External Loader to Shuttle 2</Text>
+  </LineComment>
+  <NewLine UId="1124" />
+  <Blank Num="4" UId="1125" />
+  <Access Scope="LocalVariable" UId="1126">
+    <Symbol UId="1127">
+      <Component Name="sRT_ConditionExtInTo2" UId="1128" />
+    </Symbol>
+  </Access>
+  <Access Scope="Call" UId="1129">
+    <Instruction UId="1130">
+      <Token Text="(" UId="1131" />
+      <Parameter Name="CLK" UId="1132">
+        <Blank UId="1133" />
+        <Token Text=":=" UId="1134" />
+        <Blank UId="1135" />
+        <Access Scope="LocalVariable" UId="1136">
+          <Symbol UId="1137">
+            <Component Name="iCondTransfertExtInTo2" UId="1138" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text=")" UId="1139" />
+    </Instruction>
+  </Access>
+  <Token Text=";" UId="1140" />
+  <NewLine UId="1141" />
+  <Blank Num="4" UId="1142" />
+  <Token Text="IF" UId="1143" />
+  <Blank UId="1144" />
+  <Access Scope="LocalVariable" UId="1145">
+    <Symbol UId="1146">
+      <Component Name="sRT_ConditionExtInTo2" UId="1147" />
+      <Token Text="." UId="1148" />
+      <Component Name="Q" UId="1149" />
+    </Symbol>
+  </Access>
+  <Blank UId="1150" />
+  <Token Text="THEN" UId="1151" />
+  <NewLine UId="1152" />
+  <Blank Num="8" UId="1153" />
+  <Access Scope="LocalVariable" UId="1154">
+    <Symbol UId="1155">
+      <Component Name="sCheckTransfertExtInTo2" UId="1156" />
+    </Symbol>
+  </Access>
+  <Blank UId="1157" />
+  <Token Text=":=" UId="1158" />
+  <Blank UId="1159" />
+  <Access Scope="LiteralConstant" UId="1160">
+    <Constant UId="1161">
+      <ConstantValue UId="1163">TRUE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="1164" />
+  <NewLine UId="1165" />
+  <Blank Num="4" UId="1166" />
+  <Token Text="END_IF" UId="1167" />
+  <Token Text=";" UId="1168" />
+  <NewLine UId="1169" />
+  <Blank Num="4" UId="1170" />
+  <NewLine UId="1171" />
+  <Blank Num="4" UId="1172" />
+  <LineComment UId="1173">
+    <Text UId="1174"> Conditions from position 1 To 3 - Shuttle 1 to Loading Gripper </Text>
+  </LineComment>
+  <NewLine UId="1175" />
+  <Blank Num="4" UId="1176" />
+  <Access Scope="LocalVariable" UId="1177">
+    <Symbol UId="1178">
+      <Component Name="sRT_Condition1To3" UId="1179" />
+    </Symbol>
+  </Access>
+  <Access Scope="Call" UId="1180">
+    <Instruction UId="1181">
+      <Token Text="(" UId="1182" />
+      <Parameter Name="CLK" UId="1183">
+        <Token Text=":=" UId="1184" />
+        <Access Scope="LocalVariable" UId="1185">
+          <Symbol UId="1186">
+            <Component Name="iCondTransfert1To3" UId="1187" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text=")" UId="1188" />
+    </Instruction>
+  </Access>
+  <Token Text=";" UId="1189" />
+  <NewLine UId="1190" />
+  <Blank Num="4" UId="1191" />
+  <Token Text="IF" UId="1192" />
+  <Blank UId="1193" />
+  <Access Scope="LocalVariable" UId="1194">
+    <Symbol UId="1195">
+      <Component Name="sRT_Condition1To3" UId="1196" />
+      <Token Text="." UId="1197" />
+      <Component Name="Q" UId="1198" />
+    </Symbol>
+  </Access>
+  <Blank UId="1199" />
+  <Token Text="THEN" UId="1200" />
+  <NewLine UId="1201" />
+  <Blank Num="8" UId="1202" />
+  <Access Scope="LocalVariable" UId="1203">
+    <Symbol UId="1204">
+      <Component Name="sCheckTransfert1To3" UId="1205" />
+    </Symbol>
+  </Access>
+  <Blank UId="1206" />
+  <Token Text=":=" UId="1207" />
+  <Blank UId="1208" />
+  <Access Scope="LiteralConstant" UId="1209">
+    <Constant UId="1210">
+      <ConstantValue UId="1212">TRUE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="1213" />
+  <NewLine UId="1214" />
+  <Blank Num="4" UId="1215" />
+  <Token Text="END_IF" UId="1216" />
+  <Token Text=";" UId="1217" />
+  <NewLine UId="1218" />
+  <Blank Num="4" UId="1219" />
+  <NewLine UId="1220" />
+  <Blank Num="4" UId="1221" />
+  <LineComment UId="1222">
+    <Text UId="1223"> Conditions from position 2 To 3 - Shuttle 2 to Loading Gripper </Text>
+  </LineComment>
+  <NewLine UId="1224" />
+  <Blank Num="4" UId="1225" />
+  <Access Scope="LocalVariable" UId="1226">
+    <Symbol UId="1227">
+      <Component Name="sRT_Condition2To3" UId="1228" />
+    </Symbol>
+  </Access>
+  <Access Scope="Call" UId="1229">
+    <Instruction UId="1230">
+      <Token Text="(" UId="1231" />
+      <Parameter Name="CLK" UId="1232">
+        <Blank UId="1233" />
+        <Token Text=":=" UId="1234" />
+        <Blank UId="1235" />
+        <Access Scope="LocalVariable" UId="1236">
+          <Symbol UId="1237">
+            <Component Name="iCondTransfert2To3" UId="1238" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text=")" UId="1239" />
+    </Instruction>
+  </Access>
+  <Token Text=";" UId="1240" />
+  <NewLine UId="1241" />
+  <Blank Num="4" UId="1242" />
+  <Token Text="IF" UId="1243" />
+  <Blank UId="1244" />
+  <Access Scope="LocalVariable" UId="1245">
+    <Symbol UId="1246">
+      <Component Name="sRT_Condition2To3" UId="1247" />
+      <Token Text="." UId="1248" />
+      <Component Name="Q" UId="1249" />
+    </Symbol>
+  </Access>
+  <Blank UId="1250" />
+  <Token Text="THEN" UId="1251" />
+  <NewLine UId="1252" />
+  <Blank Num="8" UId="1253" />
+  <Access Scope="LocalVariable" UId="1254">
+    <Symbol UId="1255">
+      <Component Name="sCheckTransfert2To3" UId="1256" />
+    </Symbol>
+  </Access>
+  <Blank UId="1257" />
+  <Token Text=":=" UId="1258" />
+  <Blank UId="1259" />
+  <Access Scope="LiteralConstant" UId="1260">
+    <Constant UId="1261">
+      <ConstantValue UId="1263">TRUE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="1264" />
+  <NewLine UId="1265" />
+  <Blank Num="4" UId="1266" />
+  <Token Text="END_IF" UId="1267" />
+  <Token Text=";" UId="1268" />
+  <NewLine UId="1269" />
+  <Blank Num="4" UId="1270" />
+  <NewLine UId="1271" />
+  <Blank Num="4" UId="1272" />
+  <LineComment UId="1273">
+    <Text UId="1274"> Conditions from position 3 To 4 - Loading Gripper to Fixture</Text>
+  </LineComment>
+  <NewLine UId="1275" />
+  <Blank Num="4" UId="1276" />
+  <Access Scope="LocalVariable" UId="1277">
+    <Symbol UId="1278">
+      <Component Name="sRT_Condition3To4" UId="1279" />
+    </Symbol>
+  </Access>
+  <Access Scope="Call" UId="1280">
+    <Instruction UId="1281">
+      <Token Text="(" UId="1282" />
+      <Parameter Name="CLK" UId="1283">
+        <Blank UId="1284" />
+        <Token Text=":=" UId="1285" />
+        <Blank UId="1286" />
+        <Access Scope="LocalVariable" UId="1287">
+          <Symbol UId="1288">
+            <Component Name="iCondTransfert3To4" UId="1289" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text=")" UId="1290" />
+    </Instruction>
+  </Access>
+  <Token Text=";" UId="1291" />
+  <NewLine UId="1292" />
+  <Blank Num="4" UId="1293" />
+  <Token Text="IF" UId="1294" />
+  <Blank UId="1295" />
+  <Access Scope="LocalVariable" UId="1296">
+    <Symbol UId="1297">
+      <Component Name="sRT_Condition3To4" UId="1298" />
+      <Token Text="." UId="1299" />
+      <Component Name="Q" UId="1300" />
+    </Symbol>
+  </Access>
+  <Blank UId="1301" />
+  <Token Text="THEN" UId="1302" />
+  <NewLine UId="1303" />
+  <Blank Num="8" UId="1304" />
+  <Access Scope="LocalVariable" UId="1305">
+    <Symbol UId="1306">
+      <Component Name="sCheckTransfert3To4" UId="1307" />
+    </Symbol>
+  </Access>
+  <Blank UId="1308" />
+  <Token Text=":=" UId="1309" />
+  <Blank UId="1310" />
+  <Access Scope="LiteralConstant" UId="1311">
+    <Constant UId="1312">
+      <ConstantValue UId="1314">TRUE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="1315" />
+  <NewLine UId="1316" />
+  <Blank Num="4" UId="1317" />
+  <Token Text="END_IF" UId="1318" />
+  <Token Text=";" UId="1319" />
+  <NewLine UId="1320" />
+  <Blank Num="4" UId="1321" />
+  <NewLine UId="1322" />
+  <Blank Num="4" UId="1323" />
+  <LineComment UId="1324">
+    <Text UId="1325"> Conditions from position 4 To 5 - Fixture to Unloading Gripper</Text>
+  </LineComment>
+  <NewLine UId="1326" />
+  <Blank Num="4" UId="1327" />
+  <Access Scope="LocalVariable" UId="1328">
+    <Symbol UId="1329">
+      <Component Name="sRT_Condition4To5" UId="1330" />
+    </Symbol>
+  </Access>
+  <Access Scope="Call" UId="1331">
+    <Instruction UId="1332">
+      <Token Text="(" UId="1333" />
+      <Parameter Name="CLK" UId="1334">
+        <Blank UId="1335" />
+        <Token Text=":=" UId="1336" />
+        <Blank UId="1337" />
+        <Access Scope="LocalVariable" UId="1338">
+          <Symbol UId="1339">
+            <Component Name="iCondTransfert4To5" UId="1340" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text=")" UId="1341" />
+    </Instruction>
+  </Access>
+  <Token Text=";" UId="1342" />
+  <NewLine UId="1343" />
+  <Blank Num="4" UId="1344" />
+  <Token Text="IF" UId="1345" />
+  <Blank UId="1346" />
+  <Access Scope="LocalVariable" UId="1347">
+    <Symbol UId="1348">
+      <Component Name="sRT_Condition4To5" UId="1349" />
+      <Token Text="." UId="1350" />
+      <Component Name="Q" UId="1351" />
+    </Symbol>
+  </Access>
+  <Blank UId="1352" />
+  <Token Text="THEN" UId="1353" />
+  <NewLine UId="1354" />
+  <Blank Num="8" UId="1355" />
+  <Access Scope="LocalVariable" UId="1356">
+    <Symbol UId="1357">
+      <Component Name="sCheckTransfert4To5" UId="1358" />
+    </Symbol>
+  </Access>
+  <Blank UId="1359" />
+  <Token Text=":=" UId="1360" />
+  <Blank UId="1361" />
+  <Access Scope="LiteralConstant" UId="1362">
+    <Constant UId="1363">
+      <ConstantValue UId="1365">TRUE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="1366" />
+  <NewLine UId="1367" />
+  <Blank Num="4" UId="1368" />
+  <Token Text="END_IF" UId="1369" />
+  <Token Text=";" UId="1370" />
+  <NewLine UId="1371" />
+  <Blank Num="4" UId="1372" />
+  <NewLine UId="1373" />
+  <Blank Num="4" UId="1374" />
+  <LineComment UId="1375">
+    <Text UId="1376"> Conditions from position 5 To 6 - Unloading Gripper to Shuttle 1</Text>
+  </LineComment>
+  <NewLine UId="1377" />
+  <Blank Num="4" UId="1378" />
+  <Access Scope="LocalVariable" UId="1379">
+    <Symbol UId="1380">
+      <Component Name="sRT_Condition5To6" UId="1381" />
+    </Symbol>
+  </Access>
+  <Access Scope="Call" UId="1382">
+    <Instruction UId="1383">
+      <Token Text="(" UId="1384" />
+      <Parameter Name="CLK" UId="1385">
+        <Blank UId="1386" />
+        <Token Text=":=" UId="1387" />
+        <Blank UId="1388" />
+        <Access Scope="LocalVariable" UId="1389">
+          <Symbol UId="1390">
+            <Component Name="iCondTransfert5To6" UId="1391" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text=")" UId="1392" />
+    </Instruction>
+  </Access>
+  <Token Text=";" UId="1393" />
+  <NewLine UId="1394" />
+  <Blank Num="4" UId="1395" />
+  <Token Text="IF" UId="1396" />
+  <Blank UId="1397" />
+  <Access Scope="LocalVariable" UId="1398">
+    <Symbol UId="1399">
+      <Component Name="sRT_Condition5To6" UId="1400" />
+      <Token Text="." UId="1401" />
+      <Component Name="Q" UId="1402" />
+    </Symbol>
+  </Access>
+  <Blank UId="1403" />
+  <Token Text="THEN" UId="1404" />
+  <NewLine UId="1405" />
+  <Blank Num="8" UId="1406" />
+  <Access Scope="LocalVariable" UId="1407">
+    <Symbol UId="1408">
+      <Component Name="sCheckTransfert5To6" UId="1409" />
+    </Symbol>
+  </Access>
+  <Blank UId="1410" />
+  <Token Text=":=" UId="1411" />
+  <Blank UId="1412" />
+  <Access Scope="LiteralConstant" UId="1413">
+    <Constant UId="1414">
+      <ConstantValue UId="1416">TRUE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="1417" />
+  <NewLine UId="1418" />
+  <Blank Num="4" UId="1419" />
+  <Token Text="END_IF" UId="1420" />
+  <Token Text=";" UId="1421" />
+  <NewLine UId="1422" />
+  <Blank Num="4" UId="1423" />
+  <NewLine UId="1424" />
+  <Blank Num="4" UId="1425" />
+  <LineComment UId="1426">
+    <Text UId="1427"> Conditions from position 5 To 7 - Unloading Gripper to Shuttle 2</Text>
+  </LineComment>
+  <NewLine UId="1428" />
+  <Blank Num="4" UId="1429" />
+  <Access Scope="LocalVariable" UId="1430">
+    <Symbol UId="1431">
+      <Component Name="sRT_Condition5To7" UId="1432" />
+    </Symbol>
+  </Access>
+  <Access Scope="Call" UId="1433">
+    <Instruction UId="1434">
+      <Token Text="(" UId="1435" />
+      <Parameter Name="CLK" UId="1436">
+        <Blank UId="1437" />
+        <Token Text=":=" UId="1438" />
+        <Blank UId="1439" />
+        <Access Scope="LocalVariable" UId="1440">
+          <Symbol UId="1441">
+            <Component Name="iCondTransfert5To7" UId="1442" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text=")" UId="1443" />
+    </Instruction>
+  </Access>
+  <Token Text=";" UId="1444" />
+  <NewLine UId="1445" />
+  <Blank Num="4" UId="1446" />
+  <Token Text="IF" UId="1447" />
+  <Blank UId="1448" />
+  <Access Scope="LocalVariable" UId="1449">
+    <Symbol UId="1450">
+      <Component Name="sRT_Condition5To7" UId="1451" />
+      <Token Text="." UId="1452" />
+      <Component Name="Q" UId="1453" />
+    </Symbol>
+  </Access>
+  <Blank UId="1454" />
+  <Token Text="THEN" UId="1455" />
+  <NewLine UId="1456" />
+  <Blank Num="8" UId="1457" />
+  <Access Scope="LocalVariable" UId="1458">
+    <Symbol UId="1459">
+      <Component Name="sCheckTransfert5To7" UId="1460" />
+    </Symbol>
+  </Access>
+  <Blank UId="1461" />
+  <Token Text=":=" UId="1462" />
+  <Blank UId="1463" />
+  <Access Scope="LiteralConstant" UId="1464">
+    <Constant UId="1465">
+      <ConstantValue UId="1467">TRUE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="1468" />
+  <NewLine UId="1469" />
+  <Blank Num="4" UId="1470" />
+  <Token Text="END_IF" UId="1471" />
+  <Token Text=";" UId="1472" />
+  <NewLine UId="1473" />
+  <Blank Num="4" UId="1474" />
+  <NewLine UId="1475" />
+  <Blank Num="4" UId="1476" />
+  <LineComment UId="1477">
+    <Text UId="1478"> Conditions from position 6 To Ext - Shuttle 1 to External Loader</Text>
+  </LineComment>
+  <NewLine UId="1479" />
+  <Blank Num="4" UId="1480" />
+  <Access Scope="LocalVariable" UId="1481">
+    <Symbol UId="1482">
+      <Component Name="sRT_Condition6ToExtOut" UId="1483" />
+    </Symbol>
+  </Access>
+  <Access Scope="Call" UId="1484">
+    <Instruction UId="1485">
+      <Token Text="(" UId="1486" />
+      <Parameter Name="CLK" UId="1487">
+        <Blank UId="1488" />
+        <Token Text=":=" UId="1489" />
+        <Blank UId="1490" />
+        <Access Scope="LocalVariable" UId="1491">
+          <Symbol UId="1492">
+            <Component Name="iCondTransfert6ToExtOut" UId="1493" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text=")" UId="1494" />
+    </Instruction>
+  </Access>
+  <Token Text=";" UId="1495" />
+  <NewLine UId="1496" />
+  <Blank Num="4" UId="1497" />
+  <Token Text="IF" UId="1498" />
+  <Blank UId="1499" />
+  <Access Scope="LocalVariable" UId="1500">
+    <Symbol UId="1501">
+      <Component Name="sRT_Condition6ToExtOut" UId="1502" />
+      <Token Text="." UId="1503" />
+      <Component Name="Q" UId="1504" />
+    </Symbol>
+  </Access>
+  <Blank UId="1505" />
+  <Token Text="THEN" UId="1506" />
+  <NewLine UId="1507" />
+  <Blank Num="8" UId="1508" />
+  <Access Scope="LocalVariable" UId="1509">
+    <Symbol UId="1510">
+      <Component Name="sCheckTransfert6ToExtOut" UId="1511" />
+    </Symbol>
+  </Access>
+  <Blank UId="1512" />
+  <Token Text=":=" UId="1513" />
+  <Blank UId="1514" />
+  <Access Scope="LiteralConstant" UId="1515">
+    <Constant UId="1516">
+      <ConstantValue UId="1518">TRUE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="1519" />
+  <NewLine UId="1520" />
+  <Blank Num="4" UId="1521" />
+  <Token Text="END_IF" UId="1522" />
+  <Token Text=";" UId="1523" />
+  <NewLine UId="1524" />
+  <Blank Num="4" UId="1525" />
+  <NewLine UId="1526" />
+  <Blank Num="4" UId="1527" />
+  <LineComment UId="1528">
+    <Text UId="1529"> Conditions from position 7 To Ext - Shuttle 2 to External Loader</Text>
+  </LineComment>
+  <NewLine UId="1530" />
+  <Blank Num="4" UId="1531" />
+  <Access Scope="LocalVariable" UId="1532">
+    <Symbol UId="1533">
+      <Component Name="sRT_Condition7ToExtOut" UId="1534" />
+    </Symbol>
+  </Access>
+  <Access Scope="Call" UId="1535">
+    <Instruction UId="1536">
+      <Token Text="(" UId="1537" />
+      <Parameter Name="CLK" UId="1538">
+        <Blank UId="1539" />
+        <Token Text=":=" UId="1540" />
+        <Blank UId="1541" />
+        <Access Scope="LocalVariable" UId="1542">
+          <Symbol UId="1543">
+            <Component Name="iCondTransfert7ToExtOut" UId="1544" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text=")" UId="1545" />
+    </Instruction>
+  </Access>
+  <Token Text=";" UId="1546" />
+  <NewLine UId="1547" />
+  <Blank Num="4" UId="1548" />
+  <Token Text="IF" UId="1549" />
+  <Blank UId="1550" />
+  <Access Scope="LocalVariable" UId="1551">
+    <Symbol UId="1552">
+      <Component Name="sRT_Condition7ToExtOut" UId="1553" />
+      <Token Text="." UId="1554" />
+      <Component Name="Q" UId="1555" />
+    </Symbol>
+  </Access>
+  <Blank UId="1556" />
+  <Token Text="THEN" UId="1557" />
+  <NewLine UId="1558" />
+  <Blank Num="8" UId="1559" />
+  <Access Scope="LocalVariable" UId="1560">
+    <Symbol UId="1561">
+      <Component Name="sCheckTransfert7ToExtOut" UId="1562" />
+    </Symbol>
+  </Access>
+  <Blank UId="1563" />
+  <Token Text=":=" UId="1564" />
+  <Blank UId="1565" />
+  <Access Scope="LiteralConstant" UId="1566">
+    <Constant UId="1567">
+      <ConstantValue UId="1569">TRUE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="1570" />
+  <NewLine UId="1571" />
+  <Blank Num="4" UId="1572" />
+  <Token Text="END_IF" UId="1573" />
+  <Token Text=";" UId="1574" />
+  <NewLine UId="1575" />
+  <Token Text="END_REGION" UId="1576" />
+  <NewLine Num="2" UId="1577" />
+  <Token Text="REGION" UId="1578" />
+  <Blank UId="1579" />
+  <Text UId="1580">Update Data</Text>
+  <NewLine UId="1581" />
+  <Blank Num="4" UId="1582" />
+  <LineComment UId="1583">
+    <Text UId="1584"> Détection nouvelle pièce</Text>
+  </LineComment>
+  <NewLine UId="1585" />
+  <Blank Num="4" UId="1586" />
+  <Token Text="IF" UId="1587" />
+  <Blank UId="1588" />
+  <Access Scope="LocalVariable" UId="1589">
+    <Symbol UId="1590">
+      <Component Name="sCheckTransfertExtInTo1" UId="1591" />
+    </Symbol>
+  </Access>
+  <Blank UId="1592" />
+  <Token Text="THEN" UId="1593" />
+  <NewLine UId="1594" />
+  <Blank Num="8" UId="1595" />
+  <LineComment UId="1596">
+    <Text UId="1597"> Initialisation de la donnée de la pièce sur shuttle 1</Text>
+  </LineComment>
+  <NewLine UId="1598" />
+  <Blank Num="8" UId="1599" />
+  <Access Scope="GlobalVariable" UId="1600">
+    <Symbol UId="1601">
+      <Component Name="DB_DataPositions" UId="1602">
+        <BooleanAttribute Name="HasQuotes" UId="1603">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="1604" />
+      <Component Name="Position" UId="1605">
+        <Token Text="[" UId="1606" />
+        <Access Scope="LiteralConstant" UId="1607">
+          <Constant UId="1608">
+            <ConstantValue UId="1610">1</ConstantValue>
+          </Constant>
+        </Access>
+        <Token Text="]" UId="1611" />
+      </Component>
+      <Token Text="." UId="1612" />
+      <Component Name="DMC" UId="1613" />
+    </Symbol>
+  </Access>
+  <Blank UId="1614" />
+  <Token Text=":=" UId="1615" />
+  <Blank UId="1616" />
+  <Access Scope="GlobalVariable" UId="1617">
+    <Symbol UId="1618">
+      <Component Name="DB_SonplasMain" UId="1619">
+        <BooleanAttribute Name="HasQuotes" UId="1620">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="1621" />
+      <Component Name="sSonplasLoader" UId="1622" />
+      <Token Text="." UId="1623" />
+      <Component Name="iPartInDMC_CodeShuttle1" UId="1624" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="1625" />
+  <NewLine UId="1626" />
+  <Blank Num="8" UId="1627" />
+  <Access Scope="LocalVariable" UId="1628">
+    <Symbol UId="1629">
+      <Component Name="sCheckTransfertExtInTo1" UId="1630" />
+    </Symbol>
+  </Access>
+  <Blank UId="1631" />
+  <Token Text=":=" UId="1632" />
+  <Blank UId="1633" />
+  <Access Scope="LiteralConstant" UId="1634">
+    <Constant UId="1635">
+      <ConstantValue UId="1637">FALSE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="1638" />
+  <NewLine UId="1639" />
+  <Blank Num="4" UId="1640" />
+  <Token Text="END_IF" UId="1641" />
+  <Token Text=";" UId="1642" />
+  <NewLine UId="1643" />
+  <Blank Num="4" UId="1644" />
+  <Token Text="IF" UId="1645" />
+  <Blank UId="1646" />
+  <Access Scope="LocalVariable" UId="1647">
+    <Symbol UId="1648">
+      <Component Name="sCheckTransfertExtInTo2" UId="1649" />
+    </Symbol>
+  </Access>
+  <Blank UId="1650" />
+  <Token Text="THEN" UId="1651" />
+  <NewLine UId="1652" />
+  <Blank Num="8" UId="1653" />
+  <LineComment UId="1654">
+    <Text UId="1655"> Initialisation de la donnée de la pièce sur shuttle 2</Text>
+  </LineComment>
+  <NewLine UId="1656" />
+  <Blank Num="8" UId="1657" />
+  <Access Scope="GlobalVariable" UId="1658">
+    <Symbol UId="1659">
+      <Component Name="DB_DataPositions" UId="1660">
+        <BooleanAttribute Name="HasQuotes" UId="1661">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="1662" />
+      <Component Name="Position" UId="1663">
+        <Token Text="[" UId="1664" />
+        <Access Scope="LiteralConstant" UId="1665">
+          <Constant UId="1666">
+            <ConstantValue UId="1668">2</ConstantValue>
+          </Constant>
+        </Access>
+        <Token Text="]" UId="1669" />
+      </Component>
+      <Token Text="." UId="1670" />
+      <Component Name="DMC" UId="1671" />
+    </Symbol>
+  </Access>
+  <Blank UId="1672" />
+  <Token Text=":=" UId="1673" />
+  <Blank UId="1674" />
+  <Access Scope="GlobalVariable" UId="1675">
+    <Symbol UId="1676">
+      <Component Name="DB_SonplasMain" UId="1677">
+        <BooleanAttribute Name="HasQuotes" UId="1678">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="1679" />
+      <Component Name="sSonplasLoader" UId="1680" />
+      <Token Text="." UId="1681" />
+      <Component Name="iPartInDMC_CodeShuttle2" UId="1682" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="1683" />
+  <NewLine UId="1684" />
+  <Blank Num="8" UId="1685" />
+  <Access Scope="LocalVariable" UId="1686">
+    <Symbol UId="1687">
+      <Component Name="sCheckTransfertExtInTo2" UId="1688" />
+    </Symbol>
+  </Access>
+  <Blank UId="1689" />
+  <Token Text=":=" UId="1690" />
+  <Blank UId="1691" />
+  <Access Scope="LiteralConstant" UId="1692">
+    <Constant UId="1693">
+      <ConstantValue UId="1695">FALSE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="1696" />
+  <NewLine UId="1697" />
+  <Blank Num="4" UId="1698" />
+  <Token Text="END_IF" UId="1699" />
+  <Token Text=";" UId="1700" />
+  <NewLine UId="1701" />
+  <Blank Num="4" UId="1702" />
+  <LineComment UId="1703">
+    <Text UId="1704"> Fail code part</Text>
+  </LineComment>
+  <NewLine UId="1705" />
+  <Blank Num="4" UId="1706" />
+  <Token Text="IF" UId="1707" />
+  <Blank UId="1708" />
+  <Access Scope="GlobalVariable" UId="1709">
+    <Symbol UId="1710">
+      <Component Name="LBP_Chan1" UId="1711">
+        <BooleanAttribute Name="HasQuotes" UId="1712">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="1713" />
+      <Component Name="MDyn" UId="1714">
+        <Token Text="[" UId="1715" />
+        <Access Scope="LiteralConstant" UId="1716">
+          <Constant UId="1717">
+            <ConstantValue UId="1719">69</ConstantValue>
+          </Constant>
+        </Access>
+        <Token Text="]" UId="1720" />
+      </Component>
+    </Symbol>
+  </Access>
+  <Blank UId="1721" />
+  <Token Text="THEN" UId="1722" />
+  <NewLine UId="1723" />
+  <Blank Num="8" UId="1724" />
+  <Access Scope="LocalVariable" UId="1725">
+    <Symbol UId="1726">
+      <Component Name="tFailCodePart" UId="1727" />
+    </Symbol>
+  </Access>
+  <Blank UId="1728" />
+  <Token Text=":=" UId="1729" />
+  <Blank UId="1730" />
+  <Access Scope="Call" UId="1731">
+    <Instruction Name="REAL_TO_INT" UId="1732">
+      <Token Text="(" UId="1733" />
+      <NamelessParameter UId="1734">
+        <Access Scope="GlobalVariable" UId="1735">
+          <Symbol UId="1736">
+            <Component Name="LBP_Chan1" UId="1737">
+              <BooleanAttribute Name="HasQuotes" UId="1738">true</BooleanAttribute>
+            </Component>
+            <Token Text="." UId="1739" />
+            <Component Name="H1" UId="1740" />
+          </Symbol>
+        </Access>
+      </NamelessParameter>
+      <Token Text=")" UId="1742" />
+    </Instruction>
+  </Access>
+  <Token Text=";" UId="1743" />
+  <NewLine UId="1744" />
+  <Blank Num="4" UId="1745" />
+  <Token Text="END_IF" UId="1746" />
+  <Token Text=";" UId="1747" />
+  <NewLine UId="1748" />
+  <Blank Num="4" UId="1749" />
+  <LineComment UId="1750">
+    <Text UId="1751"> Measure Z</Text>
+  </LineComment>
+  <NewLine UId="1752" />
+  <Blank Num="4" UId="1753" />
+  <Token Text="IF" UId="1754" />
+  <Blank UId="1755" />
+  <Access Scope="GlobalVariable" UId="1756">
+    <Symbol UId="1757">
+      <Component Name="LBP_Chan1" UId="1758">
+        <BooleanAttribute Name="HasQuotes" UId="1759">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="1760" />
+      <Component Name="MDyn" UId="1761">
+        <Token Text="[" UId="1762" />
+        <Access Scope="LiteralConstant" UId="1763">
+          <Constant UId="1764">
+            <ConstantValue UId="1766">98</ConstantValue>
+          </Constant>
+        </Access>
+        <Token Text="]" UId="1767" />
+      </Component>
+    </Symbol>
+  </Access>
+  <Blank UId="1768" />
+  <Token Text="THEN" UId="1769" />
+  <NewLine UId="1770" />
+  <Blank Num="8" UId="1771" />
+  <Access Scope="LocalVariable" UId="1772">
+    <Symbol UId="1773">
+      <Component Name="tHoleNumber" UId="1774" />
+    </Symbol>
+  </Access>
+  <Blank UId="1775" />
+  <Token Text=":=" UId="1776" />
+  <Blank UId="1777" />
+  <Access Scope="Call" UId="1778">
+    <Instruction Name="REAL_TO_INT" UId="1779">
+      <Token Text="(" UId="1780" />
+      <NamelessParameter UId="1781">
+        <Access Scope="GlobalVariable" UId="1782">
+          <Symbol UId="1783">
+            <Component Name="LBP_Chan1" UId="1784">
+              <BooleanAttribute Name="HasQuotes" UId="1785">true</BooleanAttribute>
+            </Component>
+            <Token Text="." UId="1786" />
+            <Component Name="H1" UId="1787" />
+          </Symbol>
+        </Access>
+      </NamelessParameter>
+      <Token Text=")" UId="1789" />
+    </Instruction>
+  </Access>
+  <Token Text=";" UId="1790" />
+  <NewLine UId="1791" />
+  <Blank Num="8" UId="1792" />
+  <Access Scope="LocalVariable" UId="1793">
+    <Symbol UId="1794">
+      <Component Name="tMeasureZ" UId="1795" />
+    </Symbol>
+  </Access>
+  <Blank UId="1796" />
+  <Token Text=":=" UId="1797" />
+  <Blank UId="1798" />
+  <Access Scope="GlobalVariable" UId="1799">
+    <Symbol UId="1800">
+      <Component Name="LBP_Chan1" UId="1801">
+        <BooleanAttribute Name="HasQuotes" UId="1802">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="1803" />
+      <Component Name="H2" UId="1804" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="1805" />
+  <NewLine UId="1806" />
+  <Blank Num="4" UId="1807" />
+  <Token Text="END_IF" UId="1808" />
+  <Token Text=";" UId="1809" />
+  <NewLine UId="1810" />
+  <Blank Num="4" UId="1811" />
+  <LineComment UId="1812">
+    <Text UId="1813"> WOZ</Text>
+  </LineComment>
+  <NewLine UId="1814" />
+  <Blank Num="4" UId="1815" />
+  <Token Text="IF" UId="1816" />
+  <Blank UId="1817" />
+  <Access Scope="GlobalVariable" UId="1818">
+    <Symbol UId="1819">
+      <Component Name="LBP_Chan1" UId="1820">
+        <BooleanAttribute Name="HasQuotes" UId="1821">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="1822" />
+      <Component Name="MDyn" UId="1823">
+        <Token Text="[" UId="1824" />
+        <Access Scope="LiteralConstant" UId="1825">
+          <Constant UId="1826">
+            <ConstantValue UId="1828">37</ConstantValue>
+          </Constant>
+        </Access>
+        <Token Text="]" UId="1829" />
+      </Component>
+    </Symbol>
+  </Access>
+  <Blank UId="1830" />
+  <Token Text="THEN" UId="1831" />
+  <NewLine UId="1832" />
+  <Blank Num="8" UId="1833" />
+  <Access Scope="LocalVariable" UId="1834">
+    <Symbol UId="1835">
+      <Component Name="tWOZ" UId="1836" />
+    </Symbol>
+  </Access>
+  <Blank UId="1837" />
+  <Token Text=":=" UId="1838" />
+  <Blank UId="1839" />
+  <Access Scope="Call" UId="1840">
+    <Instruction Name="REAL_TO_INT" UId="1841">
+      <Token Text="(" UId="1842" />
+      <NamelessParameter UId="1843">
+        <Access Scope="GlobalVariable" UId="1844">
+          <Symbol UId="1845">
+            <Component Name="LBP_Chan1" UId="1846">
+              <BooleanAttribute Name="HasQuotes" UId="1847">true</BooleanAttribute>
+            </Component>
+            <Token Text="." UId="1848" />
+            <Component Name="H1" UId="1849" />
+          </Symbol>
+        </Access>
+      </NamelessParameter>
+      <Token Text=")" UId="1851" />
+    </Instruction>
+  </Access>
+  <Token Text=";" UId="1852" />
+  <NewLine UId="1853" />
+  <Blank Num="4" UId="1854" />
+  <Token Text="END_IF" UId="1855" />
+  <Token Text=";" UId="1856" />
+  <NewLine UId="1857" />
+  <Blank Num="4" UId="1858" />
+  <LineComment UId="1859">
+    <Text UId="1860"> WOC</Text>
+  </LineComment>
+  <NewLine UId="1861" />
+  <Blank Num="4" UId="1862" />
+  <Token Text="IF" UId="1863" />
+  <Blank UId="1864" />
+  <Access Scope="GlobalVariable" UId="1865">
+    <Symbol UId="1866">
+      <Component Name="LBP_Chan1" UId="1867">
+        <BooleanAttribute Name="HasQuotes" UId="1868">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="1869" />
+      <Component Name="MDyn" UId="1870">
+        <Token Text="[" UId="1871" />
+        <Access Scope="LiteralConstant" UId="1872">
+          <Constant UId="1873">
+            <ConstantValue UId="1875">38</ConstantValue>
+          </Constant>
+        </Access>
+        <Token Text="]" UId="1876" />
+      </Component>
+    </Symbol>
+  </Access>
+  <Blank UId="1877" />
+  <Token Text="THEN" UId="1878" />
+  <NewLine UId="1879" />
+  <Blank Num="8" UId="1880" />
+  <Access Scope="LocalVariable" UId="1881">
+    <Symbol UId="1882">
+      <Component Name="tWOC" UId="1883" />
+    </Symbol>
+  </Access>
+  <Blank UId="1884" />
+  <Token Text=":=" UId="1885" />
+  <Blank UId="1886" />
+  <Access Scope="Call" UId="1887">
+    <Instruction Name="REAL_TO_INT" UId="1888">
+      <Token Text="(" UId="1889" />
+      <NamelessParameter UId="1890">
+        <Access Scope="GlobalVariable" UId="1891">
+          <Symbol UId="1892">
+            <Component Name="LBP_Chan1" UId="1893">
+              <BooleanAttribute Name="HasQuotes" UId="1894">true</BooleanAttribute>
+            </Component>
+            <Token Text="." UId="1895" />
+            <Component Name="H1" UId="1896" />
+          </Symbol>
+        </Access>
+      </NamelessParameter>
+      <Token Text=")" UId="1898" />
+    </Instruction>
+  </Access>
+  <Token Text=";" UId="1899" />
+  <NewLine UId="1900" />
+  <Blank Num="4" UId="1901" />
+  <Token Text="END_IF" UId="1902" />
+  <Token Text=";" UId="1903" />
+  <NewLine UId="1904" />
+  <Blank Num="4" UId="1905" />
+  <Access Scope="GlobalVariable" UId="1906">
+    <Symbol UId="1907">
+      <Component Name="DB_DataPositions" UId="1908">
+        <BooleanAttribute Name="HasQuotes" UId="1909">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="1910" />
+      <Component Name="Position" UId="1911">
+        <Token Text="[" UId="1912" />
+        <Access Scope="LiteralConstant" UId="1913">
+          <Constant UId="1914">
+            <ConstantValue UId="1916">4</ConstantValue>
+          </Constant>
+        </Access>
+        <Token Text="]" UId="1917" />
+      </Component>
+      <Token Text="." UId="1918" />
+      <Component Name="FailCode" UId="1919" />
+    </Symbol>
+  </Access>
+  <Blank UId="1920" />
+  <Token Text=":=" UId="1921" />
+  <Blank UId="1922" />
+  <Access Scope="LocalVariable" UId="1923">
+    <Symbol UId="1924">
+      <Component Name="tFailCodePart" UId="1925" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="1926" />
+  <NewLine UId="1927" />
+  <Blank Num="4" UId="1928" />
+  <Access Scope="GlobalVariable" UId="1929">
+    <Symbol UId="1930">
+      <Component Name="DB_DataPositions" UId="1931">
+        <BooleanAttribute Name="HasQuotes" UId="1932">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="1933" />
+      <Component Name="Position" UId="1934">
+        <Token Text="[" UId="1935" />
+        <Access Scope="LiteralConstant" UId="1936">
+          <Constant UId="1937">
+            <ConstantValue UId="1939">4</ConstantValue>
+          </Constant>
+        </Access>
+        <Token Text="]" UId="1940" />
+      </Component>
+      <Token Text="." UId="1941" />
+      <Component Name="WOZ_Measure" UId="1942" />
+    </Symbol>
+  </Access>
+  <Blank UId="1943" />
+  <Token Text=":=" UId="1944" />
+  <Blank UId="1945" />
+  <Access Scope="LocalVariable" UId="1946">
+    <Symbol UId="1947">
+      <Component Name="tWOZ" UId="1948" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="1949" />
+  <NewLine UId="1950" />
+  <Blank Num="4" UId="1951" />
+  <Access Scope="GlobalVariable" UId="1952">
+    <Symbol UId="1953">
+      <Component Name="DB_DataPositions" UId="1954">
+        <BooleanAttribute Name="HasQuotes" UId="1955">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="1956" />
+      <Component Name="Position" UId="1957">
+        <Token Text="[" UId="1958" />
+        <Access Scope="LiteralConstant" UId="1959">
+          <Constant UId="1960">
+            <ConstantValue UId="1962">4</ConstantValue>
+          </Constant>
+        </Access>
+        <Token Text="]" UId="1963" />
+      </Component>
+      <Token Text="." UId="1964" />
+      <Component Name="WOC_Measure" UId="1965" />
+    </Symbol>
+  </Access>
+  <Blank UId="1966" />
+  <Token Text=":=" UId="1967" />
+  <Blank UId="1968" />
+  <Access Scope="LocalVariable" UId="1969">
+    <Symbol UId="1970">
+      <Component Name="tWOC" UId="1971" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="1972" />
+  <NewLine UId="1973" />
+  <Blank Num="4" UId="1974" />
+  <Access Scope="LocalVariable" UId="1975">
+    <Symbol UId="1976">
+      <Component Name="sMemoPartDMC" UId="1977" />
+    </Symbol>
+  </Access>
+  <Token Text=":=" UId="1978" />
+  <Blank UId="1979" />
+  <Access Scope="GlobalVariable" UId="1980">
+    <Symbol UId="1981">
+      <Component Name="DB_DataPositions" UId="1982">
+        <BooleanAttribute Name="HasQuotes" UId="1983">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="1984" />
+      <Component Name="Position" UId="1985">
+        <Token Text="[" UId="1986" />
+        <Access Scope="LiteralConstant" UId="1987">
+          <Constant UId="1988">
+            <ConstantValue UId="1990">4</ConstantValue>
+          </Constant>
+        </Access>
+        <Token Text="]" UId="1991" />
+      </Component>
+      <Token Text="." UId="1992" />
+      <Component Name="DMC" UId="1993" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="1994" />
+  <NewLine UId="1995" />
+  <Blank Num="4" UId="1996" />
+  <LineComment UId="1997">
+    <Text UId="1998"> Counter if cycle time</Text>
+  </LineComment>
+  <NewLine UId="1999" />
+  <Blank Num="4" UId="2000" />
+  <Token Text="IF" UId="2001" />
+  <Blank UId="2002" />
+  <Access Scope="GlobalVariable" UId="2003">
+    <Symbol UId="2004">
+      <Component Name="LBP_Chan1" UId="2005">
+        <BooleanAttribute Name="HasQuotes" UId="2006">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="2007" />
+      <Component Name="MDyn" UId="2008">
+        <Token Text="[" UId="2009" />
+        <Access Scope="LiteralConstant" UId="2010">
+          <Constant UId="2011">
+            <ConstantValue UId="2013">72</ConstantValue>
+          </Constant>
+        </Access>
+        <Token Text="]" UId="2014" />
+      </Component>
+    </Symbol>
+  </Access>
+  <Blank UId="2015" />
+  <Token Text="THEN" UId="2016" />
+  <Blank Num="13" UId="2017" />
+  <LineComment UId="2018">
+    <Text UId="2019"> M72 : Start counter of cycle time</Text>
+  </LineComment>
+  <NewLine UId="2020" />
+  <Blank Num="8" UId="2021" />
+  <Access Scope="LocalVariable" UId="2022">
+    <Symbol UId="2023">
+      <Component Name="sStartCounterCycleTime" UId="2024" />
+    </Symbol>
+  </Access>
+  <Blank UId="2025" />
+  <Token Text=":=" UId="2026" />
+  <Blank UId="2027" />
+  <Access Scope="LiteralConstant" UId="2028">
+    <Constant UId="2029">
+      <ConstantValue UId="2031">TRUE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="2032" />
+  <NewLine UId="2033" />
+  <Blank Num="4" UId="2034" />
+  <Token Text="ELSIF" UId="2035" />
+  <Blank UId="2036" />
+  <Access Scope="GlobalVariable" UId="2037">
+    <Symbol UId="2038">
+      <Component Name="LBP_Chan1" UId="2039">
+        <BooleanAttribute Name="HasQuotes" UId="2040">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="2041" />
+      <Component Name="MDyn" UId="2042">
+        <Token Text="[" UId="2043" />
+        <Access Scope="LiteralConstant" UId="2044">
+          <Constant UId="2045">
+            <ConstantValue UId="2047">73</ConstantValue>
+          </Constant>
+        </Access>
+        <Token Text="]" UId="2048" />
+      </Component>
+    </Symbol>
+  </Access>
+  <Blank UId="2049" />
+  <Token Text="THEN" UId="2050" />
+  <Blank Num="10" UId="2051" />
+  <LineComment UId="2052">
+    <Text UId="2053"> M73 : Stop counter of cycle time</Text>
+  </LineComment>
+  <NewLine UId="2054" />
+  <Blank Num="8" UId="2055" />
+  <Access Scope="LocalVariable" UId="2056">
+    <Symbol UId="2057">
+      <Component Name="sStartCounterCycleTime" UId="2058" />
+    </Symbol>
+  </Access>
+  <Blank UId="2059" />
+  <Token Text=":=" UId="2060" />
+  <Blank UId="2061" />
+  <Access Scope="LiteralConstant" UId="2062">
+    <Constant UId="2063">
+      <ConstantValue UId="2065">FALSE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="2066" />
+  <NewLine UId="2067" />
+  <Blank Num="4" UId="2068" />
+  <Token Text="END_IF" UId="2069" />
+  <Token Text=";" UId="2070" />
+  <NewLine UId="2071" />
+  <Blank Num="4" UId="2072" />
+  <Access Scope="LocalVariable" UId="2073">
+    <Symbol UId="2074">
+      <Component Name="sIEC_CounterCycleTime" UId="2075" />
+    </Symbol>
+  </Access>
+  <Access Scope="Call" UId="2076">
+    <Instruction UId="2077">
+      <Token Text="(" UId="2078" />
+      <Parameter Name="IN" UId="2079">
+        <Token Text=":=" UId="2080" />
+        <Access Scope="LocalVariable" UId="2081">
+          <Symbol UId="2082">
+            <Component Name="sStartCounterCycleTime" UId="2083" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="2084" />
+      <NewLine UId="2085" />
+      <Blank Num="27" UId="2086" />
+      <Parameter Name="R" UId="2087">
+        <Token Text=":=" UId="2088" />
+        <Token Text="NOT" UId="2089" />
+        <Blank UId="2090" />
+        <Access Scope="LocalVariable" UId="2091">
+          <Symbol UId="2092">
+            <Component Name="sStartCounterCycleTime" UId="2093" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="2094" />
+      <NewLine UId="2095" />
+      <Blank Num="27" UId="2096" />
+      <Parameter Name="PT" UId="2097">
+        <Token Text=":=" UId="2098" />
+        <Access Scope="TypedConstant" UId="2099">
+          <Constant UId="2100">
+            <ConstantValue UId="2101">t#10m</ConstantValue>
+          </Constant>
+        </Access>
+      </Parameter>
+      <Token Text=")" UId="2102" />
+    </Instruction>
+  </Access>
+  <Token Text=";" UId="2103" />
+  <NewLine UId="2104" />
+  <Blank Num="4" UId="2105" />
+  <LineComment UId="2106">
+    <Text UId="2107"> Counter of cycle laser</Text>
+  </LineComment>
+  <NewLine UId="2108" />
+  <Blank Num="4" UId="2109" />
+  <Token Text="IF" UId="2110" />
+  <Blank UId="2111" />
+  <Access Scope="GlobalVariable" UId="2112">
+    <Symbol UId="2113">
+      <Component Name="LBP_Chan1" UId="2114">
+        <BooleanAttribute Name="HasQuotes" UId="2115">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="2116" />
+      <Component Name="MDyn" UId="2117">
+        <Token Text="[" UId="2118" />
+        <Access Scope="LiteralConstant" UId="2119">
+          <Constant UId="2120">
+            <ConstantValue UId="2122">71</ConstantValue>
+          </Constant>
+        </Access>
+        <Token Text="]" UId="2123" />
+      </Component>
+    </Symbol>
+  </Access>
+  <Blank UId="2124" />
+  <Token Text="THEN" UId="2125" />
+  <Blank Num="12" UId="2126" />
+  <LineComment UId="2127">
+    <Text UId="2128"> M71 : Start calculation laser time </Text>
+  </LineComment>
+  <NewLine UId="2129" />
+  <Blank Num="8" UId="2130" />
+  <Access Scope="LocalVariable" UId="2131">
+    <Symbol UId="2132">
+      <Component Name="sStartCounterCycleLaser" UId="2133" />
+    </Symbol>
+  </Access>
+  <Blank UId="2134" />
+  <Token Text=":=" UId="2135" />
+  <Blank UId="2136" />
+  <Access Scope="LiteralConstant" UId="2137">
+    <Constant UId="2138">
+      <ConstantValue UId="2140">TRUE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="2141" />
+  <NewLine UId="2142" />
+  <Blank Num="4" UId="2143" />
+  <Token Text="ELSIF" UId="2144" />
+  <Blank UId="2145" />
+  <Access Scope="GlobalVariable" UId="2146">
+    <Symbol UId="2147">
+      <Component Name="LBP_Chan1" UId="2148">
+        <BooleanAttribute Name="HasQuotes" UId="2149">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="2150" />
+      <Component Name="MDyn" UId="2151">
+        <Token Text="[" UId="2152" />
+        <Access Scope="LiteralConstant" UId="2153">
+          <Constant UId="2154">
+            <ConstantValue UId="2156">68</ConstantValue>
+          </Constant>
+        </Access>
+        <Token Text="]" UId="2157" />
+      </Component>
+    </Symbol>
+  </Access>
+  <Blank UId="2158" />
+  <Token Text="THEN" UId="2159" />
+  <Blank Num="9" UId="2160" />
+  <LineComment UId="2161">
+    <Text UId="2162"> M68 : Set Lasered (Tracability)</Text>
+  </LineComment>
+  <NewLine UId="2163" />
+  <Blank Num="8" UId="2164" />
+  <Access Scope="LocalVariable" UId="2165">
+    <Symbol UId="2166">
+      <Component Name="sStartCounterCycleLaser" UId="2167" />
+    </Symbol>
+  </Access>
+  <Blank UId="2168" />
+  <Token Text=":=" UId="2169" />
+  <Blank UId="2170" />
+  <Access Scope="LiteralConstant" UId="2171">
+    <Constant UId="2172">
+      <ConstantValue UId="2174">FALSE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="2175" />
+  <NewLine UId="2176" />
+  <Blank Num="4" UId="2177" />
+  <Token Text="END_IF" UId="2178" />
+  <Token Text=";" UId="2179" />
+  <NewLine UId="2180" />
+  <Blank Num="4" UId="2181" />
+  <Access Scope="LocalVariable" UId="2182">
+    <Symbol UId="2183">
+      <Component Name="sIEC_CounterCycleLaser" UId="2184" />
+    </Symbol>
+  </Access>
+  <Access Scope="Call" UId="2185">
+    <Instruction UId="2186">
+      <Token Text="(" UId="2187" />
+      <Parameter Name="IN" UId="2188">
+        <Token Text=":=" UId="2189" />
+        <Access Scope="LocalVariable" UId="2190">
+          <Symbol UId="2191">
+            <Component Name="sStartCounterCycleLaser" UId="2192" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="2193" />
+      <NewLine UId="2194" />
+      <Blank Num="28" UId="2195" />
+      <Parameter Name="R" UId="2196">
+        <Token Text=":=" UId="2197" />
+        <Token Text="NOT" UId="2198" />
+        <Blank UId="2199" />
+        <Access Scope="LocalVariable" UId="2200">
+          <Symbol UId="2201">
+            <Component Name="sStartCounterCycleLaser" UId="2202" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="2203" />
+      <NewLine UId="2204" />
+      <Blank Num="28" UId="2205" />
+      <Parameter Name="PT" UId="2206">
+        <Token Text=":=" UId="2207" />
+        <Access Scope="TypedConstant" UId="2208">
+          <Constant UId="2209">
+            <ConstantValue UId="2210">t#10m</ConstantValue>
+          </Constant>
+        </Access>
+      </Parameter>
+      <Token Text=")" UId="2211" />
+    </Instruction>
+  </Access>
+  <Token Text=";" UId="2212" />
+  <NewLine UId="2213" />
+  <Blank Num="4" UId="2214" />
+  <LineComment UId="2215">
+    <Text UId="2216"> Mesure ZED Backwall PAS UTILISE SUR FL0153 A SUPPRIMER</Text>
+  </LineComment>
+  <NewLine UId="2217" />
+  <Blank Num="4" UId="2218" />
+  <Token Text="IF" UId="2219" />
+  <Blank UId="2220" />
+  <Access Scope="GlobalVariable" UId="2221">
+    <Symbol UId="2222">
+      <Component Name="LBP_Chan1" UId="2223">
+        <BooleanAttribute Name="HasQuotes" UId="2224">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="2225" />
+      <Component Name="MDyn" UId="2226">
+        <Token Text="[" UId="2227" />
+        <Access Scope="LiteralConstant" UId="2228">
+          <Constant UId="2229">
+            <ConstantValue UId="2231">29</ConstantValue>
+          </Constant>
+        </Access>
+        <Token Text="]" UId="2232" />
+      </Component>
+    </Symbol>
+  </Access>
+  <Blank UId="2233" />
+  <Token Text="THEN" UId="2234" />
+  <NewLine UId="2235" />
+  <Blank Num="8" UId="2236" />
+  <Access Scope="LocalVariable" UId="2237">
+    <Symbol UId="2238">
+      <Component Name="tFailCodeBackwall" UId="2239" />
+    </Symbol>
+  </Access>
+  <Blank UId="2240" />
+  <Token Text=":=" UId="2241" />
+  <Blank UId="2242" />
+  <Access Scope="Call" UId="2243">
+    <Instruction Name="REAL_TO_INT" UId="2244">
+      <Token Text="(" UId="2245" />
+      <NamelessParameter UId="2246">
+        <Access Scope="GlobalVariable" UId="2247">
+          <Symbol UId="2248">
+            <Component Name="LBP_Chan1" UId="2249">
+              <BooleanAttribute Name="HasQuotes" UId="2250">true</BooleanAttribute>
+            </Component>
+            <Token Text="." UId="2251" />
+            <Component Name="H1" UId="2252" />
+          </Symbol>
+        </Access>
+      </NamelessParameter>
+      <Token Text=")" UId="2254" />
+    </Instruction>
+  </Access>
+  <Token Text=";" UId="2255" />
+  <NewLine UId="2256" />
+  <Blank Num="4" UId="2257" />
+  <Token Text="END_IF" UId="2258" />
+  <Token Text=";" UId="2259" />
+  <NewLine UId="2260" />
+  <Blank Num="4" UId="2261" />
+  <LineComment UId="2262">
+    <Text UId="2263"> Close unload gripper</Text>
+  </LineComment>
+  <NewLine UId="2264" />
+  <Blank Num="4" UId="2265" />
+  <Token Text="IF" UId="2266" />
+  <Blank UId="2267" />
+  <Access Scope="GlobalVariable" UId="2268">
+    <Symbol UId="2269">
+      <Component Name="DB_DataPositions" UId="2270">
+        <BooleanAttribute Name="HasQuotes" UId="2271">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="2272" />
+      <Component Name="Position" UId="2273">
+        <Token Text="[" UId="2274" />
+        <Access Scope="LiteralConstant" UId="2275">
+          <Constant UId="2276">
+            <ConstantValue UId="2278">4</ConstantValue>
+          </Constant>
+        </Access>
+        <Token Text="]" UId="2279" />
+      </Component>
+      <Token Text="." UId="2280" />
+      <Component Name="DMC" UId="2281" />
+    </Symbol>
+  </Access>
+  <Blank UId="2282" />
+  <Token Text="=" UId="2283" />
+  <Blank UId="2284" />
+  <Access Scope="LocalVariable" UId="2285">
+    <Symbol UId="2286">
+      <Component Name="sMemoPartDMC" UId="2287" />
+    </Symbol>
+  </Access>
+  <Blank UId="2288" />
+  <Token Text="THEN" UId="2289" />
+  <NewLine UId="2290" />
+  <Blank Num="8" UId="2291" />
+  <Token Text="IF" UId="2292" />
+  <Blank UId="2293" />
+  <Access Scope="GlobalVariable" UId="2294">
+    <Symbol UId="2295">
+      <Component Name="LBP_Chan1" UId="2296">
+        <BooleanAttribute Name="HasQuotes" UId="2297">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="2298" />
+      <Component Name="MDyn" UId="2299">
+        <Token Text="[" UId="2300" />
+        <Access Scope="LiteralConstant" UId="2301">
+          <Constant UId="2302">
+            <ConstantValue UId="2304">82</ConstantValue>
+          </Constant>
+        </Access>
+        <Token Text="]" UId="2305" />
+      </Component>
+    </Symbol>
+  </Access>
+  <Blank UId="2306" />
+  <Token Text="THEN" UId="2307" />
+  <NewLine UId="2308" />
+  <Blank Num="12" UId="2309" />
+  <Access Scope="GlobalVariable" UId="2310">
+    <Symbol UId="2311">
+      <Component Name="DB_DataPositions" UId="2312">
+        <BooleanAttribute Name="HasQuotes" UId="2313">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="2314" />
+      <Component Name="Position" UId="2315">
+        <Token Text="[" UId="2316" />
+        <Access Scope="LiteralConstant" UId="2317">
+          <Constant UId="2318">
+            <ConstantValue UId="2320">4</ConstantValue>
+          </Constant>
+        </Access>
+        <Token Text="]" UId="2321" />
+      </Component>
+      <Token Text="." UId="2322" />
+      <Component Name="TotalCycleTime" UId="2323" />
+    </Symbol>
+  </Access>
+  <Blank UId="2324" />
+  <Token Text=":=" UId="2325" />
+  <Blank UId="2326" />
+  <Access Scope="Call" UId="2327">
+    <Instruction Name="TIME_TO_INT" UId="2328">
+      <Token Text="(" UId="2329" />
+      <NamelessParameter UId="2330">
+        <Access Scope="LocalVariable" UId="2331">
+          <Symbol UId="2332">
+            <Component Name="sIEC_CounterCycleTime" UId="2333" />
+            <Token Text="." UId="2334" />
+            <Component Name="ET" UId="2335" />
+          </Symbol>
+        </Access>
+      </NamelessParameter>
+      <Token Text=")" UId="2337" />
+    </Instruction>
+  </Access>
+  <Token Text=";" UId="2338" />
+  <NewLine UId="2339" />
+  <Blank Num="12" UId="2340" />
+  <Access Scope="GlobalVariable" UId="2341">
+    <Symbol UId="2342">
+      <Component Name="DB_DataPositions" UId="2343">
+        <BooleanAttribute Name="HasQuotes" UId="2344">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="2345" />
+      <Component Name="Position" UId="2346">
+        <Token Text="[" UId="2347" />
+        <Access Scope="LiteralConstant" UId="2348">
+          <Constant UId="2349">
+            <ConstantValue UId="2351">4</ConstantValue>
+          </Constant>
+        </Access>
+        <Token Text="]" UId="2352" />
+      </Component>
+      <Token Text="." UId="2353" />
+      <Component Name="LaserCycleTime" UId="2354" />
+    </Symbol>
+  </Access>
+  <Blank UId="2355" />
+  <Token Text=":=" UId="2356" />
+  <Blank UId="2357" />
+  <Access Scope="Call" UId="2358">
+    <Instruction Name="TIME_TO_INT" UId="2359">
+      <Token Text="(" UId="2360" />
+      <NamelessParameter UId="2361">
+        <Access Scope="LocalVariable" UId="2362">
+          <Symbol UId="2363">
+            <Component Name="sIEC_CounterCycleLaser" UId="2364" />
+            <Token Text="." UId="2365" />
+            <Component Name="ET" UId="2366" />
+          </Symbol>
+        </Access>
+      </NamelessParameter>
+      <Token Text=")" UId="2368" />
+    </Instruction>
+  </Access>
+  <Token Text=";" UId="2369" />
+  <NewLine UId="2370" />
+  <Blank Num="8" UId="2371" />
+  <Token Text="END_IF" UId="2372" />
+  <Token Text=";" UId="2373" />
+  <NewLine UId="2374" />
+  <Blank Num="8" UId="2375" />
+  <Access Scope="GlobalVariable" UId="2376">
+    <Symbol UId="2377">
+      <Component Name="DB_DataPositions" UId="2378">
+        <BooleanAttribute Name="HasQuotes" UId="2379">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="2380" />
+      <Component Name="Position" UId="2381">
+        <Token Text="[" UId="2382" />
+        <Access Scope="LiteralConstant" UId="2383">
+          <Constant UId="2384">
+            <ConstantValue UId="2386">4</ConstantValue>
+          </Constant>
+        </Access>
+        <Token Text="]" UId="2387" />
+      </Component>
+      <Token Text="." UId="2388" />
+      <Component Name="FailCodeBackwall" UId="2389" />
+    </Symbol>
+  </Access>
+  <Blank UId="2390" />
+  <Token Text=":=" UId="2391" />
+  <Blank UId="2392" />
+  <Access Scope="LocalVariable" UId="2393">
+    <Symbol UId="2394">
+      <Component Name="tFailCodeBackwall" UId="2395" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="2396" />
+  <NewLine UId="2397" />
+  <Blank Num="4" UId="2398" />
+  <NewLine UId="2399" />
+  <Blank Num="4" UId="2400" />
+  <Token Text="ELSIF" UId="2401" />
+  <Blank UId="2402" />
+  <Access Scope="GlobalVariable" UId="2403">
+    <Symbol UId="2404">
+      <Component Name="DB_DataPositions" UId="2405">
+        <BooleanAttribute Name="HasQuotes" UId="2406">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="2407" />
+      <Component Name="Position" UId="2408">
+        <Token Text="[" UId="2409" />
+        <Access Scope="LiteralConstant" UId="2410">
+          <Constant UId="2411">
+            <ConstantValue UId="2413">5</ConstantValue>
+          </Constant>
+        </Access>
+        <Token Text="]" UId="2414" />
+      </Component>
+      <Token Text="." UId="2415" />
+      <Component Name="DMC" UId="2416" />
+    </Symbol>
+  </Access>
+  <Blank UId="2417" />
+  <Token Text="=" UId="2418" />
+  <Blank UId="2419" />
+  <Access Scope="LocalVariable" UId="2420">
+    <Symbol UId="2421">
+      <Component Name="sMemoPartDMC" UId="2422" />
+    </Symbol>
+  </Access>
+  <Blank UId="2423" />
+  <Token Text="THEN" UId="2424" />
+  <NewLine UId="2425" />
+  <Blank Num="8" UId="2426" />
+  <Token Text="IF" UId="2427" />
+  <Blank UId="2428" />
+  <Access Scope="GlobalVariable" UId="2429">
+    <Symbol UId="2430">
+      <Component Name="LBP_Chan1" UId="2431">
+        <BooleanAttribute Name="HasQuotes" UId="2432">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="2433" />
+      <Component Name="MDyn" UId="2434">
+        <Token Text="[" UId="2435" />
+        <Access Scope="LiteralConstant" UId="2436">
+          <Constant UId="2437">
+            <ConstantValue UId="2439">82</ConstantValue>
+          </Constant>
+        </Access>
+        <Token Text="]" UId="2440" />
+      </Component>
+    </Symbol>
+  </Access>
+  <Blank UId="2441" />
+  <Token Text="THEN" UId="2442" />
+  <NewLine UId="2443" />
+  <Blank Num="12" UId="2444" />
+  <Access Scope="GlobalVariable" UId="2445">
+    <Symbol UId="2446">
+      <Component Name="DB_DataPositions" UId="2447">
+        <BooleanAttribute Name="HasQuotes" UId="2448">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="2449" />
+      <Component Name="Position" UId="2450">
+        <Token Text="[" UId="2451" />
+        <Access Scope="LiteralConstant" UId="2452">
+          <Constant UId="2453">
+            <ConstantValue UId="2455">5</ConstantValue>
+          </Constant>
+        </Access>
+        <Token Text="]" UId="2456" />
+      </Component>
+      <Token Text="." UId="2457" />
+      <Component Name="TotalCycleTime" UId="2458" />
+    </Symbol>
+  </Access>
+  <Blank UId="2459" />
+  <Token Text=":=" UId="2460" />
+  <Blank UId="2461" />
+  <Access Scope="Call" UId="2462">
+    <Instruction Name="TIME_TO_INT" UId="2463">
+      <Token Text="(" UId="2464" />
+      <NamelessParameter UId="2465">
+        <Access Scope="LocalVariable" UId="2466">
+          <Symbol UId="2467">
+            <Component Name="sIEC_CounterCycleTime" UId="2468" />
+            <Token Text="." UId="2469" />
+            <Component Name="ET" UId="2470" />
+          </Symbol>
+        </Access>
+      </NamelessParameter>
+      <Token Text=")" UId="2472" />
+    </Instruction>
+  </Access>
+  <Token Text=";" UId="2473" />
+  <NewLine UId="2474" />
+  <Blank Num="12" UId="2475" />
+  <Access Scope="GlobalVariable" UId="2476">
+    <Symbol UId="2477">
+      <Component Name="DB_DataPositions" UId="2478">
+        <BooleanAttribute Name="HasQuotes" UId="2479">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="2480" />
+      <Component Name="Position" UId="2481">
+        <Token Text="[" UId="2482" />
+        <Access Scope="LiteralConstant" UId="2483">
+          <Constant UId="2484">
+            <ConstantValue UId="2486">5</ConstantValue>
+          </Constant>
+        </Access>
+        <Token Text="]" UId="2487" />
+      </Component>
+      <Token Text="." UId="2488" />
+      <Component Name="LaserCycleTime" UId="2489" />
+    </Symbol>
+  </Access>
+  <Blank UId="2490" />
+  <Token Text=":=" UId="2491" />
+  <Blank UId="2492" />
+  <Access Scope="Call" UId="2493">
+    <Instruction Name="TIME_TO_INT" UId="2494">
+      <Token Text="(" UId="2495" />
+      <NamelessParameter UId="2496">
+        <Access Scope="LocalVariable" UId="2497">
+          <Symbol UId="2498">
+            <Component Name="sIEC_CounterCycleLaser" UId="2499" />
+            <Token Text="." UId="2500" />
+            <Component Name="ET" UId="2501" />
+          </Symbol>
+        </Access>
+      </NamelessParameter>
+      <Token Text=")" UId="2503" />
+    </Instruction>
+  </Access>
+  <Token Text=";" UId="2504" />
+  <NewLine UId="2505" />
+  <Blank Num="8" UId="2506" />
+  <Token Text="END_IF" UId="2507" />
+  <Token Text=";" UId="2508" />
+  <NewLine UId="2509" />
+  <Blank Num="8" UId="2510" />
+  <Access Scope="GlobalVariable" UId="2511">
+    <Symbol UId="2512">
+      <Component Name="DB_DataPositions" UId="2513">
+        <BooleanAttribute Name="HasQuotes" UId="2514">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="2515" />
+      <Component Name="Position" UId="2516">
+        <Token Text="[" UId="2517" />
+        <Access Scope="LiteralConstant" UId="2518">
+          <Constant UId="2519">
+            <ConstantValue UId="2521">5</ConstantValue>
+          </Constant>
+        </Access>
+        <Token Text="]" UId="2522" />
+      </Component>
+      <Token Text="." UId="2523" />
+      <Component Name="FailCodeBackwall" UId="2524" />
+    </Symbol>
+  </Access>
+  <Blank UId="2525" />
+  <Token Text=":=" UId="2526" />
+  <Blank UId="2527" />
+  <Access Scope="LocalVariable" UId="2528">
+    <Symbol UId="2529">
+      <Component Name="tFailCodeBackwall" UId="2530" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="2531" />
+  <NewLine UId="2532" />
+  <Blank Num="4" UId="2533" />
+  <Token Text="END_IF" UId="2534" />
+  <Token Text=";" UId="2535" />
+  <NewLine UId="2536" />
+  <Token Text="END_REGION" UId="2537" />
+</StructuredText></NetworkSource>
+          <ProgrammingLanguage>SCL</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="5" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="6" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="7" CompositionName="Items">
+                <AttributeList>
+                  <Culture>fr-FR</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="8" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="9" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="A" CompositionName="Items">
+                <AttributeList>
+                  <Culture>fr-FR</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <MultilingualText ID="B" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="C" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="D" CompositionName="Items">
+            <AttributeList>
+              <Culture>fr-FR</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Blocks.FB>
+</Document>

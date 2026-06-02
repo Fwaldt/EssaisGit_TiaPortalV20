@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V20" />
+  <SW.Blocks.InstanceDB ID="0">
+    <AttributeList>
+      <InstanceOfName>FB_GestionGripper</InstanceOfName>
+      <InstanceOfType>FB</InstanceOfType>
+      <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+  <Section Name="Input" />
+  <Section Name="Output" />
+  <Section Name="InOut" />
+  <Section Name="Static">
+    <Member Name="sLoadGripperCloseReq" Datatype="Bool" />
+    <Member Name="sUnloadGripperCloseReq" Datatype="Bool" />
+    <Member Name="sLoadShift" Datatype="Bool" />
+    <Member Name="sUnLoadShift" Datatype="Bool" />
+    <Member Name="sLoadPartLost" Datatype="Bool" />
+    <Member Name="sUnLoadPartLost" Datatype="Bool" />
+    <Member Name="sLoadClose" Datatype="Bool" />
+    <Member Name="sUnLoadClose" Datatype="Bool" />
+    <Member Name="sUndrilledGripper" Datatype="&quot;FB_Gripper&quot;" />
+    <Member Name="sDrilledGripper" Datatype="&quot;FB_Gripper&quot;" />
+    <Member Name="sLoadCloseWithPart" Datatype="Bool" />
+    <Member Name="sUnLoadCloseWithPart" Datatype="Bool" />
+    <Member Name="sLoadOpen" Datatype="Bool" />
+    <Member Name="sUnLoadOpen" Datatype="Bool" />
+    <Member Name="sFT_ModeJog" Datatype="F_TRIG" Version="1.0" />
+    <Member Name="sBlowingTimerCmdHMI" Datatype="TP_TIME" Version="1.0" />
+    <Member Name="sRT_BlowingCmdHMI" Datatype="R_TRIG" Version="1.0">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="sBlowingISO" Datatype="Bool">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="sGripperStatus" Datatype="Struct">
+      <Member Name="Available" Datatype="Bool" />
+      <Member Name="DrivedByShuttle1" Datatype="Bool" />
+      <Member Name="DrivedByShuttle2" Datatype="Bool" />
+      <Member Name="DrivedByFixture" Datatype="Bool" />
+    </Member>
+    <Member Name="sGripperReq" Datatype="Struct">
+      <Member Name="ByShuttle1" Datatype="Bool" />
+      <Member Name="ByShuttle2" Datatype="Bool" />
+      <Member Name="ByFixture" Datatype="Bool" />
+    </Member>
+    <Member Name="sUndrilledGripperErrorCode" Datatype="Int" />
+    <Member Name="sDrilledGripperErrorCode" Datatype="Int" />
+  </Section>
+</Sections></Interface>
+      <Name>DB_GestionGripper</Name>
+      <Namespace />
+      <Number>64</Number>
+      <ProgrammingLanguage>DB</ProgrammingLanguage>
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="3" CompositionName="Items">
+            <AttributeList>
+              <Culture>fr-FR</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <MultilingualText ID="4" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="5" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="6" CompositionName="Items">
+            <AttributeList>
+              <Culture>fr-FR</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Blocks.InstanceDB>
+</Document>

@@ -1,0 +1,215 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V20" />
+  <SW.Types.PlcStruct ID="0">
+    <AttributeList>
+      <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+  <Section Name="None">
+    <Member Name="auto" Datatype="Bool" />
+    <Member Name="mda" Datatype="Bool" />
+    <Member Name="jog" Datatype="Bool" />
+    <Member Name="singleBlock" Datatype="Bool" />
+    <Member Name="spindleIncrease" Datatype="Bool" />
+    <Member Name="spindle100" Datatype="Bool" />
+    <Member Name="spindleDecrease" Datatype="Bool" />
+    <Member Name="cycleStop" Datatype="Bool" />
+    <Member Name="teachIn" Datatype="Bool" />
+    <Member Name="repos" Datatype="Bool" />
+    <Member Name="refPoint" Datatype="Bool" />
+    <Member Name="reset" Datatype="Bool" />
+    <Member Name="spindleLeft" Datatype="Bool" />
+    <Member Name="spindleStop" Datatype="Bool" />
+    <Member Name="spindleRight" Datatype="Bool" />
+    <Member Name="cycleStart" Datatype="Bool" />
+    <Member Name="inc1" Datatype="Bool" />
+    <Member Name="inc10" Datatype="Bool" />
+    <Member Name="inc100" Datatype="Bool" />
+    <Member Name="inc1000" Datatype="Bool" />
+    <Member Name="reserved24" Datatype="Bool" />
+    <Member Name="incVar" Datatype="Bool" />
+    <Member Name="feedrateStop" Datatype="Bool" />
+    <Member Name="feedrateStart" Datatype="Bool" />
+    <Member Name="reserved3" Datatype="Byte" />
+    <Member Name="optionalKey1" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">KT-OUT1</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">KT-OUT1</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="optionalKey2" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">KT-OUT2</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">KT-OUT2</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="optionalKey3" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">KT-OUT3</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">KT-OUT3</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="optionalKey4" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">KT-OUT4</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">KT-OUT4</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="optionalKey5" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">KT-OUT5</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">KT-OUT5</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="rapidTraverse" Datatype="Bool" />
+    <Member Name="minus" Datatype="Bool" />
+    <Member Name="plus" Datatype="Bool" />
+    <Member Name="axisX" Datatype="Bool" />
+    <Member Name="axisY" Datatype="Bool" />
+    <Member Name="axisZ" Datatype="Bool" />
+    <Member Name="axis4" Datatype="Bool" />
+    <Member Name="axis5" Datatype="Bool" />
+    <Member Name="axis6" Datatype="Bool" />
+    <Member Name="optionalKey6" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">KT-OUT6</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">KT-OUT6</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="customerKey16" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">T16</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">T16</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="customerKey15" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">T15</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">T15</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="customerKey14" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">T14</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">T14</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="customerKey13" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">T13</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">T13</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="mcsWcs" Datatype="Bool" />
+    <Member Name="customerKey12" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">T12</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">T12</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="customerKey11" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">T11</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">T11</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="customerKey10" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">T10</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">T10</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="customerKey9" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">T9</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">T9</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="customerKey8" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">T8</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">T8</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="customerKey7" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">T7</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">T7</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="customerKey6" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">T6</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">T6</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="customerKey5" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">T5</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">T5</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="customerKey4" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">T4</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">T4</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="customerKey3" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">T3</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">T3</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="customerKey2" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">T2</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">T2</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="customerKey1" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">T1</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">T1</MultiLanguageText>
+      </Comment>
+    </Member>
+  </Section>
+</Sections></Interface>
+      <Name>LBP_typeMcp310StandardOutput</Name>
+      <Namespace />
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text>Output image of MCP 310</Text>
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="3" CompositionName="Items">
+            <AttributeList>
+              <Culture>fr-FR</Culture>
+              <Text>Image de sortie du MCP 310</Text>
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <MultilingualText ID="4" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="5" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text>MCP 310 image</Text>
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="6" CompositionName="Items">
+            <AttributeList>
+              <Culture>fr-FR</Culture>
+              <Text>Image du MCP 310</Text>
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Types.PlcStruct>
+</Document>

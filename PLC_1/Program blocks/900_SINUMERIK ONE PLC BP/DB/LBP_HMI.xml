@@ -1,0 +1,429 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V20" />
+  <SW.Blocks.InstanceDB ID="0">
+    <AttributeList>
+      <AutoNumber>false</AutoNumber>
+      <HeaderAuthor>SINUMERIK</HeaderAuthor>
+      <HeaderFamily>SINUMERIK_ONE</HeaderFamily>
+      <HeaderVersion>6.24</HeaderVersion>
+      <InstanceOfName>LBP_typeHMI</InstanceOfName>
+      <InstanceOfType>UDT</InstanceOfType>
+      <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+  <Section Name="Static">
+    <Member Name="A_SCLight" Datatype="Bool" Remanence="Retain" />
+    <Member Name="A_SCDark" Datatype="Bool" Remanence="Retain" />
+    <Member Name="A_KeyDisable" Datatype="Bool" Remanence="Retain" />
+    <Member Name="A_ClearCanAl" Datatype="Bool" Remanence="Retain" />
+    <Member Name="A_ClearRecAl" Datatype="Bool" Remanence="Retain" />
+    <Member Name="f0_5" Datatype="Bool" Remanence="Retain" />
+    <Member Name="A_SafeActionLog" Datatype="Bool" Remanence="Retain" />
+    <Member Name="A_ActWCS" Datatype="Bool" Remanence="Retain" />
+    <Member Name="A_PLCExtViewerReject" Datatype="Bool" Remanence="Retain" />
+    <Member Name="A_PLCExtViewerMode" Datatype="Bool" Remanence="Retain" />
+    <Member Name="f1_2" Datatype="Bool" Remanence="Retain" />
+    <Member Name="f1_3" Datatype="Bool" Remanence="Retain" />
+    <Member Name="f1_4" Datatype="Bool" Remanence="Retain" />
+    <Member Name="f1_5" Datatype="Bool" Remanence="Retain" />
+    <Member Name="f1_6" Datatype="Bool" Remanence="Retain" />
+    <Member Name="f1_7" Datatype="Bool" Remanence="Retain" />
+    <Member Name="A_1stError1" Datatype="Word" Remanence="Retain" />
+    <Member Name="A_1stError2" Datatype="Word" Remanence="Retain" />
+    <Member Name="A_ASpi1percent" Datatype="Byte" Remanence="Retain" />
+    <Member Name="A_ASpi2percent" Datatype="Byte" Remanence="Retain" />
+    <Member Name="A_MCPChan" Datatype="Byte" Remanence="Retain" />
+    <Member Name="A_OEM1" Datatype="Bool" Remanence="Retain" />
+    <Member Name="A_OEM2" Datatype="Bool" Remanence="Retain" />
+    <Member Name="A_AToolMeas" Datatype="Bool" Remanence="Retain" />
+    <Member Name="f9_3" Datatype="Bool" Remanence="Retain" />
+    <Member Name="f9_4" Datatype="Bool" Remanence="Retain" />
+    <Member Name="f9_5" Datatype="Bool" Remanence="Retain" />
+    <Member Name="f9_6" Datatype="Bool" Remanence="Retain" />
+    <Member Name="f9_7" Datatype="Bool" Remanence="Retain" />
+    <Member Name="A_Hardkey" Datatype="Byte" Remanence="Retain" />
+    <Member Name="f11" Datatype="Byte" Remanence="Retain" />
+    <Member Name="f12_0" Datatype="Bool" Remanence="Retain" />
+    <Member Name="f12_1" Datatype="Bool" Remanence="Retain" />
+    <Member Name="A_COM2" Datatype="Bool" Remanence="Retain" />
+    <Member Name="A_COM1" Datatype="Bool" Remanence="Retain" />
+    <Member Name="A_V24stop" Datatype="Bool" Remanence="Retain" />
+    <Member Name="A_V24ext" Datatype="Bool" Remanence="Retain" />
+    <Member Name="A_V24off" Datatype="Bool" Remanence="Retain" />
+    <Member Name="A_V24on" Datatype="Bool" Remanence="Retain" />
+    <Member Name="A_TeachDisable" Datatype="Bool" Remanence="Retain" />
+    <Member Name="f13_1" Datatype="Bool" Remanence="Retain" />
+    <Member Name="f13_2" Datatype="Bool" Remanence="Retain" />
+    <Member Name="f13_3" Datatype="Bool" Remanence="Retain" />
+    <Member Name="f13_4" Datatype="Bool" Remanence="Retain" />
+    <Member Name="A_PPdeload" Datatype="Bool" Remanence="Retain" />
+    <Member Name="A_PPload" Datatype="Bool" Remanence="Retain" />
+    <Member Name="A_PPsel" Datatype="Bool" Remanence="Retain" />
+    <Member Name="A_V24Index1" Datatype="Byte" Remanence="Retain" />
+    <Member Name="A_V24Index2" Datatype="Byte" Remanence="Retain" />
+    <Member Name="A_V24NoFile1" Datatype="Byte" Remanence="Retain" />
+    <Member Name="A_V24NoFile2" Datatype="Byte" Remanence="Retain" />
+    <Member Name="A_res18" Datatype="Byte" Remanence="Retain" />
+    <Member Name="A_res19" Datatype="Byte" Remanence="Retain" />
+    <Member Name="f20_0" Datatype="Bool" Remanence="Retain" />
+    <Member Name="E_SCDark" Datatype="Bool" Remanence="Retain" />
+    <Member Name="E_Cancel" Datatype="Bool" Remanence="Retain" />
+    <Member Name="E_CanCleared" Datatype="Bool" Remanence="Retain" />
+    <Member Name="E_RecCleared" Datatype="Bool" Remanence="Retain" />
+    <Member Name="f20_5" Datatype="Bool" Remanence="Retain" />
+    <Member Name="E_SimActiv" Datatype="Bool" Remanence="Retain" />
+    <Member Name="E_ActWCS" Datatype="Bool" Remanence="Retain" />
+    <Member Name="E_ActivWA" Datatype="Byte" Remanence="Retain" />
+    <Member Name="E_Chan" Datatype="Byte" Remanence="Retain" />
+    <Member Name="E_KeybHandl" Datatype="Bool" Remanence="Retain" />
+    <Member Name="E_DataTransf" Datatype="Bool" Remanence="Retain" />
+    <Member Name="E_DisplChange" Datatype="Bool" Remanence="Retain" />
+    <Member Name="f23_3" Datatype="Bool" Remanence="Retain" />
+    <Member Name="f23_4" Datatype="Bool" Remanence="Retain" />
+    <Member Name="f23_5" Datatype="Bool" Remanence="Retain" />
+    <Member Name="f23_6" Datatype="Bool" Remanence="Retain" />
+    <Member Name="f23_7" Datatype="Bool" Remanence="Retain" />
+    <Member Name="E_ScreenNo" Datatype="Word" Remanence="Retain" />
+    <Member Name="E_res26_0" Datatype="Bool" Remanence="Retain" />
+    <Member Name="E_PPOK" Datatype="Bool" Remanence="Retain" />
+    <Member Name="E_PPErr" Datatype="Bool" Remanence="Retain" />
+    <Member Name="E_PPAct" Datatype="Bool" Remanence="Retain" />
+    <Member Name="f26_4" Datatype="Bool" Remanence="Retain" />
+    <Member Name="E_PPdeload" Datatype="Bool" Remanence="Retain" />
+    <Member Name="E_PPload" Datatype="Bool" Remanence="Retain" />
+    <Member Name="E_PPsel" Datatype="Bool" Remanence="Retain" />
+    <Member Name="E_PPError" Datatype="Byte" Remanence="Retain" />
+    <Member Name="A_PictNo" Datatype="Int" Remanence="Retain" />
+    <Member Name="A_PictOn" Datatype="Bool" Remanence="Retain" />
+    <Member Name="A_PictOff" Datatype="Bool" Remanence="Retain" />
+    <Member Name="f30_2" Datatype="Bool" Remanence="Retain" />
+    <Member Name="f30_3" Datatype="Bool" Remanence="Retain" />
+    <Member Name="f30_4" Datatype="Bool" Remanence="Retain" />
+    <Member Name="f30_5" Datatype="Bool" Remanence="Retain" />
+    <Member Name="f30_6" Datatype="Bool" Remanence="Retain" />
+    <Member Name="f30_7" Datatype="Bool" Remanence="Retain" />
+    <Member Name="E_PictOK" Datatype="Bool" Remanence="Retain" />
+    <Member Name="E_PictOn" Datatype="Bool" Remanence="Retain" />
+    <Member Name="E_PictAct" Datatype="Bool" Remanence="Retain" />
+    <Member Name="E_PictOff" Datatype="Bool" Remanence="Retain" />
+    <Member Name="E_PictErr" Datatype="Bool" Remanence="Retain" />
+    <Member Name="f31_5" Datatype="Bool" Remanence="Retain" />
+    <Member Name="f31_6" Datatype="Bool" Remanence="Retain" />
+    <Member Name="E_NotAct" Datatype="Bool" Remanence="Retain" />
+    <Member Name="A_FuncNo" Datatype="Byte" Remanence="Retain" />
+    <Member Name="A_Par1" Datatype="Byte" Remanence="Retain" />
+    <Member Name="A_Par2" Datatype="Byte" Remanence="Retain" />
+    <Member Name="A_Par3" Datatype="Byte" Remanence="Retain" />
+    <Member Name="E_FuncErr" Datatype="Byte" Remanence="Retain" />
+    <Member Name="f37" Datatype="Byte" Remanence="Retain" />
+    <Member Name="f38" Datatype="Byte" Remanence="Retain" />
+    <Member Name="f39" Datatype="Byte" Remanence="Retain" />
+    <Member Name="res40" Datatype="Array[0..9] of Byte" Remanence="Retain" />
+    <Member Name="MMC2" Datatype="Struct" Remanence="Retain">
+      <Member Name="A_SCLight" Datatype="Bool" />
+      <Member Name="A_SCDark" Datatype="Bool" />
+      <Member Name="A_KeyDisable" Datatype="Bool" />
+      <Member Name="A_ClearCanAl" Datatype="Bool" />
+      <Member Name="A_ClearRecAl" Datatype="Bool" />
+      <Member Name="f0_5" Datatype="Bool" />
+      <Member Name="f0_6" Datatype="Bool" />
+      <Member Name="A_ActWCS" Datatype="Bool" />
+      <Member Name="A_PLCExtViewerReject" Datatype="Bool" />
+      <Member Name="A_PLCExtViewerMode" Datatype="Bool" />
+      <Member Name="f1_2" Datatype="Bool" />
+      <Member Name="f1_3" Datatype="Bool" />
+      <Member Name="f1_4" Datatype="Bool" />
+      <Member Name="f1_5" Datatype="Bool" />
+      <Member Name="f1_6" Datatype="Bool" />
+      <Member Name="f1_7" Datatype="Bool" />
+      <Member Name="A_1stError1" Datatype="Word" />
+      <Member Name="A_1stError2" Datatype="Word" />
+      <Member Name="A_ASpi1percent" Datatype="Byte" />
+      <Member Name="A_ASpi2percent" Datatype="Byte" />
+      <Member Name="A_MCPChan" Datatype="Byte" />
+      <Member Name="A_OEM1" Datatype="Bool" />
+      <Member Name="A_OEM2" Datatype="Bool" />
+      <Member Name="A_AToolMeas" Datatype="Bool" />
+      <Member Name="f9_3" Datatype="Bool" />
+      <Member Name="f9_4" Datatype="Bool" />
+      <Member Name="f9_5" Datatype="Bool" />
+      <Member Name="f9_6" Datatype="Bool" />
+      <Member Name="f9_7" Datatype="Bool" />
+      <Member Name="A_Hardkey" Datatype="Byte" />
+      <Member Name="f11" Datatype="Byte" />
+      <Member Name="f12_0" Datatype="Bool" />
+      <Member Name="f12_1" Datatype="Bool" />
+      <Member Name="A_COM2" Datatype="Bool" />
+      <Member Name="A_COM1" Datatype="Bool" />
+      <Member Name="A_V24stop" Datatype="Bool" />
+      <Member Name="A_V24ext" Datatype="Bool" />
+      <Member Name="A_V24off" Datatype="Bool" />
+      <Member Name="A_V24on" Datatype="Bool" />
+      <Member Name="A_TeachDisable" Datatype="Bool" />
+      <Member Name="f13_1" Datatype="Bool" />
+      <Member Name="f13_2" Datatype="Bool" />
+      <Member Name="f13_3" Datatype="Bool" />
+      <Member Name="f13_4" Datatype="Bool" />
+      <Member Name="A_PPdeload" Datatype="Bool" />
+      <Member Name="A_PPload" Datatype="Bool" />
+      <Member Name="A_PPsel" Datatype="Bool" />
+      <Member Name="A_V24Index1" Datatype="Byte" />
+      <Member Name="A_V24Index2" Datatype="Byte" />
+      <Member Name="A_V24NoFile1" Datatype="Byte" />
+      <Member Name="A_V24NoFile2" Datatype="Byte" />
+      <Member Name="A_res18" Datatype="Byte" />
+      <Member Name="A_res19" Datatype="Byte" />
+      <Member Name="f20_0" Datatype="Bool" />
+      <Member Name="E_SCDark" Datatype="Bool" />
+      <Member Name="E_Cancel" Datatype="Bool" />
+      <Member Name="E_CanCleared" Datatype="Bool" />
+      <Member Name="E_RecCleared" Datatype="Bool" />
+      <Member Name="f20_5" Datatype="Bool" />
+      <Member Name="E_SimActiv" Datatype="Bool" />
+      <Member Name="E_ActWCS" Datatype="Bool" />
+      <Member Name="E_ActivWA" Datatype="Byte" />
+      <Member Name="E_Chan" Datatype="Byte" />
+      <Member Name="E_KeybHandl" Datatype="Bool" />
+      <Member Name="E_DataTransf" Datatype="Bool" />
+      <Member Name="E_DisplChange" Datatype="Bool" />
+      <Member Name="f23_3" Datatype="Bool" />
+      <Member Name="f23_4" Datatype="Bool" />
+      <Member Name="f23_5" Datatype="Bool" />
+      <Member Name="f23_6" Datatype="Bool" />
+      <Member Name="f23_7" Datatype="Bool" />
+      <Member Name="E_ScreenNo" Datatype="Word" />
+      <Member Name="E_res26_0" Datatype="Bool" />
+      <Member Name="E_PPOK" Datatype="Bool" />
+      <Member Name="E_PPErr" Datatype="Bool" />
+      <Member Name="E_PPAct" Datatype="Bool" />
+      <Member Name="f26_4" Datatype="Bool" />
+      <Member Name="E_PPdeload" Datatype="Bool" />
+      <Member Name="E_PPload" Datatype="Bool" />
+      <Member Name="E_PPsel" Datatype="Bool" />
+      <Member Name="E_PPError" Datatype="Byte" />
+      <Member Name="A_PictNo" Datatype="Int" />
+      <Member Name="A_PictOn" Datatype="Bool" />
+      <Member Name="A_PictOff" Datatype="Bool" />
+      <Member Name="f30_2" Datatype="Bool" />
+      <Member Name="f30_3" Datatype="Bool" />
+      <Member Name="f30_4" Datatype="Bool" />
+      <Member Name="f30_5" Datatype="Bool" />
+      <Member Name="f30_6" Datatype="Bool" />
+      <Member Name="f30_7" Datatype="Bool" />
+      <Member Name="E_PictOK" Datatype="Bool" />
+      <Member Name="E_PictOn" Datatype="Bool" />
+      <Member Name="E_PictAct" Datatype="Bool" />
+      <Member Name="E_PictOff" Datatype="Bool" />
+      <Member Name="E_PictErr" Datatype="Bool" />
+      <Member Name="f31_5" Datatype="Bool" />
+      <Member Name="f31_6" Datatype="Bool" />
+      <Member Name="E_NotAct" Datatype="Bool" />
+      <Member Name="A_FuncNo" Datatype="Byte" />
+      <Member Name="A_Par1" Datatype="Byte" />
+      <Member Name="A_Par2" Datatype="Byte" />
+      <Member Name="A_Par3" Datatype="Byte" />
+      <Member Name="E_FuncErr" Datatype="Byte" />
+      <Member Name="f37" Datatype="Byte" />
+      <Member Name="f38" Datatype="Byte" />
+      <Member Name="f39" Datatype="Byte" />
+      <Member Name="res40" Datatype="Array[0..9] of Byte" />
+    </Member>
+    <Member Name="ONL_REQUEST" Datatype="Word" Remanence="Retain" />
+    <Member Name="ONL_CONFIRM" Datatype="Word" Remanence="Retain" />
+    <Member Name="PAR_CLIENT_IDENT" Datatype="Word" Remanence="Retain" />
+    <Member Name="PAR_MMC_TYP" Datatype="Byte" Remanence="Retain" />
+    <Member Name="PAR_MSTT_ADR" Datatype="Byte" Remanence="Retain" />
+    <Member Name="PAR_STATUS" Datatype="Byte" Remanence="Retain" />
+    <Member Name="PAR_Z_INFO" Datatype="Byte" Remanence="Retain" />
+    <Member Name="MtoNAlive" Datatype="Word" Remanence="Retain" />
+    <Member Name="f112" Datatype="Byte" Remanence="Retain" />
+    <Member Name="ParOpKeyAdr" Datatype="Byte" Remanence="Retain" />
+    <Member Name="ParTcuIndex" Datatype="Byte" Remanence="Retain" />
+    <Member Name="f115" Datatype="Byte" Remanence="Retain" />
+    <Member Name="Tcu1KeyAdr" Datatype="Byte" Remanence="Retain" />
+    <Member Name="Tcu2KeyAdr" Datatype="Byte" Remanence="Retain" />
+    <Member Name="Tcu1Index" Datatype="Byte" Remanence="Retain" />
+    <Member Name="Tcu2Index" Datatype="Byte" Remanence="Retain" />
+    <Member Name="MMC1_CLIENT_IDENT" Datatype="Word" Remanence="Retain" />
+    <Member Name="MMC1_TYP" Datatype="Byte" Remanence="Retain" />
+    <Member Name="MMC1_MSTT_ADR" Datatype="Byte" Remanence="Retain" />
+    <Member Name="MMC1_STATUS" Datatype="Byte" Remanence="Retain" />
+    <Member Name="MMC1_Z_INFO" Datatype="Byte" Remanence="Retain" />
+    <Member Name="MMC1_SHIFT_LOCK" Datatype="Bool" Remanence="Retain" />
+    <Member Name="MMC1_MSTT_SHIFT_LOCK" Datatype="Bool" Remanence="Retain" />
+    <Member Name="MMC1_ACTIVE_REQ" Datatype="Bool" Remanence="Retain" />
+    <Member Name="MMC1_ACTIVE_PERM" Datatype="Bool" Remanence="Retain" />
+    <Member Name="MMC1_ACTIVE_CHANGED" Datatype="Bool" Remanence="Retain" />
+    <Member Name="MMC1_CHANGED_DENIED" Datatype="Bool" Remanence="Retain" />
+    <Member Name="MMC1_TCU_SHIFT_LOCK" Datatype="Bool" Remanence="Retain" />
+    <Member Name="f127" Datatype="Byte" Remanence="Retain" />
+    <Member Name="MMC1_TRANS_DB" Datatype="Word" Remanence="Retain" />
+    <Member Name="MMC2_CLIENT_IDENT" Datatype="Word" Remanence="Retain" />
+    <Member Name="MMC2_TYP" Datatype="Byte" Remanence="Retain" />
+    <Member Name="MMC2_MSTT_ADR" Datatype="Byte" Remanence="Retain" />
+    <Member Name="MMC2_STATUS" Datatype="Byte" Remanence="Retain" />
+    <Member Name="MMC2_Z_INFO" Datatype="Byte" Remanence="Retain" />
+    <Member Name="MMC2_SHIFT_LOCK" Datatype="Bool" Remanence="Retain" />
+    <Member Name="MMC2_MSTT_SHIFT_LOCK" Datatype="Bool" Remanence="Retain" />
+    <Member Name="MMC2_ACTIVE_REQ" Datatype="Bool" Remanence="Retain" />
+    <Member Name="MMC2_ACTIVE_PERM" Datatype="Bool" Remanence="Retain" />
+    <Member Name="MMC2_ACTIVE_CHANGED" Datatype="Bool" Remanence="Retain" />
+    <Member Name="MMC2_CHANGED_DENIED" Datatype="Bool" Remanence="Retain" />
+    <Member Name="MMC2_TCU_SHIFT_LOCK" Datatype="Bool" Remanence="Retain" />
+    <Member Name="f137" Datatype="Byte" Remanence="Retain" />
+    <Member Name="MMC2_TRANS_DB" Datatype="Word" Remanence="Retain" />
+    <Member Name="A_Subtype" Datatype="Int" Remanence="Retain" />
+    <Member Name="A_Duplo" Datatype="Int" Remanence="Retain" />
+    <Member Name="A_Ident" Datatype="String[32]" Remanence="Retain" />
+    <Member Name="A_Tnumber" Datatype="Int" Remanence="Retain" />
+    <Member Name="A_MagazinePlace" Datatype="Int" Remanence="Retain" />
+    <Member Name="A_MagazinePlaceType" Datatype="Int" Remanence="Retain" />
+    <Member Name="A_ToolSize_Upper" Datatype="Byte" Remanence="Retain" />
+    <Member Name="A_ToolSize_Down" Datatype="Byte" Remanence="Retain" />
+    <Member Name="A_ToolSize_Left" Datatype="Byte" Remanence="Retain" />
+    <Member Name="A_ToolSize_Right" Datatype="Byte" Remanence="Retain" />
+    <Member Name="A_Channel" Datatype="Byte" Remanence="Retain" />
+    <Member Name="A_LoadingPlace" Datatype="Byte" Remanence="Retain" />
+    <Member Name="A_Magazine" Datatype="Int" Remanence="Retain" />
+    <Member Name="A_Unit" Datatype="Byte" Remanence="Retain" />
+    <Member Name="A_NCU_Index" Datatype="Byte" Remanence="Retain" />
+    <Member Name="A_FileIndex" Datatype="Int" Remanence="Retain" />
+    <Member Name="A_ActiveEnable" Datatype="Bool" Remanence="Retain" />
+    <Member Name="A_Override" Datatype="Bool" Remanence="Retain" />
+    <Member Name="A_LoadTool" Datatype="Bool" Remanence="Retain" />
+    <Member Name="A_DeleteTool" Datatype="Bool" Remanence="Retain" />
+    <Member Name="E_Subtype" Datatype="Int" Remanence="Retain" />
+    <Member Name="E_Duplo" Datatype="Int" Remanence="Retain" />
+    <Member Name="E_Ident" Datatype="String[32]" Remanence="Retain" />
+    <Member Name="E_Tnumber" Datatype="Int" Remanence="Retain" />
+    <Member Name="E_ToolState" Datatype="Int" Remanence="Retain" />
+    <Member Name="E_MagazinePlaceType" Datatype="Int" Remanence="Retain" />
+    <Member Name="E_ToolSize_Upper" Datatype="Byte" Remanence="Retain" />
+    <Member Name="E_ToolSize_Down" Datatype="Byte" Remanence="Retain" />
+    <Member Name="E_ToolSize_Left" Datatype="Byte" Remanence="Retain" />
+    <Member Name="E_ToolSize_Right" Datatype="Byte" Remanence="Retain" />
+    <Member Name="E_Magazine" Datatype="Int" Remanence="Retain" />
+    <Member Name="E_MagazinePlace" Datatype="Int" Remanence="Retain" />
+    <Member Name="A_ReqMMC1" Datatype="Bool" Remanence="Retain" />
+    <Member Name="A_ReqMMC2" Datatype="Bool" Remanence="Retain" />
+    <Member Name="A_K_Code" Datatype="Byte" Remanence="Retain" />
+    <Member Name="E_Done" Datatype="Bool" Remanence="Retain" />
+    <Member Name="E_Error" Datatype="Bool" Remanence="Retain" />
+    <Member Name="E_Active" Datatype="Bool" Remanence="Retain" />
+    <Member Name="f252_3" Datatype="Bool" Remanence="Retain" />
+    <Member Name="f252_4" Datatype="Bool" Remanence="Retain" />
+    <Member Name="f252_5" Datatype="Bool" Remanence="Retain" />
+    <Member Name="f252_6" Datatype="Bool" Remanence="Retain" />
+    <Member Name="E_Ident_Ready" Datatype="Bool" Remanence="Retain" />
+    <Member Name="E_K_CodeError" Datatype="Byte" Remanence="Retain" />
+    <Member Name="E_Error_Code" Datatype="Int" Remanence="Retain" />
+    <Member Name="E_Req" Datatype="Bool" Remanence="Retain" />
+    <Member Name="f257" Datatype="Byte" Remanence="Retain" />
+    <Member Name="A_Done" Datatype="Bool" Remanence="Retain" />
+    <Member Name="A_Error" Datatype="Bool" Remanence="Retain" />
+    <Member Name="A_Active" Datatype="Bool" Remanence="Retain" />
+    <Member Name="f258_3" Datatype="Bool" Remanence="Retain" />
+    <Member Name="f258_4" Datatype="Bool" Remanence="Retain" />
+    <Member Name="f258_5" Datatype="Bool" Remanence="Retain" />
+    <Member Name="f258_6" Datatype="Bool" Remanence="Retain" />
+    <Member Name="f258_7" Datatype="Bool" Remanence="Retain" />
+    <Member Name="E_TDC_Read" Datatype="Bool" Remanence="Retain" />
+    <Member Name="E_TDC_Write" Datatype="Bool" Remanence="Retain" />
+    <Member Name="E_TDC_Cancel" Datatype="Bool" Remanence="Retain" />
+    <Member Name="E_TDC_Read_before_Write" Datatype="Bool" Remanence="Retain" />
+    <Member Name="f259_4" Datatype="Bool" Remanence="Retain" />
+    <Member Name="f259_5" Datatype="Bool" Remanence="Retain" />
+    <Member Name="f259_6" Datatype="Bool" Remanence="Retain" />
+    <Member Name="f259_7" Datatype="Bool" Remanence="Retain" />
+    <Member Name="A_Error_Code" Datatype="Int" Remanence="Retain" />
+    <Member Name="E_PMagazine" Datatype="Int" Remanence="Retain" />
+    <Member Name="E_PMagazinePlace" Datatype="Int" Remanence="Retain" />
+    <Member Name="E_PTnumber" Datatype="Int" Remanence="Retain" />
+    <Member Name="A_TPMStatus" Datatype="Int" Remanence="Retain" />
+    <Member Name="A_TPMCounter" Datatype="Array[1..32] of DInt" Remanence="Retain" />
+    <Member Name="A_HWeelSimOvr" Datatype="Byte" Remanence="Retain" />
+    <Member Name="f399" Datatype="Byte" Remanence="Retain" />
+    <Member Name="A_SimOvr" Datatype="Int" Remanence="Retain" />
+    <Member Name="A_SimState" Datatype="Int" Remanence="Retain" />
+    <Member Name="E_HmiUserKey" Datatype="Array[1..64] of Bool" Remanence="Retain" />
+    <Member Name="A_HmiUserLed" Datatype="Array[1..64] of Bool" Remanence="Retain" />
+    <Member Name="A_DisableHmiUserKey" Datatype="Array[1..64] of Bool" Remanence="Retain" />
+    <Member Name="SafetyAutoAcceptanceTest" Datatype="Struct" Remanence="Retain">
+      <Member Name="E_Prepare" Datatype="Bool" />
+      <Member Name="E_Finalize" Datatype="Bool" />
+      <Member Name="E_Cancel" Datatype="Bool" />
+      <Member Name="E_Perform" Datatype="Bool" />
+      <Member Name="E_PerformSequence" Datatype="Bool" />
+      <Member Name="f428_5" Datatype="Bool" />
+      <Member Name="f428_6" Datatype="Bool" />
+      <Member Name="f428_7" Datatype="Bool" />
+      <Member Name="f429" Datatype="Byte" />
+      <Member Name="A_Prepared" Datatype="Bool" />
+      <Member Name="A_Finalized" Datatype="Bool" />
+      <Member Name="A_Canceled" Datatype="Bool" />
+      <Member Name="A_Performed" Datatype="Bool" />
+      <Member Name="A_SequencePerformed" Datatype="Bool" />
+      <Member Name="f430_5" Datatype="Bool" />
+      <Member Name="f430_6" Datatype="Bool" />
+      <Member Name="f430_7" Datatype="Bool" />
+      <Member Name="f431_0" Datatype="Bool" />
+      <Member Name="A_Error" Datatype="Bool" />
+      <Member Name="A_InvalidGroup" Datatype="Bool" />
+      <Member Name="A_InvalidNumber" Datatype="Bool" />
+      <Member Name="f431_4" Datatype="Bool" />
+      <Member Name="f431_5" Datatype="Bool" />
+      <Member Name="f431_6" Datatype="Bool" />
+      <Member Name="f431_7" Datatype="Bool" />
+      <Member Name="E_Group" Datatype="Int" />
+      <Member Name="E_Number" Datatype="Int" />
+      <Member Name="E_AxisNumber" Datatype="Int" />
+      <Member Name="E_TraversePlus" Datatype="Bool" />
+      <Member Name="E_SelectSafeStop" Datatype="Bool" />
+      <Member Name="E_SelectBrake" Datatype="Bool" />
+      <Member Name="E_SelectSbtMode" Datatype="Bool" />
+      <Member Name="E_SelectSlpMode" Datatype="Int" />
+      <Member Name="E_SelectSlsMode" Datatype="Int" />
+    </Member>
+  </Section>
+</Sections></Interface>
+      <MemoryLayout>Standard</MemoryLayout>
+      <Name>LBP_HMI</Name>
+      <Namespace />
+      <Number>19</Number>
+      <ProgrammingLanguage>DB</ProgrammingLanguage>
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text>Interface between user program and operator panel, contains signals from/to the operating software.</Text>
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="3" CompositionName="Items">
+            <AttributeList>
+              <Culture>fr-FR</Culture>
+              <Text>Interface entre programme utilisateur et pupitre opérateur, contient des signaux de/vers le logiciel d'exploitation.</Text>
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <MultilingualText ID="4" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="5" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text>Operator panel signals</Text>
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="6" CompositionName="Items">
+            <AttributeList>
+              <Culture>fr-FR</Culture>
+              <Text>Signaux pupitre opérateur</Text>
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Blocks.InstanceDB>
+</Document>

@@ -1,0 +1,859 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V20" />
+  <SW.Blocks.FB ID="0">
+    <AttributeList>
+      <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+  <Section Name="Input">
+    <Member Name="iHoldPart" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Hold Part Request</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="iOpen" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Shim Plate Opened (DI)</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="iCloseWithoutPart" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Shim Plate Closed with Part (DI)</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="iPulseTime" Datatype="Time">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Pulse before Closing Time (WFA ???)</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="iMonitorTime" Datatype="Time" />
+  </Section>
+  <Section Name="Output">
+    <Member Name="oClose" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Closing Request (DO)</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="oOpen" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Openeing Request (DO)</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="oStateOpen" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Opened Status</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="oStateClose" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Closed Status</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="oStateCloseWithPart" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Closed with Part Status</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="oErrorCode" Datatype="Int">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+    </Member>
+  </Section>
+  <Section Name="InOut" />
+  <Section Name="Static">
+    <Member Name="sPulseTimer" Datatype="TP_TIME" Version="1.0">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Pulse before Closing Timer (WFA ???)</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="sMonitorTimer" Datatype="TON_TIME" Version="1.0" />
+  </Section>
+  <Section Name="Temp" />
+  <Section Name="Constant" />
+</Sections></Interface>
+      <MemoryLayout>Optimized</MemoryLayout>
+      <MemoryReserve>100</MemoryReserve>
+      <Name>FB_Gripper</Name>
+      <Namespace />
+      <Number>54</Number>
+      <ProgrammingLanguage>SCL</ProgrammingLanguage>
+      <SetENOAutomatically>false</SetENOAutomatically>
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="3" CompositionName="Items">
+            <AttributeList>
+              <Culture>fr-FR</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <SW.Blocks.CompileUnit ID="4" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource><StructuredText xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/StructuredText/v4">
+  <Token Text="REGION" UId="21" />
+  <Blank UId="22" />
+  <Text UId="23">Description header </Text>
+  <NewLine UId="24" />
+  <Blank Num="4" UId="25" />
+  <LineComment UId="26">
+    <Text UId="27">==================================================================================</Text>
+  </LineComment>
+  <NewLine UId="28" />
+  <Blank Num="4" UId="29" />
+  <LineComment UId="30">
+    <Text UId="31"> POSALUX Swiss SA / (C) Copyright 2025</Text>
+  </LineComment>
+  <NewLine UId="32" />
+  <Blank Num="4" UId="33" />
+  <LineComment UId="34">
+    <Text UId="35">----------------------------------------------------------------------------------</Text>
+  </LineComment>
+  <NewLine UId="36" />
+  <Blank Num="4" UId="37" />
+  <LineComment UId="38">
+    <Text UId="39"> Title: Initialization of axis</Text>
+  </LineComment>
+  <NewLine UId="40" />
+  <Blank Num="4" UId="41" />
+  <LineComment UId="42">
+    <Text UId="43"> Comment/Function: FB_LoaderShimPlate</Text>
+  </LineComment>
+  <NewLine UId="44" />
+  <Blank Num="4" UId="45" />
+  <LineComment UId="46">
+    <Text UId="47"> Author: Fabien WALDT</Text>
+  </LineComment>
+  <NewLine UId="48" />
+  <Blank Num="4" UId="49" />
+  <LineComment UId="50">
+    <Text UId="51"> Engineering: TIA Portal v17</Text>
+  </LineComment>
+  <NewLine UId="52" />
+  <Blank Num="4" UId="53" />
+  <LineComment UId="54">
+    <Text UId="55">----------------------------------------------------------------------------------</Text>
+  </LineComment>
+  <NewLine UId="56" />
+  <Blank Num="4" UId="57" />
+  <LineComment UId="58">
+    <Text UId="59"> Change log table:</Text>
+  </LineComment>
+  <NewLine UId="60" />
+  <Blank Num="4" UId="61" />
+  <LineComment UId="62">
+    <Text UId="63"> Version  | Date     | Expert in charge | Changes applied</Text>
+  </LineComment>
+  <NewLine UId="64" />
+  <Blank Num="4" UId="65" />
+  <LineComment UId="66">
+    <Text UId="67"> ---------|----------|------------------|-----------------------------------------</Text>
+  </LineComment>
+  <NewLine UId="68" />
+  <Blank Num="4" UId="69" />
+  <LineComment UId="70">
+    <Text UId="71"> 00.00.01 | 20250423 | WFA              | First released version</Text>
+  </LineComment>
+  <NewLine UId="72" />
+  <Blank Num="4" UId="73" />
+  <LineComment UId="74">
+    <Text UId="75"> =================================================================================</Text>
+  </LineComment>
+  <NewLine UId="76" />
+  <Token Text="END_REGION" UId="77" />
+  <NewLine Num="2" UId="78" />
+  <Token Text="REGION" UId="79" />
+  <Blank UId="80" />
+  <Text UId="81">Open - Close request</Text>
+  <NewLine UId="82" />
+  <Blank Num="4" UId="83" />
+  <LineComment UId="84">
+    <Text UId="85"> Close request</Text>
+  </LineComment>
+  <NewLine UId="86" />
+  <Blank Num="4" UId="87" />
+  <Access Scope="LocalVariable" UId="88">
+    <Symbol UId="89">
+      <Component Name="sPulseTimer" UId="90" />
+    </Symbol>
+  </Access>
+  <Access Scope="Call" UId="91">
+    <Instruction UId="92">
+      <Token Text="(" UId="93" />
+      <Parameter Name="IN" UId="94">
+        <Blank UId="95" />
+        <Token Text=":=" UId="96" />
+        <Blank UId="97" />
+        <Access Scope="LocalVariable" UId="98">
+          <Symbol UId="99">
+            <Component Name="iHoldPart" UId="100" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="101" />
+      <NewLine UId="102" />
+      <Blank Num="16" UId="103" />
+      <Parameter Name="PT" UId="104">
+        <Blank UId="105" />
+        <Token Text=":=" UId="106" />
+        <Blank UId="107" />
+        <Access Scope="LocalVariable" UId="108">
+          <Symbol UId="109">
+            <Component Name="iPulseTime" UId="110" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text=")" UId="111" />
+    </Instruction>
+  </Access>
+  <Token Text=";" UId="112" />
+  <NewLine UId="113" />
+  <Blank Num="4" UId="114" />
+  <Access Scope="LocalVariable" UId="115">
+    <Symbol UId="116">
+      <Component Name="oClose" UId="117" />
+    </Symbol>
+  </Access>
+  <Blank UId="118" />
+  <Token Text=":=" UId="119" />
+  <Blank UId="120" />
+  <Access Scope="LocalVariable" UId="121">
+    <Symbol UId="122">
+      <Component Name="sPulseTimer" UId="123" />
+      <Token Text="." UId="124" />
+      <Component Name="Q" UId="125" />
+    </Symbol>
+  </Access>
+  <Blank UId="126" />
+  <Token Text="AND" UId="127" />
+  <Blank UId="128" />
+  <Access Scope="LocalVariable" UId="129">
+    <Symbol UId="130">
+      <Component Name="iHoldPart" UId="131" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="132" />
+  <NewLine UId="133" />
+  <Blank Num="4" UId="134" />
+  <NewLine UId="135" />
+  <Blank Num="4" UId="136" />
+  <LineComment UId="137">
+    <Text UId="138"> Open Request</Text>
+  </LineComment>
+  <NewLine UId="139" />
+  <Blank Num="4" UId="140" />
+  <Access Scope="LocalVariable" UId="141">
+    <Symbol UId="142">
+      <Component Name="oOpen" UId="143" />
+    </Symbol>
+  </Access>
+  <Blank UId="144" />
+  <Token Text=":=" UId="145" />
+  <Blank UId="146" />
+  <Token Text="NOT" UId="147" />
+  <Blank UId="148" />
+  <Access Scope="LocalVariable" UId="149">
+    <Symbol UId="150">
+      <Component Name="iHoldPart" UId="151" />
+    </Symbol>
+  </Access>
+  <Blank UId="152" />
+  <Token Text="AND" UId="153" />
+  <Blank UId="154" />
+  <Token Text="NOT" UId="155" />
+  <Blank UId="156" />
+  <Access Scope="LocalVariable" UId="157">
+    <Symbol UId="158">
+      <Component Name="iOpen" UId="159" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="160" />
+  <NewLine UId="161" />
+  <Token Text="END_REGION" UId="162" />
+  <NewLine Num="2" UId="163" />
+  <Token Text="REGION" UId="164" />
+  <Blank UId="165" />
+  <Text UId="166">Gripper States</Text>
+  <NewLine UId="167" />
+  <Blank Num="4" UId="168" />
+  <LineComment UId="169">
+    <Text UId="170"> State : Open</Text>
+  </LineComment>
+  <NewLine UId="171" />
+  <Blank Num="4" UId="172" />
+  <Access Scope="LocalVariable" UId="173">
+    <Symbol UId="174">
+      <Component Name="oStateOpen" UId="175" />
+    </Symbol>
+  </Access>
+  <Blank UId="176" />
+  <Token Text=":=" UId="177" />
+  <Blank UId="178" />
+  <Access Scope="LocalVariable" UId="179">
+    <Symbol UId="180">
+      <Component Name="iOpen" UId="181" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="182" />
+  <NewLine UId="183" />
+  <Blank Num="4" UId="184" />
+  <NewLine UId="185" />
+  <Blank Num="4" UId="186" />
+  <LineComment UId="187">
+    <Text UId="188">State : Close</Text>
+  </LineComment>
+  <NewLine UId="189" />
+  <Blank Num="4" UId="190" />
+  <Access Scope="LocalVariable" UId="191">
+    <Symbol UId="192">
+      <Component Name="oStateClose" UId="193" />
+    </Symbol>
+  </Access>
+  <Blank UId="194" />
+  <Token Text=":=" UId="195" />
+  <Blank UId="196" />
+  <Token Text="NOT" UId="197" />
+  <Blank UId="198" />
+  <Access Scope="LocalVariable" UId="199">
+    <Symbol UId="200">
+      <Component Name="iOpen" UId="201" />
+    </Symbol>
+  </Access>
+  <Blank UId="202" />
+  <Token Text="AND" UId="203" />
+  <Blank UId="204" />
+  <Token Text="NOT" UId="205" />
+  <Blank UId="206" />
+  <Access Scope="LocalVariable" UId="207">
+    <Symbol UId="208">
+      <Component Name="oOpen" UId="209" />
+    </Symbol>
+  </Access>
+  <Blank UId="210" />
+  <Token Text="AND" UId="211" />
+  <Blank UId="212" />
+  <Token Text="NOT" UId="213" />
+  <Blank UId="214" />
+  <Access Scope="LocalVariable" UId="215">
+    <Symbol UId="216">
+      <Component Name="oClose" UId="217" />
+    </Symbol>
+  </Access>
+  <Blank UId="218" />
+  <Token Text="AND" UId="219" />
+  <Blank UId="220" />
+  <Access Scope="LocalVariable" UId="221">
+    <Symbol UId="222">
+      <Component Name="iCloseWithoutPart" UId="223" />
+    </Symbol>
+  </Access>
+  <Blank UId="224" />
+  <Token Text=";" UId="225" />
+  <NewLine UId="226" />
+  <Blank Num="4" UId="227" />
+  <NewLine UId="228" />
+  <Blank Num="4" UId="229" />
+  <LineComment UId="230">
+    <Text UId="231"> State : Close with Part</Text>
+  </LineComment>
+  <NewLine UId="232" />
+  <Blank Num="4" UId="233" />
+  <Access Scope="LocalVariable" UId="234">
+    <Symbol UId="235">
+      <Component Name="oStateCloseWithPart" UId="236" />
+    </Symbol>
+  </Access>
+  <Blank UId="237" />
+  <Token Text=":=" UId="238" />
+  <Blank UId="239" />
+  <Token Text="NOT" UId="240" />
+  <Blank UId="241" />
+  <Access Scope="LocalVariable" UId="242">
+    <Symbol UId="243">
+      <Component Name="iOpen" UId="244" />
+    </Symbol>
+  </Access>
+  <Blank UId="245" />
+  <Token Text="AND" UId="246" />
+  <Blank UId="247" />
+  <Token Text="NOT" UId="248" />
+  <Blank UId="249" />
+  <Access Scope="LocalVariable" UId="250">
+    <Symbol UId="251">
+      <Component Name="oOpen" UId="252" />
+    </Symbol>
+  </Access>
+  <Blank UId="253" />
+  <Token Text="AND" UId="254" />
+  <Blank UId="255" />
+  <Token Text="NOT" UId="256" />
+  <Blank UId="257" />
+  <Access Scope="LocalVariable" UId="258">
+    <Symbol UId="259">
+      <Component Name="oClose" UId="260" />
+    </Symbol>
+  </Access>
+  <Blank UId="261" />
+  <Token Text="AND" UId="262" />
+  <Blank UId="263" />
+  <Token Text="NOT" UId="264" />
+  <Blank UId="265" />
+  <Access Scope="LocalVariable" UId="266">
+    <Symbol UId="267">
+      <Component Name="iCloseWithoutPart" UId="268" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="269" />
+  <NewLine UId="270" />
+  <Token Text="END_REGION" UId="271" />
+  <NewLine Num="2" UId="272" />
+  <Token Text="REGION" UId="273" />
+  <Blank UId="274" />
+  <Text UId="275">Monitoring Timer</Text>
+  <NewLine UId="276" />
+  <Blank Num="4" UId="277" />
+  <Access Scope="LocalVariable" UId="278">
+    <Symbol UId="279">
+      <Component Name="sMonitorTimer" UId="280" />
+    </Symbol>
+  </Access>
+  <Access Scope="Call" UId="281">
+    <Instruction UId="282">
+      <Token Text="(" UId="283" />
+      <Parameter Name="IN" UId="284">
+        <Blank UId="285" />
+        <Token Text=":=" UId="286" />
+        <Blank UId="287" />
+        <Token Text="(" UId="288" />
+        <Access Scope="LocalVariable" UId="289">
+          <Symbol UId="290">
+            <Component Name="oOpen" UId="291" />
+          </Symbol>
+        </Access>
+        <Blank UId="292" />
+        <Token Text="AND" UId="293" />
+        <Blank UId="294" />
+        <Token Text="NOT" UId="295" />
+        <Blank UId="296" />
+        <Access Scope="LocalVariable" UId="297">
+          <Symbol UId="298">
+            <Component Name="oStateOpen" UId="299" />
+          </Symbol>
+        </Access>
+        <Token Text=")" UId="300" />
+        <Blank UId="301" />
+        <Token Text="OR" UId="302" />
+        <NewLine UId="303" />
+        <Blank Num="19" UId="304" />
+        <Token Text="(" UId="305" />
+        <Access Scope="LocalVariable" UId="306">
+          <Symbol UId="307">
+            <Component Name="oClose" UId="308" />
+          </Symbol>
+        </Access>
+        <Blank UId="309" />
+        <Token Text="AND" UId="310" />
+        <Blank UId="311" />
+        <Token Text="(" UId="312" />
+        <Token Text="NOT" UId="313" />
+        <Blank UId="314" />
+        <Access Scope="LocalVariable" UId="315">
+          <Symbol UId="316">
+            <Component Name="oStateClose" UId="317" />
+          </Symbol>
+        </Access>
+        <Blank UId="318" />
+        <Token Text="AND" UId="319" />
+        <Blank UId="320" />
+        <Token Text="NOT" UId="321" />
+        <Blank UId="322" />
+        <Access Scope="LocalVariable" UId="323">
+          <Symbol UId="324">
+            <Component Name="oStateCloseWithPart" UId="325" />
+          </Symbol>
+        </Access>
+        <Token Text=")" UId="326" />
+        <Blank UId="327" />
+        <Token Text="OR" UId="328" />
+        <NewLine UId="329" />
+        <Blank Num="19" UId="330" />
+        <Token Text="(" UId="331" />
+        <Token Text="NOT" UId="332" />
+        <Blank UId="333" />
+        <Access Scope="LocalVariable" UId="334">
+          <Symbol UId="335">
+            <Component Name="oStateOpen" UId="336" />
+          </Symbol>
+        </Access>
+        <Blank UId="337" />
+        <Token Text="AND" UId="338" />
+        <Blank UId="339" />
+        <Token Text="NOT" UId="340" />
+        <Blank UId="341" />
+        <Access Scope="LocalVariable" UId="342">
+          <Symbol UId="343">
+            <Component Name="oStateClose" UId="344" />
+          </Symbol>
+        </Access>
+        <Blank UId="345" />
+        <Token Text="AND" UId="346" />
+        <Blank UId="347" />
+        <Token Text="NOT" UId="348" />
+        <Blank UId="349" />
+        <Access Scope="LocalVariable" UId="350">
+          <Symbol UId="351">
+            <Component Name="oStateCloseWithPart" UId="352" />
+          </Symbol>
+        </Access>
+        <Token Text=")" UId="353" />
+        <Blank UId="354" />
+        <Token Text="OR" UId="355" />
+        <NewLine UId="356" />
+        <Blank Num="19" UId="357" />
+        <Token Text="(" UId="358" />
+        <Access Scope="LocalVariable" UId="359">
+          <Symbol UId="360">
+            <Component Name="oStateOpen" UId="361" />
+          </Symbol>
+        </Access>
+        <Blank UId="362" />
+        <Token Text="AND" UId="363" />
+        <Blank UId="364" />
+        <Token Text="(" UId="365" />
+        <Access Scope="LocalVariable" UId="366">
+          <Symbol UId="367">
+            <Component Name="oStateClose" UId="368" />
+          </Symbol>
+        </Access>
+        <Blank UId="369" />
+        <Token Text="OR" UId="370" />
+        <Blank UId="371" />
+        <Access Scope="LocalVariable" UId="372">
+          <Symbol UId="373">
+            <Component Name="oStateCloseWithPart" UId="374" />
+          </Symbol>
+        </Access>
+        <Token Text=")" UId="375" />
+        <Token Text=")" UId="376" />
+        <Token Text=")" UId="377" />
+      </Parameter>
+      <Token Text="," UId="378" />
+      <NewLine UId="379" />
+      <Blank Num="19" UId="380" />
+      <Parameter Name="PT" UId="381">
+        <Blank UId="382" />
+        <Token Text=":=" UId="383" />
+        <Blank UId="384" />
+        <Access Scope="LocalVariable" UId="385">
+          <Symbol UId="386">
+            <Component Name="iMonitorTime" UId="387" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text=")" UId="388" />
+    </Instruction>
+  </Access>
+  <Token Text=";" UId="389" />
+  <NewLine UId="390" />
+  <Token Text="END_REGION" UId="391" />
+  <NewLine Num="2" UId="392" />
+  <Token Text="REGION" UId="393" />
+  <Blank UId="394" />
+  <Text UId="395">Error Codes</Text>
+  <NewLine UId="396" />
+  <Blank Num="4" UId="397" />
+  <Access Scope="LocalVariable" UId="398">
+    <Symbol UId="399">
+      <Component Name="oErrorCode" UId="400" />
+    </Symbol>
+  </Access>
+  <Blank UId="401" />
+  <Token Text=":=" UId="402" />
+  <Blank UId="403" />
+  <Access Scope="LiteralConstant" UId="404">
+    <Constant UId="405">
+      <ConstantValue UId="407">0</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="408" />
+  <Blank Num="8" UId="409" />
+  <LineComment UId="410">
+    <Text UId="411"> Code 0: No Error</Text>
+  </LineComment>
+  <NewLine UId="412" />
+  <Blank Num="4" UId="413" />
+  <Token Text="IF" UId="414" />
+  <Blank UId="415" />
+  <Access Scope="LocalVariable" UId="416">
+    <Symbol UId="417">
+      <Component Name="oOpen" UId="418" />
+    </Symbol>
+  </Access>
+  <Blank UId="419" />
+  <Token Text="AND" UId="420" />
+  <Blank UId="421" />
+  <Access Scope="LocalVariable" UId="422">
+    <Symbol UId="423">
+      <Component Name="sMonitorTimer" UId="424" />
+      <Token Text="." UId="425" />
+      <Component Name="Q" UId="426" />
+    </Symbol>
+  </Access>
+  <Blank UId="427" />
+  <Token Text="THEN" UId="428" />
+  <NewLine UId="429" />
+  <Blank Num="8" UId="430" />
+  <Access Scope="LocalVariable" UId="431">
+    <Symbol UId="432">
+      <Component Name="oErrorCode" UId="433" />
+    </Symbol>
+  </Access>
+  <Blank UId="434" />
+  <Token Text=":=" UId="435" />
+  <Blank UId="436" />
+  <Access Scope="LiteralConstant" UId="437">
+    <Constant UId="438">
+      <ConstantValue UId="440">1</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="441" />
+  <Blank Num="4" UId="442" />
+  <LineComment UId="443">
+    <Text UId="444"> Code 1: Error Open Command Plus</Text>
+  </LineComment>
+  <NewLine UId="445" />
+  <Blank Num="4" UId="446" />
+  <Token Text="ELSIF" UId="447" />
+  <Blank UId="448" />
+  <Access Scope="LocalVariable" UId="449">
+    <Symbol UId="450">
+      <Component Name="oClose" UId="451" />
+    </Symbol>
+  </Access>
+  <Blank UId="452" />
+  <Token Text="AND" UId="453" />
+  <Blank UId="454" />
+  <Access Scope="LocalVariable" UId="455">
+    <Symbol UId="456">
+      <Component Name="sMonitorTimer" UId="457" />
+      <Token Text="." UId="458" />
+      <Component Name="Q" UId="459" />
+    </Symbol>
+  </Access>
+  <Blank UId="460" />
+  <Token Text="THEN" UId="461" />
+  <NewLine UId="462" />
+  <Blank Num="8" UId="463" />
+  <Access Scope="LocalVariable" UId="464">
+    <Symbol UId="465">
+      <Component Name="oErrorCode" UId="466" />
+    </Symbol>
+  </Access>
+  <Blank UId="467" />
+  <Token Text=":=" UId="468" />
+  <Blank UId="469" />
+  <Access Scope="LiteralConstant" UId="470">
+    <Constant UId="471">
+      <ConstantValue UId="473">2</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="474" />
+  <Blank Num="4" UId="475" />
+  <LineComment UId="476">
+    <Text UId="477"> Code 2: Error Close Command Minus</Text>
+  </LineComment>
+  <NewLine UId="478" />
+  <Blank Num="4" UId="479" />
+  <Token Text="ELSIF" UId="480" />
+  <Blank UId="481" />
+  <Token Text="NOT" UId="482" />
+  <Blank UId="483" />
+  <Access Scope="LocalVariable" UId="484">
+    <Symbol UId="485">
+      <Component Name="oStateOpen" UId="486" />
+    </Symbol>
+  </Access>
+  <Blank UId="487" />
+  <Token Text="AND" UId="488" />
+  <Blank UId="489" />
+  <Token Text="NOT" UId="490" />
+  <Blank UId="491" />
+  <Access Scope="LocalVariable" UId="492">
+    <Symbol UId="493">
+      <Component Name="oStateClose" UId="494" />
+    </Symbol>
+  </Access>
+  <Blank UId="495" />
+  <Token Text="AND" UId="496" />
+  <Blank UId="497" />
+  <Token Text="NOT" UId="498" />
+  <Blank UId="499" />
+  <Access Scope="LocalVariable" UId="500">
+    <Symbol UId="501">
+      <Component Name="oStateCloseWithPart" UId="502" />
+    </Symbol>
+  </Access>
+  <Blank UId="503" />
+  <Token Text="AND" UId="504" />
+  <Blank UId="505" />
+  <Access Scope="LocalVariable" UId="506">
+    <Symbol UId="507">
+      <Component Name="sMonitorTimer" UId="508" />
+      <Token Text="." UId="509" />
+      <Component Name="Q" UId="510" />
+    </Symbol>
+  </Access>
+  <Blank UId="511" />
+  <Token Text="THEN" UId="512" />
+  <NewLine UId="513" />
+  <Blank Num="8" UId="514" />
+  <Access Scope="LocalVariable" UId="515">
+    <Symbol UId="516">
+      <Component Name="oErrorCode" UId="517" />
+    </Symbol>
+  </Access>
+  <Blank UId="518" />
+  <Token Text=":=" UId="519" />
+  <Blank UId="520" />
+  <Access Scope="LiteralConstant" UId="521">
+    <Constant UId="522">
+      <ConstantValue UId="524">3</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="525" />
+  <Blank Num="4" UId="526" />
+  <LineComment UId="527">
+    <Text UId="528"> Code 3: Error Timeout Position OFF   </Text>
+  </LineComment>
+  <NewLine UId="529" />
+  <Blank Num="4" UId="530" />
+  <Token Text="ELSIF" UId="531" />
+  <Blank UId="532" />
+  <Access Scope="LocalVariable" UId="533">
+    <Symbol UId="534">
+      <Component Name="oStateOpen" UId="535" />
+    </Symbol>
+  </Access>
+  <Blank UId="536" />
+  <Token Text="AND" UId="537" />
+  <Blank UId="538" />
+  <Token Text="(" UId="539" />
+  <Access Scope="LocalVariable" UId="540">
+    <Symbol UId="541">
+      <Component Name="oStateClose" UId="542" />
+    </Symbol>
+  </Access>
+  <Blank UId="543" />
+  <Token Text="OR" UId="544" />
+  <Blank UId="545" />
+  <Access Scope="LocalVariable" UId="546">
+    <Symbol UId="547">
+      <Component Name="oStateCloseWithPart" UId="548" />
+    </Symbol>
+  </Access>
+  <Token Text=")" UId="549" />
+  <Blank UId="550" />
+  <Token Text="AND" UId="551" />
+  <Blank UId="552" />
+  <Access Scope="LocalVariable" UId="553">
+    <Symbol UId="554">
+      <Component Name="sMonitorTimer" UId="555" />
+      <Token Text="." UId="556" />
+      <Component Name="Q" UId="557" />
+    </Symbol>
+  </Access>
+  <Blank UId="558" />
+  <Token Text="THEN" UId="559" />
+  <NewLine UId="560" />
+  <Blank Num="8" UId="561" />
+  <Access Scope="LocalVariable" UId="562">
+    <Symbol UId="563">
+      <Component Name="oErrorCode" UId="564" />
+    </Symbol>
+  </Access>
+  <Blank UId="565" />
+  <Token Text=":=" UId="566" />
+  <Blank UId="567" />
+  <Access Scope="LiteralConstant" UId="568">
+    <Constant UId="569">
+      <ConstantValue UId="571">4</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="572" />
+  <Blank Num="4" UId="573" />
+  <LineComment UId="574">
+    <Text UId="575"> Code 4: Error Timeout Position ON       </Text>
+  </LineComment>
+  <NewLine UId="576" />
+  <Blank Num="4" UId="577" />
+  <Token Text="END_IF" UId="578" />
+  <Token Text=";" UId="579" />
+  <NewLine UId="580" />
+  <Token Text="END_REGION" UId="581" />
+</StructuredText></NetworkSource>
+          <ProgrammingLanguage>SCL</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="5" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="6" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="7" CompositionName="Items">
+                <AttributeList>
+                  <Culture>fr-FR</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="8" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="9" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="A" CompositionName="Items">
+                <AttributeList>
+                  <Culture>fr-FR</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <MultilingualText ID="B" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="C" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="D" CompositionName="Items">
+            <AttributeList>
+              <Culture>fr-FR</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Blocks.FB>
+</Document>

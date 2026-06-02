@@ -1,0 +1,682 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V20" />
+  <SW.Blocks.InstanceDB ID="0">
+    <AttributeList>
+      <InstanceOfName>FB_Maintenances</InstanceOfName>
+      <InstanceOfType>FB</InstanceOfType>
+      <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+  <Section Name="Input" />
+  <Section Name="Output" />
+  <Section Name="InOut" />
+  <Section Name="Static">
+    <Member Name="sCheckMachine" Datatype="&quot;FB_Maintenance&quot;">
+      <Sections>
+        <Section Name="Input" />
+        <Section Name="Output" />
+        <Section Name="InOut" />
+        <Section Name="Static">
+          <Member Name="sElement" Datatype="&quot;UDT_MaintenanceElement&quot;">
+            <Sections>
+              <Section Name="None">
+                <Member Name="RunTimeSec" Datatype="Real">
+                  <StartValue>0.0</StartValue>
+                </Member>
+                <Member Name="WarningThreshold" Datatype="Int">
+                  <StartValue>160</StartValue>
+                </Member>
+                <Member Name="AlarmThreshold" Datatype="Int">
+                  <StartValue>200</StartValue>
+                </Member>
+              </Section>
+            </Sections>
+          </Member>
+        </Section>
+      </Sections>
+    </Member>
+    <Member Name="sReplaceAirConditioningFilter" Datatype="&quot;FB_Maintenance&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+      <Sections>
+        <Section Name="Input" />
+        <Section Name="Output" />
+        <Section Name="InOut" />
+        <Section Name="Static">
+          <Member Name="sElement" Datatype="&quot;UDT_MaintenanceElement&quot;">
+            <Sections>
+              <Section Name="None">
+                <Member Name="RunTimeSec" Datatype="Real">
+                  <StartValue>0.0</StartValue>
+                </Member>
+                <Member Name="WarningThreshold" Datatype="Int">
+                  <StartValue>800</StartValue>
+                </Member>
+                <Member Name="AlarmThreshold" Datatype="Int">
+                  <StartValue>1000</StartValue>
+                </Member>
+              </Section>
+            </Sections>
+          </Member>
+        </Section>
+      </Sections>
+    </Member>
+    <Member Name="sMachineCooling_ReplaceWaterFilter" Datatype="&quot;FB_Maintenance&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+      <Sections>
+        <Section Name="Input" />
+        <Section Name="Output" />
+        <Section Name="InOut" />
+        <Section Name="Static">
+          <Member Name="sElement" Datatype="&quot;UDT_MaintenanceElement&quot;">
+            <Sections>
+              <Section Name="None">
+                <Member Name="WarningThreshold" Datatype="Int">
+                  <StartValue>800</StartValue>
+                </Member>
+                <Member Name="AlarmThreshold" Datatype="Int">
+                  <StartValue>1000</StartValue>
+                </Member>
+              </Section>
+            </Sections>
+          </Member>
+        </Section>
+      </Sections>
+    </Member>
+    <Member Name="sTermotekChiller_ChangeFilterAndWater" Datatype="&quot;FB_Maintenance&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+      <Sections>
+        <Section Name="Input" />
+        <Section Name="Output" />
+        <Section Name="InOut" />
+        <Section Name="Static">
+          <Member Name="sElement" Datatype="&quot;UDT_MaintenanceElement&quot;">
+            <Sections>
+              <Section Name="None">
+                <Member Name="WarningThreshold" Datatype="Int">
+                  <StartValue>1600</StartValue>
+                </Member>
+                <Member Name="AlarmThreshold" Datatype="Int">
+                  <StartValue>2000</StartValue>
+                </Member>
+              </Section>
+            </Sections>
+          </Member>
+        </Section>
+      </Sections>
+    </Member>
+    <Member Name="sCheckSafetySystem" Datatype="&quot;FB_Maintenance&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+      <Sections>
+        <Section Name="Input" />
+        <Section Name="Output" />
+        <Section Name="InOut" />
+        <Section Name="Static">
+          <Member Name="sElement" Datatype="&quot;UDT_MaintenanceElement&quot;">
+            <Sections>
+              <Section Name="None">
+                <Member Name="WarningThreshold" Datatype="Int">
+                  <StartValue>1600</StartValue>
+                </Member>
+                <Member Name="AlarmThreshold" Datatype="Int">
+                  <StartValue>2000</StartValue>
+                </Member>
+              </Section>
+            </Sections>
+          </Member>
+        </Section>
+      </Sections>
+    </Member>
+    <Member Name="sReplaceTipShellPeekGripper" Datatype="&quot;FB_Maintenance&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+      <Sections>
+        <Section Name="Input" />
+        <Section Name="Output" />
+        <Section Name="InOut" />
+        <Section Name="Static">
+          <Member Name="sElement" Datatype="&quot;UDT_MaintenanceElement&quot;">
+            <Sections>
+              <Section Name="None">
+                <Member Name="WarningThreshold" Datatype="Int">
+                  <StartValue>1600</StartValue>
+                </Member>
+                <Member Name="AlarmThreshold" Datatype="Int">
+                  <StartValue>2000</StartValue>
+                </Member>
+              </Section>
+            </Sections>
+          </Member>
+        </Section>
+      </Sections>
+    </Member>
+    <Member Name="sReplaceFiltersVacuumLoadingUnloading" Datatype="&quot;FB_Maintenance&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+      <Sections>
+        <Section Name="Input" />
+        <Section Name="Output" />
+        <Section Name="InOut" />
+        <Section Name="Static">
+          <Member Name="sElement" Datatype="&quot;UDT_MaintenanceElement&quot;">
+            <Sections>
+              <Section Name="None">
+                <Member Name="WarningThreshold" Datatype="Int">
+                  <StartValue>2400</StartValue>
+                </Member>
+                <Member Name="AlarmThreshold" Datatype="Int">
+                  <StartValue>3000</StartValue>
+                </Member>
+              </Section>
+            </Sections>
+          </Member>
+        </Section>
+      </Sections>
+    </Member>
+    <Member Name="sReplaceFiltersVacuumGenerator" Datatype="&quot;FB_Maintenance&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+      <Sections>
+        <Section Name="Input" />
+        <Section Name="Output" />
+        <Section Name="InOut" />
+        <Section Name="Static">
+          <Member Name="sElement" Datatype="&quot;UDT_MaintenanceElement&quot;">
+            <Sections>
+              <Section Name="None">
+                <Member Name="WarningThreshold" Datatype="Int">
+                  <StartValue>2400</StartValue>
+                </Member>
+                <Member Name="AlarmThreshold" Datatype="Int">
+                  <StartValue>3000</StartValue>
+                </Member>
+              </Section>
+            </Sections>
+          </Member>
+        </Section>
+      </Sections>
+    </Member>
+    <Member Name="sReplaceFilterAirDryer" Datatype="&quot;FB_Maintenance&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+      <Sections>
+        <Section Name="Input" />
+        <Section Name="Output" />
+        <Section Name="InOut" />
+        <Section Name="Static">
+          <Member Name="sElement" Datatype="&quot;UDT_MaintenanceElement&quot;">
+            <Sections>
+              <Section Name="None">
+                <Member Name="WarningThreshold" Datatype="Int">
+                  <StartValue>3200</StartValue>
+                </Member>
+                <Member Name="AlarmThreshold" Datatype="Int">
+                  <StartValue>4000</StartValue>
+                </Member>
+              </Section>
+            </Sections>
+          </Member>
+        </Section>
+      </Sections>
+    </Member>
+    <Member Name="sReplace5umFilter" Datatype="&quot;FB_Maintenance&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+      <Sections>
+        <Section Name="Input" />
+        <Section Name="Output" />
+        <Section Name="InOut" />
+        <Section Name="Static">
+          <Member Name="sElement" Datatype="&quot;UDT_MaintenanceElement&quot;">
+            <Sections>
+              <Section Name="None">
+                <Member Name="WarningThreshold" Datatype="Int">
+                  <StartValue>3200</StartValue>
+                </Member>
+                <Member Name="AlarmThreshold" Datatype="Int">
+                  <StartValue>4000</StartValue>
+                </Member>
+              </Section>
+            </Sections>
+          </Member>
+        </Section>
+      </Sections>
+    </Member>
+    <Member Name="sReplace01umFilter" Datatype="&quot;FB_Maintenance&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+      <Sections>
+        <Section Name="Input" />
+        <Section Name="Output" />
+        <Section Name="InOut" />
+        <Section Name="Static">
+          <Member Name="sElement" Datatype="&quot;UDT_MaintenanceElement&quot;">
+            <Sections>
+              <Section Name="None">
+                <Member Name="WarningThreshold" Datatype="Int">
+                  <StartValue>3200</StartValue>
+                </Member>
+                <Member Name="AlarmThreshold" Datatype="Int">
+                  <StartValue>4000</StartValue>
+                </Member>
+              </Section>
+            </Sections>
+          </Member>
+        </Section>
+      </Sections>
+    </Member>
+    <Member Name="sReplaceActiveCarbonFilter" Datatype="&quot;FB_Maintenance&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+      <Sections>
+        <Section Name="Input" />
+        <Section Name="Output" />
+        <Section Name="InOut" />
+        <Section Name="Static">
+          <Member Name="sElement" Datatype="&quot;UDT_MaintenanceElement&quot;">
+            <Sections>
+              <Section Name="None">
+                <Member Name="WarningThreshold" Datatype="Int">
+                  <StartValue>3200</StartValue>
+                </Member>
+                <Member Name="AlarmThreshold" Datatype="Int">
+                  <StartValue>4000</StartValue>
+                </Member>
+              </Section>
+            </Sections>
+          </Member>
+        </Section>
+      </Sections>
+    </Member>
+    <Member Name="sUTLExtraction_ReplaceParticleFilter" Datatype="&quot;FB_Maintenance&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+      <Sections>
+        <Section Name="Input" />
+        <Section Name="Output" />
+        <Section Name="InOut" />
+        <Section Name="Static">
+          <Member Name="sElement" Datatype="&quot;UDT_MaintenanceElement&quot;">
+            <Sections>
+              <Section Name="None">
+                <Member Name="WarningThreshold" Datatype="Int">
+                  <StartValue>3200</StartValue>
+                </Member>
+                <Member Name="AlarmThreshold" Datatype="Int">
+                  <StartValue>4000</StartValue>
+                </Member>
+              </Section>
+            </Sections>
+          </Member>
+        </Section>
+      </Sections>
+    </Member>
+    <Member Name="sUTLExtraction_ReplaceFilterCassetteAndActiveCarbonFilter" Datatype="&quot;FB_Maintenance&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+      <Sections>
+        <Section Name="Input" />
+        <Section Name="Output" />
+        <Section Name="InOut" />
+        <Section Name="Static">
+          <Member Name="sElement" Datatype="&quot;UDT_MaintenanceElement&quot;">
+            <Sections>
+              <Section Name="None">
+                <Member Name="WarningThreshold" Datatype="Int">
+                  <StartValue>3200</StartValue>
+                </Member>
+                <Member Name="AlarmThreshold" Datatype="Int">
+                  <StartValue>4000</StartValue>
+                </Member>
+              </Section>
+            </Sections>
+          </Member>
+        </Section>
+      </Sections>
+    </Member>
+    <Member Name="sReplaceSealOnSas" Datatype="&quot;FB_Maintenance&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+      <Sections>
+        <Section Name="Input" />
+        <Section Name="Output" />
+        <Section Name="InOut" />
+        <Section Name="Static">
+          <Member Name="sElement" Datatype="&quot;UDT_MaintenanceElement&quot;">
+            <Sections>
+              <Section Name="None">
+                <Member Name="WarningThreshold" Datatype="Int">
+                  <StartValue>4800</StartValue>
+                </Member>
+                <Member Name="AlarmThreshold" Datatype="Int">
+                  <StartValue>6000</StartValue>
+                </Member>
+              </Section>
+            </Sections>
+          </Member>
+        </Section>
+      </Sections>
+    </Member>
+    <Member Name="sGreaseAxes" Datatype="&quot;FB_Maintenance&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+      <Sections>
+        <Section Name="Input" />
+        <Section Name="Output" />
+        <Section Name="InOut" />
+        <Section Name="Static">
+          <Member Name="sElement" Datatype="&quot;UDT_MaintenanceElement&quot;">
+            <Sections>
+              <Section Name="None">
+                <Member Name="WarningThreshold" Datatype="Int">
+                  <StartValue>4800</StartValue>
+                </Member>
+                <Member Name="AlarmThreshold" Datatype="Int">
+                  <StartValue>6000</StartValue>
+                </Member>
+              </Section>
+            </Sections>
+          </Member>
+        </Section>
+      </Sections>
+    </Member>
+    <Member Name="sMaintenance_16" Datatype="&quot;FB_Maintenance&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="sMaintenance_17" Datatype="&quot;FB_Maintenance&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="sMaintenance_18" Datatype="&quot;FB_Maintenance&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="sMaintenance_19" Datatype="&quot;FB_Maintenance&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="sMaintenance_20" Datatype="&quot;FB_Maintenance&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="sMaintenance_21" Datatype="&quot;FB_Maintenance&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="sMaintenance_22" Datatype="&quot;FB_Maintenance&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="sMaintenance_23" Datatype="&quot;FB_Maintenance&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="sMaintenance_24" Datatype="&quot;FB_Maintenance&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="sMaintenance_25" Datatype="&quot;FB_Maintenance&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="sMaintenance_26" Datatype="&quot;FB_Maintenance&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="sMaintenance_27" Datatype="&quot;FB_Maintenance&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="sMaintenance_28" Datatype="&quot;FB_Maintenance&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="sMaintenance_29" Datatype="&quot;FB_Maintenance&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="sMaintenance_30" Datatype="&quot;FB_Maintenance&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="sMaintenance_31" Datatype="&quot;FB_Maintenance&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="sMaintenance_32" Datatype="&quot;FB_Maintenance&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="sMaintenance_33" Datatype="&quot;FB_Maintenance&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="sMaintenance_34" Datatype="&quot;FB_Maintenance&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="sMaintenance_35" Datatype="&quot;FB_Maintenance&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="sMaintenance_36" Datatype="&quot;FB_Maintenance&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="sMaintenance_37" Datatype="&quot;FB_Maintenance&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="sMaintenance_38" Datatype="&quot;FB_Maintenance&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="sMaintenance_39" Datatype="&quot;FB_Maintenance&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="sMaintenance_40" Datatype="&quot;FB_Maintenance&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="sMaintenance_41" Datatype="&quot;FB_Maintenance&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="sMaintenance_42" Datatype="&quot;FB_Maintenance&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="sMaintenance_43" Datatype="&quot;FB_Maintenance&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="sMaintenance_44" Datatype="&quot;FB_Maintenance&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="sMaintenance_45" Datatype="&quot;FB_Maintenance&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="sMaintenance_46" Datatype="&quot;FB_Maintenance&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="sMaintenance_47" Datatype="&quot;FB_Maintenance&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="sMaintenance_48" Datatype="&quot;FB_Maintenance&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="sMaintenance_49" Datatype="&quot;FB_Maintenance&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="sMaintenance_50" Datatype="&quot;FB_Maintenance&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="sMaintenance_51" Datatype="&quot;FB_Maintenance&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="sMaintenance_52" Datatype="&quot;FB_Maintenance&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="sMaintenance_53" Datatype="&quot;FB_Maintenance&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="sMaintenance_54" Datatype="&quot;FB_Maintenance&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="sMaintenance_55" Datatype="&quot;FB_Maintenance&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="sMaintenance_56" Datatype="&quot;FB_Maintenance&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="sMaintenance_57" Datatype="&quot;FB_Maintenance&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="sMaintenance_58" Datatype="&quot;FB_Maintenance&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="sMaintenance_59" Datatype="&quot;FB_Maintenance&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="sMaintenance_60" Datatype="&quot;FB_Maintenance&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="sMaintenance_61" Datatype="&quot;FB_Maintenance&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="sMaintenance_62" Datatype="&quot;FB_Maintenance&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="sMaintenance_63" Datatype="&quot;FB_Maintenance&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+  </Section>
+</Sections></Interface>
+      <Name>DB_Maintenances</Name>
+      <Namespace />
+      <Number>20</Number>
+      <ProgrammingLanguage>DB</ProgrammingLanguage>
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="3" CompositionName="Items">
+            <AttributeList>
+              <Culture>fr-FR</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <MultilingualText ID="4" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="5" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="6" CompositionName="Items">
+            <AttributeList>
+              <Culture>fr-FR</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Blocks.InstanceDB>
+</Document>

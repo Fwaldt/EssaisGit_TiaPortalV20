@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V20" />
+  <SW.Blocks.GlobalDB ID="0">
+    <AttributeList>
+      <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+  <Section Name="Static">
+    <Member Name="WarmUpOn" Datatype="Bool">
+      <StartValue>FALSE</StartValue>
+    </Member>
+    <Member Name="WarmUpTime" Datatype="Real">
+      <StartValue>30.0</StartValue>
+    </Member>
+    <Member Name="KeyLaserOn" Datatype="Bool">
+      <StartValue>TRUE</StartValue>
+    </Member>
+    <Member Name="Shutter_laser_closed" Datatype="Bool">
+      <StartValue>FALSE</StartValue>
+    </Member>
+    <Member Name="Sonplas" Datatype="Struct">
+      <Member Name="LastMeasure" Datatype="Real" />
+      <Member Name="CurrentCorrection" Datatype="Real" />
+      <Member Name="CouplerOk" Datatype="Bool" />
+      <Member Name="Ready" Datatype="Bool" />
+    </Member>
+  </Section>
+</Sections></Interface>
+      <MemoryLayout>Optimized</MemoryLayout>
+      <MemoryReserve>100</MemoryReserve>
+      <Name>DB_HMIStatus</Name>
+      <Namespace />
+      <Number>95</Number>
+      <ProgrammingLanguage>DB</ProgrammingLanguage>
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="3" CompositionName="Items">
+            <AttributeList>
+              <Culture>fr-FR</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <MultilingualText ID="4" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="5" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="6" CompositionName="Items">
+            <AttributeList>
+              <Culture>fr-FR</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Blocks.GlobalDB>
+</Document>

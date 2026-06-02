@@ -1,0 +1,3545 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V20" />
+  <SW.Types.PlcStruct ID="0">
+    <AttributeList>
+      <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+  <Section Name="None">
+    <Member Name="f0_0" Datatype="Bool" />
+    <Member Name="f0_1" Datatype="Bool" />
+    <Member Name="f0_2" Datatype="Bool" />
+    <Member Name="A_DRF" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Activate DRF</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Activer DRF</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_SBL" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Activate single block</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Activer bloc par bloc</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_M01" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Activate M01</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Activer M01</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_DRY" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Activate dry run feedrate</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Activer avance marche d'essai</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="f0_7" Datatype="Bool" />
+    <Member Name="A_Ref" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Activate referencing</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Activer référencement</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_ProtZone" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Enable protection zones</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Activer zones de protection</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_SynOff" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Synchronous action off</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Action synchrone désactivée</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_TM_TimOut" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Activate time-out (TM)</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Activer timeout (TM)</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_CLC_Stop" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">CLC stop</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Stop CLC</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_CLC_OR" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">CLC override</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Correction CLC</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_PLC_ActCompl" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">PLC action completed</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Action AP terminée</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_ProgTest" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Activate program test</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Activer test de programme</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_SKP0" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Activate skip block \0</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Activer ignorer bloc \0</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_SKP1" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Activate skip block \1</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Activer ignorer bloc \1</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_SKP2" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Activate skip block \2</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Activer ignorer bloc \2</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_SKP3" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Activate skip block \3</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Activer ignorer bloc \3</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_SKP4" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Activate skip block \4</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Activer ignorer bloc \4</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_SKP5" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Activate skip block \5</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Activer ignorer bloc \5</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_SKP6" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Activate skip block \6</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Activer ignorer bloc \6</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_SKP7" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Activate skip block \7</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Activer ignorer bloc \7</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_StrokEnab" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Stroke enable</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Activer course</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_ManStrokEnab" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Manual stroke enable</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Activation manuelle de la course</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_StrokSup" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Stroke suppression</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Inhibition de course</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_StrokDelayed" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Stroke delayed</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Course retardée</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_StrokStop" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Stroke not operating</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Course inopérante</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_ManRelStroke2" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Manual release of stroke 2</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Déblocage manuel de la course 2</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A3_6" Datatype="Bool" />
+    <Member Name="A3_7" Datatype="Bool" />
+    <Member Name="A_FD_OR" Datatype="Byte">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Feedrate override</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Correction d'avance</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_RT_OR" Datatype="Byte">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Rapid traverse override</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Correction marche rapide</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_FDdisable" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Feed disable</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Désactiver avance</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_RIdisable" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Read-in disable</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Désactiver importation</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_DeleteDTG" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Delete distance to go</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Effacer la distance restante à parcourir</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_SP_Clear" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Delete UP number of passes</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Supprimer nombre UP de passes</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_ProgAbort" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Program level abort</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Abandon niveau de programme</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_F_Limit" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Tool path feedrate limitation</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Trajectoire d'outil limitation d'avance</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_RT_ORA" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Rapid traverse override active</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Correction marche rapide active</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_FD_ORA" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Feedrate override active</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Correction d'avance active</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_NCStartDisabl" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">NC start disable</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Désactiver Départ CN</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_NCStart" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">NC start</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Départ CN</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_NCStopBlock" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">NC stop at block limit</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Arrêt CN à la limite de bloc</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_NCStop" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">NC stop</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Arrêt CN</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_NCStopASp" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">NC stop axes plus spindle</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Arrêt CN axes et broche</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_SuppStartLock" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Suppress Start Lock</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Inhiber blocage de démarrage</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_CfgStopFunc" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Activate configured stop function</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Activer la fonction d'arrêt configuré</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_Reset" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Reset</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Reset</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_MRP" Datatype="Array[1..10] of Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Activate machine-related protection zone [1..10]</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Activer zone de protection référencée dans le SCM [1..10]</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_CSP" Datatype="Array[1..10] of Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Activate channel-specific protection zone [1..10]</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Activer zone de protection spécifique au canal [1..10]</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_Geo" Datatype="Array[1..3] of Struct">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Control signals for geometry axis [1..3]</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Signaux de commande pour axe géométrique [1..3]</MultiLanguageText>
+      </Comment>
+      <Member Name="HW1" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Activate handwheel 1</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Activer manivelle 1</MultiLanguageText>
+        </Comment>
+        <Subelement Path="2">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Activate handwheel 1</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Activer manivelle 1</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="3">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Activate handwheel 1</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Activer manivelle 1</MultiLanguageText>
+          </Comment>
+        </Subelement>
+      </Member>
+      <Member Name="HW2" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Activate handwheel 2</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Activer manivelle 2</MultiLanguageText>
+        </Comment>
+        <Subelement Path="2">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Activate handwheel 2</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Activer manivelle 2</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="3">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Activate handwheel 2</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Activer manivelle 2</MultiLanguageText>
+          </Comment>
+        </Subelement>
+      </Member>
+      <Member Name="HW3" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Activate handwheel 3</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Activer manivelle 3</MultiLanguageText>
+        </Comment>
+        <Subelement Path="2">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Activate handwheel 3</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Activer manivelle 3</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="3">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Activate handwheel 3</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Activer manivelle 3</MultiLanguageText>
+          </Comment>
+        </Subelement>
+      </Member>
+      <Member Name="FDStop" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Feedrate stop</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Arrêt avance</MultiLanguageText>
+        </Comment>
+        <Subelement Path="2">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Feedrate stop</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Arrêt avance</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="3">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Feedrate stop</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Arrêt avance</MultiLanguageText>
+          </Comment>
+        </Subelement>
+      </Member>
+      <Member Name="Disabl" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Traversing key disable</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Désactiver la touche de déplacement</MultiLanguageText>
+        </Comment>
+        <Subelement Path="2">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Traversing key disable</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Désactiver la touche de déplacement</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="3">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Traversing key disable</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Désactiver la touche de déplacement</MultiLanguageText>
+          </Comment>
+        </Subelement>
+      </Member>
+      <Member Name="RapidTrOR" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Rapid traverse override</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Correction marche rapide</MultiLanguageText>
+        </Comment>
+        <Subelement Path="2">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Rapid traverse override</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Correction marche rapide</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="3">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Rapid traverse override</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Correction marche rapide</MultiLanguageText>
+          </Comment>
+        </Subelement>
+      </Member>
+      <Member Name="Minus" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Traversing key minus</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Touche de déplacement moins</MultiLanguageText>
+        </Comment>
+        <Subelement Path="2">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Traversing key minus</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Touche de déplacement moins</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="3">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Traversing key minus</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Touche de déplacement moins</MultiLanguageText>
+          </Comment>
+        </Subelement>
+      </Member>
+      <Member Name="Plus" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Traversing key plus</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Touche de déplacement plus</MultiLanguageText>
+        </Comment>
+        <Subelement Path="2">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Traversing key plus</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Touche de déplacement plus</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="3">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Traversing key plus</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Touche de déplacement plus</MultiLanguageText>
+          </Comment>
+        </Subelement>
+      </Member>
+      <Member Name="INC1" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">INC 1</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">INC 1</MultiLanguageText>
+        </Comment>
+        <Subelement Path="2">
+          <Comment>
+            <MultiLanguageText Lang="en-US">INC 1</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">INC 1</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="3">
+          <Comment>
+            <MultiLanguageText Lang="en-US">INC 1</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">INC 1</MultiLanguageText>
+          </Comment>
+        </Subelement>
+      </Member>
+      <Member Name="INC10" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">INC 10</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">INC 10</MultiLanguageText>
+        </Comment>
+        <Subelement Path="2">
+          <Comment>
+            <MultiLanguageText Lang="en-US">INC 10</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">INC 10</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="3">
+          <Comment>
+            <MultiLanguageText Lang="en-US">INC 10</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">INC 10</MultiLanguageText>
+          </Comment>
+        </Subelement>
+      </Member>
+      <Member Name="INC100" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">INC 100</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">INC 100</MultiLanguageText>
+        </Comment>
+        <Subelement Path="2">
+          <Comment>
+            <MultiLanguageText Lang="en-US">INC 100</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">INC 100</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="3">
+          <Comment>
+            <MultiLanguageText Lang="en-US">INC 100</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">INC 100</MultiLanguageText>
+          </Comment>
+        </Subelement>
+      </Member>
+      <Member Name="INC1000" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">INC 1000</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">INC 1000</MultiLanguageText>
+        </Comment>
+        <Subelement Path="2">
+          <Comment>
+            <MultiLanguageText Lang="en-US">INC 1000</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">INC 1000</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="3">
+          <Comment>
+            <MultiLanguageText Lang="en-US">INC 1000</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">INC 1000</MultiLanguageText>
+          </Comment>
+        </Subelement>
+      </Member>
+      <Member Name="INC10000" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">INC 10000</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">INC 10000</MultiLanguageText>
+        </Comment>
+        <Subelement Path="2">
+          <Comment>
+            <MultiLanguageText Lang="en-US">INC 10000</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">INC 10000</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="3">
+          <Comment>
+            <MultiLanguageText Lang="en-US">INC 10000</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">INC 10000</MultiLanguageText>
+          </Comment>
+        </Subelement>
+      </Member>
+      <Member Name="INCVar" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">INC variable</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Variable INC</MultiLanguageText>
+        </Comment>
+        <Subelement Path="2">
+          <Comment>
+            <MultiLanguageText Lang="en-US">INC variable</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Variable INC</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="3">
+          <Comment>
+            <MultiLanguageText Lang="en-US">INC variable</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Variable INC</MultiLanguageText>
+          </Comment>
+        </Subelement>
+      </Member>
+      <Member Name="ContManTravel" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Continuous manual travel</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Mode manuel continu</MultiLanguageText>
+        </Comment>
+        <Subelement Path="2">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Continuous manual travel</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Mode manuel continu</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="3">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Continuous manual travel</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Mode manuel continu</MultiLanguageText>
+          </Comment>
+        </Subelement>
+      </Member>
+      <Member Name="f1_7" Datatype="Bool" />
+      <Member Name="OEM" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">OEM signals</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Signaux OEM</MultiLanguageText>
+        </Comment>
+        <Subelement Path="2">
+          <Comment>
+            <MultiLanguageText Lang="en-US">OEM signals</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Signaux OEM</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="3">
+          <Comment>
+            <MultiLanguageText Lang="en-US">OEM signals</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Signaux OEM</MultiLanguageText>
+          </Comment>
+        </Subelement>
+      </Member>
+      <Member Name="InvHWDirOfRot" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Invert handwheel direction of rotation</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Inverser sens de rotation manivelle</MultiLanguageText>
+        </Comment>
+        <Subelement Path="2">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Invert handwheel direction of rotation</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Inverser sens de rotation manivelle</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="3">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Invert handwheel direction of rotation</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Inverser sens de rotation manivelle</MultiLanguageText>
+          </Comment>
+        </Subelement>
+      </Member>
+      <Member Name="f3_1" Datatype="Bool" />
+      <Member Name="f3_2" Datatype="Bool" />
+      <Member Name="f3_3" Datatype="Bool" />
+      <Member Name="f3_4" Datatype="Bool" />
+      <Member Name="f3_5" Datatype="Bool" />
+      <Member Name="f3_6" Datatype="Bool" />
+      <Member Name="f3_7" Datatype="Bool" />
+      <Subelement Path="1">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Control signals for geometry axis [1..3]</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Signaux de commande pour axe géométrique [1..3]</MultiLanguageText>
+        </Comment>
+      </Subelement>
+      <Subelement Path="2">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Control signals for geometry axis [1..3]</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Signaux de commande pour axe géométrique [1..3]</MultiLanguageText>
+        </Comment>
+      </Subelement>
+      <Subelement Path="3">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Control signals for geometry axis [1..3]</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Signaux de commande pour axe géométrique [1..3]</MultiLanguageText>
+        </Comment>
+      </Subelement>
+    </Member>
+    <Member Name="f24_0" Datatype="Bool" />
+    <Member Name="E_MMC_CfgStopFunc" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">HMI: configured stop function (CST) is selected</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">IHM : La fonction d'arrêt configuré (CST) est sélectionnée</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_MMC_AtStopSetOvrZero" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">HMI: Set to 0% for stop override</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">IHM : à l'arrêt, régler la correction sur 0 %</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_MMC_DRF" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">HMI DRF selected</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">HMI DRF sélectionné</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_MMC_M01AssocNC" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Select M01 associated with NC</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Sélectionner M01 associé à CN</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_MMC_M01" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">HMI M01 selected</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">HMI M01 sélectionné</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_MMC_DRY" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">HMI Dry-run feedrate selected</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">HMI Marche d'essai avance sélectionnée</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="f24_7" Datatype="Bool" />
+    <Member Name="E_MMC_REPOSPM_0" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">HMI REPOSPATHMODE 0</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">HMI REPOSPATHMODE 0</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_MMC_REPOSPM_1" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">HMI REPOSPATHMODE 1</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">HMI REPOSPATHMODE 1</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_MMC_REPOSPM_2" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">HMI REPOSPATHMODE 2</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">HMI REPOSPATHMODE 2</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_MMC_FD_OR4RT_OR" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">HMI Feedrate override for rapid traverse selected</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">HMI Correction d'avance marche rapide sélectionnée</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_MMC_REPOSMode" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">HMI REPOS MODE EDGE</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">HMI REPOS MODE EDGE</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="f25_5" Datatype="Bool" />
+    <Member Name="f25_6" Datatype="Bool" />
+    <Member Name="E_MMC_ProgTest" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Program test selected</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Test de programme sélectionné</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_MMC_SKP0" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">HMI skip block selected \0</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">HMI Ignorer bloc sélectionné \0</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_MMC_SKP1" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">HMI skip block selected \1</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">HMI Ignorer bloc sélectionné \1</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_MMC_SKP2" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">HMI skip block selected \2</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">HMI Ignorer bloc sélectionné \2</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_MMC_SKP3" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">HMI skip block selected \3</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">HMI Ignorer bloc sélectionné \3</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_MMC_SKP4" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">HMI skip block selected \4</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">HMI Ignorer bloc sélectionné \4</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_MMC_SKP5" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">HMI skip block selected \5</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">HMI Ignorer bloc sélectionné \5</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_MMC_SKP6" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">HMI skip block selected \6</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">HMI Ignorer bloc sélectionné \6</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_MMC_SKP7" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">HMI skip block selected \7</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">HMI Ignorer bloc sélectionné \7</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_MMC_SKP8" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">HMI skip block selected \8</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">HMI Ignorer bloc sélectionné \8</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_MMC_SKP9" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">HMI skip block selected \9</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">HMI Ignorer bloc sélectionné \9</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="f27_2" Datatype="Bool" />
+    <Member Name="f27_3" Datatype="Bool" />
+    <Member Name="f27_4" Datatype="Bool" />
+    <Member Name="f27_5" Datatype="Bool" />
+    <Member Name="f27_6" Datatype="Bool" />
+    <Member Name="f27_7" Datatype="Bool" />
+    <Member Name="A_OEM" Datatype="Byte" />
+    <Member Name="A_FixedFD1" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Activate fixed feedrate 1</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Activer l'avance fixe 1</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_FixedFD2" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Activate fixed feedrate 2</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Activer l'avance fixe 2</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_FixedFD3" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Activate fixed feedrate 3</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Activer l'avance fixe 3</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_FixedFD4" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Activate fixed feedrate 4</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Activer l'avance fixe 4</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_PTP_Travel" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Activate PTP traversal</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Activer déplacement PTP</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_DisablWP_Counter" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Deactivate workpiece counter</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Désactiver compteur de pièces</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_DisablWearMon" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Deactivate wear monitoring</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Désactiver surveillance d'usure</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_DontDisablTool" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Do not disable tool</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Ne pas désactiver outil</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_ContHW1" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Activate contour handwheel 1</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Activer manivelle de contour 1</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_ContHW2" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Activate contour handwheel 2</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Activer manivelle de contour 2</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_ContHW3" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Activate contour handwheel 3</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Activer manivelle de contour 3</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_ContHWsim" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Simulated contour handwheel on</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Manivelle de contour simulée Marche</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_ContHWneg" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Contour handwheel neg. route</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Manivelle de contour dépl. nég.</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_NCKrelatedM01" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Activate NCK-related M01</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Activer M01 relatif à la NCK</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_JOG_Circles" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">JOG in circles</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">JOG en cercles</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_NoToolChangeCmd" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">No tool change commands</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Aucun ordre de changement d'outil</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_REPOSPM_0" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">REPOSPATHMODE 0</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">REPOSPATHMODE 0</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_REPOSPM_1" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">REPOSPATHMODE 1</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">REPOSPATHMODE 1</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_REPOSPM_2" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">REPOSPATHMODE 2</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">REPOSPATHMODE 2</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="f31_3" Datatype="Bool" />
+    <Member Name="A_REPOSMode" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">REPOS MODE EDGE</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">REPOS MODE EDGE</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_InvCHWDirOfRot" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Inverting contour handwheel direction of rotation</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Inversion du sens de rotation de la manivelle</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_SKP8" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Activate skip block \8</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Activer ignorer bloc \8</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_SKP9" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Activate skip block \9</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Activer ignorer bloc \9</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_ExecExtern" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Execution from external source active</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Exécution à partir de source externe active</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="f32_1" Datatype="Bool" />
+    <Member Name="f32_2" Datatype="Bool" />
+    <Member Name="E_ActBlock" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Action block active</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Bloc d'action actif</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_BegBlock" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Approach block active</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Bloc d'accostage actif</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_M01" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">M0/M1 active</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">M0/M1 actif</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_LastActBlock" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Last action block active</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Dernier bloc d'action actif</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="f32_7" Datatype="Bool" />
+    <Member Name="E_Ref" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Referencing active</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Référencement actif</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_OrieToolholder" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Orientable toolholder active</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Porte-outil orientable actif</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_RevFD" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Revolutional feedrate active</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Avance par tour active</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_HWOverlay" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Handwheel override active</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Correction manivelle active</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_BlockSearch" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Block search active</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Recherche de blocs active</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_M30" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">M2/M30 active</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">M2/M30 actif</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_Transform" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Transformation active</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Transformation active</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_ProgTest" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Program test active</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Test de programme actif</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_OEMChan" Datatype="Byte">
+      <Comment>
+        <MultiLanguageText Lang="en-US">OEM channel signals feedback</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Signalisation en retour signaux de canal OEM</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_ProgRunning" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Program running</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Programme en cours d'exécution</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_ProgWait" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Program waiting</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Programme en attente</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_ProgStop" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Program stopped</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Programme arrêté</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_ProgInterrupt" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Program interrupted</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Programme interrompu</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_ProgAborted" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Program aborted</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Programme abandonné</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_ChanActive" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Channel active</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Canal actif</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_ChanInterrupt" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Channel interrupted</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Canal interrompu</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_ChanReset" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Channel reset</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Reset canal</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_StartReq" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Start request</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Demande de démarrage</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_StopReq" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Stop request</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Demande d'arrêt</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_AxesRef" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">All axes referenced</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Référencer tous les axes</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_AxesStop" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">All axes stationary</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Tous les axes à l'arrêt</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_IR_Activ" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Interrupt processing active</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Traitement d'interruption actif</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_ChanRO" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Channel ready for operation</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Canal prêt à fonctionner</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_NCKalarmChan" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Channel-specific NCK alarm present</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Alarme NCK spécifique à un canal présente</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_NCKalarmStop" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">NCK alarm with processing stop present</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Alarme NCK avec d'arrêt d'usinage présente</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_CHW1" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Contour handwheel 1 on</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Manivelle de contour 1</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_CHW2" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Contour handwheel 2 on</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Manivelle de contour 2</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_CHW3" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Contour handwheel 3 on</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Manivelle de contour 3</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_CLC" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">CLC active</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">CLC actif</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_CLCStopLL" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">CLC stopped lower limit</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">CLC arrêté limite inférieure</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_CLCStopUL" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">CLC stopped upper limit</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">CLC arrêté limite supérieure</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_RIEnabIgnored" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Read-in enable is ignored</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Activation Charger ignorée</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_StopBlkEndSBLsuppr" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Stop at block end with SBL is suppressed</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Inhiber arrêt sur fin de bloc avec SBL</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_StrokeEA" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Stroke release active</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Déblocage course actif</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_AcknManStrokEnab" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Acknowledgment of manual stroke release</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Acquittement déblocage manuel de course</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="f38_2" Datatype="Bool" />
+    <Member Name="f38_3" Datatype="Bool" />
+    <Member Name="f38_4" Datatype="Bool" />
+    <Member Name="f38_5" Datatype="Bool" />
+    <Member Name="f38_6" Datatype="Bool" />
+    <Member Name="f38_7" Datatype="Bool" />
+    <Member Name="E_ProtZoneNOK" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Protection zones not guaranteed</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Zones de protection non garanties</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_NCalarmWithProgStop" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">NC alarm with program stop</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Alarme CN avec arrêt du programme</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="f39_2" Datatype="Bool" />
+    <Member Name="E_ReducedDynamicsActive" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Reduced dynamics mode is active</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Le mode de dynamique réduite est actif</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_SblStopAtBlockEnd" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Stop at block end due to single block</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Arrêt en fin de bloc en raison du mode bloc par bloc</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_InvCHWDirOfRot" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Contour handwheel direction of rotation invert actively</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Inversion active du sens de rotation manivelle de contour</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_CfgStopFuncActive" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Configured stop function is activated</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">La fonction d'arrêt configuré est activée</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_CfgStopAtBlockEnd" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Stop at block end due to configured stop</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Arrêt en fin de bloc en raison de l'arrêt configuré</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_Geo" Datatype="Array[1..3] of Struct">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Status signals of geometry axis [1..3]</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Signaux d'état de l'axe géométrique [1..3]</MultiLanguageText>
+      </Comment>
+      <Member Name="HW1" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Handwheel 1 active</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Manivelle 1 active</MultiLanguageText>
+        </Comment>
+        <Subelement Path="2">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Handwheel 1 active</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Manivelle 1 active</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="3">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Handwheel 1 active</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Manivelle 1 active</MultiLanguageText>
+          </Comment>
+        </Subelement>
+      </Member>
+      <Member Name="HW2" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Handwheel 2 active</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Manivelle 2 active</MultiLanguageText>
+        </Comment>
+        <Subelement Path="2">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Handwheel 2 active</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Manivelle 2 active</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="3">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Handwheel 2 active</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Manivelle 2 active</MultiLanguageText>
+          </Comment>
+        </Subelement>
+      </Member>
+      <Member Name="HW3" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Handwheel 3 active</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Manivelle 3 active</MultiLanguageText>
+        </Comment>
+        <Subelement Path="2">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Handwheel 3 active</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Manivelle 3 active</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="3">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Handwheel 3 active</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Manivelle 3 active</MultiLanguageText>
+          </Comment>
+        </Subelement>
+      </Member>
+      <Member Name="f0_3" Datatype="Bool" />
+      <Member Name="TReqMinus" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Travel requests minus</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Demandes de déplacement moins</MultiLanguageText>
+        </Comment>
+        <Subelement Path="2">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Travel requests minus</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Demandes de déplacement moins</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="3">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Travel requests minus</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Demandes de déplacement moins</MultiLanguageText>
+          </Comment>
+        </Subelement>
+      </Member>
+      <Member Name="TReqPlus" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Travel requests plus</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Demandes de déplacement plus</MultiLanguageText>
+        </Comment>
+        <Subelement Path="2">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Travel requests plus</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Demandes de déplacement plus</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="3">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Travel requests plus</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Demandes de déplacement plus</MultiLanguageText>
+          </Comment>
+        </Subelement>
+      </Member>
+      <Member Name="TCMinus" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Traverse command minus</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Instruction de déplacement moins</MultiLanguageText>
+        </Comment>
+        <Subelement Path="2">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Traverse command minus</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Instruction de déplacement moins</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="3">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Traverse command minus</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Instruction de déplacement moins</MultiLanguageText>
+          </Comment>
+        </Subelement>
+      </Member>
+      <Member Name="TCPlus" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Traverse command plus</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Instruction de déplacement plus</MultiLanguageText>
+        </Comment>
+        <Subelement Path="2">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Traverse command plus</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Instruction de déplacement plus</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="3">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Traverse command plus</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Instruction de déplacement plus</MultiLanguageText>
+          </Comment>
+        </Subelement>
+      </Member>
+      <Member Name="INC1" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">INC 1 active</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">INC 1 active</MultiLanguageText>
+        </Comment>
+        <Subelement Path="2">
+          <Comment>
+            <MultiLanguageText Lang="en-US">INC 1 active</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">INC 1 active</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="3">
+          <Comment>
+            <MultiLanguageText Lang="en-US">INC 1 active</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">INC 1 active</MultiLanguageText>
+          </Comment>
+        </Subelement>
+      </Member>
+      <Member Name="INC10" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">INC 10 active</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">INC 10 active</MultiLanguageText>
+        </Comment>
+        <Subelement Path="2">
+          <Comment>
+            <MultiLanguageText Lang="en-US">INC 10 active</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">INC 10 active</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="3">
+          <Comment>
+            <MultiLanguageText Lang="en-US">INC 10 active</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">INC 10 active</MultiLanguageText>
+          </Comment>
+        </Subelement>
+      </Member>
+      <Member Name="INC100" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">INC 100 active</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">INC 100 active</MultiLanguageText>
+        </Comment>
+        <Subelement Path="2">
+          <Comment>
+            <MultiLanguageText Lang="en-US">INC 100 active</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">INC 100 active</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="3">
+          <Comment>
+            <MultiLanguageText Lang="en-US">INC 100 active</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">INC 100 active</MultiLanguageText>
+          </Comment>
+        </Subelement>
+      </Member>
+      <Member Name="INC1000" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">INC 1000 active</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">INC 1000 active</MultiLanguageText>
+        </Comment>
+        <Subelement Path="2">
+          <Comment>
+            <MultiLanguageText Lang="en-US">INC 1000 active</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">INC 1000 active</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="3">
+          <Comment>
+            <MultiLanguageText Lang="en-US">INC 1000 active</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">INC 1000 active</MultiLanguageText>
+          </Comment>
+        </Subelement>
+      </Member>
+      <Member Name="INC10000" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">INC 10000 active</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">INC 10000 active</MultiLanguageText>
+        </Comment>
+        <Subelement Path="2">
+          <Comment>
+            <MultiLanguageText Lang="en-US">INC 10000 active</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">INC 10000 active</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="3">
+          <Comment>
+            <MultiLanguageText Lang="en-US">INC 10000 active</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">INC 10000 active</MultiLanguageText>
+          </Comment>
+        </Subelement>
+      </Member>
+      <Member Name="INCVar" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">INC variable active</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Variable INC active</MultiLanguageText>
+        </Comment>
+        <Subelement Path="2">
+          <Comment>
+            <MultiLanguageText Lang="en-US">INC variable active</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Variable INC active</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="3">
+          <Comment>
+            <MultiLanguageText Lang="en-US">INC variable active</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Variable INC active</MultiLanguageText>
+          </Comment>
+        </Subelement>
+      </Member>
+      <Member Name="ContManTravelAct" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Continuous manual travel active</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Mode manuel continu actif</MultiLanguageText>
+        </Comment>
+        <Subelement Path="1">
+          <StartValue>false</StartValue>
+        </Subelement>
+        <Subelement Path="2">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Continuous manual travel active</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Mode manuel continu actif</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="3">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Continuous manual travel active</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Mode manuel continu actif</MultiLanguageText>
+          </Comment>
+        </Subelement>
+      </Member>
+      <Member Name="f1_7" Datatype="Bool">
+        <Subelement Path="1">
+          <StartValue>false</StartValue>
+        </Subelement>
+      </Member>
+      <Member Name="OEM" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">OEM signals</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Signaux OEM</MultiLanguageText>
+        </Comment>
+        <Subelement Path="2">
+          <Comment>
+            <MultiLanguageText Lang="en-US">OEM signals</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Signaux OEM</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="3">
+          <Comment>
+            <MultiLanguageText Lang="en-US">OEM signals</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Signaux OEM</MultiLanguageText>
+          </Comment>
+        </Subelement>
+      </Member>
+      <Member Name="InvHWDirOfRot" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Handwheel direction of rotation invert actively</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Inverser activement sens manivelle</MultiLanguageText>
+        </Comment>
+        <Subelement Path="2">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Handwheel direction of rotation invert actively</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Inverser activement sens manivelle</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="3">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Handwheel direction of rotation invert actively</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Inverser activement sens manivelle</MultiLanguageText>
+          </Comment>
+        </Subelement>
+      </Member>
+      <Member Name="f3_1" Datatype="Bool" />
+      <Member Name="f3_2" Datatype="Bool" />
+      <Member Name="f3_3" Datatype="Bool" />
+      <Member Name="f3_4" Datatype="Bool" />
+      <Member Name="f3_5" Datatype="Bool" />
+      <Member Name="f3_6" Datatype="Bool" />
+      <Member Name="f3_7" Datatype="Bool" />
+      <Member Name="f4" Datatype="Byte" />
+      <Subelement Path="1">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Status signals of geometry axis [1..3]</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Signaux d'état de l'axe géométrique [1..3]</MultiLanguageText>
+        </Comment>
+      </Subelement>
+      <Subelement Path="2">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Status signals of geometry axis [1..3]</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Signaux d'état de l'axe géométrique [1..3]</MultiLanguageText>
+        </Comment>
+      </Subelement>
+      <Subelement Path="3">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Status signals of geometry axis [1..3]</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Signaux d'état de l'axe géométrique [1..3]</MultiLanguageText>
+        </Comment>
+      </Subelement>
+    </Member>
+    <Member Name="M1Change" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">M function 1 change</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Fonction M 1 modification</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="M2Change" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">M function 2 change</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Fonction M 2 modification</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="M3Change" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">M function 3 change</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Fonction M 3 modification</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="M4Change" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">M function 4 change</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Fonction M 4 modification</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="M5Change" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">M function 5 change</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Fonction M 5 modification</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="f58_5" Datatype="Bool" />
+    <Member Name="f58_6" Datatype="Bool" />
+    <Member Name="f58_7" Datatype="Bool" />
+    <Member Name="M1NDec" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">M function 1 not decoded</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Fonction M 1 non décodée</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="M2NDec" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">M function 2 not decoded</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Fonction M 2 non décodée</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="M3NDec" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">M function 3 not decoded</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Fonction M 3 non décodée</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="M4NDec" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">M function 4 not decoded</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Fonction M 4 non décodée</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="M5NDec" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">M function 5 not decoded</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Fonction M 5 non décodée</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="f59_5" Datatype="Bool" />
+    <Member Name="f59_6" Datatype="Bool" />
+    <Member Name="f59_7" Datatype="Bool" />
+    <Member Name="S1Change" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">S function 1 change</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Fonction S 1 modification</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="S2Change" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">S function 2 change</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Fonction S 2 modification</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="S3Change" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">S function 3 change</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Fonction S 3 modification</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="f60_3" Datatype="Bool" />
+    <Member Name="S1Quick" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">S function 1 quick</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Fonction S 1 rapide</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="S2Quick" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">S function 2 quick</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Fonction S 2 rapide</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="S3Quick" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">S function 3 quick</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Fonction S 3 rapide</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="f60_7" Datatype="Bool" />
+    <Member Name="T1Change" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">T function 1 change</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Fonction T 1 modification</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="T2Change" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">T function 2 change</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Fonction T 2 modification</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="T3Change" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">T function 3 change</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Fonction T 3 modification</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="f61_3" Datatype="Bool" />
+    <Member Name="T1Quick" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">T function 1 quick</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Fonction T 1 rapide</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="T2Quick" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">T function 2 quick</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Fonction T 2 rapide</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="T3Quick" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">T function 3 quick</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Fonction T 3 rapide</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="f61_7" Datatype="Bool" />
+    <Member Name="D1Change" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">D function 1 change</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Fonction D 1 modification</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="D2Change" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">D function 2 change</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Fonction D 2 modification</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="D3Change" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">D function 3 change</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Fonction D 3 modification</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="f62_3" Datatype="Bool" />
+    <Member Name="D1Quick" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">D function 1 quick</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Fonction D 1 rapide</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="D2Quick" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">D function 2 quick</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Fonction D 2 rapide</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="D3Quick" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">D function 3 quick</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Fonction D 3 rapide</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="f62_7" Datatype="Bool" />
+    <Member Name="EChange" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">E function change</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Fonction E modification</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="f63_1" Datatype="Bool" />
+    <Member Name="f63_2" Datatype="Bool" />
+    <Member Name="f63_3" Datatype="Bool" />
+    <Member Name="EQuick" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">E function quick</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Fonction E rapide</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="f63_5" Datatype="Bool" />
+    <Member Name="f63_6" Datatype="Bool" />
+    <Member Name="f63_7" Datatype="Bool" />
+    <Member Name="H1Change" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">H function 1 change</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Fonction H 1 modification</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="H2Change" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">H function 2 change</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Fonction H 2 modification</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="H3Change" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">H function 3 change</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Fonction H 3 modification</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="f64_3" Datatype="Bool" />
+    <Member Name="H1Quick" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">H function 1 quick</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Fonction H 1 rapide</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="H2Quick" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">H function 2 quick</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Fonction H 2 rapide</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="H3Quick" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">H function 3 quick</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Fonction H 3 rapide</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="f64_7" Datatype="Bool" />
+    <Member Name="F1Change" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">F function 1 change</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Fonction F 1 modification</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="F2Change" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">F function 2 change</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Fonction F 2 modification</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="F3Change" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">F function 3 change</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Fonction F 3 modification</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="F4Change" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">F function 4 change</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Fonction F 4 modification</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="F5Change" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">F function 5 change</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Fonction F 5 modification</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="F6Change" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">F function 6 change</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Fonction F 6 modification</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="f65_6" Datatype="Bool" />
+    <Member Name="f65_7" Datatype="Bool" />
+    <Member Name="M1Quick" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">M function 1 quick</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Fonction M 1 rapide</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="M2Quick" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">M function 2 quick</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Fonction M 2 rapide</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="M3Quick" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">M function 3 quick</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Fonction M 3 rapide</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="M4Quick" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">M function 4 quick</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Fonction M 4 rapide</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="M5Quick" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">M function 5 quick</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Fonction M 5 rapide</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="f66_5" Datatype="Bool" />
+    <Member Name="f66_6" Datatype="Bool" />
+    <Member Name="f66_7" Datatype="Bool" />
+    <Member Name="F1Quick" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">F function 1 quick</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Fonction F 1 rapide</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="F2Quick" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">F function 2 quick</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Fonction F 2 rapide</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="F3Quick" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">F function 3 quick</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Fonction F 3 rapide</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="F4Quick" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">F function 4 quick</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Fonction F 4 rapide</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="F5Quick" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">F function 5 quick</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Fonction F 5 rapide</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="F6Quick" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">F function 6 quick</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Fonction F 6 rapide</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="f67_6" Datatype="Bool" />
+    <Member Name="f67_7" Datatype="Bool" />
+    <Member Name="ExtM1" Datatype="Int">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Extended address M function 1 (16 bit INT)</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Fonction M à adresse étendue 1 (16 bits INT)</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="M1" Datatype="DInt">
+      <Comment>
+        <MultiLanguageText Lang="en-US">M function 1 (DInt)</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Fonction M 1 (DInt)</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="ExtM2" Datatype="Int">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Extended address M function 1 (16 bit INT)</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Fonction M à adresse étendue 1 (16 bits INT)</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="M2" Datatype="DInt">
+      <Comment>
+        <MultiLanguageText Lang="en-US">M function 2 (DInt)</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Fonction M 2 (DInt)</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="ExtM3" Datatype="Int">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Extended address M function 1 (16 bit INT)</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Fonction M à adresse étendue 1 (16 bits INT)</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="M3" Datatype="DInt">
+      <Comment>
+        <MultiLanguageText Lang="en-US">M function 3 (DInt)</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Fonction M 3 (DInt)</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="ExtM4" Datatype="Int">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Extended address M function 1 (16 bit INT)</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Fonction M à adresse étendue 1 (16 bits INT)</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="M4" Datatype="DInt">
+      <Comment>
+        <MultiLanguageText Lang="en-US">M function 4 (DInt)</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Fonction M 4 (DInt)</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="ExtM5" Datatype="Int">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Extended address M function 1 (16 bit INT)</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Fonction M à adresse étendue 1 (16 bits INT)</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="M5" Datatype="DInt">
+      <Comment>
+        <MultiLanguageText Lang="en-US">M function 5 (DInt)</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Fonction M 5 (DInt)</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="ExtS1" Datatype="Int">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Extended address S function 1 (16 bit INT)</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Fonction S à adresse étendue 1 (16 bits INT)</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="S1" Datatype="Real">
+      <Comment>
+        <MultiLanguageText Lang="en-US">S function 1 (REAL)</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Fonction S 1 (REAL)</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="ExtS2" Datatype="Int">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Extended address S function 2 (16 bit INT)</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Fonction S à adresse étendue 2 (16 bits INT)</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="S2" Datatype="Real">
+      <Comment>
+        <MultiLanguageText Lang="en-US">S function 2 (REAL)</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Fonction S 2 (REAL)</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="ExtS3" Datatype="Int">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Extended address S function 3 (16 bit INT)</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Fonction S à adresse étendue 3 (16 bits INT)</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="S3" Datatype="Real">
+      <Comment>
+        <MultiLanguageText Lang="en-US">S function 3 (REAL)</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Fonction S 3 (REAL)</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="ExtT1" Datatype="Int">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Extended address T function 1 (16 bit INT)T : DINT; //T function (DInt)f122 : INT;f124 : INT;f126 : INT;   //Change in case of 8-digit T function</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Fonction T à adresse étendue 1 (16 Bit INT)T : DINT; //fonction T (DInt)f122 : INT;f124 : INT;f126 : INT;   //Modifier pour une fonction T à 8 chiffres</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="T1" Datatype="Int">
+      <Comment>
+        <MultiLanguageText Lang="en-US">T function 1 (INT)</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Fonction T 1 (INT)</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="ExtT2" Datatype="Int">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Extended address T function 2 (16 bit INT)</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Fonction T à adresse étendue 2 (16 bits INT)</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="T2" Datatype="Int">
+      <Comment>
+        <MultiLanguageText Lang="en-US">T function 2 (INT)</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Fonction T 2 (INT)</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="ExtT3" Datatype="Int">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Extended address T function 3 (16 bit INT)</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Fonction T à adresse étendue 3 (16 bits INT)</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="T3" Datatype="Int">
+      <Comment>
+        <MultiLanguageText Lang="en-US">T function 3 (INT)</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Fonction T 3 (INT)</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="ExtD1" Datatype="Byte">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Extended address D function 1 (8 bit INT)D : INT;f132 : INT;   //Change in case of 5-digit D function</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Fonction D à adresse étendue 1 (8 bits INT)D : INT;f132 : INT;   //Modifier pour une fonction D à 5 chiffres</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="D1" Datatype="Byte">
+      <Comment>
+        <MultiLanguageText Lang="en-US">D function 1 (8 bit INT)</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Fonction D 1 (8 bits INT)</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="ExtD2" Datatype="Byte">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Extended address D function 2 (8 bit INT)</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Fonction D à adresse étendue 2 (8 bits INT)</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="D2" Datatype="Byte">
+      <Comment>
+        <MultiLanguageText Lang="en-US">D function 2 (8 bit INT)</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Fonction D 2 (8 bits INT)</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="ExtD3" Datatype="Byte">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Extended address D function 3 (8 bit INT)</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Fonction D à adresse étendue 3 (8 bits INT)</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="D3" Datatype="Byte">
+      <Comment>
+        <MultiLanguageText Lang="en-US">D function 3 (8 bit INT)</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Fonction D 3 (8 bits INT)</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="ExtE" Datatype="Int">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Extended address D function 3 (16 bit INT)</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Fonction D à adresse étendue 3 (16 bits INT)</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E" Datatype="Real">
+      <Comment>
+        <MultiLanguageText Lang="en-US">E function (REAL)</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Fonction E (REAL)</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="ExtH1" Datatype="Int">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Extended address H function 1 (16 bit INT)</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Fonction H à adresse étendue 1 (16 bits INT)</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="H1" Datatype="Real">
+      <Comment>
+        <MultiLanguageText Lang="en-US">H function 1 (REAL), DInt also in DBD396</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Fonction H 1 (REAL), DInt également dans DBD396</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="ExtH2" Datatype="Int">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Extended address H function 2 (16 bit INT)</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Fonction H à adresse étendue 2 (16 bits INT)</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="H2" Datatype="Real">
+      <Comment>
+        <MultiLanguageText Lang="en-US">H function 2 (REAL), DInt also in DBD400</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Fonction H 2 (REAL), DInt également dans DBD400</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="ExtH3" Datatype="Int">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Extended address H function 3 (16 bit INT)</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Fonction H à adresse étendue 3 (16 bits INT)</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="H3" Datatype="Real">
+      <Comment>
+        <MultiLanguageText Lang="en-US">H function 3 (REAL), DInt also in DBD404</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Fonction H 3 (REAL), DInt également dans DBD404</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="ExtF1" Datatype="Int">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Extended address F function 1 (16 bit INT)</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Fonction F à adresse étendue 1 (16 bits INT)</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="F1" Datatype="Real">
+      <Comment>
+        <MultiLanguageText Lang="en-US">F function 1 (REAL)</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Fonction F 1 (REAL)</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="ExtF2" Datatype="Int">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Extended address F function 2 (16 bit INT)</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Fonction F à adresse étendue 2 (16 bits INT)</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="F2" Datatype="Real">
+      <Comment>
+        <MultiLanguageText Lang="en-US">F function 2 (REAL)</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Fonction F 2 (REAL)</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="ExtF3" Datatype="Int">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Extended address F function 3 (16 bit INT)</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Fonction F à adresse étendue 3 (16 bits INT)</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="F3" Datatype="Real">
+      <Comment>
+        <MultiLanguageText Lang="en-US">F function 3 (REAL)</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Fonction F 3 (REAL)</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="ExtF4" Datatype="Int">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Extended address F function 4 (16 bit INT)</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Fonction F à adresse étendue 4 (16 bits INT)</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="F4" Datatype="Real">
+      <Comment>
+        <MultiLanguageText Lang="en-US">F function 4 (REAL)</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Fonction F 4 (REAL)</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="ExtF5" Datatype="Int">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Extended address F function 5 (16 bit INT)</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Fonction F à adresse étendue 5 (16 bits INT)</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="F5" Datatype="Real">
+      <Comment>
+        <MultiLanguageText Lang="en-US">F function 5 (REAL)</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Fonction F 5 (REAL)</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="ExtF6" Datatype="Int">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Extended address F function 6 (16 bit INT)</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Fonction F à adresse étendue 6 (16 bits INT)</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="F6" Datatype="Real">
+      <Comment>
+        <MultiLanguageText Lang="en-US">F function 6 (REAL)</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Fonction F 6 (REAL)</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="MDyn" Datatype="Array[0..99] of Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Dynamic M functions [0..99]</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Fonctions M dynamiques [0..99]</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="GAct" Datatype="Array[1..64] of Byte">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Active G function of group [1..64]</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Fonction G active du groupe [1..64]</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_MRPactivated" Datatype="Array[1..10] of Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Machine-related protection zone [1..10] preactivated</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Zone de protection référencée dans le SCM [1..10] préactivé</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_CSPactivated" Datatype="Array[1..10] of Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Channel-specific protection zone [1..10] preactivated</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Zone de protection spécifique au canal [1..10] préactivée</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_MRPViolated" Datatype="Array[1..10] of Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Machine-related protection zone [1..10] violated</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Zone de protection référencée dans le SCM [1..10] dépassée</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_CSPViolated" Datatype="Array[1..10] of Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Channel-specific protection zone [1..10] violated from P4 on</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Zone de protection spécifique au canal [1..10] dépassée à partir de P4</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="f_280_0" Datatype="Bool" />
+    <Member Name="A_Str_Synon" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Request of syn.action to NCK</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Demande d'action synchrone vers NCK</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="f_280_2" Datatype="Bool" />
+    <Member Name="f_280_3" Datatype="Bool" />
+    <Member Name="f_280_4" Datatype="Bool" />
+    <Member Name="f_280_5" Datatype="Bool" />
+    <Member Name="f_280_6" Datatype="Bool" />
+    <Member Name="f_280_7" Datatype="Bool" />
+    <Member Name="f_281_0" Datatype="Bool" />
+    <Member Name="A_Str_Synfrom" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Request syn.action from NCK</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Demande d'action synchrone depuis NCK</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="f_281_2" Datatype="Bool" />
+    <Member Name="f_281_3" Datatype="Bool" />
+    <Member Name="f_281_4" Datatype="Bool" />
+    <Member Name="f_281_5" Datatype="Bool" />
+    <Member Name="f_281_6" Datatype="Bool" />
+    <Member Name="f_281_7" Datatype="Bool" />
+    <Member Name="f_282" Datatype="Int" />
+    <Member Name="f_284" Datatype="Int" />
+    <Member Name="f_286" Datatype="Int" />
+    <Member Name="f_288" Datatype="Int" />
+    <Member Name="f_290" Datatype="Int" />
+    <Member Name="f_292" Datatype="Int" />
+    <Member Name="f_294" Datatype="Int" />
+    <Member Name="f_296" Datatype="Int" />
+    <Member Name="f_298" Datatype="Int" />
+    <Member Name="A_SynDisabl" Datatype="Array[1..64] of Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Disable synchronous actions</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Désactiver actions synchrones</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_SynDisabled" Datatype="Array[1..64] of Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Synchronous actions disabled</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Actions synchrones désactivées</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_G00" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Active G functions</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Fonctions G actives</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="f316_1" Datatype="Bool" />
+    <Member Name="f316_2" Datatype="Bool" />
+    <Member Name="f316_3" Datatype="Bool" />
+    <Member Name="f316_4" Datatype="Bool" />
+    <Member Name="f316_5" Datatype="Bool" />
+    <Member Name="f316_6" Datatype="Bool" />
+    <Member Name="f316_7" Datatype="Bool" />
+    <Member Name="E_ExtLang" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">External language mode active</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Mode de langage externe actif</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_WS_Setp" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Workpiece setpoint reached</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Consigne pièce atteinte</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="f317_2" Datatype="Bool" />
+    <Member Name="f317_3" Datatype="Bool" />
+    <Member Name="f317_4" Datatype="Bool" />
+    <Member Name="E_DriveTest" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Travel request drive test</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Demande de déplacement test d'entraînement</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_PTP_Travel" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">PTP travel active</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Déplacement PTP actif</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_ToolMissing" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Tool missing</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Outil manquant</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_ASUP_Stop" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">ASUP stopped</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">ASUP arrêté</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_SearchAct" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Search active</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Recherche active</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_TOFF" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">TOFF active</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">TOFF actif</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_TOFFmovem" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">TOFF motion active</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Déplacement TOFF actif</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_StopDelayed" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Stop delayed</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Arrêt temporisé</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_AssM01" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Associated M01 active</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">M01 associé actif</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_DRY" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Dry-run feedrate active</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Marche d'essai avance active</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_Overstore" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Overstore active</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Overstore actif</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_REPOS_EdgeAckn" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">REPOS MODE EDGE ACKN</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">REPOS MODE EDGE ACKN</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_REPOS_PMode0" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">REPOS Path Mode Ackn 0</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">REPOS Path Mode Ackn 0</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_REPOS_PMode1" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">REPOS Path Mode Ackn 1</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">REPOS Path Mode Ackn 1</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_REPOS_PMode2" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">REPOS Path Mode Ackn 2</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">REPOS Path Mode Ackn 2</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_DelayFTS" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Delay FTS</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Temporisation FTS</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_REPOS_DEFERRA" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">REPOS DEFERRA L Chan</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">REPOS DEFERRA L Chan</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_Stop_NoDelayR" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Stop-delay area not accepted</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Plage de temporisation d'arrêt non acceptée</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_NoToolChangeCmd" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">No tool change command active</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Aucun ordre de changement d'outil actif</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_Ori" Datatype="Array[1..3] of Struct">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Control signals for orientation axes [1..3]</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Signaux de commande pour axes d'orientation [1..3]</MultiLanguageText>
+      </Comment>
+      <Member Name="HW1" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Activate handwheel 1</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Activer manivelle 1</MultiLanguageText>
+        </Comment>
+        <Subelement Path="2">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Activate handwheel 1</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Activer manivelle 1</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="3">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Activate handwheel 1</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Activer manivelle 1</MultiLanguageText>
+          </Comment>
+        </Subelement>
+      </Member>
+      <Member Name="HW2" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Activate handwheel 2</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Activer manivelle 2</MultiLanguageText>
+        </Comment>
+        <Subelement Path="2">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Activate handwheel 2</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Activer manivelle 2</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="3">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Activate handwheel 2</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Activer manivelle 2</MultiLanguageText>
+          </Comment>
+        </Subelement>
+      </Member>
+      <Member Name="HW3" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Activate handwheel 3</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Activer manivelle 3</MultiLanguageText>
+        </Comment>
+        <Subelement Path="2">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Activate handwheel 3</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Activer manivelle 3</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="3">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Activate handwheel 3</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Activer manivelle 3</MultiLanguageText>
+          </Comment>
+        </Subelement>
+      </Member>
+      <Member Name="FDStop" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Feedrate stop</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Arrêt avance</MultiLanguageText>
+        </Comment>
+        <Subelement Path="2">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Feedrate stop</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Arrêt avance</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="3">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Feedrate stop</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Arrêt avance</MultiLanguageText>
+          </Comment>
+        </Subelement>
+      </Member>
+      <Member Name="Disabl" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Traversing key lock</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Verrouiller touche de déplacement</MultiLanguageText>
+        </Comment>
+        <Subelement Path="2">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Traversing key lock</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Verrouiller touche de déplacement</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="3">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Traversing key lock</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Verrouiller touche de déplacement</MultiLanguageText>
+          </Comment>
+        </Subelement>
+      </Member>
+      <Member Name="RapidTrOR" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Rapid traverse override</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Correction marche rapide</MultiLanguageText>
+        </Comment>
+        <Subelement Path="2">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Rapid traverse override</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Correction marche rapide</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="3">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Rapid traverse override</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Correction marche rapide</MultiLanguageText>
+          </Comment>
+        </Subelement>
+      </Member>
+      <Member Name="Minus" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Traversing key minus</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Touche de déplacement moins</MultiLanguageText>
+        </Comment>
+        <Subelement Path="2">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Traversing key minus</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Touche de déplacement moins</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="3">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Traversing key minus</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Touche de déplacement moins</MultiLanguageText>
+          </Comment>
+        </Subelement>
+      </Member>
+      <Member Name="Plus" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Traversing key plus</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Touche de déplacement plus</MultiLanguageText>
+        </Comment>
+        <Subelement Path="2">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Traversing key plus</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Touche de déplacement plus</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="3">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Traversing key plus</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Touche de déplacement plus</MultiLanguageText>
+          </Comment>
+        </Subelement>
+      </Member>
+      <Member Name="INC1" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">INC 1 active</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">INC 1 active</MultiLanguageText>
+        </Comment>
+        <Subelement Path="2">
+          <Comment>
+            <MultiLanguageText Lang="en-US">INC 1 active</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">INC 1 active</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="3">
+          <Comment>
+            <MultiLanguageText Lang="en-US">INC 1 active</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">INC 1 active</MultiLanguageText>
+          </Comment>
+        </Subelement>
+      </Member>
+      <Member Name="INC10" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">INC 10 active</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">INC 10 active</MultiLanguageText>
+        </Comment>
+        <Subelement Path="2">
+          <Comment>
+            <MultiLanguageText Lang="en-US">INC 10 active</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">INC 10 active</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="3">
+          <Comment>
+            <MultiLanguageText Lang="en-US">INC 10 active</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">INC 10 active</MultiLanguageText>
+          </Comment>
+        </Subelement>
+      </Member>
+      <Member Name="INC100" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">INC 100 active</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">INC 100 active</MultiLanguageText>
+        </Comment>
+        <Subelement Path="2">
+          <Comment>
+            <MultiLanguageText Lang="en-US">INC 100 active</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">INC 100 active</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="3">
+          <Comment>
+            <MultiLanguageText Lang="en-US">INC 100 active</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">INC 100 active</MultiLanguageText>
+          </Comment>
+        </Subelement>
+      </Member>
+      <Member Name="INC1000" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">INC 1000 active</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">INC 1000 active</MultiLanguageText>
+        </Comment>
+        <Subelement Path="2">
+          <Comment>
+            <MultiLanguageText Lang="en-US">INC 1000 active</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">INC 1000 active</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="3">
+          <Comment>
+            <MultiLanguageText Lang="en-US">INC 1000 active</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">INC 1000 active</MultiLanguageText>
+          </Comment>
+        </Subelement>
+      </Member>
+      <Member Name="INC10000" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">INC 10000 active</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">INC 10000 active</MultiLanguageText>
+        </Comment>
+        <Subelement Path="2">
+          <Comment>
+            <MultiLanguageText Lang="en-US">INC 10000 active</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">INC 10000 active</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="3">
+          <Comment>
+            <MultiLanguageText Lang="en-US">INC 10000 active</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">INC 10000 active</MultiLanguageText>
+          </Comment>
+        </Subelement>
+      </Member>
+      <Member Name="INCVar" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">INC variable active</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Variable INC active</MultiLanguageText>
+        </Comment>
+        <Subelement Path="2">
+          <Comment>
+            <MultiLanguageText Lang="en-US">INC variable active</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Variable INC active</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="3">
+          <Comment>
+            <MultiLanguageText Lang="en-US">INC variable active</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Variable INC active</MultiLanguageText>
+          </Comment>
+        </Subelement>
+      </Member>
+      <Member Name="OEM" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">OEM signals</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Signaux OEM</MultiLanguageText>
+        </Comment>
+        <Subelement Path="2">
+          <Comment>
+            <MultiLanguageText Lang="en-US">OEM signals</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Signaux OEM</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="3">
+          <Comment>
+            <MultiLanguageText Lang="en-US">OEM signals</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Signaux OEM</MultiLanguageText>
+          </Comment>
+        </Subelement>
+      </Member>
+      <Member Name="InvHWDirOfRot" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Inverting handwheel direction of rotation</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Inverser sens de rotation manivelle</MultiLanguageText>
+        </Comment>
+        <Subelement Path="2">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Inverting handwheel direction of rotation</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Inverser sens de rotation manivelle</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="3">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Inverting handwheel direction of rotation</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Inverser sens de rotation manivelle</MultiLanguageText>
+          </Comment>
+        </Subelement>
+      </Member>
+      <Member Name="f3_1" Datatype="Bool" />
+      <Member Name="f3_2" Datatype="Bool" />
+      <Member Name="f3_3" Datatype="Bool" />
+      <Member Name="f3_4" Datatype="Bool" />
+      <Member Name="f3_5" Datatype="Bool" />
+      <Member Name="f3_6" Datatype="Bool" />
+      <Member Name="f3_7" Datatype="Bool" />
+      <Subelement Path="1">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Control signals for orientation axes [1..3]</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Signaux de commande pour axes d'orientation [1..3]</MultiLanguageText>
+        </Comment>
+      </Subelement>
+      <Subelement Path="2">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Control signals for orientation axes [1..3]</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Signaux de commande pour axes d'orientation [1..3]</MultiLanguageText>
+        </Comment>
+      </Subelement>
+      <Subelement Path="3">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Control signals for orientation axes [1..3]</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Signaux de commande pour axes d'orientation [1..3]</MultiLanguageText>
+        </Comment>
+      </Subelement>
+    </Member>
+    <Member Name="E_Ori" Datatype="Array[1..3] of Struct">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Control signals for orientation axes [1..3]</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Signaux de commande pour axes d'orientation [1..3]</MultiLanguageText>
+      </Comment>
+      <Member Name="HW1" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Handwheel 1 active</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Manivelle 1 active</MultiLanguageText>
+        </Comment>
+        <Subelement Path="2">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Handwheel 1 active</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Manivelle 1 active</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="3">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Handwheel 1 active</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Manivelle 1 active</MultiLanguageText>
+          </Comment>
+        </Subelement>
+      </Member>
+      <Member Name="HW2" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Handwheel 2 active</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Manivelle 2 active</MultiLanguageText>
+        </Comment>
+        <Subelement Path="2">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Handwheel 2 active</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Manivelle 2 active</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="3">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Handwheel 2 active</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Manivelle 2 active</MultiLanguageText>
+          </Comment>
+        </Subelement>
+      </Member>
+      <Member Name="HW3" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Handwheel 3 active</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Manivelle 3 active</MultiLanguageText>
+        </Comment>
+        <Subelement Path="2">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Handwheel 3 active</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Manivelle 3 active</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="3">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Handwheel 3 active</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Manivelle 3 active</MultiLanguageText>
+          </Comment>
+        </Subelement>
+      </Member>
+      <Member Name="f0_3" Datatype="Bool" />
+      <Member Name="TReqMinus" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Travel requests minus</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Demandes de déplacement moins</MultiLanguageText>
+        </Comment>
+        <Subelement Path="2">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Travel requests minus</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Demandes de déplacement moins</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="3">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Travel requests minus</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Demandes de déplacement moins</MultiLanguageText>
+          </Comment>
+        </Subelement>
+      </Member>
+      <Member Name="TReqPlus" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Travel requests plus</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Demandes de déplacement plus</MultiLanguageText>
+        </Comment>
+        <Subelement Path="2">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Travel requests plus</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Demandes de déplacement plus</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="3">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Travel requests plus</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Demandes de déplacement plus</MultiLanguageText>
+          </Comment>
+        </Subelement>
+      </Member>
+      <Member Name="TCMinus" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Traverse command minus</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Instruction de déplacement moins</MultiLanguageText>
+        </Comment>
+        <Subelement Path="2">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Traverse command minus</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Instruction de déplacement moins</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="3">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Traverse command minus</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Instruction de déplacement moins</MultiLanguageText>
+          </Comment>
+        </Subelement>
+      </Member>
+      <Member Name="TCPlus" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Traverse command plus</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Instruction de déplacement plus</MultiLanguageText>
+        </Comment>
+        <Subelement Path="2">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Traverse command plus</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Instruction de déplacement plus</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="3">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Traverse command plus</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Instruction de déplacement plus</MultiLanguageText>
+          </Comment>
+        </Subelement>
+      </Member>
+      <Member Name="INC1" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">INC 1 active</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">INC 1 active</MultiLanguageText>
+        </Comment>
+        <Subelement Path="2">
+          <Comment>
+            <MultiLanguageText Lang="en-US">INC 1 active</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">INC 1 active</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="3">
+          <Comment>
+            <MultiLanguageText Lang="en-US">INC 1 active</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">INC 1 active</MultiLanguageText>
+          </Comment>
+        </Subelement>
+      </Member>
+      <Member Name="INC10" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">INC 10 active</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">INC 10 active</MultiLanguageText>
+        </Comment>
+        <Subelement Path="2">
+          <Comment>
+            <MultiLanguageText Lang="en-US">INC 10 active</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">INC 10 active</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="3">
+          <Comment>
+            <MultiLanguageText Lang="en-US">INC 10 active</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">INC 10 active</MultiLanguageText>
+          </Comment>
+        </Subelement>
+      </Member>
+      <Member Name="INC100" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">INC 100 active</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">INC 100 active</MultiLanguageText>
+        </Comment>
+        <Subelement Path="2">
+          <Comment>
+            <MultiLanguageText Lang="en-US">INC 100 active</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">INC 100 active</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="3">
+          <Comment>
+            <MultiLanguageText Lang="en-US">INC 100 active</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">INC 100 active</MultiLanguageText>
+          </Comment>
+        </Subelement>
+      </Member>
+      <Member Name="INC1000" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">INC 1000 active</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">INC 1000 active</MultiLanguageText>
+        </Comment>
+        <Subelement Path="2">
+          <Comment>
+            <MultiLanguageText Lang="en-US">INC 1000 active</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">INC 1000 active</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="3">
+          <Comment>
+            <MultiLanguageText Lang="en-US">INC 1000 active</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">INC 1000 active</MultiLanguageText>
+          </Comment>
+        </Subelement>
+      </Member>
+      <Member Name="INC10000" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">INC 10000 active</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">INC 10000 active</MultiLanguageText>
+        </Comment>
+        <Subelement Path="2">
+          <Comment>
+            <MultiLanguageText Lang="en-US">INC 10000 active</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">INC 10000 active</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="3">
+          <Comment>
+            <MultiLanguageText Lang="en-US">INC 10000 active</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">INC 10000 active</MultiLanguageText>
+          </Comment>
+        </Subelement>
+      </Member>
+      <Member Name="INCVar" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">INC variable active</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Variable INC active</MultiLanguageText>
+        </Comment>
+        <Subelement Path="2">
+          <Comment>
+            <MultiLanguageText Lang="en-US">INC variable active</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Variable INC active</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="3">
+          <Comment>
+            <MultiLanguageText Lang="en-US">INC variable active</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Variable INC active</MultiLanguageText>
+          </Comment>
+        </Subelement>
+      </Member>
+      <Member Name="OEM" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">OEM signals</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Signaux OEM</MultiLanguageText>
+        </Comment>
+        <Subelement Path="2">
+          <Comment>
+            <MultiLanguageText Lang="en-US">OEM signals</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Signaux OEM</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="3">
+          <Comment>
+            <MultiLanguageText Lang="en-US">OEM signals</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Signaux OEM</MultiLanguageText>
+          </Comment>
+        </Subelement>
+      </Member>
+      <Member Name="InvHWDirOfRot" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Handwheel direction of rotation invert actively</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Inverser activement sens manivelle</MultiLanguageText>
+        </Comment>
+        <Subelement Path="2">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Handwheel direction of rotation invert actively</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Inverser activement sens manivelle</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="3">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Handwheel direction of rotation invert actively</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Inverser activement sens manivelle</MultiLanguageText>
+          </Comment>
+        </Subelement>
+      </Member>
+      <Member Name="f3_1" Datatype="Bool" />
+      <Member Name="f3_2" Datatype="Bool" />
+      <Member Name="f3_3" Datatype="Bool" />
+      <Member Name="f3_4" Datatype="Bool" />
+      <Member Name="f3_5" Datatype="Bool" />
+      <Member Name="f3_6" Datatype="Bool" />
+      <Member Name="f3_7" Datatype="Bool" />
+      <Subelement Path="1">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Control signals for orientation axes [1..3]</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Signaux de commande pour axes d'orientation [1..3]</MultiLanguageText>
+        </Comment>
+      </Subelement>
+      <Subelement Path="2">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Control signals for orientation axes [1..3]</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Signaux de commande pour axes d'orientation [1..3]</MultiLanguageText>
+        </Comment>
+      </Subelement>
+      <Subelement Path="3">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Control signals for orientation axes [1..3]</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Signaux de commande pour axes d'orientation [1..3]</MultiLanguageText>
+        </Comment>
+      </Subelement>
+    </Member>
+    <Member Name="E_TPrewarnLimit" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Tool prewarn limit reached</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Seuil de préavis outil atteint</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_TLimit" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Tool limit reached</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Limite d'outil atteinte</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_TNewRepl" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Transition to new replacement tool</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Transition vers nouvel outil de remplacement</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_TLastRepl" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Last replacement tool of the tool group</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Dernier outil de remplacement du groupe d'outils</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="f344_4" Datatype="Bool" />
+    <Member Name="f344_5" Datatype="Bool" />
+    <Member Name="f344_6" Datatype="Bool" />
+    <Member Name="f344_7" Datatype="Bool" />
+    <Member Name="f345" Datatype="Byte" />
+    <Member Name="f346" Datatype="Byte" />
+    <Member Name="f347" Datatype="Byte" />
+    <Member Name="E_TNoPrewarnLimit" Datatype="DInt">
+      <Comment>
+        <MultiLanguageText Lang="en-US">T number for tool prewarn limit</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Numéro d'outil pour seuil de préavis outil</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_TNoLimit" Datatype="DInt">
+      <Comment>
+        <MultiLanguageText Lang="en-US">T number for tool limit</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Numéro d'outil pour limite d'outil</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_TNoNewRepl" Datatype="DInt">
+      <Comment>
+        <MultiLanguageText Lang="en-US">T number of the new replacement tool</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Numéro d'outil du nouvel outil de remplacement</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_TNoLastRepl" Datatype="DInt">
+      <Comment>
+        <MultiLanguageText Lang="en-US">T number of the last replacement tool</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Numéro d'outil du dernier outil de remplacement</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_Cycle_Sig" Datatype="Array[0..15] of Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Cycles input signals</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Signaux d'entrée des cycles</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_Cycle_Sig" Datatype="Array[0..15] of Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Cycles output signals</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Signaux de sortie des cycles</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_OEM_TechnoSig" Datatype="Array[0..31] of Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">OEM Techno input signals</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Signaux d'entrée techno OEM</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_OEM_TechnoSig" Datatype="Array[0..31] of Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">OEM Techno output signals</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Signaux de sortie techno OEM</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_ProgEvent_Start" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Active Prog-Event: Start</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Prog-Event actif : Démarrage</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_ProgEvent_M30" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Active Prog-Event: M30</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Prog-Event actif : M30</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_ProgEvent_Reset" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Active Prog-Event: Start</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Prog-Event actif : Démarrage</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_ProgEvent_PowerOn" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Active Prog-Event: Power on</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Prog-Event actif : Mise sous tension</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_ProgEvent_SearchRun" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Active Prog-Event: Search</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Prog-Event actif : Recherche</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="f376_5" Datatype="Bool" />
+    <Member Name="f376_6" Datatype="Bool" />
+    <Member Name="f376_7" Datatype="Bool" />
+    <Member Name="E_CollCheckStop" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Stop of Collision Check</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Arrêt du contrôle de collision</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_StopCondition" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Stop Condition</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Condition d'arrêt</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="f377_2" Datatype="Bool" />
+    <Member Name="f377_3" Datatype="Bool" />
+    <Member Name="E_JogRetract" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">JOG Retract active</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Retrait JOG actif</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_RetractData" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Retract data available</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Données de retrait disponibles</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_JOG_Circles" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">JOG in circles</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">JOG en cercles</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="f377_7" Datatype="Bool" />
+    <Member Name="E_AnyAsup" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">AnyASUP activ</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">AnyASUP actif</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_SilentAsup" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Silent ASUP active</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">ASUP silencieux actif</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="f378_2" Datatype="Bool" />
+    <Member Name="f378_3" Datatype="Bool" />
+    <Member Name="f378_4" Datatype="Bool" />
+    <Member Name="f378_5" Datatype="Bool" />
+    <Member Name="f378_6" Datatype="Bool" />
+    <Member Name="f378_7" Datatype="Bool" />
+    <Member Name="f379" Datatype="Byte" />
+    <Member Name="f380" Datatype="Array[0..31] of Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_ProgJump" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Control program jump</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Saut programme de commande</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="f384_1" Datatype="Bool" />
+    <Member Name="f384_2" Datatype="Bool" />
+    <Member Name="f384_3" Datatype="Bool" />
+    <Member Name="f384_4" Datatype="Bool" />
+    <Member Name="f384_5" Datatype="Bool" />
+    <Member Name="f384_6" Datatype="Bool" />
+    <Member Name="f384_7" Datatype="Bool" />
+    <Member Name="A_InKeyG1" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Grinding signal 1</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Signal rectification 1</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_InKeyG2" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Grinding signal 2</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Signal rectification 2</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_InKeyG3" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Grinding signal 3</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Signal rectification 3</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_InKeyG4" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Grinding signal 4</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Signal rectification 4</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_InKeyG5" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Grinding signal 5</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Signal rectification 5</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_InKeyG6" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Grinding signal 6</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Signal rectification 6</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_InKeyG7" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Grinding signal 7</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Signal rectification 7</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_InKeyG8" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Grinding signal 8</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Signal rectification 8</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_InKeyGEn1" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Enable grinding signal 1</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Activer signal rectification 1</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_InKeyGEn2" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Enable grinding signal 2</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Activer signal rectification 2</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_InKeyGEn3" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Enable grinding signal 3</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Activer signal rectification 3</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_InKeyGEn4" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Enable grinding signal 4</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Activer signal rectification 4</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_InKeyGEn5" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Enable grinding signal 5</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Activer signal rectification 5</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_InKeyGEn6" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Enable grinding signal 6</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Activer signal rectification 6</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_InKeyGEn7" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Enable grinding signal 7</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Activer signal rectification 7</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_InKeyGEn8" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Enable grinding signal 8</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Activer signal rectification 8</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_InKeyGRunIn1" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Run grinding function 1</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Exécuter fonction de rectification 1</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_InKeyGRunIn2" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Run grinding function 2</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Exécuter fonction de rectification 2</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_InKeyGRunIn3" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Run grinding function 3</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Exécuter fonction de rectification 3</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_InKeyGRunIn4" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Run grinding function 4</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Exécuter fonction de rectification 4</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_InKeyGRunIn5" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Run grinding function 5</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Exécuter fonction de rectification 5</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_InKeyGRunIn6" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Run grinding function 6</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Exécuter fonction de rectification 6</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_InKeyGRunIn7" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Run grinding function 7</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Exécuter fonction de rectification 7</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_InKeyGRunIn8" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Run grinding function 8</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Exécuter fonction de rectification 8</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_TransformNo" Datatype="Byte">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Active transformation number</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Numéro de la transformation active</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="f389" Datatype="Byte" />
+    <Member Name="E_InKeyGIsEn1" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Grinding signal 1 enabled</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Signal rectification 1 activé</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_InKeyGIsEn2" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Grinding signal 2 enabled</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Signal rectification 2 activé</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_InKeyGIsEn3" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Grinding signal 3 enabled</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Signal rectification 3 activé</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_InKeyGIsEn4" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Grinding signal 4 enabled</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Signal rectification 4 activé</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_InKeyGIsEn5" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Grinding signal 5 enabled</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Signal rectification 5 activé</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_InKeyGIsEn6" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Grinding signal 6 enabled</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Signal rectification 6 activé</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_InKeyGIsEn7" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Grinding signal 7 enabled</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Signal rectification 7 activé</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_InKeyGIsEn8" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Grinding signal 8 enabled</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Signal rectification 8 activé</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_InKeyGRunOut1" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">NCK status of grinding function 1</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">État NCK fonction de rectification 1</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_InKeyGRunOut2" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">NCK status of grinding function 3</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">État NCK fonction de rectification 3</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_InKeyGRunOut3" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">NCK status of grinding function 3</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">État NCK fonction de rectification 3</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_InKeyGRunOut4" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">NCK status of grinding function 4</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">État NCK fonction de rectification 4</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_InKeyGRunOut5" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">NCK status of grinding function 5</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">État NCK fonction de rectification 5</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_InKeyGRunOut6" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">NCK status of grinding function 6</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">État NCK fonction de rectification 6</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_InKeyGRunOut7" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">NCK status of grinding function 7</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">État NCK fonction de rectification 7</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_InKeyGRunOut8" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">NCK status of grinding function 8</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">État NCK fonction de rectification 8</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_CART_JOG_MODE" Datatype="Byte">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Coordinate system for Cartesian jog traverse</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Système de coordonnées pour déplacement cartésien en mode JOG</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="f393" Datatype="Byte" />
+    <Member Name="f394" Datatype="Byte" />
+    <Member Name="f395" Datatype="Byte" />
+    <Member Name="H1_DInt" Datatype="DInt">
+      <Comment>
+        <MultiLanguageText Lang="en-US">H Function 1 (DInt)</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Fonction H 1 (DInt)</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="H2_DInt" Datatype="DInt">
+      <Comment>
+        <MultiLanguageText Lang="en-US">H Function 2 (DInt)</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Fonction H 2 (DInt)</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="H3_DInt" Datatype="DInt">
+      <Comment>
+        <MultiLanguageText Lang="en-US">H Function 3 (DInt)</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Fonction H 3 (DInt)</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_AxisSelType" Datatype="Byte">
+      <Comment>
+        <MultiLanguageText Lang="en-US">0: MachAxis, 1: GeoAxis</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">0: MachAxis, 1: GeoAxis</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_AxisSelAxis" Datatype="Byte">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Axis number</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Numéro d'axe</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_AxisSelRequest" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Axis selection (touch)</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Sélection d'axe (touche)</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="f410_1" Datatype="Bool" />
+    <Member Name="f410_2" Datatype="Bool" />
+    <Member Name="f410_3" Datatype="Bool" />
+    <Member Name="f410_4" Datatype="Bool" />
+    <Member Name="f410_5" Datatype="Bool" />
+    <Member Name="f410_6" Datatype="Bool" />
+    <Member Name="f410_7" Datatype="Bool" />
+    <Member Name="f411" Datatype="Byte" />
+    <Member Name="A_AxisSelTypeActive" Datatype="Byte">
+      <Comment>
+        <MultiLanguageText Lang="en-US">0: MachAxis, 1: GeoAxis (return)</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">0: MachAxis, 1: GeoAxis (retour)</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_AxisSelAxisActive" Datatype="Byte">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Axis number (return)</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Numéro d'axe (retour)</MultiLanguageText>
+      </Comment>
+    </Member>
+  </Section>
+</Sections></Interface>
+      <Name>LBP_typeChanX</Name>
+      <Namespace />
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text>User data type for blocks LBP_Chan1 [DB21] .. LBP_Chan10 [DB30]</Text>
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="3" CompositionName="Items">
+            <AttributeList>
+              <Culture>fr-FR</Culture>
+              <Text>Type de données utilisateur pour les blocs LBP_Chan1 [DB21] .. LBP_Chan10 [DB30]</Text>
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <MultilingualText ID="4" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="5" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text>Channel interface</Text>
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="6" CompositionName="Items">
+            <AttributeList>
+              <Culture>fr-FR</Culture>
+              <Text>Interface de canal</Text>
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Types.PlcStruct>
+</Document>

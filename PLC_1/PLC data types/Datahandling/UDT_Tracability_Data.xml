@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V20" />
+  <SW.Types.PlcStruct ID="0">
+    <AttributeList>
+      <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+  <Section Name="None">
+    <Member Name="Nb_of_Records" Datatype="Int">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <StartValue>100</StartValue>
+    </Member>
+    <Member Name="Nb_of_Holes" Datatype="Int">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <StartValue>100</StartValue>
+    </Member>
+    <Member Name="STRUCT_PART" Datatype="Array[0..99] of Struct">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Member Name="Part_id" Datatype="Int">
+        <Subelement Path="1">
+          <StartValue>-1</StartValue>
+        </Subelement>
+        <Subelement Path="2">
+          <StartValue>-1</StartValue>
+        </Subelement>
+        <Subelement Path="3">
+          <StartValue>-1</StartValue>
+        </Subelement>
+        <Subelement Path="4">
+          <StartValue>-1</StartValue>
+        </Subelement>
+        <Subelement Path="5">
+          <StartValue>-1</StartValue>
+        </Subelement>
+        <Subelement Path="6">
+          <StartValue>-1</StartValue>
+        </Subelement>
+        <Subelement Path="7">
+          <StartValue>-1</StartValue>
+        </Subelement>
+        <Subelement Path="8">
+          <StartValue>-1</StartValue>
+        </Subelement>
+        <Subelement Path="9">
+          <StartValue>-1</StartValue>
+        </Subelement>
+        <Subelement Path="10">
+          <StartValue>-1</StartValue>
+        </Subelement>
+      </Member>
+      <Member Name="Status" Datatype="Int" />
+      <Member Name="Fail_code" Datatype="Int" />
+      <Member Name="Raw_type" Datatype="Int" />
+      <Member Name="Workpiece_holder_type" Datatype="Int" />
+      <Member Name="Workpiece_holder_Nbr" Datatype="Int" />
+      <Member Name="Datamatrix_code" Datatype="Array[0..19] of Byte" />
+      <Member Name="Order_nbr" Datatype="String[64]" />
+      <Member Name="Ident_nbr" Datatype="String[64]" />
+      <Member Name="Batch_nbr" Datatype="String[64]" />
+      <Member Name="Operator_nbr" Datatype="String[64]" />
+      <Member Name="Comment" Datatype="String[192]" />
+      <Member Name="WOZ" Datatype="Real" />
+      <Member Name="WOC" Datatype="Real" />
+      <Member Name="Total_cycle_time" Datatype="Int" />
+      <Member Name="Laser_cycle_time" Datatype="Int" />
+      <Member Name="Measure_load_cycle_time" Datatype="Int" />
+      <Member Name="STRUCT_HOLE" Datatype="Array[0..99] of &quot;UDT_Holes&quot;" />
+    </Member>
+  </Section>
+</Sections></Interface>
+      <Name>UDT_Tracability_Data</Name>
+      <Namespace />
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="3" CompositionName="Items">
+            <AttributeList>
+              <Culture>fr-FR</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <MultilingualText ID="4" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="5" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="6" CompositionName="Items">
+            <AttributeList>
+              <Culture>fr-FR</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Types.PlcStruct>
+</Document>

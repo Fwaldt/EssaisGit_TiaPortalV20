@@ -1,0 +1,1528 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V20" />
+  <SW.Blocks.FB ID="0">
+    <AttributeList>
+      <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+  <Section Name="Input" />
+  <Section Name="Output" />
+  <Section Name="InOut" />
+  <Section Name="Static">
+    <Member Name="sAutoReq" Datatype="Bool" />
+    <Member Name="sSemiAutoReq" Datatype="Bool" />
+    <Member Name="sManuReq" Datatype="Bool" />
+    <Member Name="sRT_AutoReq" Datatype="R_TRIG" Version="1.0" />
+    <Member Name="sRT_SemiAutoReq" Datatype="R_TRIG" Version="1.0" />
+    <Member Name="sRT_ManuReq" Datatype="R_TRIG" Version="1.0" />
+  </Section>
+  <Section Name="Temp" />
+  <Section Name="Constant">
+    <Member Name="AUTO" Datatype="Byte">
+      <StartValue>1</StartValue>
+    </Member>
+    <Member Name="SEMI_AUTO" Datatype="Byte">
+      <StartValue>2</StartValue>
+    </Member>
+    <Member Name="MANU" Datatype="Byte">
+      <StartValue>3</StartValue>
+    </Member>
+    <Member Name="UNDEFINED" Datatype="Byte">
+      <StartValue>0</StartValue>
+    </Member>
+  </Section>
+</Sections></Interface>
+      <MemoryLayout>Optimized</MemoryLayout>
+      <MemoryReserve>100</MemoryReserve>
+      <Name>FB_OPC_State</Name>
+      <Namespace />
+      <Number>75</Number>
+      <ProgrammingLanguage>SCL</ProgrammingLanguage>
+      <SetENOAutomatically>false</SetENOAutomatically>
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="3" CompositionName="Items">
+            <AttributeList>
+              <Culture>fr-FR</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <SW.Blocks.CompileUnit ID="4" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource><StructuredText xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/StructuredText/v4">
+  <Token Text="REGION" UId="21" />
+  <Blank UId="22" />
+  <Text UId="23">Description header </Text>
+  <NewLine UId="24" />
+  <Blank Num="4" UId="25" />
+  <LineComment UId="26">
+    <Text UId="27">==================================================================================</Text>
+  </LineComment>
+  <NewLine UId="28" />
+  <Blank Num="4" UId="29" />
+  <LineComment UId="30">
+    <Text UId="31"> POSALUX Swiss SA / (C) Copyright 2024</Text>
+  </LineComment>
+  <NewLine UId="32" />
+  <Blank Num="4" UId="33" />
+  <LineComment UId="34">
+    <Text UId="35">----------------------------------------------------------------------------------</Text>
+  </LineComment>
+  <NewLine UId="36" />
+  <Blank Num="4" UId="37" />
+  <LineComment UId="38">
+    <Text UId="39"> Title: </Text>
+  </LineComment>
+  <NewLine UId="40" />
+  <Blank Num="4" UId="41" />
+  <LineComment UId="42">
+    <Text UId="43"> Comment/Function: </Text>
+  </LineComment>
+  <NewLine UId="44" />
+  <Blank Num="4" UId="45" />
+  <LineComment UId="46">
+    <Text UId="47" />
+  </LineComment>
+  <NewLine UId="48" />
+  <Blank Num="4" UId="49" />
+  <LineComment UId="50">
+    <Text UId="51"> Author: Fabien WALDT</Text>
+  </LineComment>
+  <NewLine UId="52" />
+  <Blank Num="4" UId="53" />
+  <LineComment UId="54">
+    <Text UId="55"> Engineering: TIA Portal v20</Text>
+  </LineComment>
+  <NewLine UId="56" />
+  <Blank Num="4" UId="57" />
+  <LineComment UId="58">
+    <Text UId="59">----------------------------------------------------------------------------------</Text>
+  </LineComment>
+  <NewLine UId="60" />
+  <Blank Num="4" UId="61" />
+  <LineComment UId="62">
+    <Text UId="63"> Change log table:</Text>
+  </LineComment>
+  <NewLine UId="64" />
+  <Blank Num="4" UId="65" />
+  <LineComment UId="66">
+    <Text UId="67"> Version  | Date     | Expert in charge | Changes applied</Text>
+  </LineComment>
+  <NewLine UId="68" />
+  <Blank Num="4" UId="69" />
+  <LineComment UId="70">
+    <Text UId="71"> ---------|----------|------------------|------------------------------------</Text>
+  </LineComment>
+  <NewLine UId="72" />
+  <Blank Num="4" UId="73" />
+  <LineComment UId="74">
+    <Text UId="75"> 00.00.01 | 20260130 | WFA              | First released version</Text>
+  </LineComment>
+  <NewLine UId="76" />
+  <Blank Num="4" UId="77" />
+  <LineComment UId="78">
+    <Text UId="79"> ==================================================================================</Text>
+  </LineComment>
+  <NewLine UId="80" />
+  <Token Text="END_REGION" UId="81" />
+  <NewLine Num="2" UId="82" />
+  <Token Text="REGION" UId="83" />
+  <Blank UId="84" />
+  <Text UId="85">Current</Text>
+  <NewLine UId="86" />
+  <Blank Num="4" UId="87" />
+  <LineComment UId="88">
+    <Text UId="89"> CanLockDoor</Text>
+  </LineComment>
+  <NewLine UId="90" />
+  <Blank Num="4" UId="91" />
+  <Access Scope="GlobalVariable" UId="92">
+    <Symbol UId="93">
+      <Component Name="DB_OPC_Machine" UId="94">
+        <BooleanAttribute Name="HasQuotes" UId="95">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="96" />
+      <Component Name="State" UId="97" />
+      <Token Text="." UId="98" />
+      <Component Name="Current" UId="99" />
+      <Token Text="." UId="100" />
+      <Component Name="CanLockDoor" UId="101" />
+    </Symbol>
+  </Access>
+  <Blank UId="102" />
+  <Token Text=":=" UId="103" />
+  <Blank UId="104" />
+  <Access Scope="GlobalVariable" UId="105">
+    <Symbol UId="106">
+      <Component Name="LBP_ModeGroup" UId="107">
+        <BooleanAttribute Name="HasQuotes" UId="108">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="109" />
+      <Component Name="E_JOG" UId="110" />
+    </Symbol>
+  </Access>
+  <NewLine UId="111" />
+  <Blank Num="4" UId="112" />
+  <Token Text="AND" UId="113" />
+  <Blank UId="114" />
+  <Access Scope="GlobalVariable" UId="115">
+    <Symbol UId="116">
+      <Component Name="DB_DigitalInputs" UId="117">
+        <BooleanAttribute Name="HasQuotes" UId="118">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="119" />
+      <Component Name="sFrontDoorClosed" UId="120" />
+      <Token Text="." UId="121" />
+      <Component Name="sSWStatus" UId="122" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="123" />
+  <NewLine UId="124" />
+  <Blank Num="4" UId="125" />
+  <NewLine UId="126" />
+  <Blank Num="4" UId="127" />
+  <LineComment UId="128">
+    <Text UId="129"> CanUnlockDoor</Text>
+  </LineComment>
+  <NewLine UId="130" />
+  <Blank Num="4" UId="131" />
+  <Access Scope="GlobalVariable" UId="132">
+    <Symbol UId="133">
+      <Component Name="DB_OPC_Machine" UId="134">
+        <BooleanAttribute Name="HasQuotes" UId="135">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="136" />
+      <Component Name="State" UId="137" />
+      <Token Text="." UId="138" />
+      <Component Name="Current" UId="139" />
+      <Token Text="." UId="140" />
+      <Component Name="CanUnlockDoor" UId="141" />
+    </Symbol>
+  </Access>
+  <Blank UId="142" />
+  <Token Text=":=" UId="143" />
+  <Blank UId="144" />
+  <Access Scope="GlobalVariable" UId="145">
+    <Symbol UId="146">
+      <Component Name="LBP_ModeGroup" UId="147">
+        <BooleanAttribute Name="HasQuotes" UId="148">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="149" />
+      <Component Name="E_JOG" UId="150" />
+    </Symbol>
+  </Access>
+  <NewLine UId="151" />
+  <Blank Num="4" UId="152" />
+  <Token Text="AND" UId="153" />
+  <Blank UId="154" />
+  <Access Scope="GlobalVariable" UId="155">
+    <Symbol UId="156">
+      <Component Name="DB_DigitalInputs" UId="157">
+        <BooleanAttribute Name="HasQuotes" UId="158">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="159" />
+      <Component Name="sFrontDoorLocked" UId="160" />
+      <Token Text="." UId="161" />
+      <Component Name="sSWStatus" UId="162" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="163" />
+  <NewLine UId="164" />
+  <Blank Num="4" UId="165" />
+  <NewLine UId="166" />
+  <Blank Num="4" UId="167" />
+  <LineComment UId="168">
+    <Text UId="169"> LoadingMode</Text>
+  </LineComment>
+  <NewLine UId="170" />
+  <Blank Num="4" UId="171" />
+  <LineComment UId="172">
+    <Text UId="173"> 1 = Auto</Text>
+  </LineComment>
+  <NewLine UId="174" />
+  <Blank Num="4" UId="175" />
+  <LineComment UId="176">
+    <Text UId="177"> 2 = Semi Auto</Text>
+  </LineComment>
+  <NewLine UId="178" />
+  <Blank Num="4" UId="179" />
+  <LineComment UId="180">
+    <Text UId="181"> 3 = Manu </Text>
+  </LineComment>
+  <NewLine UId="182" />
+  <Blank Num="4" UId="183" />
+  <Token Text="IF" UId="184" />
+  <Blank UId="185" />
+  <Access Scope="GlobalVariable" UId="186">
+    <Symbol UId="187">
+      <Component Name="DB_WorkingModes" UId="188">
+        <BooleanAttribute Name="HasQuotes" UId="189">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="190" />
+      <Component Name="sAuto" UId="191" />
+    </Symbol>
+  </Access>
+  <Blank UId="192" />
+  <Token Text="THEN" UId="193" />
+  <NewLine UId="194" />
+  <Blank Num="8" UId="195" />
+  <Access Scope="GlobalVariable" UId="196">
+    <Symbol UId="197">
+      <Component Name="DB_OPC_Machine" UId="198">
+        <BooleanAttribute Name="HasQuotes" UId="199">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="200" />
+      <Component Name="State" UId="201" />
+      <Token Text="." UId="202" />
+      <Component Name="Current" UId="203" />
+      <Token Text="." UId="204" />
+      <Component Name="LoadingMode" UId="205" />
+    </Symbol>
+  </Access>
+  <Blank UId="206" />
+  <Token Text=":=" UId="207" />
+  <Blank UId="208" />
+  <Access Scope="LocalConstant" UId="209">
+    <Constant Name="AUTO" UId="210" />
+  </Access>
+  <Token Text=";" UId="213" />
+  <NewLine UId="214" />
+  <Blank Num="4" UId="215" />
+  <Token Text="ELSIF" UId="216" />
+  <Blank UId="217" />
+  <Access Scope="GlobalVariable" UId="218">
+    <Symbol UId="219">
+      <Component Name="DB_WorkingModes" UId="220">
+        <BooleanAttribute Name="HasQuotes" UId="221">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="222" />
+      <Component Name="sSemiAuto" UId="223" />
+    </Symbol>
+  </Access>
+  <Blank UId="224" />
+  <Token Text="THEN" UId="225" />
+  <NewLine UId="226" />
+  <Blank Num="8" UId="227" />
+  <Access Scope="GlobalVariable" UId="228">
+    <Symbol UId="229">
+      <Component Name="DB_OPC_Machine" UId="230">
+        <BooleanAttribute Name="HasQuotes" UId="231">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="232" />
+      <Component Name="State" UId="233" />
+      <Token Text="." UId="234" />
+      <Component Name="Current" UId="235" />
+      <Token Text="." UId="236" />
+      <Component Name="LoadingMode" UId="237" />
+    </Symbol>
+  </Access>
+  <Blank UId="238" />
+  <Token Text=":=" UId="239" />
+  <Blank UId="240" />
+  <Access Scope="LocalConstant" UId="241">
+    <Constant Name="SEMI_AUTO" UId="242" />
+  </Access>
+  <Token Text=";" UId="245" />
+  <NewLine UId="246" />
+  <Blank Num="4" UId="247" />
+  <Token Text="ELSIF" UId="248" />
+  <Blank UId="249" />
+  <Access Scope="GlobalVariable" UId="250">
+    <Symbol UId="251">
+      <Component Name="DB_WorkingModes" UId="252">
+        <BooleanAttribute Name="HasQuotes" UId="253">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="254" />
+      <Component Name="sManu" UId="255" />
+    </Symbol>
+  </Access>
+  <Blank UId="256" />
+  <Token Text="THEN" UId="257" />
+  <NewLine UId="258" />
+  <Blank Num="8" UId="259" />
+  <Access Scope="GlobalVariable" UId="260">
+    <Symbol UId="261">
+      <Component Name="DB_OPC_Machine" UId="262">
+        <BooleanAttribute Name="HasQuotes" UId="263">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="264" />
+      <Component Name="State" UId="265" />
+      <Token Text="." UId="266" />
+      <Component Name="Current" UId="267" />
+      <Token Text="." UId="268" />
+      <Component Name="LoadingMode" UId="269" />
+    </Symbol>
+  </Access>
+  <Blank UId="270" />
+  <Token Text=":=" UId="271" />
+  <Blank UId="272" />
+  <Access Scope="LocalConstant" UId="273">
+    <Constant Name="MANU" UId="274" />
+  </Access>
+  <Token Text=";" UId="277" />
+  <NewLine UId="278" />
+  <Blank Num="4" UId="279" />
+  <Token Text="ELSE" UId="280" />
+  <NewLine UId="281" />
+  <Blank Num="8" UId="282" />
+  <Access Scope="GlobalVariable" UId="283">
+    <Symbol UId="284">
+      <Component Name="DB_OPC_Machine" UId="285">
+        <BooleanAttribute Name="HasQuotes" UId="286">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="287" />
+      <Component Name="State" UId="288" />
+      <Token Text="." UId="289" />
+      <Component Name="Current" UId="290" />
+      <Token Text="." UId="291" />
+      <Component Name="LoadingMode" UId="292" />
+    </Symbol>
+  </Access>
+  <Blank UId="293" />
+  <Token Text=":=" UId="294" />
+  <Blank UId="295" />
+  <Access Scope="LocalConstant" UId="296">
+    <Constant Name="UNDEFINED" UId="297" />
+  </Access>
+  <Token Text=";" UId="300" />
+  <NewLine UId="301" />
+  <Blank Num="4" UId="302" />
+  <Token Text="END_IF" UId="303" />
+  <Token Text=";" UId="304" />
+  <NewLine UId="305" />
+  <Blank Num="4" UId="306" />
+  <NewLine UId="307" />
+  <Blank Num="4" UId="308" />
+  <LineComment UId="309">
+    <Text UId="310"> IsDoorLocked</Text>
+  </LineComment>
+  <NewLine UId="311" />
+  <Blank Num="4" UId="312" />
+  <Access Scope="GlobalVariable" UId="313">
+    <Symbol UId="314">
+      <Component Name="DB_OPC_Machine" UId="315">
+        <BooleanAttribute Name="HasQuotes" UId="316">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="317" />
+      <Component Name="State" UId="318" />
+      <Token Text="." UId="319" />
+      <Component Name="Current" UId="320" />
+      <Token Text="." UId="321" />
+      <Component Name="IsDoorLocked" UId="322" />
+    </Symbol>
+  </Access>
+  <Blank UId="323" />
+  <Token Text=":=" UId="324" />
+  <Blank UId="325" />
+  <Access Scope="GlobalVariable" UId="326">
+    <Symbol UId="327">
+      <Component Name="DB_DigitalInputs" UId="328">
+        <BooleanAttribute Name="HasQuotes" UId="329">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="330" />
+      <Component Name="sFrontDoorLocked" UId="331" />
+      <Token Text="." UId="332" />
+      <Component Name="sSWStatus" UId="333" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="334" />
+  <NewLine UId="335" />
+  <Blank Num="4" UId="336" />
+  <NewLine UId="337" />
+  <Blank Num="4" UId="338" />
+  <LineComment UId="339">
+    <Text UId="340"> IsEmptying</Text>
+  </LineComment>
+  <NewLine UId="341" />
+  <Blank Num="4" UId="342" />
+  <Access Scope="GlobalVariable" UId="343">
+    <Symbol UId="344">
+      <Component Name="DB_OPC_Machine" UId="345">
+        <BooleanAttribute Name="HasQuotes" UId="346">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="347" />
+      <Component Name="State" UId="348" />
+      <Token Text="." UId="349" />
+      <Component Name="Current" UId="350" />
+      <Token Text="." UId="351" />
+      <Component Name="IsEmptying" UId="352" />
+    </Symbol>
+  </Access>
+  <Blank UId="353" />
+  <Token Text=":=" UId="354" />
+  <Blank UId="355" />
+  <Access Scope="GlobalVariable" UId="356">
+    <Symbol UId="357">
+      <Component Name="DB_WorkingModes" UId="358">
+        <BooleanAttribute Name="HasQuotes" UId="359">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="360" />
+      <Component Name="sEmptying" UId="361" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="362" />
+  <NewLine UId="363" />
+  <Blank Num="4" UId="364" />
+  <NewLine UId="365" />
+  <Blank Num="4" UId="366" />
+  <LineComment UId="367">
+    <Text UId="368"> IsInitialized</Text>
+  </LineComment>
+  <NewLine UId="369" />
+  <Blank Num="4" UId="370" />
+  <Access Scope="GlobalVariable" UId="371">
+    <Symbol UId="372">
+      <Component Name="DB_OPC_Machine" UId="373">
+        <BooleanAttribute Name="HasQuotes" UId="374">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="375" />
+      <Component Name="State" UId="376" />
+      <Token Text="." UId="377" />
+      <Component Name="Current" UId="378" />
+      <Token Text="." UId="379" />
+      <Component Name="IsInitialized" UId="380" />
+    </Symbol>
+  </Access>
+  <Blank UId="381" />
+  <Token Text=":=" UId="382" />
+  <Blank UId="383" />
+  <Access Scope="GlobalVariable" UId="384">
+    <Symbol UId="385">
+      <Component Name="DB_PowerOn" UId="386">
+        <BooleanAttribute Name="HasQuotes" UId="387">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="388" />
+      <Component Name="sMachineReadySoft" UId="389" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="390" />
+  <NewLine UId="391" />
+  <Blank Num="4" UId="392" />
+  <NewLine UId="393" />
+  <Blank Num="4" UId="394" />
+  <LineComment UId="395">
+    <Text UId="396"> IsRunning</Text>
+  </LineComment>
+  <NewLine UId="397" />
+  <Blank Num="4" UId="398" />
+  <Access Scope="GlobalVariable" UId="399">
+    <Symbol UId="400">
+      <Component Name="DB_OPC_Machine" UId="401">
+        <BooleanAttribute Name="HasQuotes" UId="402">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="403" />
+      <Component Name="State" UId="404" />
+      <Token Text="." UId="405" />
+      <Component Name="Current" UId="406" />
+      <Token Text="." UId="407" />
+      <Component Name="IsRunning" UId="408" />
+    </Symbol>
+  </Access>
+  <Blank UId="409" />
+  <Token Text=":=" UId="410" />
+  <Blank UId="411" />
+  <Access Scope="GlobalVariable" UId="412">
+    <Symbol UId="413">
+      <Component Name="LBP_Chan1" UId="414">
+        <BooleanAttribute Name="HasQuotes" UId="415">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="416" />
+      <Component Name="E_ProgRunning" UId="417" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="418" />
+  <NewLine UId="419" />
+  <Token Text="END_REGION" UId="420" />
+  <NewLine Num="2" UId="421" />
+  <Token Text="REGION" UId="422" />
+  <NewLine UId="423" />
+  <Blank Num="4" UId="424" />
+  <LineComment UId="425">
+    <Text UId="426"> Request Change Mode</Text>
+  </LineComment>
+  <NewLine UId="427" />
+  <Blank Num="4" UId="428" />
+  <Token Text="IF" UId="429" />
+  <Blank UId="430" />
+  <Access Scope="GlobalVariable" UId="431">
+    <Symbol UId="432">
+      <Component Name="DB_OPC_Machine" UId="433">
+        <BooleanAttribute Name="HasQuotes" UId="434">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="435" />
+      <Component Name="State" UId="436" />
+      <Token Text="." UId="437" />
+      <Component Name="Requests" UId="438" />
+      <Token Text="." UId="439" />
+      <Component Name="LoadingMode" UId="440" />
+      <Token Text="." UId="441" />
+      <Component Name="RequestChangeMode" UId="442" />
+    </Symbol>
+  </Access>
+  <Blank UId="443" />
+  <Token Text="THEN" UId="444" />
+  <NewLine UId="445" />
+  <Blank Num="8" UId="446" />
+  <Token Text="IF" UId="447" />
+  <Blank UId="448" />
+  <Access Scope="GlobalVariable" UId="449">
+    <Symbol UId="450">
+      <Component Name="DB_OPC_Machine" UId="451">
+        <BooleanAttribute Name="HasQuotes" UId="452">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="453" />
+      <Component Name="State" UId="454" />
+      <Token Text="." UId="455" />
+      <Component Name="Requests" UId="456" />
+      <Token Text="." UId="457" />
+      <Component Name="LoadingMode" UId="458" />
+      <Token Text="." UId="459" />
+      <Component Name="TargetMode" UId="460" />
+    </Symbol>
+  </Access>
+  <Blank UId="461" />
+  <Token Text="=" UId="462" />
+  <Blank UId="463" />
+  <Access Scope="LocalConstant" UId="464">
+    <Constant Name="AUTO" UId="465" />
+  </Access>
+  <Blank UId="468" />
+  <Token Text="THEN" UId="469" />
+  <NewLine UId="470" />
+  <Blank Num="12" UId="471" />
+  <Access Scope="LocalVariable" UId="472">
+    <Symbol UId="473">
+      <Component Name="sAutoReq" UId="474" />
+    </Symbol>
+  </Access>
+  <Blank UId="475" />
+  <Token Text=":=" UId="476" />
+  <Blank UId="477" />
+  <Access Scope="LiteralConstant" UId="478">
+    <Constant UId="479">
+      <ConstantValue UId="481">TRUE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="482" />
+  <NewLine UId="483" />
+  <Blank Num="8" UId="484" />
+  <Token Text="ELSIF" UId="485" />
+  <Blank UId="486" />
+  <Access Scope="GlobalVariable" UId="487">
+    <Symbol UId="488">
+      <Component Name="DB_OPC_Machine" UId="489">
+        <BooleanAttribute Name="HasQuotes" UId="490">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="491" />
+      <Component Name="State" UId="492" />
+      <Token Text="." UId="493" />
+      <Component Name="Requests" UId="494" />
+      <Token Text="." UId="495" />
+      <Component Name="LoadingMode" UId="496" />
+      <Token Text="." UId="497" />
+      <Component Name="TargetMode" UId="498" />
+    </Symbol>
+  </Access>
+  <Blank UId="499" />
+  <Token Text="=" UId="500" />
+  <Blank UId="501" />
+  <Access Scope="LocalConstant" UId="502">
+    <Constant Name="SEMI_AUTO" UId="503" />
+  </Access>
+  <Blank UId="506" />
+  <Token Text="THEN" UId="507" />
+  <NewLine UId="508" />
+  <Blank Num="12" UId="509" />
+  <Access Scope="LocalVariable" UId="510">
+    <Symbol UId="511">
+      <Component Name="sSemiAutoReq" UId="512" />
+    </Symbol>
+  </Access>
+  <Blank UId="513" />
+  <Token Text=":=" UId="514" />
+  <Blank UId="515" />
+  <Access Scope="LiteralConstant" UId="516">
+    <Constant UId="517">
+      <ConstantValue UId="519">TRUE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="520" />
+  <NewLine UId="521" />
+  <Blank Num="8" UId="522" />
+  <Token Text="ELSIF" UId="523" />
+  <Blank UId="524" />
+  <Access Scope="GlobalVariable" UId="525">
+    <Symbol UId="526">
+      <Component Name="DB_OPC_Machine" UId="527">
+        <BooleanAttribute Name="HasQuotes" UId="528">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="529" />
+      <Component Name="State" UId="530" />
+      <Token Text="." UId="531" />
+      <Component Name="Requests" UId="532" />
+      <Token Text="." UId="533" />
+      <Component Name="LoadingMode" UId="534" />
+      <Token Text="." UId="535" />
+      <Component Name="TargetMode" UId="536" />
+    </Symbol>
+  </Access>
+  <Blank UId="537" />
+  <Token Text="=" UId="538" />
+  <Blank UId="539" />
+  <Access Scope="LocalConstant" UId="540">
+    <Constant Name="MANU" UId="541" />
+  </Access>
+  <Blank UId="544" />
+  <Token Text="THEN" UId="545" />
+  <NewLine UId="546" />
+  <Blank Num="12" UId="547" />
+  <Access Scope="LocalVariable" UId="548">
+    <Symbol UId="549">
+      <Component Name="sManuReq" UId="550" />
+    </Symbol>
+  </Access>
+  <Blank UId="551" />
+  <Token Text=":=" UId="552" />
+  <Blank UId="553" />
+  <Access Scope="LiteralConstant" UId="554">
+    <Constant UId="555">
+      <ConstantValue UId="557">TRUE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="558" />
+  <NewLine UId="559" />
+  <Blank Num="8" UId="560" />
+  <Token Text="END_IF" UId="561" />
+  <Token Text=";" UId="562" />
+  <NewLine UId="563" />
+  <Blank Num="8" UId="564" />
+  <Access Scope="GlobalVariable" UId="565">
+    <Symbol UId="566">
+      <Component Name="DB_OPC_Machine" UId="567">
+        <BooleanAttribute Name="HasQuotes" UId="568">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="569" />
+      <Component Name="State" UId="570" />
+      <Token Text="." UId="571" />
+      <Component Name="Requests" UId="572" />
+      <Token Text="." UId="573" />
+      <Component Name="LoadingMode" UId="574" />
+      <Token Text="." UId="575" />
+      <Component Name="RequestChangeMode" UId="576" />
+    </Symbol>
+  </Access>
+  <Blank UId="577" />
+  <Token Text=":=" UId="578" />
+  <Blank UId="579" />
+  <Access Scope="LiteralConstant" UId="580">
+    <Constant UId="581">
+      <ConstantValue UId="583">FALSE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="584" />
+  <NewLine UId="585" />
+  <Blank Num="8" UId="586" />
+  <Access Scope="GlobalVariable" UId="587">
+    <Symbol UId="588">
+      <Component Name="DB_OPC_Machine" UId="589">
+        <BooleanAttribute Name="HasQuotes" UId="590">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="591" />
+      <Component Name="State" UId="592" />
+      <Token Text="." UId="593" />
+      <Component Name="Requests" UId="594" />
+      <Token Text="." UId="595" />
+      <Component Name="LoadingMode" UId="596" />
+      <Token Text="." UId="597" />
+      <Component Name="TargetMode" UId="598" />
+    </Symbol>
+  </Access>
+  <Blank UId="599" />
+  <Token Text=":=" UId="600" />
+  <Blank UId="601" />
+  <Access Scope="LocalConstant" UId="602">
+    <Constant Name="UNDEFINED" UId="603" />
+  </Access>
+  <Token Text=";" UId="606" />
+  <NewLine UId="607" />
+  <Blank Num="4" UId="608" />
+  <Token Text="END_IF" UId="609" />
+  <Token Text=";" UId="610" />
+  <NewLine UId="611" />
+  <Blank Num="4" UId="612" />
+  <NewLine UId="613" />
+  <Blank Num="4" UId="614" />
+  <Access Scope="LocalVariable" UId="615">
+    <Symbol UId="616">
+      <Component Name="sRT_AutoReq" UId="617" />
+    </Symbol>
+  </Access>
+  <Access Scope="Call" UId="618">
+    <Instruction UId="619">
+      <Token Text="(" UId="620" />
+      <Parameter Name="CLK" UId="621">
+        <Blank UId="622" />
+        <Token Text=":=" UId="623" />
+        <Blank UId="624" />
+        <Access Scope="LocalVariable" UId="625">
+          <Symbol UId="626">
+            <Component Name="sAutoReq" UId="627" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text=")" UId="628" />
+    </Instruction>
+  </Access>
+  <Token Text=";" UId="629" />
+  <NewLine UId="630" />
+  <Blank Num="4" UId="631" />
+  <Access Scope="LocalVariable" UId="632">
+    <Symbol UId="633">
+      <Component Name="sRT_SemiAutoReq" UId="634" />
+    </Symbol>
+  </Access>
+  <Access Scope="Call" UId="635">
+    <Instruction UId="636">
+      <Token Text="(" UId="637" />
+      <Parameter Name="CLK" UId="638">
+        <Blank UId="639" />
+        <Token Text=":=" UId="640" />
+        <Blank UId="641" />
+        <Access Scope="LocalVariable" UId="642">
+          <Symbol UId="643">
+            <Component Name="sSemiAutoReq" UId="644" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text=")" UId="645" />
+    </Instruction>
+  </Access>
+  <Token Text=";" UId="646" />
+  <NewLine UId="647" />
+  <Blank Num="4" UId="648" />
+  <Access Scope="LocalVariable" UId="649">
+    <Symbol UId="650">
+      <Component Name="sRT_ManuReq" UId="651" />
+    </Symbol>
+  </Access>
+  <Access Scope="Call" UId="652">
+    <Instruction UId="653">
+      <Token Text="(" UId="654" />
+      <Parameter Name="CLK" UId="655">
+        <Blank UId="656" />
+        <Token Text=":=" UId="657" />
+        <Blank UId="658" />
+        <Access Scope="LocalVariable" UId="659">
+          <Symbol UId="660">
+            <Component Name="sManuReq" UId="661" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text=")" UId="662" />
+    </Instruction>
+  </Access>
+  <Token Text=";" UId="663" />
+  <NewLine UId="664" />
+  <Blank Num="4" UId="665" />
+  <NewLine UId="666" />
+  <Blank Num="4" UId="667" />
+  <LineComment UId="668">
+    <Text UId="669"> Request Lock Door</Text>
+  </LineComment>
+  <NewLine UId="670" />
+  <Blank Num="4" UId="671" />
+  <Token Text="IF" UId="672" />
+  <Blank UId="673" />
+  <Access Scope="GlobalVariable" UId="674">
+    <Symbol UId="675">
+      <Component Name="DB_OPC_Machine" UId="676">
+        <BooleanAttribute Name="HasQuotes" UId="677">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="678" />
+      <Component Name="State" UId="679" />
+      <Token Text="." UId="680" />
+      <Component Name="Requests" UId="681" />
+      <Token Text="." UId="682" />
+      <Component Name="RequestLockDoor" UId="683" />
+    </Symbol>
+  </Access>
+  <Blank UId="684" />
+  <Token Text="THEN" UId="685" />
+  <NewLine UId="686" />
+  <Blank Num="8" UId="687" />
+  <Access Scope="GlobalVariable" UId="688">
+    <Symbol UId="689">
+      <Component Name="DB_HMISetting" UId="690">
+        <BooleanAttribute Name="HasQuotes" UId="691">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="692" />
+      <Component Name="LockDoorReq" UId="693" />
+    </Symbol>
+  </Access>
+  <Blank UId="694" />
+  <Token Text=":=" UId="695" />
+  <Blank UId="696" />
+  <Access Scope="LiteralConstant" UId="697">
+    <Constant UId="698">
+      <ConstantValue UId="700">TRUE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="701" />
+  <NewLine UId="702" />
+  <Blank Num="8" UId="703" />
+  <Access Scope="GlobalVariable" UId="704">
+    <Symbol UId="705">
+      <Component Name="DB_OPC_Machine" UId="706">
+        <BooleanAttribute Name="HasQuotes" UId="707">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="708" />
+      <Component Name="State" UId="709" />
+      <Token Text="." UId="710" />
+      <Component Name="Requests" UId="711" />
+      <Token Text="." UId="712" />
+      <Component Name="RequestLockDoor" UId="713" />
+    </Symbol>
+  </Access>
+  <Blank UId="714" />
+  <Token Text=":=" UId="715" />
+  <Blank UId="716" />
+  <Access Scope="LiteralConstant" UId="717">
+    <Constant UId="718">
+      <ConstantValue UId="720">FALSE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="721" />
+  <NewLine UId="722" />
+  <Blank Num="4" UId="723" />
+  <Token Text="END_IF" UId="724" />
+  <Token Text=";" UId="725" />
+  <NewLine UId="726" />
+  <Blank Num="4" UId="727" />
+  <NewLine UId="728" />
+  <Blank Num="4" UId="729" />
+  <LineComment UId="730">
+    <Text UId="731"> Request Start Auto</Text>
+  </LineComment>
+  <NewLine UId="732" />
+  <Blank Num="4" UId="733" />
+  <Token Text="IF" UId="734" />
+  <Blank UId="735" />
+  <Access Scope="GlobalVariable" UId="736">
+    <Symbol UId="737">
+      <Component Name="DB_OPC_Machine" UId="738">
+        <BooleanAttribute Name="HasQuotes" UId="739">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="740" />
+      <Component Name="State" UId="741" />
+      <Token Text="." UId="742" />
+      <Component Name="Requests" UId="743" />
+      <Token Text="." UId="744" />
+      <Component Name="RequestStartAuto" UId="745" />
+    </Symbol>
+  </Access>
+  <Blank UId="746" />
+  <Token Text="THEN" UId="747" />
+  <NewLine UId="748" />
+  <Blank Num="8" UId="749" />
+  <Access Scope="GlobalVariable" UId="750">
+    <Symbol UId="751">
+      <Component Name="DB_HMISetting" UId="752">
+        <BooleanAttribute Name="HasQuotes" UId="753">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="754" />
+      <Component Name="StartAutoReq" UId="755" />
+    </Symbol>
+  </Access>
+  <Blank UId="756" />
+  <Token Text=":=" UId="757" />
+  <Blank UId="758" />
+  <Access Scope="LiteralConstant" UId="759">
+    <Constant UId="760">
+      <ConstantValue UId="762">TRUE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="763" />
+  <NewLine UId="764" />
+  <Blank Num="8" UId="765" />
+  <Access Scope="GlobalVariable" UId="766">
+    <Symbol UId="767">
+      <Component Name="DB_OPC_Machine" UId="768">
+        <BooleanAttribute Name="HasQuotes" UId="769">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="770" />
+      <Component Name="State" UId="771" />
+      <Token Text="." UId="772" />
+      <Component Name="Requests" UId="773" />
+      <Token Text="." UId="774" />
+      <Component Name="RequestStartAuto" UId="775" />
+    </Symbol>
+  </Access>
+  <Blank UId="776" />
+  <Token Text=":=" UId="777" />
+  <Blank UId="778" />
+  <Access Scope="LiteralConstant" UId="779">
+    <Constant UId="780">
+      <ConstantValue UId="782">FALSE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="783" />
+  <NewLine UId="784" />
+  <Blank Num="4" UId="785" />
+  <Token Text="END_IF" UId="786" />
+  <Token Text=";" UId="787" />
+  <NewLine UId="788" />
+  <Blank Num="4" UId="789" />
+  <NewLine UId="790" />
+  <Blank Num="4" UId="791" />
+  <LineComment UId="792">
+    <Text UId="793"> Request Start Emptying</Text>
+  </LineComment>
+  <NewLine UId="794" />
+  <Blank Num="4" UId="795" />
+  <Token Text="IF" UId="796" />
+  <Blank UId="797" />
+  <Access Scope="GlobalVariable" UId="798">
+    <Symbol UId="799">
+      <Component Name="DB_OPC_Machine" UId="800">
+        <BooleanAttribute Name="HasQuotes" UId="801">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="802" />
+      <Component Name="State" UId="803" />
+      <Token Text="." UId="804" />
+      <Component Name="Requests" UId="805" />
+      <Token Text="." UId="806" />
+      <Component Name="RequestStartEmptying" UId="807" />
+    </Symbol>
+  </Access>
+  <Blank UId="808" />
+  <Token Text="THEN" UId="809" />
+  <NewLine UId="810" />
+  <Blank Num="8" UId="811" />
+  <Access Scope="GlobalVariable" UId="812">
+    <Symbol UId="813">
+      <Component Name="DB_HMISetting" UId="814">
+        <BooleanAttribute Name="HasQuotes" UId="815">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="816" />
+      <Component Name="WorkingMode" UId="817" />
+      <Token Text="." UId="818" />
+      <Component Name="EmptyingReq" UId="819" />
+    </Symbol>
+  </Access>
+  <Blank UId="820" />
+  <Token Text=":=" UId="821" />
+  <Blank UId="822" />
+  <Access Scope="LiteralConstant" UId="823">
+    <Constant UId="824">
+      <ConstantValue UId="826">TRUE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="827" />
+  <NewLine UId="828" />
+  <Blank Num="8" UId="829" />
+  <Access Scope="GlobalVariable" UId="830">
+    <Symbol UId="831">
+      <Component Name="DB_OPC_Machine" UId="832">
+        <BooleanAttribute Name="HasQuotes" UId="833">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="834" />
+      <Component Name="State" UId="835" />
+      <Token Text="." UId="836" />
+      <Component Name="Requests" UId="837" />
+      <Token Text="." UId="838" />
+      <Component Name="RequestStartEmptying" UId="839" />
+    </Symbol>
+  </Access>
+  <Blank UId="840" />
+  <Token Text=":=" UId="841" />
+  <Blank UId="842" />
+  <Access Scope="LiteralConstant" UId="843">
+    <Constant UId="844">
+      <ConstantValue UId="846">FALSE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="847" />
+  <NewLine UId="848" />
+  <Blank Num="4" UId="849" />
+  <Token Text="END_IF" UId="850" />
+  <Token Text=";" UId="851" />
+  <NewLine UId="852" />
+  <Blank Num="4" UId="853" />
+  <NewLine UId="854" />
+  <Blank Num="4" UId="855" />
+  <LineComment UId="856">
+    <Text UId="857"> Request Stop Auto</Text>
+  </LineComment>
+  <NewLine UId="858" />
+  <Blank Num="4" UId="859" />
+  <Token Text="IF" UId="860" />
+  <Blank UId="861" />
+  <Access Scope="GlobalVariable" UId="862">
+    <Symbol UId="863">
+      <Component Name="DB_OPC_Machine" UId="864">
+        <BooleanAttribute Name="HasQuotes" UId="865">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="866" />
+      <Component Name="State" UId="867" />
+      <Token Text="." UId="868" />
+      <Component Name="Requests" UId="869" />
+      <Token Text="." UId="870" />
+      <Component Name="RequestStopAuto" UId="871" />
+    </Symbol>
+  </Access>
+  <Blank UId="872" />
+  <Token Text="THEN" UId="873" />
+  <NewLine UId="874" />
+  <Blank Num="8" UId="875" />
+  <Access Scope="GlobalVariable" UId="876">
+    <Symbol UId="877">
+      <Component Name="DB_HMISetting" UId="878">
+        <BooleanAttribute Name="HasQuotes" UId="879">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="880" />
+      <Component Name="StopAutoReq" UId="881" />
+    </Symbol>
+  </Access>
+  <Blank UId="882" />
+  <Token Text=":=" UId="883" />
+  <Blank UId="884" />
+  <Access Scope="LiteralConstant" UId="885">
+    <Constant UId="886">
+      <ConstantValue UId="888">TRUE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="889" />
+  <NewLine UId="890" />
+  <Blank Num="8" UId="891" />
+  <Access Scope="GlobalVariable" UId="892">
+    <Symbol UId="893">
+      <Component Name="DB_OPC_Machine" UId="894">
+        <BooleanAttribute Name="HasQuotes" UId="895">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="896" />
+      <Component Name="State" UId="897" />
+      <Token Text="." UId="898" />
+      <Component Name="Requests" UId="899" />
+      <Token Text="." UId="900" />
+      <Component Name="RequestStopAuto" UId="901" />
+    </Symbol>
+  </Access>
+  <Blank UId="902" />
+  <Token Text=":=" UId="903" />
+  <Blank UId="904" />
+  <Access Scope="LiteralConstant" UId="905">
+    <Constant UId="906">
+      <ConstantValue UId="908">FALSE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="909" />
+  <NewLine UId="910" />
+  <Blank Num="4" UId="911" />
+  <Token Text="END_IF" UId="912" />
+  <Token Text=";" UId="913" />
+  <NewLine UId="914" />
+  <Blank Num="4" UId="915" />
+  <NewLine UId="916" />
+  <Blank Num="4" UId="917" />
+  <LineComment UId="918">
+    <Text UId="919"> Request Stop Emptying (Back to Normal Mode)</Text>
+  </LineComment>
+  <NewLine UId="920" />
+  <Blank Num="4" UId="921" />
+  <Token Text="IF" UId="922" />
+  <Blank UId="923" />
+  <Access Scope="GlobalVariable" UId="924">
+    <Symbol UId="925">
+      <Component Name="DB_OPC_Machine" UId="926">
+        <BooleanAttribute Name="HasQuotes" UId="927">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="928" />
+      <Component Name="State" UId="929" />
+      <Token Text="." UId="930" />
+      <Component Name="Requests" UId="931" />
+      <Token Text="." UId="932" />
+      <Component Name="RequestStopEmptying" UId="933" />
+    </Symbol>
+  </Access>
+  <Blank UId="934" />
+  <Token Text="THEN" UId="935" />
+  <NewLine UId="936" />
+  <Blank Num="8" UId="937" />
+  <Access Scope="GlobalVariable" UId="938">
+    <Symbol UId="939">
+      <Component Name="DB_HMISetting" UId="940">
+        <BooleanAttribute Name="HasQuotes" UId="941">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="942" />
+      <Component Name="WorkingMode" UId="943" />
+      <Token Text="." UId="944" />
+      <Component Name="EmptyingReq" UId="945" />
+    </Symbol>
+  </Access>
+  <Blank UId="946" />
+  <Token Text=":=" UId="947" />
+  <Blank UId="948" />
+  <Access Scope="LiteralConstant" UId="949">
+    <Constant UId="950">
+      <ConstantValue UId="952">FALSE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="953" />
+  <NewLine UId="954" />
+  <Blank Num="4" UId="955" />
+  <Token Text="END_IF" UId="956" />
+  <Token Text=";" UId="957" />
+  <NewLine UId="958" />
+  <Blank Num="4" UId="959" />
+  <Access Scope="GlobalVariable" UId="960">
+    <Symbol UId="961">
+      <Component Name="DB_OPC_Machine" UId="962">
+        <BooleanAttribute Name="HasQuotes" UId="963">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="964" />
+      <Component Name="State" UId="965" />
+      <Token Text="." UId="966" />
+      <Component Name="Requests" UId="967" />
+      <Token Text="." UId="968" />
+      <Component Name="RequestStopEmptying" UId="969" />
+    </Symbol>
+  </Access>
+  <Blank UId="970" />
+  <Token Text=":=" UId="971" />
+  <Blank UId="972" />
+  <Access Scope="LiteralConstant" UId="973">
+    <Constant UId="974">
+      <ConstantValue UId="976">FALSE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="977" />
+  <NewLine UId="978" />
+  <Blank Num="4" UId="979" />
+  <NewLine UId="980" />
+  <Blank Num="4" UId="981" />
+  <LineComment UId="982">
+    <Text UId="983"> Request Unlock Door</Text>
+  </LineComment>
+  <NewLine UId="984" />
+  <Blank Num="4" UId="985" />
+  <Token Text="IF" UId="986" />
+  <Blank UId="987" />
+  <Access Scope="GlobalVariable" UId="988">
+    <Symbol UId="989">
+      <Component Name="DB_OPC_Machine" UId="990">
+        <BooleanAttribute Name="HasQuotes" UId="991">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="992" />
+      <Component Name="State" UId="993" />
+      <Token Text="." UId="994" />
+      <Component Name="Requests" UId="995" />
+      <Token Text="." UId="996" />
+      <Component Name="RequestUnlockDoor" UId="997" />
+    </Symbol>
+  </Access>
+  <Blank UId="998" />
+  <Token Text="THEN" UId="999" />
+  <NewLine UId="1000" />
+  <Blank Num="8" UId="1001" />
+  <Access Scope="GlobalVariable" UId="1002">
+    <Symbol UId="1003">
+      <Component Name="DB_HMISetting" UId="1004">
+        <BooleanAttribute Name="HasQuotes" UId="1005">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="1006" />
+      <Component Name="UnlockDoorReq" UId="1007" />
+    </Symbol>
+  </Access>
+  <Blank UId="1008" />
+  <Token Text=":=" UId="1009" />
+  <Blank UId="1010" />
+  <Access Scope="LiteralConstant" UId="1011">
+    <Constant UId="1012">
+      <ConstantValue UId="1014">TRUE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="1015" />
+  <NewLine UId="1016" />
+  <Blank Num="8" UId="1017" />
+  <Access Scope="GlobalVariable" UId="1018">
+    <Symbol UId="1019">
+      <Component Name="DB_OPC_Machine" UId="1020">
+        <BooleanAttribute Name="HasQuotes" UId="1021">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="1022" />
+      <Component Name="State" UId="1023" />
+      <Token Text="." UId="1024" />
+      <Component Name="Requests" UId="1025" />
+      <Token Text="." UId="1026" />
+      <Component Name="RequestUnlockDoor" UId="1027" />
+    </Symbol>
+  </Access>
+  <Blank UId="1028" />
+  <Token Text=":=" UId="1029" />
+  <Blank UId="1030" />
+  <Access Scope="LiteralConstant" UId="1031">
+    <Constant UId="1032">
+      <ConstantValue UId="1034">FALSE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="1035" />
+  <NewLine UId="1036" />
+  <Blank Num="4" UId="1037" />
+  <Token Text="END_IF" UId="1038" />
+  <Token Text=";" UId="1039" />
+  <NewLine UId="1040" />
+  <Token Text="END_REGION" UId="1041" />
+  <NewLine Num="2" UId="1042" />
+  <Token Text="REGION" UId="1043" />
+  <Blank UId="1044" />
+  <Text UId="1045">CNCMode</Text>
+  <NewLine UId="1046" />
+  <Blank Num="4" UId="1047" />
+  <Token Text="IF" UId="1048" />
+  <Blank UId="1049" />
+  <Access Scope="GlobalVariable" UId="1050">
+    <Symbol UId="1051">
+      <Component Name="LBP_ModeGroup" UId="1052">
+        <BooleanAttribute Name="HasQuotes" UId="1053">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="1054" />
+      <Component Name="E_AUTO" UId="1055" />
+    </Symbol>
+  </Access>
+  <Blank UId="1056" />
+  <Token Text="THEN" UId="1057" />
+  <NewLine UId="1058" />
+  <Blank Num="8" UId="1059" />
+  <Access Scope="GlobalVariable" UId="1060">
+    <Symbol UId="1061">
+      <Component Name="DB_OPC_Machine" UId="1062">
+        <BooleanAttribute Name="HasQuotes" UId="1063">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="1064" />
+      <Component Name="State" UId="1065" />
+      <Token Text="." UId="1066" />
+      <Component Name="Current" UId="1067" />
+      <Token Text="." UId="1068" />
+      <Component Name="CncMode" UId="1069" />
+    </Symbol>
+  </Access>
+  <Blank UId="1070" />
+  <Token Text=":=" UId="1071" />
+  <Blank UId="1072" />
+  <Access Scope="LiteralConstant" UId="1073">
+    <Constant UId="1074">
+      <ConstantValue UId="1076">1</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="1077" />
+  <NewLine UId="1078" />
+  <Blank Num="4" UId="1079" />
+  <Token Text="ELSIF" UId="1080" />
+  <Blank UId="1081" />
+  <Access Scope="GlobalVariable" UId="1082">
+    <Symbol UId="1083">
+      <Component Name="LBP_ModeGroup" UId="1084">
+        <BooleanAttribute Name="HasQuotes" UId="1085">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="1086" />
+      <Component Name="E_JOG" UId="1087" />
+    </Symbol>
+  </Access>
+  <Blank UId="1088" />
+  <Token Text="THEN" UId="1089" />
+  <NewLine UId="1090" />
+  <Blank Num="8" UId="1091" />
+  <Access Scope="GlobalVariable" UId="1092">
+    <Symbol UId="1093">
+      <Component Name="DB_OPC_Machine" UId="1094">
+        <BooleanAttribute Name="HasQuotes" UId="1095">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="1096" />
+      <Component Name="State" UId="1097" />
+      <Token Text="." UId="1098" />
+      <Component Name="Current" UId="1099" />
+      <Token Text="." UId="1100" />
+      <Component Name="CncMode" UId="1101" />
+    </Symbol>
+  </Access>
+  <Blank UId="1102" />
+  <Token Text=":=" UId="1103" />
+  <Blank UId="1104" />
+  <Access Scope="LiteralConstant" UId="1105">
+    <Constant UId="1106">
+      <ConstantValue UId="1108">2</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="1109" />
+  <NewLine UId="1110" />
+  <Blank Num="4" UId="1111" />
+  <Token Text="ELSIF" UId="1112" />
+  <Blank UId="1113" />
+  <Access Scope="GlobalVariable" UId="1114">
+    <Symbol UId="1115">
+      <Component Name="LBP_ModeGroup" UId="1116">
+        <BooleanAttribute Name="HasQuotes" UId="1117">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="1118" />
+      <Component Name="E_MDA" UId="1119" />
+    </Symbol>
+  </Access>
+  <Blank UId="1120" />
+  <Token Text="THEN" UId="1121" />
+  <NewLine UId="1122" />
+  <Blank Num="8" UId="1123" />
+  <Access Scope="GlobalVariable" UId="1124">
+    <Symbol UId="1125">
+      <Component Name="DB_OPC_Machine" UId="1126">
+        <BooleanAttribute Name="HasQuotes" UId="1127">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="1128" />
+      <Component Name="State" UId="1129" />
+      <Token Text="." UId="1130" />
+      <Component Name="Current" UId="1131" />
+      <Token Text="." UId="1132" />
+      <Component Name="CncMode" UId="1133" />
+    </Symbol>
+  </Access>
+  <Blank UId="1134" />
+  <Token Text=":=" UId="1135" />
+  <Blank UId="1136" />
+  <Access Scope="LiteralConstant" UId="1137">
+    <Constant UId="1138">
+      <ConstantValue UId="1140">3</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="1141" />
+  <NewLine UId="1142" />
+  <Blank Num="4" UId="1143" />
+  <Token Text="ELSE" UId="1144" />
+  <NewLine UId="1145" />
+  <Blank Num="8" UId="1146" />
+  <Access Scope="GlobalVariable" UId="1147">
+    <Symbol UId="1148">
+      <Component Name="DB_OPC_Machine" UId="1149">
+        <BooleanAttribute Name="HasQuotes" UId="1150">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="1151" />
+      <Component Name="State" UId="1152" />
+      <Token Text="." UId="1153" />
+      <Component Name="Current" UId="1154" />
+      <Token Text="." UId="1155" />
+      <Component Name="CncMode" UId="1156" />
+    </Symbol>
+  </Access>
+  <Blank UId="1157" />
+  <Token Text=":=" UId="1158" />
+  <Blank UId="1159" />
+  <Access Scope="LiteralConstant" UId="1160">
+    <Constant UId="1161">
+      <ConstantValue UId="1163">0</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="1164" />
+  <NewLine UId="1165" />
+  <Blank Num="4" UId="1166" />
+  <Token Text="END_IF" UId="1167" />
+  <Token Text=";" UId="1168" />
+  <NewLine UId="1169" />
+  <Token Text="END_REGION" UId="1170" />
+  <NewLine Num="2" UId="1171" />
+  <Token Text="REGION" UId="1172" />
+  <Blank UId="1173" />
+  <Text UId="1174">MachineOverride</Text>
+  <NewLine UId="1175" />
+  <Blank Num="4" UId="1176" />
+  <Access Scope="GlobalVariable" UId="1177">
+    <Symbol UId="1178">
+      <Component Name="DB_OPC_Machine" UId="1179">
+        <BooleanAttribute Name="HasQuotes" UId="1180">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="1181" />
+      <Component Name="State" UId="1182" />
+      <Token Text="." UId="1183" />
+      <Component Name="Current" UId="1184" />
+      <Token Text="." UId="1185" />
+      <Component Name="MachineOverride" UId="1186" />
+    </Symbol>
+  </Access>
+  <Blank UId="1187" />
+  <Token Text=":=" UId="1188" />
+  <Blank UId="1189" />
+  <Access Scope="GlobalVariable" UId="1190">
+    <Symbol UId="1191">
+      <Component Name="DB_FeedOverride" UId="1192">
+        <BooleanAttribute Name="HasQuotes" UId="1193">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="1194" />
+      <Component Name="oFeedOverride" UId="1195" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="1196" />
+  <NewLine UId="1197" />
+  <Token Text="END_REGION" UId="1198" />
+</StructuredText></NetworkSource>
+          <ProgrammingLanguage>SCL</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="5" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="6" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="7" CompositionName="Items">
+                <AttributeList>
+                  <Culture>fr-FR</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="8" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="9" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="A" CompositionName="Items">
+                <AttributeList>
+                  <Culture>fr-FR</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <MultilingualText ID="B" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="C" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="D" CompositionName="Items">
+            <AttributeList>
+              <Culture>fr-FR</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Blocks.FB>
+</Document>

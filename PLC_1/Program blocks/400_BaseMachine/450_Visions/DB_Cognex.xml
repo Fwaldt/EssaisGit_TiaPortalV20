@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V20" />
+  <SW.Blocks.InstanceDB ID="0">
+    <AttributeList>
+      <AutoNumber>false</AutoNumber>
+      <InstanceOfName>FB_Cognex</InstanceOfName>
+      <InstanceOfType>FB</InstanceOfType>
+      <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+  <Section Name="Input" />
+  <Section Name="Output" />
+  <Section Name="InOut" />
+  <Section Name="Static">
+    <Member Name="sASTriggerReadyMemo" Datatype="Bool" />
+    <Member Name="sASTriggerAckMemo" Datatype="Bool" />
+    <Member Name="sASAcquiringMemo" Datatype="Bool" />
+    <Member Name="sASMissedTrigMemo" Datatype="Bool" />
+    <Member Name="sASOfflineResBit1Memo" Datatype="Bool" />
+    <Member Name="sASOfflineResBit2Memo" Datatype="Bool" />
+    <Member Name="sASOfflineResBit3Memo" Datatype="Bool" />
+    <Member Name="sASOnlineMemo" Datatype="Bool" />
+    <Member Name="sISInspectingMemo" Datatype="Bool" />
+    <Member Name="sISToggleInspectDoneMemo" Datatype="Bool" />
+    <Member Name="sISBufferOverrunMemo" Datatype="Bool" />
+    <Member Name="sISResultsValidMemo" Datatype="Bool" />
+    <Member Name="sISJobLoadingMemo" Datatype="Bool" />
+    <Member Name="sISJobLoadCompleteMemo" Datatype="Bool" />
+    <Member Name="sISJobLoadFailedMemo" Datatype="Bool" />
+    <Member Name="sISSetUserDataACkMemo" Datatype="Bool" />
+    <Member Name="sISJobPassMemo" Datatype="Bool" />
+    <Member Name="sSEC0AckMemo" Datatype="Bool" />
+    <Member Name="sSEC1AckMemo" Datatype="Bool" />
+    <Member Name="sSEC2AckMemo" Datatype="Bool" />
+    <Member Name="sSEC3AckMemo" Datatype="Bool" />
+    <Member Name="sSEC4AckMemo" Datatype="Bool" />
+    <Member Name="sSEC5AckMemo" Datatype="Bool" />
+    <Member Name="sSEC6AckMemo" Datatype="Bool" />
+    <Member Name="sSEC7AckMemo" Datatype="Bool" />
+    <Member Name="sACTriggerEnableMemo" Datatype="Bool" />
+    <Member Name="sACTriggerMemo" Datatype="Bool" />
+    <Member Name="sACClearAcquirComplMemo" Datatype="Bool" />
+    <Member Name="sACSetOfflineMemo" Datatype="Bool" />
+    <Member Name="sICBufferResultsEnMemo" Datatype="Bool" />
+    <Member Name="sICInspectResultsAckMemo" Datatype="Bool" />
+    <Member Name="sICSetUserDataMemo" Datatype="Bool" />
+    <Member Name="sICExecuteCmdMemo" Datatype="Bool" />
+    <Member Name="sCCSetJobIDMemo" Datatype="Int" />
+    <Member Name="sSEC0Memo" Datatype="Bool" />
+    <Member Name="sSEC1Memo" Datatype="Bool" />
+    <Member Name="sSEC2Memo" Datatype="Bool" />
+    <Member Name="sSEC3Memo" Datatype="Bool" />
+    <Member Name="sSEC4Memo" Datatype="Bool" />
+    <Member Name="sSEC5Memo" Datatype="Bool" />
+    <Member Name="sSEC6Memo" Datatype="Bool" />
+    <Member Name="sSEC7Memo" Datatype="Bool" />
+    <Member Name="sCamLightOn" Datatype="Bool" />
+    <Member Name="sUserDataWrite" Datatype="Bool" />
+    <Member Name="sUserDataWriteEn" Datatype="Bool" />
+    <Member Name="sStartCapture" Datatype="Bool" />
+    <Member Name="sAfterResultSoft7" Datatype="Bool" />
+    <Member Name="sTrigAckMemory" Datatype="Bool" />
+    <Member Name="sMemoM55" Datatype="Bool" />
+    <Member Name="sSetSetup" Datatype="Bool" />
+    <Member Name="sResultDataErrorBit" Datatype="Bool" />
+    <Member Name="sICBufferResultsEnPositiveFront" Datatype="Bool" />
+    <Member Name="sUserResultReadHole" Datatype="Bool" />
+    <Member Name="sUserDataErrorBit" Datatype="Bool" />
+    <Member Name="sIRActHoleNrResultMemo" Datatype="Byte" />
+    <Member Name="sSetJobId" Datatype="Int" />
+    <Member Name="sSetJobIdMemo" Datatype="Int" />
+    <Member Name="sJCJobIDMemo" Datatype="Word" />
+    <Member Name="sIRInspectionIDMemo" Datatype="Word" />
+    <Member Name="sIRInspectResultCodeMemo" Datatype="Word" />
+    <Member Name="sASAcquiNumMemo" Datatype="Word" />
+    <Member Name="sUserDataErrorCode" Datatype="Int" />
+    <Member Name="sResultDataErrorCode" Datatype="Int" />
+    <Member Name="sNumChannel" Datatype="Int" />
+    <Member Name="sCountAcquiNr" Datatype="Int" />
+    <Member Name="sCounter" Datatype="CTUD_INT" Version="1.0" />
+    <Member Name="sUserDataArray" Datatype="Array[0..7] of DWord" />
+    <Member Name="sResultDataArray" Datatype="Array[0..3] of DWord" />
+  </Section>
+</Sections></Interface>
+      <Name>DB_Cognex</Name>
+      <Namespace />
+      <Number>1255</Number>
+      <ProgrammingLanguage>DB</ProgrammingLanguage>
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="3" CompositionName="Items">
+            <AttributeList>
+              <Culture>fr-FR</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <MultilingualText ID="4" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="5" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="6" CompositionName="Items">
+            <AttributeList>
+              <Culture>fr-FR</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Blocks.InstanceDB>
+</Document>

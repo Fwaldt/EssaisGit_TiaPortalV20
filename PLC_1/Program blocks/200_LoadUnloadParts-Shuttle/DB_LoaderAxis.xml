@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V20" />
+  <SW.Blocks.InstanceDB ID="0">
+    <AttributeList>
+      <AutoNumber>false</AutoNumber>
+      <InstanceOfName>FB_LoaderAxis</InstanceOfName>
+      <InstanceOfType>FB</InstanceOfType>
+      <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+  <Section Name="Input">
+    <Member Name="iPLCModeReq" Datatype="Bool" />
+    <Member Name="iCNCModeReq" Datatype="Bool" />
+    <Member Name="iU1StartReq" Datatype="Bool" />
+    <Member Name="iU2StartReq" Datatype="Bool" />
+    <Member Name="iVStartReq" Datatype="Bool" />
+    <Member Name="iWStartReq" Datatype="Bool" />
+    <Member Name="iU1PosSetPoint" Datatype="Real" />
+    <Member Name="iU2PosSetPoint" Datatype="Real" />
+    <Member Name="iVPosSetPoint" Datatype="Real" />
+    <Member Name="iWPosSetPoint" Datatype="Real" />
+  </Section>
+  <Section Name="Output">
+    <Member Name="oU1InPos" Datatype="Bool" />
+    <Member Name="oU2InPos" Datatype="Bool" />
+    <Member Name="oVInPos" Datatype="Bool" />
+    <Member Name="oWInPos" Datatype="Bool" />
+  </Section>
+  <Section Name="InOut" />
+  <Section Name="Static">
+    <Member Name="sAxisPLCMode" Datatype="Bool" />
+    <Member Name="sAxisCNCMode" Datatype="Bool" />
+    <Member Name="sAllAxisPLCMode" Datatype="Bool" />
+    <Member Name="sAllAxisCNCMode" Datatype="Bool" />
+    <Member Name="sU1StartMove" Datatype="Bool" />
+    <Member Name="sU2StartMove" Datatype="Bool" />
+    <Member Name="sVStartMove" Datatype="Bool" />
+    <Member Name="sWStartMove" Datatype="Bool" />
+    <Member Name="sU1MoveError" Datatype="Bool" />
+    <Member Name="sU2MoveError" Datatype="Bool" />
+    <Member Name="sVMoveError" Datatype="Bool" />
+    <Member Name="sWMoveError" Datatype="Bool" />
+    <Member Name="sU1InPos" Datatype="Bool" />
+    <Member Name="sU2InPos" Datatype="Bool" />
+    <Member Name="sVInPos" Datatype="Bool" />
+    <Member Name="sWInPos" Datatype="Bool" />
+    <Member Name="sU1SetPos" Datatype="Real" />
+    <Member Name="sU2SetPos" Datatype="Real" />
+    <Member Name="sVSetPos" Datatype="Real" />
+    <Member Name="sWSetPos" Datatype="Real" />
+    <Member Name="sU1MoveState" Datatype="Byte" />
+    <Member Name="sU2MoveState" Datatype="Byte" />
+    <Member Name="sVMoveState" Datatype="Byte" />
+    <Member Name="sWMoveState" Datatype="Byte" />
+    <Member Name="sU1ActFeedRate" Datatype="LReal" />
+    <Member Name="sU2ActFeedRate" Datatype="LReal" />
+    <Member Name="sVActFeedRate" Datatype="LReal" />
+    <Member Name="sWActFeedRate" Datatype="LReal" />
+    <Member Name="sU1DrivedByPLC" Datatype="Bool" />
+    <Member Name="sU2DrivedByPLC" Datatype="Bool" />
+    <Member Name="sVDrivedByPLC" Datatype="Bool" />
+    <Member Name="sWDrivedByPLC" Datatype="Bool" />
+    <Member Name="sU1Positioning" Datatype="Bool">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="sU2Positioning" Datatype="Bool">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="sVPositioning" Datatype="Bool">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="sWPositioning" Datatype="Bool">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="sFeedActive" Datatype="Bool" />
+  </Section>
+</Sections></Interface>
+      <Name>DB_LoaderAxis</Name>
+      <Namespace />
+      <Number>206</Number>
+      <ProgrammingLanguage>DB</ProgrammingLanguage>
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="3" CompositionName="Items">
+            <AttributeList>
+              <Culture>fr-FR</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <MultilingualText ID="4" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="5" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="6" CompositionName="Items">
+            <AttributeList>
+              <Culture>fr-FR</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Blocks.InstanceDB>
+</Document>

@@ -1,0 +1,1851 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V20" />
+  <SW.Blocks.GlobalDB ID="0">
+    <AttributeList>
+      <AutoNumber>false</AutoNumber>
+      <DBAccessibleFromOPCUA>false</DBAccessibleFromOPCUA>
+      <DBAccessibleFromWebserver>false</DBAccessibleFromWebserver>
+      <HeaderAuthor>SINUMERIK</HeaderAuthor>
+      <HeaderFamily>SINUMERIK_ONE</HeaderFamily>
+      <HeaderVersion>6.24</HeaderVersion>
+      <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+  <Section Name="Static">
+    <Member Name="ManualVal" Datatype="Bool" Remanence="Retain">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="en-US">Display of manual value</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Affichage de la valeur manuelle</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="SentronPacMach" Datatype="Bool" Remanence="Retain">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="en-US">Sentron PAC represented machine</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Machine représentée par Sentron PAC</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="FeedInEnergyReadSP" Datatype="Bool" Remanence="Retain">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="en-US">Feed-in energy read from Sentron PAC</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Énergie alimentée mesurée par Sentron PAC</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="FeedBackEnergyReadSP" Datatype="Bool" Remanence="Retain">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="en-US">Feed back energy read from Sentron PAC</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Énergie réinjectée mesurée par Sentron PAC</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="FeedInEnergyReadAuxil" Datatype="Bool" Remanence="Retain">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="en-US">Feed-in energy read auxiliary</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Énergie alimentée, mesurée par AUX</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="FeedBackEnergyReadAuxil" Datatype="Bool" Remanence="Retain">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="en-US">Feed back energy read auxiliary</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Énergie réinjectée, mesurée par AUX</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="res0_6" Datatype="Bool" Remanence="Retain">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="res0_7" Datatype="Bool" Remanence="Retain">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="MeasAuto" Datatype="Bool" Remanence="Retain">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="en-US">Measurement by PLC basic program</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Mesure par programme de base AP</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="res1_1" Datatype="Bool" Remanence="Retain">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="res1_2" Datatype="Bool" Remanence="Retain">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="res1_3" Datatype="Bool" Remanence="Retain">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="res1_4" Datatype="Bool" Remanence="Retain">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="res1_5" Datatype="Bool" Remanence="Retain">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="res1_6" Datatype="Bool" Remanence="Retain">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="res1_7" Datatype="Bool" Remanence="Retain">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="MeasAct" Datatype="Bool" Remanence="Retain">
+      <Comment>
+        <MultiLanguageText Lang="en-US">HMI -&gt; PLC: Active measurement</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">IHM-&gt;AP : Mesure active</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="res2_1" Datatype="Bool" Remanence="Retain">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="res2_2" Datatype="Bool" Remanence="Retain">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="res2_3" Datatype="Bool" Remanence="Retain">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="res2_4" Datatype="Bool" Remanence="Retain">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="res2_5" Datatype="Bool" Remanence="Retain">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="res2_6" Datatype="Bool" Remanence="Retain">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="res2_7" Datatype="Bool" Remanence="Retain">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="EStateOn" Datatype="Bool" Remanence="Retain">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="en-US">Energy state on</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">État énergie activé</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="res3_1" Datatype="Bool" Remanence="Retain">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="res3_2" Datatype="Bool" Remanence="Retain">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="res3_3" Datatype="Bool" Remanence="Retain">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="res3_4" Datatype="Bool" Remanence="Retain">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="res3_5" Datatype="Bool" Remanence="Retain">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="res3_6" Datatype="Bool" Remanence="Retain">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="res3_7" Datatype="Bool" Remanence="Retain">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="ManualValue" Datatype="Real" Remanence="Retain">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="en-US">Manual value</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Valeur manuelle</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="ActivePowerItem" Datatype="Real" Remanence="Retain">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="en-US">Active power item</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Puissance active position</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="ActiveEnergyItem" Datatype="Real" Remanence="Retain">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="en-US">Active energy item</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Énergie active position</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="ReactiveEnergyItem" Datatype="Real" Remanence="Retain">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="en-US">Reactive energy item</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Énergie réactive position</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="ActivePowerSentron" Datatype="Real" Remanence="Retain">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="en-US">Active power from Sentron</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Puissance active par Sentron</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="ActiveEnergySentron" Datatype="Real" Remanence="Retain">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="en-US">Active energy  from Sentron</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Énergie active par Sentron</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="ReactiveEnergySentron" Datatype="Real" Remanence="Retain">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="en-US">Reactive energy  from Sentron</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Énergie réactive par Sentron</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="ActiveEnergyDay" Datatype="Real" Remanence="Retain">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="en-US">Active energy day</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Énergie active jour</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="ReactiveEnergyDay" Datatype="Real" Remanence="Retain">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="en-US">Reactive energy day</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Énergie réactive jour</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="ActiveEnergyPrevDay" Datatype="Real" Remanence="Retain">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="en-US">Active energy previous day</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Énergie active jour précédent</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="ReactiveEnergyPrevDay" Datatype="Real" Remanence="Retain">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="en-US">Reactive energy  previous day</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Énergie réactive jour précédent</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="ActiveEnergyMonth" Datatype="Real" Remanence="Retain">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="en-US">Active energy month</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Énergie active mois</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="ReactiveEnergyMonth" Datatype="Real" Remanence="Retain">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="en-US">Reactive energy month</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Énergie réactive mois</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="ActiveEnergyPrevMonth" Datatype="Real" Remanence="Retain">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="en-US">Active energy previous month</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Énergie active mois précédent</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="ReactiveEnergyPrevMonth" Datatype="Real" Remanence="Retain">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="en-US">Reactive energy previous month</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Énergie réactive mois précédent</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="ActiveEnergyYear" Datatype="Real" Remanence="Retain">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="en-US">Active energy year</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Énergie active année</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="ReactiveEnergyYear" Datatype="Real" Remanence="Retain">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="en-US">Reactive energy year</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Énergie réactive année</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="ActiveEnergyPrevYear" Datatype="Real" Remanence="Retain">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="en-US">Active energy previous year</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Énergie active année précédente</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="ReactiveEnergyPrevYear" Datatype="Real" Remanence="Retain">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="en-US">Reactive energy previous year</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Énergie réactive année précédente</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="res80" Datatype="Byte" Remanence="Retain">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="res81" Datatype="Byte" Remanence="Retain">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="res82" Datatype="Byte" Remanence="Retain">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="res83" Datatype="Byte" Remanence="Retain">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="res84" Datatype="Byte" Remanence="Retain">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="res85" Datatype="Byte" Remanence="Retain">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="res86" Datatype="Byte" Remanence="Retain">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="res87" Datatype="Byte" Remanence="Retain">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="res88" Datatype="Real" Remanence="Retain">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="res92" Datatype="Real" Remanence="Retain">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="ProductionAct" Datatype="Byte" Remanence="Retain">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="ErrDBD20_NAN" Datatype="Bool" Remanence="Retain">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="en-US">DBD20: invalid (not a number)</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">DBD20 : non valide (pas un nombre)</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="ErrDBD24_NAN" Datatype="Bool" Remanence="Retain">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="en-US">DBD24: invalid (not a number)</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">DBD24 : non valide (pas un nombre)</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="ErrDBD28_NAN" Datatype="Bool" Remanence="Retain">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="en-US">DBD28: invalid (not a number)</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">DBD28 : non valide (pas un nombre)</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="res97_3" Datatype="Bool" Remanence="Retain">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="res97_4" Datatype="Bool" Remanence="Retain">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="res97_5" Datatype="Bool" Remanence="Retain">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="res97_6" Datatype="Bool" Remanence="Retain">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="res97_7" Datatype="Bool" Remanence="Retain">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="ErrDBD104_NAN" Datatype="Bool" Remanence="Retain">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="en-US">DBD104: invalid (not a number)</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">DBD104 : non valide (pas un nombre)</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="ErrDBD144_NAN" Datatype="Bool" Remanence="Retain">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="en-US">DBD144: invalid (not a number)</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">DBD144 : non valide (pas un nombre)</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="ErrDBD184_NAN" Datatype="Bool" Remanence="Retain">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="en-US">DBD184: invalid (not a number)</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">DBD184 : non valide (pas un nombre)</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="ErrDBD224_NAN" Datatype="Bool" Remanence="Retain">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="en-US">DBD224: invalid (not a number)</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">DBD224 : non valide (pas un nombre)</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="ErrDBD264_NAN" Datatype="Bool" Remanence="Retain">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="en-US">DBD264: invalid (not a number)</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">DBD264 : non valide (pas un nombre)</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="ErrDBD304_NAN" Datatype="Bool" Remanence="Retain">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="en-US">DBD304: invalid (not a number)</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">DBD304 : non valide (pas un nombre)</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="ErrDBD344_NAN" Datatype="Bool" Remanence="Retain">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="en-US">DBD344: invalid (not a number)</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">DBD344 : non valide (pas un nombre)</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="ErrDBD384_NAN" Datatype="Bool" Remanence="Retain">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="en-US">DBD384: invalid (not a number)</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">DBD384 : non valide (pas un nombre)</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="ErrDBD424_NAN" Datatype="Bool" Remanence="Retain">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="en-US">DBD424: invalid (not a number)</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">DBD424 : non valide (pas un nombre)</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="ErrDBD464_NAN" Datatype="Bool" Remanence="Retain">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="en-US">DBD464: invalid (not a number)</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">DBD464 : non valide (pas un nombre)</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="res99_2" Datatype="Bool" Remanence="Retain">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="res99_3" Datatype="Bool" Remanence="Retain">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="res99_4" Datatype="Bool" Remanence="Retain">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="res99_5" Datatype="Bool" Remanence="Retain">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="res99_6" Datatype="Bool" Remanence="Retain">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="res99_7" Datatype="Bool" Remanence="Retain">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="CtrlE_AuxDevice" Datatype="Array[1..10] of Struct" Remanence="Retain">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Member Name="ProcessAux" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Auxiliary present and to be processed</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">AUX présent et prêt au traitement</MultiLanguageText>
+        </Comment>
+        <Subelement Path="2">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Auxiliary present and to be processed</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">AUX présent et prêt au traitement</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="3">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Auxiliary present and to be processed</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">AUX présent et prêt au traitement</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="4">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Auxiliary present and to be processed</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">AUX présent et prêt au traitement</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="5">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Auxiliary present and to be processed</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">AUX présent et prêt au traitement</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="6">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Auxiliary present and to be processed</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">AUX présent et prêt au traitement</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="7">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Auxiliary present and to be processed</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">AUX présent et prêt au traitement</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="8">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Auxiliary present and to be processed</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">AUX présent et prêt au traitement</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="9">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Auxiliary present and to be processed</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">AUX présent et prêt au traitement</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="10">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Auxiliary present and to be processed</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">AUX présent et prêt au traitement</MultiLanguageText>
+          </Comment>
+        </Subelement>
+      </Member>
+      <Member Name="ReadEnergy" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Actual values are refreshed; bit is auto-reset</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Les valeurs réelles sont actualisées ; le bit est réinitialisé automatiquement</MultiLanguageText>
+        </Comment>
+        <Subelement Path="2">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Actual values are refreshed; bit is auto-reset</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Les valeurs réelles sont actualisées ; le bit est réinitialisé automatiquement</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="3">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Actual values are refreshed; bit is auto-reset</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Les valeurs réelles sont actualisées ; le bit est réinitialisé automatiquement</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="4">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Actual values are refreshed; bit is auto-reset</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Les valeurs réelles sont actualisées ; le bit est réinitialisé automatiquement</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="5">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Actual values are refreshed; bit is auto-reset</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Les valeurs réelles sont actualisées ; le bit est réinitialisé automatiquement</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="6">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Actual values are refreshed; bit is auto-reset</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Les valeurs réelles sont actualisées ; le bit est réinitialisé automatiquement</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="7">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Actual values are refreshed; bit is auto-reset</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Les valeurs réelles sont actualisées ; le bit est réinitialisé automatiquement</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="8">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Actual values are refreshed; bit is auto-reset</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Les valeurs réelles sont actualisées ; le bit est réinitialisé automatiquement</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="9">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Actual values are refreshed; bit is auto-reset</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Les valeurs réelles sont actualisées ; le bit est réinitialisé automatiquement</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="10">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Actual values are refreshed; bit is auto-reset</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Les valeurs réelles sont actualisées ; le bit est réinitialisé automatiquement</MultiLanguageText>
+          </Comment>
+        </Subelement>
+      </Member>
+      <Member Name="MeasAct" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Measurement values are computed</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Calcul des valeurs de mesure en cours</MultiLanguageText>
+        </Comment>
+        <Subelement Path="2">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Measurement values are computed</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Calcul des valeurs de mesure en cours</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="3">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Measurement values are computed</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Calcul des valeurs de mesure en cours</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="4">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Measurement values are computed</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Calcul des valeurs de mesure en cours</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="5">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Measurement values are computed</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Calcul des valeurs de mesure en cours</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="6">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Measurement values are computed</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Calcul des valeurs de mesure en cours</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="7">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Measurement values are computed</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Calcul des valeurs de mesure en cours</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="8">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Measurement values are computed</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Calcul des valeurs de mesure en cours</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="9">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Measurement values are computed</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Calcul des valeurs de mesure en cours</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="10">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Measurement values are computed</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Calcul des valeurs de mesure en cours</MultiLanguageText>
+          </Comment>
+        </Subelement>
+      </Member>
+      <Member Name="MeasMode" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Difference of actual values is stored</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">La différence des valeurs réelles est enregistrée</MultiLanguageText>
+        </Comment>
+        <Subelement Path="2">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Difference of actual values is stored</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">La différence des valeurs réelles est enregistrée</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="3">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Difference of actual values is stored</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">La différence des valeurs réelles est enregistrée</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="4">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Difference of actual values is stored</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">La différence des valeurs réelles est enregistrée</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="5">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Difference of actual values is stored</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">La différence des valeurs réelles est enregistrée</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="6">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Difference of actual values is stored</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">La différence des valeurs réelles est enregistrée</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="7">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Difference of actual values is stored</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">La différence des valeurs réelles est enregistrée</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="8">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Difference of actual values is stored</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">La différence des valeurs réelles est enregistrée</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="9">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Difference of actual values is stored</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">La différence des valeurs réelles est enregistrée</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="10">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Difference of actual values is stored</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">La différence des valeurs réelles est enregistrée</MultiLanguageText>
+          </Comment>
+        </Subelement>
+      </Member>
+      <Member Name="InputMode" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">INPUT "ActivePowerAux" is energy in kWh</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">INPUT "ActivePowerAux" représente l'énergie en kWh</MultiLanguageText>
+        </Comment>
+        <Subelement Path="2">
+          <Comment>
+            <MultiLanguageText Lang="en-US">INPUT "ActivePowerAux" is energy in kWh</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">INPUT "ActivePowerAux" représente l'énergie en kWh</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="3">
+          <Comment>
+            <MultiLanguageText Lang="en-US">INPUT "ActivePowerAux" is energy in kWh</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">INPUT "ActivePowerAux" représente l'énergie en kWh</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="4">
+          <Comment>
+            <MultiLanguageText Lang="en-US">INPUT "ActivePowerAux" is energy in kWh</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">INPUT "ActivePowerAux" représente l'énergie en kWh</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="5">
+          <Comment>
+            <MultiLanguageText Lang="en-US">INPUT "ActivePowerAux" is energy in kWh</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">INPUT "ActivePowerAux" représente l'énergie en kWh</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="6">
+          <Comment>
+            <MultiLanguageText Lang="en-US">INPUT "ActivePowerAux" is energy in kWh</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">INPUT "ActivePowerAux" représente l'énergie en kWh</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="7">
+          <Comment>
+            <MultiLanguageText Lang="en-US">INPUT "ActivePowerAux" is energy in kWh</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">INPUT "ActivePowerAux" représente l'énergie en kWh</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="8">
+          <Comment>
+            <MultiLanguageText Lang="en-US">INPUT "ActivePowerAux" is energy in kWh</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">INPUT "ActivePowerAux" représente l'énergie en kWh</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="9">
+          <Comment>
+            <MultiLanguageText Lang="en-US">INPUT "ActivePowerAux" is energy in kWh</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">INPUT "ActivePowerAux" représente l'énergie en kWh</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="10">
+          <Comment>
+            <MultiLanguageText Lang="en-US">INPUT "ActivePowerAux" is energy in kWh</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">INPUT "ActivePowerAux" représente l'énergie en kWh</MultiLanguageText>
+          </Comment>
+        </Subelement>
+      </Member>
+      <Member Name="res0_5" Datatype="Bool" />
+      <Member Name="res0_6" Datatype="Bool" />
+      <Member Name="ResetAux" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Auxiliary data are deleted</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Les données AUX sont supprimées</MultiLanguageText>
+        </Comment>
+        <Subelement Path="2">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Auxiliary data are deleted</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Les données AUX sont supprimées</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="3">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Auxiliary data are deleted</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Les données AUX sont supprimées</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="4">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Auxiliary data are deleted</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Les données AUX sont supprimées</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="5">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Auxiliary data are deleted</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Les données AUX sont supprimées</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="6">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Auxiliary data are deleted</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Les données AUX sont supprimées</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="7">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Auxiliary data are deleted</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Les données AUX sont supprimées</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="8">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Auxiliary data are deleted</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Les données AUX sont supprimées</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="9">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Auxiliary data are deleted</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Les données AUX sont supprimées</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="10">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Auxiliary data are deleted</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Les données AUX sont supprimées</MultiLanguageText>
+          </Comment>
+        </Subelement>
+      </Member>
+      <Member Name="res1" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+        </Comment>
+        <Subelement Path="2">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="3">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="4">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="5">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="6">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="7">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="8">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="9">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="10">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+      </Member>
+      <Member Name="res2" Datatype="Word">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+        </Comment>
+        <Subelement Path="2">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="3">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="4">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="5">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="6">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="7">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="8">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="9">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="10">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+      </Member>
+      <Member Name="ActivePowerAux" Datatype="Real">
+        <Comment>
+          <MultiLanguageText Lang="en-US">[kW]/[kWh] power/energy of auxiliary, written by customer</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">[kW]/[kWh] puissance/énergie AUX, renseignée par le client</MultiLanguageText>
+        </Comment>
+        <Subelement Path="2">
+          <Comment>
+            <MultiLanguageText Lang="en-US">[kW]/[kWh] power/energy of auxiliary, written by customer</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">[kW]/[kWh] puissance/énergie AUX, renseignée par le client</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="3">
+          <Comment>
+            <MultiLanguageText Lang="en-US">[kW]/[kWh] power/energy of auxiliary, written by customer</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">[kW]/[kWh] puissance/énergie AUX, renseignée par le client</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="4">
+          <Comment>
+            <MultiLanguageText Lang="en-US">[kW]/[kWh] power/energy of auxiliary, written by customer</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">[kW]/[kWh] puissance/énergie AUX, renseignée par le client</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="5">
+          <Comment>
+            <MultiLanguageText Lang="en-US">[kW]/[kWh] power/energy of auxiliary, written by customer</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">[kW]/[kWh] puissance/énergie AUX, renseignée par le client</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="6">
+          <Comment>
+            <MultiLanguageText Lang="en-US">[kW]/[kWh] power/energy of auxiliary, written by customer</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">[kW]/[kWh] puissance/énergie AUX, renseignée par le client</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="7">
+          <Comment>
+            <MultiLanguageText Lang="en-US">[kW]/[kWh] power/energy of auxiliary, written by customer</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">[kW]/[kWh] puissance/énergie AUX, renseignée par le client</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="8">
+          <Comment>
+            <MultiLanguageText Lang="en-US">[kW]/[kWh] power/energy of auxiliary, written by customer</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">[kW]/[kWh] puissance/énergie AUX, renseignée par le client</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="9">
+          <Comment>
+            <MultiLanguageText Lang="en-US">[kW]/[kWh] power/energy of auxiliary, written by customer</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">[kW]/[kWh] puissance/énergie AUX, renseignée par le client</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="10">
+          <Comment>
+            <MultiLanguageText Lang="en-US">[kW]/[kWh] power/energy of auxiliary, written by customer</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">[kW]/[kWh] puissance/énergie AUX, renseignée par le client</MultiLanguageText>
+          </Comment>
+        </Subelement>
+      </Member>
+      <Member Name="ActiveEnAux" Datatype="Real">
+        <Comment>
+          <MultiLanguageText Lang="en-US">[kWh] actual value of fed-in-energy</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">[kWh] valeur réelle de l'énergie consommée</MultiLanguageText>
+        </Comment>
+        <Subelement Path="2">
+          <Comment>
+            <MultiLanguageText Lang="en-US">[kWh] actual value of fed-in-energy</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">[kWh] valeur réelle de l'énergie consommée</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="3">
+          <Comment>
+            <MultiLanguageText Lang="en-US">[kWh] actual value of fed-in-energy</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">[kWh] valeur réelle de l'énergie consommée</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="4">
+          <Comment>
+            <MultiLanguageText Lang="en-US">[kWh] actual value of fed-in-energy</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">[kWh] valeur réelle de l'énergie consommée</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="5">
+          <Comment>
+            <MultiLanguageText Lang="en-US">[kWh] actual value of fed-in-energy</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">[kWh] valeur réelle de l'énergie consommée</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="6">
+          <Comment>
+            <MultiLanguageText Lang="en-US">[kWh] actual value of fed-in-energy</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">[kWh] valeur réelle de l'énergie consommée</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="7">
+          <Comment>
+            <MultiLanguageText Lang="en-US">[kWh] actual value of fed-in-energy</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">[kWh] valeur réelle de l'énergie consommée</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="8">
+          <Comment>
+            <MultiLanguageText Lang="en-US">[kWh] actual value of fed-in-energy</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">[kWh] valeur réelle de l'énergie consommée</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="9">
+          <Comment>
+            <MultiLanguageText Lang="en-US">[kWh] actual value of fed-in-energy</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">[kWh] valeur réelle de l'énergie consommée</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="10">
+          <Comment>
+            <MultiLanguageText Lang="en-US">[kWh] actual value of fed-in-energy</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">[kWh] valeur réelle de l'énergie consommée</MultiLanguageText>
+          </Comment>
+        </Subelement>
+      </Member>
+      <Member Name="ReActiveEnAux" Datatype="Real">
+        <Comment>
+          <MultiLanguageText Lang="en-US">[kWh] actual value of fed-back energy</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">[kWh] valeur réelle de l'énergie réinjectée</MultiLanguageText>
+        </Comment>
+        <Subelement Path="2">
+          <Comment>
+            <MultiLanguageText Lang="en-US">[kWh] actual value of fed-back energy</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">[kWh] valeur réelle de l'énergie réinjectée</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="3">
+          <Comment>
+            <MultiLanguageText Lang="en-US">[kWh] actual value of fed-back energy</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">[kWh] valeur réelle de l'énergie réinjectée</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="4">
+          <Comment>
+            <MultiLanguageText Lang="en-US">[kWh] actual value of fed-back energy</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">[kWh] valeur réelle de l'énergie réinjectée</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="5">
+          <Comment>
+            <MultiLanguageText Lang="en-US">[kWh] actual value of fed-back energy</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">[kWh] valeur réelle de l'énergie réinjectée</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="6">
+          <Comment>
+            <MultiLanguageText Lang="en-US">[kWh] actual value of fed-back energy</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">[kWh] valeur réelle de l'énergie réinjectée</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="7">
+          <Comment>
+            <MultiLanguageText Lang="en-US">[kWh] actual value of fed-back energy</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">[kWh] valeur réelle de l'énergie réinjectée</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="8">
+          <Comment>
+            <MultiLanguageText Lang="en-US">[kWh] actual value of fed-back energy</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">[kWh] valeur réelle de l'énergie réinjectée</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="9">
+          <Comment>
+            <MultiLanguageText Lang="en-US">[kWh] actual value of fed-back energy</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">[kWh] valeur réelle de l'énergie réinjectée</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="10">
+          <Comment>
+            <MultiLanguageText Lang="en-US">[kWh] actual value of fed-back energy</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">[kWh] valeur réelle de l'énergie réinjectée</MultiLanguageText>
+          </Comment>
+        </Subelement>
+      </Member>
+      <Member Name="ActiveEnAuxMeasON" Datatype="Real">
+        <Comment>
+          <MultiLanguageText Lang="en-US">[kWh] value of fed-in-energy at start of measurement</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">[kWh] valeur réelle de l'énergie consommée au début de la mesure</MultiLanguageText>
+        </Comment>
+        <Subelement Path="2">
+          <Comment>
+            <MultiLanguageText Lang="en-US">[kWh] value of fed-in-energy at start of measurement</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">[kWh] valeur réelle de l'énergie consommée au début de la mesure</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="3">
+          <Comment>
+            <MultiLanguageText Lang="en-US">[kWh] value of fed-in-energy at start of measurement</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">[kWh] valeur réelle de l'énergie consommée au début de la mesure</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="4">
+          <Comment>
+            <MultiLanguageText Lang="en-US">[kWh] value of fed-in-energy at start of measurement</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">[kWh] valeur réelle de l'énergie consommée au début de la mesure</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="5">
+          <Comment>
+            <MultiLanguageText Lang="en-US">[kWh] value of fed-in-energy at start of measurement</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">[kWh] valeur réelle de l'énergie consommée au début de la mesure</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="6">
+          <Comment>
+            <MultiLanguageText Lang="en-US">[kWh] value of fed-in-energy at start of measurement</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">[kWh] valeur réelle de l'énergie consommée au début de la mesure</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="7">
+          <Comment>
+            <MultiLanguageText Lang="en-US">[kWh] value of fed-in-energy at start of measurement</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">[kWh] valeur réelle de l'énergie consommée au début de la mesure</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="8">
+          <Comment>
+            <MultiLanguageText Lang="en-US">[kWh] value of fed-in-energy at start of measurement</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">[kWh] valeur réelle de l'énergie consommée au début de la mesure</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="9">
+          <Comment>
+            <MultiLanguageText Lang="en-US">[kWh] value of fed-in-energy at start of measurement</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">[kWh] valeur réelle de l'énergie consommée au début de la mesure</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="10">
+          <Comment>
+            <MultiLanguageText Lang="en-US">[kWh] value of fed-in-energy at start of measurement</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">[kWh] valeur réelle de l'énergie consommée au début de la mesure</MultiLanguageText>
+          </Comment>
+        </Subelement>
+      </Member>
+      <Member Name="ReActiveEnAuxMeasON" Datatype="Real">
+        <Comment>
+          <MultiLanguageText Lang="en-US">[kWh] value of fed-back energy at start of measurement</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Wh] valeur réelle de l'énergie réinjectée au début de la mesure</MultiLanguageText>
+        </Comment>
+        <Subelement Path="2">
+          <Comment>
+            <MultiLanguageText Lang="en-US">[kWh] value of fed-back energy at start of measurement</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Wh] valeur réelle de l'énergie réinjectée au début de la mesure</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="3">
+          <Comment>
+            <MultiLanguageText Lang="en-US">[kWh] value of fed-back energy at start of measurement</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Wh] valeur réelle de l'énergie réinjectée au début de la mesure</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="4">
+          <Comment>
+            <MultiLanguageText Lang="en-US">[kWh] value of fed-back energy at start of measurement</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Wh] valeur réelle de l'énergie réinjectée au début de la mesure</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="5">
+          <Comment>
+            <MultiLanguageText Lang="en-US">[kWh] value of fed-back energy at start of measurement</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Wh] valeur réelle de l'énergie réinjectée au début de la mesure</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="6">
+          <Comment>
+            <MultiLanguageText Lang="en-US">[kWh] value of fed-back energy at start of measurement</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Wh] valeur réelle de l'énergie réinjectée au début de la mesure</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="7">
+          <Comment>
+            <MultiLanguageText Lang="en-US">[kWh] value of fed-back energy at start of measurement</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Wh] valeur réelle de l'énergie réinjectée au début de la mesure</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="8">
+          <Comment>
+            <MultiLanguageText Lang="en-US">[kWh] value of fed-back energy at start of measurement</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Wh] valeur réelle de l'énergie réinjectée au début de la mesure</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="9">
+          <Comment>
+            <MultiLanguageText Lang="en-US">[kWh] value of fed-back energy at start of measurement</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Wh] valeur réelle de l'énergie réinjectée au début de la mesure</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="10">
+          <Comment>
+            <MultiLanguageText Lang="en-US">[kWh] value of fed-back energy at start of measurement</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Wh] valeur réelle de l'énergie réinjectée au début de la mesure</MultiLanguageText>
+          </Comment>
+        </Subelement>
+      </Member>
+      <Member Name="ActiveEnAuxMeasOFF" Datatype="Real">
+        <Comment>
+          <MultiLanguageText Lang="en-US">[kWh] value of fed-in-energy at end of measurement</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">[kWh] valeur réelle de l'énergie consommée à la fin de la mesure</MultiLanguageText>
+        </Comment>
+        <Subelement Path="2">
+          <Comment>
+            <MultiLanguageText Lang="en-US">[kWh] value of fed-in-energy at end of measurement</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">[kWh] valeur réelle de l'énergie consommée à la fin de la mesure</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="3">
+          <Comment>
+            <MultiLanguageText Lang="en-US">[kWh] value of fed-in-energy at end of measurement</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">[kWh] valeur réelle de l'énergie consommée à la fin de la mesure</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="4">
+          <Comment>
+            <MultiLanguageText Lang="en-US">[kWh] value of fed-in-energy at end of measurement</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">[kWh] valeur réelle de l'énergie consommée à la fin de la mesure</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="5">
+          <Comment>
+            <MultiLanguageText Lang="en-US">[kWh] value of fed-in-energy at end of measurement</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">[kWh] valeur réelle de l'énergie consommée à la fin de la mesure</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="6">
+          <Comment>
+            <MultiLanguageText Lang="en-US">[kWh] value of fed-in-energy at end of measurement</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">[kWh] valeur réelle de l'énergie consommée à la fin de la mesure</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="7">
+          <Comment>
+            <MultiLanguageText Lang="en-US">[kWh] value of fed-in-energy at end of measurement</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">[kWh] valeur réelle de l'énergie consommée à la fin de la mesure</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="8">
+          <Comment>
+            <MultiLanguageText Lang="en-US">[kWh] value of fed-in-energy at end of measurement</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">[kWh] valeur réelle de l'énergie consommée à la fin de la mesure</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="9">
+          <Comment>
+            <MultiLanguageText Lang="en-US">[kWh] value of fed-in-energy at end of measurement</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">[kWh] valeur réelle de l'énergie consommée à la fin de la mesure</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="10">
+          <Comment>
+            <MultiLanguageText Lang="en-US">[kWh] value of fed-in-energy at end of measurement</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">[kWh] valeur réelle de l'énergie consommée à la fin de la mesure</MultiLanguageText>
+          </Comment>
+        </Subelement>
+      </Member>
+      <Member Name="ReActiveEnAuxMeasOFF" Datatype="Real">
+        <Comment>
+          <MultiLanguageText Lang="en-US">[kWh] value of fed-back energy at end of measurement</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">[kWh] valeur réelle de l'énergie réinjectée à la fin de la mesure</MultiLanguageText>
+        </Comment>
+        <Subelement Path="2">
+          <Comment>
+            <MultiLanguageText Lang="en-US">[kWh] value of fed-back energy at end of measurement</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">[kWh] valeur réelle de l'énergie réinjectée à la fin de la mesure</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="3">
+          <Comment>
+            <MultiLanguageText Lang="en-US">[kWh] value of fed-back energy at end of measurement</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">[kWh] valeur réelle de l'énergie réinjectée à la fin de la mesure</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="4">
+          <Comment>
+            <MultiLanguageText Lang="en-US">[kWh] value of fed-back energy at end of measurement</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">[kWh] valeur réelle de l'énergie réinjectée à la fin de la mesure</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="5">
+          <Comment>
+            <MultiLanguageText Lang="en-US">[kWh] value of fed-back energy at end of measurement</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">[kWh] valeur réelle de l'énergie réinjectée à la fin de la mesure</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="6">
+          <Comment>
+            <MultiLanguageText Lang="en-US">[kWh] value of fed-back energy at end of measurement</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">[kWh] valeur réelle de l'énergie réinjectée à la fin de la mesure</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="7">
+          <Comment>
+            <MultiLanguageText Lang="en-US">[kWh] value of fed-back energy at end of measurement</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">[kWh] valeur réelle de l'énergie réinjectée à la fin de la mesure</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="8">
+          <Comment>
+            <MultiLanguageText Lang="en-US">[kWh] value of fed-back energy at end of measurement</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">[kWh] valeur réelle de l'énergie réinjectée à la fin de la mesure</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="9">
+          <Comment>
+            <MultiLanguageText Lang="en-US">[kWh] value of fed-back energy at end of measurement</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">[kWh] valeur réelle de l'énergie réinjectée à la fin de la mesure</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="10">
+          <Comment>
+            <MultiLanguageText Lang="en-US">[kWh] value of fed-back energy at end of measurement</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">[kWh] valeur réelle de l'énergie réinjectée à la fin de la mesure</MultiLanguageText>
+          </Comment>
+        </Subelement>
+      </Member>
+      <Member Name="res32" Datatype="DWord">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+        </Comment>
+        <Subelement Path="2">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="3">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="4">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="5">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="6">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="7">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="8">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="9">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="10">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+      </Member>
+      <Member Name="res36" Datatype="Real">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+        </Comment>
+        <Subelement Path="2">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="3">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="4">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="5">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="6">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="7">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="8">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="9">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="10">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+      </Member>
+    </Member>
+  </Section>
+</Sections></Interface>
+      <MemoryLayout>Standard</MemoryLayout>
+      <Name>LBP_SentronPac</Name>
+      <Namespace />
+      <Number>1001</Number>
+      <ProgrammingLanguage>DB</ProgrammingLanguage>
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text>Interface between user program and operating software, contains signals for SENTRON PAC energy monitoring devices</Text>
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="3" CompositionName="Items">
+            <AttributeList>
+              <Culture>fr-FR</Culture>
+              <Text>Interface entre programme utilisateur et logiciel d'exploitation, contient des signaux pour unités de surveillance de l'énergie SENTRON PAC</Text>
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <MultilingualText ID="4" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="5" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text>SENTRON PAC</Text>
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="6" CompositionName="Items">
+            <AttributeList>
+              <Culture>fr-FR</Culture>
+              <Text>SENTRON PAC</Text>
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Blocks.GlobalDB>
+</Document>

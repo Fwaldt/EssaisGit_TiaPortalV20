@@ -1,0 +1,722 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V20" />
+  <SW.Types.PlcStruct ID="0">
+    <AttributeList>
+      <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+  <Section Name="None">
+    <Member Name="MTIF" Datatype="Array[1..16] of Struct">
+      <Member Name="DistanceCoding" Datatype="Int">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Type of distance coding ($TC_MTP_KD)</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Type de codage de distance ($TC_MTP_KD)</MultiLanguageText>
+        </Comment>
+        <Subelement Path="2">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Type of distance coding ($TC_MTP_KD)</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Type de codage de distance ($TC_MTP_KD)</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="3">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Type of distance coding ($TC_MTP_KD)</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Type de codage de distance ($TC_MTP_KD)</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="4">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Type of distance coding ($TC_MTP_KD)</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Type de codage de distance ($TC_MTP_KD)</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="5">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Type of distance coding ($TC_MTP_KD)</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Type de codage de distance ($TC_MTP_KD)</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="6">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Type of distance coding ($TC_MTP_KD)</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Type de codage de distance ($TC_MTP_KD)</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="7">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Type of distance coding ($TC_MTP_KD)</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Type de codage de distance ($TC_MTP_KD)</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="8">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Type of distance coding ($TC_MTP_KD)</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Type de codage de distance ($TC_MTP_KD)</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="9">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Type of distance coding ($TC_MTP_KD)</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Type de codage de distance ($TC_MTP_KD)</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="10">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Type of distance coding ($TC_MTP_KD)</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Type de codage de distance ($TC_MTP_KD)</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="11">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Type of distance coding ($TC_MTP_KD)</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Type de codage de distance ($TC_MTP_KD)</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="12">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Type of distance coding ($TC_MTP_KD)</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Type de codage de distance ($TC_MTP_KD)</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="13">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Type of distance coding ($TC_MTP_KD)</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Type de codage de distance ($TC_MTP_KD)</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="14">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Type of distance coding ($TC_MTP_KD)</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Type de codage de distance ($TC_MTP_KD)</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="15">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Type of distance coding ($TC_MTP_KD)</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Type de codage de distance ($TC_MTP_KD)</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="16">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Type of distance coding ($TC_MTP_KD)</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Type de codage de distance ($TC_MTP_KD)</MultiLanguageText>
+          </Comment>
+        </Subelement>
+      </Member>
+      <Member Name="Places" Datatype="Int">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Number of locations of the multitool</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Nombre d'emplacements Multitool</MultiLanguageText>
+        </Comment>
+        <Subelement Path="2">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Number of locations of the multitool</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Nombre d'emplacements Multitool</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="3">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Number of locations of the multitool</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Nombre d'emplacements Multitool</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="4">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Number of locations of the multitool</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Nombre d'emplacements Multitool</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="5">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Number of locations of the multitool</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Nombre d'emplacements Multitool</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="6">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Number of locations of the multitool</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Nombre d'emplacements Multitool</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="7">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Number of locations of the multitool</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Nombre d'emplacements Multitool</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="8">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Number of locations of the multitool</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Nombre d'emplacements Multitool</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="9">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Number of locations of the multitool</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Nombre d'emplacements Multitool</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="10">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Number of locations of the multitool</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Nombre d'emplacements Multitool</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="11">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Number of locations of the multitool</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Nombre d'emplacements Multitool</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="12">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Number of locations of the multitool</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Nombre d'emplacements Multitool</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="13">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Number of locations of the multitool</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Nombre d'emplacements Multitool</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="14">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Number of locations of the multitool</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Nombre d'emplacements Multitool</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="15">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Number of locations of the multitool</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Nombre d'emplacements Multitool</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="16">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Number of locations of the multitool</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Nombre d'emplacements Multitool</MultiLanguageText>
+          </Comment>
+        </Subelement>
+      </Member>
+      <Member Name="Distance" Datatype="Real">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Multitool location distance</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Distance de l'emplacement Multitool</MultiLanguageText>
+        </Comment>
+        <Subelement Path="2">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Multitool location distance</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Distance de l'emplacement Multitool</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="3">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Multitool location distance</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Distance de l'emplacement Multitool</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="4">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Multitool location distance</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Distance de l'emplacement Multitool</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="5">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Multitool location distance</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Distance de l'emplacement Multitool</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="6">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Multitool location distance</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Distance de l'emplacement Multitool</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="7">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Multitool location distance</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Distance de l'emplacement Multitool</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="8">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Multitool location distance</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Distance de l'emplacement Multitool</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="9">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Multitool location distance</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Distance de l'emplacement Multitool</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="10">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Multitool location distance</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Distance de l'emplacement Multitool</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="11">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Multitool location distance</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Distance de l'emplacement Multitool</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="12">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Multitool location distance</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Distance de l'emplacement Multitool</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="13">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Multitool location distance</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Distance de l'emplacement Multitool</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="14">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Multitool location distance</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Distance de l'emplacement Multitool</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="15">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Multitool location distance</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Distance de l'emplacement Multitool</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="16">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Multitool location distance</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Distance de l'emplacement Multitool</MultiLanguageText>
+          </Comment>
+        </Subelement>
+      </Member>
+      <Member Name="MTNo" Datatype="Int">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Internal T number of the multitool</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Numéro d'outil interne du Multitool</MultiLanguageText>
+        </Comment>
+        <Subelement Path="2">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Internal T number of the multitool</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro d'outil interne du Multitool</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="3">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Internal T number of the multitool</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro d'outil interne du Multitool</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="4">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Internal T number of the multitool</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro d'outil interne du Multitool</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="5">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Internal T number of the multitool</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro d'outil interne du Multitool</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="6">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Internal T number of the multitool</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro d'outil interne du Multitool</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="7">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Internal T number of the multitool</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro d'outil interne du Multitool</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="8">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Internal T number of the multitool</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro d'outil interne du Multitool</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="9">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Internal T number of the multitool</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro d'outil interne du Multitool</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="10">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Internal T number of the multitool</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro d'outil interne du Multitool</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="11">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Internal T number of the multitool</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro d'outil interne du Multitool</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="12">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Internal T number of the multitool</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro d'outil interne du Multitool</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="13">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Internal T number of the multitool</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro d'outil interne du Multitool</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="14">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Internal T number of the multitool</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro d'outil interne du Multitool</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="15">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Internal T number of the multitool</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro d'outil interne du Multitool</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="16">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Internal T number of the multitool</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro d'outil interne du Multitool</MultiLanguageText>
+          </Comment>
+        </Subelement>
+      </Member>
+      <Member Name="PlaceNo" Datatype="Int">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Location number within the multitool to which the system positions</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Numéro d'emplacement Multitool cible de positionnement du système</MultiLanguageText>
+        </Comment>
+        <Subelement Path="2">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Location number within the multitool to which the system positions</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro d'emplacement Multitool cible de positionnement du système</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="3">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Location number within the multitool to which the system positions</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro d'emplacement Multitool cible de positionnement du système</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="4">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Location number within the multitool to which the system positions</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro d'emplacement Multitool cible de positionnement du système</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="5">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Location number within the multitool to which the system positions</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro d'emplacement Multitool cible de positionnement du système</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="6">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Location number within the multitool to which the system positions</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro d'emplacement Multitool cible de positionnement du système</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="7">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Location number within the multitool to which the system positions</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro d'emplacement Multitool cible de positionnement du système</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="8">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Location number within the multitool to which the system positions</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro d'emplacement Multitool cible de positionnement du système</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="9">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Location number within the multitool to which the system positions</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro d'emplacement Multitool cible de positionnement du système</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="10">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Location number within the multitool to which the system positions</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro d'emplacement Multitool cible de positionnement du système</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="11">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Location number within the multitool to which the system positions</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro d'emplacement Multitool cible de positionnement du système</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="12">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Location number within the multitool to which the system positions</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro d'emplacement Multitool cible de positionnement du système</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="13">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Location number within the multitool to which the system positions</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro d'emplacement Multitool cible de positionnement du système</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="14">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Location number within the multitool to which the system positions</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro d'emplacement Multitool cible de positionnement du système</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="15">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Location number within the multitool to which the system positions</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro d'emplacement Multitool cible de positionnement du système</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="16">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Location number within the multitool to which the system positions</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro d'emplacement Multitool cible de positionnement du système</MultiLanguageText>
+          </Comment>
+        </Subelement>
+      </Member>
+      <Member Name="Toolholder" Datatype="Int">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Spindle or toolholder number</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Numéro de broche ou porte-outil</MultiLanguageText>
+        </Comment>
+        <Subelement Path="2">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Spindle or toolholder number</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro de broche ou porte-outil</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="3">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Spindle or toolholder number</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro de broche ou porte-outil</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="4">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Spindle or toolholder number</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro de broche ou porte-outil</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="5">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Spindle or toolholder number</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro de broche ou porte-outil</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="6">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Spindle or toolholder number</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro de broche ou porte-outil</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="7">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Spindle or toolholder number</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro de broche ou porte-outil</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="8">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Spindle or toolholder number</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro de broche ou porte-outil</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="9">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Spindle or toolholder number</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro de broche ou porte-outil</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="10">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Spindle or toolholder number</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro de broche ou porte-outil</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="11">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Spindle or toolholder number</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro de broche ou porte-outil</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="12">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Spindle or toolholder number</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro de broche ou porte-outil</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="13">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Spindle or toolholder number</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro de broche ou porte-outil</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="14">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Spindle or toolholder number</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro de broche ou porte-outil</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="15">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Spindle or toolholder number</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro de broche ou porte-outil</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="16">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Spindle or toolholder number</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro de broche ou porte-outil</MultiLanguageText>
+          </Comment>
+        </Subelement>
+      </Member>
+      <Member Name="reserved" Datatype="Array[1..3] of Int">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+        </Comment>
+        <Subelement Path="2">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="3">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="4">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="5">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="6">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="7">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="8">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="9">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="10">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="11">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="12">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="13">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="14">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="15">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="16">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+      </Member>
+    </Member>
+  </Section>
+</Sections></Interface>
+      <Name>LBP_typeTMLoadMT</Name>
+      <Namespace />
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text>User data type for block LBP_TMLoadMT [DB1071]</Text>
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="3" CompositionName="Items">
+            <AttributeList>
+              <Culture>fr-FR</Culture>
+              <Text>Type de données utilisateur pour bloc LBP_TMLoadMT [DB1071]</Text>
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <MultilingualText ID="4" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="5" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text>Tool management</Text>
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="6" CompositionName="Items">
+            <AttributeList>
+              <Culture>fr-FR</Culture>
+              <Text>Gestion des outils</Text>
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Types.PlcStruct>
+</Document>

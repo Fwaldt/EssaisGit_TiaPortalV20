@@ -1,0 +1,234 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V20" />
+  <SW.Blocks.GlobalDB ID="0">
+    <AttributeList>
+      <AutoNumber>false</AutoNumber>
+      <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+  <Section Name="Static">
+    <Member Name="Axis_U1" Datatype="Struct">
+      <Member Name="ExtLoadUnloadAuto" Datatype="LReal">
+        <StartValue>-3370.0</StartValue>
+      </Member>
+      <Member Name="ExtLoadUnloadManu" Datatype="LReal">
+        <StartValue>-3365.0</StartValue>
+      </Member>
+      <Member Name="PartControl" Datatype="LReal">
+        <StartValue>-3257.0</StartValue>
+      </Member>
+      <Member Name="BwLoad" Datatype="LReal">
+        <StartValue>-1886.83</StartValue>
+      </Member>
+      <Member Name="BwUnLoad" Datatype="LReal">
+        <StartValue>-1962.83</StartValue>
+      </Member>
+      <Member Name="BwControl" Datatype="LReal">
+        <StartValue>-1775.0</StartValue>
+      </Member>
+      <Member Name="IntLoadUnload" Datatype="LReal">
+        <StartValue>-0.2</StartValue>
+      </Member>
+      <Member Name="ExtGateExt" Datatype="LReal">
+        <StartValue>-1164.0</StartValue>
+      </Member>
+      <Member Name="IntGateExt" Datatype="LReal">
+        <StartValue>-857.0</StartValue>
+      </Member>
+      <Member Name="ExtGateInt" Datatype="LReal">
+        <StartValue>-809.0</StartValue>
+      </Member>
+      <Member Name="IntGateInt" Datatype="LReal">
+        <StartValue>-502.0</StartValue>
+      </Member>
+      <Member Name="Sas" Datatype="LReal">
+        <StartValue>-833.0</StartValue>
+      </Member>
+      <Member Name="Blowing" Datatype="LReal">
+        <StartValue>36.0</StartValue>
+      </Member>
+      <Member Name="IntLoadUnloadOP" Datatype="LReal">
+        <StartValue>76.0</StartValue>
+      </Member>
+    </Member>
+    <Member Name="Axis_U2" Datatype="Struct">
+      <Member Name="ExtLoadUnloadAuto" Datatype="LReal">
+        <StartValue>-3370.0</StartValue>
+      </Member>
+      <Member Name="ExtLoadUnloadManu" Datatype="LReal">
+        <StartValue>-3365.0</StartValue>
+      </Member>
+      <Member Name="PartControl" Datatype="LReal">
+        <StartValue>-3257.0</StartValue>
+      </Member>
+      <Member Name="BwLoad" Datatype="LReal">
+        <StartValue>-1886.78</StartValue>
+      </Member>
+      <Member Name="BwUnLoad" Datatype="LReal">
+        <StartValue>-1962.78</StartValue>
+      </Member>
+      <Member Name="BwControl" Datatype="LReal">
+        <StartValue>-1775.0</StartValue>
+      </Member>
+      <Member Name="IntLoadUnload" Datatype="LReal">
+        <StartValue>-0.11</StartValue>
+      </Member>
+      <Member Name="ExtGateExt" Datatype="LReal">
+        <StartValue>-1164.0</StartValue>
+      </Member>
+      <Member Name="IntGateExt" Datatype="LReal">
+        <AttributeList>
+          <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+          <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+          <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+        </AttributeList>
+        <StartValue>-857.0</StartValue>
+      </Member>
+      <Member Name="ExtGateInt" Datatype="LReal">
+        <StartValue>-809.0</StartValue>
+      </Member>
+      <Member Name="IntGateInt" Datatype="LReal">
+        <StartValue>-502.0</StartValue>
+      </Member>
+      <Member Name="Sas" Datatype="LReal">
+        <StartValue>-833.0</StartValue>
+      </Member>
+      <Member Name="Blowing" Datatype="LReal">
+        <StartValue>36.0</StartValue>
+      </Member>
+      <Member Name="IntLoadUnloadOP" Datatype="LReal">
+        <StartValue>76.0</StartValue>
+      </Member>
+    </Member>
+    <Member Name="Axis_V" Datatype="Struct">
+      <Member Name="Shuttle_1" Datatype="Struct">
+        <Member Name="LoadUnload" Datatype="LReal">
+          <StartValue>17.95</StartValue>
+        </Member>
+        <Member Name="Blowing" Datatype="LReal">
+          <StartValue>17.95</StartValue>
+        </Member>
+      </Member>
+      <Member Name="Shuttle_2" Datatype="Struct">
+        <Member Name="LoadUnload" Datatype="LReal">
+          <StartValue>-0.48</StartValue>
+        </Member>
+        <Member Name="Blowing" Datatype="LReal">
+          <StartValue>-0.48</StartValue>
+        </Member>
+      </Member>
+      <Member Name="Safe" Datatype="LReal">
+        <StartValue>-0.48</StartValue>
+      </Member>
+      <Member Name="Fixture" Datatype="Struct">
+        <Member Name="Safe" Datatype="LReal">
+          <StartValue>40.0</StartValue>
+        </Member>
+        <Member Name="Load" Datatype="LReal">
+          <Comment>
+            <MultiLanguageText Lang="en-US">193.52</MultiLanguageText>
+          </Comment>
+          <StartValue>192.62</StartValue>
+        </Member>
+        <Member Name="Unload" Datatype="LReal">
+          <Comment>
+            <MultiLanguageText Lang="en-US">193.52</MultiLanguageText>
+          </Comment>
+          <StartValue>192.62</StartValue>
+        </Member>
+        <Member Name="Blowing" Datatype="LReal">
+          <Comment>
+            <MultiLanguageText Lang="en-US">193.52</MultiLanguageText>
+          </Comment>
+          <StartValue>192.62</StartValue>
+        </Member>
+      </Member>
+    </Member>
+    <Member Name="Axis_W" Datatype="Struct">
+      <Member Name="Shuttle_1" Datatype="Struct">
+        <Member Name="Approach" Datatype="LReal">
+          <StartValue>-17.61</StartValue>
+        </Member>
+        <Member Name="LoadUnload" Datatype="LReal">
+          <StartValue>-19.61</StartValue>
+        </Member>
+        <Member Name="Blowing" Datatype="LReal">
+          <StartValue>-5.0</StartValue>
+        </Member>
+      </Member>
+      <Member Name="Shuttle_2" Datatype="Struct">
+        <Member Name="Approach" Datatype="LReal">
+          <StartValue>-17.81</StartValue>
+        </Member>
+        <Member Name="LoadUnload" Datatype="LReal">
+          <StartValue>-19.81</StartValue>
+        </Member>
+        <Member Name="Blowing" Datatype="LReal">
+          <StartValue>-5.0</StartValue>
+        </Member>
+      </Member>
+      <Member Name="Safe" Datatype="LReal">
+        <StartValue>28.5</StartValue>
+      </Member>
+      <Member Name="Fixture" Datatype="Struct">
+        <Member Name="Safe" Datatype="LReal">
+          <StartValue>28.5</StartValue>
+        </Member>
+        <Member Name="Load" Datatype="LReal">
+          <StartValue>-0.8</StartValue>
+        </Member>
+        <Member Name="Blowing" Datatype="LReal">
+          <StartValue>15.0</StartValue>
+        </Member>
+        <Member Name="Unload" Datatype="LReal">
+          <StartValue>-0.9</StartValue>
+        </Member>
+        <Member Name="Approach" Datatype="LReal">
+          <StartValue>2.0</StartValue>
+        </Member>
+      </Member>
+    </Member>
+  </Section>
+</Sections></Interface>
+      <MemoryLayout>Optimized</MemoryLayout>
+      <MemoryReserve>100</MemoryReserve>
+      <Name>DB_AxisPosMachinePLC</Name>
+      <Namespace />
+      <Number>103</Number>
+      <ProgrammingLanguage>DB</ProgrammingLanguage>
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="3" CompositionName="Items">
+            <AttributeList>
+              <Culture>fr-FR</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <MultilingualText ID="4" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="5" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="6" CompositionName="Items">
+            <AttributeList>
+              <Culture>fr-FR</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Blocks.GlobalDB>
+</Document>

@@ -1,0 +1,429 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V20" />
+  <SW.Blocks.FB ID="0">
+    <AttributeList>
+      <AutoNumber>false</AutoNumber>
+      <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+  <Section Name="Input">
+    <Member Name="iImpulsion" Datatype="Bool" />
+    <Member Name="iPLC_DateAndTime" Datatype="DTL" Version="1.0" />
+  </Section>
+  <Section Name="Output" />
+  <Section Name="InOut" />
+  <Section Name="Static">
+    <Member Name="sRT_Impuls" Datatype="R_TRIG" Version="1.0" />
+    <Member Name="sRT_Impuls1" Datatype="R_TRIG" Version="1.0" />
+    <Member Name="sRT_Impuls2" Datatype="R_TRIG" Version="1.0">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="sTime1" Datatype="DTL" Version="1.0">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="sTime2" Datatype="DTL" Version="1.0" />
+    <Member Name="sDeltaTime" Datatype="LTime" />
+    <Member Name="sToggleStatus" Datatype="Bool" />
+  </Section>
+  <Section Name="Temp" />
+  <Section Name="Constant" />
+</Sections></Interface>
+      <MemoryLayout>Optimized</MemoryLayout>
+      <MemoryReserve>100</MemoryReserve>
+      <Name>FB_TimeMeasure</Name>
+      <Namespace />
+      <Number>51</Number>
+      <ProgrammingLanguage>SCL</ProgrammingLanguage>
+      <SetENOAutomatically>false</SetENOAutomatically>
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="3" CompositionName="Items">
+            <AttributeList>
+              <Culture>fr-FR</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <SW.Blocks.CompileUnit ID="4" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource><StructuredText xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/StructuredText/v4">
+  <Token Text="REGION" UId="21" />
+  <Blank UId="22" />
+  <Text UId="23">Description header </Text>
+  <NewLine UId="24" />
+  <Blank Num="4" UId="25" />
+  <LineComment UId="26">
+    <Text UId="27">==================================================================================</Text>
+  </LineComment>
+  <NewLine UId="28" />
+  <Blank Num="4" UId="29" />
+  <LineComment UId="30">
+    <Text UId="31"> POSALUX Swiss SA / (C) Copyright 2026</Text>
+  </LineComment>
+  <NewLine UId="32" />
+  <Blank Num="4" UId="33" />
+  <LineComment UId="34">
+    <Text UId="35">----------------------------------------------------------------------------------</Text>
+  </LineComment>
+  <NewLine UId="36" />
+  <Blank Num="4" UId="37" />
+  <LineComment UId="38">
+    <Text UId="39"> Title: FB_TimeMeasure</Text>
+  </LineComment>
+  <NewLine UId="40" />
+  <Blank Num="4" UId="41" />
+  <LineComment UId="42">
+    <Text UId="43"> Comment/Function: This function allows:</Text>
+  </LineComment>
+  <NewLine UId="44" />
+  <Blank Num="4" UId="45" />
+  <LineComment UId="46">
+    <Text UId="47">                      - Counting Time between 2 pulses</Text>
+  </LineComment>
+  <NewLine UId="48" />
+  <Blank Num="4" UId="49" />
+  <LineComment UId="50">
+    <Text UId="51" />
+  </LineComment>
+  <NewLine UId="52" />
+  <Blank Num="4" UId="53" />
+  <LineComment UId="54">
+    <Text UId="55"> Author: Fabien Waldt</Text>
+  </LineComment>
+  <NewLine UId="56" />
+  <Blank Num="4" UId="57" />
+  <LineComment UId="58">
+    <Text UId="59"> Engineering: TIA Portal v20</Text>
+  </LineComment>
+  <NewLine UId="60" />
+  <Blank Num="4" UId="61" />
+  <LineComment UId="62">
+    <Text UId="63">----------------------------------------------------------------------------------</Text>
+  </LineComment>
+  <NewLine UId="64" />
+  <Blank Num="4" UId="65" />
+  <LineComment UId="66">
+    <Text UId="67"> Change log table:</Text>
+  </LineComment>
+  <NewLine UId="68" />
+  <Blank Num="4" UId="69" />
+  <LineComment UId="70">
+    <Text UId="71"> Version  | Date     | Expert in charge | Changes applied</Text>
+  </LineComment>
+  <NewLine UId="72" />
+  <Blank Num="4" UId="73" />
+  <LineComment UId="74">
+    <Text UId="75"> ---------|----------|------------------|------------------------------------</Text>
+  </LineComment>
+  <NewLine UId="76" />
+  <Blank Num="4" UId="77" />
+  <LineComment UId="78">
+    <Text UId="79"> 00.00.01 | 20261211 | WFA              | First released version</Text>
+  </LineComment>
+  <NewLine UId="80" />
+  <Blank Num="4" UId="81" />
+  <LineComment UId="82">
+    <Text UId="83"> ==================================================================================</Text>
+  </LineComment>
+  <NewLine UId="84" />
+  <Token Text="END_REGION" UId="85" />
+  <NewLine Num="2" UId="86" />
+  <Token Text="REGION" UId="87" />
+  <Blank UId="88" />
+  <Text UId="89">Delta time calculation</Text>
+  <NewLine UId="90" />
+  <Blank Num="4" UId="91" />
+  <LineComment UId="92">
+    <Text UId="93"> Rising edge detection</Text>
+  </LineComment>
+  <NewLine UId="94" />
+  <Blank Num="4" UId="95" />
+  <Access Scope="LocalVariable" UId="96">
+    <Symbol UId="97">
+      <Component Name="sRT_Impuls" UId="98" />
+    </Symbol>
+  </Access>
+  <Access Scope="Call" UId="99">
+    <Instruction UId="100">
+      <Token Text="(" UId="101" />
+      <Parameter Name="CLK" UId="102">
+        <Blank UId="103" />
+        <Token Text=":=" UId="104" />
+        <Blank UId="105" />
+        <Access Scope="LocalVariable" UId="106">
+          <Symbol UId="107">
+            <Component Name="iImpulsion" UId="108" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text=")" UId="109" />
+    </Instruction>
+  </Access>
+  <Token Text=";" UId="110" />
+  <NewLine UId="111" />
+  <Blank Num="4" UId="112" />
+  <NewLine UId="113" />
+  <Blank Num="4" UId="114" />
+  <LineComment UId="115">
+    <Text UId="116"> Toggle state update</Text>
+  </LineComment>
+  <NewLine UId="117" />
+  <Blank Num="4" UId="118" />
+  <Token Text="IF" UId="119" />
+  <Blank UId="120" />
+  <Access Scope="LocalVariable" UId="121">
+    <Symbol UId="122">
+      <Component Name="sRT_Impuls" UId="123" />
+      <Token Text="." UId="124" />
+      <Component Name="Q" UId="125" />
+    </Symbol>
+  </Access>
+  <Blank UId="126" />
+  <Token Text="THEN" UId="127" />
+  <NewLine UId="128" />
+  <Blank Num="8" UId="129" />
+  <Access Scope="LocalVariable" UId="130">
+    <Symbol UId="131">
+      <Component Name="sToggleStatus" UId="132" />
+    </Symbol>
+  </Access>
+  <Blank UId="133" />
+  <Token Text=":=" UId="134" />
+  <Blank UId="135" />
+  <Token Text="NOT" UId="136" />
+  <Blank UId="137" />
+  <Access Scope="LocalVariable" UId="138">
+    <Symbol UId="139">
+      <Component Name="sToggleStatus" UId="140" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="141" />
+  <NewLine UId="142" />
+  <Blank Num="4" UId="143" />
+  <Token Text="END_IF" UId="144" />
+  <Token Text=";" UId="145" />
+  <NewLine UId="146" />
+  <Blank Num="4" UId="147" />
+  <Access Scope="LocalVariable" UId="148">
+    <Symbol UId="149">
+      <Component Name="sRT_Impuls1" UId="150" />
+    </Symbol>
+  </Access>
+  <Access Scope="Call" UId="151">
+    <Instruction UId="152">
+      <Token Text="(" UId="153" />
+      <Parameter Name="CLK" UId="154">
+        <Blank UId="155" />
+        <Token Text=":=" UId="156" />
+        <Blank UId="157" />
+        <Access Scope="LocalVariable" UId="158">
+          <Symbol UId="159">
+            <Component Name="sToggleStatus" UId="160" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text=")" UId="161" />
+    </Instruction>
+  </Access>
+  <Token Text=";" UId="162" />
+  <NewLine UId="163" />
+  <Blank Num="4" UId="164" />
+  <Access Scope="LocalVariable" UId="165">
+    <Symbol UId="166">
+      <Component Name="sRT_Impuls2" UId="167" />
+    </Symbol>
+  </Access>
+  <Access Scope="Call" UId="168">
+    <Instruction UId="169">
+      <Token Text="(" UId="170" />
+      <Parameter Name="CLK" UId="171">
+        <Blank UId="172" />
+        <Token Text=":=" UId="173" />
+        <Blank UId="174" />
+        <Token Text="NOT" UId="175" />
+        <Blank UId="176" />
+        <Access Scope="LocalVariable" UId="177">
+          <Symbol UId="178">
+            <Component Name="sToggleStatus" UId="179" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text=")" UId="180" />
+    </Instruction>
+  </Access>
+  <Token Text=";" UId="181" />
+  <NewLine UId="182" />
+  <Blank Num="4" UId="183" />
+  <NewLine UId="184" />
+  <Blank Num="4" UId="185" />
+  <LineComment UId="186">
+    <Text UId="187"> Timestamp of the first rising edge</Text>
+  </LineComment>
+  <NewLine UId="188" />
+  <Blank Num="4" UId="189" />
+  <Token Text="IF" UId="190" />
+  <Blank UId="191" />
+  <Access Scope="LocalVariable" UId="192">
+    <Symbol UId="193">
+      <Component Name="sRT_Impuls1" UId="194" />
+      <Token Text="." UId="195" />
+      <Component Name="Q" UId="196" />
+    </Symbol>
+  </Access>
+  <Blank UId="197" />
+  <Token Text="THEN" UId="198" />
+  <NewLine UId="199" />
+  <Blank Num="8" UId="200" />
+  <Access Scope="LocalVariable" UId="201">
+    <Symbol UId="202">
+      <Component Name="sTime1" UId="203" />
+    </Symbol>
+  </Access>
+  <Blank UId="204" />
+  <Token Text=":=" UId="205" />
+  <Blank UId="206" />
+  <Access Scope="LocalVariable" UId="207">
+    <Symbol UId="208">
+      <Component Name="iPLC_DateAndTime" UId="209" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="210" />
+  <NewLine UId="211" />
+  <Blank Num="4" UId="212" />
+  <Token Text="END_IF" UId="213" />
+  <Token Text=";" UId="214" />
+  <NewLine UId="215" />
+  <Blank Num="4" UId="216" />
+  <NewLine UId="217" />
+  <Blank Num="4" UId="218" />
+  <LineComment UId="219">
+    <Text UId="220"> Timestamp of the second rising edge + calculation</Text>
+  </LineComment>
+  <NewLine UId="221" />
+  <Blank Num="4" UId="222" />
+  <Token Text="IF" UId="223" />
+  <Blank UId="224" />
+  <Access Scope="LocalVariable" UId="225">
+    <Symbol UId="226">
+      <Component Name="sRT_Impuls2" UId="227" />
+      <Token Text="." UId="228" />
+      <Component Name="Q" UId="229" />
+    </Symbol>
+  </Access>
+  <Blank UId="230" />
+  <Token Text="THEN" UId="231" />
+  <NewLine UId="232" />
+  <Blank Num="8" UId="233" />
+  <Access Scope="LocalVariable" UId="234">
+    <Symbol UId="235">
+      <Component Name="sTime2" UId="236" />
+    </Symbol>
+  </Access>
+  <Blank UId="237" />
+  <Token Text=":=" UId="238" />
+  <Blank UId="239" />
+  <Access Scope="LocalVariable" UId="240">
+    <Symbol UId="241">
+      <Component Name="iPLC_DateAndTime" UId="242" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="243" />
+  <NewLine UId="244" />
+  <Blank Num="8" UId="245" />
+  <Access Scope="LocalVariable" UId="246">
+    <Symbol UId="247">
+      <Component Name="sDeltaTime" UId="248" />
+    </Symbol>
+  </Access>
+  <Blank UId="249" />
+  <Token Text=":=" UId="250" />
+  <Blank UId="251" />
+  <Access Scope="LocalVariable" UId="252">
+    <Symbol UId="253">
+      <Component Name="sTime2" UId="254" />
+    </Symbol>
+  </Access>
+  <Blank UId="255" />
+  <Token Text="-" UId="256" />
+  <Blank UId="257" />
+  <Access Scope="LocalVariable" UId="258">
+    <Symbol UId="259">
+      <Component Name="sTime1" UId="260" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="261" />
+  <NewLine UId="262" />
+  <Blank Num="4" UId="263" />
+  <Token Text="END_IF" UId="264" />
+  <Token Text=";" UId="265" />
+  <NewLine UId="266" />
+  <Token Text="END_REGION" UId="267" />
+</StructuredText></NetworkSource>
+          <ProgrammingLanguage>SCL</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="5" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="6" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="7" CompositionName="Items">
+                <AttributeList>
+                  <Culture>fr-FR</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="8" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="9" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="A" CompositionName="Items">
+                <AttributeList>
+                  <Culture>fr-FR</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <MultilingualText ID="B" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="C" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="D" CompositionName="Items">
+            <AttributeList>
+              <Culture>fr-FR</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Blocks.FB>
+</Document>

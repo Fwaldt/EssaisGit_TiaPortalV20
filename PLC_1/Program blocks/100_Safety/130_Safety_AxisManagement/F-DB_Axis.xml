@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V20" />
+  <SW.Blocks.InstanceDB ID="0">
+    <AttributeList>
+      <AutoNumber>false</AutoNumber>
+      <InstanceOfName>F-FB_Axis</InstanceOfName>
+      <InstanceOfType>FB</InstanceOfType>
+      <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+  <Section Name="Input" />
+  <Section Name="Output" />
+  <Section Name="InOut" />
+  <Section Name="Static">
+    <Member Name="LDrvSafe_SinaTlg903StatusAxis01_X" Datatype="&quot;LDrvSafe_SinaTlg903Status&quot;" />
+    <Member Name="LDrvSafe_SinaTlg903StatusAxis02_Y" Datatype="&quot;LDrvSafe_SinaTlg903Status&quot;" />
+    <Member Name="LDrvSafe_SinaTlg903StatusAxis03_ZM" Datatype="&quot;LDrvSafe_SinaTlg903Status&quot;" />
+    <Member Name="LDrvSafe_SinaTlg903StatusAxis04_B" Datatype="&quot;LDrvSafe_SinaTlg903Status&quot;" />
+    <Member Name="LDrvSafe_SinaTlg903StatusAxis05_U1" Datatype="&quot;LDrvSafe_SinaTlg903Status&quot;" />
+    <Member Name="LDrvSafe_SinaTlg903StatusAxis06_U2" Datatype="&quot;LDrvSafe_SinaTlg903Status&quot;" />
+    <Member Name="LDrvSafe_SinaTlg903StatusAxis07_V" Datatype="&quot;LDrvSafe_SinaTlg903Status&quot;" />
+    <Member Name="LDrvSafe_SinaTlg903StatusAxis08_W" Datatype="&quot;LDrvSafe_SinaTlg903Status&quot;" />
+    <Member Name="LDrvSafe_SinaTlg903StatusAxis09_ZL" Datatype="&quot;LDrvSafe_SinaTlg903Status&quot;" />
+    <Member Name="LDrvSafe_SinaTlg903ControlAxis01_X" Datatype="&quot;LDrvSafe_SinaTlg903Control&quot;" />
+    <Member Name="LDrvSafe_SinaTlg903ControlAxis02_Y" Datatype="&quot;LDrvSafe_SinaTlg903Control&quot;" />
+    <Member Name="LDrvSafe_SinaTlg903ControlAxis03_ZM" Datatype="&quot;LDrvSafe_SinaTlg903Control&quot;" />
+    <Member Name="LDrvSafe_SinaTlg903ControlAxis04_B" Datatype="&quot;LDrvSafe_SinaTlg903Control&quot;" />
+    <Member Name="LDrvSafe_SinaTlg903ControlAxis05_U1" Datatype="&quot;LDrvSafe_SinaTlg903Control&quot;" />
+    <Member Name="LDrvSafe_SinaTlg903ControlAxis06_U2" Datatype="&quot;LDrvSafe_SinaTlg903Control&quot;" />
+    <Member Name="LDrvSafe_SinaTlg903ControlAxis07_V" Datatype="&quot;LDrvSafe_SinaTlg903Control&quot;" />
+    <Member Name="LDrvSafe_SinaTlg903ControlAxis08_W" Datatype="&quot;LDrvSafe_SinaTlg903Control&quot;" />
+    <Member Name="LDrvSafe_SinaTlg903ControlAxis09_ZL" Datatype="&quot;LDrvSafe_SinaTlg903Control&quot;" />
+  </Section>
+</Sections></Interface>
+      <Name>F-DB_Axis</Name>
+      <Namespace />
+      <Number>130</Number>
+      <ProgrammingLanguage>F_DB</ProgrammingLanguage>
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="3" CompositionName="Items">
+            <AttributeList>
+              <Culture>fr-FR</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <MultilingualText ID="4" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="5" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="6" CompositionName="Items">
+            <AttributeList>
+              <Culture>fr-FR</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Blocks.InstanceDB>
+</Document>

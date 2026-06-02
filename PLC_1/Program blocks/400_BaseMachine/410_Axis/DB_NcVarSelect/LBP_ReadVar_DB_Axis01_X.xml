@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V20" />
+  <SW.Blocks.InstanceDB ID="0">
+    <AttributeList>
+      <AutoNumber>false</AutoNumber>
+      <InstanceOfName>LBP_ReadVar</InstanceOfName>
+      <InstanceOfType>FB</InstanceOfType>
+      <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+  <Section Name="Input">
+    <Member Name="Req" Datatype="Bool" />
+    <Member Name="NumVar" Datatype="Int" />
+    <Member Name="Addr1" Datatype="Variant" />
+    <Member Name="Unit1" Datatype="Byte" />
+    <Member Name="Column1" Datatype="Word" />
+    <Member Name="Line1" Datatype="Word" />
+    <Member Name="Addr2" Datatype="Variant" />
+    <Member Name="Unit2" Datatype="Byte" />
+    <Member Name="Column2" Datatype="Word" />
+    <Member Name="Line2" Datatype="Word" />
+    <Member Name="Addr3" Datatype="Variant" />
+    <Member Name="Unit3" Datatype="Byte" />
+    <Member Name="Column3" Datatype="Word" />
+    <Member Name="Line3" Datatype="Word" />
+    <Member Name="Addr4" Datatype="Variant" />
+    <Member Name="Unit4" Datatype="Byte" />
+    <Member Name="Column4" Datatype="Word" />
+    <Member Name="Line4" Datatype="Word" />
+    <Member Name="Addr5" Datatype="Variant" />
+    <Member Name="Unit5" Datatype="Byte" />
+    <Member Name="Column5" Datatype="Word" />
+    <Member Name="Line5" Datatype="Word" />
+    <Member Name="Addr6" Datatype="Variant" />
+    <Member Name="Unit6" Datatype="Byte" />
+    <Member Name="Column6" Datatype="Word" />
+    <Member Name="Line6" Datatype="Word" />
+    <Member Name="Addr7" Datatype="Variant" />
+    <Member Name="Unit7" Datatype="Byte" />
+    <Member Name="Column7" Datatype="Word" />
+    <Member Name="Line7" Datatype="Word" />
+    <Member Name="Addr8" Datatype="Variant" />
+    <Member Name="Unit8" Datatype="Byte" />
+    <Member Name="Column8" Datatype="Word" />
+    <Member Name="Line8" Datatype="Word" />
+  </Section>
+  <Section Name="Output">
+    <Member Name="Error" Datatype="Bool" />
+    <Member Name="NDR" Datatype="Bool" />
+    <Member Name="State" Datatype="Word" />
+  </Section>
+  <Section Name="InOut">
+    <Member Name="RD1" Datatype="Variant" />
+    <Member Name="RD2" Datatype="Variant" />
+    <Member Name="RD3" Datatype="Variant" />
+    <Member Name="RD4" Datatype="Variant" />
+    <Member Name="RD5" Datatype="Variant" />
+    <Member Name="RD6" Datatype="Variant" />
+    <Member Name="RD7" Datatype="Variant" />
+    <Member Name="RD8" Datatype="Variant" />
+  </Section>
+  <Section Name="Static">
+    <Member Name="ident" Datatype="Byte" />
+    <Member Name="regist" Datatype="Bool" />
+    <Member Name="flanke" Datatype="Bool" />
+    <Member Name="progtest" Datatype="Bool" />
+    <Member Name="err_cls_cod" Datatype="Word" />
+    <Member Name="err_stat" Datatype="Word" />
+    <Member Name="s_fifoRef" Datatype="UInt" />
+    <Member Name="s_Reserved1" Datatype="Word" />
+    <Member Name="s_Reserved2" Datatype="DWord" />
+    <Member Name="s_Reserved3" Datatype="DWord" />
+  </Section>
+</Sections></Interface>
+      <Name>LBP_ReadVar_DB_Axis01_X</Name>
+      <Namespace />
+      <Number>4101</Number>
+      <ProgrammingLanguage>DB</ProgrammingLanguage>
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="3" CompositionName="Items">
+            <AttributeList>
+              <Culture>fr-FR</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <MultilingualText ID="4" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="5" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="6" CompositionName="Items">
+            <AttributeList>
+              <Culture>fr-FR</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Blocks.InstanceDB>
+</Document>

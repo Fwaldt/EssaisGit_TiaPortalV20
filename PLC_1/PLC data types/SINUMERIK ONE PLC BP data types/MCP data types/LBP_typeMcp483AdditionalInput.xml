@@ -1,0 +1,198 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V20" />
+  <SW.Types.PlcStruct ID="0">
+    <AttributeList>
+      <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+  <Section Name="None">
+    <Member Name="directKey1" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">DT1</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">DT1</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="directKey2" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">DT2</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">DT2</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="directKey3" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">DT3</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">DT3</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="directKey4" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">DT4</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">DT4</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="directKey5" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">DT5</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">DT5</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="directKey6" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">DT6</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">DT6</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="directKey7" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">DT7</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">DT7</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="directKey8" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">DT8</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">DT8</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="directKey9" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">DT9</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">DT9</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="directKey10" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">DT10</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">DT10</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="directKey11" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">DT11</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">DT11</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="directKey12" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">DT12</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">DT12</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="directKey13" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">DT13</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">DT13</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="directKey14" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">DT14</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">DT14</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="directKey15" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">DT15</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">DT15</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="directKey16" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">DT16</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">DT16</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="optionalKey1" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">KT-IN1</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">KT-IN1</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="optionalKey2" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">KT-IN2</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">KT-IN2</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="optionalKey3" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">KT-IN3</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">KT-IN3</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="optionalKey4" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">KT-IN4</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">KT-IN4</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="optionalKey5" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">KT-IN5</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">KT-IN5</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="optionalKey6" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">KT-IN6</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">KT-IN6</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="reserved26" Datatype="Bool" />
+    <Member Name="reserved27" Datatype="Bool" />
+    <Member Name="feedrateOvrA" Datatype="Bool" />
+    <Member Name="feedrateOvrB" Datatype="Bool" />
+    <Member Name="feedrateOvrC" Datatype="Bool" />
+    <Member Name="feedrateOvrD" Datatype="Bool" />
+    <Member Name="feedrateOvrE" Datatype="Bool" />
+    <Member Name="reserved35" Datatype="Bool" />
+    <Member Name="reserved36" Datatype="Bool" />
+    <Member Name="reserved37" Datatype="Bool" />
+    <Member Name="spindleOvrA" Datatype="Bool" />
+    <Member Name="spindleOvrB" Datatype="Bool" />
+    <Member Name="spindleOvrC" Datatype="Bool" />
+    <Member Name="spindleOvrD" Datatype="Bool" />
+    <Member Name="spindleOvrE" Datatype="Bool" />
+    <Member Name="reserved45" Datatype="Bool" />
+    <Member Name="reserved46" Datatype="Bool" />
+    <Member Name="reserved47" Datatype="Bool" />
+  </Section>
+</Sections></Interface>
+      <Name>LBP_typeMcp483AdditionalInput</Name>
+      <Namespace />
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text>Additional input image of MCP 483</Text>
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="3" CompositionName="Items">
+            <AttributeList>
+              <Culture>fr-FR</Culture>
+              <Text>Image d'entrée supplémentaire du MCP 483</Text>
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <MultilingualText ID="4" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="5" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text>MCP 483 image</Text>
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="6" CompositionName="Items">
+            <AttributeList>
+              <Culture>fr-FR</Culture>
+              <Text>Image du MCP 483</Text>
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Types.PlcStruct>
+</Document>

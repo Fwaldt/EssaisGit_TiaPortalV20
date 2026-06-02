@@ -1,0 +1,439 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V20" />
+  <SW.Blocks.FB ID="0">
+    <AttributeList>
+      <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+  <Section Name="Input" />
+  <Section Name="Output" />
+  <Section Name="InOut" />
+  <Section Name="Static">
+    <Member Name="sPrio" Datatype="Int" />
+  </Section>
+  <Section Name="Temp" />
+  <Section Name="Constant" />
+</Sections></Interface>
+      <MemoryLayout>Optimized</MemoryLayout>
+      <MemoryReserve>100</MemoryReserve>
+      <Name>FB_PrioSequence</Name>
+      <Namespace />
+      <Number>79</Number>
+      <ProgrammingLanguage>SCL</ProgrammingLanguage>
+      <SetENOAutomatically>false</SetENOAutomatically>
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="3" CompositionName="Items">
+            <AttributeList>
+              <Culture>fr-FR</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <SW.Blocks.CompileUnit ID="4" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource><StructuredText xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/StructuredText/v4">
+  <Token Text="REGION" UId="21" />
+  <Blank UId="22" />
+  <Text UId="23">Description header </Text>
+  <NewLine UId="24" />
+  <Blank Num="4" UId="25" />
+  <LineComment UId="26">
+    <Text UId="27">==================================================================================</Text>
+  </LineComment>
+  <NewLine UId="28" />
+  <Blank Num="4" UId="29" />
+  <LineComment UId="30">
+    <Text UId="31"> POSALUX Swiss SA / (C) Copyright 2026</Text>
+  </LineComment>
+  <NewLine UId="32" />
+  <Blank Num="4" UId="33" />
+  <LineComment UId="34">
+    <Text UId="35">----------------------------------------------------------------------------------</Text>
+  </LineComment>
+  <NewLine UId="36" />
+  <Blank Num="4" UId="37" />
+  <LineComment UId="38">
+    <Text UId="39"> Title: </Text>
+  </LineComment>
+  <NewLine UId="40" />
+  <Blank Num="4" UId="41" />
+  <LineComment UId="42">
+    <Text UId="43"> Comment/Function: FB_PrioSequence</Text>
+  </LineComment>
+  <NewLine UId="44" />
+  <Blank Num="4" UId="45" />
+  <LineComment UId="46">
+    <Text UId="47"> Author: Fabien WALDT</Text>
+  </LineComment>
+  <NewLine UId="48" />
+  <Blank Num="4" UId="49" />
+  <LineComment UId="50">
+    <Text UId="51"> Engineering: TIA Portal v20</Text>
+  </LineComment>
+  <NewLine UId="52" />
+  <Blank Num="4" UId="53" />
+  <LineComment UId="54">
+    <Text UId="55">----------------------------------------------------------------------------------</Text>
+  </LineComment>
+  <NewLine UId="56" />
+  <Blank Num="4" UId="57" />
+  <LineComment UId="58">
+    <Text UId="59"> Change log table:</Text>
+  </LineComment>
+  <NewLine UId="60" />
+  <Blank Num="4" UId="61" />
+  <LineComment UId="62">
+    <Text UId="63"> Version  | Date     | Expert in charge | Changes applied</Text>
+  </LineComment>
+  <NewLine UId="64" />
+  <Blank Num="4" UId="65" />
+  <LineComment UId="66">
+    <Text UId="67"> ---------|----------|------------------|-----------------------------------------</Text>
+  </LineComment>
+  <NewLine UId="68" />
+  <Blank Num="4" UId="69" />
+  <LineComment UId="70">
+    <Text UId="71"> 00.00.01 | 20260205 | WFA              | First released version</Text>
+  </LineComment>
+  <NewLine UId="72" />
+  <Blank Num="4" UId="73" />
+  <LineComment UId="74">
+    <Text UId="75"> =================================================================================</Text>
+  </LineComment>
+  <NewLine UId="76" />
+  <Token Text="END_REGION" UId="77" />
+  <NewLine Num="2" UId="78" />
+  <Token Text="REGION" UId="79" />
+  <Blank UId="80" />
+  <Text UId="81">Test Prio</Text>
+  <NewLine UId="82" />
+  <Blank Num="4" UId="83" />
+  <LineComment UId="84">
+    <Text UId="85"> #sPrio := 0;</Text>
+  </LineComment>
+  <NewLine UId="86" />
+  <Blank Num="4" UId="87" />
+  <NewLine UId="88" />
+  <Blank Num="4" UId="89" />
+  <LineComment UId="90">
+    <Text UId="91"> IF "DB_LoaderShuttle1".sMain.sInterface.SequenceRun AND "DB_LoaderShuttle2".sMain.sInterface.SequenceRun THEN</Text>
+  </LineComment>
+  <NewLine UId="92" />
+  <Blank Num="4" UId="93" />
+  <LineComment UId="94">
+    <Text UId="95">     IF "DB_LoaderShuttle2".sMain.sCurrent_Step_NB &gt; "DB_LoaderShuttle1".sMain.sCurrent_Step_NB THEN</Text>
+  </LineComment>
+  <NewLine UId="96" />
+  <Blank Num="4" UId="97" />
+  <LineComment UId="98">
+    <Text UId="99">         #sPrio := 2;</Text>
+  </LineComment>
+  <NewLine UId="100" />
+  <Blank Num="4" UId="101" />
+  <LineComment UId="102">
+    <Text UId="103">     ELSE</Text>
+  </LineComment>
+  <NewLine UId="104" />
+  <Blank Num="4" UId="105" />
+  <LineComment UId="106">
+    <Text UId="107">         #sPrio := 1;</Text>
+  </LineComment>
+  <NewLine UId="108" />
+  <Blank Num="4" UId="109" />
+  <LineComment UId="110">
+    <Text UId="111">     END_IF;</Text>
+  </LineComment>
+  <NewLine UId="112" />
+  <Blank Num="4" UId="113" />
+  <LineComment UId="114">
+    <Text UId="115"> ELSIF "DB_LoaderShuttle1".sMain.sInterface.SequenceRun AND NOT "DB_LoaderShuttle2".sMain.sInterface.SequenceRun THEN</Text>
+  </LineComment>
+  <NewLine UId="116" />
+  <Blank Num="4" UId="117" />
+  <LineComment UId="118">
+    <Text UId="119">     #sPrio := 1;</Text>
+  </LineComment>
+  <NewLine UId="120" />
+  <Blank Num="4" UId="121" />
+  <LineComment UId="122">
+    <Text UId="123"> ELSIF NOT "DB_LoaderShuttle1".sMain.sInterface.SequenceRun AND "DB_LoaderShuttle2".sMain.sInterface.SequenceRun THEN</Text>
+  </LineComment>
+  <NewLine UId="124" />
+  <Blank Num="4" UId="125" />
+  <LineComment UId="126">
+    <Text UId="127">     #sPrio := 2;</Text>
+  </LineComment>
+  <NewLine UId="128" />
+  <Blank Num="4" UId="129" />
+  <LineComment UId="130">
+    <Text UId="131"> ELSE</Text>
+  </LineComment>
+  <NewLine UId="132" />
+  <Blank Num="4" UId="133" />
+  <LineComment UId="134">
+    <Text UId="135">     #sPrio := 0;</Text>
+  </LineComment>
+  <NewLine UId="136" />
+  <Blank Num="4" UId="137" />
+  <LineComment UId="138">
+    <Text UId="139"> END_IF;</Text>
+  </LineComment>
+  <NewLine UId="140" />
+  <Blank Num="4" UId="141" />
+  <LineComment UId="142">
+    <Text UId="143"> </Text>
+  </LineComment>
+  <NewLine UId="144" />
+  <Blank Num="4" UId="145" />
+  <Token Text="IF" UId="146" />
+  <Blank UId="147" />
+  <Access Scope="GlobalVariable" UId="148">
+    <Symbol UId="149">
+      <Component Name="DB_HMISetting" UId="150">
+        <BooleanAttribute Name="HasQuotes" UId="151">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="152" />
+      <Component Name="Shuttle1Enable" UId="153" />
+    </Symbol>
+  </Access>
+  <Blank UId="154" />
+  <Token Text="AND" UId="155" />
+  <Blank UId="156" />
+  <Token Text="NOT" UId="157" />
+  <Blank UId="158" />
+  <Access Scope="GlobalVariable" UId="159">
+    <Symbol UId="160">
+      <Component Name="DB_HMISetting" UId="161">
+        <BooleanAttribute Name="HasQuotes" UId="162">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="163" />
+      <Component Name="Shuttle2Enable" UId="164" />
+    </Symbol>
+  </Access>
+  <Blank UId="165" />
+  <Token Text="THEN" UId="166" />
+  <NewLine UId="167" />
+  <Blank Num="8" UId="168" />
+  <Access Scope="LocalVariable" UId="169">
+    <Symbol UId="170">
+      <Component Name="sPrio" UId="171" />
+    </Symbol>
+  </Access>
+  <Blank UId="172" />
+  <Token Text=":=" UId="173" />
+  <Blank UId="174" />
+  <Access Scope="LiteralConstant" UId="175">
+    <Constant UId="176">
+      <ConstantValue UId="178">1</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="179" />
+  <NewLine UId="180" />
+  <Blank Num="4" UId="181" />
+  <Token Text="ELSIF" UId="182" />
+  <Blank UId="183" />
+  <Access Scope="GlobalVariable" UId="184">
+    <Symbol UId="185">
+      <Component Name="DB_HMISetting" UId="186">
+        <BooleanAttribute Name="HasQuotes" UId="187">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="188" />
+      <Component Name="Shuttle2Enable" UId="189" />
+    </Symbol>
+  </Access>
+  <Blank UId="190" />
+  <Token Text="AND" UId="191" />
+  <Blank UId="192" />
+  <Token Text="NOT" UId="193" />
+  <Blank UId="194" />
+  <Access Scope="GlobalVariable" UId="195">
+    <Symbol UId="196">
+      <Component Name="DB_HMISetting" UId="197">
+        <BooleanAttribute Name="HasQuotes" UId="198">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="199" />
+      <Component Name="Shuttle1Enable" UId="200" />
+    </Symbol>
+  </Access>
+  <Blank UId="201" />
+  <Token Text="THEN" UId="202" />
+  <NewLine UId="203" />
+  <Blank Num="8" UId="204" />
+  <Access Scope="LocalVariable" UId="205">
+    <Symbol UId="206">
+      <Component Name="sPrio" UId="207" />
+    </Symbol>
+  </Access>
+  <Blank UId="208" />
+  <Token Text=":=" UId="209" />
+  <Blank UId="210" />
+  <Access Scope="LiteralConstant" UId="211">
+    <Constant UId="212">
+      <ConstantValue UId="214">2</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="215" />
+  <NewLine UId="216" />
+  <Blank Num="4" UId="217" />
+  <Token Text="ELSIF" UId="218" />
+  <Blank UId="219" />
+  <Access Scope="GlobalVariable" UId="220">
+    <Symbol UId="221">
+      <Component Name="DB_HMISetting" UId="222">
+        <BooleanAttribute Name="HasQuotes" UId="223">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="224" />
+      <Component Name="Shuttle1Enable" UId="225" />
+    </Symbol>
+  </Access>
+  <Blank UId="226" />
+  <Token Text="AND" UId="227" />
+  <Blank UId="228" />
+  <Token Text="NOT" UId="229" />
+  <Blank UId="230" />
+  <Access Scope="GlobalVariable" UId="231">
+    <Symbol UId="232">
+      <Component Name="DB_HMISetting" UId="233">
+        <BooleanAttribute Name="HasQuotes" UId="234">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="235" />
+      <Component Name="Shuttle2Enable" UId="236" />
+    </Symbol>
+  </Access>
+  <Blank UId="237" />
+  <Token Text="AND" UId="238" />
+  <Blank UId="239" />
+  <Access Scope="GlobalVariable" UId="240">
+    <Symbol UId="241">
+      <Component Name="DB_LoaderShuttle2" UId="242">
+        <BooleanAttribute Name="HasQuotes" UId="243">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="244" />
+      <Component Name="sMain" UId="245" />
+      <Token Text="." UId="246" />
+      <Component Name="sCurrent_Step_NB" UId="247" />
+    </Symbol>
+  </Access>
+  <Blank UId="248" />
+  <Token Text="&gt;" UId="249" />
+  <Blank UId="250" />
+  <Access Scope="GlobalVariable" UId="251">
+    <Symbol UId="252">
+      <Component Name="DB_LoaderShuttle1" UId="253">
+        <BooleanAttribute Name="HasQuotes" UId="254">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="255" />
+      <Component Name="sMain" UId="256" />
+      <Token Text="." UId="257" />
+      <Component Name="sCurrent_Step_NB" UId="258" />
+    </Symbol>
+  </Access>
+  <Blank UId="259" />
+  <Token Text="THEN" UId="260" />
+  <NewLine UId="261" />
+  <Blank Num="8" UId="262" />
+  <Access Scope="LocalVariable" UId="263">
+    <Symbol UId="264">
+      <Component Name="sPrio" UId="265" />
+    </Symbol>
+  </Access>
+  <Blank UId="266" />
+  <Token Text=":=" UId="267" />
+  <Blank UId="268" />
+  <Access Scope="LiteralConstant" UId="269">
+    <Constant UId="270">
+      <ConstantValue UId="272">2</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="273" />
+  <NewLine UId="274" />
+  <Blank Num="4" UId="275" />
+  <Token Text="ELSE" UId="276" />
+  <NewLine UId="277" />
+  <Blank Num="8" UId="278" />
+  <Access Scope="LocalVariable" UId="279">
+    <Symbol UId="280">
+      <Component Name="sPrio" UId="281" />
+    </Symbol>
+  </Access>
+  <Blank UId="282" />
+  <Token Text=":=" UId="283" />
+  <Blank UId="284" />
+  <Access Scope="LiteralConstant" UId="285">
+    <Constant UId="286">
+      <ConstantValue UId="288">1</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="289" />
+  <NewLine UId="290" />
+  <Blank Num="4" UId="291" />
+  <Token Text="END_IF" UId="292" />
+  <Token Text=";" UId="293" />
+  <NewLine UId="294" />
+  <Token Text="END_REGION" UId="295" />
+</StructuredText></NetworkSource>
+          <ProgrammingLanguage>SCL</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="5" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="6" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="7" CompositionName="Items">
+                <AttributeList>
+                  <Culture>fr-FR</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="8" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="9" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="A" CompositionName="Items">
+                <AttributeList>
+                  <Culture>fr-FR</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <MultilingualText ID="B" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="C" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="D" CompositionName="Items">
+            <AttributeList>
+              <Culture>fr-FR</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Blocks.FB>
+</Document>

@@ -1,0 +1,177 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V20" />
+  <SW.Blocks.InstanceDB ID="0">
+    <AttributeList>
+      <AutoNumber>false</AutoNumber>
+      <InstanceOfName>FB_LoaderShuttle2</InstanceOfName>
+      <InstanceOfType>FB</InstanceOfType>
+      <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+  <Section Name="Input">
+    <Member Name="iGripperReserved" Datatype="Bool" />
+    <Member Name="iGripperReleased" Datatype="Bool" />
+    <Member Name="iShuttleMoving" Datatype="Bool" />
+    <Member Name="iShuttleInPos" Datatype="Bool" />
+    <Member Name="iAxisV_Moving" Datatype="Bool" />
+    <Member Name="iAxisV_InPos" Datatype="Bool" />
+    <Member Name="iAxisW_Moving" Datatype="Bool" />
+    <Member Name="iAxisW_InPos" Datatype="Bool" />
+  </Section>
+  <Section Name="Output">
+    <Member Name="oExtGateOpenReq" Datatype="Bool" />
+    <Member Name="oExtGateCloseReq" Datatype="Bool" />
+    <Member Name="oIntGateOpenReq" Datatype="Bool" />
+    <Member Name="oIntGateCloseReq" Datatype="Bool" />
+    <Member Name="oLoadGripperCloseReq" Datatype="Bool" />
+    <Member Name="oUnloadGripperOpenReq" Datatype="Bool" />
+    <Member Name="oBlowingReq" Datatype="Bool" />
+    <Member Name="oShuttleStartReq" Datatype="Bool" />
+    <Member Name="oShuttlePosSetPoint" Datatype="Real" />
+    <Member Name="oAxisVStartReq" Datatype="Bool" />
+    <Member Name="oAxisVPosSetPoint" Datatype="Real" />
+    <Member Name="oAxisWStartReq" Datatype="Bool" />
+    <Member Name="oAxisWPosSetPoint" Datatype="Real" />
+  </Section>
+  <Section Name="InOut" />
+  <Section Name="Static">
+    <Member Name="sMain" Datatype="&quot;FB_Main&quot;" />
+    <Member Name="sShuttleInt" Datatype="&quot;FB_ShuttleInt&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="sShuttleExt" Datatype="&quot;FB_ShuttleExt&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="sControlIn" Datatype="&quot;FB_PartControl&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="sControlOut" Datatype="&quot;FB_PartControl&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="sBlowing" Datatype="&quot;FB_Blowing&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="sIntLoadUnload" Datatype="&quot;FB_IntLoadUnload&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="sExtLoadUnload" Datatype="&quot;FB_ExtLoadUnload&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="sBwLoadUnload" Datatype="&quot;FB_BwLoadUnload&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="sBwControlIn" Datatype="&quot;FB_BwControl&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="sActPartControlIn" Datatype="&quot;FB_ActControl&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="sActPartControlout" Datatype="&quot;FB_ActControl&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="sActBwControlIn" Datatype="&quot;FB_ActControl&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="sIntLoadUnloadOP" Datatype="&quot;FB_IntLoadUnloadOP&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="sBwConsecutiveCtrl_1" Datatype="&quot;FB_Consecutive&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="sBwConsecutiveCtrl" Datatype="&quot;FB_Consecutive&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="sShuttlePosInt" Datatype="Bool">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="sShuttlePosSas" Datatype="Bool" />
+    <Member Name="sShuttlePosExt" Datatype="Bool" />
+    <Member Name="sGripper_OK" Datatype="Bool" />
+    <Member Name="sExtLoaderInSafePos" Datatype="Bool" />
+    <Member Name="sIntLoaderInSafePos" Datatype="Bool" />
+    <Member Name="sBwLoaderInSafePos" Datatype="Bool" />
+    <Member Name="sRT_PartControlInMissing" Datatype="R_TRIG" Version="1.0" />
+    <Member Name="sRT_PartControlInExtra" Datatype="R_TRIG" Version="1.0" />
+    <Member Name="sRT_PartControlOutMissing" Datatype="R_TRIG" Version="1.0" />
+    <Member Name="sRT_PartControlOutExtra" Datatype="R_TRIG" Version="1.0" />
+    <Member Name="sRT_BwControlInMissing" Datatype="R_TRIG" Version="1.0" />
+    <Member Name="sRT_BwControlInExtra" Datatype="R_TRIG" Version="1.0" />
+    <Member Name="sStepPauseSeq" Datatype="Bool">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+  </Section>
+</Sections></Interface>
+      <Name>DB_LoaderShuttle2</Name>
+      <Namespace />
+      <Number>205</Number>
+      <ProgrammingLanguage>DB</ProgrammingLanguage>
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="3" CompositionName="Items">
+            <AttributeList>
+              <Culture>fr-FR</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <MultilingualText ID="4" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="5" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="6" CompositionName="Items">
+            <AttributeList>
+              <Culture>fr-FR</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Blocks.InstanceDB>
+</Document>

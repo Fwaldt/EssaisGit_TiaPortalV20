@@ -1,0 +1,141 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V20" />
+  <SW.Blocks.InstanceDB ID="0">
+    <AttributeList>
+      <InstanceOfName>LBP_OpUnitComm</InstanceOfName>
+      <InstanceOfType>FB</InstanceOfType>
+      <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+  <Section Name="Input" />
+  <Section Name="Output">
+    <Member Name="Error" Datatype="Bool" />
+    <Member Name="Status" Datatype="Word" />
+  </Section>
+  <Section Name="InOut">
+    <Member Name="Config" Datatype="Variant" />
+  </Section>
+  <Section Name="Static">
+    <Member Name="s_OpUnitConnInstance" Datatype="Array[1..6] of &quot;LBP_InternalProc2&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="s_OpUnitNumber" Datatype="UInt" />
+    <Member Name="s_OpUnitHardwareInterfaceId" Datatype="HW_ANY" />
+    <Member Name="s_OpUnitEnabled" Datatype="Array[1..6] of Bool" />
+    <Member Name="s_OpUnitConfig" Datatype="Array[1..6] of &quot;LBP_typeInternal1&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="s_OpUnitControlMcp" Datatype="Array[1..5] of Struct">
+      <Member Name="active" Datatype="Bool" />
+      <Member Name="stop" Datatype="Bool" />
+      <Member Name="notSend" Datatype="Bool" />
+      <Member Name="connected" Datatype="Bool" />
+      <Member Name="warning" Datatype="Bool" />
+      <Member Name="error" Datatype="Bool" />
+      <Member Name="status" Datatype="Word" />
+      <Member Name="info" Datatype="Word" />
+      <Member Name="alert" Datatype="Bool" />
+      <Member Name="alertDelay" Datatype="TON_TIME" Version="1.0">
+        <AttributeList>
+          <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+        </AttributeList>
+      </Member>
+    </Member>
+    <Member Name="s_OpUnitControlIdent" Datatype="Struct">
+      <Member Name="strobe" Datatype="Bool" />
+      <Member Name="busAddress" Datatype="USInt" />
+      <Member Name="modeDck" Datatype="Bool" />
+      <Member Name="numberOfInputBytes" Datatype="UInt" />
+      <Member Name="numberOfOutputBytes" Datatype="UInt" />
+      <Member Name="mcpType" Datatype="Word" />
+      <Member Name="done" Datatype="Bool" />
+      <Member Name="error" Datatype="Bool" />
+      <Member Name="status" Datatype="Word" />
+      <Member Name="info" Datatype="Word" />
+    </Member>
+    <Member Name="s_OpUnitData" Datatype="Array[1..6] of Struct">
+      <Member Name="connect" Datatype="Bool" />
+      <Member Name="ident" Datatype="Bool" />
+      <Member Name="notSend" Datatype="Bool" />
+      <Member Name="busy" Datatype="Bool" />
+      <Member Name="connected" Datatype="Bool" />
+      <Member Name="warning" Datatype="Bool" />
+      <Member Name="error" Datatype="Bool" />
+      <Member Name="identReady" Datatype="Bool" />
+      <Member Name="reconnect" Datatype="Bool" />
+      <Member Name="status" Datatype="Word" />
+      <Member Name="errorInfo" Datatype="Word" />
+      <Member Name="mcpType" Datatype="Word" />
+      <Member Name="mcpDipFixes" Datatype="Word" />
+      <Member Name="numberOfOutputBytes" Datatype="UInt" />
+      <Member Name="numberOfInputBytes" Datatype="UInt" />
+      <Member Name="numberOfHandwheels" Datatype="UInt" />
+      <Member Name="handwheelRecent" Datatype="Bool" />
+      <Member Name="handwheelPulses1" Datatype="Int" />
+      <Member Name="handwheelPulses2" Datatype="Int" />
+      <Member Name="handwheelStopped1" Datatype="Bool" />
+      <Member Name="handwheelStopped2" Datatype="Bool" />
+      <Member Name="reconnectTimer" Datatype="TON_TIME" Version="1.0">
+        <AttributeList>
+          <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+        </AttributeList>
+      </Member>
+      <Member Name="reconnectCounter" Datatype="UInt" />
+    </Member>
+    <Member Name="s_init" Datatype="Bool" />
+    <Member Name="statReadWriteRecordActive" Datatype="Bool" />
+    <Member Name="statReadWriteRecordComplete" Datatype="Bool" />
+    <Member Name="statReadWriteRecordAbort" Datatype="Bool" />
+    <Member Name="statReadWriteRecordMcp" Datatype="UInt" />
+    <Member Name="statReadWriteRecordTimeout" Datatype="TON_TIME" Version="1.0" />
+    <Member Name="statReadWriteRecordData" Datatype="&quot;LBP_typeInternal5&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+  </Section>
+</Sections></Interface>
+      <Name>LBP_OpUnitComm_DB</Name>
+      <Namespace />
+      <Number>70</Number>
+      <ProgrammingLanguage>DB</ProgrammingLanguage>
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="3" CompositionName="Items">
+            <AttributeList>
+              <Culture>fr-FR</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <MultilingualText ID="4" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="5" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="6" CompositionName="Items">
+            <AttributeList>
+              <Culture>fr-FR</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Blocks.InstanceDB>
+</Document>

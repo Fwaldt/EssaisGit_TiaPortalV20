@@ -1,0 +1,926 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V20" />
+  <SW.Types.PlcStruct ID="0">
+    <AttributeList>
+      <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+  <Section Name="None">
+    <Member Name="A_SCLight" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Screen light</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Éclaircir écran</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_SCDark" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Screen darkening</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Obscurcissement écran</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_KeyDisable" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Key disable</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Désactiver touche</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_ClearCanAl" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Clear cancel alarms</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Supprimer alarmes d'abandon</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_ClearRecAl" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Clear recall alarms</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Supprimer alarmes de rappel</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="f0_5" Datatype="Bool" />
+    <Member Name="A_SafeActionLog" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Edge change 0 → 1: Save ACTION.COM to CRASH.COM</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Front 0 → 1 : enregistrer ACTION.COM dans CRASH.COM</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_ActWCS" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Actual value in WCS 0=MCS</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Valeur réelle dans WCS 0=MCS</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_PLCExtViewerReject" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">External viewer reject</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Refuser visualiseur externe</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_PLCExtViewerMode" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">External viewer mode</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Mode visualiseur externe</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="f1_2" Datatype="Bool" />
+    <Member Name="f1_3" Datatype="Bool" />
+    <Member Name="f1_4" Datatype="Bool" />
+    <Member Name="f1_5" Datatype="Bool" />
+    <Member Name="f1_6" Datatype="Bool" />
+    <Member Name="f1_7" Datatype="Bool" />
+    <Member Name="A_1stError1" Datatype="Word">
+      <Comment>
+        <MultiLanguageText Lang="en-US">1st error HIGRAPH</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">1re erreur HIGRAPH</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_1stError2" Datatype="Word">
+      <Comment>
+        <MultiLanguageText Lang="en-US">1st error HIGRAPH</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">1re erreur HIGRAPH</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_ASpi1percent" Datatype="Byte">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Analog spindle 1:</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Broche analogique 1 :</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_ASpi2percent" Datatype="Byte" />
+    <Member Name="A_MCPChan" Datatype="Byte" />
+    <Member Name="A_OEM1" Datatype="Bool" />
+    <Member Name="A_OEM2" Datatype="Bool" />
+    <Member Name="A_AToolMeas" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">AutoToolMeasure</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">AutoToolMeasure</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="f9_3" Datatype="Bool" />
+    <Member Name="f9_4" Datatype="Bool" />
+    <Member Name="f9_5" Datatype="Bool" />
+    <Member Name="f9_6" Datatype="Bool" />
+    <Member Name="f9_7" Datatype="Bool" />
+    <Member Name="A_Hardkey" Datatype="Byte">
+      <Comment>
+        <MultiLanguageText Lang="en-US">PLC hardkeys</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Touches matérielles AP</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="f11" Datatype="Byte">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Reserved for hardkeys</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Réservé pour touches matérielles</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="f12_0" Datatype="Bool" />
+    <Member Name="f12_1" Datatype="Bool" />
+    <Member Name="A_COM2" Datatype="Bool" />
+    <Member Name="A_COM1" Datatype="Bool" />
+    <Member Name="A_V24stop" Datatype="Bool" />
+    <Member Name="A_V24ext" Datatype="Bool" />
+    <Member Name="A_V24off" Datatype="Bool" />
+    <Member Name="A_V24on" Datatype="Bool" />
+    <Member Name="A_TeachDisable" Datatype="Bool" />
+    <Member Name="f13_1" Datatype="Bool" />
+    <Member Name="f13_2" Datatype="Bool" />
+    <Member Name="f13_3" Datatype="Bool" />
+    <Member Name="f13_4" Datatype="Bool" />
+    <Member Name="A_PPdeload" Datatype="Bool" />
+    <Member Name="A_PPload" Datatype="Bool" />
+    <Member Name="A_PPsel" Datatype="Bool" />
+    <Member Name="A_V24Index1" Datatype="Byte" />
+    <Member Name="A_V24Index2" Datatype="Byte" />
+    <Member Name="A_V24NoFile1" Datatype="Byte" />
+    <Member Name="A_V24NoFile2" Datatype="Byte" />
+    <Member Name="A_res18" Datatype="Byte" />
+    <Member Name="A_res19" Datatype="Byte">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Message counter</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Compteur de messages</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="f20_0" Datatype="Bool" />
+    <Member Name="E_SCDark" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Screen darkening</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Obscurcissement écran</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_Cancel" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Cancel</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Abandon</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_CanCleared" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Cancel alarms cleared</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Alarmes d'abandon supprimées</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_RecCleared" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Recall alarms cleared</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Alarmes de rappel supprimées</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="f20_5" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">res. language</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">rés. langue</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_SimActiv" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Simulation active</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Simulation active</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_ActWCS" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Switchover MCS/WCS 0=MCS</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Commutation MCS/WCS 0=MCS</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_ActivWA" Datatype="Byte" />
+    <Member Name="E_Chan" Datatype="Byte">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Channel displayed</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Canal affiché</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_KeybHandl" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Keyboard handling</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Gestion clavier</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_DataTransf" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Data transfer active</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Transmission de données active</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_DisplChange" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Display change</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Modification affichage</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="f23_3" Datatype="Bool" />
+    <Member Name="f23_4" Datatype="Bool" />
+    <Member Name="f23_5" Datatype="Bool" />
+    <Member Name="f23_6" Datatype="Bool" />
+    <Member Name="f23_7" Datatype="Bool" />
+    <Member Name="E_ScreenNo" Datatype="Word" />
+    <Member Name="E_res26_0" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_PPOK" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Part program status OK</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">État programme pièce OK</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_PPErr" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Part program status error</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Programme pièce erreur d'état</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_PPAct" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Part program status active</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">État programme pièce actif</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="f26_4" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_PPdeload" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Part program status deloading</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">État programme pièce en cours de déchargement</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_PPload" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Part program status loading</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">État programme pièce en cours de chargement</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_PPsel" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Part program status selecting</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">État programme pièce en cours de sélection</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_PPError" Datatype="Byte">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Part program status error</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Programme pièce erreur d'état</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_PictNo" Datatype="Int" />
+    <Member Name="A_PictOn" Datatype="Bool" />
+    <Member Name="A_PictOff" Datatype="Bool" />
+    <Member Name="f30_2" Datatype="Bool" />
+    <Member Name="f30_3" Datatype="Bool" />
+    <Member Name="f30_4" Datatype="Bool" />
+    <Member Name="f30_5" Datatype="Bool" />
+    <Member Name="f30_6" Datatype="Bool" />
+    <Member Name="f30_7" Datatype="Bool" />
+    <Member Name="E_PictOK" Datatype="Bool" />
+    <Member Name="E_PictOn" Datatype="Bool" />
+    <Member Name="E_PictAct" Datatype="Bool" />
+    <Member Name="E_PictOff" Datatype="Bool" />
+    <Member Name="E_PictErr" Datatype="Bool" />
+    <Member Name="f31_5" Datatype="Bool" />
+    <Member Name="f31_6" Datatype="Bool" />
+    <Member Name="E_NotAct" Datatype="Bool" />
+    <Member Name="A_FuncNo" Datatype="Byte" />
+    <Member Name="A_Par1" Datatype="Byte" />
+    <Member Name="A_Par2" Datatype="Byte" />
+    <Member Name="A_Par3" Datatype="Byte" />
+    <Member Name="E_FuncErr" Datatype="Byte" />
+    <Member Name="f37" Datatype="Byte" />
+    <Member Name="f38" Datatype="Byte" />
+    <Member Name="f39" Datatype="Byte" />
+    <Member Name="res40" Datatype="Array[0..9] of Byte" />
+    <Member Name="MMC2" Datatype="Struct">
+      <Member Name="A_SCLight" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Screen light</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Éclaircir écran</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="A_SCDark" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Screen darkening</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Obscurcissement écran</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="A_KeyDisable" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Key disable</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Désactiver touche</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="A_ClearCanAl" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Clear cancel alarms</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Supprimer alarmes d'abandon</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="A_ClearRecAl" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Clear recall alarms</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Supprimer alarmes de rappel</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="f0_5" Datatype="Bool" />
+      <Member Name="f0_6" Datatype="Bool" />
+      <Member Name="A_ActWCS" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Actual value in WCS 0=MCS</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Valeur réelle dans WCS 0=MCS</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="A_PLCExtViewerReject" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">External viewer reject</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Refuser visualiseur externe</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="A_PLCExtViewerMode" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">External viewer mode</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Mode visualiseur externe</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="f1_2" Datatype="Bool" />
+      <Member Name="f1_3" Datatype="Bool" />
+      <Member Name="f1_4" Datatype="Bool" />
+      <Member Name="f1_5" Datatype="Bool" />
+      <Member Name="f1_6" Datatype="Bool" />
+      <Member Name="f1_7" Datatype="Bool" />
+      <Member Name="A_1stError1" Datatype="Word">
+        <Comment>
+          <MultiLanguageText Lang="en-US">1st error HIGRAPH</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">1re erreur HIGRAPH</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="A_1stError2" Datatype="Word">
+        <Comment>
+          <MultiLanguageText Lang="en-US">1st error HIGRAPH</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">1re erreur HIGRAPH</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="A_ASpi1percent" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Analog spindle 1:</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Broche analogique 1 :</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="A_ASpi2percent" Datatype="Byte" />
+      <Member Name="A_MCPChan" Datatype="Byte" />
+      <Member Name="A_OEM1" Datatype="Bool" />
+      <Member Name="A_OEM2" Datatype="Bool" />
+      <Member Name="A_AToolMeas" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">AutoToolMeasure</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">AutoToolMeasure</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="f9_3" Datatype="Bool" />
+      <Member Name="f9_4" Datatype="Bool" />
+      <Member Name="f9_5" Datatype="Bool" />
+      <Member Name="f9_6" Datatype="Bool" />
+      <Member Name="f9_7" Datatype="Bool" />
+      <Member Name="A_Hardkey" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">PLC hardkeys</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Touches matérielles AP</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="f11" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Reserved for hardkeys</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Réservé pour touches matérielles</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="f12_0" Datatype="Bool" />
+      <Member Name="f12_1" Datatype="Bool" />
+      <Member Name="A_COM2" Datatype="Bool" />
+      <Member Name="A_COM1" Datatype="Bool" />
+      <Member Name="A_V24stop" Datatype="Bool" />
+      <Member Name="A_V24ext" Datatype="Bool" />
+      <Member Name="A_V24off" Datatype="Bool" />
+      <Member Name="A_V24on" Datatype="Bool" />
+      <Member Name="A_TeachDisable" Datatype="Bool" />
+      <Member Name="f13_1" Datatype="Bool" />
+      <Member Name="f13_2" Datatype="Bool" />
+      <Member Name="f13_3" Datatype="Bool" />
+      <Member Name="f13_4" Datatype="Bool" />
+      <Member Name="A_PPdeload" Datatype="Bool" />
+      <Member Name="A_PPload" Datatype="Bool" />
+      <Member Name="A_PPsel" Datatype="Bool" />
+      <Member Name="A_V24Index1" Datatype="Byte" />
+      <Member Name="A_V24Index2" Datatype="Byte" />
+      <Member Name="A_V24NoFile1" Datatype="Byte" />
+      <Member Name="A_V24NoFile2" Datatype="Byte" />
+      <Member Name="A_res18" Datatype="Byte" />
+      <Member Name="A_res19" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Message counter</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Compteur de messages</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="f20_0" Datatype="Bool" />
+      <Member Name="E_SCDark" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Screen darkening</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Obscurcissement écran</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="E_Cancel" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Cancel</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Abandon</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="E_CanCleared" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Cancel alarms cleared</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Alarmes d'abandon supprimées</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="E_RecCleared" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Recall alarms cleared</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Alarmes de rappel supprimées</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="f20_5" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">res. language</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">rés. langue</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="E_SimActiv" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Simulation active</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Simulation active</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="E_ActWCS" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Switchover MCS/WCS 0=MCS</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Commutation MCS/WCS 0=MCS</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="E_ActivWA" Datatype="Byte" />
+      <Member Name="E_Chan" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Channel displayed</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Canal affiché</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="E_KeybHandl" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Keyboard handling</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Gestion clavier</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="E_DataTransf" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Data transfer active</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Transmission de données active</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="E_DisplChange" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Display change</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Modification affichage</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="f23_3" Datatype="Bool" />
+      <Member Name="f23_4" Datatype="Bool" />
+      <Member Name="f23_5" Datatype="Bool" />
+      <Member Name="f23_6" Datatype="Bool" />
+      <Member Name="f23_7" Datatype="Bool" />
+      <Member Name="E_ScreenNo" Datatype="Word" />
+      <Member Name="E_res26_0" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="E_PPOK" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Part program status OK</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">État programme pièce OK</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="E_PPErr" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Part program status error</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Programme pièce erreur d'état</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="E_PPAct" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Part program status active</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">État programme pièce actif</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="f26_4" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="E_PPdeload" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Part program status deloading</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">État programme pièce en cours de déchargement</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="E_PPload" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Part program status loading</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">État programme pièce en cours de chargement</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="E_PPsel" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Part program status selecting</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">État programme pièce en cours de sélection</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="E_PPError" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Part program status error</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Programme pièce erreur d'état</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="A_PictNo" Datatype="Int" />
+      <Member Name="A_PictOn" Datatype="Bool" />
+      <Member Name="A_PictOff" Datatype="Bool" />
+      <Member Name="f30_2" Datatype="Bool" />
+      <Member Name="f30_3" Datatype="Bool" />
+      <Member Name="f30_4" Datatype="Bool" />
+      <Member Name="f30_5" Datatype="Bool" />
+      <Member Name="f30_6" Datatype="Bool" />
+      <Member Name="f30_7" Datatype="Bool" />
+      <Member Name="E_PictOK" Datatype="Bool" />
+      <Member Name="E_PictOn" Datatype="Bool" />
+      <Member Name="E_PictAct" Datatype="Bool" />
+      <Member Name="E_PictOff" Datatype="Bool" />
+      <Member Name="E_PictErr" Datatype="Bool" />
+      <Member Name="f31_5" Datatype="Bool" />
+      <Member Name="f31_6" Datatype="Bool" />
+      <Member Name="E_NotAct" Datatype="Bool" />
+      <Member Name="A_FuncNo" Datatype="Byte" />
+      <Member Name="A_Par1" Datatype="Byte" />
+      <Member Name="A_Par2" Datatype="Byte" />
+      <Member Name="A_Par3" Datatype="Byte" />
+      <Member Name="E_FuncErr" Datatype="Byte" />
+      <Member Name="f37" Datatype="Byte" />
+      <Member Name="f38" Datatype="Byte" />
+      <Member Name="f39" Datatype="Byte" />
+      <Member Name="res40" Datatype="Array[0..9] of Byte" />
+    </Member>
+    <Member Name="ONL_REQUEST" Datatype="Word" />
+    <Member Name="ONL_CONFIRM" Datatype="Word" />
+    <Member Name="PAR_CLIENT_IDENT" Datatype="Word" />
+    <Member Name="PAR_MMC_TYP" Datatype="Byte" />
+    <Member Name="PAR_MSTT_ADR" Datatype="Byte" />
+    <Member Name="PAR_STATUS" Datatype="Byte" />
+    <Member Name="PAR_Z_INFO" Datatype="Byte" />
+    <Member Name="MtoNAlive" Datatype="Word" />
+    <Member Name="f112" Datatype="Byte" />
+    <Member Name="ParOpKeyAdr" Datatype="Byte" />
+    <Member Name="ParTcuIndex" Datatype="Byte" />
+    <Member Name="f115" Datatype="Byte" />
+    <Member Name="Tcu1KeyAdr" Datatype="Byte" />
+    <Member Name="Tcu2KeyAdr" Datatype="Byte" />
+    <Member Name="Tcu1Index" Datatype="Byte" />
+    <Member Name="Tcu2Index" Datatype="Byte" />
+    <Member Name="MMC1_CLIENT_IDENT" Datatype="Word" />
+    <Member Name="MMC1_TYP" Datatype="Byte" />
+    <Member Name="MMC1_MSTT_ADR" Datatype="Byte" />
+    <Member Name="MMC1_STATUS" Datatype="Byte" />
+    <Member Name="MMC1_Z_INFO" Datatype="Byte" />
+    <Member Name="MMC1_SHIFT_LOCK" Datatype="Bool" />
+    <Member Name="MMC1_MSTT_SHIFT_LOCK" Datatype="Bool" />
+    <Member Name="MMC1_ACTIVE_REQ" Datatype="Bool" />
+    <Member Name="MMC1_ACTIVE_PERM" Datatype="Bool" />
+    <Member Name="MMC1_ACTIVE_CHANGED" Datatype="Bool" />
+    <Member Name="MMC1_CHANGED_DENIED" Datatype="Bool" />
+    <Member Name="MMC1_TCU_SHIFT_LOCK" Datatype="Bool" />
+    <Member Name="f127" Datatype="Byte" />
+    <Member Name="MMC1_TRANS_DB" Datatype="Word" />
+    <Member Name="MMC2_CLIENT_IDENT" Datatype="Word" />
+    <Member Name="MMC2_TYP" Datatype="Byte" />
+    <Member Name="MMC2_MSTT_ADR" Datatype="Byte" />
+    <Member Name="MMC2_STATUS" Datatype="Byte" />
+    <Member Name="MMC2_Z_INFO" Datatype="Byte" />
+    <Member Name="MMC2_SHIFT_LOCK" Datatype="Bool" />
+    <Member Name="MMC2_MSTT_SHIFT_LOCK" Datatype="Bool" />
+    <Member Name="MMC2_ACTIVE_REQ" Datatype="Bool" />
+    <Member Name="MMC2_ACTIVE_PERM" Datatype="Bool" />
+    <Member Name="MMC2_ACTIVE_CHANGED" Datatype="Bool" />
+    <Member Name="MMC2_CHANGED_DENIED" Datatype="Bool" />
+    <Member Name="MMC2_TCU_SHIFT_LOCK" Datatype="Bool" />
+    <Member Name="f137" Datatype="Byte" />
+    <Member Name="MMC2_TRANS_DB" Datatype="Word" />
+    <Member Name="A_Subtype" Datatype="Int">
+      <Comment>
+        <MultiLanguageText Lang="en-US">For code carrier Input from PLC</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Pour porte-code entrée par AP</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_Duplo" Datatype="Int" />
+    <Member Name="A_Ident" Datatype="String[32]" />
+    <Member Name="A_Tnumber" Datatype="Int" />
+    <Member Name="A_MagazinePlace" Datatype="Int" />
+    <Member Name="A_MagazinePlaceType" Datatype="Int" />
+    <Member Name="A_ToolSize_Upper" Datatype="Byte" />
+    <Member Name="A_ToolSize_Down" Datatype="Byte" />
+    <Member Name="A_ToolSize_Left" Datatype="Byte" />
+    <Member Name="A_ToolSize_Right" Datatype="Byte" />
+    <Member Name="A_Channel" Datatype="Byte" />
+    <Member Name="A_LoadingPlace" Datatype="Byte" />
+    <Member Name="A_Magazine" Datatype="Int" />
+    <Member Name="A_Unit" Datatype="Byte" />
+    <Member Name="A_NCU_Index" Datatype="Byte" />
+    <Member Name="A_FileIndex" Datatype="Int" />
+    <Member Name="A_ActiveEnable" Datatype="Bool" />
+    <Member Name="A_Override" Datatype="Bool" />
+    <Member Name="A_LoadTool" Datatype="Bool" />
+    <Member Name="A_DeleteTool" Datatype="Bool" />
+    <Member Name="E_Subtype" Datatype="Int">
+      <Comment>
+        <MultiLanguageText Lang="en-US">For code carrier Output to PLC</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Pour porte-code sortie vers AP</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_Duplo" Datatype="Int" />
+    <Member Name="E_Ident" Datatype="String[32]" />
+    <Member Name="E_Tnumber" Datatype="Int" />
+    <Member Name="E_ToolState" Datatype="Int" />
+    <Member Name="E_MagazinePlaceType" Datatype="Int" />
+    <Member Name="E_ToolSize_Upper" Datatype="Byte" />
+    <Member Name="E_ToolSize_Down" Datatype="Byte" />
+    <Member Name="E_ToolSize_Left" Datatype="Byte" />
+    <Member Name="E_ToolSize_Right" Datatype="Byte" />
+    <Member Name="E_Magazine" Datatype="Int" />
+    <Member Name="E_MagazinePlace" Datatype="Int" />
+    <Member Name="A_ReqMMC1" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">For code carrier Request MMC-Interface1</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Pour porte-code demander interface MMC1</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_ReqMMC2" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">For code carrier Request MMC-Interface2</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Pour porte-code demander interface MMC2</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_K_Code" Datatype="Byte" />
+    <Member Name="E_Done" Datatype="Bool" />
+    <Member Name="E_Error" Datatype="Bool" />
+    <Member Name="E_Active" Datatype="Bool" />
+    <Member Name="f252_3" Datatype="Bool" />
+    <Member Name="f252_4" Datatype="Bool" />
+    <Member Name="f252_5" Datatype="Bool" />
+    <Member Name="f252_6" Datatype="Bool" />
+    <Member Name="E_Ident_Ready" Datatype="Bool" />
+    <Member Name="E_K_CodeError" Datatype="Byte">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Identify for Error_Code</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Identifier pour Error_Code</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_Error_Code" Datatype="Int" />
+    <Member Name="E_Req" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">For Positioning</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Pour positionnement</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="f257" Datatype="Byte" />
+    <Member Name="A_Done" Datatype="Bool" />
+    <Member Name="A_Error" Datatype="Bool" />
+    <Member Name="A_Active" Datatype="Bool" />
+    <Member Name="f258_3" Datatype="Bool" />
+    <Member Name="f258_4" Datatype="Bool" />
+    <Member Name="f258_5" Datatype="Bool" />
+    <Member Name="f258_6" Datatype="Bool" />
+    <Member Name="f258_7" Datatype="Bool" />
+    <Member Name="E_TDC_Read" Datatype="Bool" />
+    <Member Name="E_TDC_Write" Datatype="Bool" />
+    <Member Name="E_TDC_Cancel" Datatype="Bool" />
+    <Member Name="E_TDC_Read_before_Write" Datatype="Bool" />
+    <Member Name="f259_4" Datatype="Bool" />
+    <Member Name="f259_5" Datatype="Bool" />
+    <Member Name="f259_6" Datatype="Bool" />
+    <Member Name="f259_7" Datatype="Bool" />
+    <Member Name="A_Error_Code" Datatype="Int" />
+    <Member Name="E_PMagazine" Datatype="Int" />
+    <Member Name="E_PMagazinePlace" Datatype="Int" />
+    <Member Name="E_PTnumber" Datatype="Int">
+      <Comment>
+        <MultiLanguageText Lang="en-US">TPM data</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Données TPM</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_TPMStatus" Datatype="Int" />
+    <Member Name="A_TPMCounter" Datatype="Array[1..32] of DInt" />
+    <Member Name="A_HWeelSimOvr" Datatype="Byte" />
+    <Member Name="f399" Datatype="Byte" />
+    <Member Name="A_SimOvr" Datatype="Int">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Simulation override</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Correction simulation</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_SimState" Datatype="Int">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Simulation state</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">État simulation</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_HmiUserKey" Datatype="Array[1..64] of Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">HMI user keys for HMI sidescreen</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">HMI touches utilisateur pour écran latéral IHM</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_HmiUserLed" Datatype="Array[1..64] of Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">LEDs to the user keys for HMI sidescreen</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">LED pour touches utilisateur pour écran latéral IHM</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_DisableHmiUserKey" Datatype="Array[1..64] of Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Disable user keys for HMI sidescreen</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Désactiver les touches utilisateur pour écran latéral IHM</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="SafetyAutoAcceptanceTest" Datatype="Struct">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Interface for the automated acceptance test</MultiLanguageText>
+      </Comment>
+      <Member Name="E_Prepare" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Prepare automated acceptance test requested by client</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="E_Finalize" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Stop automated acceptance test requested by client</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="E_Cancel" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Cancel automated acceptance test requested by client</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="E_Perform" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Perform automated acceptance test requested by client</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="E_PerformSequence" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Perform entire test sequence for automated acceptance test requested by client</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="f428_5" Datatype="Bool" />
+      <Member Name="f428_6" Datatype="Bool" />
+      <Member Name="f428_7" Datatype="Bool" />
+      <Member Name="f429" Datatype="Byte" />
+      <Member Name="A_Prepared" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Automated acceptance test was successfully prepared</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="A_Finalized" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Automated acceptance test was successfully stopped</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="A_Canceled" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Automated acceptance test was canceled successfully</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="A_Performed" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Automated acceptance test was performed successfully</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="A_SequencePerformed" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Entire test sequence for automated acceptance test is running</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="f430_5" Datatype="Bool" />
+      <Member Name="f430_6" Datatype="Bool" />
+      <Member Name="f430_7" Datatype="Bool" />
+      <Member Name="f431_0" Datatype="Bool" />
+      <Member Name="A_Error" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Automated acceptance test was canceled</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="A_InvalidGroup" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Test group is not accepted</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="A_InvalidNumber" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Test number is not accepted</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="f431_4" Datatype="Bool" />
+      <Member Name="f431_5" Datatype="Bool" />
+      <Member Name="f431_6" Datatype="Bool" />
+      <Member Name="f431_7" Datatype="Bool" />
+      <Member Name="E_Group" Datatype="Int">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Test group for the current test</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="E_Number" Datatype="Int">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Test number for the current test</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="E_AxisNumber" Datatype="Int">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Axis number for the current test</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="E_TraversePlus" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Traversing direction for the current test (FALSE=negative, TRUE=positive)</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="E_SelectSafeStop" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Safe Stop is set for the current test</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="E_SelectBrake" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Brake used for the current test. (FALSE=Brake1, TRUE=Brake2)</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="E_SelectSbtMode" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">SBT Test Sequence used for the current test. (FALSE=Sequence1, TRUE=Sequence2)</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="E_SelectSlpMode" Datatype="Int">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Safe End Position used for the current test. ("SE/SLP PositionArea" : 1=SE1 ; 2=SE2)</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="E_SelectSlsMode" Datatype="Int">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Safe Speed (SG1..SG4) used for the current test</MultiLanguageText>
+        </Comment>
+      </Member>
+    </Member>
+  </Section>
+</Sections></Interface>
+      <Name>LBP_typeHMI</Name>
+      <Namespace />
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text>User data type for block LBP_HMI [DB19]</Text>
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="3" CompositionName="Items">
+            <AttributeList>
+              <Culture>fr-FR</Culture>
+              <Text>Type de données utilisateur pour bloc LBP_HMI [DB19]</Text>
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <MultilingualText ID="4" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="5" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text>Operator panel signals</Text>
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="6" CompositionName="Items">
+            <AttributeList>
+              <Culture>fr-FR</Culture>
+              <Text>Signaux pupitre opérateur</Text>
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Types.PlcStruct>
+</Document>

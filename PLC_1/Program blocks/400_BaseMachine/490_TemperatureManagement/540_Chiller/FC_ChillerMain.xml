@@ -1,0 +1,252 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V20" />
+  <SW.Blocks.FC ID="0">
+    <AttributeList>
+      <AutoNumber>false</AutoNumber>
+      <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+  <Section Name="Input" />
+  <Section Name="Output" />
+  <Section Name="InOut" />
+  <Section Name="Temp" />
+  <Section Name="Constant" />
+  <Section Name="Return">
+    <Member Name="Ret_Val" Datatype="Void" />
+  </Section>
+</Sections></Interface>
+      <MemoryLayout>Optimized</MemoryLayout>
+      <Name>FC_ChillerMain</Name>
+      <Namespace />
+      <Number>540</Number>
+      <ProgrammingLanguage>SCL</ProgrammingLanguage>
+      <SetENOAutomatically>false</SetENOAutomatically>
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="3" CompositionName="Items">
+            <AttributeList>
+              <Culture>fr-FR</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <SW.Blocks.CompileUnit ID="4" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource><StructuredText xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/StructuredText/v4">
+  <Token Text="REGION" UId="21" />
+  <Blank UId="22" />
+  <Text UId="23">Description header </Text>
+  <NewLine UId="24" />
+  <Blank Num="4" UId="25" />
+  <LineComment UId="26">
+    <Text UId="27">==================================================================================</Text>
+  </LineComment>
+  <NewLine UId="28" />
+  <Blank Num="4" UId="29" />
+  <LineComment UId="30">
+    <Text UId="31"> POSALUX Swiss SA / (C) Copyright 2025</Text>
+  </LineComment>
+  <NewLine UId="32" />
+  <Blank Num="4" UId="33" />
+  <LineComment UId="34">
+    <Text UId="35">----------------------------------------------------------------------------------</Text>
+  </LineComment>
+  <NewLine UId="36" />
+  <Blank Num="4" UId="37" />
+  <LineComment UId="38">
+    <Text UId="39"> Title: FC_Chiller_Main</Text>
+  </LineComment>
+  <NewLine UId="40" />
+  <Blank Num="4" UId="41" />
+  <LineComment UId="42">
+    <Text UId="43"> Comment/Function:</Text>
+  </LineComment>
+  <NewLine UId="44" />
+  <Blank Num="4" UId="45" />
+  <LineComment UId="46">
+    <Text UId="47"> Author: Fabien Waldt</Text>
+  </LineComment>
+  <NewLine UId="48" />
+  <Blank Num="4" UId="49" />
+  <LineComment UId="50">
+    <Text UId="51"> Engineering: TIA Portal v19</Text>
+  </LineComment>
+  <NewLine UId="52" />
+  <Blank Num="4" UId="53" />
+  <LineComment UId="54">
+    <Text UId="55">----------------------------------------------------------------------------------</Text>
+  </LineComment>
+  <NewLine UId="56" />
+  <Blank Num="4" UId="57" />
+  <LineComment UId="58">
+    <Text UId="59"> Change log table:</Text>
+  </LineComment>
+  <NewLine UId="60" />
+  <Blank Num="4" UId="61" />
+  <LineComment UId="62">
+    <Text UId="63"> Version  | Date     | Expert in charge | Changes applied</Text>
+  </LineComment>
+  <NewLine UId="64" />
+  <Blank Num="4" UId="65" />
+  <LineComment UId="66">
+    <Text UId="67"> ---------|----------|------------------|------------------------------------</Text>
+  </LineComment>
+  <NewLine UId="68" />
+  <Blank Num="4" UId="69" />
+  <LineComment UId="70">
+    <Text UId="71"> 00.00.01 | 20250904 | FWA              | First released version</Text>
+  </LineComment>
+  <NewLine UId="72" />
+  <Blank Num="4" UId="73" />
+  <LineComment UId="74">
+    <Text UId="75"> ==================================================================================</Text>
+  </LineComment>
+  <NewLine UId="76" />
+  <Token Text="END_REGION" UId="77" />
+  <NewLine Num="2" UId="78" />
+  <Token Text="REGION" UId="79" />
+  <Blank UId="80" />
+  <Text UId="81">Option Chiller : TERMOTEK</Text>
+  <NewLine UId="82" />
+  <Blank Num="4" UId="83" />
+  <Token Text="IF" UId="84" />
+  <Blank UId="85" />
+  <Access Scope="GlobalVariable" UId="86">
+    <Symbol UId="87">
+      <Component Name="DB_MachineOptions" UId="88">
+        <BooleanAttribute Name="HasQuotes" UId="89">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="90" />
+      <Component Name="Chiller" UId="91" />
+      <Token Text="." UId="92" />
+      <Component Name="Termotek" UId="93" />
+    </Symbol>
+  </Access>
+  <Blank UId="94" />
+  <Token Text="THEN" UId="95" />
+  <NewLine UId="96" />
+  <Blank Num="8" UId="97" />
+  <Access Scope="Call" UId="98">
+    <CallInfo UId="99" BlockType="FB" Name="FB_ChillerTermotek">
+      <Instance Scope="GlobalVariable" UId="100">
+        <Component Name="DB_ChillerTermotek" UId="101">
+          <BooleanAttribute Name="HasQuotes" UId="102">true</BooleanAttribute>
+        </Component>
+      </Instance>
+      <Token Text="(" UId="103" />
+      <Token Text=")" UId="104" />
+    </CallInfo>
+  </Access>
+  <Token Text=";" UId="105" />
+  <NewLine UId="106" />
+  <Blank Num="4" UId="107" />
+  <Token Text="END_IF" UId="108" />
+  <Token Text=";" UId="109" />
+  <NewLine UId="110" />
+  <Token Text="END_REGION" UId="111" />
+  <NewLine Num="2" UId="112" />
+  <Token Text="REGION" UId="113" />
+  <Blank UId="114" />
+  <Text UId="115">Option Chiller : SMC</Text>
+  <NewLine UId="116" />
+  <Blank Num="4" UId="117" />
+  <Token Text="IF" UId="118" />
+  <Blank UId="119" />
+  <Access Scope="GlobalVariable" UId="120">
+    <Symbol UId="121">
+      <Component Name="DB_MachineOptions" UId="122">
+        <BooleanAttribute Name="HasQuotes" UId="123">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="124" />
+      <Component Name="Chiller" UId="125" />
+      <Token Text="." UId="126" />
+      <Component Name="SMC" UId="127" />
+    </Symbol>
+  </Access>
+  <Blank UId="128" />
+  <Token Text="THEN" UId="129" />
+  <NewLine UId="130" />
+  <Blank Num="8" UId="131" />
+  <Access Scope="Call" UId="132">
+    <CallInfo UId="133" BlockType="FB" Name="FB_ChillerSMC">
+      <Instance Scope="GlobalVariable" UId="134">
+        <Component Name="DB_ChillerSMC" UId="135">
+          <BooleanAttribute Name="HasQuotes" UId="136">true</BooleanAttribute>
+        </Component>
+      </Instance>
+      <Token Text="(" UId="137" />
+      <Token Text=")" UId="138" />
+    </CallInfo>
+  </Access>
+  <Token Text=";" UId="139" />
+  <NewLine UId="140" />
+  <Blank Num="4" UId="141" />
+  <Token Text="END_IF" UId="142" />
+  <Token Text=";" UId="143" />
+  <NewLine UId="144" />
+  <Token Text="END_REGION" UId="145" />
+</StructuredText></NetworkSource>
+          <ProgrammingLanguage>SCL</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="5" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="6" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="7" CompositionName="Items">
+                <AttributeList>
+                  <Culture>fr-FR</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="8" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="9" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="A" CompositionName="Items">
+                <AttributeList>
+                  <Culture>fr-FR</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <MultilingualText ID="B" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="C" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="D" CompositionName="Items">
+            <AttributeList>
+              <Culture>fr-FR</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Blocks.FC>
+</Document>

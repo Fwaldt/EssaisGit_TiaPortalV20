@@ -1,0 +1,1743 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V20" />
+  <SW.Blocks.FB ID="0">
+    <AttributeList>
+      <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+  <Section Name="Input" />
+  <Section Name="Output" />
+  <Section Name="InOut" />
+  <Section Name="Static">
+    <Member Name="sSonplasLoader" Datatype="&quot;FB_SonplasLoader&quot;" />
+    <Member Name="iDMC_CodeShuttle1" Datatype="String">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="iDMC_CodeShuttle2" Datatype="String" />
+    <Member Name="iDMC_Code" Datatype="String" />
+    <Member Name="oDMC_CodeShuttle1" Datatype="String" />
+    <Member Name="oDMC_CodeShuttle2" Datatype="String" />
+    <Member Name="oDMC_Code" Datatype="String" />
+  </Section>
+  <Section Name="Temp">
+    <Member Name="tRetMov" Datatype="Int" />
+    <Member Name="tIndex" Datatype="Int" />
+  </Section>
+  <Section Name="Constant" />
+</Sections></Interface>
+      <MemoryLayout>Optimized</MemoryLayout>
+      <MemoryReserve>100</MemoryReserve>
+      <Name>FB_SonplasMain</Name>
+      <Namespace />
+      <Number>42</Number>
+      <ProgrammingLanguage>SCL</ProgrammingLanguage>
+      <SetENOAutomatically>false</SetENOAutomatically>
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="3" CompositionName="Items">
+            <AttributeList>
+              <Culture>fr-FR</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <SW.Blocks.CompileUnit ID="4" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource><StructuredText xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/StructuredText/v4">
+  <Token Text="REGION" UId="21" />
+  <Blank UId="22" />
+  <Text UId="23">Description head</Text>
+  <NewLine UId="24" />
+  <Blank Num="4" UId="25" />
+  <LineComment UId="26">
+    <Text UId="27">==================================================================================</Text>
+  </LineComment>
+  <NewLine UId="28" />
+  <Blank Num="4" UId="29" />
+  <LineComment UId="30">
+    <Text UId="31"> POSALUX Swiss SA / (C) Copyright 2025</Text>
+  </LineComment>
+  <NewLine UId="32" />
+  <Blank Num="4" UId="33" />
+  <LineComment UId="34">
+    <Text UId="35">----------------------------------------------------------------------------------</Text>
+  </LineComment>
+  <NewLine UId="36" />
+  <Blank Num="4" UId="37" />
+  <LineComment UId="38">
+    <Text UId="39"> Title: Digital Inputs mapping</Text>
+  </LineComment>
+  <NewLine UId="40" />
+  <Blank Num="4" UId="41" />
+  <LineComment UId="42">
+    <Text UId="43"> Comment/Function: Digital Inputs mapping</Text>
+  </LineComment>
+  <NewLine UId="44" />
+  <Blank Num="4" UId="45" />
+  <LineComment UId="46">
+    <Text UId="47"> Author: Fabien WALDT</Text>
+  </LineComment>
+  <NewLine UId="48" />
+  <Blank Num="4" UId="49" />
+  <LineComment UId="50">
+    <Text UId="51"> Engineering: TIA Portal v17</Text>
+  </LineComment>
+  <NewLine UId="52" />
+  <Blank Num="4" UId="53" />
+  <LineComment UId="54">
+    <Text UId="55">----------------------------------------------------------------------------------</Text>
+  </LineComment>
+  <NewLine UId="56" />
+  <Blank Num="4" UId="57" />
+  <LineComment UId="58">
+    <Text UId="59"> Change log table:</Text>
+  </LineComment>
+  <NewLine UId="60" />
+  <Blank Num="4" UId="61" />
+  <LineComment UId="62">
+    <Text UId="63"> Version  | Date     | Expert in charge | Changes applied</Text>
+  </LineComment>
+  <NewLine UId="64" />
+  <Blank Num="4" UId="65" />
+  <LineComment UId="66">
+    <Text UId="67"> ---------|----------|------------------|-----------------------------------------</Text>
+  </LineComment>
+  <NewLine UId="68" />
+  <Blank Num="4" UId="69" />
+  <LineComment UId="70">
+    <Text UId="71"> 00.00.01 | 20250423 | WFA              | First released version</Text>
+  </LineComment>
+  <NewLine UId="72" />
+  <Blank Num="4" UId="73" />
+  <LineComment UId="74">
+    <Text UId="75"> =================================================================================</Text>
+  </LineComment>
+  <NewLine UId="76" />
+  <Token Text="END_REGION" UId="77" />
+  <NewLine Num="2" UId="78" />
+  <Token Text="REGION" UId="79" />
+  <Blank UId="80" />
+  <Text UId="81">DMC Reading</Text>
+  <NewLine UId="82" />
+  <Blank Num="3" UId="83" />
+  <LineComment UId="84">
+    <Text UId="85"> Transfer DMC Code Shuttle 1 (IB204-IB223)</Text>
+  </LineComment>
+  <NewLine UId="86" />
+  <Blank Num="4" UId="87" />
+  <LineComment UId="88">
+    <Text UId="89"> #tRetMov := MOVE_BLK_VARIANT(SRC := P# I204.0 BYTE 20, // WAF COMENTAIRE POUR TESTS TRACABILITE</Text>
+  </LineComment>
+  <NewLine UId="90" />
+  <Blank Num="4" UId="91" />
+  <LineComment UId="92">
+    <Text UId="93">                              COUNT := 20,</Text>
+  </LineComment>
+  <NewLine UId="94" />
+  <Blank Num="4" UId="95" />
+  <LineComment UId="96">
+    <Text UId="97">                              SRC_INDEX := 0,</Text>
+  </LineComment>
+  <NewLine UId="98" />
+  <Blank Num="4" UId="99" />
+  <LineComment UId="100">
+    <Text UId="101">                              DEST_INDEX := 0,</Text>
+  </LineComment>
+  <NewLine UId="102" />
+  <Blank Num="4" UId="103" />
+  <LineComment UId="104">
+    <Text UId="105">                              DEST =&gt; #sSonplasLoader.iPartInDMC_CodeShuttle1);</Text>
+  </LineComment>
+  <NewLine UId="106" />
+  <Blank Num="4" UId="107" />
+  <NewLine UId="108" />
+  <Blank Num="4" UId="109" />
+  <LineComment UId="110">
+    <Text UId="111"> String Conversion</Text>
+  </LineComment>
+  <NewLine UId="112" />
+  <Blank Num="4" UId="113" />
+  <Access Scope="LocalVariable" UId="114">
+    <Symbol UId="115">
+      <Component Name="iDMC_CodeShuttle1" UId="116" />
+    </Symbol>
+  </Access>
+  <Blank UId="117" />
+  <Token Text=":=" UId="118" />
+  <Blank UId="119" />
+  <Access Scope="LiteralConstant" UId="120">
+    <Constant UId="121">
+      <ConstantValue UId="123">''</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="124" />
+  <NewLine UId="125" />
+  <Blank Num="4" UId="126" />
+  <Token Text="FOR" UId="127" />
+  <Blank UId="128" />
+  <Access Scope="LocalVariable" UId="129">
+    <Symbol UId="130">
+      <Component Name="tIndex" UId="131" />
+    </Symbol>
+  </Access>
+  <Blank UId="132" />
+  <Token Text=":=" UId="133" />
+  <Blank UId="134" />
+  <Access Scope="LiteralConstant" UId="135">
+    <Constant UId="136">
+      <ConstantValue UId="138">0</ConstantValue>
+    </Constant>
+  </Access>
+  <Blank UId="139" />
+  <Token Text="TO" UId="140" />
+  <Blank UId="141" />
+  <Access Scope="LiteralConstant" UId="142">
+    <Constant UId="143">
+      <ConstantValue UId="145">19</ConstantValue>
+    </Constant>
+  </Access>
+  <Blank UId="146" />
+  <Token Text="DO" UId="147" />
+  <NewLine UId="148" />
+  <Blank Num="8" UId="149" />
+  <Token Text="IF" UId="150" />
+  <Blank UId="151" />
+  <Access Scope="LocalVariable" UId="152">
+    <Symbol UId="153">
+      <Component Name="sSonplasLoader" UId="154" />
+      <Token Text="." UId="155" />
+      <Component Name="iPartInDMC_CodeShuttle1" UId="156">
+        <Token Text="[" UId="157" />
+        <Access Scope="LocalVariable" UId="158">
+          <Symbol UId="159">
+            <Component Name="tIndex" UId="160" />
+          </Symbol>
+        </Access>
+        <Token Text="]" UId="161" />
+      </Component>
+    </Symbol>
+  </Access>
+  <Blank UId="162" />
+  <Token Text="&lt;&gt;" UId="163" />
+  <Blank UId="164" />
+  <Access Scope="LiteralConstant" UId="165">
+    <Constant UId="166">
+      <ConstantValue UId="168">0</ConstantValue>
+    </Constant>
+  </Access>
+  <Blank UId="169" />
+  <Token Text="THEN" UId="170" />
+  <NewLine UId="171" />
+  <Blank Num="12" UId="172" />
+  <Access Scope="LocalVariable" UId="173">
+    <Symbol UId="174">
+      <Component Name="iDMC_CodeShuttle1" UId="175" />
+    </Symbol>
+  </Access>
+  <Blank UId="176" />
+  <Token Text=":=" UId="177" />
+  <Blank UId="178" />
+  <Access Scope="Call" UId="179">
+    <Instruction Name="CONCAT" UId="180">
+      <Token Text="(" UId="181" />
+      <Parameter Name="IN1" UId="182">
+        <Blank UId="183" />
+        <Token Text=":=" UId="184" />
+        <Blank UId="185" />
+        <Access Scope="LocalVariable" UId="186">
+          <Symbol UId="187">
+            <Component Name="iDMC_CodeShuttle1" UId="188" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="189" />
+      <Blank UId="190" />
+      <Parameter Name="IN2" UId="191">
+        <Blank UId="192" />
+        <Token Text=":=" UId="193" />
+        <Blank UId="194" />
+        <Access Scope="Call" UId="195">
+          <Instruction Name="CHAR_TO_STRING" UId="196">
+            <Token Text="(" UId="197" />
+            <NamelessParameter UId="198">
+              <Access Scope="Call" UId="199">
+                <Instruction Name="BYTE_TO_CHAR" UId="200">
+                  <Token Text="(" UId="201" />
+                  <NamelessParameter UId="202">
+                    <Access Scope="LocalVariable" UId="203">
+                      <Symbol UId="204">
+                        <Component Name="sSonplasLoader" UId="205" />
+                        <Token Text="." UId="206" />
+                        <Component Name="iPartInDMC_CodeShuttle1" UId="207">
+                          <Token Text="[" UId="208" />
+                          <Access Scope="LocalVariable" UId="209">
+                            <Symbol UId="210">
+                              <Component Name="tIndex" UId="211" />
+                            </Symbol>
+                          </Access>
+                          <Token Text="]" UId="212" />
+                        </Component>
+                      </Symbol>
+                    </Access>
+                  </NamelessParameter>
+                  <Token Text=")" UId="214" />
+                </Instruction>
+              </Access>
+            </NamelessParameter>
+            <Token Text=")" UId="216" />
+          </Instruction>
+        </Access>
+      </Parameter>
+      <Token Text=")" UId="218" />
+    </Instruction>
+  </Access>
+  <Token Text=";" UId="219" />
+  <NewLine UId="220" />
+  <Blank Num="8" UId="221" />
+  <Token Text="END_IF" UId="222" />
+  <Token Text=";" UId="223" />
+  <NewLine UId="224" />
+  <Blank Num="4" UId="225" />
+  <Token Text="END_FOR" UId="226" />
+  <Token Text=";" UId="227" />
+  <NewLine UId="228" />
+  <Blank Num="3" UId="229" />
+  <NewLine UId="230" />
+  <Blank Num="3" UId="231" />
+  <LineComment UId="232">
+    <Text UId="233"> Transfer DMC Code Shuttle 2 (IB224-IB243)</Text>
+  </LineComment>
+  <NewLine UId="234" />
+  <Blank Num="4" UId="235" />
+  <LineComment UId="236">
+    <Text UId="237"> #tRetMov := MOVE_BLK_VARIANT(SRC := P# I224.0 BYTE 20, // WAF COMENTAIRE POUR TESTS TRACABILITE</Text>
+  </LineComment>
+  <NewLine UId="238" />
+  <Blank Num="4" UId="239" />
+  <LineComment UId="240">
+    <Text UId="241">                             COUNT := 20,</Text>
+  </LineComment>
+  <NewLine UId="242" />
+  <Blank Num="4" UId="243" />
+  <LineComment UId="244">
+    <Text UId="245">                             SRC_INDEX := 0,</Text>
+  </LineComment>
+  <NewLine UId="246" />
+  <Blank Num="4" UId="247" />
+  <LineComment UId="248">
+    <Text UId="249">                             DEST_INDEX := 0,</Text>
+  </LineComment>
+  <NewLine UId="250" />
+  <Blank Num="4" UId="251" />
+  <LineComment UId="252">
+    <Text UId="253">                             DEST =&gt; #sSonplasLoader.iPartInDMC_CodeShuttle2);</Text>
+  </LineComment>
+  <NewLine UId="254" />
+  <Blank Num="3" UId="255" />
+  <NewLine UId="256" />
+  <Blank Num="8" UId="257" />
+  <NewLine UId="258" />
+  <Blank Num="4" UId="259" />
+  <LineComment UId="260">
+    <Text UId="261"> String Conversion</Text>
+  </LineComment>
+  <NewLine UId="262" />
+  <Blank Num="3" UId="263" />
+  <Access Scope="LocalVariable" UId="264">
+    <Symbol UId="265">
+      <Component Name="iDMC_CodeShuttle2" UId="266" />
+    </Symbol>
+  </Access>
+  <Blank UId="267" />
+  <Token Text=":=" UId="268" />
+  <Blank UId="269" />
+  <Access Scope="LiteralConstant" UId="270">
+    <Constant UId="271">
+      <ConstantValue UId="273">''</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="274" />
+  <NewLine UId="275" />
+  <Blank Num="4" UId="276" />
+  <Token Text="FOR" UId="277" />
+  <Blank UId="278" />
+  <Access Scope="LocalVariable" UId="279">
+    <Symbol UId="280">
+      <Component Name="tIndex" UId="281" />
+    </Symbol>
+  </Access>
+  <Blank UId="282" />
+  <Token Text=":=" UId="283" />
+  <Blank UId="284" />
+  <Access Scope="LiteralConstant" UId="285">
+    <Constant UId="286">
+      <ConstantValue UId="288">0</ConstantValue>
+    </Constant>
+  </Access>
+  <Blank UId="289" />
+  <Token Text="TO" UId="290" />
+  <Blank UId="291" />
+  <Access Scope="LiteralConstant" UId="292">
+    <Constant UId="293">
+      <ConstantValue UId="295">19</ConstantValue>
+    </Constant>
+  </Access>
+  <Blank UId="296" />
+  <Token Text="DO" UId="297" />
+  <NewLine UId="298" />
+  <Blank Num="8" UId="299" />
+  <Token Text="IF" UId="300" />
+  <Blank UId="301" />
+  <Access Scope="LocalVariable" UId="302">
+    <Symbol UId="303">
+      <Component Name="sSonplasLoader" UId="304" />
+      <Token Text="." UId="305" />
+      <Component Name="iPartInDMC_CodeShuttle2" UId="306">
+        <Token Text="[" UId="307" />
+        <Access Scope="LocalVariable" UId="308">
+          <Symbol UId="309">
+            <Component Name="tIndex" UId="310" />
+          </Symbol>
+        </Access>
+        <Token Text="]" UId="311" />
+      </Component>
+    </Symbol>
+  </Access>
+  <Blank UId="312" />
+  <Token Text="&lt;&gt;" UId="313" />
+  <Blank UId="314" />
+  <Access Scope="LiteralConstant" UId="315">
+    <Constant UId="316">
+      <ConstantValue UId="318">0</ConstantValue>
+    </Constant>
+  </Access>
+  <Blank UId="319" />
+  <Token Text="THEN" UId="320" />
+  <NewLine UId="321" />
+  <Blank Num="12" UId="322" />
+  <Access Scope="LocalVariable" UId="323">
+    <Symbol UId="324">
+      <Component Name="iDMC_CodeShuttle2" UId="325" />
+    </Symbol>
+  </Access>
+  <Blank UId="326" />
+  <Token Text=":=" UId="327" />
+  <Blank UId="328" />
+  <Access Scope="Call" UId="329">
+    <Instruction Name="CONCAT" UId="330">
+      <Token Text="(" UId="331" />
+      <Parameter Name="IN1" UId="332">
+        <Blank UId="333" />
+        <Token Text=":=" UId="334" />
+        <Blank UId="335" />
+        <Access Scope="LocalVariable" UId="336">
+          <Symbol UId="337">
+            <Component Name="iDMC_CodeShuttle2" UId="338" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="339" />
+      <Blank UId="340" />
+      <Parameter Name="IN2" UId="341">
+        <Blank UId="342" />
+        <Token Text=":=" UId="343" />
+        <Blank UId="344" />
+        <Access Scope="Call" UId="345">
+          <Instruction Name="CHAR_TO_STRING" UId="346">
+            <Token Text="(" UId="347" />
+            <NamelessParameter UId="348">
+              <Access Scope="Call" UId="349">
+                <Instruction Name="BYTE_TO_CHAR" UId="350">
+                  <Token Text="(" UId="351" />
+                  <NamelessParameter UId="352">
+                    <Access Scope="LocalVariable" UId="353">
+                      <Symbol UId="354">
+                        <Component Name="sSonplasLoader" UId="355" />
+                        <Token Text="." UId="356" />
+                        <Component Name="iPartInDMC_CodeShuttle2" UId="357">
+                          <Token Text="[" UId="358" />
+                          <Access Scope="LocalVariable" UId="359">
+                            <Symbol UId="360">
+                              <Component Name="tIndex" UId="361" />
+                            </Symbol>
+                          </Access>
+                          <Token Text="]" UId="362" />
+                        </Component>
+                      </Symbol>
+                    </Access>
+                  </NamelessParameter>
+                  <Token Text=")" UId="364" />
+                </Instruction>
+              </Access>
+            </NamelessParameter>
+            <Token Text=")" UId="366" />
+          </Instruction>
+        </Access>
+      </Parameter>
+      <Token Text=")" UId="368" />
+    </Instruction>
+  </Access>
+  <Token Text=";" UId="369" />
+  <NewLine UId="370" />
+  <Blank Num="8" UId="371" />
+  <Token Text="END_IF" UId="372" />
+  <Token Text=";" UId="373" />
+  <NewLine UId="374" />
+  <Blank Num="4" UId="375" />
+  <Token Text="END_FOR" UId="376" />
+  <Token Text=";" UId="377" />
+  <NewLine UId="378" />
+  <Blank Num="4" UId="379" />
+  <NewLine UId="380" />
+  <Blank Num="4" UId="381" />
+  <LineComment UId="382">
+    <Text UId="383"> Transfer DMC Code (IB247-IB266)</Text>
+  </LineComment>
+  <NewLine UId="384" />
+  <Blank Num="4" UId="385" />
+  <Access Scope="LocalVariable" UId="386">
+    <Symbol UId="387">
+      <Component Name="tRetMov" UId="388" />
+    </Symbol>
+  </Access>
+  <Blank UId="389" />
+  <Token Text=":=" UId="390" />
+  <Blank UId="391" />
+  <Access Scope="Call" UId="392">
+    <Instruction Name="MOVE_BLK_VARIANT" UId="393">
+      <Token Text="(" UId="394" />
+      <Parameter Name="SRC" UId="395">
+        <Blank UId="396" />
+        <Token Text=":=" UId="397" />
+        <Blank UId="398" />
+        <Access Scope="LiteralConstant" UId="399">
+          <Constant UId="400">
+            <ConstantValue UId="402">P# I247.0 BYTE 20</ConstantValue>
+          </Constant>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="403" />
+      <NewLine UId="404" />
+      <Blank Num="33" UId="405" />
+      <Parameter Name="COUNT" UId="406">
+        <Blank UId="407" />
+        <Token Text=":=" UId="408" />
+        <Blank UId="409" />
+        <Access Scope="LiteralConstant" UId="410">
+          <Constant UId="411">
+            <ConstantValue UId="413">20</ConstantValue>
+          </Constant>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="414" />
+      <NewLine UId="415" />
+      <Blank Num="33" UId="416" />
+      <Parameter Name="SRC_INDEX" UId="417">
+        <Blank UId="418" />
+        <Token Text=":=" UId="419" />
+        <Blank UId="420" />
+        <Access Scope="LiteralConstant" UId="421">
+          <Constant UId="422">
+            <ConstantValue UId="424">0</ConstantValue>
+          </Constant>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="425" />
+      <NewLine UId="426" />
+      <Blank Num="33" UId="427" />
+      <Parameter Name="DEST_INDEX" UId="428">
+        <Blank UId="429" />
+        <Token Text=":=" UId="430" />
+        <Blank UId="431" />
+        <Access Scope="LiteralConstant" UId="432">
+          <Constant UId="433">
+            <ConstantValue UId="435">0</ConstantValue>
+          </Constant>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="436" />
+      <NewLine UId="437" />
+      <Blank Num="33" UId="438" />
+      <Parameter Name="DEST" UId="439">
+        <Blank UId="440" />
+        <Token Text="=&gt;" UId="441" />
+        <Blank UId="442" />
+        <Access Scope="LocalVariable" UId="443">
+          <Symbol UId="444">
+            <Component Name="sSonplasLoader" UId="445" />
+            <Token Text="." UId="446" />
+            <Component Name="iPartInDMC Code" UId="447" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text=")" UId="449" />
+    </Instruction>
+  </Access>
+  <Token Text=";" UId="450" />
+  <NewLine UId="451" />
+  <Blank Num="4" UId="452" />
+  <NewLine UId="453" />
+  <Blank Num="4" UId="454" />
+  <NewLine UId="455" />
+  <Blank Num="4" UId="456" />
+  <LineComment UId="457">
+    <Text UId="458"> String Conversion</Text>
+  </LineComment>
+  <NewLine UId="459" />
+  <Blank Num="4" UId="460" />
+  <Access Scope="LocalVariable" UId="461">
+    <Symbol UId="462">
+      <Component Name="iDMC_Code" UId="463" />
+    </Symbol>
+  </Access>
+  <Blank UId="464" />
+  <Token Text=":=" UId="465" />
+  <Blank UId="466" />
+  <Access Scope="LiteralConstant" UId="467">
+    <Constant UId="468">
+      <ConstantValue UId="470">''</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="471" />
+  <NewLine UId="472" />
+  <Blank Num="4" UId="473" />
+  <Token Text="FOR" UId="474" />
+  <Blank UId="475" />
+  <Access Scope="LocalVariable" UId="476">
+    <Symbol UId="477">
+      <Component Name="tIndex" UId="478" />
+    </Symbol>
+  </Access>
+  <Blank UId="479" />
+  <Token Text=":=" UId="480" />
+  <Blank UId="481" />
+  <Access Scope="LiteralConstant" UId="482">
+    <Constant UId="483">
+      <ConstantValue UId="485">0</ConstantValue>
+    </Constant>
+  </Access>
+  <Blank UId="486" />
+  <Token Text="TO" UId="487" />
+  <Blank UId="488" />
+  <Access Scope="LiteralConstant" UId="489">
+    <Constant UId="490">
+      <ConstantValue UId="492">19</ConstantValue>
+    </Constant>
+  </Access>
+  <Blank UId="493" />
+  <Token Text="DO" UId="494" />
+  <NewLine UId="495" />
+  <Blank Num="8" UId="496" />
+  <Token Text="IF" UId="497" />
+  <Blank UId="498" />
+  <Access Scope="LocalVariable" UId="499">
+    <Symbol UId="500">
+      <Component Name="sSonplasLoader" UId="501" />
+      <Token Text="." UId="502" />
+      <Component Name="iPartInDMC Code" UId="503">
+        <Token Text="[" UId="504" />
+        <Access Scope="LocalVariable" UId="505">
+          <Symbol UId="506">
+            <Component Name="tIndex" UId="507" />
+          </Symbol>
+        </Access>
+        <Token Text="]" UId="508" />
+      </Component>
+    </Symbol>
+  </Access>
+  <Blank UId="509" />
+  <Token Text="&lt;&gt;" UId="510" />
+  <Blank UId="511" />
+  <Access Scope="LiteralConstant" UId="512">
+    <Constant UId="513">
+      <ConstantValue UId="515">0</ConstantValue>
+    </Constant>
+  </Access>
+  <Blank UId="516" />
+  <Token Text="THEN" UId="517" />
+  <NewLine UId="518" />
+  <Blank Num="12" UId="519" />
+  <Access Scope="LocalVariable" UId="520">
+    <Symbol UId="521">
+      <Component Name="iDMC_Code" UId="522" />
+    </Symbol>
+  </Access>
+  <Blank UId="523" />
+  <Token Text=":=" UId="524" />
+  <Blank UId="525" />
+  <Access Scope="Call" UId="526">
+    <Instruction Name="CONCAT" UId="527">
+      <Token Text="(" UId="528" />
+      <Parameter Name="IN1" UId="529">
+        <Blank UId="530" />
+        <Token Text=":=" UId="531" />
+        <Blank UId="532" />
+        <Access Scope="LocalVariable" UId="533">
+          <Symbol UId="534">
+            <Component Name="iDMC_Code" UId="535" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="536" />
+      <Blank UId="537" />
+      <Parameter Name="IN2" UId="538">
+        <Blank UId="539" />
+        <Token Text=":=" UId="540" />
+        <Blank UId="541" />
+        <Access Scope="Call" UId="542">
+          <Instruction Name="CHAR_TO_STRING" UId="543">
+            <Token Text="(" UId="544" />
+            <NamelessParameter UId="545">
+              <Access Scope="Call" UId="546">
+                <Instruction Name="BYTE_TO_CHAR" UId="547">
+                  <Token Text="(" UId="548" />
+                  <NamelessParameter UId="549">
+                    <Access Scope="LocalVariable" UId="550">
+                      <Symbol UId="551">
+                        <Component Name="sSonplasLoader" UId="552" />
+                        <Token Text="." UId="553" />
+                        <Component Name="iPartInDMC Code" UId="554">
+                          <Token Text="[" UId="555" />
+                          <Access Scope="LocalVariable" UId="556">
+                            <Symbol UId="557">
+                              <Component Name="tIndex" UId="558" />
+                            </Symbol>
+                          </Access>
+                          <Token Text="]" UId="559" />
+                        </Component>
+                      </Symbol>
+                    </Access>
+                  </NamelessParameter>
+                  <Token Text=")" UId="561" />
+                </Instruction>
+              </Access>
+            </NamelessParameter>
+            <Token Text=")" UId="563" />
+          </Instruction>
+        </Access>
+      </Parameter>
+      <Token Text=")" UId="565" />
+    </Instruction>
+  </Access>
+  <Token Text=";" UId="566" />
+  <NewLine UId="567" />
+  <Blank Num="8" UId="568" />
+  <Token Text="END_IF" UId="569" />
+  <Token Text=";" UId="570" />
+  <NewLine UId="571" />
+  <Blank Num="4" UId="572" />
+  <Token Text="END_FOR" UId="573" />
+  <Token Text=";" UId="574" />
+  <NewLine UId="575" />
+  <Blank Num="4" UId="576" />
+  <NewLine UId="577" />
+  <Token Text="END_REGION" UId="578" />
+  <NewLine Num="2" UId="579" />
+  <Token Text="REGION" UId="580" />
+  <Blank UId="581" />
+  <Text UId="582">Sonplas Loader</Text>
+  <NewLine UId="583" />
+  <Blank Num="4" UId="584" />
+  <Access Scope="Call" UId="585">
+    <CallInfo UId="586" BlockType="FB" Name="FB_SonplasLoader">
+      <Instance Scope="LocalVariable" UId="587">
+        <Component Name="sSonplasLoader" UId="588" />
+      </Instance>
+      <Token Text="(" UId="589" />
+      <Parameter Name="iOperateInDiagDPCoupler" UId="590">
+        <Token Text=":=" UId="591" />
+        <Access Scope="GlobalVariable" UId="592">
+          <Symbol UId="593">
+            <Component Name="DB_DigitalInputsSonplas" UId="594">
+              <BooleanAttribute Name="HasQuotes" UId="595">true</BooleanAttribute>
+            </Component>
+            <Token Text="." UId="596" />
+            <Component Name="sSonplasDiagDPCoupler" UId="597" />
+            <Token Text="." UId="598" />
+            <Component Name="sSWStatus" UId="599" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="600" />
+      <NewLine UId="601" />
+      <Blank Num="20" UId="602" />
+      <Parameter Name="iOperateInReady" UId="603">
+        <Token Text=":=" UId="604" />
+        <Access Scope="GlobalVariable" UId="605">
+          <Symbol UId="606">
+            <Component Name="DB_DigitalInputsSonplas" UId="607">
+              <BooleanAttribute Name="HasQuotes" UId="608">true</BooleanAttribute>
+            </Component>
+            <Token Text="." UId="609" />
+            <Component Name="sSonplasReady" UId="610" />
+            <Token Text="." UId="611" />
+            <Component Name="sSWStatus" UId="612" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="613" />
+      <NewLine UId="614" />
+      <Blank Num="20" UId="615" />
+      <Parameter Name="iOperateInNoEStop" UId="616">
+        <Token Text=":=" UId="617" />
+        <Access Scope="GlobalVariable" UId="618">
+          <Symbol UId="619">
+            <Component Name="DB_DigitalInputsSonplas" UId="620">
+              <BooleanAttribute Name="HasQuotes" UId="621">true</BooleanAttribute>
+            </Component>
+            <Token Text="." UId="622" />
+            <Component Name="sSonplasNoEStop" UId="623" />
+            <Token Text="." UId="624" />
+            <Component Name="sSWStatus" UId="625" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="626" />
+      <NewLine UId="627" />
+      <Blank Num="20" UId="628" />
+      <Parameter Name="iOperateInDoorsClosed" UId="629">
+        <Token Text=":=" UId="630" />
+        <Access Scope="GlobalVariable" UId="631">
+          <Symbol UId="632">
+            <Component Name="DB_DigitalInputsSonplas" UId="633">
+              <BooleanAttribute Name="HasQuotes" UId="634">true</BooleanAttribute>
+            </Component>
+            <Token Text="." UId="635" />
+            <Component Name="sSonplasDoorsClosed" UId="636" />
+            <Token Text="." UId="637" />
+            <Component Name="sSWStatus" UId="638" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="639" />
+      <NewLine UId="640" />
+      <Blank Num="20" UId="641" />
+      <Parameter Name="iOperateInRunError" UId="642">
+        <Token Text=":=" UId="643" />
+        <Access Scope="GlobalVariable" UId="644">
+          <Symbol UId="645">
+            <Component Name="DB_DigitalInputsSonplas" UId="646">
+              <BooleanAttribute Name="HasQuotes" UId="647">true</BooleanAttribute>
+            </Component>
+            <Token Text="." UId="648" />
+            <Component Name="sSonplasRunError" UId="649" />
+            <Token Text="." UId="650" />
+            <Component Name="sSWStatus" UId="651" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="652" />
+      <NewLine UId="653" />
+      <Blank Num="20" UId="654" />
+      <Parameter Name="iOperateInOutCollision" UId="655">
+        <Token Text=":=" UId="656" />
+        <Access Scope="GlobalVariable" UId="657">
+          <Symbol UId="658">
+            <Component Name="DB_DigitalInputsSonplas" UId="659">
+              <BooleanAttribute Name="HasQuotes" UId="660">true</BooleanAttribute>
+            </Component>
+            <Token Text="." UId="661" />
+            <Component Name="sSonplasOutCollision" UId="662" />
+            <Token Text="." UId="663" />
+            <Component Name="sSWStatus" UId="664" />
+          </Symbol>
+        </Access>
+        <Blank UId="665" />
+        <Token Text="OR" UId="666" />
+        <Blank UId="667" />
+        <Access Scope="GlobalVariable" UId="668">
+          <Symbol UId="669">
+            <Component Name="DB_WAF" UId="670">
+              <BooleanAttribute Name="HasQuotes" UId="671">true</BooleanAttribute>
+            </Component>
+            <Token Text="." UId="672" />
+            <Component Name="Sonplas" UId="673" />
+            <Token Text="." UId="674" />
+            <Component Name="OperateInOutCollision" UId="675" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="676" />
+      <NewLine UId="677" />
+      <Blank Num="20" UId="678" />
+      <Parameter Name="iPartInShuttle1Finished" UId="679">
+        <Token Text=":=" UId="680" />
+        <Access Scope="GlobalVariable" UId="681">
+          <Symbol UId="682">
+            <Component Name="DB_DigitalInputsSonplas" UId="683">
+              <BooleanAttribute Name="HasQuotes" UId="684">true</BooleanAttribute>
+            </Component>
+            <Token Text="." UId="685" />
+            <Component Name="sSonplasShuttle1Finished" UId="686" />
+            <Token Text="." UId="687" />
+            <Component Name="sSWStatus" UId="688" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="689" />
+      <NewLine UId="690" />
+      <Blank Num="20" UId="691" />
+      <Parameter Name="iPartInShuttle2Finished" UId="692">
+        <Token Text=":=" UId="693" />
+        <Access Scope="GlobalVariable" UId="694">
+          <Symbol UId="695">
+            <Component Name="DB_DigitalInputsSonplas" UId="696">
+              <BooleanAttribute Name="HasQuotes" UId="697">true</BooleanAttribute>
+            </Component>
+            <Token Text="." UId="698" />
+            <Component Name="sSonplasShuttle2Finished" UId="699" />
+            <Token Text="." UId="700" />
+            <Component Name="sSWStatus" UId="701" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="702" />
+      <NewLine UId="703" />
+      <Blank Num="20" UId="704" />
+      <Parameter Name="iMeasureInFlowResultAvail" UId="705">
+        <Token Text=":=" UId="706" />
+        <Access Scope="GlobalVariable" UId="707">
+          <Symbol UId="708">
+            <Component Name="DB_DigitalInputsSonplas" UId="709">
+              <BooleanAttribute Name="HasQuotes" UId="710">true</BooleanAttribute>
+            </Component>
+            <Token Text="." UId="711" />
+            <Component Name="sSonplasFlowResultAvail" UId="712" />
+            <Token Text="." UId="713" />
+            <Component Name="sSWStatus" UId="714" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="715" />
+      <NewLine UId="716" />
+      <Blank Num="20" UId="717" />
+      <Parameter Name="iMeasureInFlowResult" UId="718">
+        <Token Text=":=" UId="719" />
+        <Blank UId="720" />
+        <Access Scope="Call" UId="721">
+          <Instruction Name="WORD_TO_INT" UId="722">
+            <Token Text="(" UId="723" />
+            <NamelessParameter UId="724">
+              <Access Scope="Call" UId="725">
+                <Instruction Name="SWAP" UId="726">
+                  <TemplateValue Name="value_type" Type="Type" UId="727">Word</TemplateValue>
+                  <Token Text="(" UId="728" />
+                  <NamelessParameter UId="729">
+                    <Access Scope="GlobalVariable" UId="730">
+                      <Symbol UId="731">
+                        <Component Name="AI_SonplasFlowResult" UId="732">
+                          <BooleanAttribute Name="HasQuotes" UId="733">true</BooleanAttribute>
+                        </Component>
+                      </Symbol>
+                    </Access>
+                  </NamelessParameter>
+                  <Token Text=")" UId="735" />
+                </Instruction>
+              </Access>
+            </NamelessParameter>
+            <Token Text=")" UId="737" />
+          </Instruction>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="738" />
+      <NewLine UId="739" />
+      <Blank Num="20" UId="740" />
+      <Parameter Name="oOperateOutDiagDPCoupler" UId="741">
+        <Token Text="=&gt;" UId="742" />
+        <Access Scope="GlobalVariable" UId="743">
+          <Symbol UId="744">
+            <Component Name="DB_DigitalOutputs" UId="745">
+              <BooleanAttribute Name="HasQuotes" UId="746">true</BooleanAttribute>
+            </Component>
+            <Token Text="." UId="747" />
+            <Component Name="sSonplasDiagDPCoupler" UId="748" />
+            <Token Text="." UId="749" />
+            <Component Name="sSWStatus" UId="750" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="751" />
+      <NewLine UId="752" />
+      <Blank Num="20" UId="753" />
+      <Parameter Name="oOperateOutReady" UId="754">
+        <Token Text="=&gt;" UId="755" />
+        <Access Scope="GlobalVariable" UId="756">
+          <Symbol UId="757">
+            <Component Name="DB_DigitalOutputs" UId="758">
+              <BooleanAttribute Name="HasQuotes" UId="759">true</BooleanAttribute>
+            </Component>
+            <Token Text="." UId="760" />
+            <Component Name="sSonplasReady" UId="761" />
+            <Token Text="." UId="762" />
+            <Component Name="sSWStatus" UId="763" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="764" />
+      <NewLine UId="765" />
+      <Blank Num="20" UId="766" />
+      <Parameter Name="oOperateOutNoEStop" UId="767">
+        <Token Text="=&gt;" UId="768" />
+        <Access Scope="GlobalVariable" UId="769">
+          <Symbol UId="770">
+            <Component Name="DB_DigitalOutputs" UId="771">
+              <BooleanAttribute Name="HasQuotes" UId="772">true</BooleanAttribute>
+            </Component>
+            <Token Text="." UId="773" />
+            <Component Name="sSonplasNoEStop" UId="774" />
+            <Token Text="." UId="775" />
+            <Component Name="sSWStatus" UId="776" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="777" />
+      <NewLine UId="778" />
+      <Blank Num="20" UId="779" />
+      <Parameter Name="oOperateOutDoorsClosed" UId="780">
+        <Token Text="=&gt;" UId="781" />
+        <Access Scope="GlobalVariable" UId="782">
+          <Symbol UId="783">
+            <Component Name="DB_DigitalOutputs" UId="784">
+              <BooleanAttribute Name="HasQuotes" UId="785">true</BooleanAttribute>
+            </Component>
+            <Token Text="." UId="786" />
+            <Component Name="sSonplasDoorsClosed" UId="787" />
+            <Token Text="." UId="788" />
+            <Component Name="sSWStatus" UId="789" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="790" />
+      <NewLine UId="791" />
+      <Blank Num="20" UId="792" />
+      <Parameter Name="oOperateOutRunError" UId="793">
+        <Token Text="=&gt;" UId="794" />
+        <Access Scope="GlobalVariable" UId="795">
+          <Symbol UId="796">
+            <Component Name="DB_DigitalOutputs" UId="797">
+              <BooleanAttribute Name="HasQuotes" UId="798">true</BooleanAttribute>
+            </Component>
+            <Token Text="." UId="799" />
+            <Component Name="sSonplasRunError" UId="800" />
+            <Token Text="." UId="801" />
+            <Component Name="sSWStatus" UId="802" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="803" />
+      <NewLine UId="804" />
+      <Blank Num="20" UId="805" />
+      <Parameter Name="oPartOutShuttle1InPos" UId="806">
+        <Token Text="=&gt;" UId="807" />
+        <Access Scope="GlobalVariable" UId="808">
+          <Symbol UId="809">
+            <Component Name="DB_DigitalOutputs" UId="810">
+              <BooleanAttribute Name="HasQuotes" UId="811">true</BooleanAttribute>
+            </Component>
+            <Token Text="." UId="812" />
+            <Component Name="sSonplasShuttle1InPos" UId="813" />
+            <Token Text="." UId="814" />
+            <Component Name="sSWStatus" UId="815" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="816" />
+      <NewLine UId="817" />
+      <Blank Num="20" UId="818" />
+      <Parameter Name="oPartOutPart1OK" UId="819">
+        <Token Text="=&gt;" UId="820" />
+        <Access Scope="GlobalVariable" UId="821">
+          <Symbol UId="822">
+            <Component Name="DB_DigitalOutputs" UId="823">
+              <BooleanAttribute Name="HasQuotes" UId="824">true</BooleanAttribute>
+            </Component>
+            <Token Text="." UId="825" />
+            <Component Name="sSonplasPart1OK" UId="826" />
+            <Token Text="." UId="827" />
+            <Component Name="sSWStatus" UId="828" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="829" />
+      <NewLine UId="830" />
+      <Blank Num="20" UId="831" />
+      <Parameter Name="oPartOutPart1NOK" UId="832">
+        <Token Text="=&gt;" UId="833" />
+        <Access Scope="GlobalVariable" UId="834">
+          <Symbol UId="835">
+            <Component Name="DB_DigitalOutputs" UId="836">
+              <BooleanAttribute Name="HasQuotes" UId="837">true</BooleanAttribute>
+            </Component>
+            <Token Text="." UId="838" />
+            <Component Name="sSonplasPart1NOK" UId="839" />
+            <Token Text="." UId="840" />
+            <Component Name="sSWStatus" UId="841" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="842" />
+      <NewLine UId="843" />
+      <Blank Num="20" UId="844" />
+      <Parameter Name="oPartOutShuttle2InPos" UId="845">
+        <Token Text="=&gt;" UId="846" />
+        <Access Scope="GlobalVariable" UId="847">
+          <Symbol UId="848">
+            <Component Name="DB_DigitalOutputs" UId="849">
+              <BooleanAttribute Name="HasQuotes" UId="850">true</BooleanAttribute>
+            </Component>
+            <Token Text="." UId="851" />
+            <Component Name="sSonplasShuttle2InPos" UId="852" />
+            <Token Text="." UId="853" />
+            <Component Name="sSWStatus" UId="854" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="855" />
+      <NewLine UId="856" />
+      <Blank Num="20" UId="857" />
+      <Parameter Name="oPartOutPart2OK" UId="858">
+        <Token Text="=&gt;" UId="859" />
+        <Access Scope="GlobalVariable" UId="860">
+          <Symbol UId="861">
+            <Component Name="DB_DigitalOutputs" UId="862">
+              <BooleanAttribute Name="HasQuotes" UId="863">true</BooleanAttribute>
+            </Component>
+            <Token Text="." UId="864" />
+            <Component Name="sSonplasPart2OK" UId="865" />
+            <Token Text="." UId="866" />
+            <Component Name="sSWStatus" UId="867" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="868" />
+      <NewLine UId="869" />
+      <Blank Num="20" UId="870" />
+      <Parameter Name="oPartOutPart2NOK" UId="871">
+        <Token Text="=&gt;" UId="872" />
+        <Access Scope="GlobalVariable" UId="873">
+          <Symbol UId="874">
+            <Component Name="DB_DigitalOutputs" UId="875">
+              <BooleanAttribute Name="HasQuotes" UId="876">true</BooleanAttribute>
+            </Component>
+            <Token Text="." UId="877" />
+            <Component Name="sSonplasPart2NOK" UId="878" />
+            <Token Text="." UId="879" />
+            <Component Name="sSWStatus" UId="880" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="881" />
+      <NewLine UId="882" />
+      <Blank Num="20" UId="883" />
+      <Parameter Name="oMeasureOutResultAccepted" UId="884">
+        <Token Text="=&gt;" UId="885" />
+        <Access Scope="GlobalVariable" UId="886">
+          <Symbol UId="887">
+            <Component Name="DB_DigitalOutputsSonplas" UId="888">
+              <BooleanAttribute Name="HasQuotes" UId="889">true</BooleanAttribute>
+            </Component>
+            <Token Text="." UId="890" />
+            <Component Name="Sonplas_ResultAccepted" UId="891" />
+            <Token Text="." UId="892" />
+            <Component Name="sSWStatus" UId="893" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text=")" UId="901" />
+    </CallInfo>
+  </Access>
+  <Token Text=";" UId="902" />
+  <NewLine UId="903" />
+  <Token Text="END_REGION" UId="904" />
+  <NewLine Num="2" UId="905" />
+  <Token Text="REGION" UId="906" />
+  <Blank UId="907" />
+  <Text UId="908">DMC Writing   </Text>
+  <NewLine UId="909" />
+  <Blank Num="4" UId="910" />
+  <LineComment UId="911">
+    <Text UId="912"> Transfer DMC Code Shuttle 1 (QB204-QB223)</Text>
+  </LineComment>
+  <NewLine UId="913" />
+  <Blank Num="4" UId="914" />
+  <Token Text="FOR" UId="915" />
+  <Blank UId="916" />
+  <Access Scope="LocalVariable" UId="917">
+    <Symbol UId="918">
+      <Component Name="tIndex" UId="919" />
+    </Symbol>
+  </Access>
+  <Blank UId="920" />
+  <Token Text=":=" UId="921" />
+  <Blank UId="922" />
+  <Access Scope="LiteralConstant" UId="923">
+    <Constant UId="924">
+      <ConstantValue UId="926">1</ConstantValue>
+    </Constant>
+  </Access>
+  <Blank UId="927" />
+  <Token Text="TO" UId="928" />
+  <Blank UId="929" />
+  <Access Scope="Call" UId="930">
+    <Instruction Name="LEN" UId="931">
+      <Token Text="(" UId="932" />
+      <NamelessParameter UId="933">
+        <Access Scope="LocalVariable" UId="934">
+          <Symbol UId="935">
+            <Component Name="oDMC_CodeShuttle1" UId="936" />
+          </Symbol>
+        </Access>
+      </NamelessParameter>
+      <Token Text=")" UId="938" />
+    </Instruction>
+  </Access>
+  <Blank UId="939" />
+  <Token Text="DO" UId="940" />
+  <NewLine UId="941" />
+  <Blank Num="8" UId="942" />
+  <Access Scope="LocalVariable" UId="943">
+    <Symbol UId="944">
+      <Component Name="sSonplasLoader" UId="945" />
+      <Token Text="." UId="946" />
+      <Component Name="oPartOutDMC_CodeShuttle1" UId="947">
+        <Token Text="[" UId="948" />
+        <Access Scope="LocalVariable" UId="949">
+          <Symbol UId="950">
+            <Component Name="tIndex" UId="951" />
+          </Symbol>
+        </Access>
+        <Blank UId="952" />
+        <Token Text="-" UId="953" />
+        <Blank UId="954" />
+        <Access Scope="LiteralConstant" UId="955">
+          <Constant UId="956">
+            <ConstantValue UId="958">1</ConstantValue>
+          </Constant>
+        </Access>
+        <Token Text="]" UId="959" />
+      </Component>
+    </Symbol>
+  </Access>
+  <Blank UId="960" />
+  <Token Text=":=" UId="961" />
+  <Blank UId="962" />
+  <Access Scope="Call" UId="963">
+    <Instruction Name="CHAR_TO_BYTE" UId="964">
+      <Token Text="(" UId="965" />
+      <NamelessParameter UId="966">
+        <Access Scope="LocalVariable" UId="967">
+          <Symbol UId="968">
+            <Component Name="oDMC_CodeShuttle1" UId="969">
+              <Token Text="[" UId="970" />
+              <Access Scope="LocalVariable" UId="971">
+                <Symbol UId="972">
+                  <Component Name="tIndex" UId="973" />
+                </Symbol>
+              </Access>
+              <Token Text="]" UId="974" />
+            </Component>
+          </Symbol>
+        </Access>
+      </NamelessParameter>
+      <Token Text=")" UId="976" />
+    </Instruction>
+  </Access>
+  <Token Text=";" UId="977" />
+  <NewLine UId="978" />
+  <Blank Num="4" UId="979" />
+  <Token Text="END_FOR" UId="980" />
+  <Token Text=";" UId="981" />
+  <NewLine UId="982" />
+  <Blank Num="4" UId="983" />
+  <NewLine UId="984" />
+  <Blank Num="4" UId="985" />
+  <Access Scope="LocalVariable" UId="986">
+    <Symbol UId="987">
+      <Component Name="tRetMov" UId="988" />
+    </Symbol>
+  </Access>
+  <Blank UId="989" />
+  <Token Text=":=" UId="990" />
+  <Blank UId="991" />
+  <Access Scope="Call" UId="992">
+    <Instruction Name="MOVE_BLK_VARIANT" UId="993">
+      <Token Text="(" UId="994" />
+      <Parameter Name="SRC" UId="995">
+        <Blank UId="996" />
+        <Token Text=":=" UId="997" />
+        <Blank UId="998" />
+        <Access Scope="LocalVariable" UId="999">
+          <Symbol UId="1000">
+            <Component Name="sSonplasLoader" UId="1001" />
+            <Token Text="." UId="1002" />
+            <Component Name="oPartOutDMC_CodeShuttle1" UId="1003" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="1004" />
+      <NewLine UId="1005" />
+      <Blank Num="33" UId="1006" />
+      <Parameter Name="COUNT" UId="1007">
+        <Blank UId="1008" />
+        <Token Text=":=" UId="1009" />
+        <Blank UId="1010" />
+        <Access Scope="LiteralConstant" UId="1011">
+          <Constant UId="1012">
+            <ConstantValue UId="1014">20</ConstantValue>
+          </Constant>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="1015" />
+      <NewLine UId="1016" />
+      <Blank Num="33" UId="1017" />
+      <Parameter Name="SRC_INDEX" UId="1018">
+        <Blank UId="1019" />
+        <Token Text=":=" UId="1020" />
+        <Blank UId="1021" />
+        <Access Scope="LiteralConstant" UId="1022">
+          <Constant UId="1023">
+            <ConstantValue UId="1025">0</ConstantValue>
+          </Constant>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="1026" />
+      <NewLine UId="1027" />
+      <Blank Num="33" UId="1028" />
+      <Parameter Name="DEST_INDEX" UId="1029">
+        <Blank UId="1030" />
+        <Token Text=":=" UId="1031" />
+        <Blank UId="1032" />
+        <Access Scope="LiteralConstant" UId="1033">
+          <Constant UId="1034">
+            <ConstantValue UId="1036">0</ConstantValue>
+          </Constant>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="1037" />
+      <NewLine UId="1038" />
+      <Blank Num="33" UId="1039" />
+      <Parameter Name="DEST" UId="1040">
+        <Blank UId="1041" />
+        <Token Text="=&gt;" UId="1042" />
+        <Blank UId="1043" />
+        <Access Scope="LiteralConstant" UId="1044">
+          <Constant UId="1045">
+            <ConstantValue UId="1047">P# Q204.0 BYTE 20</ConstantValue>
+          </Constant>
+        </Access>
+      </Parameter>
+      <Token Text=")" UId="1049" />
+    </Instruction>
+  </Access>
+  <Token Text=";" UId="1050" />
+  <NewLine Num="2" UId="1051" />
+  <LineComment UId="1052">
+    <Text UId="1053"> Transfer DMC Code Shuttle 2 (QB224-QB243)</Text>
+  </LineComment>
+  <NewLine UId="1054" />
+  <Token Text="FOR" UId="1055" />
+  <Blank UId="1056" />
+  <Access Scope="LocalVariable" UId="1057">
+    <Symbol UId="1058">
+      <Component Name="tIndex" UId="1059" />
+    </Symbol>
+  </Access>
+  <Blank UId="1060" />
+  <Token Text=":=" UId="1061" />
+  <Blank UId="1062" />
+  <Access Scope="LiteralConstant" UId="1063">
+    <Constant UId="1064">
+      <ConstantValue UId="1066">1</ConstantValue>
+    </Constant>
+  </Access>
+  <Blank UId="1067" />
+  <Token Text="TO" UId="1068" />
+  <Blank UId="1069" />
+  <Access Scope="Call" UId="1070">
+    <Instruction Name="LEN" UId="1071">
+      <Token Text="(" UId="1072" />
+      <NamelessParameter UId="1073">
+        <Access Scope="LocalVariable" UId="1074">
+          <Symbol UId="1075">
+            <Component Name="oDMC_CodeShuttle2" UId="1076" />
+          </Symbol>
+        </Access>
+      </NamelessParameter>
+      <Token Text=")" UId="1078" />
+    </Instruction>
+  </Access>
+  <Blank UId="1079" />
+  <Token Text="DO" UId="1080" />
+  <NewLine UId="1081" />
+  <Blank Num="4" UId="1082" />
+  <Access Scope="LocalVariable" UId="1083">
+    <Symbol UId="1084">
+      <Component Name="sSonplasLoader" UId="1085" />
+      <Token Text="." UId="1086" />
+      <Component Name="oPartOutDMC_CodeShuttle2" UId="1087">
+        <Token Text="[" UId="1088" />
+        <Access Scope="LocalVariable" UId="1089">
+          <Symbol UId="1090">
+            <Component Name="tIndex" UId="1091" />
+          </Symbol>
+        </Access>
+        <Blank UId="1092" />
+        <Token Text="-" UId="1093" />
+        <Blank UId="1094" />
+        <Access Scope="LiteralConstant" UId="1095">
+          <Constant UId="1096">
+            <ConstantValue UId="1098">1</ConstantValue>
+          </Constant>
+        </Access>
+        <Token Text="]" UId="1099" />
+      </Component>
+    </Symbol>
+  </Access>
+  <Blank UId="1100" />
+  <Token Text=":=" UId="1101" />
+  <Blank UId="1102" />
+  <Access Scope="Call" UId="1103">
+    <Instruction Name="CHAR_TO_BYTE" UId="1104">
+      <Token Text="(" UId="1105" />
+      <NamelessParameter UId="1106">
+        <Access Scope="LocalVariable" UId="1107">
+          <Symbol UId="1108">
+            <Component Name="oDMC_CodeShuttle2" UId="1109">
+              <Token Text="[" UId="1110" />
+              <Access Scope="LocalVariable" UId="1111">
+                <Symbol UId="1112">
+                  <Component Name="tIndex" UId="1113" />
+                </Symbol>
+              </Access>
+              <Token Text="]" UId="1114" />
+            </Component>
+          </Symbol>
+        </Access>
+      </NamelessParameter>
+      <Token Text=")" UId="1116" />
+    </Instruction>
+  </Access>
+  <Token Text=";" UId="1117" />
+  <NewLine UId="1118" />
+  <Token Text="END_FOR" UId="1119" />
+  <Token Text=";" UId="1120" />
+  <NewLine Num="2" UId="1121" />
+  <Access Scope="LocalVariable" UId="1122">
+    <Symbol UId="1123">
+      <Component Name="tRetMov" UId="1124" />
+    </Symbol>
+  </Access>
+  <Blank UId="1125" />
+  <Token Text=":=" UId="1126" />
+  <Blank UId="1127" />
+  <Access Scope="Call" UId="1128">
+    <Instruction Name="MOVE_BLK_VARIANT" UId="1129">
+      <Token Text="(" UId="1130" />
+      <Parameter Name="SRC" UId="1131">
+        <Blank UId="1132" />
+        <Token Text=":=" UId="1133" />
+        <Blank UId="1134" />
+        <Access Scope="LocalVariable" UId="1135">
+          <Symbol UId="1136">
+            <Component Name="sSonplasLoader" UId="1137" />
+            <Token Text="." UId="1138" />
+            <Component Name="oPartOutDMC_CodeShuttle2" UId="1139" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="1140" />
+      <NewLine UId="1141" />
+      <Blank Num="29" UId="1142" />
+      <Parameter Name="COUNT" UId="1143">
+        <Blank UId="1144" />
+        <Token Text=":=" UId="1145" />
+        <Blank UId="1146" />
+        <Access Scope="LiteralConstant" UId="1147">
+          <Constant UId="1148">
+            <ConstantValue UId="1150">20</ConstantValue>
+          </Constant>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="1151" />
+      <NewLine UId="1152" />
+      <Blank Num="29" UId="1153" />
+      <Parameter Name="SRC_INDEX" UId="1154">
+        <Blank UId="1155" />
+        <Token Text=":=" UId="1156" />
+        <Blank UId="1157" />
+        <Access Scope="LiteralConstant" UId="1158">
+          <Constant UId="1159">
+            <ConstantValue UId="1161">0</ConstantValue>
+          </Constant>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="1162" />
+      <NewLine UId="1163" />
+      <Blank Num="29" UId="1164" />
+      <Parameter Name="DEST_INDEX" UId="1165">
+        <Blank UId="1166" />
+        <Token Text=":=" UId="1167" />
+        <Blank UId="1168" />
+        <Access Scope="LiteralConstant" UId="1169">
+          <Constant UId="1170">
+            <ConstantValue UId="1172">0</ConstantValue>
+          </Constant>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="1173" />
+      <NewLine UId="1174" />
+      <Blank Num="29" UId="1175" />
+      <Parameter Name="DEST" UId="1176">
+        <Blank UId="1177" />
+        <Token Text="=&gt;" UId="1178" />
+        <Blank UId="1179" />
+        <Access Scope="LiteralConstant" UId="1180">
+          <Constant UId="1181">
+            <ConstantValue UId="1183">P# Q224.0 BYTE 20</ConstantValue>
+          </Constant>
+        </Access>
+      </Parameter>
+      <Token Text=")" UId="1185" />
+    </Instruction>
+  </Access>
+  <Token Text=";" UId="1186" />
+  <NewLine Num="2" UId="1187" />
+  <LineComment UId="1188">
+    <Text UId="1189"> Transfer DMC Code (QB247-QB266)</Text>
+  </LineComment>
+  <NewLine UId="1190" />
+  <Token Text="FOR" UId="1191" />
+  <Blank UId="1192" />
+  <Access Scope="LocalVariable" UId="1193">
+    <Symbol UId="1194">
+      <Component Name="tIndex" UId="1195" />
+    </Symbol>
+  </Access>
+  <Blank UId="1196" />
+  <Token Text=":=" UId="1197" />
+  <Blank UId="1198" />
+  <Access Scope="LiteralConstant" UId="1199">
+    <Constant UId="1200">
+      <ConstantValue UId="1202">1</ConstantValue>
+    </Constant>
+  </Access>
+  <Blank UId="1203" />
+  <Token Text="TO" UId="1204" />
+  <Blank UId="1205" />
+  <Access Scope="Call" UId="1206">
+    <Instruction Name="LEN" UId="1207">
+      <Token Text="(" UId="1208" />
+      <NamelessParameter UId="1209">
+        <Access Scope="LocalVariable" UId="1210">
+          <Symbol UId="1211">
+            <Component Name="oDMC_Code" UId="1212" />
+          </Symbol>
+        </Access>
+      </NamelessParameter>
+      <Token Text=")" UId="1214" />
+    </Instruction>
+  </Access>
+  <Blank UId="1215" />
+  <Token Text="DO" UId="1216" />
+  <NewLine UId="1217" />
+  <Blank Num="4" UId="1218" />
+  <Access Scope="LocalVariable" UId="1219">
+    <Symbol UId="1220">
+      <Component Name="sSonplasLoader" UId="1221" />
+      <Token Text="." UId="1222" />
+      <Component Name="oPartOutDMC_Code" UId="1223">
+        <Token Text="[" UId="1224" />
+        <Access Scope="LocalVariable" UId="1225">
+          <Symbol UId="1226">
+            <Component Name="tIndex" UId="1227" />
+          </Symbol>
+        </Access>
+        <Blank UId="1228" />
+        <Token Text="-" UId="1229" />
+        <Blank UId="1230" />
+        <Access Scope="LiteralConstant" UId="1231">
+          <Constant UId="1232">
+            <ConstantValue UId="1234">1</ConstantValue>
+          </Constant>
+        </Access>
+        <Token Text="]" UId="1235" />
+      </Component>
+    </Symbol>
+  </Access>
+  <Blank UId="1236" />
+  <Token Text=":=" UId="1237" />
+  <Blank UId="1238" />
+  <Access Scope="Call" UId="1239">
+    <Instruction Name="CHAR_TO_BYTE" UId="1240">
+      <Token Text="(" UId="1241" />
+      <NamelessParameter UId="1242">
+        <Access Scope="LocalVariable" UId="1243">
+          <Symbol UId="1244">
+            <Component Name="oDMC_Code" UId="1245">
+              <Token Text="[" UId="1246" />
+              <Access Scope="LocalVariable" UId="1247">
+                <Symbol UId="1248">
+                  <Component Name="tIndex" UId="1249" />
+                </Symbol>
+              </Access>
+              <Token Text="]" UId="1250" />
+            </Component>
+          </Symbol>
+        </Access>
+      </NamelessParameter>
+      <Token Text=")" UId="1252" />
+    </Instruction>
+  </Access>
+  <Token Text=";" UId="1253" />
+  <NewLine UId="1254" />
+  <Token Text="END_FOR" UId="1255" />
+  <Token Text=";" UId="1256" />
+  <NewLine Num="2" UId="1257" />
+  <Access Scope="LocalVariable" UId="1258">
+    <Symbol UId="1259">
+      <Component Name="tRetMov" UId="1260" />
+    </Symbol>
+  </Access>
+  <Blank UId="1261" />
+  <Token Text=":=" UId="1262" />
+  <Blank UId="1263" />
+  <Access Scope="Call" UId="1264">
+    <Instruction Name="MOVE_BLK_VARIANT" UId="1265">
+      <Token Text="(" UId="1266" />
+      <Parameter Name="SRC" UId="1267">
+        <Blank UId="1268" />
+        <Token Text=":=" UId="1269" />
+        <Blank UId="1270" />
+        <Access Scope="LocalVariable" UId="1271">
+          <Symbol UId="1272">
+            <Component Name="sSonplasLoader" UId="1273" />
+            <Token Text="." UId="1274" />
+            <Component Name="oPartOutDMC_Code" UId="1275" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="1276" />
+      <NewLine UId="1277" />
+      <Blank Num="29" UId="1278" />
+      <Parameter Name="COUNT" UId="1279">
+        <Blank UId="1280" />
+        <Token Text=":=" UId="1281" />
+        <Blank UId="1282" />
+        <Access Scope="LiteralConstant" UId="1283">
+          <Constant UId="1284">
+            <ConstantValue UId="1286">20</ConstantValue>
+          </Constant>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="1287" />
+      <NewLine UId="1288" />
+      <Blank Num="29" UId="1289" />
+      <Parameter Name="SRC_INDEX" UId="1290">
+        <Blank UId="1291" />
+        <Token Text=":=" UId="1292" />
+        <Blank UId="1293" />
+        <Access Scope="LiteralConstant" UId="1294">
+          <Constant UId="1295">
+            <ConstantValue UId="1297">0</ConstantValue>
+          </Constant>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="1298" />
+      <NewLine UId="1299" />
+      <Blank Num="29" UId="1300" />
+      <Parameter Name="DEST_INDEX" UId="1301">
+        <Blank UId="1302" />
+        <Token Text=":=" UId="1303" />
+        <Blank UId="1304" />
+        <Access Scope="LiteralConstant" UId="1305">
+          <Constant UId="1306">
+            <ConstantValue UId="1308">0</ConstantValue>
+          </Constant>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="1309" />
+      <NewLine UId="1310" />
+      <Blank Num="29" UId="1311" />
+      <Parameter Name="DEST" UId="1312">
+        <Blank UId="1313" />
+        <Token Text="=&gt;" UId="1314" />
+        <Blank UId="1315" />
+        <Access Scope="LiteralConstant" UId="1316">
+          <Constant UId="1317">
+            <ConstantValue UId="1319">P# Q247.0 BYTE 20</ConstantValue>
+          </Constant>
+        </Access>
+      </Parameter>
+      <Token Text=")" UId="1321" />
+    </Instruction>
+  </Access>
+  <Token Text=";" UId="1322" />
+  <NewLine UId="1323" />
+  <Token Text="END_REGION" UId="1324" />
+</StructuredText></NetworkSource>
+          <ProgrammingLanguage>SCL</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="5" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="6" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="7" CompositionName="Items">
+                <AttributeList>
+                  <Culture>fr-FR</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="8" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="9" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="A" CompositionName="Items">
+                <AttributeList>
+                  <Culture>fr-FR</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <MultilingualText ID="B" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="C" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="D" CompositionName="Items">
+            <AttributeList>
+              <Culture>fr-FR</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Blocks.FB>
+</Document>

@@ -1,0 +1,403 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V20" />
+  <SW.Blocks.GlobalDB ID="0">
+    <AttributeList>
+      <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+  <Section Name="Static">
+    <Member Name="$MA_POS_LIMIT_MINUS_Axis01_X" Datatype="&quot;LBP_typeNCVariableTokenLReal&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+      <Sections>
+        <Section Name="None">
+          <Member Name="token" Datatype="&quot;LBP_typeNCVariableToken&quot;">
+            <Sections>
+              <Section Name="None">
+                <Member Name="syntaxId" Datatype="Byte">
+                  <StartValue>16#82</StartValue>
+                </Member>
+                <Member Name="areaAndUnit" Datatype="Byte">
+                  <StartValue>16#61</StartValue>
+                </Member>
+                <Member Name="column" Datatype="Word">
+                  <StartValue>16#8D04</StartValue>
+                </Member>
+                <Member Name="row" Datatype="Word">
+                  <StartValue>16#1</StartValue>
+                </Member>
+                <Member Name="blockType" Datatype="Byte">
+                  <StartValue>16#1A</StartValue>
+                </Member>
+                <Member Name="numberOfRows" Datatype="Byte">
+                  <StartValue>16#1</StartValue>
+                </Member>
+                <Member Name="dataTypeCode" Datatype="Byte">
+                  <StartValue>16#F</StartValue>
+                </Member>
+                <Member Name="length" Datatype="Byte">
+                  <StartValue>16#8</StartValue>
+                </Member>
+              </Section>
+            </Sections>
+          </Member>
+        </Section>
+      </Sections>
+    </Member>
+    <Member Name="$MA_POS_LIMIT_MINUS_Axis02_Y" Datatype="&quot;LBP_typeNCVariableTokenLReal&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+      <Sections>
+        <Section Name="None">
+          <Member Name="token" Datatype="&quot;LBP_typeNCVariableToken&quot;">
+            <Sections>
+              <Section Name="None">
+                <Member Name="syntaxId" Datatype="Byte">
+                  <StartValue>16#82</StartValue>
+                </Member>
+                <Member Name="areaAndUnit" Datatype="Byte">
+                  <StartValue>16#62</StartValue>
+                </Member>
+                <Member Name="column" Datatype="Word">
+                  <StartValue>16#8D04</StartValue>
+                </Member>
+                <Member Name="row" Datatype="Word">
+                  <StartValue>16#1</StartValue>
+                </Member>
+                <Member Name="blockType" Datatype="Byte">
+                  <StartValue>16#1A</StartValue>
+                </Member>
+                <Member Name="numberOfRows" Datatype="Byte">
+                  <StartValue>16#1</StartValue>
+                </Member>
+                <Member Name="dataTypeCode" Datatype="Byte">
+                  <StartValue>16#F</StartValue>
+                </Member>
+                <Member Name="length" Datatype="Byte">
+                  <StartValue>16#8</StartValue>
+                </Member>
+              </Section>
+            </Sections>
+          </Member>
+        </Section>
+      </Sections>
+    </Member>
+    <Member Name="$MA_POS_LIMIT_MINUS_Axis03_ZM" Datatype="&quot;LBP_typeNCVariableTokenLReal&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+      <Sections>
+        <Section Name="None">
+          <Member Name="token" Datatype="&quot;LBP_typeNCVariableToken&quot;">
+            <Sections>
+              <Section Name="None">
+                <Member Name="syntaxId" Datatype="Byte">
+                  <StartValue>16#82</StartValue>
+                </Member>
+                <Member Name="areaAndUnit" Datatype="Byte">
+                  <StartValue>16#63</StartValue>
+                </Member>
+                <Member Name="column" Datatype="Word">
+                  <StartValue>16#8D04</StartValue>
+                </Member>
+                <Member Name="row" Datatype="Word">
+                  <StartValue>16#1</StartValue>
+                </Member>
+                <Member Name="blockType" Datatype="Byte">
+                  <StartValue>16#1A</StartValue>
+                </Member>
+                <Member Name="numberOfRows" Datatype="Byte">
+                  <StartValue>16#1</StartValue>
+                </Member>
+                <Member Name="dataTypeCode" Datatype="Byte">
+                  <StartValue>16#F</StartValue>
+                </Member>
+                <Member Name="length" Datatype="Byte">
+                  <StartValue>16#8</StartValue>
+                </Member>
+              </Section>
+            </Sections>
+          </Member>
+        </Section>
+      </Sections>
+    </Member>
+    <Member Name="$MA_POS_LIMIT_MINUS_Axis04_B" Datatype="&quot;LBP_typeNCVariableTokenLReal&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+      <Sections>
+        <Section Name="None">
+          <Member Name="token" Datatype="&quot;LBP_typeNCVariableToken&quot;">
+            <Sections>
+              <Section Name="None">
+                <Member Name="syntaxId" Datatype="Byte">
+                  <StartValue>16#82</StartValue>
+                </Member>
+                <Member Name="areaAndUnit" Datatype="Byte">
+                  <StartValue>16#64</StartValue>
+                </Member>
+                <Member Name="column" Datatype="Word">
+                  <StartValue>16#8D04</StartValue>
+                </Member>
+                <Member Name="row" Datatype="Word">
+                  <StartValue>16#1</StartValue>
+                </Member>
+                <Member Name="blockType" Datatype="Byte">
+                  <StartValue>16#1A</StartValue>
+                </Member>
+                <Member Name="numberOfRows" Datatype="Byte">
+                  <StartValue>16#1</StartValue>
+                </Member>
+                <Member Name="dataTypeCode" Datatype="Byte">
+                  <StartValue>16#F</StartValue>
+                </Member>
+                <Member Name="length" Datatype="Byte">
+                  <StartValue>16#8</StartValue>
+                </Member>
+              </Section>
+            </Sections>
+          </Member>
+        </Section>
+      </Sections>
+    </Member>
+    <Member Name="$MA_POS_LIMIT_MINUS_Axis05_U1" Datatype="&quot;LBP_typeNCVariableTokenLReal&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+      <Sections>
+        <Section Name="None">
+          <Member Name="token" Datatype="&quot;LBP_typeNCVariableToken&quot;">
+            <Sections>
+              <Section Name="None">
+                <Member Name="syntaxId" Datatype="Byte">
+                  <StartValue>16#82</StartValue>
+                </Member>
+                <Member Name="areaAndUnit" Datatype="Byte">
+                  <StartValue>16#65</StartValue>
+                </Member>
+                <Member Name="column" Datatype="Word">
+                  <StartValue>16#8D04</StartValue>
+                </Member>
+                <Member Name="row" Datatype="Word">
+                  <StartValue>16#1</StartValue>
+                </Member>
+                <Member Name="blockType" Datatype="Byte">
+                  <StartValue>16#1A</StartValue>
+                </Member>
+                <Member Name="numberOfRows" Datatype="Byte">
+                  <StartValue>16#1</StartValue>
+                </Member>
+                <Member Name="dataTypeCode" Datatype="Byte">
+                  <StartValue>16#F</StartValue>
+                </Member>
+                <Member Name="length" Datatype="Byte">
+                  <StartValue>16#8</StartValue>
+                </Member>
+              </Section>
+            </Sections>
+          </Member>
+        </Section>
+      </Sections>
+    </Member>
+    <Member Name="$MA_POS_LIMIT_MINUS_Axis06_U2" Datatype="&quot;LBP_typeNCVariableTokenLReal&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+      <Sections>
+        <Section Name="None">
+          <Member Name="token" Datatype="&quot;LBP_typeNCVariableToken&quot;">
+            <Sections>
+              <Section Name="None">
+                <Member Name="syntaxId" Datatype="Byte">
+                  <StartValue>16#82</StartValue>
+                </Member>
+                <Member Name="areaAndUnit" Datatype="Byte">
+                  <StartValue>16#66</StartValue>
+                </Member>
+                <Member Name="column" Datatype="Word">
+                  <StartValue>16#8D04</StartValue>
+                </Member>
+                <Member Name="row" Datatype="Word">
+                  <StartValue>16#1</StartValue>
+                </Member>
+                <Member Name="blockType" Datatype="Byte">
+                  <StartValue>16#1A</StartValue>
+                </Member>
+                <Member Name="numberOfRows" Datatype="Byte">
+                  <StartValue>16#1</StartValue>
+                </Member>
+                <Member Name="dataTypeCode" Datatype="Byte">
+                  <StartValue>16#F</StartValue>
+                </Member>
+                <Member Name="length" Datatype="Byte">
+                  <StartValue>16#8</StartValue>
+                </Member>
+              </Section>
+            </Sections>
+          </Member>
+        </Section>
+      </Sections>
+    </Member>
+    <Member Name="$MA_POS_LIMIT_MINUS_Axis07_V" Datatype="&quot;LBP_typeNCVariableTokenLReal&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+      <Sections>
+        <Section Name="None">
+          <Member Name="token" Datatype="&quot;LBP_typeNCVariableToken&quot;">
+            <Sections>
+              <Section Name="None">
+                <Member Name="syntaxId" Datatype="Byte">
+                  <StartValue>16#82</StartValue>
+                </Member>
+                <Member Name="areaAndUnit" Datatype="Byte">
+                  <StartValue>16#67</StartValue>
+                </Member>
+                <Member Name="column" Datatype="Word">
+                  <StartValue>16#8D04</StartValue>
+                </Member>
+                <Member Name="row" Datatype="Word">
+                  <StartValue>16#1</StartValue>
+                </Member>
+                <Member Name="blockType" Datatype="Byte">
+                  <StartValue>16#1A</StartValue>
+                </Member>
+                <Member Name="numberOfRows" Datatype="Byte">
+                  <StartValue>16#1</StartValue>
+                </Member>
+                <Member Name="dataTypeCode" Datatype="Byte">
+                  <StartValue>16#F</StartValue>
+                </Member>
+                <Member Name="length" Datatype="Byte">
+                  <StartValue>16#8</StartValue>
+                </Member>
+              </Section>
+            </Sections>
+          </Member>
+        </Section>
+      </Sections>
+    </Member>
+    <Member Name="$MA_POS_LIMIT_MINUS_Axis08_W" Datatype="&quot;LBP_typeNCVariableTokenLReal&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+      <Sections>
+        <Section Name="None">
+          <Member Name="token" Datatype="&quot;LBP_typeNCVariableToken&quot;">
+            <Sections>
+              <Section Name="None">
+                <Member Name="syntaxId" Datatype="Byte">
+                  <StartValue>16#82</StartValue>
+                </Member>
+                <Member Name="areaAndUnit" Datatype="Byte">
+                  <StartValue>16#68</StartValue>
+                </Member>
+                <Member Name="column" Datatype="Word">
+                  <StartValue>16#8D04</StartValue>
+                </Member>
+                <Member Name="row" Datatype="Word">
+                  <StartValue>16#1</StartValue>
+                </Member>
+                <Member Name="blockType" Datatype="Byte">
+                  <StartValue>16#1A</StartValue>
+                </Member>
+                <Member Name="numberOfRows" Datatype="Byte">
+                  <StartValue>16#1</StartValue>
+                </Member>
+                <Member Name="dataTypeCode" Datatype="Byte">
+                  <StartValue>16#F</StartValue>
+                </Member>
+                <Member Name="length" Datatype="Byte">
+                  <StartValue>16#8</StartValue>
+                </Member>
+              </Section>
+            </Sections>
+          </Member>
+        </Section>
+      </Sections>
+    </Member>
+    <Member Name="$MA_POS_LIMIT_MINUS_Axis09_ZL" Datatype="&quot;LBP_typeNCVariableTokenLReal&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+      <Sections>
+        <Section Name="None">
+          <Member Name="token" Datatype="&quot;LBP_typeNCVariableToken&quot;">
+            <Sections>
+              <Section Name="None">
+                <Member Name="syntaxId" Datatype="Byte">
+                  <StartValue>16#82</StartValue>
+                </Member>
+                <Member Name="areaAndUnit" Datatype="Byte">
+                  <StartValue>16#69</StartValue>
+                </Member>
+                <Member Name="column" Datatype="Word">
+                  <StartValue>16#8D04</StartValue>
+                </Member>
+                <Member Name="row" Datatype="Word">
+                  <StartValue>16#1</StartValue>
+                </Member>
+                <Member Name="blockType" Datatype="Byte">
+                  <StartValue>16#1A</StartValue>
+                </Member>
+                <Member Name="numberOfRows" Datatype="Byte">
+                  <StartValue>16#1</StartValue>
+                </Member>
+                <Member Name="dataTypeCode" Datatype="Byte">
+                  <StartValue>16#F</StartValue>
+                </Member>
+                <Member Name="length" Datatype="Byte">
+                  <StartValue>16#8</StartValue>
+                </Member>
+              </Section>
+            </Sections>
+          </Member>
+        </Section>
+      </Sections>
+    </Member>
+  </Section>
+</Sections></Interface>
+      <MemoryLayout>Optimized</MemoryLayout>
+      <MemoryReserve>100</MemoryReserve>
+      <Name>DB_NcVarSelect_MA_POS_LIMIT_MINUS</Name>
+      <Namespace />
+      <Number>66</Number>
+      <ProgrammingLanguage>DB</ProgrammingLanguage>
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="3" CompositionName="Items">
+            <AttributeList>
+              <Culture>fr-FR</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <MultilingualText ID="4" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="5" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="6" CompositionName="Items">
+            <AttributeList>
+              <Culture>fr-FR</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Blocks.GlobalDB>
+</Document>

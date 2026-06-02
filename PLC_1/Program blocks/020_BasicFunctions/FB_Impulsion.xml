@@ -1,0 +1,599 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V20" />
+  <SW.Blocks.FB ID="0">
+    <AttributeList>
+      <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+  <Section Name="Input" />
+  <Section Name="Output" />
+  <Section Name="InOut" />
+  <Section Name="Static">
+    <Member Name="sCountSecPulseMinute" Datatype="DInt" Remanence="Retain" />
+    <Member Name="sCountSecPulseHour" Datatype="DInt" Remanence="Retain" />
+    <Member Name="sCountSecPulseDay" Datatype="DInt" Remanence="Retain" />
+    <Member Name="sPulseMinute" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Impulsion every minute</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="sPulseHour" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Impulsion every hour</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="sPulseDay" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Impulsion every day</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="sRT_Clock_1Hz" Datatype="R_TRIG" Version="1.0">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+  </Section>
+  <Section Name="Temp" />
+  <Section Name="Constant">
+    <Member Name="MAX_COUNT_MINUTE" Datatype="DInt">
+      <StartValue>60</StartValue>
+    </Member>
+    <Member Name="MAX_COUNT_HOUR" Datatype="DInt">
+      <StartValue>3600</StartValue>
+    </Member>
+    <Member Name="MAX_COUNT_DAY" Datatype="DInt">
+      <StartValue>86400</StartValue>
+    </Member>
+  </Section>
+</Sections></Interface>
+      <MemoryLayout>Optimized</MemoryLayout>
+      <MemoryReserve>100</MemoryReserve>
+      <Name>FB_Impulsion</Name>
+      <Namespace />
+      <Number>52</Number>
+      <ProgrammingLanguage>SCL</ProgrammingLanguage>
+      <SetENOAutomatically>false</SetENOAutomatically>
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="3" CompositionName="Items">
+            <AttributeList>
+              <Culture>fr-FR</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <SW.Blocks.CompileUnit ID="4" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource><StructuredText xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/StructuredText/v4">
+  <Token Text="REGION" UId="21" />
+  <Blank UId="22" />
+  <Text UId="23">Description header </Text>
+  <NewLine UId="24" />
+  <Blank Num="4" UId="25" />
+  <LineComment UId="26">
+    <Text UId="27">==================================================================================</Text>
+  </LineComment>
+  <NewLine UId="28" />
+  <Blank Num="4" UId="29" />
+  <LineComment UId="30">
+    <Text UId="31"> POSALUX Swiss SA / (C) Copyright 2024</Text>
+  </LineComment>
+  <NewLine UId="32" />
+  <Blank Num="4" UId="33" />
+  <LineComment UId="34">
+    <Text UId="35">----------------------------------------------------------------------------------</Text>
+  </LineComment>
+  <NewLine UId="36" />
+  <Blank Num="4" UId="37" />
+  <LineComment UId="38">
+    <Text UId="39"> Title: Time counter</Text>
+  </LineComment>
+  <NewLine UId="40" />
+  <Blank Num="4" UId="41" />
+  <LineComment UId="42">
+    <Text UId="43"> Comment/Function: Generates periodic pulses using 1Hz clock base</Text>
+  </LineComment>
+  <NewLine UId="44" />
+  <Blank Num="4" UId="45" />
+  <LineComment UId="46">
+    <Text UId="47">                      - Minute interval pulses (60s cycle)</Text>
+  </LineComment>
+  <NewLine UId="48" />
+  <Blank Num="4" UId="49" />
+  <LineComment UId="50">
+    <Text UId="51">                      - Hour interval pulses (3600s cycle)</Text>
+  </LineComment>
+  <NewLine UId="52" />
+  <Blank Num="4" UId="53" />
+  <LineComment UId="54">
+    <Text UId="55">                      - Day interval pulses (86400s cycle)</Text>
+  </LineComment>
+  <NewLine UId="56" />
+  <Blank Num="4" UId="57" />
+  <LineComment UId="58">
+    <Text UId="59">                   Implementation: Uses cascaded counters with 1Hz clock input</Text>
+  </LineComment>
+  <NewLine UId="60" />
+  <Blank Num="4" UId="61" />
+  <LineComment UId="62">
+    <Text UId="63"> Author: Gowsigan SRITHARAN</Text>
+  </LineComment>
+  <NewLine UId="64" />
+  <Blank Num="4" UId="65" />
+  <LineComment UId="66">
+    <Text UId="67"> Engineering: TIA Portal v17</Text>
+  </LineComment>
+  <NewLine UId="68" />
+  <Blank Num="4" UId="69" />
+  <LineComment UId="70">
+    <Text UId="71">----------------------------------------------------------------------------------</Text>
+  </LineComment>
+  <NewLine UId="72" />
+  <Blank Num="4" UId="73" />
+  <LineComment UId="74">
+    <Text UId="75"> Change log table:</Text>
+  </LineComment>
+  <NewLine UId="76" />
+  <Blank Num="4" UId="77" />
+  <LineComment UId="78">
+    <Text UId="79"> Version  | Date     | Expert in charge | Changes applied</Text>
+  </LineComment>
+  <NewLine UId="80" />
+  <Blank Num="4" UId="81" />
+  <LineComment UId="82">
+    <Text UId="83"> ---------|----------|------------------|------------------------------------</Text>
+  </LineComment>
+  <NewLine UId="84" />
+  <Blank Num="4" UId="85" />
+  <LineComment UId="86">
+    <Text UId="87"> 00.00.01 | 20241206 | GSR              | First released version</Text>
+  </LineComment>
+  <NewLine UId="88" />
+  <Blank Num="4" UId="89" />
+  <LineComment UId="90">
+    <Text UId="91"> ---------|----------|------------------|------------------------------------</Text>
+  </LineComment>
+  <NewLine UId="92" />
+  <Blank Num="4" UId="93" />
+  <LineComment UId="94">
+    <Text UId="95"> 01.01.01 | 20241219 | FMI              | Utilisation d'un flanc montant du clock1Hz pour compter en secondes</Text>
+  </LineComment>
+  <NewLine UId="96" />
+  <Blank Num="4" UId="97" />
+  <LineComment UId="98">
+    <Text UId="99"> ==================================================================================</Text>
+  </LineComment>
+  <NewLine UId="100" />
+  <Token Text="END_REGION" UId="101" />
+  <NewLine Num="2" UId="102" />
+  <Token Text="REGION" UId="103" />
+  <Blank UId="104" />
+  <Text UId="105">Rising edge detection and counter incrementation</Text>
+  <NewLine UId="106" />
+  <Blank Num="4" UId="107" />
+  <Access Scope="LocalVariable" UId="108">
+    <Symbol UId="109">
+      <Component Name="sRT_Clock_1Hz" UId="110" />
+      <Token Text="." UId="111" />
+      <Component Name="CLK" UId="112" />
+    </Symbol>
+  </Access>
+  <Token Text=":=" UId="113" />
+  <Access Scope="GlobalVariable" UId="114">
+    <Symbol UId="115">
+      <Component Name="Clock_1Hz" UId="116">
+        <BooleanAttribute Name="HasQuotes" UId="117">true</BooleanAttribute>
+      </Component>
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="118" />
+  <NewLine UId="119" />
+  <Blank Num="4" UId="120" />
+  <Access Scope="LocalVariable" UId="121">
+    <Symbol UId="122">
+      <Component Name="sRT_Clock_1Hz" UId="123" />
+    </Symbol>
+  </Access>
+  <Access Scope="Call" UId="124">
+    <Instruction UId="125">
+      <Token Text="(" UId="126" />
+      <Token Text=")" UId="127" />
+    </Instruction>
+  </Access>
+  <Token Text=";" UId="128" />
+  <NewLine UId="129" />
+  <Blank Num="2" UId="130" />
+  <Token Text="IF" UId="131" />
+  <Blank Num="2" UId="132" />
+  <Access Scope="LocalVariable" UId="133">
+    <Symbol UId="134">
+      <Component Name="sRT_Clock_1Hz" UId="135" />
+      <Token Text="." UId="136" />
+      <Component Name="Q" UId="137" />
+    </Symbol>
+  </Access>
+  <Blank UId="138" />
+  <Token Text="THEN" UId="139" />
+  <NewLine UId="140" />
+  <Blank Num="4" UId="141" />
+  <Access Scope="LocalVariable" UId="142">
+    <Symbol UId="143">
+      <Component Name="sCountSecPulseMinute" UId="144" />
+    </Symbol>
+  </Access>
+  <Blank UId="145" />
+  <Token Text=":=" UId="146" />
+  <Blank UId="147" />
+  <Access Scope="LocalVariable" UId="148">
+    <Symbol UId="149">
+      <Component Name="sCountSecPulseMinute" UId="150" />
+    </Symbol>
+  </Access>
+  <Blank UId="151" />
+  <Token Text="+" UId="152" />
+  <Blank UId="153" />
+  <Access Scope="LiteralConstant" UId="154">
+    <Constant UId="155">
+      <ConstantValue UId="157">1</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="158" />
+  <NewLine UId="159" />
+  <Blank Num="4" UId="160" />
+  <Access Scope="LocalVariable" UId="161">
+    <Symbol UId="162">
+      <Component Name="sCountSecPulseHour" UId="163" />
+    </Symbol>
+  </Access>
+  <Blank UId="164" />
+  <Token Text=":=" UId="165" />
+  <Blank UId="166" />
+  <Access Scope="LocalVariable" UId="167">
+    <Symbol UId="168">
+      <Component Name="sCountSecPulseHour" UId="169" />
+    </Symbol>
+  </Access>
+  <Blank UId="170" />
+  <Token Text="+" UId="171" />
+  <Blank UId="172" />
+  <Access Scope="LiteralConstant" UId="173">
+    <Constant UId="174">
+      <ConstantValue UId="176">1</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="177" />
+  <NewLine UId="178" />
+  <Blank Num="4" UId="179" />
+  <Access Scope="LocalVariable" UId="180">
+    <Symbol UId="181">
+      <Component Name="sCountSecPulseDay" UId="182" />
+    </Symbol>
+  </Access>
+  <Blank UId="183" />
+  <Token Text=":=" UId="184" />
+  <Blank UId="185" />
+  <Access Scope="LocalVariable" UId="186">
+    <Symbol UId="187">
+      <Component Name="sCountSecPulseDay" UId="188" />
+    </Symbol>
+  </Access>
+  <Blank UId="189" />
+  <Token Text="+" UId="190" />
+  <Blank UId="191" />
+  <Access Scope="LiteralConstant" UId="192">
+    <Constant UId="193">
+      <ConstantValue UId="195">1</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="196" />
+  <NewLine UId="197" />
+  <Token Text="END_IF" UId="198" />
+  <Token Text=";" UId="199" />
+  <NewLine UId="200" />
+  <Token Text="END_REGION" UId="201" />
+  <NewLine Num="2" UId="202" />
+  <Token Text="REGION" UId="203" />
+  <Blank UId="204" />
+  <Text UId="205">Pulse generation and counter reset</Text>
+  <NewLine UId="206" />
+  <Blank Num="4" UId="207" />
+  <LineComment UId="208">
+    <Text UId="209"> Impulsion minute</Text>
+  </LineComment>
+  <NewLine UId="210" />
+  <Blank Num="4" UId="211" />
+  <Token Text="IF" UId="212" />
+  <Blank UId="213" />
+  <Access Scope="LocalVariable" UId="214">
+    <Symbol UId="215">
+      <Component Name="sCountSecPulseMinute" UId="216" />
+    </Symbol>
+  </Access>
+  <Blank UId="217" />
+  <Token Text="&gt;=" UId="218" />
+  <Blank UId="219" />
+  <Access Scope="LocalConstant" UId="220">
+    <Constant Name="MAX_COUNT_MINUTE" UId="221" />
+  </Access>
+  <Blank UId="224" />
+  <Token Text="THEN" UId="225" />
+  <NewLine UId="226" />
+  <Blank Num="8" UId="227" />
+  <Access Scope="LocalVariable" UId="228">
+    <Symbol UId="229">
+      <Component Name="sPulseMinute" UId="230" />
+    </Symbol>
+  </Access>
+  <Blank UId="231" />
+  <Token Text=":=" UId="232" />
+  <Blank UId="233" />
+  <Access Scope="LiteralConstant" UId="234">
+    <Constant UId="235">
+      <ConstantValue UId="237">TRUE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="238" />
+  <NewLine UId="239" />
+  <Blank Num="8" UId="240" />
+  <Access Scope="LocalVariable" UId="241">
+    <Symbol UId="242">
+      <Component Name="sCountSecPulseMinute" UId="243" />
+    </Symbol>
+  </Access>
+  <Blank UId="244" />
+  <Token Text=":=" UId="245" />
+  <Blank UId="246" />
+  <Access Scope="LiteralConstant" UId="247">
+    <Constant UId="248">
+      <ConstantValue UId="250">0</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="251" />
+  <NewLine UId="252" />
+  <Blank Num="4" UId="253" />
+  <Token Text="ELSE" UId="254" />
+  <NewLine UId="255" />
+  <Blank Num="8" UId="256" />
+  <Access Scope="LocalVariable" UId="257">
+    <Symbol UId="258">
+      <Component Name="sPulseMinute" UId="259" />
+    </Symbol>
+  </Access>
+  <Blank UId="260" />
+  <Token Text=":=" UId="261" />
+  <Blank UId="262" />
+  <Access Scope="LiteralConstant" UId="263">
+    <Constant UId="264">
+      <ConstantValue UId="266">FALSE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="267" />
+  <NewLine UId="268" />
+  <Blank Num="4" UId="269" />
+  <Token Text="END_IF" UId="270" />
+  <Token Text=";" UId="271" />
+  <NewLine UId="272" />
+  <Blank Num="4" UId="273" />
+  <NewLine UId="274" />
+  <Blank Num="4" UId="275" />
+  <LineComment UId="276">
+    <Text UId="277"> Impulsion hour</Text>
+  </LineComment>
+  <NewLine UId="278" />
+  <Blank Num="4" UId="279" />
+  <Token Text="IF" UId="280" />
+  <Blank UId="281" />
+  <Access Scope="LocalVariable" UId="282">
+    <Symbol UId="283">
+      <Component Name="sCountSecPulseHour" UId="284" />
+    </Symbol>
+  </Access>
+  <Blank UId="285" />
+  <Token Text="&gt;=" UId="286" />
+  <Blank UId="287" />
+  <Access Scope="LocalConstant" UId="288">
+    <Constant Name="MAX_COUNT_HOUR" UId="289" />
+  </Access>
+  <Blank UId="292" />
+  <Token Text="THEN" UId="293" />
+  <NewLine UId="294" />
+  <Blank Num="8" UId="295" />
+  <Access Scope="LocalVariable" UId="296">
+    <Symbol UId="297">
+      <Component Name="sPulseHour" UId="298" />
+    </Symbol>
+  </Access>
+  <Blank UId="299" />
+  <Token Text=":=" UId="300" />
+  <Blank UId="301" />
+  <Access Scope="LiteralConstant" UId="302">
+    <Constant UId="303">
+      <ConstantValue UId="305">TRUE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="306" />
+  <NewLine UId="307" />
+  <Blank Num="8" UId="308" />
+  <Access Scope="LocalVariable" UId="309">
+    <Symbol UId="310">
+      <Component Name="sCountSecPulseHour" UId="311" />
+    </Symbol>
+  </Access>
+  <Blank UId="312" />
+  <Token Text=":=" UId="313" />
+  <Blank UId="314" />
+  <Access Scope="LiteralConstant" UId="315">
+    <Constant UId="316">
+      <ConstantValue UId="318">0</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="319" />
+  <NewLine UId="320" />
+  <Blank Num="4" UId="321" />
+  <Token Text="ELSE" UId="322" />
+  <NewLine UId="323" />
+  <Blank Num="8" UId="324" />
+  <Access Scope="LocalVariable" UId="325">
+    <Symbol UId="326">
+      <Component Name="sPulseHour" UId="327" />
+    </Symbol>
+  </Access>
+  <Blank UId="328" />
+  <Token Text=":=" UId="329" />
+  <Blank UId="330" />
+  <Access Scope="LiteralConstant" UId="331">
+    <Constant UId="332">
+      <ConstantValue UId="334">FALSE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="335" />
+  <NewLine UId="336" />
+  <Blank Num="4" UId="337" />
+  <Token Text="END_IF" UId="338" />
+  <Token Text=";" UId="339" />
+  <NewLine UId="340" />
+  <Blank Num="4" UId="341" />
+  <NewLine UId="342" />
+  <Blank Num="4" UId="343" />
+  <LineComment UId="344">
+    <Text UId="345"> Impulsion day</Text>
+  </LineComment>
+  <NewLine UId="346" />
+  <Blank Num="4" UId="347" />
+  <Token Text="IF" UId="348" />
+  <Blank UId="349" />
+  <Access Scope="LocalVariable" UId="350">
+    <Symbol UId="351">
+      <Component Name="sCountSecPulseDay" UId="352" />
+    </Symbol>
+  </Access>
+  <Blank UId="353" />
+  <Token Text="&gt;=" UId="354" />
+  <Blank UId="355" />
+  <Access Scope="LocalConstant" UId="356">
+    <Constant Name="MAX_COUNT_DAY" UId="357" />
+  </Access>
+  <Blank UId="360" />
+  <Token Text="THEN" UId="361" />
+  <NewLine UId="362" />
+  <Blank Num="8" UId="363" />
+  <Access Scope="LocalVariable" UId="364">
+    <Symbol UId="365">
+      <Component Name="sPulseDay" UId="366" />
+    </Symbol>
+  </Access>
+  <Blank UId="367" />
+  <Token Text=":=" UId="368" />
+  <Blank UId="369" />
+  <Access Scope="LiteralConstant" UId="370">
+    <Constant UId="371">
+      <ConstantValue UId="373">TRUE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="374" />
+  <NewLine UId="375" />
+  <Blank Num="8" UId="376" />
+  <Access Scope="LocalVariable" UId="377">
+    <Symbol UId="378">
+      <Component Name="sCountSecPulseDay" UId="379" />
+    </Symbol>
+  </Access>
+  <Blank UId="380" />
+  <Token Text=":=" UId="381" />
+  <Blank UId="382" />
+  <Access Scope="LiteralConstant" UId="383">
+    <Constant UId="384">
+      <ConstantValue UId="386">0</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="387" />
+  <NewLine UId="388" />
+  <Blank Num="4" UId="389" />
+  <Token Text="ELSE" UId="390" />
+  <NewLine UId="391" />
+  <Blank Num="8" UId="392" />
+  <Access Scope="LocalVariable" UId="393">
+    <Symbol UId="394">
+      <Component Name="sPulseDay" UId="395" />
+    </Symbol>
+  </Access>
+  <Blank UId="396" />
+  <Token Text=":=" UId="397" />
+  <Blank UId="398" />
+  <Access Scope="LiteralConstant" UId="399">
+    <Constant UId="400">
+      <ConstantValue UId="402">FALSE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="403" />
+  <NewLine UId="404" />
+  <Blank Num="4" UId="405" />
+  <Token Text="END_IF" UId="406" />
+  <Token Text=";" UId="407" />
+  <NewLine UId="408" />
+  <Token Text="END_REGION" UId="409" />
+</StructuredText></NetworkSource>
+          <ProgrammingLanguage>SCL</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="5" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="6" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="7" CompositionName="Items">
+                <AttributeList>
+                  <Culture>fr-FR</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="8" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="9" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="A" CompositionName="Items">
+                <AttributeList>
+                  <Culture>fr-FR</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <MultilingualText ID="B" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="C" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="D" CompositionName="Items">
+            <AttributeList>
+              <Culture>fr-FR</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Blocks.FB>
+</Document>

@@ -1,0 +1,675 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V20" />
+  <SW.Blocks.GlobalDB ID="0">
+    <AttributeList>
+      <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+  <Section Name="Static">
+    <Member Name="GripperUndrilledClampOpen" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Test</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="GripperUndrilledClampClosed" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Test</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="FixturePosition" Datatype="Real">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Test</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="X_AxisBrakePressCtrl" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Digital Input</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="Y_AxisBrakePressCtrl" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Digital Input</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="BreakerCtrl" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Digital Input</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="CabinetTemperatureCtrl" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Digital Input</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="UpsPowerFailure" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Digital Input</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="AirPressureCtrl" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Digital Input</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="ShutterClosed" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Digital Input</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="AirDryerOK" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Digital Input</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="UPS_BatteryOK" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Digital Input</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="FrontDoorClosed" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Digital Input</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="InfeedReadyOkStart" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Digital Input</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="CoolingOK" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Digital Input</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="PowerReady" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Digital Input</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="AlarmI2T" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Digital Input</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="HeadLaserBusy" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Digital Input</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="HeadLaserBreaker" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Digital Input</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="FrontDoorLocked" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Digital Input</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="UPS_CommonAlarm" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Digital Input</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="UPS_BatteryLow" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Digital Input</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="HeadChillerHighPressure" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Digital Input</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="HeadChillerWaterTemperature" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Digital Input</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="HeadChillerFlow" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Digital Input</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="HeadChillerCollectivFault" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Digital Input</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="HeadChillerWaterLevel" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Digital Input</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="UpsByPassActive" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Digital Input</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="HeadChillerAmbiantTemperature" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Digital Input</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="LoadClampOpened" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Digital Input</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="LoadClampNotClosedWithPart" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Digital Input</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="UnloadClampOpened" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Digital Input</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="UpsFault" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Digital Input</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="InternalGateLocked" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Digital Input</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="ExternalGateLocked" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Digital Input</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="InverterActive" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Digital Input</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="UnloadClampNotClosedWithPart" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Digital Input</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="InternalGateOpened" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Digital Input</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="ExternalGateOpened" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Digital Input</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="PowerMeterBackCtrl" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Digital Input</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="PowerMeterFrontCtrl" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Digital Input</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="HeadChillerCutOff" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Digital Input</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="HeadChillerTemperature" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Digital Input</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="ClampingOpenCtrl" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Digital Input</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="B_AxisBrakeReleasedCtrl" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Digital Input</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="B_AxisReferencePoint" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Digital Input</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="SourceChillerHighPressure" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Digital Input</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="SourceChillerWaterTemperature" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Digital Input</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="SourceChillerFlow" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Digital Input</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="SourceChillerCollectivFault" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Digital Input</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="SourceChillerWaterLevel" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Digital Input</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="SourceChillerAmbiantTemperature" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Digital Input</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="SourceChillerCutOff" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Digital Input</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="SourceChillerTemperature" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Digital Input</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="OperatingCounter" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Digital Output</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="GeneralAirValve" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Digital Output</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="SmartLineDisable" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Digital Output</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="MachineLight" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Digital Output</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="MachineLightBack" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Digital Output</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="LightTowerOrange" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Digital Output</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="LightTowerRed" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Digital Output</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="LightTowerBlue" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Digital Output</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="LightTowerGreen" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Digital Output</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="LightTowerWhite" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Digital Output</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="Backlight" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Digital Output</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="InfeedON" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Digital Output</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="AxisActivation" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Digital Output</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="BuzzerActivation" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Digital Output</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="ElbaronPowerON" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Digital Output</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="ObservationCameraLight" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Digital Output</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="LaserExternalDoorOpening" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Digital Output</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="CoolingStart" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Digital Output</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="X_AxisBrakeActivation" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Digital Output</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="Y_AxisBrakeActivation" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Digital Output</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="AxisB_TeachInClampingPart" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Digital Output</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="EPO_UPS" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Digital Output</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="HeadLaserStart" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Digital Output</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="HeadLaserStop" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Digital Output</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="Axis2_PowerContactor" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Digital Output</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="GasAssistOn" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Digital Output</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="SmartLineReset" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Digital Output</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="XY_AxisPowerContactor" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Digital Output</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="LaserAirPressureProcess" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Digital Output</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="Bus60V_PowerContactor" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Digital Output</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="LoadClampClosing" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Digital Output</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="LoadClampOpening" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Digital Output</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="UnloadClampClosing" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Digital Output</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="UnloadClampOpening" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Digital Output</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="ClampingOpening" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Digital Output</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="ClampingClosing" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Digital Output</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="B_AxisBrakeRelease" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Digital Output</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="Suction" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Digital Output</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="ExternalGateClosing" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Digital Output</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="ExternalGateOpening" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Digital Output</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="InternalGateClosing" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Digital Output</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="InternalGateOpening" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Digital Output</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="PowerMeterRetract" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Digital Output</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="PowerMeterAdvance" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Digital Output</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="Blowing" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Digital Output</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="LaserPowerMeter" Datatype="Real">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Analog Input</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="AxisB_ClampingPart" Datatype="Real">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Analog Input</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="LaserAirPressureProcess_1" Datatype="Real">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Analog Input</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="InletAirPressure" Datatype="Real">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Analog Input</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="AmbiantTemperature" Datatype="Real">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Analog Input</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="MachineTemperature" Datatype="Real">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Analog Input</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="Cold_WaterTemperatureInput" Datatype="Real">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="en-US">Analog Input</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="Cold_WaterTemperatureOutput" Datatype="Real">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Analog Input</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="X_AxisTemperaturePT1000" Datatype="Real">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Analog Input</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="Y_AxisTemperaturePT1000" Datatype="Real">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Analog Input</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="X_AxisTemperaturePTC" Datatype="Real">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Analog Input</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="Y_AxisTemperaturePTC" Datatype="Real">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Analog Input</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="NozzleOverpressure" Datatype="Real">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Analog Input</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="OpticalPathOverpressure" Datatype="Real">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Analog Input</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="LaserHeadOverpressure" Datatype="Real">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Analog Input</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="ZLAxisOverpressure" Datatype="Real">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Analog Input</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="XYAxisOverpressure" Datatype="Real">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Analog Input</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="LeftAspiration" Datatype="Real">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Analog Input</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="RightAspiration" Datatype="Real">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Analog Input</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="ClimTemperature" Datatype="Real">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Analog Input</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="SensorControllerStation1" Datatype="Real">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Analog Input</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="CabinetTemperature" Datatype="Real">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Analog Input</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="NozzleOverpressureSetPoint" Datatype="Real">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Analog Output</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="VentilatorSetPoint" Datatype="Real">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Analog Output</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="PropValveClimSetPoint" Datatype="Real">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Analog Output</MultiLanguageText>
+      </Comment>
+    </Member>
+  </Section>
+</Sections></Interface>
+      <MemoryLayout>Optimized</MemoryLayout>
+      <MemoryReserve>100</MemoryReserve>
+      <Name>DB_OPC_RealTime</Name>
+      <Namespace />
+      <Number>104</Number>
+      <ProgrammingLanguage>DB</ProgrammingLanguage>
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="3" CompositionName="Items">
+            <AttributeList>
+              <Culture>fr-FR</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <MultilingualText ID="4" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="5" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="6" CompositionName="Items">
+            <AttributeList>
+              <Culture>fr-FR</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Blocks.GlobalDB>
+</Document>

@@ -1,0 +1,384 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V20" />
+  <SW.Blocks.FB ID="0">
+    <AttributeList>
+      <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+  <Section Name="Input">
+    <Member Name="iReset" Datatype="Bool" />
+    <Member Name="iGoodEntry" Datatype="Bool" />
+    <Member Name="iBadEntry" Datatype="Bool" />
+    <Member Name="iPresetValue" Datatype="Int" />
+  </Section>
+  <Section Name="Output">
+    <Member Name="oConsecutiveError" Datatype="Bool" />
+  </Section>
+  <Section Name="InOut" />
+  <Section Name="Static">
+    <Member Name="sConsecutiveCounter" Datatype="Int" />
+    <Member Name="sRT_GoodEntry" Datatype="R_TRIG" Version="1.0" />
+    <Member Name="sRT_BadEntry" Datatype="R_TRIG" Version="1.0">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+  </Section>
+  <Section Name="Temp" />
+  <Section Name="Constant" />
+</Sections></Interface>
+      <MemoryLayout>Optimized</MemoryLayout>
+      <MemoryReserve>100</MemoryReserve>
+      <Name>FB_Consecutive</Name>
+      <Namespace />
+      <Number>90</Number>
+      <ProgrammingLanguage>SCL</ProgrammingLanguage>
+      <SetENOAutomatically>false</SetENOAutomatically>
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="3" CompositionName="Items">
+            <AttributeList>
+              <Culture>fr-FR</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <SW.Blocks.CompileUnit ID="4" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource><StructuredText xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/StructuredText/v4">
+  <Token Text="REGION" UId="21" />
+  <Blank UId="22" />
+  <Text UId="23">Description header </Text>
+  <NewLine UId="24" />
+  <Blank Num="4" UId="25" />
+  <LineComment UId="26">
+    <Text UId="27">==================================================================================</Text>
+  </LineComment>
+  <NewLine UId="28" />
+  <Blank Num="4" UId="29" />
+  <LineComment UId="30">
+    <Text UId="31"> POSALUX Swiss SA / (C) Copyright 2026</Text>
+  </LineComment>
+  <NewLine UId="32" />
+  <Blank Num="4" UId="33" />
+  <LineComment UId="34">
+    <Text UId="35">----------------------------------------------------------------------------------</Text>
+  </LineComment>
+  <NewLine UId="36" />
+  <Blank Num="4" UId="37" />
+  <LineComment UId="38">
+    <Text UId="39"> Title: FB_Consecutive</Text>
+  </LineComment>
+  <NewLine UId="40" />
+  <Blank Num="4" UId="41" />
+  <LineComment UId="42">
+    <Text UId="43"> Comment/Function: </Text>
+  </LineComment>
+  <NewLine UId="44" />
+  <Blank Num="4" UId="45" />
+  <LineComment UId="46">
+    <Text UId="47"> Author: Fabien WALDT</Text>
+  </LineComment>
+  <NewLine UId="48" />
+  <Blank Num="4" UId="49" />
+  <LineComment UId="50">
+    <Text UId="51"> Engineering: TIA Portal v20</Text>
+  </LineComment>
+  <NewLine UId="52" />
+  <Blank Num="4" UId="53" />
+  <LineComment UId="54">
+    <Text UId="55">----------------------------------------------------------------------------------</Text>
+  </LineComment>
+  <NewLine UId="56" />
+  <Blank Num="4" UId="57" />
+  <LineComment UId="58">
+    <Text UId="59"> Change log table:</Text>
+  </LineComment>
+  <NewLine UId="60" />
+  <Blank Num="4" UId="61" />
+  <LineComment UId="62">
+    <Text UId="63"> Version  | Date     | Expert in charge | Changes applied</Text>
+  </LineComment>
+  <NewLine UId="64" />
+  <Blank Num="4" UId="65" />
+  <LineComment UId="66">
+    <Text UId="67"> ---------|----------|------------------|-----------------------------------------</Text>
+  </LineComment>
+  <NewLine UId="68" />
+  <Blank Num="4" UId="69" />
+  <LineComment UId="70">
+    <Text UId="71"> 00.00.01 | 20260401 | WFA              | First released version</Text>
+  </LineComment>
+  <NewLine UId="72" />
+  <Blank Num="4" UId="73" />
+  <LineComment UId="74">
+    <Text UId="75"> =================================================================================</Text>
+  </LineComment>
+  <NewLine UId="76" />
+  <Token Text="END_REGION" UId="77" />
+  <NewLine Num="2" UId="78" />
+  <Token Text="REGION" UId="79" />
+  <Blank UId="80" />
+  <Text UId="81">R_Trig</Text>
+  <NewLine UId="82" />
+  <Blank Num="4" UId="83" />
+  <Access Scope="LocalVariable" UId="84">
+    <Symbol UId="85">
+      <Component Name="sRT_GoodEntry" UId="86" />
+    </Symbol>
+  </Access>
+  <Access Scope="Call" UId="87">
+    <Instruction UId="88">
+      <Token Text="(" UId="89" />
+      <Parameter Name="CLK" UId="90">
+        <Blank UId="91" />
+        <Token Text=":=" UId="92" />
+        <Blank UId="93" />
+        <Access Scope="LocalVariable" UId="94">
+          <Symbol UId="95">
+            <Component Name="iGoodEntry" UId="96" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text=")" UId="97" />
+    </Instruction>
+  </Access>
+  <Token Text=";" UId="98" />
+  <NewLine UId="99" />
+  <Blank Num="4" UId="100" />
+  <Access Scope="LocalVariable" UId="101">
+    <Symbol UId="102">
+      <Component Name="sRT_BadEntry" UId="103" />
+    </Symbol>
+  </Access>
+  <Access Scope="Call" UId="104">
+    <Instruction UId="105">
+      <Token Text="(" UId="106" />
+      <Parameter Name="CLK" UId="107">
+        <Blank UId="108" />
+        <Token Text=":=" UId="109" />
+        <Blank UId="110" />
+        <Access Scope="LocalVariable" UId="111">
+          <Symbol UId="112">
+            <Component Name="iBadEntry" UId="113" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text=")" UId="114" />
+    </Instruction>
+  </Access>
+  <Token Text=";" UId="115" />
+  <NewLine UId="116" />
+  <Token Text="END_REGION" UId="117" />
+  <NewLine Num="2" UId="118" />
+  <Token Text="REGION" UId="119" />
+  <Blank UId="120" />
+  <Text UId="121">Consecutive Counter</Text>
+  <NewLine UId="122" />
+  <Blank Num="4" UId="123" />
+  <Token Text="IF" UId="124" />
+  <Blank UId="125" />
+  <Access Scope="LocalVariable" UId="126">
+    <Symbol UId="127">
+      <Component Name="sRT_GoodEntry" UId="128" />
+      <Token Text="." UId="129" />
+      <Component Name="Q" UId="130" />
+    </Symbol>
+  </Access>
+  <Blank UId="131" />
+  <Token Text="OR" UId="132" />
+  <Blank UId="133" />
+  <Access Scope="LocalVariable" UId="134">
+    <Symbol UId="135">
+      <Component Name="iReset" UId="136" />
+    </Symbol>
+  </Access>
+  <Blank UId="137" />
+  <Token Text="THEN" UId="138" />
+  <NewLine UId="139" />
+  <Blank Num="8" UId="140" />
+  <Access Scope="LocalVariable" UId="141">
+    <Symbol UId="142">
+      <Component Name="oConsecutiveError" UId="143" />
+    </Symbol>
+  </Access>
+  <Blank UId="144" />
+  <Token Text=":=" UId="145" />
+  <Blank UId="146" />
+  <Access Scope="LiteralConstant" UId="147">
+    <Constant UId="148">
+      <ConstantValue UId="150">FALSE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="151" />
+  <NewLine UId="152" />
+  <Blank Num="8" UId="153" />
+  <Access Scope="LocalVariable" UId="154">
+    <Symbol UId="155">
+      <Component Name="sConsecutiveCounter" UId="156" />
+    </Symbol>
+  </Access>
+  <Blank UId="157" />
+  <Token Text=":=" UId="158" />
+  <Blank UId="159" />
+  <Access Scope="LiteralConstant" UId="160">
+    <Constant UId="161">
+      <ConstantValue UId="163">0</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="164" />
+  <NewLine UId="165" />
+  <Blank Num="4" UId="166" />
+  <Token Text="END_IF" UId="167" />
+  <Token Text=";" UId="168" />
+  <NewLine UId="169" />
+  <Blank Num="4" UId="170" />
+  <NewLine UId="171" />
+  <Blank Num="4" UId="172" />
+  <Token Text="IF" UId="173" />
+  <Blank UId="174" />
+  <Access Scope="LocalVariable" UId="175">
+    <Symbol UId="176">
+      <Component Name="sRT_BadEntry" UId="177" />
+      <Token Text="." UId="178" />
+      <Component Name="Q" UId="179" />
+    </Symbol>
+  </Access>
+  <Blank UId="180" />
+  <Token Text="THEN" UId="181" />
+  <NewLine UId="182" />
+  <Blank Num="8" UId="183" />
+  <Access Scope="LocalVariable" UId="184">
+    <Symbol UId="185">
+      <Component Name="sConsecutiveCounter" UId="186" />
+    </Symbol>
+  </Access>
+  <Blank UId="187" />
+  <Token Text=":=" UId="188" />
+  <Blank UId="189" />
+  <Access Scope="LocalVariable" UId="190">
+    <Symbol UId="191">
+      <Component Name="sConsecutiveCounter" UId="192" />
+    </Symbol>
+  </Access>
+  <Blank UId="193" />
+  <Token Text="+" UId="194" />
+  <Blank UId="195" />
+  <Access Scope="LiteralConstant" UId="196">
+    <Constant UId="197">
+      <ConstantValue UId="199">1</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="200" />
+  <NewLine UId="201" />
+  <Blank Num="4" UId="202" />
+  <Token Text="END_IF" UId="203" />
+  <Token Text=";" UId="204" />
+  <NewLine UId="205" />
+  <Blank Num="4" UId="206" />
+  <NewLine UId="207" />
+  <Blank Num="4" UId="208" />
+  <Token Text="IF" UId="209" />
+  <Blank UId="210" />
+  <Access Scope="LocalVariable" UId="211">
+    <Symbol UId="212">
+      <Component Name="sConsecutiveCounter" UId="213" />
+    </Symbol>
+  </Access>
+  <Blank UId="214" />
+  <Token Text="&gt;=" UId="215" />
+  <Blank UId="216" />
+  <Access Scope="LocalVariable" UId="217">
+    <Symbol UId="218">
+      <Component Name="iPresetValue" UId="219" />
+    </Symbol>
+  </Access>
+  <Blank UId="220" />
+  <Token Text="THEN" UId="221" />
+  <NewLine UId="222" />
+  <Blank Num="8" UId="223" />
+  <Access Scope="LocalVariable" UId="224">
+    <Symbol UId="225">
+      <Component Name="oConsecutiveError" UId="226" />
+    </Symbol>
+  </Access>
+  <Blank UId="227" />
+  <Token Text=":=" UId="228" />
+  <Blank UId="229" />
+  <Access Scope="LiteralConstant" UId="230">
+    <Constant UId="231">
+      <ConstantValue UId="233">TRUE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="234" />
+  <NewLine UId="235" />
+  <Blank Num="4" UId="236" />
+  <Token Text="END_IF" UId="237" />
+  <Token Text=";" UId="238" />
+  <NewLine UId="239" />
+  <Token Text="END_REGION" UId="240" />
+</StructuredText></NetworkSource>
+          <ProgrammingLanguage>SCL</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="5" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="6" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="7" CompositionName="Items">
+                <AttributeList>
+                  <Culture>fr-FR</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="8" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="9" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="A" CompositionName="Items">
+                <AttributeList>
+                  <Culture>fr-FR</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <MultilingualText ID="B" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="C" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="D" CompositionName="Items">
+            <AttributeList>
+              <Culture>fr-FR</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Blocks.FB>
+</Document>

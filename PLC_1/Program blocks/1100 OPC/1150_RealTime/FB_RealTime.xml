@@ -1,0 +1,3343 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V20" />
+  <SW.Blocks.FB ID="0">
+    <AttributeList>
+      <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+  <Section Name="Input" />
+  <Section Name="Output" />
+  <Section Name="InOut" />
+  <Section Name="Static" />
+  <Section Name="Temp" />
+  <Section Name="Constant" />
+</Sections></Interface>
+      <MemoryLayout>Optimized</MemoryLayout>
+      <MemoryReserve>100</MemoryReserve>
+      <Name>FB_RealTime</Name>
+      <Namespace />
+      <Number>74</Number>
+      <ProgrammingLanguage>SCL</ProgrammingLanguage>
+      <SetENOAutomatically>false</SetENOAutomatically>
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="3" CompositionName="Items">
+            <AttributeList>
+              <Culture>fr-FR</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <SW.Blocks.CompileUnit ID="4" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource><StructuredText xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/StructuredText/v4">
+  <Token Text="REGION" UId="21" />
+  <Blank UId="22" />
+  <Text UId="23">Description header </Text>
+  <NewLine UId="24" />
+  <Blank Num="4" UId="25" />
+  <LineComment UId="26">
+    <Text UId="27">==================================================================================</Text>
+  </LineComment>
+  <NewLine UId="28" />
+  <Blank Num="4" UId="29" />
+  <LineComment UId="30">
+    <Text UId="31"> POSALUX Swiss SA / (C) Copyright 2024</Text>
+  </LineComment>
+  <NewLine UId="32" />
+  <Blank Num="4" UId="33" />
+  <LineComment UId="34">
+    <Text UId="35">----------------------------------------------------------------------------------</Text>
+  </LineComment>
+  <NewLine UId="36" />
+  <Blank Num="4" UId="37" />
+  <LineComment UId="38">
+    <Text UId="39"> Title: FB_RealTime</Text>
+  </LineComment>
+  <NewLine UId="40" />
+  <Blank Num="4" UId="41" />
+  <LineComment UId="42">
+    <Text UId="43"> Comment/Function: </Text>
+  </LineComment>
+  <NewLine UId="44" />
+  <Blank Num="4" UId="45" />
+  <LineComment UId="46">
+    <Text UId="47" />
+  </LineComment>
+  <NewLine UId="48" />
+  <Blank Num="4" UId="49" />
+  <LineComment UId="50">
+    <Text UId="51"> Author: Fabien WALDT</Text>
+  </LineComment>
+  <NewLine UId="52" />
+  <Blank Num="4" UId="53" />
+  <LineComment UId="54">
+    <Text UId="55"> Engineering: TIA Portal v20</Text>
+  </LineComment>
+  <NewLine UId="56" />
+  <Blank Num="4" UId="57" />
+  <LineComment UId="58">
+    <Text UId="59">----------------------------------------------------------------------------------</Text>
+  </LineComment>
+  <NewLine UId="60" />
+  <Blank Num="4" UId="61" />
+  <LineComment UId="62">
+    <Text UId="63"> Change log table:</Text>
+  </LineComment>
+  <NewLine UId="64" />
+  <Blank Num="4" UId="65" />
+  <LineComment UId="66">
+    <Text UId="67"> Version  | Date     | Expert in charge | Changes applied</Text>
+  </LineComment>
+  <NewLine UId="68" />
+  <Blank Num="4" UId="69" />
+  <LineComment UId="70">
+    <Text UId="71"> ---------|----------|------------------|------------------------------------</Text>
+  </LineComment>
+  <NewLine UId="72" />
+  <Blank Num="4" UId="73" />
+  <LineComment UId="74">
+    <Text UId="75"> 00.00.01 | 20260127 | WFA              | First released version</Text>
+  </LineComment>
+  <NewLine UId="76" />
+  <Blank Num="4" UId="77" />
+  <LineComment UId="78">
+    <Text UId="79"> ==================================================================================</Text>
+  </LineComment>
+  <NewLine UId="80" />
+  <Token Text="END_REGION" UId="81" />
+  <NewLine Num="2" UId="82" />
+  <Token Text="REGION" UId="83" />
+  <Blank UId="84" />
+  <Text UId="85">Digital Inputs</Text>
+  <NewLine UId="86" />
+  <Blank Num="4" UId="87" />
+  <Access Scope="GlobalVariable" UId="88">
+    <Symbol UId="89">
+      <Component Name="DB_OPC_RealTime" UId="90">
+        <BooleanAttribute Name="HasQuotes" UId="91">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="92" />
+      <Component Name="X_AxisBrakePressCtrl" UId="93" />
+    </Symbol>
+  </Access>
+  <Blank UId="94" />
+  <Token Text=":=" UId="95" />
+  <Blank UId="96" />
+  <Access Scope="GlobalVariable" UId="97">
+    <Symbol UId="98">
+      <Component Name="DB_DigitalInputs" UId="99">
+        <BooleanAttribute Name="HasQuotes" UId="100">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="101" />
+      <Component Name="sX_AxisBrakePressCtrl" UId="102" />
+      <Token Text="." UId="103" />
+      <Component Name="sSWStatus" UId="104" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="105" />
+  <NewLine UId="106" />
+  <Blank Num="4" UId="107" />
+  <Access Scope="GlobalVariable" UId="108">
+    <Symbol UId="109">
+      <Component Name="DB_OPC_RealTime" UId="110">
+        <BooleanAttribute Name="HasQuotes" UId="111">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="112" />
+      <Component Name="Y_AxisBrakePressCtrl" UId="113" />
+    </Symbol>
+  </Access>
+  <Blank UId="114" />
+  <Token Text=":=" UId="115" />
+  <Blank UId="116" />
+  <Access Scope="GlobalVariable" UId="117">
+    <Symbol UId="118">
+      <Component Name="DB_DigitalInputs" UId="119">
+        <BooleanAttribute Name="HasQuotes" UId="120">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="121" />
+      <Component Name="sY_AxisBrakePressCtrl" UId="122" />
+      <Token Text="." UId="123" />
+      <Component Name="sSWStatus" UId="124" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="125" />
+  <NewLine UId="126" />
+  <Blank Num="4" UId="127" />
+  <Access Scope="GlobalVariable" UId="128">
+    <Symbol UId="129">
+      <Component Name="DB_OPC_RealTime" UId="130">
+        <BooleanAttribute Name="HasQuotes" UId="131">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="132" />
+      <Component Name="BreakerCtrl" UId="133" />
+    </Symbol>
+  </Access>
+  <Blank UId="134" />
+  <Token Text=":=" UId="135" />
+  <Blank UId="136" />
+  <Access Scope="GlobalVariable" UId="137">
+    <Symbol UId="138">
+      <Component Name="DB_DigitalInputs" UId="139">
+        <BooleanAttribute Name="HasQuotes" UId="140">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="141" />
+      <Component Name="sBreakerCtrl" UId="142" />
+      <Token Text="." UId="143" />
+      <Component Name="sSWStatus" UId="144" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="145" />
+  <NewLine UId="146" />
+  <Blank Num="4" UId="147" />
+  <Access Scope="GlobalVariable" UId="148">
+    <Symbol UId="149">
+      <Component Name="DB_OPC_RealTime" UId="150">
+        <BooleanAttribute Name="HasQuotes" UId="151">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="152" />
+      <Component Name="CabinetTemperatureCtrl" UId="153" />
+    </Symbol>
+  </Access>
+  <Blank UId="154" />
+  <Token Text=":=" UId="155" />
+  <Blank UId="156" />
+  <Access Scope="GlobalVariable" UId="157">
+    <Symbol UId="158">
+      <Component Name="DB_DigitalInputs" UId="159">
+        <BooleanAttribute Name="HasQuotes" UId="160">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="161" />
+      <Component Name="sCabinetTemperatureCtrl" UId="162" />
+      <Token Text="." UId="163" />
+      <Component Name="sSWStatus" UId="164" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="165" />
+  <NewLine UId="166" />
+  <Blank Num="4" UId="167" />
+  <Access Scope="GlobalVariable" UId="168">
+    <Symbol UId="169">
+      <Component Name="DB_OPC_RealTime" UId="170">
+        <BooleanAttribute Name="HasQuotes" UId="171">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="172" />
+      <Component Name="UpsPowerFailure" UId="173" />
+    </Symbol>
+  </Access>
+  <Blank UId="174" />
+  <Token Text=":=" UId="175" />
+  <Blank UId="176" />
+  <Access Scope="GlobalVariable" UId="177">
+    <Symbol UId="178">
+      <Component Name="DB_DigitalInputs" UId="179">
+        <BooleanAttribute Name="HasQuotes" UId="180">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="181" />
+      <Component Name="sUPS_PowerFailure" UId="182" />
+      <Token Text="." UId="183" />
+      <Component Name="sSWStatus" UId="184" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="185" />
+  <NewLine UId="186" />
+  <Blank Num="4" UId="187" />
+  <Access Scope="GlobalVariable" UId="188">
+    <Symbol UId="189">
+      <Component Name="DB_OPC_RealTime" UId="190">
+        <BooleanAttribute Name="HasQuotes" UId="191">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="192" />
+      <Component Name="AirPressureCtrl" UId="193" />
+    </Symbol>
+  </Access>
+  <Blank UId="194" />
+  <Token Text=":=" UId="195" />
+  <Blank UId="196" />
+  <Access Scope="GlobalVariable" UId="197">
+    <Symbol UId="198">
+      <Component Name="DB_DigitalInputs" UId="199">
+        <BooleanAttribute Name="HasQuotes" UId="200">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="201" />
+      <Component Name="sAirPressureCtrl" UId="202" />
+      <Token Text="." UId="203" />
+      <Component Name="sSWStatus" UId="204" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="205" />
+  <NewLine UId="206" />
+  <Blank Num="4" UId="207" />
+  <Access Scope="GlobalVariable" UId="208">
+    <Symbol UId="209">
+      <Component Name="DB_OPC_RealTime" UId="210">
+        <BooleanAttribute Name="HasQuotes" UId="211">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="212" />
+      <Component Name="ShutterClosed" UId="213" />
+    </Symbol>
+  </Access>
+  <Blank UId="214" />
+  <Token Text=":=" UId="215" />
+  <Blank UId="216" />
+  <Access Scope="GlobalVariable" UId="217">
+    <Symbol UId="218">
+      <Component Name="DB_DigitalInputs" UId="219">
+        <BooleanAttribute Name="HasQuotes" UId="220">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="221" />
+      <Component Name="sShutterClosed" UId="222" />
+      <Token Text="." UId="223" />
+      <Component Name="sSWStatus" UId="224" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="225" />
+  <NewLine UId="226" />
+  <Blank Num="4" UId="227" />
+  <Access Scope="GlobalVariable" UId="228">
+    <Symbol UId="229">
+      <Component Name="DB_OPC_RealTime" UId="230">
+        <BooleanAttribute Name="HasQuotes" UId="231">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="232" />
+      <Component Name="AirDryerOK" UId="233" />
+    </Symbol>
+  </Access>
+  <Blank UId="234" />
+  <Token Text=":=" UId="235" />
+  <Blank UId="236" />
+  <Access Scope="GlobalVariable" UId="237">
+    <Symbol UId="238">
+      <Component Name="DB_DigitalInputs" UId="239">
+        <BooleanAttribute Name="HasQuotes" UId="240">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="241" />
+      <Component Name="sAirDryerOK" UId="242" />
+      <Token Text="." UId="243" />
+      <Component Name="sSWStatus" UId="244" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="245" />
+  <NewLine UId="246" />
+  <Blank Num="4" UId="247" />
+  <Access Scope="GlobalVariable" UId="248">
+    <Symbol UId="249">
+      <Component Name="DB_OPC_RealTime" UId="250">
+        <BooleanAttribute Name="HasQuotes" UId="251">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="252" />
+      <Component Name="UPS_BatteryOK" UId="253" />
+    </Symbol>
+  </Access>
+  <Blank UId="254" />
+  <Token Text=":=" UId="255" />
+  <Blank UId="256" />
+  <Access Scope="GlobalVariable" UId="257">
+    <Symbol UId="258">
+      <Component Name="DB_DigitalInputs" UId="259">
+        <BooleanAttribute Name="HasQuotes" UId="260">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="261" />
+      <Component Name="sUPS_BatteryOK" UId="262" />
+      <Token Text="." UId="263" />
+      <Component Name="sSWStatus" UId="264" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="265" />
+  <NewLine UId="266" />
+  <Blank Num="4" UId="267" />
+  <Access Scope="GlobalVariable" UId="268">
+    <Symbol UId="269">
+      <Component Name="DB_OPC_RealTime" UId="270">
+        <BooleanAttribute Name="HasQuotes" UId="271">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="272" />
+      <Component Name="FrontDoorClosed" UId="273" />
+    </Symbol>
+  </Access>
+  <Blank UId="274" />
+  <Token Text=":=" UId="275" />
+  <Blank UId="276" />
+  <Access Scope="GlobalVariable" UId="277">
+    <Symbol UId="278">
+      <Component Name="DB_DigitalInputs" UId="279">
+        <BooleanAttribute Name="HasQuotes" UId="280">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="281" />
+      <Component Name="sFrontDoorClosed" UId="282" />
+      <Token Text="." UId="283" />
+      <Component Name="sSWStatus" UId="284" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="285" />
+  <NewLine UId="286" />
+  <Blank Num="4" UId="287" />
+  <Access Scope="GlobalVariable" UId="288">
+    <Symbol UId="289">
+      <Component Name="DB_OPC_RealTime" UId="290">
+        <BooleanAttribute Name="HasQuotes" UId="291">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="292" />
+      <Component Name="InfeedReadyOkStart" UId="293" />
+    </Symbol>
+  </Access>
+  <Blank UId="294" />
+  <Token Text=":=" UId="295" />
+  <Blank UId="296" />
+  <Access Scope="GlobalVariable" UId="297">
+    <Symbol UId="298">
+      <Component Name="DB_DigitalInputs" UId="299">
+        <BooleanAttribute Name="HasQuotes" UId="300">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="301" />
+      <Component Name="sInfeedReadyOK_Start" UId="302" />
+      <Token Text="." UId="303" />
+      <Component Name="sSWStatus" UId="304" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="305" />
+  <NewLine UId="306" />
+  <Blank Num="4" UId="307" />
+  <Access Scope="GlobalVariable" UId="308">
+    <Symbol UId="309">
+      <Component Name="DB_OPC_RealTime" UId="310">
+        <BooleanAttribute Name="HasQuotes" UId="311">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="312" />
+      <Component Name="CoolingOK" UId="313" />
+    </Symbol>
+  </Access>
+  <Blank UId="314" />
+  <Token Text=":=" UId="315" />
+  <Blank UId="316" />
+  <Access Scope="GlobalVariable" UId="317">
+    <Symbol UId="318">
+      <Component Name="DB_DigitalInputs" UId="319">
+        <BooleanAttribute Name="HasQuotes" UId="320">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="321" />
+      <Component Name="sCoolingOK" UId="322" />
+      <Token Text="." UId="323" />
+      <Component Name="sSWStatus" UId="324" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="325" />
+  <NewLine UId="326" />
+  <Blank Num="4" UId="327" />
+  <Access Scope="GlobalVariable" UId="328">
+    <Symbol UId="329">
+      <Component Name="DB_OPC_RealTime" UId="330">
+        <BooleanAttribute Name="HasQuotes" UId="331">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="332" />
+      <Component Name="PowerReady" UId="333" />
+    </Symbol>
+  </Access>
+  <Blank UId="334" />
+  <Token Text=":=" UId="335" />
+  <Blank UId="336" />
+  <Access Scope="GlobalVariable" UId="337">
+    <Symbol UId="338">
+      <Component Name="DB_DigitalInputs" UId="339">
+        <BooleanAttribute Name="HasQuotes" UId="340">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="341" />
+      <Component Name="sPowerReady" UId="342" />
+      <Token Text="." UId="343" />
+      <Component Name="sSWStatus" UId="344" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="345" />
+  <NewLine UId="346" />
+  <Blank Num="4" UId="347" />
+  <Access Scope="GlobalVariable" UId="348">
+    <Symbol UId="349">
+      <Component Name="DB_OPC_RealTime" UId="350">
+        <BooleanAttribute Name="HasQuotes" UId="351">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="352" />
+      <Component Name="AlarmI2T" UId="353" />
+    </Symbol>
+  </Access>
+  <Blank UId="354" />
+  <Token Text=":=" UId="355" />
+  <Blank UId="356" />
+  <Access Scope="GlobalVariable" UId="357">
+    <Symbol UId="358">
+      <Component Name="DB_DigitalInputs" UId="359">
+        <BooleanAttribute Name="HasQuotes" UId="360">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="361" />
+      <Component Name="sAlarmI2T" UId="362" />
+      <Token Text="." UId="363" />
+      <Component Name="sSWStatus" UId="364" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="365" />
+  <NewLine UId="366" />
+  <Blank Num="4" UId="367" />
+  <Access Scope="GlobalVariable" UId="368">
+    <Symbol UId="369">
+      <Component Name="DB_OPC_RealTime" UId="370">
+        <BooleanAttribute Name="HasQuotes" UId="371">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="372" />
+      <Component Name="HeadLaserBusy" UId="373" />
+    </Symbol>
+  </Access>
+  <Blank UId="374" />
+  <Token Text=":=" UId="375" />
+  <Blank UId="376" />
+  <Access Scope="GlobalVariable" UId="377">
+    <Symbol UId="378">
+      <Component Name="DB_DigitalInputs" UId="379">
+        <BooleanAttribute Name="HasQuotes" UId="380">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="381" />
+      <Component Name="sHeadLaserBusy" UId="382" />
+      <Token Text="." UId="383" />
+      <Component Name="sSWStatus" UId="384" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="385" />
+  <NewLine UId="386" />
+  <Blank Num="4" UId="387" />
+  <Access Scope="GlobalVariable" UId="388">
+    <Symbol UId="389">
+      <Component Name="DB_OPC_RealTime" UId="390">
+        <BooleanAttribute Name="HasQuotes" UId="391">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="392" />
+      <Component Name="HeadLaserBreaker" UId="393" />
+    </Symbol>
+  </Access>
+  <Blank UId="394" />
+  <Token Text=":=" UId="395" />
+  <Blank UId="396" />
+  <Access Scope="GlobalVariable" UId="397">
+    <Symbol UId="398">
+      <Component Name="DB_DigitalInputs" UId="399">
+        <BooleanAttribute Name="HasQuotes" UId="400">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="401" />
+      <Component Name="sHeadLaserBreaker" UId="402" />
+      <Token Text="." UId="403" />
+      <Component Name="sSWStatus" UId="404" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="405" />
+  <NewLine UId="406" />
+  <Blank Num="4" UId="407" />
+  <Access Scope="GlobalVariable" UId="408">
+    <Symbol UId="409">
+      <Component Name="DB_OPC_RealTime" UId="410">
+        <BooleanAttribute Name="HasQuotes" UId="411">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="412" />
+      <Component Name="FrontDoorLocked" UId="413" />
+    </Symbol>
+  </Access>
+  <Blank UId="414" />
+  <Token Text=":=" UId="415" />
+  <Blank UId="416" />
+  <Access Scope="GlobalVariable" UId="417">
+    <Symbol UId="418">
+      <Component Name="DB_DigitalInputs" UId="419">
+        <BooleanAttribute Name="HasQuotes" UId="420">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="421" />
+      <Component Name="sFrontDoorLocked" UId="422" />
+      <Token Text="." UId="423" />
+      <Component Name="sSWStatus" UId="424" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="425" />
+  <NewLine UId="426" />
+  <Blank Num="4" UId="427" />
+  <Access Scope="GlobalVariable" UId="428">
+    <Symbol UId="429">
+      <Component Name="DB_OPC_RealTime" UId="430">
+        <BooleanAttribute Name="HasQuotes" UId="431">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="432" />
+      <Component Name="UPS_CommonAlarm" UId="433" />
+    </Symbol>
+  </Access>
+  <Blank UId="434" />
+  <Token Text=":=" UId="435" />
+  <Blank UId="436" />
+  <Access Scope="GlobalVariable" UId="437">
+    <Symbol UId="438">
+      <Component Name="DB_DigitalInputs" UId="439">
+        <BooleanAttribute Name="HasQuotes" UId="440">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="441" />
+      <Component Name="sUPS_CommonAlarm" UId="442" />
+      <Token Text="." UId="443" />
+      <Component Name="sSWStatus" UId="444" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="445" />
+  <NewLine UId="446" />
+  <Blank Num="4" UId="447" />
+  <Access Scope="GlobalVariable" UId="448">
+    <Symbol UId="449">
+      <Component Name="DB_OPC_RealTime" UId="450">
+        <BooleanAttribute Name="HasQuotes" UId="451">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="452" />
+      <Component Name="UPS_BatteryLow" UId="453" />
+    </Symbol>
+  </Access>
+  <Blank UId="454" />
+  <Token Text=":=" UId="455" />
+  <Blank UId="456" />
+  <Access Scope="GlobalVariable" UId="457">
+    <Symbol UId="458">
+      <Component Name="DB_DigitalInputs" UId="459">
+        <BooleanAttribute Name="HasQuotes" UId="460">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="461" />
+      <Component Name="sUPS_BatteryLow" UId="462" />
+      <Token Text="." UId="463" />
+      <Component Name="sSWStatus" UId="464" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="465" />
+  <NewLine UId="466" />
+  <Blank Num="4" UId="467" />
+  <Access Scope="GlobalVariable" UId="468">
+    <Symbol UId="469">
+      <Component Name="DB_OPC_RealTime" UId="470">
+        <BooleanAttribute Name="HasQuotes" UId="471">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="472" />
+      <Component Name="HeadChillerHighPressure" UId="473" />
+    </Symbol>
+  </Access>
+  <Blank UId="474" />
+  <Token Text=":=" UId="475" />
+  <Blank UId="476" />
+  <Access Scope="GlobalVariable" UId="477">
+    <Symbol UId="478">
+      <Component Name="DB_DigitalInputs" UId="479">
+        <BooleanAttribute Name="HasQuotes" UId="480">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="481" />
+      <Component Name="sHeadChillerHighPressure" UId="482" />
+      <Token Text="." UId="483" />
+      <Component Name="sSWStatus" UId="484" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="485" />
+  <NewLine UId="486" />
+  <Blank Num="4" UId="487" />
+  <Access Scope="GlobalVariable" UId="488">
+    <Symbol UId="489">
+      <Component Name="DB_OPC_RealTime" UId="490">
+        <BooleanAttribute Name="HasQuotes" UId="491">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="492" />
+      <Component Name="HeadChillerWaterTemperature" UId="493" />
+    </Symbol>
+  </Access>
+  <Blank UId="494" />
+  <Token Text=":=" UId="495" />
+  <Blank UId="496" />
+  <Access Scope="GlobalVariable" UId="497">
+    <Symbol UId="498">
+      <Component Name="DB_DigitalInputs" UId="499">
+        <BooleanAttribute Name="HasQuotes" UId="500">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="501" />
+      <Component Name="sHeadChillerWaterTemperature" UId="502" />
+      <Token Text="." UId="503" />
+      <Component Name="sSWStatus" UId="504" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="505" />
+  <NewLine UId="506" />
+  <Blank Num="4" UId="507" />
+  <Access Scope="GlobalVariable" UId="508">
+    <Symbol UId="509">
+      <Component Name="DB_OPC_RealTime" UId="510">
+        <BooleanAttribute Name="HasQuotes" UId="511">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="512" />
+      <Component Name="HeadChillerFlow" UId="513" />
+    </Symbol>
+  </Access>
+  <Blank UId="514" />
+  <Token Text=":=" UId="515" />
+  <Blank UId="516" />
+  <Access Scope="GlobalVariable" UId="517">
+    <Symbol UId="518">
+      <Component Name="DB_DigitalInputs" UId="519">
+        <BooleanAttribute Name="HasQuotes" UId="520">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="521" />
+      <Component Name="sHeadChillerFlow" UId="522" />
+      <Token Text="." UId="523" />
+      <Component Name="sSWStatus" UId="524" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="525" />
+  <NewLine UId="526" />
+  <Blank Num="4" UId="527" />
+  <Access Scope="GlobalVariable" UId="528">
+    <Symbol UId="529">
+      <Component Name="DB_OPC_RealTime" UId="530">
+        <BooleanAttribute Name="HasQuotes" UId="531">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="532" />
+      <Component Name="HeadChillerCollectivFault" UId="533" />
+    </Symbol>
+  </Access>
+  <Blank UId="534" />
+  <Token Text=":=" UId="535" />
+  <Blank UId="536" />
+  <Access Scope="GlobalVariable" UId="537">
+    <Symbol UId="538">
+      <Component Name="DB_DigitalInputs" UId="539">
+        <BooleanAttribute Name="HasQuotes" UId="540">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="541" />
+      <Component Name="sHeadChillerCollectivFault" UId="542" />
+      <Token Text="." UId="543" />
+      <Component Name="sSWStatus" UId="544" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="545" />
+  <NewLine UId="546" />
+  <Blank Num="4" UId="547" />
+  <Access Scope="GlobalVariable" UId="548">
+    <Symbol UId="549">
+      <Component Name="DB_OPC_RealTime" UId="550">
+        <BooleanAttribute Name="HasQuotes" UId="551">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="552" />
+      <Component Name="HeadChillerWaterLevel" UId="553" />
+    </Symbol>
+  </Access>
+  <Blank UId="554" />
+  <Token Text=":=" UId="555" />
+  <Blank UId="556" />
+  <Access Scope="GlobalVariable" UId="557">
+    <Symbol UId="558">
+      <Component Name="DB_DigitalInputs" UId="559">
+        <BooleanAttribute Name="HasQuotes" UId="560">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="561" />
+      <Component Name="sHeadChillerWaterLevel" UId="562" />
+      <Token Text="." UId="563" />
+      <Component Name="sSWStatus" UId="564" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="565" />
+  <NewLine UId="566" />
+  <Blank Num="4" UId="567" />
+  <Access Scope="GlobalVariable" UId="568">
+    <Symbol UId="569">
+      <Component Name="DB_OPC_RealTime" UId="570">
+        <BooleanAttribute Name="HasQuotes" UId="571">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="572" />
+      <Component Name="UpsByPassActive" UId="573" />
+    </Symbol>
+  </Access>
+  <Blank UId="574" />
+  <Token Text=":=" UId="575" />
+  <Blank UId="576" />
+  <Access Scope="GlobalVariable" UId="577">
+    <Symbol UId="578">
+      <Component Name="DB_DigitalInputs" UId="579">
+        <BooleanAttribute Name="HasQuotes" UId="580">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="581" />
+      <Component Name="sUPS_ByPassActive" UId="582" />
+      <Token Text="." UId="583" />
+      <Component Name="sSWStatus" UId="584" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="585" />
+  <NewLine UId="586" />
+  <Blank Num="4" UId="587" />
+  <Access Scope="GlobalVariable" UId="588">
+    <Symbol UId="589">
+      <Component Name="DB_OPC_RealTime" UId="590">
+        <BooleanAttribute Name="HasQuotes" UId="591">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="592" />
+      <Component Name="HeadChillerAmbiantTemperature" UId="593" />
+    </Symbol>
+  </Access>
+  <Blank UId="594" />
+  <Token Text=":=" UId="595" />
+  <Blank UId="596" />
+  <Access Scope="GlobalVariable" UId="597">
+    <Symbol UId="598">
+      <Component Name="DB_DigitalInputs" UId="599">
+        <BooleanAttribute Name="HasQuotes" UId="600">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="601" />
+      <Component Name="sHeadChillerAmbiantTemperature" UId="602" />
+      <Token Text="." UId="603" />
+      <Component Name="sSWStatus" UId="604" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="605" />
+  <NewLine UId="606" />
+  <Blank Num="4" UId="607" />
+  <Access Scope="GlobalVariable" UId="608">
+    <Symbol UId="609">
+      <Component Name="DB_OPC_RealTime" UId="610">
+        <BooleanAttribute Name="HasQuotes" UId="611">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="612" />
+      <Component Name="LoadClampOpened" UId="613" />
+    </Symbol>
+  </Access>
+  <Blank UId="614" />
+  <Token Text=":=" UId="615" />
+  <Blank UId="616" />
+  <Access Scope="GlobalVariable" UId="617">
+    <Symbol UId="618">
+      <Component Name="DB_DigitalInputs" UId="619">
+        <BooleanAttribute Name="HasQuotes" UId="620">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="621" />
+      <Component Name="sLoadClampOpened" UId="622" />
+      <Token Text="." UId="623" />
+      <Component Name="sSWStatus" UId="624" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="625" />
+  <NewLine UId="626" />
+  <Blank Num="4" UId="627" />
+  <Access Scope="GlobalVariable" UId="628">
+    <Symbol UId="629">
+      <Component Name="DB_OPC_RealTime" UId="630">
+        <BooleanAttribute Name="HasQuotes" UId="631">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="632" />
+      <Component Name="LoadClampNotClosedWithPart" UId="633" />
+    </Symbol>
+  </Access>
+  <Blank UId="634" />
+  <Token Text=":=" UId="635" />
+  <Blank UId="636" />
+  <Access Scope="GlobalVariable" UId="637">
+    <Symbol UId="638">
+      <Component Name="DB_DigitalInputs" UId="639">
+        <BooleanAttribute Name="HasQuotes" UId="640">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="641" />
+      <Component Name="sLoadClampNotClosedWithPart" UId="642" />
+      <Token Text="." UId="643" />
+      <Component Name="sSWStatus" UId="644" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="645" />
+  <NewLine UId="646" />
+  <Blank Num="4" UId="647" />
+  <Access Scope="GlobalVariable" UId="648">
+    <Symbol UId="649">
+      <Component Name="DB_OPC_RealTime" UId="650">
+        <BooleanAttribute Name="HasQuotes" UId="651">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="652" />
+      <Component Name="UnloadClampOpened" UId="653" />
+    </Symbol>
+  </Access>
+  <Blank UId="654" />
+  <Token Text=":=" UId="655" />
+  <Blank UId="656" />
+  <Access Scope="GlobalVariable" UId="657">
+    <Symbol UId="658">
+      <Component Name="DB_DigitalInputs" UId="659">
+        <BooleanAttribute Name="HasQuotes" UId="660">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="661" />
+      <Component Name="sUnloadClampOpened" UId="662" />
+      <Token Text="." UId="663" />
+      <Component Name="sSWStatus" UId="664" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="665" />
+  <NewLine UId="666" />
+  <Blank Num="4" UId="667" />
+  <Access Scope="GlobalVariable" UId="668">
+    <Symbol UId="669">
+      <Component Name="DB_OPC_RealTime" UId="670">
+        <BooleanAttribute Name="HasQuotes" UId="671">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="672" />
+      <Component Name="UpsFault" UId="673" />
+    </Symbol>
+  </Access>
+  <Blank UId="674" />
+  <Token Text=":=" UId="675" />
+  <Blank UId="676" />
+  <Access Scope="GlobalVariable" UId="677">
+    <Symbol UId="678">
+      <Component Name="DB_DigitalInputs" UId="679">
+        <BooleanAttribute Name="HasQuotes" UId="680">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="681" />
+      <Component Name="sUPS_Fault" UId="682" />
+      <Token Text="." UId="683" />
+      <Component Name="sSWStatus" UId="684" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="685" />
+  <NewLine UId="686" />
+  <Blank Num="4" UId="687" />
+  <Access Scope="GlobalVariable" UId="688">
+    <Symbol UId="689">
+      <Component Name="DB_OPC_RealTime" UId="690">
+        <BooleanAttribute Name="HasQuotes" UId="691">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="692" />
+      <Component Name="InternalGateLocked" UId="693" />
+    </Symbol>
+  </Access>
+  <Blank UId="694" />
+  <Token Text=":=" UId="695" />
+  <Blank UId="696" />
+  <Access Scope="GlobalVariable" UId="697">
+    <Symbol UId="698">
+      <Component Name="DB_DigitalInputs" UId="699">
+        <BooleanAttribute Name="HasQuotes" UId="700">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="701" />
+      <Component Name="sInternalGateLocked" UId="702" />
+      <Token Text="." UId="703" />
+      <Component Name="sSWStatus" UId="704" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="705" />
+  <NewLine UId="706" />
+  <Blank Num="4" UId="707" />
+  <Access Scope="GlobalVariable" UId="708">
+    <Symbol UId="709">
+      <Component Name="DB_OPC_RealTime" UId="710">
+        <BooleanAttribute Name="HasQuotes" UId="711">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="712" />
+      <Component Name="ExternalGateLocked" UId="713" />
+    </Symbol>
+  </Access>
+  <Blank UId="714" />
+  <Token Text=":=" UId="715" />
+  <Blank UId="716" />
+  <Access Scope="GlobalVariable" UId="717">
+    <Symbol UId="718">
+      <Component Name="DB_DigitalInputs" UId="719">
+        <BooleanAttribute Name="HasQuotes" UId="720">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="721" />
+      <Component Name="sExternalGateLocked" UId="722" />
+      <Token Text="." UId="723" />
+      <Component Name="sSWStatus" UId="724" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="725" />
+  <NewLine UId="726" />
+  <Blank Num="4" UId="727" />
+  <Access Scope="GlobalVariable" UId="728">
+    <Symbol UId="729">
+      <Component Name="DB_OPC_RealTime" UId="730">
+        <BooleanAttribute Name="HasQuotes" UId="731">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="732" />
+      <Component Name="InverterActive" UId="733" />
+    </Symbol>
+  </Access>
+  <Blank UId="734" />
+  <Token Text=":=" UId="735" />
+  <Blank UId="736" />
+  <Access Scope="GlobalVariable" UId="737">
+    <Symbol UId="738">
+      <Component Name="DB_DigitalInputs" UId="739">
+        <BooleanAttribute Name="HasQuotes" UId="740">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="741" />
+      <Component Name="sInverterActive" UId="742" />
+      <Token Text="." UId="743" />
+      <Component Name="sSWStatus" UId="744" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="745" />
+  <NewLine UId="746" />
+  <Blank Num="4" UId="747" />
+  <Access Scope="GlobalVariable" UId="748">
+    <Symbol UId="749">
+      <Component Name="DB_OPC_RealTime" UId="750">
+        <BooleanAttribute Name="HasQuotes" UId="751">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="752" />
+      <Component Name="UnloadClampNotClosedWithPart" UId="753" />
+    </Symbol>
+  </Access>
+  <Blank UId="754" />
+  <Token Text=":=" UId="755" />
+  <Blank UId="756" />
+  <Access Scope="GlobalVariable" UId="757">
+    <Symbol UId="758">
+      <Component Name="DB_DigitalInputs" UId="759">
+        <BooleanAttribute Name="HasQuotes" UId="760">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="761" />
+      <Component Name="sUnloadClampNotClosedWithPart" UId="762" />
+      <Token Text="." UId="763" />
+      <Component Name="sSWStatus" UId="764" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="765" />
+  <NewLine UId="766" />
+  <Blank Num="4" UId="767" />
+  <Access Scope="GlobalVariable" UId="768">
+    <Symbol UId="769">
+      <Component Name="DB_OPC_RealTime" UId="770">
+        <BooleanAttribute Name="HasQuotes" UId="771">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="772" />
+      <Component Name="InternalGateOpened" UId="773" />
+    </Symbol>
+  </Access>
+  <Blank UId="774" />
+  <Token Text=":=" UId="775" />
+  <Blank UId="776" />
+  <Access Scope="GlobalVariable" UId="777">
+    <Symbol UId="778">
+      <Component Name="DB_DigitalInputs" UId="779">
+        <BooleanAttribute Name="HasQuotes" UId="780">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="781" />
+      <Component Name="sInternalGateOpened" UId="782" />
+      <Token Text="." UId="783" />
+      <Component Name="sSWStatus" UId="784" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="785" />
+  <NewLine UId="786" />
+  <Blank Num="4" UId="787" />
+  <Access Scope="GlobalVariable" UId="788">
+    <Symbol UId="789">
+      <Component Name="DB_OPC_RealTime" UId="790">
+        <BooleanAttribute Name="HasQuotes" UId="791">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="792" />
+      <Component Name="ExternalGateOpened" UId="793" />
+    </Symbol>
+  </Access>
+  <Blank UId="794" />
+  <Token Text=":=" UId="795" />
+  <Blank UId="796" />
+  <Access Scope="GlobalVariable" UId="797">
+    <Symbol UId="798">
+      <Component Name="DB_DigitalInputs" UId="799">
+        <BooleanAttribute Name="HasQuotes" UId="800">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="801" />
+      <Component Name="sExternalGateOpened" UId="802" />
+      <Token Text="." UId="803" />
+      <Component Name="sSWStatus" UId="804" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="805" />
+  <NewLine UId="806" />
+  <Blank Num="4" UId="807" />
+  <Access Scope="GlobalVariable" UId="808">
+    <Symbol UId="809">
+      <Component Name="DB_OPC_RealTime" UId="810">
+        <BooleanAttribute Name="HasQuotes" UId="811">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="812" />
+      <Component Name="PowerMeterBackCtrl" UId="813" />
+    </Symbol>
+  </Access>
+  <Blank UId="814" />
+  <Token Text=":=" UId="815" />
+  <Blank UId="816" />
+  <Access Scope="GlobalVariable" UId="817">
+    <Symbol UId="818">
+      <Component Name="DB_DigitalInputs" UId="819">
+        <BooleanAttribute Name="HasQuotes" UId="820">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="821" />
+      <Component Name="sPowerMeterBackCtrl" UId="822" />
+      <Token Text="." UId="823" />
+      <Component Name="sSWStatus" UId="824" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="825" />
+  <NewLine UId="826" />
+  <Blank Num="4" UId="827" />
+  <Access Scope="GlobalVariable" UId="828">
+    <Symbol UId="829">
+      <Component Name="DB_OPC_RealTime" UId="830">
+        <BooleanAttribute Name="HasQuotes" UId="831">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="832" />
+      <Component Name="PowerMeterFrontCtrl" UId="833" />
+    </Symbol>
+  </Access>
+  <Blank UId="834" />
+  <Token Text=":=" UId="835" />
+  <Blank UId="836" />
+  <Access Scope="GlobalVariable" UId="837">
+    <Symbol UId="838">
+      <Component Name="DB_DigitalInputs" UId="839">
+        <BooleanAttribute Name="HasQuotes" UId="840">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="841" />
+      <Component Name="sPowerMeterFrontCtrl" UId="842" />
+      <Token Text="." UId="843" />
+      <Component Name="sSWStatus" UId="844" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="845" />
+  <NewLine UId="846" />
+  <Blank Num="4" UId="847" />
+  <Access Scope="GlobalVariable" UId="848">
+    <Symbol UId="849">
+      <Component Name="DB_OPC_RealTime" UId="850">
+        <BooleanAttribute Name="HasQuotes" UId="851">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="852" />
+      <Component Name="HeadChillerCutOff" UId="853" />
+    </Symbol>
+  </Access>
+  <Blank UId="854" />
+  <Token Text=":=" UId="855" />
+  <Blank UId="856" />
+  <Access Scope="GlobalVariable" UId="857">
+    <Symbol UId="858">
+      <Component Name="DB_DigitalInputs" UId="859">
+        <BooleanAttribute Name="HasQuotes" UId="860">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="861" />
+      <Component Name="sHeadChillerCutOff" UId="862" />
+      <Token Text="." UId="863" />
+      <Component Name="sSWStatus" UId="864" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="865" />
+  <NewLine UId="866" />
+  <Blank Num="4" UId="867" />
+  <Access Scope="GlobalVariable" UId="868">
+    <Symbol UId="869">
+      <Component Name="DB_OPC_RealTime" UId="870">
+        <BooleanAttribute Name="HasQuotes" UId="871">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="872" />
+      <Component Name="HeadChillerTemperature" UId="873" />
+    </Symbol>
+  </Access>
+  <Blank UId="874" />
+  <Token Text=":=" UId="875" />
+  <Blank UId="876" />
+  <Access Scope="GlobalVariable" UId="877">
+    <Symbol UId="878">
+      <Component Name="DB_DigitalInputs" UId="879">
+        <BooleanAttribute Name="HasQuotes" UId="880">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="881" />
+      <Component Name="sHeadChillerTemperature" UId="882" />
+      <Token Text="." UId="883" />
+      <Component Name="sSWStatus" UId="884" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="885" />
+  <NewLine UId="886" />
+  <Blank Num="4" UId="887" />
+  <Access Scope="GlobalVariable" UId="888">
+    <Symbol UId="889">
+      <Component Name="DB_OPC_RealTime" UId="890">
+        <BooleanAttribute Name="HasQuotes" UId="891">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="892" />
+      <Component Name="ClampingOpenCtrl" UId="893" />
+    </Symbol>
+  </Access>
+  <Blank UId="894" />
+  <Token Text=":=" UId="895" />
+  <Blank UId="896" />
+  <Access Scope="GlobalVariable" UId="897">
+    <Symbol UId="898">
+      <Component Name="DB_DigitalInputs" UId="899">
+        <BooleanAttribute Name="HasQuotes" UId="900">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="901" />
+      <Component Name="sClampingOpenCtrl" UId="902" />
+      <Token Text="." UId="903" />
+      <Component Name="sSWStatus" UId="904" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="905" />
+  <NewLine UId="906" />
+  <Blank Num="4" UId="907" />
+  <Access Scope="GlobalVariable" UId="908">
+    <Symbol UId="909">
+      <Component Name="DB_OPC_RealTime" UId="910">
+        <BooleanAttribute Name="HasQuotes" UId="911">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="912" />
+      <Component Name="B_AxisBrakeReleasedCtrl" UId="913" />
+    </Symbol>
+  </Access>
+  <Blank UId="914" />
+  <Token Text=":=" UId="915" />
+  <Blank UId="916" />
+  <Access Scope="GlobalVariable" UId="917">
+    <Symbol UId="918">
+      <Component Name="DB_DigitalInputs" UId="919">
+        <BooleanAttribute Name="HasQuotes" UId="920">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="921" />
+      <Component Name="sB_Axis_BrakeReleasedCtrl" UId="922" />
+      <Token Text="." UId="923" />
+      <Component Name="sSWStatus" UId="924" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="925" />
+  <NewLine UId="926" />
+  <Blank Num="4" UId="927" />
+  <Access Scope="GlobalVariable" UId="928">
+    <Symbol UId="929">
+      <Component Name="DB_OPC_RealTime" UId="930">
+        <BooleanAttribute Name="HasQuotes" UId="931">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="932" />
+      <Component Name="B_AxisReferencePoint" UId="933" />
+    </Symbol>
+  </Access>
+  <Blank UId="934" />
+  <Token Text=":=" UId="935" />
+  <Blank UId="936" />
+  <Access Scope="GlobalVariable" UId="937">
+    <Symbol UId="938">
+      <Component Name="DB_DigitalInputs" UId="939">
+        <BooleanAttribute Name="HasQuotes" UId="940">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="941" />
+      <Component Name="sB_AxisReferencePoint" UId="942" />
+      <Token Text="." UId="943" />
+      <Component Name="sSWStatus" UId="944" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="945" />
+  <NewLine UId="946" />
+  <Blank Num="4" UId="947" />
+  <Access Scope="GlobalVariable" UId="948">
+    <Symbol UId="949">
+      <Component Name="DB_OPC_RealTime" UId="950">
+        <BooleanAttribute Name="HasQuotes" UId="951">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="952" />
+      <Component Name="SourceChillerHighPressure" UId="953" />
+    </Symbol>
+  </Access>
+  <Blank UId="954" />
+  <Token Text=":=" UId="955" />
+  <Blank UId="956" />
+  <Access Scope="GlobalVariable" UId="957">
+    <Symbol UId="958">
+      <Component Name="DB_DigitalInputs" UId="959">
+        <BooleanAttribute Name="HasQuotes" UId="960">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="961" />
+      <Component Name="sSourceChillerHighPressure" UId="962" />
+      <Token Text="." UId="963" />
+      <Component Name="sSWStatus" UId="964" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="965" />
+  <NewLine UId="966" />
+  <Blank Num="4" UId="967" />
+  <Access Scope="GlobalVariable" UId="968">
+    <Symbol UId="969">
+      <Component Name="DB_OPC_RealTime" UId="970">
+        <BooleanAttribute Name="HasQuotes" UId="971">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="972" />
+      <Component Name="SourceChillerWaterTemperature" UId="973" />
+    </Symbol>
+  </Access>
+  <Blank UId="974" />
+  <Token Text=":=" UId="975" />
+  <Blank UId="976" />
+  <Access Scope="GlobalVariable" UId="977">
+    <Symbol UId="978">
+      <Component Name="DB_DigitalInputs" UId="979">
+        <BooleanAttribute Name="HasQuotes" UId="980">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="981" />
+      <Component Name="sSourceChillerWaterTemperature" UId="982" />
+      <Token Text="." UId="983" />
+      <Component Name="sSWStatus" UId="984" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="985" />
+  <NewLine UId="986" />
+  <Blank Num="4" UId="987" />
+  <Access Scope="GlobalVariable" UId="988">
+    <Symbol UId="989">
+      <Component Name="DB_OPC_RealTime" UId="990">
+        <BooleanAttribute Name="HasQuotes" UId="991">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="992" />
+      <Component Name="SourceChillerFlow" UId="993" />
+    </Symbol>
+  </Access>
+  <Blank UId="994" />
+  <Token Text=":=" UId="995" />
+  <Blank UId="996" />
+  <Access Scope="GlobalVariable" UId="997">
+    <Symbol UId="998">
+      <Component Name="DB_DigitalInputs" UId="999">
+        <BooleanAttribute Name="HasQuotes" UId="1000">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="1001" />
+      <Component Name="sSourceChillerFlow" UId="1002" />
+      <Token Text="." UId="1003" />
+      <Component Name="sSWStatus" UId="1004" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="1005" />
+  <NewLine UId="1006" />
+  <Blank Num="4" UId="1007" />
+  <Access Scope="GlobalVariable" UId="1008">
+    <Symbol UId="1009">
+      <Component Name="DB_OPC_RealTime" UId="1010">
+        <BooleanAttribute Name="HasQuotes" UId="1011">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="1012" />
+      <Component Name="SourceChillerCollectivFault" UId="1013" />
+    </Symbol>
+  </Access>
+  <Blank UId="1014" />
+  <Token Text=":=" UId="1015" />
+  <Blank UId="1016" />
+  <Access Scope="GlobalVariable" UId="1017">
+    <Symbol UId="1018">
+      <Component Name="DB_DigitalInputs" UId="1019">
+        <BooleanAttribute Name="HasQuotes" UId="1020">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="1021" />
+      <Component Name="sSourceChillerCollectivFault" UId="1022" />
+      <Token Text="." UId="1023" />
+      <Component Name="sSWStatus" UId="1024" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="1025" />
+  <NewLine UId="1026" />
+  <Blank Num="4" UId="1027" />
+  <Access Scope="GlobalVariable" UId="1028">
+    <Symbol UId="1029">
+      <Component Name="DB_OPC_RealTime" UId="1030">
+        <BooleanAttribute Name="HasQuotes" UId="1031">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="1032" />
+      <Component Name="SourceChillerWaterLevel" UId="1033" />
+    </Symbol>
+  </Access>
+  <Blank UId="1034" />
+  <Token Text=":=" UId="1035" />
+  <Blank UId="1036" />
+  <Access Scope="GlobalVariable" UId="1037">
+    <Symbol UId="1038">
+      <Component Name="DB_DigitalInputs" UId="1039">
+        <BooleanAttribute Name="HasQuotes" UId="1040">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="1041" />
+      <Component Name="sSourceChillerWaterLevel" UId="1042" />
+      <Token Text="." UId="1043" />
+      <Component Name="sSWStatus" UId="1044" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="1045" />
+  <NewLine UId="1046" />
+  <Blank Num="4" UId="1047" />
+  <Access Scope="GlobalVariable" UId="1048">
+    <Symbol UId="1049">
+      <Component Name="DB_OPC_RealTime" UId="1050">
+        <BooleanAttribute Name="HasQuotes" UId="1051">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="1052" />
+      <Component Name="SourceChillerAmbiantTemperature" UId="1053" />
+    </Symbol>
+  </Access>
+  <Blank UId="1054" />
+  <Token Text=":=" UId="1055" />
+  <Blank UId="1056" />
+  <Access Scope="GlobalVariable" UId="1057">
+    <Symbol UId="1058">
+      <Component Name="DB_DigitalInputs" UId="1059">
+        <BooleanAttribute Name="HasQuotes" UId="1060">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="1061" />
+      <Component Name="sSourceChillerAmbiantTemperature" UId="1062" />
+      <Token Text="." UId="1063" />
+      <Component Name="sSWStatus" UId="1064" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="1065" />
+  <NewLine UId="1066" />
+  <Blank Num="4" UId="1067" />
+  <Access Scope="GlobalVariable" UId="1068">
+    <Symbol UId="1069">
+      <Component Name="DB_OPC_RealTime" UId="1070">
+        <BooleanAttribute Name="HasQuotes" UId="1071">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="1072" />
+      <Component Name="SourceChillerCutOff" UId="1073" />
+    </Symbol>
+  </Access>
+  <Blank UId="1074" />
+  <Token Text=":=" UId="1075" />
+  <Blank UId="1076" />
+  <Access Scope="GlobalVariable" UId="1077">
+    <Symbol UId="1078">
+      <Component Name="DB_DigitalInputs" UId="1079">
+        <BooleanAttribute Name="HasQuotes" UId="1080">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="1081" />
+      <Component Name="sSourceChillerCutOff" UId="1082" />
+      <Token Text="." UId="1083" />
+      <Component Name="sSWStatus" UId="1084" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="1085" />
+  <NewLine UId="1086" />
+  <Blank Num="4" UId="1087" />
+  <Access Scope="GlobalVariable" UId="1088">
+    <Symbol UId="1089">
+      <Component Name="DB_OPC_RealTime" UId="1090">
+        <BooleanAttribute Name="HasQuotes" UId="1091">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="1092" />
+      <Component Name="SourceChillerTemperature" UId="1093" />
+    </Symbol>
+  </Access>
+  <Blank UId="1094" />
+  <Token Text=":=" UId="1095" />
+  <Blank UId="1096" />
+  <Access Scope="GlobalVariable" UId="1097">
+    <Symbol UId="1098">
+      <Component Name="DB_DigitalInputs" UId="1099">
+        <BooleanAttribute Name="HasQuotes" UId="1100">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="1101" />
+      <Component Name="sSourceChillerTemperature" UId="1102" />
+      <Token Text="." UId="1103" />
+      <Component Name="sSWStatus" UId="1104" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="1105" />
+  <NewLine UId="1106" />
+  <Token Text="END_REGION" UId="1107" />
+  <NewLine Num="2" UId="1108" />
+  <Token Text="REGION" UId="1109" />
+  <Blank UId="1110" />
+  <Text UId="1111">Digital Outputs</Text>
+  <NewLine UId="1112" />
+  <Blank Num="4" UId="1113" />
+  <Access Scope="GlobalVariable" UId="1114">
+    <Symbol UId="1115">
+      <Component Name="DB_OPC_RealTime" UId="1116">
+        <BooleanAttribute Name="HasQuotes" UId="1117">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="1118" />
+      <Component Name="OperatingCounter" UId="1119" />
+    </Symbol>
+  </Access>
+  <Blank UId="1120" />
+  <Token Text=":=" UId="1121" />
+  <Blank UId="1122" />
+  <Access Scope="GlobalVariable" UId="1123">
+    <Symbol UId="1124">
+      <Component Name="DB_DigitalOutputs" UId="1125">
+        <BooleanAttribute Name="HasQuotes" UId="1126">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="1127" />
+      <Component Name="sOperatingCounter" UId="1128" />
+      <Token Text="." UId="1129" />
+      <Component Name="sSWStatus" UId="1130" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="1131" />
+  <NewLine UId="1132" />
+  <Blank Num="4" UId="1133" />
+  <Access Scope="GlobalVariable" UId="1134">
+    <Symbol UId="1135">
+      <Component Name="DB_OPC_RealTime" UId="1136">
+        <BooleanAttribute Name="HasQuotes" UId="1137">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="1138" />
+      <Component Name="GeneralAirValve" UId="1139" />
+    </Symbol>
+  </Access>
+  <Blank UId="1140" />
+  <Token Text=":=" UId="1141" />
+  <Blank UId="1142" />
+  <Access Scope="GlobalVariable" UId="1143">
+    <Symbol UId="1144">
+      <Component Name="DB_DigitalOutputs" UId="1145">
+        <BooleanAttribute Name="HasQuotes" UId="1146">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="1147" />
+      <Component Name="sGeneralAirValve" UId="1148" />
+      <Token Text="." UId="1149" />
+      <Component Name="sSWStatus" UId="1150" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="1151" />
+  <NewLine UId="1152" />
+  <Blank Num="4" UId="1153" />
+  <Access Scope="GlobalVariable" UId="1154">
+    <Symbol UId="1155">
+      <Component Name="DB_OPC_RealTime" UId="1156">
+        <BooleanAttribute Name="HasQuotes" UId="1157">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="1158" />
+      <Component Name="SmartLineDisable" UId="1159" />
+    </Symbol>
+  </Access>
+  <Blank UId="1160" />
+  <Token Text=":=" UId="1161" />
+  <Blank UId="1162" />
+  <Access Scope="GlobalVariable" UId="1163">
+    <Symbol UId="1164">
+      <Component Name="DB_DigitalOutputs" UId="1165">
+        <BooleanAttribute Name="HasQuotes" UId="1166">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="1167" />
+      <Component Name="sSmartLineDisable" UId="1168" />
+      <Token Text="." UId="1169" />
+      <Component Name="sSWStatus" UId="1170" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="1171" />
+  <NewLine UId="1172" />
+  <Blank Num="4" UId="1173" />
+  <Access Scope="GlobalVariable" UId="1174">
+    <Symbol UId="1175">
+      <Component Name="DB_OPC_RealTime" UId="1176">
+        <BooleanAttribute Name="HasQuotes" UId="1177">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="1178" />
+      <Component Name="MachineLight" UId="1179" />
+    </Symbol>
+  </Access>
+  <Blank UId="1180" />
+  <Token Text=":=" UId="1181" />
+  <Blank UId="1182" />
+  <Access Scope="GlobalVariable" UId="1183">
+    <Symbol UId="1184">
+      <Component Name="DB_DigitalOutputs" UId="1185">
+        <BooleanAttribute Name="HasQuotes" UId="1186">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="1187" />
+      <Component Name="sMachineLight" UId="1188" />
+      <Token Text="." UId="1189" />
+      <Component Name="sSWStatus" UId="1190" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="1191" />
+  <NewLine UId="1192" />
+  <Blank Num="4" UId="1193" />
+  <Access Scope="GlobalVariable" UId="1194">
+    <Symbol UId="1195">
+      <Component Name="DB_OPC_RealTime" UId="1196">
+        <BooleanAttribute Name="HasQuotes" UId="1197">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="1198" />
+      <Component Name="MachineLightBack" UId="1199" />
+    </Symbol>
+  </Access>
+  <Blank UId="1200" />
+  <Token Text=":=" UId="1201" />
+  <Blank UId="1202" />
+  <Access Scope="GlobalVariable" UId="1203">
+    <Symbol UId="1204">
+      <Component Name="DB_DigitalOutputs" UId="1205">
+        <BooleanAttribute Name="HasQuotes" UId="1206">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="1207" />
+      <Component Name="sMachineLightBack" UId="1208" />
+      <Token Text="." UId="1209" />
+      <Component Name="sSWStatus" UId="1210" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="1211" />
+  <NewLine UId="1212" />
+  <Blank Num="4" UId="1213" />
+  <Access Scope="GlobalVariable" UId="1214">
+    <Symbol UId="1215">
+      <Component Name="DB_OPC_RealTime" UId="1216">
+        <BooleanAttribute Name="HasQuotes" UId="1217">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="1218" />
+      <Component Name="LightTowerOrange" UId="1219" />
+    </Symbol>
+  </Access>
+  <Blank UId="1220" />
+  <Token Text=":=" UId="1221" />
+  <Blank UId="1222" />
+  <Access Scope="GlobalVariable" UId="1223">
+    <Symbol UId="1224">
+      <Component Name="DB_DigitalOutputs" UId="1225">
+        <BooleanAttribute Name="HasQuotes" UId="1226">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="1227" />
+      <Component Name="sLightTowerOrange" UId="1228" />
+      <Token Text="." UId="1229" />
+      <Component Name="sSWStatus" UId="1230" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="1231" />
+  <NewLine UId="1232" />
+  <Blank Num="4" UId="1233" />
+  <Access Scope="GlobalVariable" UId="1234">
+    <Symbol UId="1235">
+      <Component Name="DB_OPC_RealTime" UId="1236">
+        <BooleanAttribute Name="HasQuotes" UId="1237">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="1238" />
+      <Component Name="LightTowerRed" UId="1239" />
+    </Symbol>
+  </Access>
+  <Blank UId="1240" />
+  <Token Text=":=" UId="1241" />
+  <Blank UId="1242" />
+  <Access Scope="GlobalVariable" UId="1243">
+    <Symbol UId="1244">
+      <Component Name="DB_DigitalOutputs" UId="1245">
+        <BooleanAttribute Name="HasQuotes" UId="1246">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="1247" />
+      <Component Name="sLightTowerRed" UId="1248" />
+      <Token Text="." UId="1249" />
+      <Component Name="sSWStatus" UId="1250" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="1251" />
+  <NewLine UId="1252" />
+  <Blank Num="4" UId="1253" />
+  <Access Scope="GlobalVariable" UId="1254">
+    <Symbol UId="1255">
+      <Component Name="DB_OPC_RealTime" UId="1256">
+        <BooleanAttribute Name="HasQuotes" UId="1257">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="1258" />
+      <Component Name="LightTowerBlue" UId="1259" />
+    </Symbol>
+  </Access>
+  <Blank UId="1260" />
+  <Token Text=":=" UId="1261" />
+  <Blank UId="1262" />
+  <Access Scope="GlobalVariable" UId="1263">
+    <Symbol UId="1264">
+      <Component Name="DB_DigitalOutputs" UId="1265">
+        <BooleanAttribute Name="HasQuotes" UId="1266">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="1267" />
+      <Component Name="sLightTowerBlue" UId="1268" />
+      <Token Text="." UId="1269" />
+      <Component Name="sSWStatus" UId="1270" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="1271" />
+  <NewLine UId="1272" />
+  <Blank Num="4" UId="1273" />
+  <Access Scope="GlobalVariable" UId="1274">
+    <Symbol UId="1275">
+      <Component Name="DB_OPC_RealTime" UId="1276">
+        <BooleanAttribute Name="HasQuotes" UId="1277">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="1278" />
+      <Component Name="LightTowerGreen" UId="1279" />
+    </Symbol>
+  </Access>
+  <Blank UId="1280" />
+  <Token Text=":=" UId="1281" />
+  <Blank UId="1282" />
+  <Access Scope="GlobalVariable" UId="1283">
+    <Symbol UId="1284">
+      <Component Name="DB_DigitalOutputs" UId="1285">
+        <BooleanAttribute Name="HasQuotes" UId="1286">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="1287" />
+      <Component Name="sLightTowerGreen" UId="1288" />
+      <Token Text="." UId="1289" />
+      <Component Name="sSWStatus" UId="1290" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="1291" />
+  <NewLine UId="1292" />
+  <Blank Num="4" UId="1293" />
+  <Access Scope="GlobalVariable" UId="1294">
+    <Symbol UId="1295">
+      <Component Name="DB_OPC_RealTime" UId="1296">
+        <BooleanAttribute Name="HasQuotes" UId="1297">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="1298" />
+      <Component Name="LightTowerWhite" UId="1299" />
+    </Symbol>
+  </Access>
+  <Blank UId="1300" />
+  <Token Text=":=" UId="1301" />
+  <Blank UId="1302" />
+  <Access Scope="GlobalVariable" UId="1303">
+    <Symbol UId="1304">
+      <Component Name="DB_DigitalOutputs" UId="1305">
+        <BooleanAttribute Name="HasQuotes" UId="1306">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="1307" />
+      <Component Name="sLightTowerWhite" UId="1308" />
+      <Token Text="." UId="1309" />
+      <Component Name="sSWStatus" UId="1310" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="1311" />
+  <NewLine UId="1312" />
+  <Blank Num="4" UId="1313" />
+  <Access Scope="GlobalVariable" UId="1314">
+    <Symbol UId="1315">
+      <Component Name="DB_OPC_RealTime" UId="1316">
+        <BooleanAttribute Name="HasQuotes" UId="1317">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="1318" />
+      <Component Name="Backlight" UId="1319" />
+    </Symbol>
+  </Access>
+  <Blank UId="1320" />
+  <Token Text=":=" UId="1321" />
+  <Blank UId="1322" />
+  <Access Scope="GlobalVariable" UId="1323">
+    <Symbol UId="1324">
+      <Component Name="DB_DigitalOutputs" UId="1325">
+        <BooleanAttribute Name="HasQuotes" UId="1326">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="1327" />
+      <Component Name="sBacklight" UId="1328" />
+      <Token Text="." UId="1329" />
+      <Component Name="sSWStatus" UId="1330" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="1331" />
+  <NewLine UId="1332" />
+  <Blank Num="4" UId="1333" />
+  <Access Scope="GlobalVariable" UId="1334">
+    <Symbol UId="1335">
+      <Component Name="DB_OPC_RealTime" UId="1336">
+        <BooleanAttribute Name="HasQuotes" UId="1337">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="1338" />
+      <Component Name="InfeedON" UId="1339" />
+    </Symbol>
+  </Access>
+  <Blank UId="1340" />
+  <Token Text=":=" UId="1341" />
+  <Blank UId="1342" />
+  <Access Scope="GlobalVariable" UId="1343">
+    <Symbol UId="1344">
+      <Component Name="DB_DigitalOutputs" UId="1345">
+        <BooleanAttribute Name="HasQuotes" UId="1346">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="1347" />
+      <Component Name="sInfeedON" UId="1348" />
+      <Token Text="." UId="1349" />
+      <Component Name="sSWStatus" UId="1350" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="1351" />
+  <NewLine UId="1352" />
+  <Blank Num="4" UId="1353" />
+  <Access Scope="GlobalVariable" UId="1354">
+    <Symbol UId="1355">
+      <Component Name="DB_OPC_RealTime" UId="1356">
+        <BooleanAttribute Name="HasQuotes" UId="1357">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="1358" />
+      <Component Name="AxisActivation" UId="1359" />
+    </Symbol>
+  </Access>
+  <Blank UId="1360" />
+  <Token Text=":=" UId="1361" />
+  <Blank UId="1362" />
+  <Access Scope="GlobalVariable" UId="1363">
+    <Symbol UId="1364">
+      <Component Name="DB_DigitalOutputs" UId="1365">
+        <BooleanAttribute Name="HasQuotes" UId="1366">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="1367" />
+      <Component Name="sAxisActivation" UId="1368" />
+      <Token Text="." UId="1369" />
+      <Component Name="sSWStatus" UId="1370" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="1371" />
+  <NewLine UId="1372" />
+  <Blank Num="4" UId="1373" />
+  <Access Scope="GlobalVariable" UId="1374">
+    <Symbol UId="1375">
+      <Component Name="DB_OPC_RealTime" UId="1376">
+        <BooleanAttribute Name="HasQuotes" UId="1377">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="1378" />
+      <Component Name="BuzzerActivation" UId="1379" />
+    </Symbol>
+  </Access>
+  <Blank UId="1380" />
+  <Token Text=":=" UId="1381" />
+  <Blank UId="1382" />
+  <Access Scope="GlobalVariable" UId="1383">
+    <Symbol UId="1384">
+      <Component Name="DB_DigitalOutputs" UId="1385">
+        <BooleanAttribute Name="HasQuotes" UId="1386">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="1387" />
+      <Component Name="sBuzzerActivation" UId="1388" />
+      <Token Text="." UId="1389" />
+      <Component Name="sSWStatus" UId="1390" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="1391" />
+  <NewLine UId="1392" />
+  <Blank Num="4" UId="1393" />
+  <Access Scope="GlobalVariable" UId="1394">
+    <Symbol UId="1395">
+      <Component Name="DB_OPC_RealTime" UId="1396">
+        <BooleanAttribute Name="HasQuotes" UId="1397">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="1398" />
+      <Component Name="ElbaronPowerON" UId="1399" />
+    </Symbol>
+  </Access>
+  <Blank UId="1400" />
+  <Token Text=":=" UId="1401" />
+  <Blank UId="1402" />
+  <Access Scope="GlobalVariable" UId="1403">
+    <Symbol UId="1404">
+      <Component Name="DB_DigitalOutputs" UId="1405">
+        <BooleanAttribute Name="HasQuotes" UId="1406">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="1407" />
+      <Component Name="sElbaronPowerON" UId="1408" />
+      <Token Text="." UId="1409" />
+      <Component Name="sSWStatus" UId="1410" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="1411" />
+  <NewLine UId="1412" />
+  <Blank Num="4" UId="1413" />
+  <Access Scope="GlobalVariable" UId="1414">
+    <Symbol UId="1415">
+      <Component Name="DB_OPC_RealTime" UId="1416">
+        <BooleanAttribute Name="HasQuotes" UId="1417">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="1418" />
+      <Component Name="ObservationCameraLight" UId="1419" />
+    </Symbol>
+  </Access>
+  <Blank UId="1420" />
+  <Token Text=":=" UId="1421" />
+  <Blank UId="1422" />
+  <Access Scope="GlobalVariable" UId="1423">
+    <Symbol UId="1424">
+      <Component Name="DB_DigitalOutputs" UId="1425">
+        <BooleanAttribute Name="HasQuotes" UId="1426">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="1427" />
+      <Component Name="sObservationCameraLight" UId="1428" />
+      <Token Text="." UId="1429" />
+      <Component Name="sSWStatus" UId="1430" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="1431" />
+  <NewLine UId="1432" />
+  <Blank Num="4" UId="1433" />
+  <Access Scope="GlobalVariable" UId="1434">
+    <Symbol UId="1435">
+      <Component Name="DB_OPC_RealTime" UId="1436">
+        <BooleanAttribute Name="HasQuotes" UId="1437">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="1438" />
+      <Component Name="LaserExternalDoorOpening" UId="1439" />
+    </Symbol>
+  </Access>
+  <Blank UId="1440" />
+  <Token Text=":=" UId="1441" />
+  <Blank UId="1442" />
+  <Access Scope="GlobalVariable" UId="1443">
+    <Symbol UId="1444">
+      <Component Name="DB_DigitalOutputs" UId="1445">
+        <BooleanAttribute Name="HasQuotes" UId="1446">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="1447" />
+      <Component Name="sLaserExternalDoorOpening" UId="1448" />
+      <Token Text="." UId="1449" />
+      <Component Name="sSWStatus" UId="1450" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="1451" />
+  <NewLine UId="1452" />
+  <Blank Num="4" UId="1453" />
+  <Access Scope="GlobalVariable" UId="1454">
+    <Symbol UId="1455">
+      <Component Name="DB_OPC_RealTime" UId="1456">
+        <BooleanAttribute Name="HasQuotes" UId="1457">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="1458" />
+      <Component Name="CoolingStart" UId="1459" />
+    </Symbol>
+  </Access>
+  <Blank UId="1460" />
+  <Token Text=":=" UId="1461" />
+  <Blank UId="1462" />
+  <Access Scope="GlobalVariable" UId="1463">
+    <Symbol UId="1464">
+      <Component Name="DB_DigitalOutputs" UId="1465">
+        <BooleanAttribute Name="HasQuotes" UId="1466">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="1467" />
+      <Component Name="sCoolingStart" UId="1468" />
+      <Token Text="." UId="1469" />
+      <Component Name="sSWStatus" UId="1470" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="1471" />
+  <NewLine UId="1472" />
+  <Blank Num="4" UId="1473" />
+  <Access Scope="GlobalVariable" UId="1474">
+    <Symbol UId="1475">
+      <Component Name="DB_OPC_RealTime" UId="1476">
+        <BooleanAttribute Name="HasQuotes" UId="1477">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="1478" />
+      <Component Name="X_AxisBrakeActivation" UId="1479" />
+    </Symbol>
+  </Access>
+  <Blank UId="1480" />
+  <Token Text=":=" UId="1481" />
+  <Blank UId="1482" />
+  <Access Scope="GlobalVariable" UId="1483">
+    <Symbol UId="1484">
+      <Component Name="DB_DigitalOutputs" UId="1485">
+        <BooleanAttribute Name="HasQuotes" UId="1486">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="1487" />
+      <Component Name="sX_AxisBrakeActivation" UId="1488" />
+      <Token Text="." UId="1489" />
+      <Component Name="sSWStatus" UId="1490" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="1491" />
+  <NewLine UId="1492" />
+  <Blank Num="4" UId="1493" />
+  <Access Scope="GlobalVariable" UId="1494">
+    <Symbol UId="1495">
+      <Component Name="DB_OPC_RealTime" UId="1496">
+        <BooleanAttribute Name="HasQuotes" UId="1497">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="1498" />
+      <Component Name="Y_AxisBrakeActivation" UId="1499" />
+    </Symbol>
+  </Access>
+  <Blank UId="1500" />
+  <Token Text=":=" UId="1501" />
+  <Blank UId="1502" />
+  <Access Scope="GlobalVariable" UId="1503">
+    <Symbol UId="1504">
+      <Component Name="DB_DigitalOutputs" UId="1505">
+        <BooleanAttribute Name="HasQuotes" UId="1506">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="1507" />
+      <Component Name="sY_AxisBrakeActivation" UId="1508" />
+      <Token Text="." UId="1509" />
+      <Component Name="sSWStatus" UId="1510" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="1511" />
+  <NewLine UId="1512" />
+  <Blank Num="4" UId="1513" />
+  <Access Scope="GlobalVariable" UId="1514">
+    <Symbol UId="1515">
+      <Component Name="DB_OPC_RealTime" UId="1516">
+        <BooleanAttribute Name="HasQuotes" UId="1517">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="1518" />
+      <Component Name="AxisB_TeachInClampingPart" UId="1519" />
+    </Symbol>
+  </Access>
+  <Blank UId="1520" />
+  <Token Text=":=" UId="1521" />
+  <Blank UId="1522" />
+  <Access Scope="GlobalVariable" UId="1523">
+    <Symbol UId="1524">
+      <Component Name="DB_DigitalOutputs" UId="1525">
+        <BooleanAttribute Name="HasQuotes" UId="1526">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="1527" />
+      <Component Name="sAxisB_TeachInClampingPart" UId="1528" />
+      <Token Text="." UId="1529" />
+      <Component Name="sSWStatus" UId="1530" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="1531" />
+  <NewLine UId="1532" />
+  <Blank Num="4" UId="1533" />
+  <Access Scope="GlobalVariable" UId="1534">
+    <Symbol UId="1535">
+      <Component Name="DB_OPC_RealTime" UId="1536">
+        <BooleanAttribute Name="HasQuotes" UId="1537">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="1538" />
+      <Component Name="EPO_UPS" UId="1539" />
+    </Symbol>
+  </Access>
+  <Blank UId="1540" />
+  <Token Text=":=" UId="1541" />
+  <Blank UId="1542" />
+  <Access Scope="GlobalVariable" UId="1543">
+    <Symbol UId="1544">
+      <Component Name="DB_DigitalOutputs" UId="1545">
+        <BooleanAttribute Name="HasQuotes" UId="1546">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="1547" />
+      <Component Name="sEPO_UPS" UId="1548" />
+      <Token Text="." UId="1549" />
+      <Component Name="sSWStatus" UId="1550" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="1551" />
+  <NewLine UId="1552" />
+  <Blank Num="4" UId="1553" />
+  <Access Scope="GlobalVariable" UId="1554">
+    <Symbol UId="1555">
+      <Component Name="DB_OPC_RealTime" UId="1556">
+        <BooleanAttribute Name="HasQuotes" UId="1557">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="1558" />
+      <Component Name="HeadLaserStart" UId="1559" />
+    </Symbol>
+  </Access>
+  <Blank UId="1560" />
+  <Token Text=":=" UId="1561" />
+  <Blank UId="1562" />
+  <Access Scope="GlobalVariable" UId="1563">
+    <Symbol UId="1564">
+      <Component Name="DB_DigitalOutputs" UId="1565">
+        <BooleanAttribute Name="HasQuotes" UId="1566">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="1567" />
+      <Component Name="sHeadLaserStart" UId="1568" />
+      <Token Text="." UId="1569" />
+      <Component Name="sSWStatus" UId="1570" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="1571" />
+  <NewLine UId="1572" />
+  <Blank Num="4" UId="1573" />
+  <Access Scope="GlobalVariable" UId="1574">
+    <Symbol UId="1575">
+      <Component Name="DB_OPC_RealTime" UId="1576">
+        <BooleanAttribute Name="HasQuotes" UId="1577">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="1578" />
+      <Component Name="HeadLaserStop" UId="1579" />
+    </Symbol>
+  </Access>
+  <Blank UId="1580" />
+  <Token Text=":=" UId="1581" />
+  <Blank UId="1582" />
+  <Access Scope="GlobalVariable" UId="1583">
+    <Symbol UId="1584">
+      <Component Name="DB_DigitalOutputs" UId="1585">
+        <BooleanAttribute Name="HasQuotes" UId="1586">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="1587" />
+      <Component Name="sHeadLaserStop" UId="1588" />
+      <Token Text="." UId="1589" />
+      <Component Name="sSWStatus" UId="1590" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="1591" />
+  <NewLine UId="1592" />
+  <Blank Num="4" UId="1593" />
+  <Access Scope="GlobalVariable" UId="1594">
+    <Symbol UId="1595">
+      <Component Name="DB_OPC_RealTime" UId="1596">
+        <BooleanAttribute Name="HasQuotes" UId="1597">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="1598" />
+      <Component Name="Axis2_PowerContactor" UId="1599" />
+    </Symbol>
+  </Access>
+  <Blank UId="1600" />
+  <Token Text=":=" UId="1601" />
+  <Blank UId="1602" />
+  <Access Scope="GlobalVariable" UId="1603">
+    <Symbol UId="1604">
+      <Component Name="DB_DigitalOutputs" UId="1605">
+        <BooleanAttribute Name="HasQuotes" UId="1606">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="1607" />
+      <Component Name="sAxis2_PowerContactor" UId="1608" />
+      <Token Text="." UId="1609" />
+      <Component Name="sSWStatus" UId="1610" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="1611" />
+  <NewLine UId="1612" />
+  <Blank Num="4" UId="1613" />
+  <Access Scope="GlobalVariable" UId="1614">
+    <Symbol UId="1615">
+      <Component Name="DB_OPC_RealTime" UId="1616">
+        <BooleanAttribute Name="HasQuotes" UId="1617">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="1618" />
+      <Component Name="GasAssistOn" UId="1619" />
+    </Symbol>
+  </Access>
+  <Blank UId="1620" />
+  <Token Text=":=" UId="1621" />
+  <Blank UId="1622" />
+  <Access Scope="GlobalVariable" UId="1623">
+    <Symbol UId="1624">
+      <Component Name="DB_DigitalOutputs" UId="1625">
+        <BooleanAttribute Name="HasQuotes" UId="1626">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="1627" />
+      <Component Name="sGasAssistOn" UId="1628" />
+      <Token Text="." UId="1629" />
+      <Component Name="sSWStatus" UId="1630" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="1631" />
+  <NewLine UId="1632" />
+  <Blank Num="4" UId="1633" />
+  <Access Scope="GlobalVariable" UId="1634">
+    <Symbol UId="1635">
+      <Component Name="DB_OPC_RealTime" UId="1636">
+        <BooleanAttribute Name="HasQuotes" UId="1637">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="1638" />
+      <Component Name="SmartLineReset" UId="1639" />
+    </Symbol>
+  </Access>
+  <Blank UId="1640" />
+  <Token Text=":=" UId="1641" />
+  <Blank UId="1642" />
+  <Access Scope="GlobalVariable" UId="1643">
+    <Symbol UId="1644">
+      <Component Name="DB_DigitalOutputs" UId="1645">
+        <BooleanAttribute Name="HasQuotes" UId="1646">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="1647" />
+      <Component Name="sSmartLineReset" UId="1648" />
+      <Token Text="." UId="1649" />
+      <Component Name="sSWStatus" UId="1650" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="1651" />
+  <NewLine UId="1652" />
+  <Blank Num="4" UId="1653" />
+  <Access Scope="GlobalVariable" UId="1654">
+    <Symbol UId="1655">
+      <Component Name="DB_OPC_RealTime" UId="1656">
+        <BooleanAttribute Name="HasQuotes" UId="1657">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="1658" />
+      <Component Name="XY_AxisPowerContactor" UId="1659" />
+    </Symbol>
+  </Access>
+  <Blank UId="1660" />
+  <Token Text=":=" UId="1661" />
+  <Blank UId="1662" />
+  <Access Scope="GlobalVariable" UId="1663">
+    <Symbol UId="1664">
+      <Component Name="DB_DigitalOutputs" UId="1665">
+        <BooleanAttribute Name="HasQuotes" UId="1666">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="1667" />
+      <Component Name="sXY_AxisPowerContactor" UId="1668" />
+      <Token Text="." UId="1669" />
+      <Component Name="sSWStatus" UId="1670" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="1671" />
+  <NewLine UId="1672" />
+  <Blank Num="4" UId="1673" />
+  <Access Scope="GlobalVariable" UId="1674">
+    <Symbol UId="1675">
+      <Component Name="DB_OPC_RealTime" UId="1676">
+        <BooleanAttribute Name="HasQuotes" UId="1677">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="1678" />
+      <Component Name="LaserAirPressureProcess" UId="1679" />
+    </Symbol>
+  </Access>
+  <Blank UId="1680" />
+  <Token Text=":=" UId="1681" />
+  <Blank UId="1682" />
+  <Access Scope="GlobalVariable" UId="1683">
+    <Symbol UId="1684">
+      <Component Name="DB_DigitalOutputs" UId="1685">
+        <BooleanAttribute Name="HasQuotes" UId="1686">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="1687" />
+      <Component Name="sLaserAirPressureProcess" UId="1688" />
+      <Token Text="." UId="1689" />
+      <Component Name="sSWStatus" UId="1690" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="1691" />
+  <NewLine UId="1692" />
+  <Blank Num="4" UId="1693" />
+  <Access Scope="GlobalVariable" UId="1694">
+    <Symbol UId="1695">
+      <Component Name="DB_OPC_RealTime" UId="1696">
+        <BooleanAttribute Name="HasQuotes" UId="1697">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="1698" />
+      <Component Name="Bus60V_PowerContactor" UId="1699" />
+    </Symbol>
+  </Access>
+  <Blank UId="1700" />
+  <Token Text=":=" UId="1701" />
+  <Blank UId="1702" />
+  <Access Scope="GlobalVariable" UId="1703">
+    <Symbol UId="1704">
+      <Component Name="DB_DigitalOutputs" UId="1705">
+        <BooleanAttribute Name="HasQuotes" UId="1706">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="1707" />
+      <Component Name="sBus60V_PowerContactor" UId="1708" />
+      <Token Text="." UId="1709" />
+      <Component Name="sSWStatus" UId="1710" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="1711" />
+  <NewLine UId="1712" />
+  <Blank Num="4" UId="1713" />
+  <Access Scope="GlobalVariable" UId="1714">
+    <Symbol UId="1715">
+      <Component Name="DB_OPC_RealTime" UId="1716">
+        <BooleanAttribute Name="HasQuotes" UId="1717">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="1718" />
+      <Component Name="LoadClampClosing" UId="1719" />
+    </Symbol>
+  </Access>
+  <Blank UId="1720" />
+  <Token Text=":=" UId="1721" />
+  <Blank UId="1722" />
+  <Access Scope="GlobalVariable" UId="1723">
+    <Symbol UId="1724">
+      <Component Name="DB_DigitalOutputs" UId="1725">
+        <BooleanAttribute Name="HasQuotes" UId="1726">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="1727" />
+      <Component Name="sLoadClampClosing" UId="1728" />
+      <Token Text="." UId="1729" />
+      <Component Name="sSWStatus" UId="1730" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="1731" />
+  <NewLine UId="1732" />
+  <Blank Num="4" UId="1733" />
+  <Access Scope="GlobalVariable" UId="1734">
+    <Symbol UId="1735">
+      <Component Name="DB_OPC_RealTime" UId="1736">
+        <BooleanAttribute Name="HasQuotes" UId="1737">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="1738" />
+      <Component Name="LoadClampOpening" UId="1739" />
+    </Symbol>
+  </Access>
+  <Blank UId="1740" />
+  <Token Text=":=" UId="1741" />
+  <Blank UId="1742" />
+  <Access Scope="GlobalVariable" UId="1743">
+    <Symbol UId="1744">
+      <Component Name="DB_DigitalOutputs" UId="1745">
+        <BooleanAttribute Name="HasQuotes" UId="1746">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="1747" />
+      <Component Name="sLoadClampOpening" UId="1748" />
+      <Token Text="." UId="1749" />
+      <Component Name="sSWStatus" UId="1750" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="1751" />
+  <NewLine UId="1752" />
+  <Blank Num="4" UId="1753" />
+  <Access Scope="GlobalVariable" UId="1754">
+    <Symbol UId="1755">
+      <Component Name="DB_OPC_RealTime" UId="1756">
+        <BooleanAttribute Name="HasQuotes" UId="1757">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="1758" />
+      <Component Name="UnloadClampClosing" UId="1759" />
+    </Symbol>
+  </Access>
+  <Blank UId="1760" />
+  <Token Text=":=" UId="1761" />
+  <Blank UId="1762" />
+  <Access Scope="GlobalVariable" UId="1763">
+    <Symbol UId="1764">
+      <Component Name="DB_DigitalOutputs" UId="1765">
+        <BooleanAttribute Name="HasQuotes" UId="1766">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="1767" />
+      <Component Name="sUnloadClampClosing" UId="1768" />
+      <Token Text="." UId="1769" />
+      <Component Name="sSWStatus" UId="1770" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="1771" />
+  <NewLine UId="1772" />
+  <Blank Num="4" UId="1773" />
+  <Access Scope="GlobalVariable" UId="1774">
+    <Symbol UId="1775">
+      <Component Name="DB_OPC_RealTime" UId="1776">
+        <BooleanAttribute Name="HasQuotes" UId="1777">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="1778" />
+      <Component Name="UnloadClampOpening" UId="1779" />
+    </Symbol>
+  </Access>
+  <Blank UId="1780" />
+  <Token Text=":=" UId="1781" />
+  <Blank UId="1782" />
+  <Access Scope="GlobalVariable" UId="1783">
+    <Symbol UId="1784">
+      <Component Name="DB_DigitalOutputs" UId="1785">
+        <BooleanAttribute Name="HasQuotes" UId="1786">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="1787" />
+      <Component Name="sUnloadClampOpening" UId="1788" />
+      <Token Text="." UId="1789" />
+      <Component Name="sSWStatus" UId="1790" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="1791" />
+  <NewLine UId="1792" />
+  <Blank Num="4" UId="1793" />
+  <Access Scope="GlobalVariable" UId="1794">
+    <Symbol UId="1795">
+      <Component Name="DB_OPC_RealTime" UId="1796">
+        <BooleanAttribute Name="HasQuotes" UId="1797">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="1798" />
+      <Component Name="ClampingOpening" UId="1799" />
+    </Symbol>
+  </Access>
+  <Blank UId="1800" />
+  <Token Text=":=" UId="1801" />
+  <Blank UId="1802" />
+  <Access Scope="GlobalVariable" UId="1803">
+    <Symbol UId="1804">
+      <Component Name="DB_DigitalOutputs" UId="1805">
+        <BooleanAttribute Name="HasQuotes" UId="1806">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="1807" />
+      <Component Name="sClampingOpening" UId="1808" />
+      <Token Text="." UId="1809" />
+      <Component Name="sSWStatus" UId="1810" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="1811" />
+  <NewLine UId="1812" />
+  <Blank Num="4" UId="1813" />
+  <Access Scope="GlobalVariable" UId="1814">
+    <Symbol UId="1815">
+      <Component Name="DB_OPC_RealTime" UId="1816">
+        <BooleanAttribute Name="HasQuotes" UId="1817">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="1818" />
+      <Component Name="ClampingClosing" UId="1819" />
+    </Symbol>
+  </Access>
+  <Blank UId="1820" />
+  <Token Text=":=" UId="1821" />
+  <Blank UId="1822" />
+  <Access Scope="GlobalVariable" UId="1823">
+    <Symbol UId="1824">
+      <Component Name="DB_DigitalOutputs" UId="1825">
+        <BooleanAttribute Name="HasQuotes" UId="1826">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="1827" />
+      <Component Name="sClampingClosing" UId="1828" />
+      <Token Text="." UId="1829" />
+      <Component Name="sSWStatus" UId="1830" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="1831" />
+  <NewLine UId="1832" />
+  <Blank Num="4" UId="1833" />
+  <Access Scope="GlobalVariable" UId="1834">
+    <Symbol UId="1835">
+      <Component Name="DB_OPC_RealTime" UId="1836">
+        <BooleanAttribute Name="HasQuotes" UId="1837">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="1838" />
+      <Component Name="B_AxisBrakeRelease" UId="1839" />
+    </Symbol>
+  </Access>
+  <Blank UId="1840" />
+  <Token Text=":=" UId="1841" />
+  <Blank UId="1842" />
+  <Access Scope="GlobalVariable" UId="1843">
+    <Symbol UId="1844">
+      <Component Name="DB_DigitalOutputs" UId="1845">
+        <BooleanAttribute Name="HasQuotes" UId="1846">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="1847" />
+      <Component Name="sB_AxisBrakeRelease" UId="1848" />
+      <Token Text="." UId="1849" />
+      <Component Name="sSWStatus" UId="1850" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="1851" />
+  <NewLine UId="1852" />
+  <Blank Num="4" UId="1853" />
+  <Access Scope="GlobalVariable" UId="1854">
+    <Symbol UId="1855">
+      <Component Name="DB_OPC_RealTime" UId="1856">
+        <BooleanAttribute Name="HasQuotes" UId="1857">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="1858" />
+      <Component Name="Suction" UId="1859" />
+    </Symbol>
+  </Access>
+  <Blank UId="1860" />
+  <Token Text=":=" UId="1861" />
+  <Blank UId="1862" />
+  <Access Scope="GlobalVariable" UId="1863">
+    <Symbol UId="1864">
+      <Component Name="DB_DigitalOutputs" UId="1865">
+        <BooleanAttribute Name="HasQuotes" UId="1866">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="1867" />
+      <Component Name="sSuction" UId="1868" />
+      <Token Text="." UId="1869" />
+      <Component Name="sSWStatus" UId="1870" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="1871" />
+  <NewLine UId="1872" />
+  <Blank Num="4" UId="1873" />
+  <Access Scope="GlobalVariable" UId="1874">
+    <Symbol UId="1875">
+      <Component Name="DB_OPC_RealTime" UId="1876">
+        <BooleanAttribute Name="HasQuotes" UId="1877">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="1878" />
+      <Component Name="ExternalGateClosing" UId="1879" />
+    </Symbol>
+  </Access>
+  <Blank UId="1880" />
+  <Token Text=":=" UId="1881" />
+  <Blank UId="1882" />
+  <Access Scope="GlobalVariable" UId="1883">
+    <Symbol UId="1884">
+      <Component Name="DB_DigitalOutputs" UId="1885">
+        <BooleanAttribute Name="HasQuotes" UId="1886">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="1887" />
+      <Component Name="sExternalGateClosing" UId="1888" />
+      <Token Text="." UId="1889" />
+      <Component Name="sSWStatus" UId="1890" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="1891" />
+  <NewLine UId="1892" />
+  <Blank Num="4" UId="1893" />
+  <Access Scope="GlobalVariable" UId="1894">
+    <Symbol UId="1895">
+      <Component Name="DB_OPC_RealTime" UId="1896">
+        <BooleanAttribute Name="HasQuotes" UId="1897">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="1898" />
+      <Component Name="ExternalGateOpening" UId="1899" />
+    </Symbol>
+  </Access>
+  <Blank UId="1900" />
+  <Token Text=":=" UId="1901" />
+  <Blank UId="1902" />
+  <Access Scope="GlobalVariable" UId="1903">
+    <Symbol UId="1904">
+      <Component Name="DB_DigitalOutputs" UId="1905">
+        <BooleanAttribute Name="HasQuotes" UId="1906">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="1907" />
+      <Component Name="sExternalGateOpening" UId="1908" />
+      <Token Text="." UId="1909" />
+      <Component Name="sSWStatus" UId="1910" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="1911" />
+  <NewLine UId="1912" />
+  <Blank Num="4" UId="1913" />
+  <Access Scope="GlobalVariable" UId="1914">
+    <Symbol UId="1915">
+      <Component Name="DB_OPC_RealTime" UId="1916">
+        <BooleanAttribute Name="HasQuotes" UId="1917">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="1918" />
+      <Component Name="InternalGateClosing" UId="1919" />
+    </Symbol>
+  </Access>
+  <Blank UId="1920" />
+  <Token Text=":=" UId="1921" />
+  <Blank UId="1922" />
+  <Access Scope="GlobalVariable" UId="1923">
+    <Symbol UId="1924">
+      <Component Name="DB_DigitalOutputs" UId="1925">
+        <BooleanAttribute Name="HasQuotes" UId="1926">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="1927" />
+      <Component Name="sInternalGateClosing" UId="1928" />
+      <Token Text="." UId="1929" />
+      <Component Name="sSWStatus" UId="1930" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="1931" />
+  <NewLine UId="1932" />
+  <Blank Num="4" UId="1933" />
+  <Access Scope="GlobalVariable" UId="1934">
+    <Symbol UId="1935">
+      <Component Name="DB_OPC_RealTime" UId="1936">
+        <BooleanAttribute Name="HasQuotes" UId="1937">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="1938" />
+      <Component Name="InternalGateOpening" UId="1939" />
+    </Symbol>
+  </Access>
+  <Blank UId="1940" />
+  <Token Text=":=" UId="1941" />
+  <Blank UId="1942" />
+  <Access Scope="GlobalVariable" UId="1943">
+    <Symbol UId="1944">
+      <Component Name="DB_DigitalOutputs" UId="1945">
+        <BooleanAttribute Name="HasQuotes" UId="1946">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="1947" />
+      <Component Name="sInternalGateOpening" UId="1948" />
+      <Token Text="." UId="1949" />
+      <Component Name="sSWStatus" UId="1950" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="1951" />
+  <NewLine UId="1952" />
+  <Blank Num="4" UId="1953" />
+  <Access Scope="GlobalVariable" UId="1954">
+    <Symbol UId="1955">
+      <Component Name="DB_OPC_RealTime" UId="1956">
+        <BooleanAttribute Name="HasQuotes" UId="1957">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="1958" />
+      <Component Name="PowerMeterRetract" UId="1959" />
+    </Symbol>
+  </Access>
+  <Blank UId="1960" />
+  <Token Text=":=" UId="1961" />
+  <Blank UId="1962" />
+  <Access Scope="GlobalVariable" UId="1963">
+    <Symbol UId="1964">
+      <Component Name="DB_DigitalOutputs" UId="1965">
+        <BooleanAttribute Name="HasQuotes" UId="1966">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="1967" />
+      <Component Name="sPowerMeterRetract" UId="1968" />
+      <Token Text="." UId="1969" />
+      <Component Name="sSWStatus" UId="1970" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="1971" />
+  <NewLine UId="1972" />
+  <Blank Num="4" UId="1973" />
+  <Access Scope="GlobalVariable" UId="1974">
+    <Symbol UId="1975">
+      <Component Name="DB_OPC_RealTime" UId="1976">
+        <BooleanAttribute Name="HasQuotes" UId="1977">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="1978" />
+      <Component Name="PowerMeterAdvance" UId="1979" />
+    </Symbol>
+  </Access>
+  <Blank UId="1980" />
+  <Token Text=":=" UId="1981" />
+  <Blank UId="1982" />
+  <Access Scope="GlobalVariable" UId="1983">
+    <Symbol UId="1984">
+      <Component Name="DB_DigitalOutputs" UId="1985">
+        <BooleanAttribute Name="HasQuotes" UId="1986">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="1987" />
+      <Component Name="sPowerMeterAdvance" UId="1988" />
+      <Token Text="." UId="1989" />
+      <Component Name="sSWStatus" UId="1990" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="1991" />
+  <NewLine UId="1992" />
+  <Blank Num="4" UId="1993" />
+  <Access Scope="GlobalVariable" UId="1994">
+    <Symbol UId="1995">
+      <Component Name="DB_OPC_RealTime" UId="1996">
+        <BooleanAttribute Name="HasQuotes" UId="1997">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="1998" />
+      <Component Name="Blowing" UId="1999" />
+    </Symbol>
+  </Access>
+  <Blank UId="2000" />
+  <Token Text=":=" UId="2001" />
+  <Blank UId="2002" />
+  <Access Scope="GlobalVariable" UId="2003">
+    <Symbol UId="2004">
+      <Component Name="DB_DigitalOutputs" UId="2005">
+        <BooleanAttribute Name="HasQuotes" UId="2006">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="2007" />
+      <Component Name="sBlowing" UId="2008" />
+      <Token Text="." UId="2009" />
+      <Component Name="sSWStatus" UId="2010" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="2011" />
+  <NewLine UId="2012" />
+  <Token Text="END_REGION" UId="2013" />
+  <NewLine Num="2" UId="2014" />
+  <Token Text="REGION" UId="2015" />
+  <Blank UId="2016" />
+  <Text UId="2017">Analog Inputs</Text>
+  <NewLine UId="2018" />
+  <Blank Num="4" UId="2019" />
+  <Access Scope="GlobalVariable" UId="2020">
+    <Symbol UId="2021">
+      <Component Name="DB_OPC_RealTime" UId="2022">
+        <BooleanAttribute Name="HasQuotes" UId="2023">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="2024" />
+      <Component Name="LaserPowerMeter" UId="2025" />
+    </Symbol>
+  </Access>
+  <Blank UId="2026" />
+  <Token Text=":=" UId="2027" />
+  <Blank UId="2028" />
+  <Access Scope="GlobalVariable" UId="2029">
+    <Symbol UId="2030">
+      <Component Name="DB_AnalogInputs" UId="2031">
+        <BooleanAttribute Name="HasQuotes" UId="2032">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="2033" />
+      <Component Name="sLaserPowerMeter" UId="2034" />
+      <Token Text="." UId="2035" />
+      <Component Name="sSWRealValue" UId="2036" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="2037" />
+  <NewLine UId="2038" />
+  <Blank Num="4" UId="2039" />
+  <Access Scope="GlobalVariable" UId="2040">
+    <Symbol UId="2041">
+      <Component Name="DB_OPC_RealTime" UId="2042">
+        <BooleanAttribute Name="HasQuotes" UId="2043">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="2044" />
+      <Component Name="AxisB_ClampingPart" UId="2045" />
+    </Symbol>
+  </Access>
+  <Blank UId="2046" />
+  <Token Text=":=" UId="2047" />
+  <Blank UId="2048" />
+  <Access Scope="GlobalVariable" UId="2049">
+    <Symbol UId="2050">
+      <Component Name="DB_AnalogInputs" UId="2051">
+        <BooleanAttribute Name="HasQuotes" UId="2052">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="2053" />
+      <Component Name="sAxisB_ClampingPart" UId="2054" />
+      <Token Text="." UId="2055" />
+      <Component Name="sSWRealValue" UId="2056" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="2057" />
+  <NewLine UId="2058" />
+  <Blank Num="4" UId="2059" />
+  <Access Scope="GlobalVariable" UId="2060">
+    <Symbol UId="2061">
+      <Component Name="DB_OPC_RealTime" UId="2062">
+        <BooleanAttribute Name="HasQuotes" UId="2063">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="2064" />
+      <Component Name="LaserAirPressureProcess_1" UId="2065" />
+    </Symbol>
+  </Access>
+  <Blank UId="2066" />
+  <Token Text=":=" UId="2067" />
+  <Blank UId="2068" />
+  <Access Scope="GlobalVariable" UId="2069">
+    <Symbol UId="2070">
+      <Component Name="DB_AnalogInputs" UId="2071">
+        <BooleanAttribute Name="HasQuotes" UId="2072">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="2073" />
+      <Component Name="sLaserAirPressureProcess" UId="2074" />
+      <Token Text="." UId="2075" />
+      <Component Name="sSWRealValue" UId="2076" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="2077" />
+  <NewLine UId="2078" />
+  <Blank Num="4" UId="2079" />
+  <Access Scope="GlobalVariable" UId="2080">
+    <Symbol UId="2081">
+      <Component Name="DB_OPC_RealTime" UId="2082">
+        <BooleanAttribute Name="HasQuotes" UId="2083">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="2084" />
+      <Component Name="InletAirPressure" UId="2085" />
+    </Symbol>
+  </Access>
+  <Blank UId="2086" />
+  <Token Text=":=" UId="2087" />
+  <Blank UId="2088" />
+  <Access Scope="GlobalVariable" UId="2089">
+    <Symbol UId="2090">
+      <Component Name="DB_AnalogInputs" UId="2091">
+        <BooleanAttribute Name="HasQuotes" UId="2092">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="2093" />
+      <Component Name="sInletAirPressure" UId="2094" />
+      <Token Text="." UId="2095" />
+      <Component Name="sSWRealValue" UId="2096" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="2097" />
+  <NewLine UId="2098" />
+  <Blank Num="4" UId="2099" />
+  <Access Scope="GlobalVariable" UId="2100">
+    <Symbol UId="2101">
+      <Component Name="DB_OPC_RealTime" UId="2102">
+        <BooleanAttribute Name="HasQuotes" UId="2103">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="2104" />
+      <Component Name="AmbiantTemperature" UId="2105" />
+    </Symbol>
+  </Access>
+  <Blank UId="2106" />
+  <Token Text=":=" UId="2107" />
+  <Blank UId="2108" />
+  <Access Scope="GlobalVariable" UId="2109">
+    <Symbol UId="2110">
+      <Component Name="DB_AnalogInputs" UId="2111">
+        <BooleanAttribute Name="HasQuotes" UId="2112">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="2113" />
+      <Component Name="sAmbiantTemperature" UId="2114" />
+      <Token Text="." UId="2115" />
+      <Component Name="sSWRealValue" UId="2116" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="2117" />
+  <NewLine UId="2118" />
+  <Blank Num="4" UId="2119" />
+  <Access Scope="GlobalVariable" UId="2120">
+    <Symbol UId="2121">
+      <Component Name="DB_OPC_RealTime" UId="2122">
+        <BooleanAttribute Name="HasQuotes" UId="2123">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="2124" />
+      <Component Name="MachineTemperature" UId="2125" />
+    </Symbol>
+  </Access>
+  <Blank UId="2126" />
+  <Token Text=":=" UId="2127" />
+  <Blank UId="2128" />
+  <Access Scope="GlobalVariable" UId="2129">
+    <Symbol UId="2130">
+      <Component Name="DB_AnalogInputs" UId="2131">
+        <BooleanAttribute Name="HasQuotes" UId="2132">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="2133" />
+      <Component Name="sMachineTemperature" UId="2134" />
+      <Token Text="." UId="2135" />
+      <Component Name="sSWRealValue" UId="2136" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="2137" />
+  <NewLine UId="2138" />
+  <Blank Num="4" UId="2139" />
+  <Access Scope="GlobalVariable" UId="2140">
+    <Symbol UId="2141">
+      <Component Name="DB_OPC_RealTime" UId="2142">
+        <BooleanAttribute Name="HasQuotes" UId="2143">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="2144" />
+      <Component Name="Cold_WaterTemperatureInput" UId="2145" />
+    </Symbol>
+  </Access>
+  <Blank UId="2146" />
+  <Token Text=":=" UId="2147" />
+  <Blank UId="2148" />
+  <Access Scope="GlobalVariable" UId="2149">
+    <Symbol UId="2150">
+      <Component Name="DB_AnalogInputs" UId="2151">
+        <BooleanAttribute Name="HasQuotes" UId="2152">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="2153" />
+      <Component Name="sCold_WaterTemperatureInput" UId="2154" />
+      <Token Text="." UId="2155" />
+      <Component Name="sSWRealValue" UId="2156" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="2157" />
+  <NewLine UId="2158" />
+  <Blank Num="4" UId="2159" />
+  <Access Scope="GlobalVariable" UId="2160">
+    <Symbol UId="2161">
+      <Component Name="DB_OPC_RealTime" UId="2162">
+        <BooleanAttribute Name="HasQuotes" UId="2163">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="2164" />
+      <Component Name="Cold_WaterTemperatureOutput" UId="2165" />
+    </Symbol>
+  </Access>
+  <Blank UId="2166" />
+  <Token Text=":=" UId="2167" />
+  <Blank UId="2168" />
+  <Access Scope="GlobalVariable" UId="2169">
+    <Symbol UId="2170">
+      <Component Name="DB_AnalogInputs" UId="2171">
+        <BooleanAttribute Name="HasQuotes" UId="2172">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="2173" />
+      <Component Name="sCold_WaterTemperatureOutput" UId="2174" />
+      <Token Text="." UId="2175" />
+      <Component Name="sSWRealValue" UId="2176" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="2177" />
+  <NewLine UId="2178" />
+  <Blank Num="4" UId="2179" />
+  <Access Scope="GlobalVariable" UId="2180">
+    <Symbol UId="2181">
+      <Component Name="DB_OPC_RealTime" UId="2182">
+        <BooleanAttribute Name="HasQuotes" UId="2183">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="2184" />
+      <Component Name="X_AxisTemperaturePT1000" UId="2185" />
+    </Symbol>
+  </Access>
+  <Blank UId="2186" />
+  <Token Text=":=" UId="2187" />
+  <Blank UId="2188" />
+  <Access Scope="GlobalVariable" UId="2189">
+    <Symbol UId="2190">
+      <Component Name="DB_AnalogInputs" UId="2191">
+        <BooleanAttribute Name="HasQuotes" UId="2192">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="2193" />
+      <Component Name="sX_AxisTemperaturePT1000" UId="2194" />
+      <Token Text="." UId="2195" />
+      <Component Name="sSWRealValue" UId="2196" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="2197" />
+  <NewLine UId="2198" />
+  <Blank Num="4" UId="2199" />
+  <Access Scope="GlobalVariable" UId="2200">
+    <Symbol UId="2201">
+      <Component Name="DB_OPC_RealTime" UId="2202">
+        <BooleanAttribute Name="HasQuotes" UId="2203">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="2204" />
+      <Component Name="Y_AxisTemperaturePT1000" UId="2205" />
+    </Symbol>
+  </Access>
+  <Blank UId="2206" />
+  <Token Text=":=" UId="2207" />
+  <Blank UId="2208" />
+  <Access Scope="GlobalVariable" UId="2209">
+    <Symbol UId="2210">
+      <Component Name="DB_AnalogInputs" UId="2211">
+        <BooleanAttribute Name="HasQuotes" UId="2212">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="2213" />
+      <Component Name="sY_AxisTemperaturePT1000" UId="2214" />
+      <Token Text="." UId="2215" />
+      <Component Name="sSWRealValue" UId="2216" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="2217" />
+  <NewLine UId="2218" />
+  <Blank Num="4" UId="2219" />
+  <Access Scope="GlobalVariable" UId="2220">
+    <Symbol UId="2221">
+      <Component Name="DB_OPC_RealTime" UId="2222">
+        <BooleanAttribute Name="HasQuotes" UId="2223">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="2224" />
+      <Component Name="X_AxisTemperaturePTC" UId="2225" />
+    </Symbol>
+  </Access>
+  <Blank UId="2226" />
+  <Token Text=":=" UId="2227" />
+  <Blank UId="2228" />
+  <Access Scope="GlobalVariable" UId="2229">
+    <Symbol UId="2230">
+      <Component Name="DB_AnalogInputs" UId="2231">
+        <BooleanAttribute Name="HasQuotes" UId="2232">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="2233" />
+      <Component Name="sX_AxisTemperaturePTC" UId="2234" />
+      <Token Text="." UId="2235" />
+      <Component Name="sSWRealValue" UId="2236" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="2237" />
+  <NewLine UId="2238" />
+  <Blank Num="4" UId="2239" />
+  <Access Scope="GlobalVariable" UId="2240">
+    <Symbol UId="2241">
+      <Component Name="DB_OPC_RealTime" UId="2242">
+        <BooleanAttribute Name="HasQuotes" UId="2243">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="2244" />
+      <Component Name="Y_AxisTemperaturePTC" UId="2245" />
+    </Symbol>
+  </Access>
+  <Blank UId="2246" />
+  <Token Text=":=" UId="2247" />
+  <Blank UId="2248" />
+  <Access Scope="GlobalVariable" UId="2249">
+    <Symbol UId="2250">
+      <Component Name="DB_AnalogInputs" UId="2251">
+        <BooleanAttribute Name="HasQuotes" UId="2252">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="2253" />
+      <Component Name="sY_AxisTemperaturePTC" UId="2254" />
+      <Token Text="." UId="2255" />
+      <Component Name="sSWRealValue" UId="2256" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="2257" />
+  <NewLine UId="2258" />
+  <Blank Num="4" UId="2259" />
+  <Access Scope="GlobalVariable" UId="2260">
+    <Symbol UId="2261">
+      <Component Name="DB_OPC_RealTime" UId="2262">
+        <BooleanAttribute Name="HasQuotes" UId="2263">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="2264" />
+      <Component Name="NozzleOverpressure" UId="2265" />
+    </Symbol>
+  </Access>
+  <Blank UId="2266" />
+  <Token Text=":=" UId="2267" />
+  <Blank UId="2268" />
+  <Access Scope="GlobalVariable" UId="2269">
+    <Symbol UId="2270">
+      <Component Name="DB_AnalogInputs" UId="2271">
+        <BooleanAttribute Name="HasQuotes" UId="2272">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="2273" />
+      <Component Name="sNozzleOverpressure" UId="2274" />
+      <Token Text="." UId="2275" />
+      <Component Name="sSWRealValue" UId="2276" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="2277" />
+  <NewLine UId="2278" />
+  <Blank Num="4" UId="2279" />
+  <Access Scope="GlobalVariable" UId="2280">
+    <Symbol UId="2281">
+      <Component Name="DB_OPC_RealTime" UId="2282">
+        <BooleanAttribute Name="HasQuotes" UId="2283">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="2284" />
+      <Component Name="OpticalPathOverpressure" UId="2285" />
+    </Symbol>
+  </Access>
+  <Blank UId="2286" />
+  <Token Text=":=" UId="2287" />
+  <Blank UId="2288" />
+  <Access Scope="GlobalVariable" UId="2289">
+    <Symbol UId="2290">
+      <Component Name="DB_AnalogInputs" UId="2291">
+        <BooleanAttribute Name="HasQuotes" UId="2292">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="2293" />
+      <Component Name="sOpticalPathOverpressure" UId="2294" />
+      <Token Text="." UId="2295" />
+      <Component Name="sSWRealValue" UId="2296" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="2297" />
+  <NewLine UId="2298" />
+  <Blank Num="4" UId="2299" />
+  <Access Scope="GlobalVariable" UId="2300">
+    <Symbol UId="2301">
+      <Component Name="DB_OPC_RealTime" UId="2302">
+        <BooleanAttribute Name="HasQuotes" UId="2303">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="2304" />
+      <Component Name="LaserHeadOverpressure" UId="2305" />
+    </Symbol>
+  </Access>
+  <Blank UId="2306" />
+  <Token Text=":=" UId="2307" />
+  <Blank UId="2308" />
+  <Access Scope="GlobalVariable" UId="2309">
+    <Symbol UId="2310">
+      <Component Name="DB_AnalogInputs" UId="2311">
+        <BooleanAttribute Name="HasQuotes" UId="2312">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="2313" />
+      <Component Name="sLaserHeadOverpressure" UId="2314" />
+      <Token Text="." UId="2315" />
+      <Component Name="sSWRealValue" UId="2316" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="2317" />
+  <NewLine UId="2318" />
+  <Blank Num="4" UId="2319" />
+  <Access Scope="GlobalVariable" UId="2320">
+    <Symbol UId="2321">
+      <Component Name="DB_OPC_RealTime" UId="2322">
+        <BooleanAttribute Name="HasQuotes" UId="2323">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="2324" />
+      <Component Name="ZLAxisOverpressure" UId="2325" />
+    </Symbol>
+  </Access>
+  <Blank UId="2326" />
+  <Token Text=":=" UId="2327" />
+  <Blank UId="2328" />
+  <Access Scope="GlobalVariable" UId="2329">
+    <Symbol UId="2330">
+      <Component Name="DB_AnalogInputs" UId="2331">
+        <BooleanAttribute Name="HasQuotes" UId="2332">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="2333" />
+      <Component Name="sZLAxisOverpressure" UId="2334" />
+      <Token Text="." UId="2335" />
+      <Component Name="sSWRealValue" UId="2336" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="2337" />
+  <NewLine UId="2338" />
+  <Blank Num="4" UId="2339" />
+  <Access Scope="GlobalVariable" UId="2340">
+    <Symbol UId="2341">
+      <Component Name="DB_OPC_RealTime" UId="2342">
+        <BooleanAttribute Name="HasQuotes" UId="2343">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="2344" />
+      <Component Name="XYAxisOverpressure" UId="2345" />
+    </Symbol>
+  </Access>
+  <Blank UId="2346" />
+  <Token Text=":=" UId="2347" />
+  <Blank UId="2348" />
+  <Access Scope="GlobalVariable" UId="2349">
+    <Symbol UId="2350">
+      <Component Name="DB_AnalogInputs" UId="2351">
+        <BooleanAttribute Name="HasQuotes" UId="2352">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="2353" />
+      <Component Name="sXYAxisOverpressure" UId="2354" />
+      <Token Text="." UId="2355" />
+      <Component Name="sSWRealValue" UId="2356" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="2357" />
+  <NewLine UId="2358" />
+  <Blank Num="4" UId="2359" />
+  <Access Scope="GlobalVariable" UId="2360">
+    <Symbol UId="2361">
+      <Component Name="DB_OPC_RealTime" UId="2362">
+        <BooleanAttribute Name="HasQuotes" UId="2363">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="2364" />
+      <Component Name="LeftAspiration" UId="2365" />
+    </Symbol>
+  </Access>
+  <Blank UId="2366" />
+  <Token Text=":=" UId="2367" />
+  <Blank UId="2368" />
+  <Access Scope="GlobalVariable" UId="2369">
+    <Symbol UId="2370">
+      <Component Name="DB_AnalogInputs" UId="2371">
+        <BooleanAttribute Name="HasQuotes" UId="2372">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="2373" />
+      <Component Name="sLeftAspiration" UId="2374" />
+      <Token Text="." UId="2375" />
+      <Component Name="sSWRealValue" UId="2376" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="2377" />
+  <NewLine UId="2378" />
+  <Blank Num="4" UId="2379" />
+  <Access Scope="GlobalVariable" UId="2380">
+    <Symbol UId="2381">
+      <Component Name="DB_OPC_RealTime" UId="2382">
+        <BooleanAttribute Name="HasQuotes" UId="2383">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="2384" />
+      <Component Name="RightAspiration" UId="2385" />
+    </Symbol>
+  </Access>
+  <Blank UId="2386" />
+  <Token Text=":=" UId="2387" />
+  <Blank UId="2388" />
+  <Access Scope="GlobalVariable" UId="2389">
+    <Symbol UId="2390">
+      <Component Name="DB_AnalogInputs" UId="2391">
+        <BooleanAttribute Name="HasQuotes" UId="2392">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="2393" />
+      <Component Name="sRightAspiration" UId="2394" />
+      <Token Text="." UId="2395" />
+      <Component Name="sSWRealValue" UId="2396" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="2397" />
+  <NewLine UId="2398" />
+  <Blank Num="4" UId="2399" />
+  <Access Scope="GlobalVariable" UId="2400">
+    <Symbol UId="2401">
+      <Component Name="DB_OPC_RealTime" UId="2402">
+        <BooleanAttribute Name="HasQuotes" UId="2403">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="2404" />
+      <Component Name="ClimTemperature" UId="2405" />
+    </Symbol>
+  </Access>
+  <Blank UId="2406" />
+  <Token Text=":=" UId="2407" />
+  <Blank UId="2408" />
+  <Access Scope="GlobalVariable" UId="2409">
+    <Symbol UId="2410">
+      <Component Name="DB_AnalogInputs" UId="2411">
+        <BooleanAttribute Name="HasQuotes" UId="2412">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="2413" />
+      <Component Name="sClimTemperature" UId="2414" />
+      <Token Text="." UId="2415" />
+      <Component Name="sSWRealValue" UId="2416" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="2417" />
+  <NewLine UId="2418" />
+  <Blank Num="4" UId="2419" />
+  <Access Scope="GlobalVariable" UId="2420">
+    <Symbol UId="2421">
+      <Component Name="DB_OPC_RealTime" UId="2422">
+        <BooleanAttribute Name="HasQuotes" UId="2423">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="2424" />
+      <Component Name="SensorControllerStation1" UId="2425" />
+    </Symbol>
+  </Access>
+  <Blank UId="2426" />
+  <Token Text=":=" UId="2427" />
+  <Blank UId="2428" />
+  <Access Scope="GlobalVariable" UId="2429">
+    <Symbol UId="2430">
+      <Component Name="DB_AnalogInputs" UId="2431">
+        <BooleanAttribute Name="HasQuotes" UId="2432">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="2433" />
+      <Component Name="sSensorControllerStation1" UId="2434" />
+      <Token Text="." UId="2435" />
+      <Component Name="sSWRealValue" UId="2436" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="2437" />
+  <NewLine UId="2438" />
+  <Blank Num="4" UId="2439" />
+  <Access Scope="GlobalVariable" UId="2440">
+    <Symbol UId="2441">
+      <Component Name="DB_OPC_RealTime" UId="2442">
+        <BooleanAttribute Name="HasQuotes" UId="2443">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="2444" />
+      <Component Name="CabinetTemperature" UId="2445" />
+    </Symbol>
+  </Access>
+  <Blank UId="2446" />
+  <Token Text=":=" UId="2447" />
+  <Blank UId="2448" />
+  <Access Scope="GlobalVariable" UId="2449">
+    <Symbol UId="2450">
+      <Component Name="DB_AnalogInputs" UId="2451">
+        <BooleanAttribute Name="HasQuotes" UId="2452">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="2453" />
+      <Component Name="sCabinetTemperature" UId="2454" />
+      <Token Text="." UId="2455" />
+      <Component Name="sSWRealValue" UId="2456" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="2457" />
+  <NewLine UId="2458" />
+  <Token Text="END_REGION" UId="2459" />
+  <NewLine Num="2" UId="2460" />
+  <Token Text="REGION" UId="2461" />
+  <Blank UId="2462" />
+  <Text UId="2463">Analog Outputs</Text>
+  <NewLine UId="2464" />
+  <Blank Num="4" UId="2465" />
+  <Access Scope="GlobalVariable" UId="2466">
+    <Symbol UId="2467">
+      <Component Name="DB_OPC_RealTime" UId="2468">
+        <BooleanAttribute Name="HasQuotes" UId="2469">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="2470" />
+      <Component Name="NozzleOverpressureSetPoint" UId="2471" />
+    </Symbol>
+  </Access>
+  <Blank UId="2472" />
+  <Token Text=":=" UId="2473" />
+  <Blank UId="2474" />
+  <Access Scope="GlobalVariable" UId="2475">
+    <Symbol UId="2476">
+      <Component Name="DB_AnalogOutputs" UId="2477">
+        <BooleanAttribute Name="HasQuotes" UId="2478">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="2479" />
+      <Component Name="sNozzleOverpressureSetPoint" UId="2480" />
+      <Token Text="." UId="2481" />
+      <Component Name="sSWRealValue" UId="2482" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="2483" />
+  <NewLine UId="2484" />
+  <Blank Num="4" UId="2485" />
+  <Access Scope="GlobalVariable" UId="2486">
+    <Symbol UId="2487">
+      <Component Name="DB_OPC_RealTime" UId="2488">
+        <BooleanAttribute Name="HasQuotes" UId="2489">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="2490" />
+      <Component Name="VentilatorSetPoint" UId="2491" />
+    </Symbol>
+  </Access>
+  <Blank UId="2492" />
+  <Token Text=":=" UId="2493" />
+  <Blank UId="2494" />
+  <Access Scope="GlobalVariable" UId="2495">
+    <Symbol UId="2496">
+      <Component Name="DB_AnalogOutputs" UId="2497">
+        <BooleanAttribute Name="HasQuotes" UId="2498">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="2499" />
+      <Component Name="sVentilatorSetPoint" UId="2500" />
+      <Token Text="." UId="2501" />
+      <Component Name="sSWRealValue" UId="2502" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="2503" />
+  <NewLine UId="2504" />
+  <Blank Num="4" UId="2505" />
+  <Access Scope="GlobalVariable" UId="2506">
+    <Symbol UId="2507">
+      <Component Name="DB_OPC_RealTime" UId="2508">
+        <BooleanAttribute Name="HasQuotes" UId="2509">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="2510" />
+      <Component Name="PropValveClimSetPoint" UId="2511" />
+    </Symbol>
+  </Access>
+  <Blank UId="2512" />
+  <Token Text=":=" UId="2513" />
+  <Blank UId="2514" />
+  <Access Scope="GlobalVariable" UId="2515">
+    <Symbol UId="2516">
+      <Component Name="DB_AnalogOutputs" UId="2517">
+        <BooleanAttribute Name="HasQuotes" UId="2518">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="2519" />
+      <Component Name="sPropValveClimSetPoint" UId="2520" />
+      <Token Text="." UId="2521" />
+      <Component Name="sSWRealValue" UId="2522" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="2523" />
+  <NewLine UId="2524" />
+  <Token Text="END_REGION" UId="2525" />
+</StructuredText></NetworkSource>
+          <ProgrammingLanguage>SCL</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="5" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="6" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="7" CompositionName="Items">
+                <AttributeList>
+                  <Culture>fr-FR</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="8" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="9" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="A" CompositionName="Items">
+                <AttributeList>
+                  <Culture>fr-FR</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <MultilingualText ID="B" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="C" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="D" CompositionName="Items">
+            <AttributeList>
+              <Culture>fr-FR</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Blocks.FB>
+</Document>

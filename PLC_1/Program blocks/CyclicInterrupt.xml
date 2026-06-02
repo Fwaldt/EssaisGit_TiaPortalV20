@@ -1,0 +1,439 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V20" />
+  <SW.Blocks.OB ID="0">
+    <AttributeList>
+      <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+  <Section Name="Input">
+    <Member Name="Initial_Call" Datatype="Bool" Informative="true">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Initial call of this OB</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="Event_Count" Datatype="Int" Informative="true">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Events discarded</MultiLanguageText>
+      </Comment>
+    </Member>
+  </Section>
+  <Section Name="Temp" />
+  <Section Name="Constant" />
+</Sections></Interface>
+      <MemoryLayout>Optimized</MemoryLayout>
+      <Name>CyclicInterrupt</Name>
+      <Namespace />
+      <Number>30</Number>
+      <ProgrammingLanguage>SCL</ProgrammingLanguage>
+      <SecondaryType>CyclicInterrupt</SecondaryType>
+      <SetENOAutomatically>false</SetENOAutomatically>
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="3" CompositionName="Items">
+            <AttributeList>
+              <Culture>fr-FR</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <SW.Blocks.CompileUnit ID="4" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource><StructuredText xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/StructuredText/v4">
+  <Token Text="REGION" UId="21" />
+  <Blank UId="22" />
+  <Text UId="23">Description head</Text>
+  <NewLine UId="24" />
+  <Blank Num="4" UId="25" />
+  <LineComment UId="26">
+    <Text UId="27">==================================================================================</Text>
+  </LineComment>
+  <NewLine UId="28" />
+  <Blank Num="4" UId="29" />
+  <LineComment UId="30">
+    <Text UId="31"> POSALUX Swiss SA / (C) Copyright 2026</Text>
+  </LineComment>
+  <NewLine UId="32" />
+  <Blank Num="4" UId="33" />
+  <LineComment UId="34">
+    <Text UId="35">----------------------------------------------------------------------------------</Text>
+  </LineComment>
+  <NewLine UId="36" />
+  <Blank Num="4" UId="37" />
+  <LineComment UId="38">
+    <Text UId="39"> Title: Hardware interrupt</Text>
+  </LineComment>
+  <NewLine UId="40" />
+  <Blank Num="4" UId="41" />
+  <LineComment UId="42">
+    <Text UId="43"> Comment/Function: OB30</Text>
+  </LineComment>
+  <NewLine UId="44" />
+  <Blank Num="4" UId="45" />
+  <LineComment UId="46">
+    <Text UId="47"> Author: Fabien WALDT</Text>
+  </LineComment>
+  <NewLine UId="48" />
+  <Blank Num="4" UId="49" />
+  <LineComment UId="50">
+    <Text UId="51"> Engineering: TIA Portal v20</Text>
+  </LineComment>
+  <NewLine UId="52" />
+  <Blank Num="4" UId="53" />
+  <LineComment UId="54">
+    <Text UId="55">----------------------------------------------------------------------------------</Text>
+  </LineComment>
+  <NewLine UId="56" />
+  <Blank Num="4" UId="57" />
+  <LineComment UId="58">
+    <Text UId="59"> Change log table:</Text>
+  </LineComment>
+  <NewLine UId="60" />
+  <Blank Num="4" UId="61" />
+  <LineComment UId="62">
+    <Text UId="63"> Version  | Date     | Expert in charge | Changes applied</Text>
+  </LineComment>
+  <NewLine UId="64" />
+  <Blank Num="4" UId="65" />
+  <LineComment UId="66">
+    <Text UId="67">----------------------------------------------------------------------------------</Text>
+  </LineComment>
+  <NewLine UId="68" />
+  <Blank Num="4" UId="69" />
+  <LineComment UId="70">
+    <Text UId="71"> 00.00.01 | 20260501 | WFA              | First released version</Text>
+  </LineComment>
+  <NewLine UId="72" />
+  <Blank Num="4" UId="73" />
+  <LineComment UId="74">
+    <Text UId="75">==================================================================================</Text>
+  </LineComment>
+  <NewLine UId="76" />
+  <Token Text="END_REGION" UId="77" />
+  <NewLine Num="2" UId="78" />
+  <Token Text="REGION" UId="79" />
+  <Blank UId="80" />
+  <Text UId="81">Machine temperature cooling PID</Text>
+  <NewLine UId="82" />
+  <Blank Num="4" UId="83" />
+  <Access Scope="GlobalVariable" UId="84">
+    <Symbol UId="85">
+      <Component Name="CONT_C_Clim_DB" UId="86">
+        <BooleanAttribute Name="HasQuotes" UId="87">true</BooleanAttribute>
+      </Component>
+    </Symbol>
+  </Access>
+  <Access Scope="Call" UId="88">
+    <Instruction UId="89">
+      <Token Text="(" UId="90" />
+      <Parameter Name="COM_RST" UId="91">
+        <Blank UId="92" />
+        <Token Text=":=" UId="93" />
+        <Blank UId="94" />
+        <Access Scope="GlobalVariable" UId="95">
+          <Symbol UId="96">
+            <Component Name="DB_Temperature" UId="97">
+              <BooleanAttribute Name="HasQuotes" UId="98">true</BooleanAttribute>
+            </Component>
+            <Token Text="." UId="99" />
+            <Component Name="sPIDRestart" UId="100" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="101" />
+      <NewLine UId="102" />
+      <Blank Num="21" UId="103" />
+      <Parameter Name="MAN_ON" UId="104">
+        <Blank UId="105" />
+        <Token Text=":=" UId="106" />
+        <Blank UId="107" />
+        <Access Scope="LiteralConstant" UId="108">
+          <Constant UId="109">
+            <ConstantValue UId="111">FALSE</ConstantValue>
+          </Constant>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="112" />
+      <NewLine UId="113" />
+      <Blank Num="21" UId="114" />
+      <Parameter Name="P_SEL" UId="115">
+        <Blank UId="116" />
+        <Token Text=":=" UId="117" />
+        <Blank UId="118" />
+        <Access Scope="LiteralConstant" UId="119">
+          <Constant UId="120">
+            <ConstantValue UId="122">TRUE</ConstantValue>
+          </Constant>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="123" />
+      <NewLine UId="124" />
+      <Blank Num="21" UId="125" />
+      <Parameter Name="I_SEL" UId="126">
+        <Blank UId="127" />
+        <Token Text=":=" UId="128" />
+        <Blank UId="129" />
+        <Access Scope="LiteralConstant" UId="130">
+          <Constant UId="131">
+            <ConstantValue UId="133">TRUE</ConstantValue>
+          </Constant>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="134" />
+      <NewLine UId="135" />
+      <Blank Num="21" UId="136" />
+      <Parameter Name="INT_HOLD" UId="137">
+        <Blank UId="138" />
+        <Token Text=":=" UId="139" />
+        <Blank UId="140" />
+        <Access Scope="GlobalVariable" UId="141">
+          <Symbol UId="142">
+            <Component Name="DB_Temperature" UId="143">
+              <BooleanAttribute Name="HasQuotes" UId="144">true</BooleanAttribute>
+            </Component>
+            <Token Text="." UId="145" />
+            <Component Name="sPIDHoldI" UId="146" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="147" />
+      <NewLine UId="148" />
+      <Blank Num="21" UId="149" />
+      <Parameter Name="D_SEL" UId="150">
+        <Blank UId="151" />
+        <Token Text=":=" UId="152" />
+        <Blank UId="153" />
+        <Access Scope="LiteralConstant" UId="154">
+          <Constant UId="155">
+            <ConstantValue UId="157">TRUE</ConstantValue>
+          </Constant>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="158" />
+      <NewLine UId="159" />
+      <Blank Num="21" UId="160" />
+      <Parameter Name="CYCLE" UId="161">
+        <Blank UId="162" />
+        <Token Text=":=" UId="163" />
+        <Blank UId="164" />
+        <Access Scope="TypedConstant" UId="165">
+          <Constant UId="166">
+            <ConstantValue UId="167">T#1s</ConstantValue>
+          </Constant>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="168" />
+      <NewLine UId="169" />
+      <Blank Num="21" UId="170" />
+      <Parameter Name="SP_INT" UId="171">
+        <Blank UId="172" />
+        <Token Text=":=" UId="173" />
+        <Blank UId="174" />
+        <Access Scope="GlobalVariable" UId="175">
+          <Symbol UId="176">
+            <Component Name="DB_HMISetting" UId="177">
+              <BooleanAttribute Name="HasQuotes" UId="178">true</BooleanAttribute>
+            </Component>
+            <Token Text="." UId="179" />
+            <Component Name="TemperatureCoolingSetpoint" UId="180" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="181" />
+      <NewLine UId="182" />
+      <Blank Num="21" UId="183" />
+      <Parameter Name="PV_IN" UId="184">
+        <Blank UId="185" />
+        <Token Text=":=" UId="186" />
+        <Blank UId="187" />
+        <Access Scope="GlobalVariable" UId="188">
+          <Symbol UId="189">
+            <Component Name="DB_AnalogInputs" UId="190">
+              <BooleanAttribute Name="HasQuotes" UId="191">true</BooleanAttribute>
+            </Component>
+            <Token Text="." UId="192" />
+            <Component Name="sClimTemperature" UId="193" />
+            <Token Text="." UId="194" />
+            <Component Name="sSWRealValue" UId="195" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="196" />
+      <NewLine UId="197" />
+      <Blank Num="21" UId="198" />
+      <Parameter Name="GAIN" UId="199">
+        <Blank UId="200" />
+        <Token Text=":=" UId="201" />
+        <Blank UId="202" />
+        <Access Scope="GlobalVariable" UId="203">
+          <Symbol UId="204">
+            <Component Name="DB_Temperature" UId="205">
+              <BooleanAttribute Name="HasQuotes" UId="206">true</BooleanAttribute>
+            </Component>
+            <Token Text="." UId="207" />
+            <Component Name="sP" UId="208" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="209" />
+      <NewLine UId="210" />
+      <Blank Num="21" UId="211" />
+      <Parameter Name="TI" UId="212">
+        <Blank UId="213" />
+        <Token Text=":=" UId="214" />
+        <Blank UId="215" />
+        <Access Scope="GlobalVariable" UId="216">
+          <Symbol UId="217">
+            <Component Name="DB_Temperature" UId="218">
+              <BooleanAttribute Name="HasQuotes" UId="219">true</BooleanAttribute>
+            </Component>
+            <Token Text="." UId="220" />
+            <Component Name="sI" UId="221" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="222" />
+      <NewLine UId="223" />
+      <Blank Num="21" UId="224" />
+      <Parameter Name="TD" UId="225">
+        <Blank UId="226" />
+        <Token Text=":=" UId="227" />
+        <Blank UId="228" />
+        <Access Scope="GlobalVariable" UId="229">
+          <Symbol UId="230">
+            <Component Name="DB_Temperature" UId="231">
+              <BooleanAttribute Name="HasQuotes" UId="232">true</BooleanAttribute>
+            </Component>
+            <Token Text="." UId="233" />
+            <Component Name="sD" UId="234" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="235" />
+      <NewLine UId="236" />
+      <Blank Num="21" UId="237" />
+      <Parameter Name="DEADB_W" UId="238">
+        <Blank UId="239" />
+        <Token Text=":=" UId="240" />
+        <Blank UId="241" />
+        <Access Scope="LiteralConstant" UId="242">
+          <Constant UId="243">
+            <ConstantValue UId="245">0.1</ConstantValue>
+          </Constant>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="246" />
+      <NewLine UId="247" />
+      <Blank Num="21" UId="248" />
+      <Parameter Name="LMN_HLM" UId="249">
+        <Blank UId="250" />
+        <Token Text=":=" UId="251" />
+        <Blank UId="252" />
+        <Access Scope="LiteralConstant" UId="253">
+          <Constant UId="254">
+            <ConstantValue UId="256">100</ConstantValue>
+          </Constant>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="257" />
+      <NewLine UId="258" />
+      <Blank Num="21" UId="259" />
+      <Parameter Name="LMN_LLM" UId="260">
+        <Blank UId="261" />
+        <Token Text=":=" UId="262" />
+        <Blank UId="263" />
+        <Access Scope="LiteralConstant" UId="264">
+          <Constant UId="265">
+            <ConstantValue UId="267">0</ConstantValue>
+          </Constant>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="268" />
+      <NewLine UId="269" />
+      <Blank Num="21" UId="270" />
+      <Parameter Name="LMN" UId="271">
+        <Blank UId="272" />
+        <Token Text="=&gt;" UId="273" />
+        <Blank UId="274" />
+        <Access Scope="GlobalVariable" UId="275">
+          <Symbol UId="276">
+            <Component Name="DB_AnalogOutputs" UId="277">
+              <BooleanAttribute Name="HasQuotes" UId="278">true</BooleanAttribute>
+            </Component>
+            <Token Text="." UId="279" />
+            <Component Name="sPropValveClimSetPoint" UId="280" />
+            <Token Text="." UId="281" />
+            <Component Name="sSWRealValue" UId="282" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text=")" UId="283" />
+    </Instruction>
+  </Access>
+  <Token Text=";" UId="284" />
+  <NewLine UId="285" />
+  <Token Text="END_REGION" UId="286" />
+</StructuredText></NetworkSource>
+          <ProgrammingLanguage>SCL</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="5" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="6" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="7" CompositionName="Items">
+                <AttributeList>
+                  <Culture>fr-FR</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="8" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="9" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="A" CompositionName="Items">
+                <AttributeList>
+                  <Culture>fr-FR</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <MultilingualText ID="B" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="C" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="D" CompositionName="Items">
+            <AttributeList>
+              <Culture>fr-FR</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Blocks.OB>
+</Document>

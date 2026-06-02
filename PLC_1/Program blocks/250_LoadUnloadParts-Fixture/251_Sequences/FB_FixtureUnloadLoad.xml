@@ -1,0 +1,2664 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V20" />
+  <SW.Blocks.FB ID="0">
+    <AttributeList>
+      <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+  <Section Name="Input">
+    <Member Name="iFixtureUnloadingRequest" Datatype="Bool" />
+    <Member Name="iFixtureLoadingRequest" Datatype="Bool" />
+    <Member Name="iFixtureBlowingRequest" Datatype="Bool" />
+    <Member Name="iFixtureReleaseRequest" Datatype="Bool" />
+    <Member Name="iFixtureV_InitRequest" Datatype="Bool" />
+    <Member Name="iFixtureW_InitRequest" Datatype="Bool" />
+    <Member Name="iWorkingModeFilling" Datatype="Bool" />
+    <Member Name="iWorkingModeEmptying" Datatype="Bool" />
+    <Member Name="iGripperReadyForUnloading" Datatype="Bool" />
+    <Member Name="iGripperReadyForLoading" Datatype="Bool" />
+    <Member Name="iGripperReadyForBlowing" Datatype="Bool" />
+    <Member Name="iGripperReadyForRelease" Datatype="Bool" />
+    <Member Name="iGripperReadyForV_Init" Datatype="Bool" />
+    <Member Name="iGripperReadyForW_Init" Datatype="Bool" />
+    <Member Name="iFixtureReadyForUnloading" Datatype="Bool" />
+    <Member Name="iFixtureReadyForLoading" Datatype="Bool" />
+    <Member Name="iFixtureReadyForBlowing" Datatype="Bool" />
+    <Member Name="iFixtureReadyForRelease" Datatype="Bool" />
+    <Member Name="iFixtureReadyForV_Init" Datatype="Bool" />
+    <Member Name="iFixtureReadyForW_Init" Datatype="Bool" />
+    <Member Name="iAxisReadyForUnloading" Datatype="Bool" />
+    <Member Name="iAxisReadyForLoading" Datatype="Bool" />
+    <Member Name="iAxisReadyForBlowing" Datatype="Bool" />
+    <Member Name="iAxisReadyForRelease" Datatype="Bool" />
+    <Member Name="iAxisReadyForV_Init" Datatype="Bool" />
+    <Member Name="iAxisReadyForW_Init" Datatype="Bool" />
+    <Member Name="iAxisV_W_Available" Datatype="Bool" />
+  </Section>
+  <Section Name="Output">
+    <Member Name="oAxisV_W_Reservation" Datatype="Bool" />
+    <Member Name="oNC_RID1" Datatype="Bool" />
+    <Member Name="oNC_RID2" Datatype="Bool" />
+  </Section>
+  <Section Name="InOut">
+    <Member Name="ioFixtureUnloadingSeq" Datatype="&quot;UDT_SequenceInterface&quot;" />
+    <Member Name="ioFixtureLoadingSeq" Datatype="&quot;UDT_SequenceInterface&quot;" />
+    <Member Name="ioFixtureBlowingSeq" Datatype="&quot;UDT_SequenceInterface&quot;" />
+    <Member Name="ioFixtureReleaseSeq" Datatype="&quot;UDT_SequenceInterface&quot;" />
+    <Member Name="ioFixtureV_InitSeq" Datatype="&quot;UDT_SequenceInterface&quot;" />
+    <Member Name="ioFixtureW_InitSeq" Datatype="&quot;UDT_SequenceInterface&quot;" />
+  </Section>
+  <Section Name="Static">
+    <Member Name="sRT_FixtureUnloadingRequest" Datatype="R_TRIG" Version="1.0" />
+    <Member Name="sRT_FixtureLoadingRequest" Datatype="R_TRIG" Version="1.0">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="sRT_FixtureBlowingRequest" Datatype="R_TRIG" Version="1.0">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="sRT_FixtureReleaseRequest" Datatype="R_TRIG" Version="1.0">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="sRT_FixtureV_InitRequest" Datatype="R_TRIG" Version="1.0">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="sRT_FixtureW_InitRequest" Datatype="R_TRIG" Version="1.0">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="sMemoUnloadingRequest" Datatype="Bool">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="sMemoLoadingRequest" Datatype="Bool">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="sMemoBlowingRequest" Datatype="Bool">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="sMemoReleaseRequest" Datatype="Bool">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="sMemoV_InitRequest" Datatype="Bool" />
+    <Member Name="sMemoW_InitRequest" Datatype="Bool" />
+    <Member Name="sTONUnloadingNotFinished" Datatype="TON_TIME" Version="1.0" />
+    <Member Name="sTONBlowingNotFinished" Datatype="TON_TIME" Version="1.0">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="sTONLoadingNotFinished" Datatype="TON_TIME" Version="1.0">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+  </Section>
+  <Section Name="Temp" />
+  <Section Name="Constant" />
+</Sections></Interface>
+      <MemoryLayout>Optimized</MemoryLayout>
+      <MemoryReserve>100</MemoryReserve>
+      <Name>FB_FixtureUnloadLoad</Name>
+      <Namespace />
+      <Number>65</Number>
+      <ProgrammingLanguage>SCL</ProgrammingLanguage>
+      <SetENOAutomatically>false</SetENOAutomatically>
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="3" CompositionName="Items">
+            <AttributeList>
+              <Culture>fr-FR</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <SW.Blocks.CompileUnit ID="4" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource><StructuredText xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/StructuredText/v4">
+  <Token Text="REGION" UId="21" />
+  <Blank UId="22" />
+  <Text UId="23">Description header </Text>
+  <NewLine UId="24" />
+  <Blank Num="4" UId="25" />
+  <LineComment UId="26">
+    <Text UId="27">==================================================================================</Text>
+  </LineComment>
+  <NewLine UId="28" />
+  <Blank Num="4" UId="29" />
+  <LineComment UId="30">
+    <Text UId="31"> POSALUX Swiss SA / (C) Copyright 2026</Text>
+  </LineComment>
+  <NewLine UId="32" />
+  <Blank Num="4" UId="33" />
+  <LineComment UId="34">
+    <Text UId="35">----------------------------------------------------------------------------------</Text>
+  </LineComment>
+  <NewLine UId="36" />
+  <Blank Num="4" UId="37" />
+  <LineComment UId="38">
+    <Text UId="39"> Title: FB_FixtureUnloadLoadMain</Text>
+  </LineComment>
+  <NewLine UId="40" />
+  <Blank Num="4" UId="41" />
+  <LineComment UId="42">
+    <Text UId="43"> Comment/Function: </Text>
+  </LineComment>
+  <NewLine UId="44" />
+  <Blank Num="4" UId="45" />
+  <LineComment UId="46">
+    <Text UId="47"> Author: Fabien WALDT</Text>
+  </LineComment>
+  <NewLine UId="48" />
+  <Blank Num="4" UId="49" />
+  <LineComment UId="50">
+    <Text UId="51"> Engineering: TIA Portal v20</Text>
+  </LineComment>
+  <NewLine UId="52" />
+  <Blank Num="4" UId="53" />
+  <LineComment UId="54">
+    <Text UId="55">----------------------------------------------------------------------------------</Text>
+  </LineComment>
+  <NewLine UId="56" />
+  <Blank Num="4" UId="57" />
+  <LineComment UId="58">
+    <Text UId="59"> Change log table:</Text>
+  </LineComment>
+  <NewLine UId="60" />
+  <Blank Num="4" UId="61" />
+  <LineComment UId="62">
+    <Text UId="63"> Version  | Date     | Expert in charge | Changes applied</Text>
+  </LineComment>
+  <NewLine UId="64" />
+  <Blank Num="4" UId="65" />
+  <LineComment UId="66">
+    <Text UId="67"> ---------|----------|------------------|-----------------------------------------</Text>
+  </LineComment>
+  <NewLine UId="68" />
+  <Blank Num="4" UId="69" />
+  <LineComment UId="70">
+    <Text UId="71"> 00.00.01 | 20260122 | WFA              | First released version</Text>
+  </LineComment>
+  <NewLine UId="72" />
+  <Blank Num="4" UId="73" />
+  <LineComment UId="74">
+    <Text UId="75"> =================================================================================</Text>
+  </LineComment>
+  <NewLine UId="76" />
+  <Token Text="END_REGION" UId="77" />
+  <NewLine Num="2" UId="78" />
+  <Token Text="REGION" UId="79" />
+  <Blank UId="80" />
+  <Text UId="81">Init</Text>
+  <NewLine UId="82" />
+  <Blank Num="4" UId="83" />
+  <Token Text="IF" UId="84" />
+  <Blank UId="85" />
+  <Access Scope="GlobalVariable" UId="86">
+    <Symbol UId="87">
+      <Component Name="LBP_Chan1" UId="88">
+        <BooleanAttribute Name="HasQuotes" UId="89">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="90" />
+      <Component Name="A_Reset" UId="91" />
+    </Symbol>
+  </Access>
+  <Blank UId="92" />
+  <Token Text="THEN" UId="93" />
+  <NewLine UId="94" />
+  <Blank Num="8" UId="95" />
+  <Access Scope="LocalVariable" UId="96">
+    <Symbol UId="97">
+      <Component Name="oAxisV_W_Reservation" UId="98" />
+    </Symbol>
+  </Access>
+  <Blank UId="99" />
+  <Token Text=":=" UId="100" />
+  <Blank UId="101" />
+  <Access Scope="LiteralConstant" UId="102">
+    <Constant UId="103">
+      <ConstantValue UId="105">FALSE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="106" />
+  <NewLine UId="107" />
+  <Blank Num="8" UId="108" />
+  <Access Scope="LocalVariable" UId="109">
+    <Symbol UId="110">
+      <Component Name="oNC_RID1" UId="111" />
+    </Symbol>
+  </Access>
+  <Blank UId="112" />
+  <Token Text=":=" UId="113" />
+  <Blank UId="114" />
+  <Access Scope="LiteralConstant" UId="115">
+    <Constant UId="116">
+      <ConstantValue UId="118">FALSE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="119" />
+  <NewLine UId="120" />
+  <Blank Num="8" UId="121" />
+  <Access Scope="LocalVariable" UId="122">
+    <Symbol UId="123">
+      <Component Name="oNC_RID2" UId="124" />
+    </Symbol>
+  </Access>
+  <Blank UId="125" />
+  <Token Text=":=" UId="126" />
+  <Blank UId="127" />
+  <Access Scope="LiteralConstant" UId="128">
+    <Constant UId="129">
+      <ConstantValue UId="131">FALSE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="132" />
+  <NewLine UId="133" />
+  <Blank Num="8" UId="134" />
+  <Access Scope="LocalVariable" UId="135">
+    <Symbol UId="136">
+      <Component Name="ioFixtureUnloadingSeq" UId="137" />
+      <Token Text="." UId="138" />
+      <Component Name="StartRequest" UId="139" />
+    </Symbol>
+  </Access>
+  <Blank UId="140" />
+  <Token Text=":=" UId="141" />
+  <Blank UId="142" />
+  <Access Scope="LiteralConstant" UId="143">
+    <Constant UId="144">
+      <ConstantValue UId="146">FALSE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="147" />
+  <NewLine UId="148" />
+  <Blank Num="8" UId="149" />
+  <Access Scope="LocalVariable" UId="150">
+    <Symbol UId="151">
+      <Component Name="ioFixtureLoadingSeq" UId="152" />
+      <Token Text="." UId="153" />
+      <Component Name="StartRequest" UId="154" />
+    </Symbol>
+  </Access>
+  <Blank UId="155" />
+  <Token Text=":=" UId="156" />
+  <Blank UId="157" />
+  <Access Scope="LiteralConstant" UId="158">
+    <Constant UId="159">
+      <ConstantValue UId="161">FALSE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="162" />
+  <NewLine UId="163" />
+  <Blank Num="8" UId="164" />
+  <Access Scope="LocalVariable" UId="165">
+    <Symbol UId="166">
+      <Component Name="ioFixtureBlowingSeq" UId="167" />
+      <Token Text="." UId="168" />
+      <Component Name="StartRequest" UId="169" />
+    </Symbol>
+  </Access>
+  <Blank UId="170" />
+  <Token Text=":=" UId="171" />
+  <Blank UId="172" />
+  <Access Scope="LiteralConstant" UId="173">
+    <Constant UId="174">
+      <ConstantValue UId="176">FALSE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="177" />
+  <NewLine UId="178" />
+  <Blank Num="8" UId="179" />
+  <Access Scope="LocalVariable" UId="180">
+    <Symbol UId="181">
+      <Component Name="ioFixtureReleaseSeq" UId="182" />
+      <Token Text="." UId="183" />
+      <Component Name="StartRequest" UId="184" />
+    </Symbol>
+  </Access>
+  <Blank UId="185" />
+  <Token Text=":=" UId="186" />
+  <Blank UId="187" />
+  <Access Scope="LiteralConstant" UId="188">
+    <Constant UId="189">
+      <ConstantValue UId="191">FALSE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="192" />
+  <NewLine UId="193" />
+  <Blank Num="8" UId="194" />
+  <Access Scope="LocalVariable" UId="195">
+    <Symbol UId="196">
+      <Component Name="ioFixtureV_InitSeq" UId="197" />
+      <Token Text="." UId="198" />
+      <Component Name="StartRequest" UId="199" />
+    </Symbol>
+  </Access>
+  <Blank UId="200" />
+  <Token Text=":=" UId="201" />
+  <Blank UId="202" />
+  <Access Scope="LiteralConstant" UId="203">
+    <Constant UId="204">
+      <ConstantValue UId="206">FALSE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="207" />
+  <NewLine UId="208" />
+  <Blank Num="8" UId="209" />
+  <Access Scope="LocalVariable" UId="210">
+    <Symbol UId="211">
+      <Component Name="ioFixtureW_InitSeq" UId="212" />
+      <Token Text="." UId="213" />
+      <Component Name="StartRequest" UId="214" />
+    </Symbol>
+  </Access>
+  <Blank UId="215" />
+  <Token Text=":=" UId="216" />
+  <Blank UId="217" />
+  <Access Scope="LiteralConstant" UId="218">
+    <Constant UId="219">
+      <ConstantValue UId="221">FALSE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="222" />
+  <NewLine UId="223" />
+  <Blank Num="8" UId="224" />
+  <Access Scope="LocalVariable" UId="225">
+    <Symbol UId="226">
+      <Component Name="sMemoUnloadingRequest" UId="227" />
+    </Symbol>
+  </Access>
+  <Blank UId="228" />
+  <Token Text=":=" UId="229" />
+  <Blank UId="230" />
+  <Access Scope="LiteralConstant" UId="231">
+    <Constant UId="232">
+      <ConstantValue UId="234">FALSE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="235" />
+  <NewLine UId="236" />
+  <Blank Num="8" UId="237" />
+  <Access Scope="LocalVariable" UId="238">
+    <Symbol UId="239">
+      <Component Name="sMemoLoadingRequest" UId="240" />
+    </Symbol>
+  </Access>
+  <Blank UId="241" />
+  <Token Text=":=" UId="242" />
+  <Blank UId="243" />
+  <Access Scope="LiteralConstant" UId="244">
+    <Constant UId="245">
+      <ConstantValue UId="247">FALSE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="248" />
+  <NewLine UId="249" />
+  <Blank Num="8" UId="250" />
+  <Access Scope="LocalVariable" UId="251">
+    <Symbol UId="252">
+      <Component Name="sMemoBlowingRequest" UId="253" />
+    </Symbol>
+  </Access>
+  <Blank UId="254" />
+  <Token Text=":=" UId="255" />
+  <Blank UId="256" />
+  <Access Scope="LiteralConstant" UId="257">
+    <Constant UId="258">
+      <ConstantValue UId="260">FALSE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="261" />
+  <NewLine UId="262" />
+  <Blank Num="8" UId="263" />
+  <Access Scope="LocalVariable" UId="264">
+    <Symbol UId="265">
+      <Component Name="sMemoReleaseRequest" UId="266" />
+    </Symbol>
+  </Access>
+  <Blank UId="267" />
+  <Token Text=":=" UId="268" />
+  <Blank UId="269" />
+  <Access Scope="LiteralConstant" UId="270">
+    <Constant UId="271">
+      <ConstantValue UId="273">FALSE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="274" />
+  <NewLine UId="275" />
+  <Blank Num="4" UId="276" />
+  <Token Text="END_IF" UId="277" />
+  <Token Text=";" UId="278" />
+  <NewLine UId="279" />
+  <Token Text="END_REGION" UId="280" />
+  <NewLine Num="2" UId="281" />
+  <Token Text="REGION" UId="282" />
+  <Blank UId="283" />
+  <Text UId="284">Fixture Unload Request</Text>
+  <NewLine UId="285" />
+  <Blank Num="4" UId="286" />
+  <Access Scope="LocalVariable" UId="287">
+    <Symbol UId="288">
+      <Component Name="sRT_FixtureUnloadingRequest" UId="289" />
+    </Symbol>
+  </Access>
+  <Access Scope="Call" UId="290">
+    <Instruction UId="291">
+      <Token Text="(" UId="292" />
+      <Parameter Name="CLK" UId="293">
+        <Blank UId="294" />
+        <Token Text=":=" UId="295" />
+        <Blank UId="296" />
+        <Access Scope="LocalVariable" UId="297">
+          <Symbol UId="298">
+            <Component Name="iFixtureUnloadingRequest" UId="299" />
+          </Symbol>
+        </Access>
+        <Blank Num="8" UId="300" />
+        <LineComment UId="301">
+          <Text UId="302"> M Code</Text>
+        </LineComment>
+        <NewLine UId="303" />
+        <Blank Num="33" UId="304" />
+        <Token Text="AND" UId="305" />
+        <Blank UId="306" />
+        <Token Text="NOT" UId="307" />
+        <Blank UId="308" />
+        <Access Scope="LocalVariable" UId="309">
+          <Symbol UId="310">
+            <Component Name="iWorkingModeFilling" UId="311" />
+          </Symbol>
+        </Access>
+        <Blank Num="12" UId="312" />
+        <LineComment UId="313">
+          <Text UId="314"> Not Mode Filling (No Part on Fixture)</Text>
+        </LineComment>
+        <NewLine UId="315" />
+        <Blank Num="33" UId="316" />
+        <Token Text="AND" UId="317" />
+        <Blank UId="318" />
+        <Token Text="NOT" UId="319" />
+        <Blank UId="320" />
+        <Token Text="(" UId="321" />
+        <Access Scope="LocalVariable" UId="322">
+          <Symbol UId="323">
+            <Component Name="iWorkingModeEmptying" UId="324" />
+          </Symbol>
+        </Access>
+        <Blank UId="325" />
+        <Token Text="AND" UId="326" />
+        <Blank UId="327" />
+        <Access Scope="GlobalVariable" UId="328">
+          <Symbol UId="329">
+            <Component Name="DB_PartManagement" UId="330">
+              <BooleanAttribute Name="HasQuotes" UId="331">true</BooleanAttribute>
+            </Component>
+            <Token Text="." UId="332" />
+            <Component Name="sPosition" UId="333" />
+            <Token Text="." UId="334" />
+            <Component Name="sFixtureEmpty" UId="335" />
+          </Symbol>
+        </Access>
+        <Blank UId="336" />
+        <Token Text="AND" UId="337" />
+        <Blank UId="338" />
+        <Access Scope="GlobalVariable" UId="339">
+          <Symbol UId="340">
+            <Component Name="DB_PartManagement" UId="341">
+              <BooleanAttribute Name="HasQuotes" UId="342">true</BooleanAttribute>
+            </Component>
+            <Token Text="." UId="343" />
+            <Component Name="sPosition" UId="344" />
+            <Token Text="." UId="345" />
+            <Component Name="sGripperEmpty" UId="346" />
+          </Symbol>
+        </Access>
+        <Token Text=")" UId="347" />
+      </Parameter>
+      <Token Text=")" UId="348" />
+    </Instruction>
+  </Access>
+  <Token Text=";" UId="349" />
+  <Blank UId="350" />
+  <LineComment UId="351">
+    <Text UId="352"> Not Gripper and Fixture Empty</Text>
+  </LineComment>
+  <NewLine UId="353" />
+  <Blank Num="4" UId="354" />
+  <Token Text="IF" UId="355" />
+  <Blank UId="356" />
+  <Access Scope="LocalVariable" UId="357">
+    <Symbol UId="358">
+      <Component Name="sRT_FixtureUnloadingRequest" UId="359" />
+      <Token Text="." UId="360" />
+      <Component Name="Q" UId="361" />
+    </Symbol>
+  </Access>
+  <Blank UId="362" />
+  <Token Text="THEN" UId="363" />
+  <NewLine UId="364" />
+  <Blank Num="8" UId="365" />
+  <Access Scope="LocalVariable" UId="366">
+    <Symbol UId="367">
+      <Component Name="oNC_RID2" UId="368" />
+    </Symbol>
+  </Access>
+  <Blank UId="369" />
+  <Token Text=":=" UId="370" />
+  <Blank UId="371" />
+  <Access Scope="LiteralConstant" UId="372">
+    <Constant UId="373">
+      <ConstantValue UId="375">TRUE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="376" />
+  <NewLine UId="377" />
+  <Blank Num="8" UId="378" />
+  <Access Scope="LocalVariable" UId="379">
+    <Symbol UId="380">
+      <Component Name="sMemoUnloadingRequest" UId="381" />
+    </Symbol>
+  </Access>
+  <Blank UId="382" />
+  <Token Text=":=" UId="383" />
+  <Blank UId="384" />
+  <Access Scope="LiteralConstant" UId="385">
+    <Constant UId="386">
+      <ConstantValue UId="388">TRUE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="389" />
+  <NewLine UId="390" />
+  <Blank Num="8" UId="391" />
+  <Access Scope="GlobalVariable" UId="392">
+    <Symbol UId="393">
+      <Component Name="DB_LoaderFixtureMain" UId="394">
+        <BooleanAttribute Name="HasQuotes" UId="395">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="396" />
+      <Component Name="sBlowingNotFinished" UId="397" />
+    </Symbol>
+  </Access>
+  <Blank UId="398" />
+  <Token Text=":=" UId="399" />
+  <Blank UId="400" />
+  <Access Scope="LiteralConstant" UId="401">
+    <Constant UId="402">
+      <ConstantValue UId="404">FALSE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="405" />
+  <NewLine UId="406" />
+  <Blank Num="8" UId="407" />
+  <Access Scope="GlobalVariable" UId="408">
+    <Symbol UId="409">
+      <Component Name="DB_LoaderFixtureMain" UId="410">
+        <BooleanAttribute Name="HasQuotes" UId="411">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="412" />
+      <Component Name="sLoadingNotFinished" UId="413" />
+    </Symbol>
+  </Access>
+  <Blank UId="414" />
+  <Token Text=":=" UId="415" />
+  <Blank UId="416" />
+  <Access Scope="LiteralConstant" UId="417">
+    <Constant UId="418">
+      <ConstantValue UId="420">FALSE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="421" />
+  <NewLine UId="422" />
+  <Blank Num="8" UId="423" />
+  <Access Scope="GlobalVariable" UId="424">
+    <Symbol UId="425">
+      <Component Name="DB_LoaderFixtureMain" UId="426">
+        <BooleanAttribute Name="HasQuotes" UId="427">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="428" />
+      <Component Name="sUnloadingNotFinished" UId="429" />
+    </Symbol>
+  </Access>
+  <Blank UId="430" />
+  <Token Text=":=" UId="431" />
+  <Blank UId="432" />
+  <Access Scope="LiteralConstant" UId="433">
+    <Constant UId="434">
+      <ConstantValue UId="436">FALSE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="437" />
+  <NewLine UId="438" />
+  <Blank Num="4" UId="439" />
+  <Token Text="END_IF" UId="440" />
+  <Token Text=";" UId="441" />
+  <NewLine UId="442" />
+  <Blank Num="4" UId="443" />
+  <NewLine UId="444" />
+  <Blank Num="4" UId="445" />
+  <Token Text="IF" UId="446" />
+  <Blank UId="447" />
+  <Access Scope="LocalVariable" UId="448">
+    <Symbol UId="449">
+      <Component Name="sMemoUnloadingRequest" UId="450" />
+    </Symbol>
+  </Access>
+  <NewLine UId="451" />
+  <Blank Num="8" UId="452" />
+  <Token Text="AND" UId="453" />
+  <Blank UId="454" />
+  <Access Scope="LocalVariable" UId="455">
+    <Symbol UId="456">
+      <Component Name="iGripperReadyForUnloading" UId="457" />
+    </Symbol>
+  </Access>
+  <NewLine UId="458" />
+  <Blank Num="8" UId="459" />
+  <Token Text="AND" UId="460" />
+  <Blank UId="461" />
+  <Access Scope="LocalVariable" UId="462">
+    <Symbol UId="463">
+      <Component Name="iFixtureReadyForUnloading" UId="464" />
+    </Symbol>
+  </Access>
+  <NewLine UId="465" />
+  <Blank Num="8" UId="466" />
+  <Token Text="AND" UId="467" />
+  <Blank UId="468" />
+  <Access Scope="LocalVariable" UId="469">
+    <Symbol UId="470">
+      <Component Name="iAxisReadyForUnloading" UId="471" />
+    </Symbol>
+  </Access>
+  <NewLine UId="472" />
+  <Blank Num="8" UId="473" />
+  <Token Text="AND" UId="474" />
+  <Blank UId="475" />
+  <Token Text="NOT" UId="476" />
+  <Blank UId="477" />
+  <Access Scope="LocalVariable" UId="478">
+    <Symbol UId="479">
+      <Component Name="iWorkingModeFilling" UId="480" />
+    </Symbol>
+  </Access>
+  <NewLine UId="481" />
+  <Blank Num="8" UId="482" />
+  <Token Text="AND" UId="483" />
+  <Blank UId="484" />
+  <Token Text="NOT" UId="485" />
+  <Blank UId="486" />
+  <Token Text="(" UId="487" />
+  <Access Scope="LocalVariable" UId="488">
+    <Symbol UId="489">
+      <Component Name="iWorkingModeEmptying" UId="490" />
+    </Symbol>
+  </Access>
+  <Blank UId="491" />
+  <Token Text="AND" UId="492" />
+  <Blank UId="493" />
+  <Access Scope="GlobalVariable" UId="494">
+    <Symbol UId="495">
+      <Component Name="DB_PartManagement" UId="496">
+        <BooleanAttribute Name="HasQuotes" UId="497">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="498" />
+      <Component Name="sPosition" UId="499" />
+      <Token Text="." UId="500" />
+      <Component Name="sFixtureEmpty" UId="501" />
+    </Symbol>
+  </Access>
+  <Blank UId="502" />
+  <Token Text="AND" UId="503" />
+  <Blank UId="504" />
+  <Access Scope="GlobalVariable" UId="505">
+    <Symbol UId="506">
+      <Component Name="DB_PartManagement" UId="507">
+        <BooleanAttribute Name="HasQuotes" UId="508">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="509" />
+      <Component Name="sPosition" UId="510" />
+      <Token Text="." UId="511" />
+      <Component Name="sGripperEmpty" UId="512" />
+    </Symbol>
+  </Access>
+  <Token Text=")" UId="513" />
+  <Blank UId="514" />
+  <Token Text="THEN" UId="515" />
+  <NewLine UId="516" />
+  <Blank Num="8" UId="517" />
+  <Access Scope="LocalVariable" UId="518">
+    <Symbol UId="519">
+      <Component Name="oAxisV_W_Reservation" UId="520" />
+    </Symbol>
+  </Access>
+  <Blank UId="521" />
+  <Token Text=":=" UId="522" />
+  <Blank UId="523" />
+  <Access Scope="LiteralConstant" UId="524">
+    <Constant UId="525">
+      <ConstantValue UId="527">TRUE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="528" />
+  <NewLine UId="529" />
+  <Blank Num="8" UId="530" />
+  <Access Scope="LocalVariable" UId="531">
+    <Symbol UId="532">
+      <Component Name="ioFixtureUnloadingSeq" UId="533" />
+      <Token Text="." UId="534" />
+      <Component Name="StartRequest" UId="535" />
+    </Symbol>
+  </Access>
+  <Blank UId="536" />
+  <Token Text=":=" UId="537" />
+  <Blank UId="538" />
+  <Access Scope="LiteralConstant" UId="539">
+    <Constant UId="540">
+      <ConstantValue UId="542">TRUE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="543" />
+  <NewLine UId="544" />
+  <Blank Num="4" UId="545" />
+  <Token Text="END_IF" UId="546" />
+  <Token Text=";" UId="547" />
+  <NewLine UId="548" />
+  <Blank Num="4" UId="549" />
+  <NewLine UId="550" />
+  <Blank Num="4" UId="551" />
+  <Access Scope="LocalVariable" UId="552">
+    <Symbol UId="553">
+      <Component Name="sTONUnloadingNotFinished" UId="554" />
+    </Symbol>
+  </Access>
+  <Access Scope="Call" UId="555">
+    <Instruction UId="556">
+      <Token Text="(" UId="557" />
+      <Parameter Name="IN" UId="558">
+        <Blank UId="559" />
+        <Token Text=":=" UId="560" />
+        <Blank UId="561" />
+        <Access Scope="GlobalVariable" UId="562">
+          <Symbol UId="563">
+            <Component Name="DB_LoaderFixtureMain" UId="564">
+              <BooleanAttribute Name="HasQuotes" UId="565">true</BooleanAttribute>
+            </Component>
+            <Token Text="." UId="566" />
+            <Component Name="sUnloadingNotFinished" UId="567" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="568" />
+      <NewLine UId="569" />
+      <Blank Num="30" UId="570" />
+      <Parameter Name="PT" UId="571">
+        <Blank UId="572" />
+        <Token Text=":=" UId="573" />
+        <Blank UId="574" />
+        <Access Scope="TypedConstant" UId="575">
+          <Constant UId="576">
+            <ConstantValue UId="577">T#100ms</ConstantValue>
+          </Constant>
+        </Access>
+      </Parameter>
+      <Token Text=")" UId="578" />
+    </Instruction>
+  </Access>
+  <Token Text=";" UId="579" />
+  <NewLine UId="580" />
+  <Blank Num="4" UId="581" />
+  <NewLine UId="582" />
+  <Blank Num="4" UId="583" />
+  <Token Text="IF" UId="584" />
+  <Blank UId="585" />
+  <Access Scope="LocalVariable" UId="586">
+    <Symbol UId="587">
+      <Component Name="ioFixtureUnloadingSeq" UId="588" />
+      <Token Text="." UId="589" />
+      <Component Name="JobDone" UId="590" />
+    </Symbol>
+  </Access>
+  <NewLine UId="591" />
+  <Blank Num="8" UId="592" />
+  <Token Text="OR" UId="593" />
+  <Blank UId="594" />
+  <Access Scope="GlobalVariable" UId="595">
+    <Symbol UId="596">
+      <Component Name="DB_LoaderFixtureMain" UId="597">
+        <BooleanAttribute Name="HasQuotes" UId="598">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="599" />
+      <Component Name="sUnloadingNotFinished" UId="600" />
+    </Symbol>
+  </Access>
+  <Blank UId="601" />
+  <Token Text="THEN" UId="602" />
+  <NewLine UId="603" />
+  <Blank Num="8" UId="604" />
+  <Access Scope="LocalVariable" UId="605">
+    <Symbol UId="606">
+      <Component Name="ioFixtureUnloadingSeq" UId="607" />
+      <Token Text="." UId="608" />
+      <Component Name="StartRequest" UId="609" />
+    </Symbol>
+  </Access>
+  <Blank UId="610" />
+  <Token Text=":=" UId="611" />
+  <Blank UId="612" />
+  <Access Scope="LiteralConstant" UId="613">
+    <Constant UId="614">
+      <ConstantValue UId="616">FALSE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="617" />
+  <NewLine UId="618" />
+  <Blank Num="8" UId="619" />
+  <Access Scope="LocalVariable" UId="620">
+    <Symbol UId="621">
+      <Component Name="sMemoUnloadingRequest" UId="622" />
+    </Symbol>
+  </Access>
+  <Blank UId="623" />
+  <Token Text=":=" UId="624" />
+  <Blank UId="625" />
+  <Access Scope="LiteralConstant" UId="626">
+    <Constant UId="627">
+      <ConstantValue UId="629">FALSE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="630" />
+  <NewLine UId="631" />
+  <Blank Num="4" UId="632" />
+  <Token Text="END_IF" UId="633" />
+  <Token Text=";" UId="634" />
+  <NewLine UId="635" />
+  <Blank Num="4" UId="636" />
+  <NewLine UId="637" />
+  <Blank Num="4" UId="638" />
+  <Token Text="IF" UId="639" />
+  <Blank UId="640" />
+  <Access Scope="LocalVariable" UId="641">
+    <Symbol UId="642">
+      <Component Name="ioFixtureUnloadingSeq" UId="643" />
+      <Token Text="." UId="644" />
+      <Component Name="JobDone" UId="645" />
+    </Symbol>
+  </Access>
+  <NewLine UId="646" />
+  <Blank Num="8" UId="647" />
+  <Token Text="OR" UId="648" />
+  <Blank UId="649" />
+  <Access Scope="LocalVariable" UId="650">
+    <Symbol UId="651">
+      <Component Name="sTONUnloadingNotFinished" UId="652" />
+      <Token Text="." UId="653" />
+      <Component Name="Q" UId="654" />
+    </Symbol>
+  </Access>
+  <Blank UId="655" />
+  <Token Text="THEN" UId="656" />
+  <NewLine UId="657" />
+  <Blank Num="8" UId="658" />
+  <Access Scope="LocalVariable" UId="659">
+    <Symbol UId="660">
+      <Component Name="oNC_RID2" UId="661" />
+    </Symbol>
+  </Access>
+  <Blank UId="662" />
+  <Token Text=":=" UId="663" />
+  <Blank UId="664" />
+  <Access Scope="LiteralConstant" UId="665">
+    <Constant UId="666">
+      <ConstantValue UId="668">FALSE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="669" />
+  <NewLine UId="670" />
+  <Blank Num="4" UId="671" />
+  <Token Text="END_IF" UId="672" />
+  <Token Text=";" UId="673" />
+  <NewLine UId="674" />
+  <Token Text="END_REGION" UId="675" />
+  <NewLine Num="2" UId="676" />
+  <Token Text="REGION" UId="677" />
+  <Blank UId="678" />
+  <Text UId="679">Fixture Load Request</Text>
+  <NewLine UId="680" />
+  <Blank Num="4" UId="681" />
+  <Access Scope="LocalVariable" UId="682">
+    <Symbol UId="683">
+      <Component Name="sRT_FixtureLoadingRequest" UId="684" />
+    </Symbol>
+  </Access>
+  <Access Scope="Call" UId="685">
+    <Instruction UId="686">
+      <Token Text="(" UId="687" />
+      <Parameter Name="CLK" UId="688">
+        <Blank UId="689" />
+        <Token Text=":=" UId="690" />
+        <Blank UId="691" />
+        <Access Scope="LocalVariable" UId="692">
+          <Symbol UId="693">
+            <Component Name="iFixtureLoadingRequest" UId="694" />
+          </Symbol>
+        </Access>
+        <NewLine UId="695" />
+        <Blank Num="31" UId="696" />
+        <Token Text="AND" UId="697" />
+        <Blank UId="698" />
+        <Token Text="NOT" UId="699" />
+        <Blank UId="700" />
+        <Token Text="(" UId="701" />
+        <Access Scope="LocalVariable" UId="702">
+          <Symbol UId="703">
+            <Component Name="iWorkingModeEmptying" UId="704" />
+          </Symbol>
+        </Access>
+        <Blank UId="705" />
+        <Token Text="AND" UId="706" />
+        <Blank UId="707" />
+        <Token Text="NOT" UId="708" />
+        <Blank UId="709" />
+        <Access Scope="GlobalVariable" UId="710">
+          <Symbol UId="711">
+            <Component Name="DB_PartManagement" UId="712">
+              <BooleanAttribute Name="HasQuotes" UId="713">true</BooleanAttribute>
+            </Component>
+            <Token Text="." UId="714" />
+            <Component Name="sPosition" UId="715" />
+            <Token Text="." UId="716" />
+            <Component Name="sGripper" UId="717" />
+            <Token Text="." UId="718" />
+            <Component Name="Undrilled" UId="719" />
+            <Token Text="." UId="720" />
+            <Component Name="Presence" UId="721" />
+            <Token Text="." UId="722" />
+            <Component Name="Part" UId="723" />
+          </Symbol>
+        </Access>
+        <Token Text=")" UId="724" />
+      </Parameter>
+      <Token Text=")" UId="725" />
+    </Instruction>
+  </Access>
+  <Token Text=";" UId="726" />
+  <NewLine UId="727" />
+  <Blank Num="4" UId="728" />
+  <Token Text="IF" UId="729" />
+  <Blank UId="730" />
+  <Access Scope="LocalVariable" UId="731">
+    <Symbol UId="732">
+      <Component Name="sRT_FixtureLoadingRequest" UId="733" />
+      <Token Text="." UId="734" />
+      <Component Name="Q" UId="735" />
+    </Symbol>
+  </Access>
+  <Blank UId="736" />
+  <Token Text="THEN" UId="737" />
+  <NewLine UId="738" />
+  <Blank Num="8" UId="739" />
+  <Access Scope="LocalVariable" UId="740">
+    <Symbol UId="741">
+      <Component Name="oNC_RID2" UId="742" />
+    </Symbol>
+  </Access>
+  <Blank UId="743" />
+  <Token Text=":=" UId="744" />
+  <Blank UId="745" />
+  <Access Scope="LiteralConstant" UId="746">
+    <Constant UId="747">
+      <ConstantValue UId="749">TRUE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="750" />
+  <NewLine UId="751" />
+  <Blank Num="8" UId="752" />
+  <Access Scope="LocalVariable" UId="753">
+    <Symbol UId="754">
+      <Component Name="sMemoLoadingRequest" UId="755" />
+    </Symbol>
+  </Access>
+  <Blank UId="756" />
+  <Token Text=":=" UId="757" />
+  <Blank UId="758" />
+  <Access Scope="LiteralConstant" UId="759">
+    <Constant UId="760">
+      <ConstantValue UId="762">TRUE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="763" />
+  <NewLine UId="764" />
+  <Blank Num="8" UId="765" />
+  <Access Scope="GlobalVariable" UId="766">
+    <Symbol UId="767">
+      <Component Name="DB_LoaderFixtureMain" UId="768">
+        <BooleanAttribute Name="HasQuotes" UId="769">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="770" />
+      <Component Name="sBlowingNotFinished" UId="771" />
+    </Symbol>
+  </Access>
+  <Blank UId="772" />
+  <Token Text=":=" UId="773" />
+  <Blank UId="774" />
+  <Access Scope="LiteralConstant" UId="775">
+    <Constant UId="776">
+      <ConstantValue UId="778">FALSE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="779" />
+  <NewLine UId="780" />
+  <Blank Num="8" UId="781" />
+  <Access Scope="GlobalVariable" UId="782">
+    <Symbol UId="783">
+      <Component Name="DB_LoaderFixtureMain" UId="784">
+        <BooleanAttribute Name="HasQuotes" UId="785">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="786" />
+      <Component Name="sLoadingNotFinished" UId="787" />
+    </Symbol>
+  </Access>
+  <Blank UId="788" />
+  <Token Text=":=" UId="789" />
+  <Blank UId="790" />
+  <Access Scope="LiteralConstant" UId="791">
+    <Constant UId="792">
+      <ConstantValue UId="794">FALSE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="795" />
+  <NewLine UId="796" />
+  <Blank Num="8" UId="797" />
+  <Access Scope="GlobalVariable" UId="798">
+    <Symbol UId="799">
+      <Component Name="DB_LoaderFixtureMain" UId="800">
+        <BooleanAttribute Name="HasQuotes" UId="801">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="802" />
+      <Component Name="sUnloadingNotFinished" UId="803" />
+    </Symbol>
+  </Access>
+  <Blank UId="804" />
+  <Token Text=":=" UId="805" />
+  <Blank UId="806" />
+  <Access Scope="LiteralConstant" UId="807">
+    <Constant UId="808">
+      <ConstantValue UId="810">FALSE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="811" />
+  <NewLine UId="812" />
+  <Blank Num="4" UId="813" />
+  <Token Text="END_IF" UId="814" />
+  <Token Text=";" UId="815" />
+  <NewLine UId="816" />
+  <Blank Num="4" UId="817" />
+  <NewLine UId="818" />
+  <Blank Num="4" UId="819" />
+  <Token Text="IF" UId="820" />
+  <Blank UId="821" />
+  <Access Scope="LocalVariable" UId="822">
+    <Symbol UId="823">
+      <Component Name="sMemoLoadingRequest" UId="824" />
+    </Symbol>
+  </Access>
+  <NewLine UId="825" />
+  <Blank Num="8" UId="826" />
+  <Token Text="AND" UId="827" />
+  <Blank UId="828" />
+  <Access Scope="LocalVariable" UId="829">
+    <Symbol UId="830">
+      <Component Name="iGripperReadyForLoading" UId="831" />
+    </Symbol>
+  </Access>
+  <NewLine UId="832" />
+  <Blank Num="8" UId="833" />
+  <Token Text="AND" UId="834" />
+  <Blank UId="835" />
+  <Access Scope="LocalVariable" UId="836">
+    <Symbol UId="837">
+      <Component Name="iFixtureReadyForLoading" UId="838" />
+    </Symbol>
+  </Access>
+  <NewLine UId="839" />
+  <Blank Num="8" UId="840" />
+  <Token Text="AND" UId="841" />
+  <Blank UId="842" />
+  <Access Scope="LocalVariable" UId="843">
+    <Symbol UId="844">
+      <Component Name="iAxisReadyForLoading" UId="845" />
+    </Symbol>
+  </Access>
+  <Blank UId="846" />
+  <Token Text="THEN" UId="847" />
+  <NewLine UId="848" />
+  <Blank Num="8" UId="849" />
+  <Access Scope="LocalVariable" UId="850">
+    <Symbol UId="851">
+      <Component Name="oAxisV_W_Reservation" UId="852" />
+    </Symbol>
+  </Access>
+  <Blank UId="853" />
+  <Token Text=":=" UId="854" />
+  <Blank UId="855" />
+  <Access Scope="LiteralConstant" UId="856">
+    <Constant UId="857">
+      <ConstantValue UId="859">TRUE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="860" />
+  <NewLine UId="861" />
+  <Blank Num="8" UId="862" />
+  <Access Scope="LocalVariable" UId="863">
+    <Symbol UId="864">
+      <Component Name="ioFixtureLoadingSeq" UId="865" />
+      <Token Text="." UId="866" />
+      <Component Name="StartRequest" UId="867" />
+    </Symbol>
+  </Access>
+  <Blank UId="868" />
+  <Token Text=":=" UId="869" />
+  <Blank UId="870" />
+  <Access Scope="LiteralConstant" UId="871">
+    <Constant UId="872">
+      <ConstantValue UId="874">TRUE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="875" />
+  <NewLine UId="876" />
+  <Blank Num="4" UId="877" />
+  <Token Text="END_IF" UId="878" />
+  <Token Text=";" UId="879" />
+  <NewLine UId="880" />
+  <Blank Num="4" UId="881" />
+  <NewLine UId="882" />
+  <Blank Num="4" UId="883" />
+  <Access Scope="LocalVariable" UId="884">
+    <Symbol UId="885">
+      <Component Name="sTONLoadingNotFinished" UId="886" />
+    </Symbol>
+  </Access>
+  <Access Scope="Call" UId="887">
+    <Instruction UId="888">
+      <Token Text="(" UId="889" />
+      <Parameter Name="IN" UId="890">
+        <Blank UId="891" />
+        <Token Text=":=" UId="892" />
+        <Blank UId="893" />
+        <Access Scope="GlobalVariable" UId="894">
+          <Symbol UId="895">
+            <Component Name="DB_LoaderFixtureMain" UId="896">
+              <BooleanAttribute Name="HasQuotes" UId="897">true</BooleanAttribute>
+            </Component>
+            <Token Text="." UId="898" />
+            <Component Name="sLoadingNotFinished" UId="899" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="900" />
+      <NewLine UId="901" />
+      <Blank Num="30" UId="902" />
+      <Parameter Name="PT" UId="903">
+        <Blank UId="904" />
+        <Token Text=":=" UId="905" />
+        <Blank UId="906" />
+        <Access Scope="TypedConstant" UId="907">
+          <Constant UId="908">
+            <ConstantValue UId="909">T#100ms</ConstantValue>
+          </Constant>
+        </Access>
+      </Parameter>
+      <Token Text=")" UId="910" />
+    </Instruction>
+  </Access>
+  <Token Text=";" UId="911" />
+  <NewLine UId="912" />
+  <Blank Num="4" UId="913" />
+  <NewLine UId="914" />
+  <Blank Num="4" UId="915" />
+  <Token Text="IF" UId="916" />
+  <Blank UId="917" />
+  <Access Scope="LocalVariable" UId="918">
+    <Symbol UId="919">
+      <Component Name="ioFixtureLoadingSeq" UId="920" />
+      <Token Text="." UId="921" />
+      <Component Name="JobDone" UId="922" />
+    </Symbol>
+  </Access>
+  <NewLine UId="923" />
+  <Blank Num="8" UId="924" />
+  <Token Text="OR" UId="925" />
+  <Blank UId="926" />
+  <Access Scope="GlobalVariable" UId="927">
+    <Symbol UId="928">
+      <Component Name="DB_LoaderFixtureMain" UId="929">
+        <BooleanAttribute Name="HasQuotes" UId="930">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="931" />
+      <Component Name="sLoadingNotFinished" UId="932" />
+    </Symbol>
+  </Access>
+  <Blank UId="933" />
+  <Token Text="THEN" UId="934" />
+  <NewLine UId="935" />
+  <Blank Num="8" UId="936" />
+  <Access Scope="LocalVariable" UId="937">
+    <Symbol UId="938">
+      <Component Name="ioFixtureLoadingSeq" UId="939" />
+      <Token Text="." UId="940" />
+      <Component Name="StartRequest" UId="941" />
+    </Symbol>
+  </Access>
+  <Blank UId="942" />
+  <Token Text=":=" UId="943" />
+  <Blank UId="944" />
+  <Access Scope="LiteralConstant" UId="945">
+    <Constant UId="946">
+      <ConstantValue UId="948">FALSE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="949" />
+  <NewLine UId="950" />
+  <Blank Num="8" UId="951" />
+  <Access Scope="LocalVariable" UId="952">
+    <Symbol UId="953">
+      <Component Name="sMemoLoadingRequest" UId="954" />
+    </Symbol>
+  </Access>
+  <Blank UId="955" />
+  <Token Text=":=" UId="956" />
+  <Blank UId="957" />
+  <Access Scope="LiteralConstant" UId="958">
+    <Constant UId="959">
+      <ConstantValue UId="961">FALSE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="962" />
+  <NewLine UId="963" />
+  <Blank Num="4" UId="964" />
+  <Token Text="END_IF" UId="965" />
+  <Token Text=";" UId="966" />
+  <NewLine UId="967" />
+  <Blank Num="4" UId="968" />
+  <NewLine UId="969" />
+  <Blank Num="4" UId="970" />
+  <Token Text="IF" UId="971" />
+  <Blank UId="972" />
+  <Access Scope="LocalVariable" UId="973">
+    <Symbol UId="974">
+      <Component Name="ioFixtureLoadingSeq" UId="975" />
+      <Token Text="." UId="976" />
+      <Component Name="JobDone" UId="977" />
+    </Symbol>
+  </Access>
+  <NewLine UId="978" />
+  <Blank Num="8" UId="979" />
+  <Token Text="OR" UId="980" />
+  <Blank UId="981" />
+  <Access Scope="LocalVariable" UId="982">
+    <Symbol UId="983">
+      <Component Name="sTONLoadingNotFinished" UId="984" />
+      <Token Text="." UId="985" />
+      <Component Name="Q" UId="986" />
+    </Symbol>
+  </Access>
+  <Blank UId="987" />
+  <Token Text="THEN" UId="988" />
+  <NewLine UId="989" />
+  <Blank Num="8" UId="990" />
+  <Access Scope="LocalVariable" UId="991">
+    <Symbol UId="992">
+      <Component Name="oNC_RID2" UId="993" />
+    </Symbol>
+  </Access>
+  <Blank UId="994" />
+  <Token Text=":=" UId="995" />
+  <Blank UId="996" />
+  <Access Scope="LiteralConstant" UId="997">
+    <Constant UId="998">
+      <ConstantValue UId="1000">FALSE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="1001" />
+  <NewLine UId="1002" />
+  <Blank Num="4" UId="1003" />
+  <Token Text="END_IF" UId="1004" />
+  <Token Text=";" UId="1005" />
+  <NewLine UId="1006" />
+  <Token Text="END_REGION" UId="1007" />
+  <NewLine Num="2" UId="1008" />
+  <Token Text="REGION" UId="1009" />
+  <Blank UId="1010" />
+  <Text UId="1011">Fixture Blowing Request</Text>
+  <NewLine UId="1012" />
+  <Blank Num="4" UId="1013" />
+  <Access Scope="LocalVariable" UId="1014">
+    <Symbol UId="1015">
+      <Component Name="sRT_FixtureBlowingRequest" UId="1016" />
+    </Symbol>
+  </Access>
+  <Access Scope="Call" UId="1017">
+    <Instruction UId="1018">
+      <Token Text="(" UId="1019" />
+      <Parameter Name="CLK" UId="1020">
+        <Blank UId="1021" />
+        <Token Text=":=" UId="1022" />
+        <Blank UId="1023" />
+        <Access Scope="LocalVariable" UId="1024">
+          <Symbol UId="1025">
+            <Component Name="iFixtureBlowingRequest" UId="1026" />
+          </Symbol>
+        </Access>
+        <NewLine UId="1027" />
+        <Blank Num="31" UId="1028" />
+        <Token Text="AND" UId="1029" />
+        <Blank UId="1030" />
+        <Token Text="NOT" UId="1031" />
+        <Blank UId="1032" />
+        <Token Text="(" UId="1033" />
+        <Access Scope="LocalVariable" UId="1034">
+          <Symbol UId="1035">
+            <Component Name="iWorkingModeEmptying" UId="1036" />
+          </Symbol>
+        </Access>
+        <Blank UId="1037" />
+        <Token Text="AND" UId="1038" />
+        <Blank UId="1039" />
+        <Token Text="NOT" UId="1040" />
+        <Blank UId="1041" />
+        <Access Scope="GlobalVariable" UId="1042">
+          <Symbol UId="1043">
+            <Component Name="DB_PartManagement" UId="1044">
+              <BooleanAttribute Name="HasQuotes" UId="1045">true</BooleanAttribute>
+            </Component>
+            <Token Text="." UId="1046" />
+            <Component Name="sPosition" UId="1047" />
+            <Token Text="." UId="1048" />
+            <Component Name="sGripper" UId="1049" />
+            <Token Text="." UId="1050" />
+            <Component Name="Undrilled" UId="1051" />
+            <Token Text="." UId="1052" />
+            <Component Name="Presence" UId="1053" />
+            <Token Text="." UId="1054" />
+            <Component Name="Part" UId="1055" />
+          </Symbol>
+        </Access>
+        <Token Text=")" UId="1056" />
+      </Parameter>
+      <Token Text=")" UId="1057" />
+    </Instruction>
+  </Access>
+  <Token Text=";" UId="1058" />
+  <NewLine UId="1059" />
+  <Blank Num="4" UId="1060" />
+  <Token Text="IF" UId="1061" />
+  <Blank UId="1062" />
+  <Access Scope="LocalVariable" UId="1063">
+    <Symbol UId="1064">
+      <Component Name="sRT_FixtureBlowingRequest" UId="1065" />
+      <Token Text="." UId="1066" />
+      <Component Name="Q" UId="1067" />
+    </Symbol>
+  </Access>
+  <Blank UId="1068" />
+  <Token Text="THEN" UId="1069" />
+  <NewLine UId="1070" />
+  <Blank Num="8" UId="1071" />
+  <Access Scope="LocalVariable" UId="1072">
+    <Symbol UId="1073">
+      <Component Name="oNC_RID2" UId="1074" />
+    </Symbol>
+  </Access>
+  <Blank UId="1075" />
+  <Token Text=":=" UId="1076" />
+  <Blank UId="1077" />
+  <Access Scope="LiteralConstant" UId="1078">
+    <Constant UId="1079">
+      <ConstantValue UId="1081">TRUE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="1082" />
+  <NewLine UId="1083" />
+  <Blank Num="8" UId="1084" />
+  <Access Scope="LocalVariable" UId="1085">
+    <Symbol UId="1086">
+      <Component Name="sMemoBlowingRequest" UId="1087" />
+    </Symbol>
+  </Access>
+  <Blank UId="1088" />
+  <Token Text=":=" UId="1089" />
+  <Blank UId="1090" />
+  <Access Scope="LiteralConstant" UId="1091">
+    <Constant UId="1092">
+      <ConstantValue UId="1094">TRUE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="1095" />
+  <NewLine UId="1096" />
+  <Blank Num="8" UId="1097" />
+  <Access Scope="GlobalVariable" UId="1098">
+    <Symbol UId="1099">
+      <Component Name="DB_LoaderFixtureMain" UId="1100">
+        <BooleanAttribute Name="HasQuotes" UId="1101">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="1102" />
+      <Component Name="sBlowingNotFinished" UId="1103" />
+    </Symbol>
+  </Access>
+  <Blank UId="1104" />
+  <Token Text=":=" UId="1105" />
+  <Blank UId="1106" />
+  <Access Scope="LiteralConstant" UId="1107">
+    <Constant UId="1108">
+      <ConstantValue UId="1110">FALSE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="1111" />
+  <NewLine UId="1112" />
+  <Blank Num="8" UId="1113" />
+  <Access Scope="GlobalVariable" UId="1114">
+    <Symbol UId="1115">
+      <Component Name="DB_LoaderFixtureMain" UId="1116">
+        <BooleanAttribute Name="HasQuotes" UId="1117">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="1118" />
+      <Component Name="sLoadingNotFinished" UId="1119" />
+    </Symbol>
+  </Access>
+  <Blank UId="1120" />
+  <Token Text=":=" UId="1121" />
+  <Blank UId="1122" />
+  <Access Scope="LiteralConstant" UId="1123">
+    <Constant UId="1124">
+      <ConstantValue UId="1126">FALSE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="1127" />
+  <NewLine UId="1128" />
+  <Blank Num="8" UId="1129" />
+  <Access Scope="GlobalVariable" UId="1130">
+    <Symbol UId="1131">
+      <Component Name="DB_LoaderFixtureMain" UId="1132">
+        <BooleanAttribute Name="HasQuotes" UId="1133">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="1134" />
+      <Component Name="sUnloadingNotFinished" UId="1135" />
+    </Symbol>
+  </Access>
+  <Blank UId="1136" />
+  <Token Text=":=" UId="1137" />
+  <Blank UId="1138" />
+  <Access Scope="LiteralConstant" UId="1139">
+    <Constant UId="1140">
+      <ConstantValue UId="1142">FALSE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="1143" />
+  <NewLine UId="1144" />
+  <Blank Num="4" UId="1145" />
+  <Token Text="END_IF" UId="1146" />
+  <Token Text=";" UId="1147" />
+  <NewLine UId="1148" />
+  <Blank Num="4" UId="1149" />
+  <NewLine UId="1150" />
+  <Blank Num="4" UId="1151" />
+  <Token Text="IF" UId="1152" />
+  <Blank UId="1153" />
+  <Access Scope="LocalVariable" UId="1154">
+    <Symbol UId="1155">
+      <Component Name="sMemoBlowingRequest" UId="1156" />
+    </Symbol>
+  </Access>
+  <NewLine UId="1157" />
+  <Blank Num="8" UId="1158" />
+  <Token Text="AND" UId="1159" />
+  <Blank UId="1160" />
+  <Access Scope="LocalVariable" UId="1161">
+    <Symbol UId="1162">
+      <Component Name="iGripperReadyForBlowing" UId="1163" />
+    </Symbol>
+  </Access>
+  <NewLine UId="1164" />
+  <Blank Num="8" UId="1165" />
+  <Token Text="AND" UId="1166" />
+  <Blank UId="1167" />
+  <Access Scope="LocalVariable" UId="1168">
+    <Symbol UId="1169">
+      <Component Name="iFixtureReadyForBlowing" UId="1170" />
+    </Symbol>
+  </Access>
+  <NewLine UId="1171" />
+  <Blank Num="8" UId="1172" />
+  <Token Text="AND" UId="1173" />
+  <Blank UId="1174" />
+  <Access Scope="LocalVariable" UId="1175">
+    <Symbol UId="1176">
+      <Component Name="iAxisReadyForBlowing" UId="1177" />
+    </Symbol>
+  </Access>
+  <Blank UId="1178" />
+  <Token Text="THEN" UId="1179" />
+  <NewLine UId="1180" />
+  <Blank Num="8" UId="1181" />
+  <Access Scope="LocalVariable" UId="1182">
+    <Symbol UId="1183">
+      <Component Name="oAxisV_W_Reservation" UId="1184" />
+    </Symbol>
+  </Access>
+  <Blank UId="1185" />
+  <Token Text=":=" UId="1186" />
+  <Blank UId="1187" />
+  <Access Scope="LiteralConstant" UId="1188">
+    <Constant UId="1189">
+      <ConstantValue UId="1191">TRUE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="1192" />
+  <NewLine UId="1193" />
+  <Blank Num="8" UId="1194" />
+  <Access Scope="LocalVariable" UId="1195">
+    <Symbol UId="1196">
+      <Component Name="ioFixtureBlowingSeq" UId="1197" />
+      <Token Text="." UId="1198" />
+      <Component Name="StartRequest" UId="1199" />
+    </Symbol>
+  </Access>
+  <Blank UId="1200" />
+  <Token Text=":=" UId="1201" />
+  <Blank UId="1202" />
+  <Access Scope="LiteralConstant" UId="1203">
+    <Constant UId="1204">
+      <ConstantValue UId="1206">TRUE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="1207" />
+  <NewLine UId="1208" />
+  <Blank Num="4" UId="1209" />
+  <Token Text="END_IF" UId="1210" />
+  <Token Text=";" UId="1211" />
+  <NewLine UId="1212" />
+  <Blank Num="4" UId="1213" />
+  <NewLine UId="1214" />
+  <Blank Num="4" UId="1215" />
+  <Access Scope="LocalVariable" UId="1216">
+    <Symbol UId="1217">
+      <Component Name="sTONBlowingNotFinished" UId="1218" />
+    </Symbol>
+  </Access>
+  <Access Scope="Call" UId="1219">
+    <Instruction UId="1220">
+      <Token Text="(" UId="1221" />
+      <Parameter Name="IN" UId="1222">
+        <Blank UId="1223" />
+        <Token Text=":=" UId="1224" />
+        <Blank UId="1225" />
+        <Access Scope="GlobalVariable" UId="1226">
+          <Symbol UId="1227">
+            <Component Name="DB_LoaderFixtureMain" UId="1228">
+              <BooleanAttribute Name="HasQuotes" UId="1229">true</BooleanAttribute>
+            </Component>
+            <Token Text="." UId="1230" />
+            <Component Name="sBlowingNotFinished" UId="1231" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="1232" />
+      <NewLine UId="1233" />
+      <Blank Num="28" UId="1234" />
+      <Parameter Name="PT" UId="1235">
+        <Blank UId="1236" />
+        <Token Text=":=" UId="1237" />
+        <Blank UId="1238" />
+        <Access Scope="TypedConstant" UId="1239">
+          <Constant UId="1240">
+            <ConstantValue UId="1241">T#100ms</ConstantValue>
+          </Constant>
+        </Access>
+      </Parameter>
+      <Token Text=")" UId="1242" />
+    </Instruction>
+  </Access>
+  <Token Text=";" UId="1243" />
+  <NewLine UId="1244" />
+  <Blank Num="4" UId="1245" />
+  <NewLine UId="1246" />
+  <Blank Num="4" UId="1247" />
+  <Token Text="IF" UId="1248" />
+  <Blank UId="1249" />
+  <Access Scope="LocalVariable" UId="1250">
+    <Symbol UId="1251">
+      <Component Name="ioFixtureBlowingSeq" UId="1252" />
+      <Token Text="." UId="1253" />
+      <Component Name="JobDone" UId="1254" />
+    </Symbol>
+  </Access>
+  <NewLine UId="1255" />
+  <Blank Num="4" UId="1256" />
+  <Token Text="OR" UId="1257" />
+  <Blank UId="1258" />
+  <Access Scope="GlobalVariable" UId="1259">
+    <Symbol UId="1260">
+      <Component Name="DB_LoaderFixtureMain" UId="1261">
+        <BooleanAttribute Name="HasQuotes" UId="1262">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="1263" />
+      <Component Name="sBlowingNotFinished" UId="1264" />
+    </Symbol>
+  </Access>
+  <Blank UId="1265" />
+  <Token Text="THEN" UId="1266" />
+  <NewLine UId="1267" />
+  <Blank Num="8" UId="1268" />
+  <Access Scope="LocalVariable" UId="1269">
+    <Symbol UId="1270">
+      <Component Name="ioFixtureBlowingSeq" UId="1271" />
+      <Token Text="." UId="1272" />
+      <Component Name="StartRequest" UId="1273" />
+    </Symbol>
+  </Access>
+  <Blank UId="1274" />
+  <Token Text=":=" UId="1275" />
+  <Blank UId="1276" />
+  <Access Scope="LiteralConstant" UId="1277">
+    <Constant UId="1278">
+      <ConstantValue UId="1280">FALSE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="1281" />
+  <NewLine UId="1282" />
+  <Blank Num="8" UId="1283" />
+  <Access Scope="LocalVariable" UId="1284">
+    <Symbol UId="1285">
+      <Component Name="sMemoBlowingRequest" UId="1286" />
+    </Symbol>
+  </Access>
+  <Blank UId="1287" />
+  <Token Text=":=" UId="1288" />
+  <Blank UId="1289" />
+  <Access Scope="LiteralConstant" UId="1290">
+    <Constant UId="1291">
+      <ConstantValue UId="1293">FALSE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="1294" />
+  <NewLine UId="1295" />
+  <Blank Num="4" UId="1296" />
+  <Token Text="END_IF" UId="1297" />
+  <Token Text=";" UId="1298" />
+  <NewLine UId="1299" />
+  <Blank Num="4" UId="1300" />
+  <NewLine UId="1301" />
+  <Blank Num="4" UId="1302" />
+  <Token Text="IF" UId="1303" />
+  <Blank UId="1304" />
+  <Access Scope="LocalVariable" UId="1305">
+    <Symbol UId="1306">
+      <Component Name="ioFixtureBlowingSeq" UId="1307" />
+      <Token Text="." UId="1308" />
+      <Component Name="JobDone" UId="1309" />
+    </Symbol>
+  </Access>
+  <NewLine UId="1310" />
+  <Blank Num="8" UId="1311" />
+  <Token Text="OR" UId="1312" />
+  <Blank UId="1313" />
+  <Access Scope="LocalVariable" UId="1314">
+    <Symbol UId="1315">
+      <Component Name="sTONBlowingNotFinished" UId="1316" />
+      <Token Text="." UId="1317" />
+      <Component Name="Q" UId="1318" />
+    </Symbol>
+  </Access>
+  <Blank UId="1319" />
+  <Token Text="THEN" UId="1320" />
+  <NewLine UId="1321" />
+  <Blank Num="8" UId="1322" />
+  <Access Scope="LocalVariable" UId="1323">
+    <Symbol UId="1324">
+      <Component Name="oNC_RID2" UId="1325" />
+    </Symbol>
+  </Access>
+  <Blank UId="1326" />
+  <Token Text=":=" UId="1327" />
+  <Blank UId="1328" />
+  <Access Scope="LiteralConstant" UId="1329">
+    <Constant UId="1330">
+      <ConstantValue UId="1332">FALSE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="1333" />
+  <NewLine UId="1334" />
+  <Blank Num="4" UId="1335" />
+  <Token Text="END_IF" UId="1336" />
+  <Token Text=";" UId="1337" />
+  <NewLine UId="1338" />
+  <Token Text="END_REGION" UId="1339" />
+  <NewLine Num="2" UId="1340" />
+  <Token Text="REGION" UId="1341" />
+  <Blank UId="1342" />
+  <Text UId="1343">Fixture Release Request</Text>
+  <NewLine UId="1344" />
+  <Blank Num="4" UId="1345" />
+  <Access Scope="LocalVariable" UId="1346">
+    <Symbol UId="1347">
+      <Component Name="sRT_FixtureReleaseRequest" UId="1348" />
+    </Symbol>
+  </Access>
+  <Access Scope="Call" UId="1349">
+    <Instruction UId="1350">
+      <Token Text="(" UId="1351" />
+      <Parameter Name="CLK" UId="1352">
+        <Blank UId="1353" />
+        <Token Text=":=" UId="1354" />
+        <Blank UId="1355" />
+        <Access Scope="LocalVariable" UId="1356">
+          <Symbol UId="1357">
+            <Component Name="iFixtureReleaseRequest" UId="1358" />
+          </Symbol>
+        </Access>
+        <NewLine UId="1359" />
+        <Blank Num="31" UId="1360" />
+        <Token Text="OR" UId="1361" />
+        <Blank UId="1362" />
+        <Access Scope="LocalVariable" UId="1363">
+          <Symbol UId="1364">
+            <Component Name="ioFixtureLoadingSeq" UId="1365" />
+            <Token Text="." UId="1366" />
+            <Component Name="JobDone" UId="1367" />
+          </Symbol>
+        </Access>
+        <NewLine UId="1368" />
+        <Blank Num="31" UId="1369" />
+        <Token Text="OR" UId="1370" />
+        <Blank UId="1371" />
+        <Token Text="(" UId="1372" />
+        <Access Scope="LocalVariable" UId="1373">
+          <Symbol UId="1374">
+            <Component Name="ioFixtureUnloadingSeq" UId="1375" />
+            <Token Text="." UId="1376" />
+            <Component Name="JobDone" UId="1377" />
+          </Symbol>
+        </Access>
+        <Blank UId="1378" />
+        <Token Text="AND" UId="1379" />
+        <Blank UId="1380" />
+        <Token Text="(" UId="1381" />
+        <Access Scope="LocalVariable" UId="1382">
+          <Symbol UId="1383">
+            <Component Name="iWorkingModeEmptying" UId="1384" />
+          </Symbol>
+        </Access>
+        <Blank UId="1385" />
+        <Token Text="AND" UId="1386" />
+        <Blank UId="1387" />
+        <Token Text="NOT" UId="1388" />
+        <Blank UId="1389" />
+        <Access Scope="GlobalVariable" UId="1390">
+          <Symbol UId="1391">
+            <Component Name="DB_PartManagement" UId="1392">
+              <BooleanAttribute Name="HasQuotes" UId="1393">true</BooleanAttribute>
+            </Component>
+            <Token Text="." UId="1394" />
+            <Component Name="sPosition" UId="1395" />
+            <Token Text="." UId="1396" />
+            <Component Name="sGripper" UId="1397" />
+            <Token Text="." UId="1398" />
+            <Component Name="Undrilled" UId="1399" />
+            <Token Text="." UId="1400" />
+            <Component Name="Presence" UId="1401" />
+            <Token Text="." UId="1402" />
+            <Component Name="Part" UId="1403" />
+          </Symbol>
+        </Access>
+        <Token Text=")" UId="1404" />
+        <Token Text=")" UId="1405" />
+      </Parameter>
+      <Token Text=")" UId="1406" />
+    </Instruction>
+  </Access>
+  <Token Text=";" UId="1407" />
+  <NewLine UId="1408" />
+  <Blank Num="4" UId="1409" />
+  <LineComment UId="1410">
+    <Text UId="1411"> IF #sRT_FixtureReleaseRequest.Q THEN</Text>
+  </LineComment>
+  <NewLine UId="1412" />
+  <Blank Num="4" UId="1413" />
+  <LineComment UId="1414">
+    <Text UId="1415">     #oNC_RID2 := TRUE;</Text>
+  </LineComment>
+  <NewLine UId="1416" />
+  <Blank Num="4" UId="1417" />
+  <LineComment UId="1418">
+    <Text UId="1419">     #sMemoReleaseRequest := TRUE;</Text>
+  </LineComment>
+  <NewLine UId="1420" />
+  <Blank Num="4" UId="1421" />
+  <LineComment UId="1422">
+    <Text UId="1423"> END_IF;</Text>
+  </LineComment>
+  <NewLine UId="1424" />
+  <Blank Num="4" UId="1425" />
+  <NewLine UId="1426" />
+  <Blank Num="4" UId="1427" />
+  <Token Text="IF" UId="1428" />
+  <Blank UId="1429" />
+  <Token Text="(" UId="1430" />
+  <Access Scope="LocalVariable" UId="1431">
+    <Symbol UId="1432">
+      <Component Name="sMemoReleaseRequest" UId="1433" />
+    </Symbol>
+  </Access>
+  <Blank UId="1434" />
+  <Token Text="OR" UId="1435" />
+  <Blank UId="1436" />
+  <Access Scope="LocalVariable" UId="1437">
+    <Symbol UId="1438">
+      <Component Name="ioFixtureLoadingSeq" UId="1439" />
+      <Token Text="." UId="1440" />
+      <Component Name="JobDone" UId="1441" />
+    </Symbol>
+  </Access>
+  <NewLine UId="1442" />
+  <Blank Num="8" UId="1443" />
+  <Token Text="OR" UId="1444" />
+  <Blank UId="1445" />
+  <Token Text="(" UId="1446" />
+  <Access Scope="LocalVariable" UId="1447">
+    <Symbol UId="1448">
+      <Component Name="ioFixtureUnloadingSeq" UId="1449" />
+      <Token Text="." UId="1450" />
+      <Component Name="JobDone" UId="1451" />
+    </Symbol>
+  </Access>
+  <NewLine UId="1452" />
+  <Blank Num="8" UId="1453" />
+  <Token Text="AND" UId="1454" />
+  <Blank UId="1455" />
+  <Token Text="(" UId="1456" />
+  <Access Scope="LocalVariable" UId="1457">
+    <Symbol UId="1458">
+      <Component Name="iWorkingModeEmptying" UId="1459" />
+    </Symbol>
+  </Access>
+  <Blank UId="1460" />
+  <Token Text="AND" UId="1461" />
+  <Blank UId="1462" />
+  <Token Text="NOT" UId="1463" />
+  <Blank UId="1464" />
+  <Access Scope="GlobalVariable" UId="1465">
+    <Symbol UId="1466">
+      <Component Name="DB_PartManagement" UId="1467">
+        <BooleanAttribute Name="HasQuotes" UId="1468">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="1469" />
+      <Component Name="sPosition" UId="1470" />
+      <Token Text="." UId="1471" />
+      <Component Name="sGripper" UId="1472" />
+      <Token Text="." UId="1473" />
+      <Component Name="Undrilled" UId="1474" />
+      <Token Text="." UId="1475" />
+      <Component Name="Presence" UId="1476" />
+      <Token Text="." UId="1477" />
+      <Component Name="Part" UId="1478" />
+    </Symbol>
+  </Access>
+  <Token Text=")" UId="1479" />
+  <Token Text=")" UId="1480" />
+  <Token Text=")" UId="1481" />
+  <NewLine UId="1482" />
+  <Blank Num="8" UId="1483" />
+  <Token Text="AND" UId="1484" />
+  <Blank UId="1485" />
+  <Access Scope="LocalVariable" UId="1486">
+    <Symbol UId="1487">
+      <Component Name="iGripperReadyForRelease" UId="1488" />
+    </Symbol>
+  </Access>
+  <NewLine UId="1489" />
+  <Blank Num="8" UId="1490" />
+  <Token Text="AND" UId="1491" />
+  <Blank UId="1492" />
+  <Access Scope="LocalVariable" UId="1493">
+    <Symbol UId="1494">
+      <Component Name="iFixtureReadyForRelease" UId="1495" />
+    </Symbol>
+  </Access>
+  <NewLine UId="1496" />
+  <Blank Num="8" UId="1497" />
+  <Token Text="AND" UId="1498" />
+  <Blank UId="1499" />
+  <Access Scope="LocalVariable" UId="1500">
+    <Symbol UId="1501">
+      <Component Name="iAxisReadyForRelease" UId="1502" />
+    </Symbol>
+  </Access>
+  <Blank UId="1503" />
+  <Token Text="THEN" UId="1504" />
+  <NewLine UId="1505" />
+  <Blank Num="8" UId="1506" />
+  <Access Scope="LocalVariable" UId="1507">
+    <Symbol UId="1508">
+      <Component Name="oAxisV_W_Reservation" UId="1509" />
+    </Symbol>
+  </Access>
+  <Blank UId="1510" />
+  <Token Text=":=" UId="1511" />
+  <Blank UId="1512" />
+  <Access Scope="LiteralConstant" UId="1513">
+    <Constant UId="1514">
+      <ConstantValue UId="1516">TRUE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="1517" />
+  <NewLine UId="1518" />
+  <Blank Num="8" UId="1519" />
+  <Access Scope="LocalVariable" UId="1520">
+    <Symbol UId="1521">
+      <Component Name="ioFixtureReleaseSeq" UId="1522" />
+      <Token Text="." UId="1523" />
+      <Component Name="StartRequest" UId="1524" />
+    </Symbol>
+  </Access>
+  <Blank UId="1525" />
+  <Token Text=":=" UId="1526" />
+  <Blank UId="1527" />
+  <Access Scope="LiteralConstant" UId="1528">
+    <Constant UId="1529">
+      <ConstantValue UId="1531">TRUE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="1532" />
+  <NewLine UId="1533" />
+  <Blank Num="4" UId="1534" />
+  <Token Text="END_IF" UId="1535" />
+  <Token Text=";" UId="1536" />
+  <NewLine UId="1537" />
+  <Blank Num="4" UId="1538" />
+  <NewLine UId="1539" />
+  <Blank Num="4" UId="1540" />
+  <Token Text="IF" UId="1541" />
+  <Blank UId="1542" />
+  <Access Scope="LocalVariable" UId="1543">
+    <Symbol UId="1544">
+      <Component Name="ioFixtureReleaseSeq" UId="1545" />
+      <Token Text="." UId="1546" />
+      <Component Name="JobDone" UId="1547" />
+    </Symbol>
+  </Access>
+  <NewLine UId="1548" />
+  <Blank Num="4" UId="1549" />
+  <Token Text="OR" UId="1550" />
+  <Blank UId="1551" />
+  <Access Scope="GlobalVariable" UId="1552">
+    <Symbol UId="1553">
+      <Component Name="DB_LoaderFixtureMain" UId="1554">
+        <BooleanAttribute Name="HasQuotes" UId="1555">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="1556" />
+      <Component Name="sReleaseNotFinished" UId="1557" />
+    </Symbol>
+  </Access>
+  <Blank UId="1558" />
+  <Token Text="THEN" UId="1559" />
+  <NewLine UId="1560" />
+  <Blank Num="8" UId="1561" />
+  <Access Scope="LocalVariable" UId="1562">
+    <Symbol UId="1563">
+      <Component Name="ioFixtureReleaseSeq" UId="1564" />
+      <Token Text="." UId="1565" />
+      <Component Name="StartRequest" UId="1566" />
+    </Symbol>
+  </Access>
+  <Blank UId="1567" />
+  <Token Text=":=" UId="1568" />
+  <Blank UId="1569" />
+  <Access Scope="LiteralConstant" UId="1570">
+    <Constant UId="1571">
+      <ConstantValue UId="1573">FALSE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="1574" />
+  <NewLine UId="1575" />
+  <Blank Num="8" UId="1576" />
+  <Access Scope="LocalVariable" UId="1577">
+    <Symbol UId="1578">
+      <Component Name="sMemoReleaseRequest" UId="1579" />
+    </Symbol>
+  </Access>
+  <Blank UId="1580" />
+  <Token Text=":=" UId="1581" />
+  <Blank UId="1582" />
+  <Access Scope="LiteralConstant" UId="1583">
+    <Constant UId="1584">
+      <ConstantValue UId="1586">FALSE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="1587" />
+  <NewLine UId="1588" />
+  <Blank Num="8" UId="1589" />
+  <Access Scope="LocalVariable" UId="1590">
+    <Symbol UId="1591">
+      <Component Name="oNC_RID2" UId="1592" />
+    </Symbol>
+  </Access>
+  <Blank UId="1593" />
+  <Token Text=":=" UId="1594" />
+  <Blank UId="1595" />
+  <Access Scope="LiteralConstant" UId="1596">
+    <Constant UId="1597">
+      <ConstantValue UId="1599">FALSE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="1600" />
+  <NewLine UId="1601" />
+  <Blank Num="8" UId="1602" />
+  <Access Scope="LocalVariable" UId="1603">
+    <Symbol UId="1604">
+      <Component Name="oAxisV_W_Reservation" UId="1605" />
+    </Symbol>
+  </Access>
+  <Blank UId="1606" />
+  <Token Text=":=" UId="1607" />
+  <Blank UId="1608" />
+  <Access Scope="LiteralConstant" UId="1609">
+    <Constant UId="1610">
+      <ConstantValue UId="1612">FALSE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="1613" />
+  <NewLine UId="1614" />
+  <Blank Num="4" UId="1615" />
+  <Token Text="END_IF" UId="1616" />
+  <Token Text=";" UId="1617" />
+  <NewLine UId="1618" />
+  <Token Text="END_REGION" UId="1619" />
+  <NewLine Num="2" UId="1620" />
+  <Token Text="REGION" UId="1621" />
+  <Blank UId="1622" />
+  <Text UId="1623">V Init Request</Text>
+  <NewLine UId="1624" />
+  <Blank Num="4" UId="1625" />
+  <Access Scope="LocalVariable" UId="1626">
+    <Symbol UId="1627">
+      <Component Name="sRT_FixtureV_InitRequest" UId="1628" />
+    </Symbol>
+  </Access>
+  <Access Scope="Call" UId="1629">
+    <Instruction UId="1630">
+      <Token Text="(" UId="1631" />
+      <Parameter Name="CLK" UId="1632">
+        <Blank UId="1633" />
+        <Token Text=":=" UId="1634" />
+        <Blank UId="1635" />
+        <Access Scope="LocalVariable" UId="1636">
+          <Symbol UId="1637">
+            <Component Name="iFixtureV_InitRequest" UId="1638" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text=")" UId="1639" />
+    </Instruction>
+  </Access>
+  <Token Text=";" UId="1640" />
+  <NewLine UId="1641" />
+  <Blank Num="4" UId="1642" />
+  <Token Text="IF" UId="1643" />
+  <Blank UId="1644" />
+  <Access Scope="LocalVariable" UId="1645">
+    <Symbol UId="1646">
+      <Component Name="sRT_FixtureV_InitRequest" UId="1647" />
+      <Token Text="." UId="1648" />
+      <Component Name="Q" UId="1649" />
+    </Symbol>
+  </Access>
+  <Blank UId="1650" />
+  <Token Text="THEN" UId="1651" />
+  <NewLine UId="1652" />
+  <Blank Num="8" UId="1653" />
+  <Access Scope="LocalVariable" UId="1654">
+    <Symbol UId="1655">
+      <Component Name="oNC_RID1" UId="1656" />
+    </Symbol>
+  </Access>
+  <Blank UId="1657" />
+  <Token Text=":=" UId="1658" />
+  <Blank UId="1659" />
+  <Access Scope="LiteralConstant" UId="1660">
+    <Constant UId="1661">
+      <ConstantValue UId="1663">TRUE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="1664" />
+  <NewLine UId="1665" />
+  <Blank Num="8" UId="1666" />
+  <Access Scope="LocalVariable" UId="1667">
+    <Symbol UId="1668">
+      <Component Name="sMemoV_InitRequest" UId="1669" />
+    </Symbol>
+  </Access>
+  <Blank UId="1670" />
+  <Token Text=":=" UId="1671" />
+  <Blank UId="1672" />
+  <Access Scope="LiteralConstant" UId="1673">
+    <Constant UId="1674">
+      <ConstantValue UId="1676">TRUE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="1677" />
+  <NewLine UId="1678" />
+  <Blank Num="4" UId="1679" />
+  <Token Text="END_IF" UId="1680" />
+  <Token Text=";" UId="1681" />
+  <NewLine UId="1682" />
+  <Blank Num="4" UId="1683" />
+  <NewLine UId="1684" />
+  <Blank Num="4" UId="1685" />
+  <Token Text="IF" UId="1686" />
+  <Blank UId="1687" />
+  <Access Scope="LocalVariable" UId="1688">
+    <Symbol UId="1689">
+      <Component Name="sMemoV_InitRequest" UId="1690" />
+    </Symbol>
+  </Access>
+  <NewLine UId="1691" />
+  <Blank Num="8" UId="1692" />
+  <Token Text="AND" UId="1693" />
+  <Blank UId="1694" />
+  <Access Scope="LocalVariable" UId="1695">
+    <Symbol UId="1696">
+      <Component Name="iGripperReadyForV_Init" UId="1697" />
+    </Symbol>
+  </Access>
+  <NewLine UId="1698" />
+  <Blank Num="8" UId="1699" />
+  <Token Text="AND" UId="1700" />
+  <Blank UId="1701" />
+  <Access Scope="LocalVariable" UId="1702">
+    <Symbol UId="1703">
+      <Component Name="iFixtureReadyForV_Init" UId="1704" />
+    </Symbol>
+  </Access>
+  <NewLine UId="1705" />
+  <Blank Num="8" UId="1706" />
+  <Token Text="AND" UId="1707" />
+  <Blank UId="1708" />
+  <Access Scope="LocalVariable" UId="1709">
+    <Symbol UId="1710">
+      <Component Name="iAxisReadyForV_Init" UId="1711" />
+    </Symbol>
+  </Access>
+  <Blank UId="1712" />
+  <Token Text="THEN" UId="1713" />
+  <NewLine UId="1714" />
+  <Blank Num="12" UId="1715" />
+  <Access Scope="LocalVariable" UId="1716">
+    <Symbol UId="1717">
+      <Component Name="oAxisV_W_Reservation" UId="1718" />
+    </Symbol>
+  </Access>
+  <Blank UId="1719" />
+  <Token Text=":=" UId="1720" />
+  <Blank UId="1721" />
+  <Access Scope="LiteralConstant" UId="1722">
+    <Constant UId="1723">
+      <ConstantValue UId="1725">TRUE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="1726" />
+  <NewLine UId="1727" />
+  <Blank Num="12" UId="1728" />
+  <Access Scope="LocalVariable" UId="1729">
+    <Symbol UId="1730">
+      <Component Name="ioFixtureV_InitSeq" UId="1731" />
+      <Token Text="." UId="1732" />
+      <Component Name="StartRequest" UId="1733" />
+    </Symbol>
+  </Access>
+  <Blank UId="1734" />
+  <Token Text=":=" UId="1735" />
+  <Blank UId="1736" />
+  <Access Scope="LiteralConstant" UId="1737">
+    <Constant UId="1738">
+      <ConstantValue UId="1740">TRUE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="1741" />
+  <NewLine UId="1742" />
+  <Blank Num="4" UId="1743" />
+  <Token Text="END_IF" UId="1744" />
+  <Token Text=";" UId="1745" />
+  <NewLine UId="1746" />
+  <Blank Num="4" UId="1747" />
+  <NewLine UId="1748" />
+  <Blank Num="4" UId="1749" />
+  <Token Text="IF" UId="1750" />
+  <Blank UId="1751" />
+  <Access Scope="LocalVariable" UId="1752">
+    <Symbol UId="1753">
+      <Component Name="ioFixtureV_InitSeq" UId="1754" />
+      <Token Text="." UId="1755" />
+      <Component Name="JobDone" UId="1756" />
+    </Symbol>
+  </Access>
+  <NewLine UId="1757" />
+  <Blank Num="4" UId="1758" />
+  <Token Text="OR" UId="1759" />
+  <Blank UId="1760" />
+  <Access Scope="GlobalVariable" UId="1761">
+    <Symbol UId="1762">
+      <Component Name="DB_LoaderFixtureMain" UId="1763">
+        <BooleanAttribute Name="HasQuotes" UId="1764">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="1765" />
+      <Component Name="sV_InitNotFinished" UId="1766" />
+    </Symbol>
+  </Access>
+  <Blank UId="1767" />
+  <Token Text="THEN" UId="1768" />
+  <NewLine UId="1769" />
+  <Blank Num="8" UId="1770" />
+  <Access Scope="LocalVariable" UId="1771">
+    <Symbol UId="1772">
+      <Component Name="ioFixtureV_InitSeq" UId="1773" />
+      <Token Text="." UId="1774" />
+      <Component Name="StartRequest" UId="1775" />
+    </Symbol>
+  </Access>
+  <Blank UId="1776" />
+  <Token Text=":=" UId="1777" />
+  <Blank UId="1778" />
+  <Access Scope="LiteralConstant" UId="1779">
+    <Constant UId="1780">
+      <ConstantValue UId="1782">FALSE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="1783" />
+  <NewLine UId="1784" />
+  <Blank Num="8" UId="1785" />
+  <Access Scope="LocalVariable" UId="1786">
+    <Symbol UId="1787">
+      <Component Name="sMemoV_InitRequest" UId="1788" />
+    </Symbol>
+  </Access>
+  <Blank UId="1789" />
+  <Token Text=":=" UId="1790" />
+  <Blank UId="1791" />
+  <Access Scope="LiteralConstant" UId="1792">
+    <Constant UId="1793">
+      <ConstantValue UId="1795">FALSE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="1796" />
+  <NewLine UId="1797" />
+  <Blank Num="8" UId="1798" />
+  <Access Scope="LocalVariable" UId="1799">
+    <Symbol UId="1800">
+      <Component Name="oNC_RID1" UId="1801" />
+    </Symbol>
+  </Access>
+  <Blank UId="1802" />
+  <Token Text=":=" UId="1803" />
+  <Blank UId="1804" />
+  <Access Scope="LiteralConstant" UId="1805">
+    <Constant UId="1806">
+      <ConstantValue UId="1808">FALSE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="1809" />
+  <NewLine UId="1810" />
+  <Blank Num="8" UId="1811" />
+  <Access Scope="LocalVariable" UId="1812">
+    <Symbol UId="1813">
+      <Component Name="oAxisV_W_Reservation" UId="1814" />
+    </Symbol>
+  </Access>
+  <Blank UId="1815" />
+  <Token Text=":=" UId="1816" />
+  <Blank UId="1817" />
+  <Access Scope="LiteralConstant" UId="1818">
+    <Constant UId="1819">
+      <ConstantValue UId="1821">FALSE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="1822" />
+  <NewLine UId="1823" />
+  <Blank Num="4" UId="1824" />
+  <Token Text="END_IF" UId="1825" />
+  <Token Text=";" UId="1826" />
+  <NewLine UId="1827" />
+  <Token Text="END_REGION" UId="1828" />
+  <NewLine Num="2" UId="1829" />
+  <Token Text="REGION" UId="1830" />
+  <Blank UId="1831" />
+  <Text UId="1832">W Init Request</Text>
+  <NewLine UId="1833" />
+  <Blank Num="4" UId="1834" />
+  <Access Scope="LocalVariable" UId="1835">
+    <Symbol UId="1836">
+      <Component Name="sRT_FixtureW_InitRequest" UId="1837" />
+    </Symbol>
+  </Access>
+  <Access Scope="Call" UId="1838">
+    <Instruction UId="1839">
+      <Token Text="(" UId="1840" />
+      <Parameter Name="CLK" UId="1841">
+        <Blank UId="1842" />
+        <Token Text=":=" UId="1843" />
+        <Blank UId="1844" />
+        <Access Scope="LocalVariable" UId="1845">
+          <Symbol UId="1846">
+            <Component Name="iFixtureW_InitRequest" UId="1847" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text=")" UId="1848" />
+    </Instruction>
+  </Access>
+  <Token Text=";" UId="1849" />
+  <NewLine UId="1850" />
+  <Blank Num="4" UId="1851" />
+  <Token Text="IF" UId="1852" />
+  <Blank UId="1853" />
+  <Access Scope="LocalVariable" UId="1854">
+    <Symbol UId="1855">
+      <Component Name="sRT_FixtureW_InitRequest" UId="1856" />
+      <Token Text="." UId="1857" />
+      <Component Name="Q" UId="1858" />
+    </Symbol>
+  </Access>
+  <Blank UId="1859" />
+  <Token Text="THEN" UId="1860" />
+  <NewLine UId="1861" />
+  <Blank Num="8" UId="1862" />
+  <Access Scope="LocalVariable" UId="1863">
+    <Symbol UId="1864">
+      <Component Name="oNC_RID1" UId="1865" />
+    </Symbol>
+  </Access>
+  <Blank UId="1866" />
+  <Token Text=":=" UId="1867" />
+  <Blank UId="1868" />
+  <Access Scope="LiteralConstant" UId="1869">
+    <Constant UId="1870">
+      <ConstantValue UId="1872">TRUE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="1873" />
+  <NewLine UId="1874" />
+  <Blank Num="8" UId="1875" />
+  <Access Scope="LocalVariable" UId="1876">
+    <Symbol UId="1877">
+      <Component Name="sMemoW_InitRequest" UId="1878" />
+    </Symbol>
+  </Access>
+  <Blank UId="1879" />
+  <Token Text=":=" UId="1880" />
+  <Blank UId="1881" />
+  <Access Scope="LiteralConstant" UId="1882">
+    <Constant UId="1883">
+      <ConstantValue UId="1885">TRUE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="1886" />
+  <NewLine UId="1887" />
+  <Blank Num="4" UId="1888" />
+  <Token Text="END_IF" UId="1889" />
+  <Token Text=";" UId="1890" />
+  <NewLine UId="1891" />
+  <Blank Num="4" UId="1892" />
+  <NewLine UId="1893" />
+  <Blank Num="4" UId="1894" />
+  <Token Text="IF" UId="1895" />
+  <Blank UId="1896" />
+  <Access Scope="LocalVariable" UId="1897">
+    <Symbol UId="1898">
+      <Component Name="sMemoW_InitRequest" UId="1899" />
+    </Symbol>
+  </Access>
+  <NewLine UId="1900" />
+  <Blank Num="8" UId="1901" />
+  <Token Text="AND" UId="1902" />
+  <Blank UId="1903" />
+  <Access Scope="LocalVariable" UId="1904">
+    <Symbol UId="1905">
+      <Component Name="iGripperReadyForW_Init" UId="1906" />
+    </Symbol>
+  </Access>
+  <NewLine UId="1907" />
+  <Blank Num="8" UId="1908" />
+  <Token Text="AND" UId="1909" />
+  <Blank UId="1910" />
+  <Access Scope="LocalVariable" UId="1911">
+    <Symbol UId="1912">
+      <Component Name="iFixtureReadyForW_Init" UId="1913" />
+    </Symbol>
+  </Access>
+  <NewLine UId="1914" />
+  <Blank Num="8" UId="1915" />
+  <Token Text="AND" UId="1916" />
+  <Blank UId="1917" />
+  <Access Scope="LocalVariable" UId="1918">
+    <Symbol UId="1919">
+      <Component Name="iAxisReadyForW_Init" UId="1920" />
+    </Symbol>
+  </Access>
+  <Blank UId="1921" />
+  <Token Text="THEN" UId="1922" />
+  <NewLine UId="1923" />
+  <Blank Num="8" UId="1924" />
+  <Access Scope="LocalVariable" UId="1925">
+    <Symbol UId="1926">
+      <Component Name="oAxisV_W_Reservation" UId="1927" />
+    </Symbol>
+  </Access>
+  <Blank UId="1928" />
+  <Token Text=":=" UId="1929" />
+  <Blank UId="1930" />
+  <Access Scope="LiteralConstant" UId="1931">
+    <Constant UId="1932">
+      <ConstantValue UId="1934">TRUE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="1935" />
+  <NewLine UId="1936" />
+  <Blank Num="8" UId="1937" />
+  <Access Scope="LocalVariable" UId="1938">
+    <Symbol UId="1939">
+      <Component Name="ioFixtureW_InitSeq" UId="1940" />
+      <Token Text="." UId="1941" />
+      <Component Name="StartRequest" UId="1942" />
+    </Symbol>
+  </Access>
+  <Blank UId="1943" />
+  <Token Text=":=" UId="1944" />
+  <Blank UId="1945" />
+  <Access Scope="LiteralConstant" UId="1946">
+    <Constant UId="1947">
+      <ConstantValue UId="1949">TRUE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="1950" />
+  <NewLine UId="1951" />
+  <Blank Num="4" UId="1952" />
+  <Token Text="END_IF" UId="1953" />
+  <Token Text=";" UId="1954" />
+  <NewLine UId="1955" />
+  <Blank Num="4" UId="1956" />
+  <NewLine UId="1957" />
+  <Blank Num="4" UId="1958" />
+  <Token Text="IF" UId="1959" />
+  <Blank UId="1960" />
+  <Access Scope="LocalVariable" UId="1961">
+    <Symbol UId="1962">
+      <Component Name="ioFixtureW_InitSeq" UId="1963" />
+      <Token Text="." UId="1964" />
+      <Component Name="JobDone" UId="1965" />
+    </Symbol>
+  </Access>
+  <NewLine UId="1966" />
+  <Blank Num="4" UId="1967" />
+  <Token Text="OR" UId="1968" />
+  <Blank UId="1969" />
+  <Access Scope="GlobalVariable" UId="1970">
+    <Symbol UId="1971">
+      <Component Name="DB_LoaderFixtureMain" UId="1972">
+        <BooleanAttribute Name="HasQuotes" UId="1973">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="1974" />
+      <Component Name="sW_InitNotFinished" UId="1975" />
+    </Symbol>
+  </Access>
+  <Blank UId="1976" />
+  <Token Text="THEN" UId="1977" />
+  <NewLine UId="1978" />
+  <Blank Num="8" UId="1979" />
+  <Access Scope="LocalVariable" UId="1980">
+    <Symbol UId="1981">
+      <Component Name="ioFixtureW_InitSeq" UId="1982" />
+      <Token Text="." UId="1983" />
+      <Component Name="StartRequest" UId="1984" />
+    </Symbol>
+  </Access>
+  <Blank UId="1985" />
+  <Token Text=":=" UId="1986" />
+  <Blank UId="1987" />
+  <Access Scope="LiteralConstant" UId="1988">
+    <Constant UId="1989">
+      <ConstantValue UId="1991">FALSE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="1992" />
+  <NewLine UId="1993" />
+  <Blank Num="8" UId="1994" />
+  <Access Scope="LocalVariable" UId="1995">
+    <Symbol UId="1996">
+      <Component Name="sMemoW_InitRequest" UId="1997" />
+    </Symbol>
+  </Access>
+  <Blank UId="1998" />
+  <Token Text=":=" UId="1999" />
+  <Blank UId="2000" />
+  <Access Scope="LiteralConstant" UId="2001">
+    <Constant UId="2002">
+      <ConstantValue UId="2004">FALSE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="2005" />
+  <NewLine UId="2006" />
+  <Blank Num="8" UId="2007" />
+  <Access Scope="LocalVariable" UId="2008">
+    <Symbol UId="2009">
+      <Component Name="oNC_RID1" UId="2010" />
+    </Symbol>
+  </Access>
+  <Blank UId="2011" />
+  <Token Text=":=" UId="2012" />
+  <Blank UId="2013" />
+  <Access Scope="LiteralConstant" UId="2014">
+    <Constant UId="2015">
+      <ConstantValue UId="2017">FALSE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="2018" />
+  <NewLine UId="2019" />
+  <Blank Num="8" UId="2020" />
+  <Access Scope="LocalVariable" UId="2021">
+    <Symbol UId="2022">
+      <Component Name="oAxisV_W_Reservation" UId="2023" />
+    </Symbol>
+  </Access>
+  <Blank UId="2024" />
+  <Token Text=":=" UId="2025" />
+  <Blank UId="2026" />
+  <Access Scope="LiteralConstant" UId="2027">
+    <Constant UId="2028">
+      <ConstantValue UId="2030">FALSE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="2031" />
+  <NewLine UId="2032" />
+  <Blank Num="4" UId="2033" />
+  <Token Text="END_IF" UId="2034" />
+  <Token Text=";" UId="2035" />
+  <NewLine UId="2036" />
+  <Token Text="END_REGION" UId="2037" />
+</StructuredText></NetworkSource>
+          <ProgrammingLanguage>SCL</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="5" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="6" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="7" CompositionName="Items">
+                <AttributeList>
+                  <Culture>fr-FR</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="8" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="9" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="A" CompositionName="Items">
+                <AttributeList>
+                  <Culture>fr-FR</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <MultilingualText ID="B" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="C" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="D" CompositionName="Items">
+            <AttributeList>
+              <Culture>fr-FR</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Blocks.FB>
+</Document>

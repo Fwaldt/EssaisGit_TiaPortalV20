@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V20" />
+  <SW.Blocks.InstanceDB ID="0">
+    <AttributeList>
+      <AutoNumber>false</AutoNumber>
+      <InstanceOfName>FB_GestionSafetyGate</InstanceOfName>
+      <InstanceOfType>FB</InstanceOfType>
+      <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+  <Section Name="Input" />
+  <Section Name="Output" />
+  <Section Name="InOut" />
+  <Section Name="Static">
+    <Member Name="sExtGate" Datatype="&quot;FB_CmdCylinder&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="sIntGate" Datatype="&quot;FB_CmdCylinder&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="sExtGateCloseCmd" Datatype="Bool" />
+    <Member Name="sExtGateOpenCmd" Datatype="Bool" />
+    <Member Name="sIntGateCloseCmd" Datatype="Bool" />
+    <Member Name="sIntGateOpenCmd" Datatype="Bool" />
+    <Member Name="sJOG_Cmd" Datatype="Bool" />
+    <Member Name="sRT_RefCmd" Datatype="R_TRIG" Version="1.0" />
+    <Member Name="sFT_RefCmd" Datatype="F_TRIG" Version="1.0" />
+    <Member Name="sExtGateOpenReq" Datatype="Bool" />
+    <Member Name="sIntGateOpenReq" Datatype="Bool" />
+    <Member Name="sExtGateOpened" Datatype="Bool" />
+    <Member Name="sExtGateClosed" Datatype="Bool" />
+    <Member Name="sIntGateOpened" Datatype="Bool" />
+    <Member Name="sIntGateClosed" Datatype="Bool" />
+    <Member Name="sWaitCloseShutterBeforeOpen" Datatype="Bool" />
+    <Member Name="sWaitOpenShutterAfterClose" Datatype="Bool" />
+    <Member Name="sTimeoutOpenCloseGateTimer" Datatype="TON_TIME" Version="1.0" />
+    <Member Name="sRT_IntGateOpenbyHMI" Datatype="R_TRIG" Version="1.0">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="sFT_IntGateOpenbyHMI" Datatype="F_TRIG" Version="1.0">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="sRT_ExtGateOpenbyHMI" Datatype="R_TRIG" Version="1.0">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="sFT_ExtGateOpenbyHMI" Datatype="F_TRIG" Version="1.0">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="sRT_ExtGateClose" Datatype="R_TRIG" Version="1.0">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="sRT_ExtGateOpen" Datatype="R_TRIG" Version="1.0">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="sRT_IntGateClose" Datatype="R_TRIG" Version="1.0">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="sRT_IntGateOpen" Datatype="R_TRIG" Version="1.0">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="sInterlockExtGateClose" Datatype="Bool">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="sInterlockExtGateOpen" Datatype="Bool">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="sInterlockIntGateClose" Datatype="Bool" />
+    <Member Name="sInterlockIntGateOpen" Datatype="Bool" />
+  </Section>
+</Sections></Interface>
+      <Name>DB_GestionSafetyGate</Name>
+      <Namespace />
+      <Number>202</Number>
+      <ProgrammingLanguage>DB</ProgrammingLanguage>
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="3" CompositionName="Items">
+            <AttributeList>
+              <Culture>fr-FR</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <MultilingualText ID="4" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="5" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="6" CompositionName="Items">
+            <AttributeList>
+              <Culture>fr-FR</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Blocks.InstanceDB>
+</Document>

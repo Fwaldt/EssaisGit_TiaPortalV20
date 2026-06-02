@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V20" />
+  <SW.TechnologicalObjects.TechnologicalInstanceDB ID="0">
+    <AttributeList>
+      <InstanceOfName>CONT_C</InstanceOfName>
+      <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+  <Section Name="Input">
+    <Member Name="COM_RST" Datatype="Bool" Remanence="Retain" />
+    <Member Name="MAN_ON" Datatype="Bool" Remanence="Retain" />
+    <Member Name="PVPER_ON" Datatype="Bool" Remanence="Retain" />
+    <Member Name="P_SEL" Datatype="Bool" Remanence="Retain" />
+    <Member Name="I_SEL" Datatype="Bool" Remanence="Retain" />
+    <Member Name="INT_HOLD" Datatype="Bool" Remanence="Retain" />
+    <Member Name="I_ITL_ON" Datatype="Bool" Remanence="Retain" />
+    <Member Name="D_SEL" Datatype="Bool" Remanence="Retain" />
+    <Member Name="CYCLE" Datatype="Time" Remanence="Retain" />
+    <Member Name="SP_INT" Datatype="Real" Remanence="Retain" />
+    <Member Name="PV_IN" Datatype="Real" Remanence="Retain" />
+    <Member Name="PV_PER" Datatype="Word" Remanence="Retain" />
+    <Member Name="MAN" Datatype="Real" Remanence="Retain" />
+    <Member Name="GAIN" Datatype="Real" Remanence="Retain" />
+    <Member Name="TI" Datatype="Time" Remanence="Retain" />
+    <Member Name="TD" Datatype="Time" Remanence="Retain" />
+    <Member Name="TM_LAG" Datatype="Time" Remanence="Retain" />
+    <Member Name="DEADB_W" Datatype="Real" Remanence="Retain" />
+    <Member Name="LMN_HLM" Datatype="Real" Remanence="Retain" />
+    <Member Name="LMN_LLM" Datatype="Real" Remanence="Retain" />
+    <Member Name="PV_FAC" Datatype="Real" Remanence="Retain" />
+    <Member Name="PV_OFF" Datatype="Real" Remanence="Retain" />
+    <Member Name="LMN_FAC" Datatype="Real" Remanence="Retain" />
+    <Member Name="LMN_OFF" Datatype="Real" Remanence="Retain" />
+    <Member Name="I_ITLVAL" Datatype="Real" Remanence="Retain" />
+    <Member Name="DISV" Datatype="Real" Remanence="Retain" />
+  </Section>
+  <Section Name="Output">
+    <Member Name="LMN" Datatype="Real" Remanence="Retain" />
+    <Member Name="LMN_PER" Datatype="Word" Remanence="Retain" />
+    <Member Name="QLMN_HLM" Datatype="Bool" Remanence="Retain" />
+    <Member Name="QLMN_LLM" Datatype="Bool" Remanence="Retain" />
+    <Member Name="LMN_P" Datatype="Real" Remanence="Retain" />
+    <Member Name="LMN_I" Datatype="Real" Remanence="Retain" />
+    <Member Name="LMN_D" Datatype="Real" Remanence="Retain" />
+    <Member Name="PV" Datatype="Real" Remanence="Retain" />
+    <Member Name="ER" Datatype="Real" Remanence="Retain" />
+  </Section>
+  <Section Name="InOut" />
+  <Section Name="Static">
+    <Member Name="sInvAlt" Datatype="Real" Remanence="Retain" />
+    <Member Name="sIanteilAlt" Datatype="Real" Remanence="Retain" />
+    <Member Name="sRestInt" Datatype="Real" Remanence="Retain" />
+    <Member Name="sRestDif" Datatype="Real" Remanence="Retain" />
+    <Member Name="sRueck" Datatype="Real" Remanence="Retain" />
+    <Member Name="sLmn" Datatype="Real" Remanence="Retain" />
+    <Member Name="sbArwHLmOn" Datatype="Bool" Remanence="Retain" />
+    <Member Name="sbArwLLmOn" Datatype="Bool" Remanence="Retain" />
+    <Member Name="sbILimOn" Datatype="Bool" Remanence="Retain" />
+  </Section>
+</Sections></Interface>
+      <Name>CONT_C_Clim_DB</Name>
+      <Namespace />
+      <Number>2251</Number>
+      <OfSystemLibElement>CONT_C</OfSystemLibElement>
+      <OfSystemLibVersion>1.1</OfSystemLibVersion>
+      <ParameterData><Parameters /></ParameterData>
+      <ProgrammingLanguage>DB</ProgrammingLanguage>
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="3" CompositionName="Items">
+            <AttributeList>
+              <Culture>fr-FR</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <MultilingualText ID="4" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="5" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="6" CompositionName="Items">
+            <AttributeList>
+              <Culture>fr-FR</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.TechnologicalObjects.TechnologicalInstanceDB>
+</Document>

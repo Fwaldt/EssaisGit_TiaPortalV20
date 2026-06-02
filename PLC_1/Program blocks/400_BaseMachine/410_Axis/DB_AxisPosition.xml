@@ -1,0 +1,169 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V20" />
+  <SW.Blocks.InstanceDB ID="0">
+    <AttributeList>
+      <AutoNumber>false</AutoNumber>
+      <InstanceOfName>FB_AxisPosition</InstanceOfName>
+      <InstanceOfType>FB</InstanceOfType>
+      <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+  <Section Name="Input" />
+  <Section Name="Output" />
+  <Section Name="InOut" />
+  <Section Name="Static">
+    <Member Name="sError" Datatype="Bool">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="sNDR" Datatype="Bool">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="sState" Datatype="Word">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="sAxis01_X" Datatype="Struct">
+      <Member Name="$AA_IM" Datatype="LReal" />
+      <Member Name="$MA_POS_LIMIT_MINUS" Datatype="LReal" />
+      <Member Name="$MA_POS_LIMIT_MINUS2" Datatype="LReal" />
+      <Member Name="$MA_POS_LIMIT_PLUS" Datatype="LReal" />
+      <Member Name="$MA_POS_LIMIT_PLUS2" Datatype="LReal" />
+      <Member Name="$MA_JOG_VELO" Datatype="LReal" />
+      <Member Name="$MA_JOG_VELO_RAPID" Datatype="LReal" />
+      <Member Name="$MA_MAX_AX_VELO" Datatype="LReal" />
+      <Member Name="$A1_M_FP_POS4_30600" Datatype="LReal" />
+    </Member>
+    <Member Name="sAxis02_Y" Datatype="Struct">
+      <Member Name="$AA_IM" Datatype="LReal" />
+      <Member Name="$MA_POS_LIMIT_MINUS" Datatype="LReal" />
+      <Member Name="$MA_POS_LIMIT_MINUS2" Datatype="LReal" />
+      <Member Name="$MA_POS_LIMIT_PLUS" Datatype="LReal" />
+      <Member Name="$MA_POS_LIMIT_PLUS2" Datatype="LReal" />
+      <Member Name="$MA_JOG_VELO" Datatype="LReal" />
+      <Member Name="$MA_JOG_VELO_RAPID" Datatype="LReal" />
+      <Member Name="$MA_MAX_AX_VELO" Datatype="LReal" />
+    </Member>
+    <Member Name="sAxis03_ZM" Datatype="Struct">
+      <Member Name="$AA_IM" Datatype="LReal" />
+      <Member Name="$MA_POS_LIMIT_MINUS" Datatype="LReal" />
+      <Member Name="$MA_POS_LIMIT_MINUS2" Datatype="LReal" />
+      <Member Name="$MA_POS_LIMIT_PLUS" Datatype="LReal" />
+      <Member Name="$MA_POS_LIMIT_PLUS2" Datatype="LReal" />
+      <Member Name="$MA_JOG_VELO" Datatype="LReal" />
+      <Member Name="$MA_JOG_VELO_RAPID" Datatype="LReal" />
+      <Member Name="$MA_MAX_AX_VELO" Datatype="LReal" />
+    </Member>
+    <Member Name="sAxis04_B" Datatype="Struct">
+      <Member Name="$AA_IM" Datatype="LReal" />
+      <Member Name="$MA_POS_LIMIT_MINUS" Datatype="LReal" />
+      <Member Name="$MA_POS_LIMIT_MINUS2" Datatype="LReal" />
+      <Member Name="$MA_POS_LIMIT_PLUS" Datatype="LReal" />
+      <Member Name="$MA_POS_LIMIT_PLUS2" Datatype="LReal" />
+      <Member Name="$MA_JOG_VELO" Datatype="LReal" />
+      <Member Name="$MA_JOG_VELO_RAPID" Datatype="LReal" />
+      <Member Name="$MA_MAX_AX_VELO" Datatype="LReal" />
+    </Member>
+    <Member Name="sAxis05_U1" Datatype="Struct">
+      <Member Name="$AA_IM" Datatype="LReal" />
+      <Member Name="$MA_POS_LIMIT_MINUS" Datatype="LReal" />
+      <Member Name="$MA_POS_LIMIT_MINUS2" Datatype="LReal" />
+      <Member Name="$MA_POS_LIMIT_PLUS" Datatype="LReal" />
+      <Member Name="$MA_POS_LIMIT_PLUS2" Datatype="LReal" />
+      <Member Name="$MA_JOG_VELO" Datatype="LReal" />
+      <Member Name="$MA_JOG_VELO_RAPID" Datatype="LReal" />
+      <Member Name="$MA_MAX_AX_VELO" Datatype="LReal" />
+    </Member>
+    <Member Name="sAxis06_U2" Datatype="Struct">
+      <Member Name="$AA_IM" Datatype="LReal" />
+      <Member Name="$MA_POS_LIMIT_MINUS" Datatype="LReal" />
+      <Member Name="$MA_POS_LIMIT_MINUS2" Datatype="LReal" />
+      <Member Name="$MA_POS_LIMIT_PLUS" Datatype="LReal" />
+      <Member Name="$MA_POS_LIMIT_PLUS2" Datatype="LReal" />
+      <Member Name="$MA_JOG_VELO" Datatype="LReal" />
+      <Member Name="$MA_JOG_VELO_RAPID" Datatype="LReal" />
+      <Member Name="$MA_MAX_AX_VELO" Datatype="LReal" />
+      <Member Name="$A1_M_FP_POS2_30600" Datatype="LReal" />
+    </Member>
+    <Member Name="sAxis07_V" Datatype="Struct">
+      <Member Name="$AA_IM" Datatype="LReal" />
+      <Member Name="$MA_POS_LIMIT_MINUS" Datatype="LReal" />
+      <Member Name="$MA_POS_LIMIT_MINUS2" Datatype="LReal" />
+      <Member Name="$MA_POS_LIMIT_PLUS" Datatype="LReal" />
+      <Member Name="$MA_POS_LIMIT_PLUS2" Datatype="LReal" />
+      <Member Name="$MA_JOG_VELO" Datatype="LReal" />
+      <Member Name="$MA_JOG_VELO_RAPID" Datatype="LReal" />
+      <Member Name="$MA_MAX_AX_VELO" Datatype="LReal" />
+    </Member>
+    <Member Name="sAxis08_W" Datatype="Struct">
+      <Member Name="$AA_IM" Datatype="LReal" />
+      <Member Name="$MA_POS_LIMIT_MINUS" Datatype="LReal" />
+      <Member Name="$MA_POS_LIMIT_MINUS2" Datatype="LReal" />
+      <Member Name="$MA_POS_LIMIT_PLUS" Datatype="LReal" />
+      <Member Name="$MA_POS_LIMIT_PLUS2" Datatype="LReal" />
+      <Member Name="$MA_JOG_VELO" Datatype="LReal" />
+      <Member Name="$MA_JOG_VELO_RAPID" Datatype="LReal" />
+      <Member Name="$MA_MAX_AX_VELO" Datatype="LReal" />
+    </Member>
+    <Member Name="sAxis09_ZL" Datatype="Struct">
+      <Member Name="$AA_IM" Datatype="LReal" />
+      <Member Name="$MA_POS_LIMIT_MINUS" Datatype="LReal" />
+      <Member Name="$MA_POS_LIMIT_MINUS2" Datatype="LReal" />
+      <Member Name="$MA_POS_LIMIT_PLUS" Datatype="LReal" />
+      <Member Name="$MA_POS_LIMIT_PLUS2" Datatype="LReal" />
+      <Member Name="$MA_JOG_VELO" Datatype="LReal" />
+      <Member Name="$MA_JOG_VELO_RAPID" Datatype="LReal" />
+      <Member Name="$MA_MAX_AX_VELO" Datatype="LReal" />
+    </Member>
+  </Section>
+</Sections></Interface>
+      <Name>DB_AxisPosition</Name>
+      <Namespace />
+      <Number>411</Number>
+      <ProgrammingLanguage>DB</ProgrammingLanguage>
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="3" CompositionName="Items">
+            <AttributeList>
+              <Culture>fr-FR</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <MultilingualText ID="4" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="5" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="6" CompositionName="Items">
+            <AttributeList>
+              <Culture>fr-FR</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Blocks.InstanceDB>
+</Document>

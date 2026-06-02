@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V20" />
+  <SW.Types.PlcStruct ID="0">
+    <AttributeList>
+      <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+  <Section Name="None">
+    <Member Name="Type_of_probe" Datatype="Int">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="en-US">PT100=0, PT1000=1, NTC=2, RES600=3, 0-10V=4, -10+10V=5, 0-2000=6</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">PT100=0(FC71:0, PT1000=1(FC71:1), NTC=2(FC74), RES600=3</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="Target_value" Datatype="Real" />
+    <Member Name="SWRealValue" Datatype="Real">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="HWWordValue" Datatype="Word" />
+    <Member Name="Time_delay" Datatype="Time">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="Threshold_Alarm_min" Datatype="Real">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="Threshold_Warning_min" Datatype="Real">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="Threshold_Warning_max" Datatype="Real">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="Threshold_Alarm_max" Datatype="Real">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="Num_alarm_min" Datatype="Int">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <StartValue>-1</StartValue>
+    </Member>
+    <Member Name="Num_warning_min" Datatype="Int">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <StartValue>-1</StartValue>
+    </Member>
+    <Member Name="Num_warning_max" Datatype="Int">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <StartValue>-1</StartValue>
+    </Member>
+    <Member Name="Num_alarm_max" Datatype="Int">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <StartValue>-1</StartValue>
+    </Member>
+    <Member Name="Num_alarm_out_of_range" Datatype="Int">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <StartValue>-1</StartValue>
+    </Member>
+    <Member Name="Stop_machine" Datatype="Bool">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="Bad_part_on_laser" Datatype="Bool">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="axFactor" Datatype="Real" />
+    <Member Name="bOffset" Datatype="Real" />
+    <Member Name="iLimitUp" Datatype="Real" />
+    <Member Name="iLimitDown" Datatype="Real" />
+  </Section>
+</Sections></Interface>
+      <Name>Analog_Ctrl_DT</Name>
+      <Namespace />
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="3" CompositionName="Items">
+            <AttributeList>
+              <Culture>fr-FR</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <MultilingualText ID="4" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="5" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="6" CompositionName="Items">
+            <AttributeList>
+              <Culture>fr-FR</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Types.PlcStruct>
+</Document>

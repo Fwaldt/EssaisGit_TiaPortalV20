@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V20" />
+  <SW.Types.PlcStruct ID="0">
+    <AttributeList>
+      <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+  <Section Name="None">
+    <Member Name="SWStatus" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Software status use in PLC code</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="SWPositiveFront" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Positive front of software status</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="SWNegativeFront" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Negative front of sofware status</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="HWStatus" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Hardware status directly from physical input</MultiLanguageText>
+      </Comment>
+    </Member>
+  </Section>
+</Sections></Interface>
+      <Name>DigitalInput_DT</Name>
+      <Namespace />
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="3" CompositionName="Items">
+            <AttributeList>
+              <Culture>fr-FR</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <MultilingualText ID="4" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="5" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="6" CompositionName="Items">
+            <AttributeList>
+              <Culture>fr-FR</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Types.PlcStruct>
+</Document>

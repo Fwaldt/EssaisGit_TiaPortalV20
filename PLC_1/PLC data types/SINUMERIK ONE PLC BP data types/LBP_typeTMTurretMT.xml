@@ -1,0 +1,3218 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V20" />
+  <SW.Types.PlcStruct ID="0">
+    <AttributeList>
+      <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+  <Section Name="None">
+    <Member Name="MTIF" Datatype="Array[1..16] of Struct">
+      <Member Name="DistanceCoding" Datatype="Int">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Type of distance coding ($TC_MTP_KD)</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Type de codage de distance ($TC_MTP_KD)</MultiLanguageText>
+        </Comment>
+        <Subelement Path="2">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Type of distance coding ($TC_MTP_KD)</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Type de codage de distance ($TC_MTP_KD)</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="3">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Type of distance coding ($TC_MTP_KD)</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Type de codage de distance ($TC_MTP_KD)</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="4">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Type of distance coding ($TC_MTP_KD)</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Type de codage de distance ($TC_MTP_KD)</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="5">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Type of distance coding ($TC_MTP_KD)</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Type de codage de distance ($TC_MTP_KD)</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="6">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Type of distance coding ($TC_MTP_KD)</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Type de codage de distance ($TC_MTP_KD)</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="7">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Type of distance coding ($TC_MTP_KD)</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Type de codage de distance ($TC_MTP_KD)</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="8">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Type of distance coding ($TC_MTP_KD)</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Type de codage de distance ($TC_MTP_KD)</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="9">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Type of distance coding ($TC_MTP_KD)</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Type de codage de distance ($TC_MTP_KD)</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="10">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Type of distance coding ($TC_MTP_KD)</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Type de codage de distance ($TC_MTP_KD)</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="11">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Type of distance coding ($TC_MTP_KD)</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Type de codage de distance ($TC_MTP_KD)</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="12">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Type of distance coding ($TC_MTP_KD)</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Type de codage de distance ($TC_MTP_KD)</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="13">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Type of distance coding ($TC_MTP_KD)</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Type de codage de distance ($TC_MTP_KD)</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="14">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Type of distance coding ($TC_MTP_KD)</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Type de codage de distance ($TC_MTP_KD)</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="15">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Type of distance coding ($TC_MTP_KD)</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Type de codage de distance ($TC_MTP_KD)</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="16">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Type of distance coding ($TC_MTP_KD)</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Type de codage de distance ($TC_MTP_KD)</MultiLanguageText>
+          </Comment>
+        </Subelement>
+      </Member>
+      <Member Name="Places" Datatype="Int">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Number of locations of the multitool</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Nombre d'emplacements Multitool</MultiLanguageText>
+        </Comment>
+        <Subelement Path="2">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Number of locations of the multitool</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Nombre d'emplacements Multitool</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="3">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Number of locations of the multitool</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Nombre d'emplacements Multitool</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="4">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Number of locations of the multitool</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Nombre d'emplacements Multitool</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="5">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Number of locations of the multitool</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Nombre d'emplacements Multitool</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="6">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Number of locations of the multitool</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Nombre d'emplacements Multitool</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="7">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Number of locations of the multitool</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Nombre d'emplacements Multitool</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="8">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Number of locations of the multitool</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Nombre d'emplacements Multitool</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="9">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Number of locations of the multitool</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Nombre d'emplacements Multitool</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="10">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Number of locations of the multitool</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Nombre d'emplacements Multitool</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="11">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Number of locations of the multitool</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Nombre d'emplacements Multitool</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="12">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Number of locations of the multitool</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Nombre d'emplacements Multitool</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="13">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Number of locations of the multitool</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Nombre d'emplacements Multitool</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="14">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Number of locations of the multitool</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Nombre d'emplacements Multitool</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="15">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Number of locations of the multitool</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Nombre d'emplacements Multitool</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="16">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Number of locations of the multitool</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Nombre d'emplacements Multitool</MultiLanguageText>
+          </Comment>
+        </Subelement>
+      </Member>
+      <Member Name="Distance" Datatype="Real">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Multitool location distance</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Distance de l'emplacement Multitool</MultiLanguageText>
+        </Comment>
+        <Subelement Path="2">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Multitool location distance</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Distance de l'emplacement Multitool</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="3">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Multitool location distance</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Distance de l'emplacement Multitool</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="4">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Multitool location distance</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Distance de l'emplacement Multitool</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="5">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Multitool location distance</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Distance de l'emplacement Multitool</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="6">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Multitool location distance</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Distance de l'emplacement Multitool</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="7">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Multitool location distance</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Distance de l'emplacement Multitool</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="8">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Multitool location distance</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Distance de l'emplacement Multitool</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="9">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Multitool location distance</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Distance de l'emplacement Multitool</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="10">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Multitool location distance</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Distance de l'emplacement Multitool</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="11">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Multitool location distance</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Distance de l'emplacement Multitool</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="12">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Multitool location distance</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Distance de l'emplacement Multitool</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="13">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Multitool location distance</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Distance de l'emplacement Multitool</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="14">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Multitool location distance</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Distance de l'emplacement Multitool</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="15">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Multitool location distance</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Distance de l'emplacement Multitool</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="16">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Multitool location distance</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Distance de l'emplacement Multitool</MultiLanguageText>
+          </Comment>
+        </Subelement>
+      </Member>
+      <Member Name="NewMTNo" Datatype="Int">
+        <Comment>
+          <MultiLanguageText Lang="en-US">MT-Number new Tool</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Numéro MT du nouvel outil</MultiLanguageText>
+        </Comment>
+        <Subelement Path="2">
+          <Comment>
+            <MultiLanguageText Lang="en-US">MT-Number new Tool</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro MT du nouvel outil</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="3">
+          <Comment>
+            <MultiLanguageText Lang="en-US">MT-Number new Tool</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro MT du nouvel outil</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="4">
+          <Comment>
+            <MultiLanguageText Lang="en-US">MT-Number new Tool</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro MT du nouvel outil</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="5">
+          <Comment>
+            <MultiLanguageText Lang="en-US">MT-Number new Tool</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro MT du nouvel outil</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="6">
+          <Comment>
+            <MultiLanguageText Lang="en-US">MT-Number new Tool</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro MT du nouvel outil</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="7">
+          <Comment>
+            <MultiLanguageText Lang="en-US">MT-Number new Tool</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro MT du nouvel outil</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="8">
+          <Comment>
+            <MultiLanguageText Lang="en-US">MT-Number new Tool</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro MT du nouvel outil</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="9">
+          <Comment>
+            <MultiLanguageText Lang="en-US">MT-Number new Tool</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro MT du nouvel outil</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="10">
+          <Comment>
+            <MultiLanguageText Lang="en-US">MT-Number new Tool</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro MT du nouvel outil</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="11">
+          <Comment>
+            <MultiLanguageText Lang="en-US">MT-Number new Tool</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro MT du nouvel outil</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="12">
+          <Comment>
+            <MultiLanguageText Lang="en-US">MT-Number new Tool</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro MT du nouvel outil</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="13">
+          <Comment>
+            <MultiLanguageText Lang="en-US">MT-Number new Tool</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro MT du nouvel outil</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="14">
+          <Comment>
+            <MultiLanguageText Lang="en-US">MT-Number new Tool</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro MT du nouvel outil</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="15">
+          <Comment>
+            <MultiLanguageText Lang="en-US">MT-Number new Tool</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro MT du nouvel outil</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="16">
+          <Comment>
+            <MultiLanguageText Lang="en-US">MT-Number new Tool</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro MT du nouvel outil</MultiLanguageText>
+          </Comment>
+        </Subelement>
+      </Member>
+      <Member Name="NewPlace" Datatype="Int">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Multitool place number</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Numéro d'emplacement Multitool</MultiLanguageText>
+        </Comment>
+        <Subelement Path="2">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Multitool place number</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro d'emplacement Multitool</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="3">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Multitool place number</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro d'emplacement Multitool</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="4">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Multitool place number</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro d'emplacement Multitool</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="5">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Multitool place number</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro d'emplacement Multitool</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="6">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Multitool place number</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro d'emplacement Multitool</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="7">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Multitool place number</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro d'emplacement Multitool</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="8">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Multitool place number</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro d'emplacement Multitool</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="9">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Multitool place number</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro d'emplacement Multitool</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="10">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Multitool place number</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro d'emplacement Multitool</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="11">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Multitool place number</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro d'emplacement Multitool</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="12">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Multitool place number</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro d'emplacement Multitool</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="13">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Multitool place number</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro d'emplacement Multitool</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="14">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Multitool place number</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro d'emplacement Multitool</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="15">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Multitool place number</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro d'emplacement Multitool</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="16">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Multitool place number</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro d'emplacement Multitool</MultiLanguageText>
+          </Comment>
+        </Subelement>
+      </Member>
+      <Member Name="OldMTNo" Datatype="Int">
+        <Comment>
+          <MultiLanguageText Lang="en-US">MT-Number old Tool</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Numéro MT de l'ancien outil</MultiLanguageText>
+        </Comment>
+        <Subelement Path="2">
+          <Comment>
+            <MultiLanguageText Lang="en-US">MT-Number old Tool</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro MT de l'ancien outil</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="3">
+          <Comment>
+            <MultiLanguageText Lang="en-US">MT-Number old Tool</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro MT de l'ancien outil</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="4">
+          <Comment>
+            <MultiLanguageText Lang="en-US">MT-Number old Tool</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro MT de l'ancien outil</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="5">
+          <Comment>
+            <MultiLanguageText Lang="en-US">MT-Number old Tool</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro MT de l'ancien outil</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="6">
+          <Comment>
+            <MultiLanguageText Lang="en-US">MT-Number old Tool</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro MT de l'ancien outil</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="7">
+          <Comment>
+            <MultiLanguageText Lang="en-US">MT-Number old Tool</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro MT de l'ancien outil</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="8">
+          <Comment>
+            <MultiLanguageText Lang="en-US">MT-Number old Tool</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro MT de l'ancien outil</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="9">
+          <Comment>
+            <MultiLanguageText Lang="en-US">MT-Number old Tool</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro MT de l'ancien outil</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="10">
+          <Comment>
+            <MultiLanguageText Lang="en-US">MT-Number old Tool</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro MT de l'ancien outil</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="11">
+          <Comment>
+            <MultiLanguageText Lang="en-US">MT-Number old Tool</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro MT de l'ancien outil</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="12">
+          <Comment>
+            <MultiLanguageText Lang="en-US">MT-Number old Tool</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro MT de l'ancien outil</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="13">
+          <Comment>
+            <MultiLanguageText Lang="en-US">MT-Number old Tool</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro MT de l'ancien outil</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="14">
+          <Comment>
+            <MultiLanguageText Lang="en-US">MT-Number old Tool</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro MT de l'ancien outil</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="15">
+          <Comment>
+            <MultiLanguageText Lang="en-US">MT-Number old Tool</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro MT de l'ancien outil</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="16">
+          <Comment>
+            <MultiLanguageText Lang="en-US">MT-Number old Tool</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro MT de l'ancien outil</MultiLanguageText>
+          </Comment>
+        </Subelement>
+      </Member>
+      <Member Name="OldPlace" Datatype="Int">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Multitool place number</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Numéro d'emplacement Multitool</MultiLanguageText>
+        </Comment>
+        <Subelement Path="2">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Multitool place number</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro d'emplacement Multitool</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="3">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Multitool place number</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro d'emplacement Multitool</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="4">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Multitool place number</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro d'emplacement Multitool</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="5">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Multitool place number</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro d'emplacement Multitool</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="6">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Multitool place number</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro d'emplacement Multitool</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="7">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Multitool place number</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro d'emplacement Multitool</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="8">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Multitool place number</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro d'emplacement Multitool</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="9">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Multitool place number</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro d'emplacement Multitool</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="10">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Multitool place number</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro d'emplacement Multitool</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="11">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Multitool place number</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro d'emplacement Multitool</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="12">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Multitool place number</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro d'emplacement Multitool</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="13">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Multitool place number</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro d'emplacement Multitool</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="14">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Multitool place number</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro d'emplacement Multitool</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="15">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Multitool place number</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro d'emplacement Multitool</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="16">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Multitool place number</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro d'emplacement Multitool</MultiLanguageText>
+          </Comment>
+        </Subelement>
+      </Member>
+      <Member Name="LocType" Datatype="Int">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Tool new: location type</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Nouvel outil : type d'emplacement</MultiLanguageText>
+        </Comment>
+        <Subelement Path="2">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool new: location type</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Nouvel outil : type d'emplacement</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="3">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool new: location type</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Nouvel outil : type d'emplacement</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="4">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool new: location type</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Nouvel outil : type d'emplacement</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="5">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool new: location type</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Nouvel outil : type d'emplacement</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="6">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool new: location type</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Nouvel outil : type d'emplacement</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="7">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool new: location type</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Nouvel outil : type d'emplacement</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="8">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool new: location type</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Nouvel outil : type d'emplacement</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="9">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool new: location type</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Nouvel outil : type d'emplacement</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="10">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool new: location type</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Nouvel outil : type d'emplacement</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="11">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool new: location type</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Nouvel outil : type d'emplacement</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="12">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool new: location type</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Nouvel outil : type d'emplacement</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="13">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool new: location type</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Nouvel outil : type d'emplacement</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="14">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool new: location type</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Nouvel outil : type d'emplacement</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="15">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool new: location type</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Nouvel outil : type d'emplacement</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="16">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool new: location type</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Nouvel outil : type d'emplacement</MultiLanguageText>
+          </Comment>
+        </Subelement>
+      </Member>
+      <Member Name="SLeft" Datatype="Int">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Tool new: size left</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Nouvel outil : taille côté gauche</MultiLanguageText>
+        </Comment>
+        <Subelement Path="2">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool new: size left</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Nouvel outil : taille côté gauche</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="3">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool new: size left</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Nouvel outil : taille côté gauche</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="4">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool new: size left</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Nouvel outil : taille côté gauche</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="5">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool new: size left</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Nouvel outil : taille côté gauche</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="6">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool new: size left</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Nouvel outil : taille côté gauche</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="7">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool new: size left</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Nouvel outil : taille côté gauche</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="8">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool new: size left</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Nouvel outil : taille côté gauche</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="9">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool new: size left</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Nouvel outil : taille côté gauche</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="10">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool new: size left</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Nouvel outil : taille côté gauche</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="11">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool new: size left</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Nouvel outil : taille côté gauche</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="12">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool new: size left</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Nouvel outil : taille côté gauche</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="13">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool new: size left</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Nouvel outil : taille côté gauche</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="14">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool new: size left</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Nouvel outil : taille côté gauche</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="15">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool new: size left</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Nouvel outil : taille côté gauche</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="16">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool new: size left</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Nouvel outil : taille côté gauche</MultiLanguageText>
+          </Comment>
+        </Subelement>
+      </Member>
+      <Member Name="SRight" Datatype="Int">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Tool new: size right</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Nouvel outil : taille côté droit</MultiLanguageText>
+        </Comment>
+        <Subelement Path="2">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool new: size right</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Nouvel outil : taille côté droit</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="3">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool new: size right</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Nouvel outil : taille côté droit</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="4">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool new: size right</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Nouvel outil : taille côté droit</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="5">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool new: size right</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Nouvel outil : taille côté droit</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="6">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool new: size right</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Nouvel outil : taille côté droit</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="7">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool new: size right</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Nouvel outil : taille côté droit</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="8">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool new: size right</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Nouvel outil : taille côté droit</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="9">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool new: size right</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Nouvel outil : taille côté droit</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="10">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool new: size right</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Nouvel outil : taille côté droit</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="11">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool new: size right</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Nouvel outil : taille côté droit</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="12">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool new: size right</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Nouvel outil : taille côté droit</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="13">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool new: size right</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Nouvel outil : taille côté droit</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="14">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool new: size right</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Nouvel outil : taille côté droit</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="15">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool new: size right</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Nouvel outil : taille côté droit</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="16">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool new: size right</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Nouvel outil : taille côté droit</MultiLanguageText>
+          </Comment>
+        </Subelement>
+      </Member>
+      <Member Name="STop" Datatype="Int">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Tool new: size top</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Nouvel outil : taille dessus</MultiLanguageText>
+        </Comment>
+        <Subelement Path="2">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool new: size top</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Nouvel outil : taille dessus</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="3">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool new: size top</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Nouvel outil : taille dessus</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="4">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool new: size top</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Nouvel outil : taille dessus</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="5">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool new: size top</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Nouvel outil : taille dessus</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="6">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool new: size top</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Nouvel outil : taille dessus</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="7">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool new: size top</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Nouvel outil : taille dessus</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="8">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool new: size top</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Nouvel outil : taille dessus</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="9">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool new: size top</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Nouvel outil : taille dessus</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="10">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool new: size top</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Nouvel outil : taille dessus</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="11">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool new: size top</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Nouvel outil : taille dessus</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="12">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool new: size top</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Nouvel outil : taille dessus</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="13">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool new: size top</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Nouvel outil : taille dessus</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="14">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool new: size top</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Nouvel outil : taille dessus</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="15">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool new: size top</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Nouvel outil : taille dessus</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="16">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool new: size top</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Nouvel outil : taille dessus</MultiLanguageText>
+          </Comment>
+        </Subelement>
+      </Member>
+      <Member Name="SBottom" Datatype="Int">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Tool new: size bottom</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Nouvel outil : taille dessous</MultiLanguageText>
+        </Comment>
+        <Subelement Path="2">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool new: size bottom</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Nouvel outil : taille dessous</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="3">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool new: size bottom</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Nouvel outil : taille dessous</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="4">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool new: size bottom</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Nouvel outil : taille dessous</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="5">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool new: size bottom</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Nouvel outil : taille dessous</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="6">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool new: size bottom</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Nouvel outil : taille dessous</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="7">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool new: size bottom</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Nouvel outil : taille dessous</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="8">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool new: size bottom</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Nouvel outil : taille dessous</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="9">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool new: size bottom</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Nouvel outil : taille dessous</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="10">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool new: size bottom</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Nouvel outil : taille dessous</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="11">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool new: size bottom</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Nouvel outil : taille dessous</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="12">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool new: size bottom</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Nouvel outil : taille dessous</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="13">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool new: size bottom</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Nouvel outil : taille dessous</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="14">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool new: size bottom</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Nouvel outil : taille dessous</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="15">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool new: size bottom</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Nouvel outil : taille dessous</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="16">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool new: size bottom</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Nouvel outil : taille dessous</MultiLanguageText>
+          </Comment>
+        </Subelement>
+      </Member>
+      <Member Name="TInBuffer" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">ID for tools in buffer</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">ID pour outils dans tampon</MultiLanguageText>
+        </Comment>
+        <Subelement Path="2">
+          <Comment>
+            <MultiLanguageText Lang="en-US">ID for tools in buffer</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">ID pour outils dans tampon</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="3">
+          <Comment>
+            <MultiLanguageText Lang="en-US">ID for tools in buffer</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">ID pour outils dans tampon</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="4">
+          <Comment>
+            <MultiLanguageText Lang="en-US">ID for tools in buffer</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">ID pour outils dans tampon</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="5">
+          <Comment>
+            <MultiLanguageText Lang="en-US">ID for tools in buffer</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">ID pour outils dans tampon</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="6">
+          <Comment>
+            <MultiLanguageText Lang="en-US">ID for tools in buffer</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">ID pour outils dans tampon</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="7">
+          <Comment>
+            <MultiLanguageText Lang="en-US">ID for tools in buffer</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">ID pour outils dans tampon</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="8">
+          <Comment>
+            <MultiLanguageText Lang="en-US">ID for tools in buffer</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">ID pour outils dans tampon</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="9">
+          <Comment>
+            <MultiLanguageText Lang="en-US">ID for tools in buffer</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">ID pour outils dans tampon</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="10">
+          <Comment>
+            <MultiLanguageText Lang="en-US">ID for tools in buffer</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">ID pour outils dans tampon</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="11">
+          <Comment>
+            <MultiLanguageText Lang="en-US">ID for tools in buffer</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">ID pour outils dans tampon</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="12">
+          <Comment>
+            <MultiLanguageText Lang="en-US">ID for tools in buffer</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">ID pour outils dans tampon</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="13">
+          <Comment>
+            <MultiLanguageText Lang="en-US">ID for tools in buffer</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">ID pour outils dans tampon</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="14">
+          <Comment>
+            <MultiLanguageText Lang="en-US">ID for tools in buffer</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">ID pour outils dans tampon</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="15">
+          <Comment>
+            <MultiLanguageText Lang="en-US">ID for tools in buffer</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">ID pour outils dans tampon</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="16">
+          <Comment>
+            <MultiLanguageText Lang="en-US">ID for tools in buffer</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">ID pour outils dans tampon</MultiLanguageText>
+          </Comment>
+        </Subelement>
+      </Member>
+      <Member Name="IgnoreDisabled" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Ignore disabled</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Ignorer désactivation</MultiLanguageText>
+        </Comment>
+        <Subelement Path="2">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Ignore disabled</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Ignorer désactivation</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="3">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Ignore disabled</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Ignorer désactivation</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="4">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Ignore disabled</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Ignorer désactivation</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="5">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Ignore disabled</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Ignorer désactivation</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="6">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Ignore disabled</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Ignorer désactivation</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="7">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Ignore disabled</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Ignorer désactivation</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="8">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Ignore disabled</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Ignorer désactivation</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="9">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Ignore disabled</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Ignorer désactivation</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="10">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Ignore disabled</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Ignorer désactivation</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="11">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Ignore disabled</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Ignorer désactivation</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="12">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Ignore disabled</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Ignorer désactivation</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="13">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Ignore disabled</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Ignorer désactivation</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="14">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Ignore disabled</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Ignorer désactivation</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="15">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Ignore disabled</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Ignorer désactivation</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="16">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Ignore disabled</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Ignorer désactivation</MultiLanguageText>
+          </Comment>
+        </Subelement>
+      </Member>
+      <Member Name="Unload" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">To be unloaded</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">À décharger</MultiLanguageText>
+        </Comment>
+        <Subelement Path="2">
+          <Comment>
+            <MultiLanguageText Lang="en-US">To be unloaded</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">À décharger</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="3">
+          <Comment>
+            <MultiLanguageText Lang="en-US">To be unloaded</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">À décharger</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="4">
+          <Comment>
+            <MultiLanguageText Lang="en-US">To be unloaded</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">À décharger</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="5">
+          <Comment>
+            <MultiLanguageText Lang="en-US">To be unloaded</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">À décharger</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="6">
+          <Comment>
+            <MultiLanguageText Lang="en-US">To be unloaded</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">À décharger</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="7">
+          <Comment>
+            <MultiLanguageText Lang="en-US">To be unloaded</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">À décharger</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="8">
+          <Comment>
+            <MultiLanguageText Lang="en-US">To be unloaded</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">À décharger</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="9">
+          <Comment>
+            <MultiLanguageText Lang="en-US">To be unloaded</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">À décharger</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="10">
+          <Comment>
+            <MultiLanguageText Lang="en-US">To be unloaded</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">À décharger</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="11">
+          <Comment>
+            <MultiLanguageText Lang="en-US">To be unloaded</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">À décharger</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="12">
+          <Comment>
+            <MultiLanguageText Lang="en-US">To be unloaded</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">À décharger</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="13">
+          <Comment>
+            <MultiLanguageText Lang="en-US">To be unloaded</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">À décharger</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="14">
+          <Comment>
+            <MultiLanguageText Lang="en-US">To be unloaded</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">À décharger</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="15">
+          <Comment>
+            <MultiLanguageText Lang="en-US">To be unloaded</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">À décharger</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="16">
+          <Comment>
+            <MultiLanguageText Lang="en-US">To be unloaded</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">À décharger</MultiLanguageText>
+          </Comment>
+        </Subelement>
+      </Member>
+      <Member Name="Load" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">To be loaded</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">À charger</MultiLanguageText>
+        </Comment>
+        <Subelement Path="2">
+          <Comment>
+            <MultiLanguageText Lang="en-US">To be loaded</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">À charger</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="3">
+          <Comment>
+            <MultiLanguageText Lang="en-US">To be loaded</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">À charger</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="4">
+          <Comment>
+            <MultiLanguageText Lang="en-US">To be loaded</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">À charger</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="5">
+          <Comment>
+            <MultiLanguageText Lang="en-US">To be loaded</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">À charger</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="6">
+          <Comment>
+            <MultiLanguageText Lang="en-US">To be loaded</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">À charger</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="7">
+          <Comment>
+            <MultiLanguageText Lang="en-US">To be loaded</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">À charger</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="8">
+          <Comment>
+            <MultiLanguageText Lang="en-US">To be loaded</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">À charger</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="9">
+          <Comment>
+            <MultiLanguageText Lang="en-US">To be loaded</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">À charger</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="10">
+          <Comment>
+            <MultiLanguageText Lang="en-US">To be loaded</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">À charger</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="11">
+          <Comment>
+            <MultiLanguageText Lang="en-US">To be loaded</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">À charger</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="12">
+          <Comment>
+            <MultiLanguageText Lang="en-US">To be loaded</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">À charger</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="13">
+          <Comment>
+            <MultiLanguageText Lang="en-US">To be loaded</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">À charger</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="14">
+          <Comment>
+            <MultiLanguageText Lang="en-US">To be loaded</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">À charger</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="15">
+          <Comment>
+            <MultiLanguageText Lang="en-US">To be loaded</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">À charger</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="16">
+          <Comment>
+            <MultiLanguageText Lang="en-US">To be loaded</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">À charger</MultiLanguageText>
+          </Comment>
+        </Subelement>
+      </Member>
+      <Member Name="MasterTool" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Tool is the master tool</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">L'outil est un outil principal</MultiLanguageText>
+        </Comment>
+        <Subelement Path="2">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool is the master tool</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">L'outil est un outil principal</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="3">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool is the master tool</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">L'outil est un outil principal</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="4">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool is the master tool</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">L'outil est un outil principal</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="5">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool is the master tool</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">L'outil est un outil principal</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="6">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool is the master tool</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">L'outil est un outil principal</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="7">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool is the master tool</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">L'outil est un outil principal</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="8">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool is the master tool</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">L'outil est un outil principal</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="9">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool is the master tool</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">L'outil est un outil principal</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="10">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool is the master tool</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">L'outil est un outil principal</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="11">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool is the master tool</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">L'outil est un outil principal</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="12">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool is the master tool</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">L'outil est un outil principal</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="13">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool is the master tool</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">L'outil est un outil principal</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="14">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool is the master tool</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">L'outil est un outil principal</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="15">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool is the master tool</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">L'outil est un outil principal</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="16">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool is the master tool</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">L'outil est un outil principal</MultiLanguageText>
+          </Comment>
+        </Subelement>
+      </Member>
+      <Member Name="n26_5" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+        </Comment>
+        <Subelement Path="2">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="3">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="4">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="5">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="6">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="7">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="8">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="9">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="10">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="11">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="12">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="13">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="14">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="15">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="16">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+      </Member>
+      <Member Name="n26_6" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+        </Comment>
+        <Subelement Path="2">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="3">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="4">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="5">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="6">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="7">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="8">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="9">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="10">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="11">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="12">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="13">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="14">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="15">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="16">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+      </Member>
+      <Member Name="HandTool" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Hand tool</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Outil manuel</MultiLanguageText>
+        </Comment>
+        <Subelement Path="2">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Hand tool</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Outil manuel</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="3">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Hand tool</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Outil manuel</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="4">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Hand tool</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Outil manuel</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="5">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Hand tool</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Outil manuel</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="6">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Hand tool</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Outil manuel</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="7">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Hand tool</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Outil manuel</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="8">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Hand tool</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Outil manuel</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="9">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Hand tool</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Outil manuel</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="10">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Hand tool</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Outil manuel</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="11">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Hand tool</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Outil manuel</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="12">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Hand tool</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Outil manuel</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="13">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Hand tool</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Outil manuel</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="14">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Hand tool</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Outil manuel</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="15">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Hand tool</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Outil manuel</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="16">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Hand tool</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Outil manuel</MultiLanguageText>
+          </Comment>
+        </Subelement>
+      </Member>
+      <Member Name="Active" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Active tool</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Outil actif</MultiLanguageText>
+        </Comment>
+        <Subelement Path="2">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Active tool</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Outil actif</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="3">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Active tool</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Outil actif</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="4">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Active tool</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Outil actif</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="5">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Active tool</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Outil actif</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="6">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Active tool</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Outil actif</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="7">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Active tool</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Outil actif</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="8">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Active tool</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Outil actif</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="9">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Active tool</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Outil actif</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="10">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Active tool</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Outil actif</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="11">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Active tool</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Outil actif</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="12">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Active tool</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Outil actif</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="13">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Active tool</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Outil actif</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="14">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Active tool</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Outil actif</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="15">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Active tool</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Outil actif</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="16">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Active tool</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Outil actif</MultiLanguageText>
+          </Comment>
+        </Subelement>
+      </Member>
+      <Member Name="Enabled" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Tool enabled</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Outil activé</MultiLanguageText>
+        </Comment>
+        <Subelement Path="2">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool enabled</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Outil activé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="3">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool enabled</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Outil activé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="4">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool enabled</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Outil activé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="5">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool enabled</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Outil activé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="6">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool enabled</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Outil activé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="7">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool enabled</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Outil activé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="8">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool enabled</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Outil activé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="9">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool enabled</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Outil activé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="10">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool enabled</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Outil activé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="11">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool enabled</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Outil activé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="12">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool enabled</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Outil activé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="13">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool enabled</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Outil activé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="14">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool enabled</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Outil activé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="15">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool enabled</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Outil activé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="16">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool enabled</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Outil activé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+      </Member>
+      <Member Name="Disabled" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Tool disabled</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Outil désactivé</MultiLanguageText>
+        </Comment>
+        <Subelement Path="2">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool disabled</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Outil désactivé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="3">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool disabled</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Outil désactivé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="4">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool disabled</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Outil désactivé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="5">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool disabled</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Outil désactivé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="6">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool disabled</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Outil désactivé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="7">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool disabled</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Outil désactivé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="8">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool disabled</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Outil désactivé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="9">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool disabled</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Outil désactivé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="10">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool disabled</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Outil désactivé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="11">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool disabled</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Outil désactivé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="12">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool disabled</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Outil désactivé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="13">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool disabled</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Outil désactivé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="14">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool disabled</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Outil désactivé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="15">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool disabled</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Outil désactivé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="16">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool disabled</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Outil désactivé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+      </Member>
+      <Member Name="Measured" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Tool measured</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Outil mesuré</MultiLanguageText>
+        </Comment>
+        <Subelement Path="2">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool measured</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Outil mesuré</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="3">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool measured</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Outil mesuré</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="4">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool measured</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Outil mesuré</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="5">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool measured</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Outil mesuré</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="6">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool measured</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Outil mesuré</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="7">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool measured</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Outil mesuré</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="8">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool measured</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Outil mesuré</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="9">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool measured</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Outil mesuré</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="10">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool measured</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Outil mesuré</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="11">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool measured</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Outil mesuré</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="12">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool measured</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Outil mesuré</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="13">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool measured</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Outil mesuré</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="14">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool measured</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Outil mesuré</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="15">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool measured</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Outil mesuré</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="16">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool measured</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Outil mesuré</MultiLanguageText>
+          </Comment>
+        </Subelement>
+      </Member>
+      <Member Name="Prewarn" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Prewarning limit reached</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Seuil de préavis atteint</MultiLanguageText>
+        </Comment>
+        <Subelement Path="2">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Prewarning limit reached</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Seuil de préavis atteint</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="3">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Prewarning limit reached</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Seuil de préavis atteint</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="4">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Prewarning limit reached</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Seuil de préavis atteint</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="5">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Prewarning limit reached</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Seuil de préavis atteint</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="6">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Prewarning limit reached</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Seuil de préavis atteint</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="7">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Prewarning limit reached</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Seuil de préavis atteint</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="8">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Prewarning limit reached</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Seuil de préavis atteint</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="9">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Prewarning limit reached</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Seuil de préavis atteint</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="10">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Prewarning limit reached</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Seuil de préavis atteint</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="11">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Prewarning limit reached</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Seuil de préavis atteint</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="12">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Prewarning limit reached</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Seuil de préavis atteint</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="13">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Prewarning limit reached</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Seuil de préavis atteint</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="14">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Prewarning limit reached</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Seuil de préavis atteint</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="15">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Prewarning limit reached</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Seuil de préavis atteint</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="16">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Prewarning limit reached</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Seuil de préavis atteint</MultiLanguageText>
+          </Comment>
+        </Subelement>
+      </Member>
+      <Member Name="Change" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Tool being changed</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Outil en cours de changement</MultiLanguageText>
+        </Comment>
+        <Subelement Path="2">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool being changed</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Outil en cours de changement</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="3">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool being changed</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Outil en cours de changement</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="4">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool being changed</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Outil en cours de changement</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="5">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool being changed</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Outil en cours de changement</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="6">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool being changed</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Outil en cours de changement</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="7">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool being changed</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Outil en cours de changement</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="8">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool being changed</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Outil en cours de changement</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="9">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool being changed</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Outil en cours de changement</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="10">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool being changed</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Outil en cours de changement</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="11">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool being changed</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Outil en cours de changement</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="12">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool being changed</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Outil en cours de changement</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="13">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool being changed</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Outil en cours de changement</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="14">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool being changed</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Outil en cours de changement</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="15">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool being changed</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Outil en cours de changement</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="16">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool being changed</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Outil en cours de changement</MultiLanguageText>
+          </Comment>
+        </Subelement>
+      </Member>
+      <Member Name="FixedLoc" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Tool fixed location coded</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Emplacement fixe d'outil codé</MultiLanguageText>
+        </Comment>
+        <Subelement Path="2">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool fixed location coded</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Emplacement fixe d'outil codé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="3">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool fixed location coded</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Emplacement fixe d'outil codé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="4">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool fixed location coded</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Emplacement fixe d'outil codé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="5">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool fixed location coded</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Emplacement fixe d'outil codé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="6">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool fixed location coded</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Emplacement fixe d'outil codé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="7">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool fixed location coded</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Emplacement fixe d'outil codé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="8">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool fixed location coded</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Emplacement fixe d'outil codé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="9">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool fixed location coded</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Emplacement fixe d'outil codé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="10">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool fixed location coded</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Emplacement fixe d'outil codé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="11">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool fixed location coded</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Emplacement fixe d'outil codé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="12">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool fixed location coded</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Emplacement fixe d'outil codé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="13">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool fixed location coded</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Emplacement fixe d'outil codé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="14">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool fixed location coded</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Emplacement fixe d'outil codé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="15">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool fixed location coded</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Emplacement fixe d'outil codé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="16">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool fixed location coded</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Emplacement fixe d'outil codé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+      </Member>
+      <Member Name="Used" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Tool was in use</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Outil a été utilisé</MultiLanguageText>
+        </Comment>
+        <Subelement Path="2">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool was in use</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Outil a été utilisé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="3">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool was in use</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Outil a été utilisé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="4">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool was in use</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Outil a été utilisé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="5">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool was in use</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Outil a été utilisé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="6">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool was in use</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Outil a été utilisé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="7">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool was in use</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Outil a été utilisé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="8">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool was in use</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Outil a été utilisé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="9">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool was in use</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Outil a été utilisé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="10">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool was in use</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Outil a été utilisé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="11">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool was in use</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Outil a été utilisé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="12">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool was in use</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Outil a été utilisé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="13">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool was in use</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Outil a été utilisé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="14">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool was in use</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Outil a été utilisé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="15">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool was in use</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Outil a été utilisé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="16">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool was in use</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Outil a été utilisé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+      </Member>
+      <Member Name="TNo" Datatype="Int">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Tool new: T number</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Nouvel outil : numéro d'outil</MultiLanguageText>
+        </Comment>
+        <Subelement Path="2">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool new: T number</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Nouvel outil : numéro d'outil</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="3">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool new: T number</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Nouvel outil : numéro d'outil</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="4">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool new: T number</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Nouvel outil : numéro d'outil</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="5">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool new: T number</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Nouvel outil : numéro d'outil</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="6">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool new: T number</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Nouvel outil : numéro d'outil</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="7">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool new: T number</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Nouvel outil : numéro d'outil</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="8">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool new: T number</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Nouvel outil : numéro d'outil</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="9">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool new: T number</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Nouvel outil : numéro d'outil</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="10">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool new: T number</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Nouvel outil : numéro d'outil</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="11">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool new: T number</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Nouvel outil : numéro d'outil</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="12">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool new: T number</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Nouvel outil : numéro d'outil</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="13">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool new: T number</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Nouvel outil : numéro d'outil</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="14">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool new: T number</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Nouvel outil : numéro d'outil</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="15">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool new: T number</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Nouvel outil : numéro d'outil</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="16">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool new: T number</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Nouvel outil : numéro d'outil</MultiLanguageText>
+          </Comment>
+        </Subelement>
+      </Member>
+      <Member Name="Toolholder" Datatype="Int">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Toolholder number as tool compensation reference</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Numéro de porte-outil en tant que référence pour la compensation d'outil</MultiLanguageText>
+        </Comment>
+        <Subelement Path="2">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Toolholder number as tool compensation reference</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro de porte-outil en tant que référence pour la compensation d'outil</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="3">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Toolholder number as tool compensation reference</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro de porte-outil en tant que référence pour la compensation d'outil</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="4">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Toolholder number as tool compensation reference</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro de porte-outil en tant que référence pour la compensation d'outil</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="5">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Toolholder number as tool compensation reference</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro de porte-outil en tant que référence pour la compensation d'outil</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="6">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Toolholder number as tool compensation reference</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro de porte-outil en tant que référence pour la compensation d'outil</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="7">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Toolholder number as tool compensation reference</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro de porte-outil en tant que référence pour la compensation d'outil</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="8">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Toolholder number as tool compensation reference</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro de porte-outil en tant que référence pour la compensation d'outil</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="9">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Toolholder number as tool compensation reference</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro de porte-outil en tant que référence pour la compensation d'outil</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="10">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Toolholder number as tool compensation reference</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro de porte-outil en tant que référence pour la compensation d'outil</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="11">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Toolholder number as tool compensation reference</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro de porte-outil en tant que référence pour la compensation d'outil</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="12">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Toolholder number as tool compensation reference</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro de porte-outil en tant que référence pour la compensation d'outil</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="13">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Toolholder number as tool compensation reference</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro de porte-outil en tant que référence pour la compensation d'outil</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="14">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Toolholder number as tool compensation reference</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro de porte-outil en tant que référence pour la compensation d'outil</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="15">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Toolholder number as tool compensation reference</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro de porte-outil en tant que référence pour la compensation d'outil</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="16">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Toolholder number as tool compensation reference</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro de porte-outil en tant que référence pour la compensation d'outil</MultiLanguageText>
+          </Comment>
+        </Subelement>
+      </Member>
+      <Member Name="MyMag" Datatype="Int">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Multitool number the tool is loaded onto</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Numéro Multitool dans lequel l'outil est chargé</MultiLanguageText>
+        </Comment>
+        <Subelement Path="2">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Multitool number the tool is loaded onto</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro Multitool dans lequel l'outil est chargé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="3">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Multitool number the tool is loaded onto</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro Multitool dans lequel l'outil est chargé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="4">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Multitool number the tool is loaded onto</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro Multitool dans lequel l'outil est chargé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="5">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Multitool number the tool is loaded onto</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro Multitool dans lequel l'outil est chargé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="6">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Multitool number the tool is loaded onto</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro Multitool dans lequel l'outil est chargé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="7">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Multitool number the tool is loaded onto</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro Multitool dans lequel l'outil est chargé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="8">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Multitool number the tool is loaded onto</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro Multitool dans lequel l'outil est chargé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="9">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Multitool number the tool is loaded onto</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro Multitool dans lequel l'outil est chargé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="10">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Multitool number the tool is loaded onto</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro Multitool dans lequel l'outil est chargé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="11">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Multitool number the tool is loaded onto</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro Multitool dans lequel l'outil est chargé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="12">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Multitool number the tool is loaded onto</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro Multitool dans lequel l'outil est chargé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="13">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Multitool number the tool is loaded onto</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro Multitool dans lequel l'outil est chargé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="14">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Multitool number the tool is loaded onto</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro Multitool dans lequel l'outil est chargé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="15">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Multitool number the tool is loaded onto</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro Multitool dans lequel l'outil est chargé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="16">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Multitool number the tool is loaded onto</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro Multitool dans lequel l'outil est chargé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+      </Member>
+      <Member Name="MyPlace" Datatype="Int">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Multitool place number</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Numéro d'emplacement Multitool</MultiLanguageText>
+        </Comment>
+        <Subelement Path="2">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Multitool place number</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro d'emplacement Multitool</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="3">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Multitool place number</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro d'emplacement Multitool</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="4">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Multitool place number</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro d'emplacement Multitool</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="5">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Multitool place number</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro d'emplacement Multitool</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="6">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Multitool place number</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro d'emplacement Multitool</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="7">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Multitool place number</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro d'emplacement Multitool</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="8">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Multitool place number</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro d'emplacement Multitool</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="9">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Multitool place number</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro d'emplacement Multitool</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="10">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Multitool place number</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro d'emplacement Multitool</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="11">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Multitool place number</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro d'emplacement Multitool</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="12">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Multitool place number</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro d'emplacement Multitool</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="13">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Multitool place number</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro d'emplacement Multitool</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="14">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Multitool place number</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro d'emplacement Multitool</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="15">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Multitool place number</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro d'emplacement Multitool</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="16">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Multitool place number</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro d'emplacement Multitool</MultiLanguageText>
+          </Comment>
+        </Subelement>
+      </Member>
+      <Member Name="reserved" Datatype="Array[1..7] of Int">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+        </Comment>
+        <Subelement Path="2">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="3">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="4">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="5">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="6">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="7">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="8">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="9">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="10">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="11">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="12">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="13">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="14">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="15">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="16">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+      </Member>
+    </Member>
+  </Section>
+</Sections></Interface>
+      <Name>LBP_typeTMTurretMT</Name>
+      <Namespace />
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text>User data type for block LBP_TMTurretMT [DB1073]</Text>
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="3" CompositionName="Items">
+            <AttributeList>
+              <Culture>fr-FR</Culture>
+              <Text>Type de données utilisateur pour bloc LBP_TMTurretMT [DB1073]</Text>
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <MultilingualText ID="4" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="5" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text>Tool management</Text>
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="6" CompositionName="Items">
+            <AttributeList>
+              <Culture>fr-FR</Culture>
+              <Text>Gestion des outils</Text>
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Types.PlcStruct>
+</Document>

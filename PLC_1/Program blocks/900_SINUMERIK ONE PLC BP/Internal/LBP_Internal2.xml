@@ -1,0 +1,376 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V20" />
+  <SW.Blocks.InstanceDB ID="0">
+    <AttributeList>
+      <InstanceOfName>LBP_InternalProc7</InstanceOfName>
+      <InstanceOfType>FB</InstanceOfType>
+      <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+  <Section Name="Input" />
+  <Section Name="Output">
+    <Member Name="error" Datatype="Bool">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+    </Member>
+  </Section>
+  <Section Name="InOut" />
+  <Section Name="Static">
+    <Member Name="statTimer1" Datatype="Array[1..8] of IEC_TIMER" Version="1.0">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="statTimer2" Datatype="Array[1..8] of IEC_TIMER" Version="1.0">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="statTimerActivationImmediately" Datatype="Array[1..8] of IEC_TIMER" Version="1.0">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="en-US">Delay time for immediate activation</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Temporisation pour activation immédiate</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="statActivationImmediately" Datatype="Array[1..8] of Bool">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="statImpReloadT2" Datatype="Array[1..8] of R_TRIG" Version="1.0">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="statMcp1" Datatype="Array[0..1, 0..7] of Byte">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="en-US">Image of mcp1 to detect any changes</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Image de la mcp1 pour comparaison</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="statMcp2" Datatype="Array[0..1, 0..7] of Byte">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="en-US">Image of mcp2 to detect any changes</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Image de la mcp2 pour comparaison</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="statTimerDataTranfer" Datatype="IEC_TIMER" Version="1.0">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="statChanInReset" Datatype="Array[1..10] of Bool">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="statAktProfile" Datatype="Struct">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Member Name="ESaveOn" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Activate energy-saving profile immediately</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Activer immédiatement le profil d'économie d'énergie</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="ReloadT2" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Reload Prewarning time (T2)</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Recharger temps de préavis (T2)</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="res0_2" Datatype="Bool" />
+      <Member Name="res0_3" Datatype="Bool" />
+      <Member Name="res0_4" Datatype="Bool" />
+      <Member Name="res0_5" Datatype="Bool" />
+      <Member Name="res0_6" Datatype="Bool" />
+      <Member Name="res0_7" Datatype="Bool" />
+      <Member Name="HmiESaveOn" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">HMI-&gt;PLC: Activate energy-saving profile immediately</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">IHM-&gt;AP : activer immédiatement le profil d'économie d'énergie</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="res1_1" Datatype="Bool" />
+      <Member Name="res1_2" Datatype="Bool" />
+      <Member Name="res1_3" Datatype="Bool" />
+      <Member Name="res1_4" Datatype="Bool" />
+      <Member Name="res1_5" Datatype="Bool" />
+      <Member Name="res1_6" Datatype="Bool" />
+      <Member Name="res1_7" Datatype="Bool" />
+      <Member Name="MasterCompSig" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Master computer signal</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Signal ordinateur maître</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="PlcUserSig" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">PLC user signal</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">AP signal utilisateur</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="res2_2" Datatype="Bool" />
+      <Member Name="res2_3" Datatype="Bool" />
+      <Member Name="res2_4" Datatype="Bool" />
+      <Member Name="res2_5" Datatype="Bool" />
+      <Member Name="res2_6" Datatype="Bool" />
+      <Member Name="res2_7" Datatype="Bool" />
+      <Member Name="res3" Datatype="Byte" />
+      <Member Name="ESaveIsOn" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Energy-saving state active</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">État économie d'énergie actif</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="T1Expired" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Activation time T1 expired</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Temps d'activation T1 écoulé</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="res4_2" Datatype="Bool" />
+      <Member Name="res4_3" Datatype="Bool" />
+      <Member Name="res4_4" Datatype="Bool" />
+      <Member Name="res4_5" Datatype="Bool" />
+      <Member Name="res4_6" Datatype="Bool" />
+      <Member Name="res4_7" Datatype="Bool" />
+      <Member Name="res5" Datatype="Byte" />
+      <Member Name="ActValT1" Datatype="Int">
+        <Comment>
+          <MultiLanguageText Lang="en-US">T1 current value</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">T1 valeur réelle</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="ActValT2" Datatype="Int">
+        <Comment>
+          <MultiLanguageText Lang="en-US">T2 current value</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">T2 valeur réelle</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="ESaveValid" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">HMI-&gt;PLC: Energy-saving profile valid</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">IHM-&gt;AP : profil d'économie d'énergie valide</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="ESaveOff" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">HMI-&gt;PLC: Deactivate energy-saving profileblock energy-saving profile</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">IHM-&gt;AP : désactiver/bloquer le profil d'économie d'énergie</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="res10_2" Datatype="Bool" />
+      <Member Name="res10_3" Datatype="Bool" />
+      <Member Name="res10_4" Datatype="Bool" />
+      <Member Name="res10_5" Datatype="Bool" />
+      <Member Name="res10_6" Datatype="Bool" />
+      <Member Name="res10_7" Datatype="Bool" />
+      <Member Name="CondOpPanel" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">HMI-&gt;PLC: Operator panel</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">IHM-&gt;AP : pupitre opérateur</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="CondDataTransfer" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">HMI-&gt;PLC: Data transfer</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">IHM-&gt;AP : transmission de données</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="CondWindowChange" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">HMI-&gt;PLC: Window change</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">IHM-&gt;AP : changement de fenêtre</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="res11_3" Datatype="Bool" />
+      <Member Name="res11_4" Datatype="Bool" />
+      <Member Name="res11_5" Datatype="Bool" />
+      <Member Name="res11_6" Datatype="Bool" />
+      <Member Name="res11_7" Datatype="Bool" />
+      <Member Name="CondMCP" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">HMI-&gt;PLC: Machine control panel</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">IHM-&gt;AP : pupitre opérateur machine</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="res12_1" Datatype="Bool" />
+      <Member Name="res12_2" Datatype="Bool" />
+      <Member Name="res12_3" Datatype="Bool" />
+      <Member Name="res12_4" Datatype="Bool" />
+      <Member Name="res12_5" Datatype="Bool" />
+      <Member Name="res12_6" Datatype="Bool" />
+      <Member Name="res12_7" Datatype="Bool" />
+      <Member Name="CondNcChan1" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">HMI-&gt;PLC: NC channel 1 in reset</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">IHM-&gt;AP : canal CN 1 en Reset</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="CondNcChan2" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">HMI-&gt;PLC: NC channel 2 in reset</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">IHM-&gt;AP : canal CN 2 en Reset</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="CondNcChan3" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">HMI-&gt;PLC: NC channel 3 in reset</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">IHM-&gt;AP : canal CN 3 en Reset</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="CondNcChan4" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">HMI-&gt;PLC: NC channel 4 in reset</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">IHM-&gt;AP : canal CN 4 en Reset</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="CondNcChan5" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">HMI-&gt;PLC: NC channel 5 in reset</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">IHM-&gt;AP : canal CN 5 en Reset</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="CondNcChan6" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">HMI-&gt;PLC: NC channel 6 in reset</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">IHM-&gt;AP : canal CN 6 en Reset</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="CondNcChan7" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">HMI-&gt;PLC: NC channel 7 in reset</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">IHM-&gt;AP : canal CN 7 en Reset</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="CondNcChan8" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">HMI-&gt;PLC: NC channel 8 in reset</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">IHM-&gt;AP : canal CN 8 en Reset</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="CondNcChan9" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">HMI-&gt;PLC: NC channel 9 in reset</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">IHM-&gt;AP : canal CN 9 en Reset</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="CondNcChan10" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">HMI-&gt;PLC: NC channel 10 in reset</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">IHM-&gt;AP : canal CN 10 en Reset</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="res14_2" Datatype="Bool" />
+      <Member Name="res14_3" Datatype="Bool" />
+      <Member Name="res14_4" Datatype="Bool" />
+      <Member Name="res14_5" Datatype="Bool" />
+      <Member Name="res14_6" Datatype="Bool" />
+      <Member Name="res14_7" Datatype="Bool" />
+      <Member Name="CondMasterCompSig" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">HMI-&gt;PLC: Master computer signal</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">IHM-&gt;AP : signal ordinateur maître</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="CondPlcUserSig" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">HMI-&gt;PLC: PLC user signal</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">IHM-&gt;AP : signal utilisateur AP</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="res15_2" Datatype="Bool" />
+      <Member Name="res15_3" Datatype="Bool" />
+      <Member Name="res15_4" Datatype="Bool" />
+      <Member Name="res15_5" Datatype="Bool" />
+      <Member Name="res15_6" Datatype="Bool" />
+      <Member Name="res15_7" Datatype="Bool" />
+      <Member Name="PresetT1" Datatype="Int">
+        <Comment>
+          <MultiLanguageText Lang="en-US">HMI-&gt;PLC: Activation time T1</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">IHM-&gt;AP : temps d'activation T1</MultiLanguageText>
+        </Comment>
+      </Member>
+      <Member Name="PresetT2" Datatype="Int">
+        <Comment>
+          <MultiLanguageText Lang="en-US">HMI-&gt;PLC: Activation time T2</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">IHM-&gt;AP : temps d'activation T2</MultiLanguageText>
+        </Comment>
+      </Member>
+    </Member>
+  </Section>
+</Sections></Interface>
+      <Name>LBP_Internal2</Name>
+      <Namespace />
+      <Number>25001</Number>
+      <ProgrammingLanguage>DB</ProgrammingLanguage>
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text>DB only for internal use in the basic program</Text>
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="3" CompositionName="Items">
+            <AttributeList>
+              <Culture>fr-FR</Culture>
+              <Text>DB réservé à l'utilisation interne dans le programme de base</Text>
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <MultilingualText ID="4" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="5" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text>Internal DB for basic program</Text>
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="6" CompositionName="Items">
+            <AttributeList>
+              <Culture>fr-FR</Culture>
+              <Text>DB interne pour programme de base</Text>
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Blocks.InstanceDB>
+</Document>

@@ -1,0 +1,2846 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V20" />
+  <SW.Types.PlcStruct ID="0">
+    <AttributeList>
+      <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+  <Section Name="None">
+    <Member Name="IFNo" Datatype="Array[1..16] of Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Interface [number] active</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Interface [numéro] active</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="Quit" Datatype="Array[1..16] of Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Perform Quit-End</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Effectuer Quit-End</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="TIF" Datatype="Array[1..16] of Struct">
+      <Member Name="Loading" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Loading the tool</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Outil en cours de chargement</MultiLanguageText>
+        </Comment>
+        <Subelement Path="2">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Loading the tool</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Outil en cours de chargement</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="3">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Loading the tool</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Outil en cours de chargement</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="4">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Loading the tool</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Outil en cours de chargement</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="5">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Loading the tool</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Outil en cours de chargement</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="6">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Loading the tool</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Outil en cours de chargement</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="7">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Loading the tool</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Outil en cours de chargement</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="8">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Loading the tool</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Outil en cours de chargement</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="9">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Loading the tool</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Outil en cours de chargement</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="10">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Loading the tool</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Outil en cours de chargement</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="11">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Loading the tool</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Outil en cours de chargement</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="12">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Loading the tool</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Outil en cours de chargement</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="13">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Loading the tool</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Outil en cours de chargement</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="14">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Loading the tool</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Outil en cours de chargement</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="15">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Loading the tool</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Outil en cours de chargement</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="16">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Loading the tool</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Outil en cours de chargement</MultiLanguageText>
+          </Comment>
+        </Subelement>
+      </Member>
+      <Member Name="Unloading" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Unloading the tool</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Outil en cours de déchargement</MultiLanguageText>
+        </Comment>
+        <Subelement Path="2">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Unloading the tool</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Outil en cours de déchargement</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="3">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Unloading the tool</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Outil en cours de déchargement</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="4">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Unloading the tool</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Outil en cours de déchargement</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="5">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Unloading the tool</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Outil en cours de déchargement</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="6">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Unloading the tool</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Outil en cours de déchargement</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="7">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Unloading the tool</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Outil en cours de déchargement</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="8">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Unloading the tool</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Outil en cours de déchargement</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="9">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Unloading the tool</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Outil en cours de déchargement</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="10">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Unloading the tool</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Outil en cours de déchargement</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="11">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Unloading the tool</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Outil en cours de déchargement</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="12">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Unloading the tool</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Outil en cours de déchargement</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="13">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Unloading the tool</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Outil en cours de déchargement</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="14">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Unloading the tool</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Outil en cours de déchargement</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="15">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Unloading the tool</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Outil en cours de déchargement</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="16">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Unloading the tool</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Outil en cours de déchargement</MultiLanguageText>
+          </Comment>
+        </Subelement>
+      </Member>
+      <Member Name="Reloading" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Relocating the tool</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Repositionnement de l'outil</MultiLanguageText>
+        </Comment>
+        <Subelement Path="2">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Relocating the tool</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Repositionnement de l'outil</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="3">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Relocating the tool</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Repositionnement de l'outil</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="4">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Relocating the tool</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Repositionnement de l'outil</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="5">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Relocating the tool</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Repositionnement de l'outil</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="6">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Relocating the tool</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Repositionnement de l'outil</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="7">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Relocating the tool</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Repositionnement de l'outil</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="8">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Relocating the tool</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Repositionnement de l'outil</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="9">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Relocating the tool</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Repositionnement de l'outil</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="10">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Relocating the tool</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Repositionnement de l'outil</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="11">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Relocating the tool</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Repositionnement de l'outil</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="12">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Relocating the tool</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Repositionnement de l'outil</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="13">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Relocating the tool</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Repositionnement de l'outil</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="14">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Relocating the tool</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Repositionnement de l'outil</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="15">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Relocating the tool</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Repositionnement de l'outil</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="16">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Relocating the tool</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Repositionnement de l'outil</MultiLanguageText>
+          </Comment>
+        </Subelement>
+      </Member>
+      <Member Name="Positioning" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Positioning the magazine</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Magasin en cours de positionnement</MultiLanguageText>
+        </Comment>
+        <Subelement Path="2">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Positioning the magazine</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Magasin en cours de positionnement</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="3">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Positioning the magazine</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Magasin en cours de positionnement</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="4">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Positioning the magazine</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Magasin en cours de positionnement</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="5">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Positioning the magazine</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Magasin en cours de positionnement</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="6">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Positioning the magazine</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Magasin en cours de positionnement</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="7">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Positioning the magazine</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Magasin en cours de positionnement</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="8">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Positioning the magazine</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Magasin en cours de positionnement</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="9">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Positioning the magazine</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Magasin en cours de positionnement</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="10">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Positioning the magazine</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Magasin en cours de positionnement</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="11">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Positioning the magazine</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Magasin en cours de positionnement</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="12">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Positioning the magazine</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Magasin en cours de positionnement</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="13">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Positioning the magazine</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Magasin en cours de positionnement</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="14">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Positioning the magazine</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Magasin en cours de positionnement</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="15">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Positioning the magazine</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Magasin en cours de positionnement</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="16">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Positioning the magazine</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Magasin en cours de positionnement</MultiLanguageText>
+          </Comment>
+        </Subelement>
+      </Member>
+      <Member Name="PosbyProgram" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Initiation by CNC program</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Initiation par programme CNC</MultiLanguageText>
+        </Comment>
+        <Subelement Path="2">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Initiation by CNC program</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Initiation par programme CNC</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="3">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Initiation by CNC program</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Initiation par programme CNC</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="4">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Initiation by CNC program</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Initiation par programme CNC</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="5">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Initiation by CNC program</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Initiation par programme CNC</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="6">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Initiation by CNC program</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Initiation par programme CNC</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="7">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Initiation by CNC program</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Initiation par programme CNC</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="8">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Initiation by CNC program</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Initiation par programme CNC</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="9">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Initiation by CNC program</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Initiation par programme CNC</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="10">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Initiation by CNC program</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Initiation par programme CNC</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="11">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Initiation by CNC program</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Initiation par programme CNC</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="12">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Initiation by CNC program</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Initiation par programme CNC</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="13">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Initiation by CNC program</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Initiation par programme CNC</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="14">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Initiation by CNC program</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Initiation par programme CNC</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="15">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Initiation by CNC program</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Initiation par programme CNC</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="16">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Initiation by CNC program</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Initiation par programme CNC</MultiLanguageText>
+          </Comment>
+        </Subelement>
+      </Member>
+      <Member Name="PositioningMT" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Positioning multitool</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Multitool en cours de positionnement</MultiLanguageText>
+        </Comment>
+        <Subelement Path="2">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Positioning multitool</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Multitool en cours de positionnement</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="3">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Positioning multitool</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Multitool en cours de positionnement</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="4">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Positioning multitool</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Multitool en cours de positionnement</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="5">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Positioning multitool</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Multitool en cours de positionnement</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="6">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Positioning multitool</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Multitool en cours de positionnement</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="7">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Positioning multitool</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Multitool en cours de positionnement</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="8">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Positioning multitool</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Multitool en cours de positionnement</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="9">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Positioning multitool</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Multitool en cours de positionnement</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="10">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Positioning multitool</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Multitool en cours de positionnement</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="11">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Positioning multitool</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Multitool en cours de positionnement</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="12">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Positioning multitool</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Multitool en cours de positionnement</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="13">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Positioning multitool</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Multitool en cours de positionnement</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="14">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Positioning multitool</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Multitool en cours de positionnement</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="15">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Positioning multitool</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Multitool en cours de positionnement</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="16">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Positioning multitool</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Multitool en cours de positionnement</MultiLanguageText>
+          </Comment>
+        </Subelement>
+      </Member>
+      <Member Name="f0_6" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+        </Comment>
+        <Subelement Path="2">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="3">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="4">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="5">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="6">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="7">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="8">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="9">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="10">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="11">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="12">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="13">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="14">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="15">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="16">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+      </Member>
+      <Member Name="f0_7" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+        </Comment>
+        <Subelement Path="2">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="3">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="4">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="5">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="6">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="7">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="8">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="9">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="10">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="11">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="12">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="13">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="14">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="15">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="16">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+      </Member>
+      <Member Name="PerfStatusError" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Negative acknowledge</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Acquittement négatif</MultiLanguageText>
+        </Comment>
+        <Subelement Path="2">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Negative acknowledge</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Acquittement négatif</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="3">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Negative acknowledge</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Acquittement négatif</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="4">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Negative acknowledge</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Acquittement négatif</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="5">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Negative acknowledge</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Acquittement négatif</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="6">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Negative acknowledge</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Acquittement négatif</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="7">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Negative acknowledge</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Acquittement négatif</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="8">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Negative acknowledge</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Acquittement négatif</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="9">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Negative acknowledge</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Acquittement négatif</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="10">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Negative acknowledge</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Acquittement négatif</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="11">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Negative acknowledge</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Acquittement négatif</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="12">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Negative acknowledge</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Acquittement négatif</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="13">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Negative acknowledge</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Acquittement négatif</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="14">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Negative acknowledge</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Acquittement négatif</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="15">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Negative acknowledge</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Acquittement négatif</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="16">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Negative acknowledge</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Acquittement négatif</MultiLanguageText>
+          </Comment>
+        </Subelement>
+      </Member>
+      <Member Name="n1_1" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+        </Comment>
+        <Subelement Path="2">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="3">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="4">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="5">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="6">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="7">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="8">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="9">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="10">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="11">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="12">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="13">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="14">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="15">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="16">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+      </Member>
+      <Member Name="n1_2" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+        </Comment>
+        <Subelement Path="2">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="3">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="4">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="5">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="6">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="7">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="8">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="9">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="10">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="11">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="12">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="13">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="14">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="15">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="16">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+      </Member>
+      <Member Name="n1_3" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+        </Comment>
+        <Subelement Path="2">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="3">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="4">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="5">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="6">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="7">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="8">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="9">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="10">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="11">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="12">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="13">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="14">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="15">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="16">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+      </Member>
+      <Member Name="n1_4" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+        </Comment>
+        <Subelement Path="2">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="3">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="4">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="5">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="6">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="7">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="8">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="9">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="10">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="11">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="12">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="13">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="14">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="15">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="16">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+      </Member>
+      <Member Name="n1_5" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+        </Comment>
+        <Subelement Path="2">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="3">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="4">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="5">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="6">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="7">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="8">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="9">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="10">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="11">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="12">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="13">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="14">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="15">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="16">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+      </Member>
+      <Member Name="n1_6" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+        </Comment>
+        <Subelement Path="2">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="3">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="4">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="5">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="6">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="7">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="8">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="9">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="10">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="11">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="12">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="13">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="14">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="15">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="16">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+      </Member>
+      <Member Name="DataInDB1071" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Multitool data stored in DB1071</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Données Multitool enregistrées dans DB1071</MultiLanguageText>
+        </Comment>
+        <Subelement Path="2">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Multitool data stored in DB1071</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Données Multitool enregistrées dans DB1071</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="3">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Multitool data stored in DB1071</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Données Multitool enregistrées dans DB1071</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="4">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Multitool data stored in DB1071</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Données Multitool enregistrées dans DB1071</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="5">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Multitool data stored in DB1071</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Données Multitool enregistrées dans DB1071</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="6">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Multitool data stored in DB1071</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Données Multitool enregistrées dans DB1071</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="7">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Multitool data stored in DB1071</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Données Multitool enregistrées dans DB1071</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="8">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Multitool data stored in DB1071</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Données Multitool enregistrées dans DB1071</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="9">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Multitool data stored in DB1071</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Données Multitool enregistrées dans DB1071</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="10">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Multitool data stored in DB1071</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Données Multitool enregistrées dans DB1071</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="11">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Multitool data stored in DB1071</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Données Multitool enregistrées dans DB1071</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="12">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Multitool data stored in DB1071</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Données Multitool enregistrées dans DB1071</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="13">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Multitool data stored in DB1071</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Données Multitool enregistrées dans DB1071</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="14">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Multitool data stored in DB1071</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Données Multitool enregistrées dans DB1071</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="15">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Multitool data stored in DB1071</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Données Multitool enregistrées dans DB1071</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="16">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Multitool data stored in DB1071</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Données Multitool enregistrées dans DB1071</MultiLanguageText>
+          </Comment>
+        </Subelement>
+      </Member>
+      <Member Name="Channel" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Assigned channel</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Canal affecté</MultiLanguageText>
+        </Comment>
+        <Subelement Path="2">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Assigned channel</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Canal affecté</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="3">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Assigned channel</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Canal affecté</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="4">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Assigned channel</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Canal affecté</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="5">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Assigned channel</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Canal affecté</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="6">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Assigned channel</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Canal affecté</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="7">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Assigned channel</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Canal affecté</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="8">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Assigned channel</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Canal affecté</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="9">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Assigned channel</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Canal affecté</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="10">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Assigned channel</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Canal affecté</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="11">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Assigned channel</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Canal affecté</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="12">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Assigned channel</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Canal affecté</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="13">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Assigned channel</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Canal affecté</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="14">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Assigned channel</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Canal affecté</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="15">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Assigned channel</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Canal affecté</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="16">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Assigned channel</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Canal affecté</MultiLanguageText>
+          </Comment>
+        </Subelement>
+      </Member>
+      <Member Name="TMNo" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Tool management number</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Numéro de gestion des outils</MultiLanguageText>
+        </Comment>
+        <Subelement Path="2">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool management number</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro de gestion des outils</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="3">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool management number</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro de gestion des outils</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="4">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool management number</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro de gestion des outils</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="5">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool management number</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro de gestion des outils</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="6">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool management number</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro de gestion des outils</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="7">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool management number</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro de gestion des outils</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="8">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool management number</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro de gestion des outils</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="9">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool management number</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro de gestion des outils</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="10">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool management number</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro de gestion des outils</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="11">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool management number</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro de gestion des outils</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="12">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool management number</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro de gestion des outils</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="13">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool management number</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro de gestion des outils</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="14">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool management number</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro de gestion des outils</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="15">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool management number</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro de gestion des outils</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="16">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Tool management number</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro de gestion des outils</MultiLanguageText>
+          </Comment>
+        </Subelement>
+      </Member>
+      <Member Name="reserved1" Datatype="DInt">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+        </Comment>
+        <Subelement Path="2">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="3">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="4">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="5">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="6">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="7">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="8">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="9">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="10">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="11">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="12">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="13">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="14">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="15">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="16">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+      </Member>
+      <Member Name="reserved2" Datatype="DInt">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+        </Comment>
+        <Subelement Path="2">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="3">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="4">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="5">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="6">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="7">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="8">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="9">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="10">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="11">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="12">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="13">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="14">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="15">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="16">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+      </Member>
+      <Member Name="reserved3" Datatype="DInt">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+        </Comment>
+        <Subelement Path="2">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="3">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="4">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="5">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="6">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="7">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="8">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="9">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="10">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="11">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="12">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="13">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="14">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="15">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="16">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+      </Member>
+      <Member Name="LoadIdent" Datatype="Int">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Identification for loading/unloading station</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Identifiant de la station de chargement/déchargement</MultiLanguageText>
+        </Comment>
+        <Subelement Path="2">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Identification for loading/unloading station</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Identifiant de la station de chargement/déchargement</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="3">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Identification for loading/unloading station</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Identifiant de la station de chargement/déchargement</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="4">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Identification for loading/unloading station</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Identifiant de la station de chargement/déchargement</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="5">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Identification for loading/unloading station</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Identifiant de la station de chargement/déchargement</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="6">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Identification for loading/unloading station</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Identifiant de la station de chargement/déchargement</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="7">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Identification for loading/unloading station</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Identifiant de la station de chargement/déchargement</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="8">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Identification for loading/unloading station</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Identifiant de la station de chargement/déchargement</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="9">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Identification for loading/unloading station</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Identifiant de la station de chargement/déchargement</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="10">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Identification for loading/unloading station</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Identifiant de la station de chargement/déchargement</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="11">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Identification for loading/unloading station</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Identifiant de la station de chargement/déchargement</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="12">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Identification for loading/unloading station</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Identifiant de la station de chargement/déchargement</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="13">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Identification for loading/unloading station</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Identifiant de la station de chargement/déchargement</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="14">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Identification for loading/unloading station</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Identifiant de la station de chargement/déchargement</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="15">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Identification for loading/unloading station</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Identifiant de la station de chargement/déchargement</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="16">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Identification for loading/unloading station</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Identifiant de la station de chargement/déchargement</MultiLanguageText>
+          </Comment>
+        </Subelement>
+      </Member>
+      <Member Name="LoadNo" Datatype="Int">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Number of loading station</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Numéro de la station de chargement</MultiLanguageText>
+        </Comment>
+        <Subelement Path="2">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Number of loading station</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro de la station de chargement</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="3">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Number of loading station</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro de la station de chargement</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="4">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Number of loading station</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro de la station de chargement</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="5">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Number of loading station</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro de la station de chargement</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="6">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Number of loading station</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro de la station de chargement</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="7">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Number of loading station</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro de la station de chargement</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="8">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Number of loading station</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro de la station de chargement</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="9">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Number of loading station</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro de la station de chargement</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="10">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Number of loading station</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro de la station de chargement</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="11">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Number of loading station</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro de la station de chargement</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="12">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Number of loading station</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro de la station de chargement</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="13">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Number of loading station</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro de la station de chargement</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="14">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Number of loading station</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro de la station de chargement</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="15">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Number of loading station</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro de la station de chargement</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="16">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Number of loading station</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro de la station de chargement</MultiLanguageText>
+          </Comment>
+        </Subelement>
+      </Member>
+      <Member Name="SMag" Datatype="Int">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Magazine number (source) for unloading/reloading/pos.</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Numéro de magasin (source) pour déchargement/rechargement/pos.</MultiLanguageText>
+        </Comment>
+        <Subelement Path="2">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Magazine number (source) for unloading/reloading/pos.</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro de magasin (source) pour déchargement/rechargement/pos.</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="3">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Magazine number (source) for unloading/reloading/pos.</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro de magasin (source) pour déchargement/rechargement/pos.</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="4">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Magazine number (source) for unloading/reloading/pos.</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro de magasin (source) pour déchargement/rechargement/pos.</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="5">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Magazine number (source) for unloading/reloading/pos.</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro de magasin (source) pour déchargement/rechargement/pos.</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="6">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Magazine number (source) for unloading/reloading/pos.</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro de magasin (source) pour déchargement/rechargement/pos.</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="7">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Magazine number (source) for unloading/reloading/pos.</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro de magasin (source) pour déchargement/rechargement/pos.</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="8">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Magazine number (source) for unloading/reloading/pos.</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro de magasin (source) pour déchargement/rechargement/pos.</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="9">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Magazine number (source) for unloading/reloading/pos.</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro de magasin (source) pour déchargement/rechargement/pos.</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="10">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Magazine number (source) for unloading/reloading/pos.</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro de magasin (source) pour déchargement/rechargement/pos.</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="11">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Magazine number (source) for unloading/reloading/pos.</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro de magasin (source) pour déchargement/rechargement/pos.</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="12">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Magazine number (source) for unloading/reloading/pos.</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro de magasin (source) pour déchargement/rechargement/pos.</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="13">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Magazine number (source) for unloading/reloading/pos.</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro de magasin (source) pour déchargement/rechargement/pos.</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="14">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Magazine number (source) for unloading/reloading/pos.</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro de magasin (source) pour déchargement/rechargement/pos.</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="15">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Magazine number (source) for unloading/reloading/pos.</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro de magasin (source) pour déchargement/rechargement/pos.</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="16">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Magazine number (source) for unloading/reloading/pos.</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro de magasin (source) pour déchargement/rechargement/pos.</MultiLanguageText>
+          </Comment>
+        </Subelement>
+      </Member>
+      <Member Name="SLoc" Datatype="Int">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Location number (source) for unloading/reloading/pos.</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Numéro d'emplacement (source) pour déchargement/rechargement/pos.</MultiLanguageText>
+        </Comment>
+        <Subelement Path="2">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Location number (source) for unloading/reloading/pos.</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro d'emplacement (source) pour déchargement/rechargement/pos.</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="3">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Location number (source) for unloading/reloading/pos.</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro d'emplacement (source) pour déchargement/rechargement/pos.</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="4">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Location number (source) for unloading/reloading/pos.</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro d'emplacement (source) pour déchargement/rechargement/pos.</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="5">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Location number (source) for unloading/reloading/pos.</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro d'emplacement (source) pour déchargement/rechargement/pos.</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="6">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Location number (source) for unloading/reloading/pos.</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro d'emplacement (source) pour déchargement/rechargement/pos.</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="7">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Location number (source) for unloading/reloading/pos.</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro d'emplacement (source) pour déchargement/rechargement/pos.</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="8">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Location number (source) for unloading/reloading/pos.</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro d'emplacement (source) pour déchargement/rechargement/pos.</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="9">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Location number (source) for unloading/reloading/pos.</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro d'emplacement (source) pour déchargement/rechargement/pos.</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="10">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Location number (source) for unloading/reloading/pos.</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro d'emplacement (source) pour déchargement/rechargement/pos.</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="11">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Location number (source) for unloading/reloading/pos.</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro d'emplacement (source) pour déchargement/rechargement/pos.</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="12">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Location number (source) for unloading/reloading/pos.</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro d'emplacement (source) pour déchargement/rechargement/pos.</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="13">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Location number (source) for unloading/reloading/pos.</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro d'emplacement (source) pour déchargement/rechargement/pos.</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="14">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Location number (source) for unloading/reloading/pos.</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro d'emplacement (source) pour déchargement/rechargement/pos.</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="15">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Location number (source) for unloading/reloading/pos.</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro d'emplacement (source) pour déchargement/rechargement/pos.</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="16">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Location number (source) for unloading/reloading/pos.</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro d'emplacement (source) pour déchargement/rechargement/pos.</MultiLanguageText>
+          </Comment>
+        </Subelement>
+      </Member>
+      <Member Name="TMag" Datatype="Int">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Magazine number (target) for loading/reloading</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Numéro de magasin (cible) pour déchargement/rechargement</MultiLanguageText>
+        </Comment>
+        <Subelement Path="2">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Magazine number (target) for loading/reloading</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro de magasin (cible) pour déchargement/rechargement</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="3">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Magazine number (target) for loading/reloading</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro de magasin (cible) pour déchargement/rechargement</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="4">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Magazine number (target) for loading/reloading</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro de magasin (cible) pour déchargement/rechargement</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="5">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Magazine number (target) for loading/reloading</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro de magasin (cible) pour déchargement/rechargement</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="6">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Magazine number (target) for loading/reloading</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro de magasin (cible) pour déchargement/rechargement</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="7">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Magazine number (target) for loading/reloading</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro de magasin (cible) pour déchargement/rechargement</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="8">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Magazine number (target) for loading/reloading</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro de magasin (cible) pour déchargement/rechargement</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="9">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Magazine number (target) for loading/reloading</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro de magasin (cible) pour déchargement/rechargement</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="10">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Magazine number (target) for loading/reloading</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro de magasin (cible) pour déchargement/rechargement</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="11">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Magazine number (target) for loading/reloading</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro de magasin (cible) pour déchargement/rechargement</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="12">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Magazine number (target) for loading/reloading</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro de magasin (cible) pour déchargement/rechargement</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="13">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Magazine number (target) for loading/reloading</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro de magasin (cible) pour déchargement/rechargement</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="14">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Magazine number (target) for loading/reloading</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro de magasin (cible) pour déchargement/rechargement</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="15">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Magazine number (target) for loading/reloading</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro de magasin (cible) pour déchargement/rechargement</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="16">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Magazine number (target) for loading/reloading</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro de magasin (cible) pour déchargement/rechargement</MultiLanguageText>
+          </Comment>
+        </Subelement>
+      </Member>
+      <Member Name="TLoc" Datatype="Int">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Location number (target) for loading/reloading</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Numéro d'emplacement (cible) pour déchargement/rechargement</MultiLanguageText>
+        </Comment>
+        <Subelement Path="2">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Location number (target) for loading/reloading</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro d'emplacement (cible) pour déchargement/rechargement</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="3">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Location number (target) for loading/reloading</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro d'emplacement (cible) pour déchargement/rechargement</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="4">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Location number (target) for loading/reloading</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro d'emplacement (cible) pour déchargement/rechargement</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="5">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Location number (target) for loading/reloading</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro d'emplacement (cible) pour déchargement/rechargement</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="6">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Location number (target) for loading/reloading</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro d'emplacement (cible) pour déchargement/rechargement</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="7">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Location number (target) for loading/reloading</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro d'emplacement (cible) pour déchargement/rechargement</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="8">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Location number (target) for loading/reloading</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro d'emplacement (cible) pour déchargement/rechargement</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="9">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Location number (target) for loading/reloading</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro d'emplacement (cible) pour déchargement/rechargement</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="10">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Location number (target) for loading/reloading</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro d'emplacement (cible) pour déchargement/rechargement</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="11">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Location number (target) for loading/reloading</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro d'emplacement (cible) pour déchargement/rechargement</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="12">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Location number (target) for loading/reloading</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro d'emplacement (cible) pour déchargement/rechargement</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="13">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Location number (target) for loading/reloading</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro d'emplacement (cible) pour déchargement/rechargement</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="14">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Location number (target) for loading/reloading</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro d'emplacement (cible) pour déchargement/rechargement</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="15">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Location number (target) for loading/reloading</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro d'emplacement (cible) pour déchargement/rechargement</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="16">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Location number (target) for loading/reloading</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Numéro d'emplacement (cible) pour déchargement/rechargement</MultiLanguageText>
+          </Comment>
+        </Subelement>
+      </Member>
+      <Member Name="WithoutMagMoving" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">HMI Data: without magazine moving</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Données HMI : sans déplacement du magasin</MultiLanguageText>
+        </Comment>
+        <Subelement Path="2">
+          <Comment>
+            <MultiLanguageText Lang="en-US">HMI Data: without magazine moving</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Données HMI : sans déplacement du magasin</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="3">
+          <Comment>
+            <MultiLanguageText Lang="en-US">HMI Data: without magazine moving</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Données HMI : sans déplacement du magasin</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="4">
+          <Comment>
+            <MultiLanguageText Lang="en-US">HMI Data: without magazine moving</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Données HMI : sans déplacement du magasin</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="5">
+          <Comment>
+            <MultiLanguageText Lang="en-US">HMI Data: without magazine moving</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Données HMI : sans déplacement du magasin</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="6">
+          <Comment>
+            <MultiLanguageText Lang="en-US">HMI Data: without magazine moving</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Données HMI : sans déplacement du magasin</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="7">
+          <Comment>
+            <MultiLanguageText Lang="en-US">HMI Data: without magazine moving</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Données HMI : sans déplacement du magasin</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="8">
+          <Comment>
+            <MultiLanguageText Lang="en-US">HMI Data: without magazine moving</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Données HMI : sans déplacement du magasin</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="9">
+          <Comment>
+            <MultiLanguageText Lang="en-US">HMI Data: without magazine moving</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Données HMI : sans déplacement du magasin</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="10">
+          <Comment>
+            <MultiLanguageText Lang="en-US">HMI Data: without magazine moving</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Données HMI : sans déplacement du magasin</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="11">
+          <Comment>
+            <MultiLanguageText Lang="en-US">HMI Data: without magazine moving</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Données HMI : sans déplacement du magasin</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="12">
+          <Comment>
+            <MultiLanguageText Lang="en-US">HMI Data: without magazine moving</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Données HMI : sans déplacement du magasin</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="13">
+          <Comment>
+            <MultiLanguageText Lang="en-US">HMI Data: without magazine moving</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Données HMI : sans déplacement du magasin</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="14">
+          <Comment>
+            <MultiLanguageText Lang="en-US">HMI Data: without magazine moving</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Données HMI : sans déplacement du magasin</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="15">
+          <Comment>
+            <MultiLanguageText Lang="en-US">HMI Data: without magazine moving</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Données HMI : sans déplacement du magasin</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="16">
+          <Comment>
+            <MultiLanguageText Lang="en-US">HMI Data: without magazine moving</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Données HMI : sans déplacement du magasin</MultiLanguageText>
+          </Comment>
+        </Subelement>
+      </Member>
+      <Member Name="Res2" Datatype="Byte">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+        </Comment>
+        <Subelement Path="2">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="3">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="4">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="5">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="6">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="7">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="8">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="9">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="10">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="11">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="12">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="13">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="14">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="15">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="16">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Reserved</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Réservé</MultiLanguageText>
+          </Comment>
+        </Subelement>
+      </Member>
+    </Member>
+  </Section>
+</Sections></Interface>
+      <Name>LBP_typeTMLoad</Name>
+      <Namespace />
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text>User data type for block LBP_TMLoad [DB71]</Text>
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="3" CompositionName="Items">
+            <AttributeList>
+              <Culture>fr-FR</Culture>
+              <Text>Type de données utilisateur pour bloc LBP_TMLoad [DB71]</Text>
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <MultilingualText ID="4" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="5" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text>Tool management</Text>
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="6" CompositionName="Items">
+            <AttributeList>
+              <Culture>fr-FR</Culture>
+              <Text>Gestion des outils</Text>
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Types.PlcStruct>
+</Document>

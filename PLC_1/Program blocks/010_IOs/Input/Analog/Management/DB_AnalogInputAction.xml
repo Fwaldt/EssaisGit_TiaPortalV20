@@ -1,0 +1,307 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V20" />
+  <SW.Blocks.GlobalDB ID="0">
+    <AttributeList>
+      <AutoNumber>false</AutoNumber>
+      <DBAccessibleFromOPCUA>false</DBAccessibleFromOPCUA>
+      <DBAccessibleFromWebserver>false</DBAccessibleFromWebserver>
+      <HeaderAuthor>SAN</HeaderAuthor>
+      <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+  <Section Name="Static">
+    <Member Name="Laser_Power_Meter" Datatype="&quot;AnalogInAction_DT&quot;">
+      <Sections>
+        <Section Name="None">
+          <Member Name="ID_Measure" Datatype="Int">
+            <StartValue>1</StartValue>
+          </Member>
+        </Section>
+      </Sections>
+    </Member>
+    <Member Name="Axis_B_Clamping_Part" Datatype="&quot;AnalogInAction_DT&quot;">
+      <Sections>
+        <Section Name="None">
+          <Member Name="ID_Measure" Datatype="Int">
+            <StartValue>2</StartValue>
+          </Member>
+        </Section>
+      </Sections>
+    </Member>
+    <Member Name="Laser_Air_Pressure_Process" Datatype="&quot;AnalogInAction_DT&quot;">
+      <Sections>
+        <Section Name="None">
+          <Member Name="ID_Measure" Datatype="Int">
+            <StartValue>3</StartValue>
+          </Member>
+        </Section>
+      </Sections>
+    </Member>
+    <Member Name="Inlet_Air_Pressure" Datatype="&quot;AnalogInAction_DT&quot;">
+      <Sections>
+        <Section Name="None">
+          <Member Name="ID_Measure" Datatype="Int">
+            <StartValue>4</StartValue>
+          </Member>
+        </Section>
+      </Sections>
+    </Member>
+    <Member Name="Ambiant_Temperature" Datatype="&quot;AnalogInAction_DT&quot;">
+      <Sections>
+        <Section Name="None">
+          <Member Name="ID_Measure" Datatype="Int">
+            <StartValue>5</StartValue>
+          </Member>
+        </Section>
+      </Sections>
+    </Member>
+    <Member Name="Machine_Temperature" Datatype="&quot;AnalogInAction_DT&quot;">
+      <Sections>
+        <Section Name="None">
+          <Member Name="ID_Measure" Datatype="Int">
+            <StartValue>6</StartValue>
+          </Member>
+        </Section>
+      </Sections>
+    </Member>
+    <Member Name="Cold_Water_Temperature_Input" Datatype="&quot;AnalogInAction_DT&quot;">
+      <Sections>
+        <Section Name="None">
+          <Member Name="ID_Measure" Datatype="Int">
+            <StartValue>7</StartValue>
+          </Member>
+        </Section>
+      </Sections>
+    </Member>
+    <Member Name="Cold_Water_Temperature_Output" Datatype="&quot;AnalogInAction_DT&quot;">
+      <Sections>
+        <Section Name="None">
+          <Member Name="ID_Measure" Datatype="Int">
+            <StartValue>8</StartValue>
+          </Member>
+        </Section>
+      </Sections>
+    </Member>
+    <Member Name="X_Axis_Temperature_PT1000" Datatype="&quot;AnalogInAction_DT&quot;">
+      <Sections>
+        <Section Name="None">
+          <Member Name="ID_Measure" Datatype="Int">
+            <StartValue>9</StartValue>
+          </Member>
+        </Section>
+      </Sections>
+    </Member>
+    <Member Name="Y_Axis_Temperature_PT1000" Datatype="&quot;AnalogInAction_DT&quot;">
+      <Sections>
+        <Section Name="None">
+          <Member Name="ID_Measure" Datatype="Int">
+            <StartValue>10</StartValue>
+          </Member>
+        </Section>
+      </Sections>
+    </Member>
+    <Member Name="X_Axis_Temperature_PTC" Datatype="&quot;AnalogInAction_DT&quot;">
+      <Sections>
+        <Section Name="None">
+          <Member Name="ID_Measure" Datatype="Int">
+            <StartValue>11</StartValue>
+          </Member>
+        </Section>
+      </Sections>
+    </Member>
+    <Member Name="Y_Axis_Temperature_PTC" Datatype="&quot;AnalogInAction_DT&quot;">
+      <Sections>
+        <Section Name="None">
+          <Member Name="ID_Measure" Datatype="Int">
+            <StartValue>12</StartValue>
+          </Member>
+        </Section>
+      </Sections>
+    </Member>
+    <Member Name="Nozzle_Overpressure" Datatype="&quot;AnalogInAction_DT&quot;">
+      <Sections>
+        <Section Name="None">
+          <Member Name="ID_Measure" Datatype="Int">
+            <StartValue>13</StartValue>
+          </Member>
+        </Section>
+      </Sections>
+    </Member>
+    <Member Name="Optical_Path_Overpressure" Datatype="&quot;AnalogInAction_DT&quot;">
+      <Sections>
+        <Section Name="None">
+          <Member Name="ID_Measure" Datatype="Int">
+            <StartValue>14</StartValue>
+          </Member>
+        </Section>
+      </Sections>
+    </Member>
+    <Member Name="Laser_Head_Overpressure" Datatype="&quot;AnalogInAction_DT&quot;">
+      <Sections>
+        <Section Name="None">
+          <Member Name="ID_Measure" Datatype="Int">
+            <StartValue>15</StartValue>
+          </Member>
+        </Section>
+      </Sections>
+    </Member>
+    <Member Name="ZL_Axis_Overpressure" Datatype="&quot;AnalogInAction_DT&quot;">
+      <Sections>
+        <Section Name="None">
+          <Member Name="ID_Measure" Datatype="Int">
+            <StartValue>16</StartValue>
+          </Member>
+        </Section>
+      </Sections>
+    </Member>
+    <Member Name="XY_Axis_Overpressure" Datatype="&quot;AnalogInAction_DT&quot;">
+      <Sections>
+        <Section Name="None">
+          <Member Name="ID_Measure" Datatype="Int">
+            <StartValue>17</StartValue>
+          </Member>
+        </Section>
+      </Sections>
+    </Member>
+    <Member Name="Left_Aspiration" Datatype="&quot;AnalogInAction_DT&quot;">
+      <Sections>
+        <Section Name="None">
+          <Member Name="ID_Measure" Datatype="Int">
+            <StartValue>18</StartValue>
+          </Member>
+        </Section>
+      </Sections>
+    </Member>
+    <Member Name="Right_Aspiration" Datatype="&quot;AnalogInAction_DT&quot;">
+      <Sections>
+        <Section Name="None">
+          <Member Name="ID_Measure" Datatype="Int">
+            <StartValue>19</StartValue>
+          </Member>
+        </Section>
+      </Sections>
+    </Member>
+    <Member Name="Free_IW458" Datatype="&quot;AnalogInAction_DT&quot;">
+      <Sections>
+        <Section Name="None">
+          <Member Name="ID_Measure" Datatype="Int">
+            <StartValue>20</StartValue>
+          </Member>
+        </Section>
+      </Sections>
+    </Member>
+    <Member Name="Clim_Temperature" Datatype="&quot;AnalogInAction_DT&quot;">
+      <Sections>
+        <Section Name="None">
+          <Member Name="ID_Measure" Datatype="Int">
+            <StartValue>21</StartValue>
+          </Member>
+        </Section>
+      </Sections>
+    </Member>
+    <Member Name="Free_IW482" Datatype="&quot;AnalogInAction_DT&quot;">
+      <Sections>
+        <Section Name="None">
+          <Member Name="ID_Measure" Datatype="Int">
+            <StartValue>22</StartValue>
+          </Member>
+        </Section>
+      </Sections>
+    </Member>
+    <Member Name="Free_IW484" Datatype="&quot;AnalogInAction_DT&quot;">
+      <Sections>
+        <Section Name="None">
+          <Member Name="ID_Measure" Datatype="Int">
+            <StartValue>23</StartValue>
+          </Member>
+        </Section>
+      </Sections>
+    </Member>
+    <Member Name="Free_IW486" Datatype="&quot;AnalogInAction_DT&quot;">
+      <Sections>
+        <Section Name="None">
+          <Member Name="ID_Measure" Datatype="Int">
+            <StartValue>24</StartValue>
+          </Member>
+        </Section>
+      </Sections>
+    </Member>
+    <Member Name="Sensor_Controller_Station1" Datatype="&quot;AnalogInAction_DT&quot;">
+      <Sections>
+        <Section Name="None">
+          <Member Name="ID_Measure" Datatype="Int">
+            <StartValue>25</StartValue>
+          </Member>
+        </Section>
+      </Sections>
+    </Member>
+    <Member Name="Cabinet_Temperature" Datatype="&quot;AnalogInAction_DT&quot;">
+      <Sections>
+        <Section Name="None">
+          <Member Name="ID_Measure" Datatype="Int">
+            <StartValue>26</StartValue>
+          </Member>
+        </Section>
+      </Sections>
+    </Member>
+    <Member Name="Free_IW464" Datatype="&quot;AnalogInAction_DT&quot;">
+      <Sections>
+        <Section Name="None">
+          <Member Name="ID_Measure" Datatype="Int">
+            <StartValue>27</StartValue>
+          </Member>
+        </Section>
+      </Sections>
+    </Member>
+    <Member Name="Free_IW466" Datatype="&quot;AnalogInAction_DT&quot;">
+      <Sections>
+        <Section Name="None">
+          <Member Name="ID_Measure" Datatype="Int">
+            <StartValue>28</StartValue>
+          </Member>
+        </Section>
+      </Sections>
+    </Member>
+  </Section>
+</Sections></Interface>
+      <MemoryLayout>Standard</MemoryLayout>
+      <Name>DB_AnalogInputAction</Name>
+      <Namespace />
+      <Number>1304</Number>
+      <ProgrammingLanguage>DB</ProgrammingLanguage>
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="3" CompositionName="Items">
+            <AttributeList>
+              <Culture>fr-FR</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <MultilingualText ID="4" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="5" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text>TEMPERATURE SETTINGS</Text>
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="6" CompositionName="Items">
+            <AttributeList>
+              <Culture>fr-FR</Culture>
+              <Text>TEMPERATURE SETTINGS</Text>
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Blocks.GlobalDB>
+</Document>

@@ -1,0 +1,1118 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V20" />
+  <SW.Blocks.FB ID="0">
+    <AttributeList>
+      <AutoNumber>false</AutoNumber>
+      <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+  <Section Name="Input">
+    <Member Name="iActualValue" Datatype="Real" />
+    <Member Name="iStartDelay" Datatype="Bool" />
+    <Member Name="iDataPLC" Datatype="&quot;AnalogInDataPLC_DT&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="iDataHMI" Datatype="&quot;AnalogInDataHMI_DT&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+    </Member>
+  </Section>
+  <Section Name="Output">
+    <Member Name="oDataAction" Datatype="&quot;AnalogInAction_DT&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+    </Member>
+  </Section>
+  <Section Name="InOut">
+    <Member Name="ioAlarmMin" Datatype="Bool" />
+    <Member Name="ioWarningMin" Datatype="Bool" />
+    <Member Name="ioWarningMax" Datatype="Bool" />
+    <Member Name="ioAlarmMax" Datatype="Bool" />
+  </Section>
+  <Section Name="Static">
+    <Member Name="sStartTimer" Datatype="TON_TIME" Version="1.0" />
+    <Member Name="sTONAlarmMin" Datatype="TON_TIME" Version="1.0" />
+    <Member Name="sTONWarningMin" Datatype="TON_TIME" Version="1.0" />
+    <Member Name="sTONWarningMax" Datatype="TON_TIME" Version="1.0" />
+    <Member Name="sTONAlarmMax" Datatype="TON_TIME" Version="1.0" />
+    <Member Name="sMemoAlarmMin" Datatype="Bool">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="sMemoWarningMin" Datatype="Bool">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="sMemoWarningMax" Datatype="Bool">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="sMemoAlarmMax" Datatype="Bool">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+  </Section>
+  <Section Name="Temp" />
+  <Section Name="Constant" />
+</Sections></Interface>
+      <MemoryLayout>Optimized</MemoryLayout>
+      <MemoryReserve>100</MemoryReserve>
+      <Name>FB_AnalogInputThreshold</Name>
+      <Namespace />
+      <Number>221</Number>
+      <ProgrammingLanguage>SCL</ProgrammingLanguage>
+      <SetENOAutomatically>false</SetENOAutomatically>
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="3" CompositionName="Items">
+            <AttributeList>
+              <Culture>fr-FR</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <SW.Blocks.CompileUnit ID="4" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource><StructuredText xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/StructuredText/v4">
+  <Token Text="REGION" UId="21" />
+  <Blank UId="22" />
+  <Text UId="23">Description header </Text>
+  <NewLine UId="24" />
+  <Blank Num="4" UId="25" />
+  <LineComment UId="26">
+    <Text UId="27">==================================================================================</Text>
+  </LineComment>
+  <NewLine UId="28" />
+  <Blank Num="4" UId="29" />
+  <LineComment UId="30">
+    <Text UId="31"> POSALUX Swiss SA / (C) Copyright 2024</Text>
+  </LineComment>
+  <NewLine UId="32" />
+  <Blank Num="4" UId="33" />
+  <LineComment UId="34">
+    <Text UId="35">----------------------------------------------------------------------------------</Text>
+  </LineComment>
+  <NewLine UId="36" />
+  <Blank Num="4" UId="37" />
+  <LineComment UId="38">
+    <Text UId="39"> Title: Analog input management </Text>
+  </LineComment>
+  <NewLine UId="40" />
+  <Blank Num="4" UId="41" />
+  <LineComment UId="42">
+    <Text UId="43"> Comment/Function: This function manages alarms and warnings based on a  </Text>
+  </LineComment>
+  <NewLine UId="44" />
+  <Blank Num="4" UId="45" />
+  <LineComment UId="46">
+    <Text UId="47">                   current value compared to predefined target. After an</Text>
+  </LineComment>
+  <NewLine UId="48" />
+  <Blank Num="4" UId="49" />
+  <LineComment UId="50">
+    <Text UId="51">                   initial delay, it activates specific alarms OR warnings if the</Text>
+  </LineComment>
+  <NewLine UId="52" />
+  <Blank Num="4" UId="53" />
+  <LineComment UId="54">
+    <Text UId="55">                   value exceeds thresholds, and can also trigger machine</Text>
+  </LineComment>
+  <NewLine UId="56" />
+  <Blank Num="4" UId="57" />
+  <LineComment UId="58">
+    <Text UId="59">                   shutdown or signal a defective part according TO conditions</Text>
+  </LineComment>
+  <NewLine UId="60" />
+  <Blank Num="4" UId="61" />
+  <LineComment UId="62">
+    <Text UId="63">                   configured on the HMI.</Text>
+  </LineComment>
+  <NewLine UId="64" />
+  <Blank Num="4" UId="65" />
+  <LineComment UId="66">
+    <Text UId="67"> Author: Gowsigan SRITHARAN</Text>
+  </LineComment>
+  <NewLine UId="68" />
+  <Blank Num="4" UId="69" />
+  <LineComment UId="70">
+    <Text UId="71"> Engineering: TIA Portal v17</Text>
+  </LineComment>
+  <NewLine UId="72" />
+  <Blank Num="4" UId="73" />
+  <LineComment UId="74">
+    <Text UId="75">----------------------------------------------------------------------------------</Text>
+  </LineComment>
+  <NewLine UId="76" />
+  <Blank Num="4" UId="77" />
+  <LineComment UId="78">
+    <Text UId="79"> Change log table:</Text>
+  </LineComment>
+  <NewLine UId="80" />
+  <Blank Num="4" UId="81" />
+  <LineComment UId="82">
+    <Text UId="83"> Version  | Date     | Expert in charge | Changes applied</Text>
+  </LineComment>
+  <NewLine UId="84" />
+  <Blank Num="4" UId="85" />
+  <LineComment UId="86">
+    <Text UId="87"> ---------|----------|------------------|------------------------------------</Text>
+  </LineComment>
+  <NewLine UId="88" />
+  <Blank Num="4" UId="89" />
+  <LineComment UId="90">
+    <Text UId="91"> 00.00.01 | 20241121 | GSR              | First released version</Text>
+  </LineComment>
+  <NewLine UId="92" />
+  <Blank Num="4" UId="93" />
+  <LineComment UId="94">
+    <Text UId="95"> 00.00.02 | 20250911 | WFA              | Work with target</Text>
+  </LineComment>
+  <NewLine UId="96" />
+  <Blank Num="4" UId="97" />
+  <LineComment UId="98">
+    <Text UId="99"> ==================================================================================</Text>
+  </LineComment>
+  <NewLine UId="100" />
+  <Token Text="END_REGION" UId="101" />
+  <NewLine Num="2" UId="102" />
+  <Token Text="REGION" UId="103" />
+  <Blank UId="104" />
+  <Text UId="105">Start Timer</Text>
+  <NewLine UId="106" />
+  <Blank Num="4" UId="107" />
+  <Access Scope="LocalVariable" UId="108">
+    <Symbol UId="109">
+      <Component Name="sStartTimer" UId="110" />
+    </Symbol>
+  </Access>
+  <Access Scope="Call" UId="111">
+    <Instruction UId="112">
+      <Token Text="(" UId="113" />
+      <Parameter Name="IN" UId="114">
+        <Blank UId="115" />
+        <Token Text=":=" UId="116" />
+        <Blank UId="117" />
+        <Access Scope="LocalVariable" UId="118">
+          <Symbol UId="119">
+            <Component Name="iStartDelay" UId="120" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="121" />
+      <NewLine UId="122" />
+      <Blank Num="17" UId="123" />
+      <Parameter Name="PT" UId="124">
+        <Blank UId="125" />
+        <Token Text=":=" UId="126" />
+        <Blank UId="127" />
+        <Access Scope="LocalVariable" UId="128">
+          <Symbol UId="129">
+            <Component Name="iDataHMI" UId="130" />
+            <Token Text="." UId="131" />
+            <Component Name="StartTime" UId="132" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text=")" UId="133" />
+    </Instruction>
+  </Access>
+  <Token Text=";" UId="134" />
+  <NewLine UId="135" />
+  <Blank Num="4" UId="136" />
+  <Access Scope="LocalVariable" UId="137">
+    <Symbol UId="138">
+      <Component Name="sTONAlarmMin" UId="139" />
+    </Symbol>
+  </Access>
+  <Access Scope="Call" UId="140">
+    <Instruction UId="141">
+      <Token Text="(" UId="142" />
+      <Parameter Name="IN" UId="143">
+        <Blank UId="144" />
+        <Token Text=":=" UId="145" />
+        <Blank UId="146" />
+        <Access Scope="LocalVariable" UId="147">
+          <Symbol UId="148">
+            <Component Name="sMemoAlarmMin" UId="149" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="150" />
+      <NewLine UId="151" />
+      <Blank Num="18" UId="152" />
+      <Parameter Name="PT" UId="153">
+        <Blank UId="154" />
+        <Token Text=":=" UId="155" />
+        <Blank UId="156" />
+        <Access Scope="LocalVariable" UId="157">
+          <Symbol UId="158">
+            <Component Name="iDataPLC" UId="159" />
+            <Token Text="." UId="160" />
+            <Component Name="DelayAlarmMin" UId="161" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text=")" UId="162" />
+    </Instruction>
+  </Access>
+  <Token Text=";" UId="163" />
+  <NewLine UId="164" />
+  <Blank Num="4" UId="165" />
+  <Access Scope="LocalVariable" UId="166">
+    <Symbol UId="167">
+      <Component Name="sTONWarningMin" UId="168" />
+    </Symbol>
+  </Access>
+  <Access Scope="Call" UId="169">
+    <Instruction UId="170">
+      <Token Text="(" UId="171" />
+      <Parameter Name="IN" UId="172">
+        <Blank UId="173" />
+        <Token Text=":=" UId="174" />
+        <Blank UId="175" />
+        <Access Scope="LocalVariable" UId="176">
+          <Symbol UId="177">
+            <Component Name="sMemoWarningMin" UId="178" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="179" />
+      <NewLine UId="180" />
+      <Blank Num="20" UId="181" />
+      <Parameter Name="PT" UId="182">
+        <Blank UId="183" />
+        <Token Text=":=" UId="184" />
+        <Blank UId="185" />
+        <Access Scope="LocalVariable" UId="186">
+          <Symbol UId="187">
+            <Component Name="iDataPLC" UId="188" />
+            <Token Text="." UId="189" />
+            <Component Name="DelayWarningMin" UId="190" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text=")" UId="191" />
+    </Instruction>
+  </Access>
+  <Token Text=";" UId="192" />
+  <NewLine UId="193" />
+  <Blank Num="4" UId="194" />
+  <Access Scope="LocalVariable" UId="195">
+    <Symbol UId="196">
+      <Component Name="sTONAlarmMax" UId="197" />
+    </Symbol>
+  </Access>
+  <Access Scope="Call" UId="198">
+    <Instruction UId="199">
+      <Token Text="(" UId="200" />
+      <Parameter Name="IN" UId="201">
+        <Blank UId="202" />
+        <Token Text=":=" UId="203" />
+        <Blank UId="204" />
+        <Access Scope="LocalVariable" UId="205">
+          <Symbol UId="206">
+            <Component Name="sMemoAlarmMax" UId="207" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="208" />
+      <NewLine UId="209" />
+      <Blank Num="18" UId="210" />
+      <Parameter Name="PT" UId="211">
+        <Blank UId="212" />
+        <Token Text=":=" UId="213" />
+        <Blank UId="214" />
+        <Access Scope="LocalVariable" UId="215">
+          <Symbol UId="216">
+            <Component Name="iDataPLC" UId="217" />
+            <Token Text="." UId="218" />
+            <Component Name="DelayAlarmMax" UId="219" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text=")" UId="220" />
+    </Instruction>
+  </Access>
+  <Token Text=";" UId="221" />
+  <NewLine UId="222" />
+  <Blank Num="4" UId="223" />
+  <Access Scope="LocalVariable" UId="224">
+    <Symbol UId="225">
+      <Component Name="sTONWarningMax" UId="226" />
+    </Symbol>
+  </Access>
+  <Access Scope="Call" UId="227">
+    <Instruction UId="228">
+      <Token Text="(" UId="229" />
+      <Parameter Name="IN" UId="230">
+        <Blank UId="231" />
+        <Token Text=":=" UId="232" />
+        <Blank UId="233" />
+        <Access Scope="LocalVariable" UId="234">
+          <Symbol UId="235">
+            <Component Name="sMemoWarningMax" UId="236" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="237" />
+      <NewLine UId="238" />
+      <Blank Num="20" UId="239" />
+      <Parameter Name="PT" UId="240">
+        <Blank UId="241" />
+        <Token Text=":=" UId="242" />
+        <Blank UId="243" />
+        <Access Scope="LocalVariable" UId="244">
+          <Symbol UId="245">
+            <Component Name="iDataPLC" UId="246" />
+            <Token Text="." UId="247" />
+            <Component Name="DelayWarningMax" UId="248" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text=")" UId="249" />
+    </Instruction>
+  </Access>
+  <Token Text=";" UId="250" />
+  <NewLine UId="251" />
+  <Token Text="END_REGION" UId="252" />
+  <NewLine Num="2" UId="253" />
+  <Token Text="REGION" UId="254" />
+  <Blank UId="255" />
+  <Text UId="256">Detect alarm/warning</Text>
+  <NewLine UId="257" />
+  <Blank Num="4" UId="258" />
+  <Token Text="IF" UId="259" />
+  <Blank UId="260" />
+  <Access Scope="LocalVariable" UId="261">
+    <Symbol UId="262">
+      <Component Name="sStartTimer" UId="263" />
+      <Token Text="." UId="264" />
+      <Component Name="Q" UId="265" />
+    </Symbol>
+  </Access>
+  <Blank UId="266" />
+  <Token Text="THEN" UId="267" />
+  <NewLine UId="268" />
+  <Blank Num="8" UId="269" />
+  <Access Scope="LocalVariable" UId="270">
+    <Symbol UId="271">
+      <Component Name="sMemoWarningMin" UId="272" />
+    </Symbol>
+  </Access>
+  <Blank UId="273" />
+  <Token Text=":=" UId="274" />
+  <Blank UId="275" />
+  <Access Scope="LocalVariable" UId="276">
+    <Symbol UId="277">
+      <Component Name="iDataHMI" UId="278" />
+      <Token Text="." UId="279" />
+      <Component Name="TargetValue" UId="280" />
+    </Symbol>
+  </Access>
+  <Blank UId="281" />
+  <Token Text="+" UId="282" />
+  <Blank UId="283" />
+  <Access Scope="LocalVariable" UId="284">
+    <Symbol UId="285">
+      <Component Name="iDataHMI" UId="286" />
+      <Token Text="." UId="287" />
+      <Component Name="ThresholdWarningMin" UId="288" />
+    </Symbol>
+  </Access>
+  <Blank UId="289" />
+  <Token Text="&gt;=" UId="290" />
+  <Blank UId="291" />
+  <Access Scope="LocalVariable" UId="292">
+    <Symbol UId="293">
+      <Component Name="iActualValue" UId="294" />
+    </Symbol>
+  </Access>
+  <Blank UId="295" />
+  <Token Text="AND" UId="296" />
+  <Blank UId="297" />
+  <Access Scope="LocalVariable" UId="298">
+    <Symbol UId="299">
+      <Component Name="iDataPLC" UId="300" />
+      <Token Text="." UId="301" />
+      <Component Name="EnableWarningMin" UId="302" />
+    </Symbol>
+  </Access>
+  <Blank UId="303" />
+  <Token Text="AND" UId="304" />
+  <Blank UId="305" />
+  <Token Text="NOT" UId="306" />
+  <Blank UId="307" />
+  <Access Scope="LocalVariable" UId="308">
+    <Symbol UId="309">
+      <Component Name="sMemoAlarmMin" UId="310" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="311" />
+  <NewLine UId="312" />
+  <Blank Num="8" UId="313" />
+  <NewLine UId="314" />
+  <Blank Num="8" UId="315" />
+  <Access Scope="LocalVariable" UId="316">
+    <Symbol UId="317">
+      <Component Name="sMemoWarningMax" UId="318" />
+    </Symbol>
+  </Access>
+  <Blank UId="319" />
+  <Token Text=":=" UId="320" />
+  <Blank UId="321" />
+  <Access Scope="LocalVariable" UId="322">
+    <Symbol UId="323">
+      <Component Name="iDataHMI" UId="324" />
+      <Token Text="." UId="325" />
+      <Component Name="TargetValue" UId="326" />
+    </Symbol>
+  </Access>
+  <Blank UId="327" />
+  <Token Text="+" UId="328" />
+  <Blank UId="329" />
+  <Access Scope="LocalVariable" UId="330">
+    <Symbol UId="331">
+      <Component Name="iDataHMI" UId="332" />
+      <Token Text="." UId="333" />
+      <Component Name="ThresholdWarningMax" UId="334" />
+    </Symbol>
+  </Access>
+  <Blank UId="335" />
+  <Token Text="&lt;=" UId="336" />
+  <Blank UId="337" />
+  <Access Scope="LocalVariable" UId="338">
+    <Symbol UId="339">
+      <Component Name="iActualValue" UId="340" />
+    </Symbol>
+  </Access>
+  <Blank UId="341" />
+  <Token Text="AND" UId="342" />
+  <Blank UId="343" />
+  <Access Scope="LocalVariable" UId="344">
+    <Symbol UId="345">
+      <Component Name="iDataPLC" UId="346" />
+      <Token Text="." UId="347" />
+      <Component Name="EnableWarningMax" UId="348" />
+    </Symbol>
+  </Access>
+  <Blank UId="349" />
+  <Token Text="AND" UId="350" />
+  <Blank UId="351" />
+  <Token Text="NOT" UId="352" />
+  <Blank UId="353" />
+  <Access Scope="LocalVariable" UId="354">
+    <Symbol UId="355">
+      <Component Name="sMemoAlarmMax" UId="356" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="357" />
+  <NewLine UId="358" />
+  <Blank Num="8" UId="359" />
+  <NewLine UId="360" />
+  <Blank Num="8" UId="361" />
+  <Access Scope="LocalVariable" UId="362">
+    <Symbol UId="363">
+      <Component Name="sMemoAlarmMin" UId="364" />
+    </Symbol>
+  </Access>
+  <Blank UId="365" />
+  <Token Text=":=" UId="366" />
+  <Blank UId="367" />
+  <Access Scope="LocalVariable" UId="368">
+    <Symbol UId="369">
+      <Component Name="iDataHMI" UId="370" />
+      <Token Text="." UId="371" />
+      <Component Name="TargetValue" UId="372" />
+    </Symbol>
+  </Access>
+  <Blank UId="373" />
+  <Token Text="+" UId="374" />
+  <Blank UId="375" />
+  <Access Scope="LocalVariable" UId="376">
+    <Symbol UId="377">
+      <Component Name="iDataHMI" UId="378" />
+      <Token Text="." UId="379" />
+      <Component Name="ThresholdAlarmMin" UId="380" />
+    </Symbol>
+  </Access>
+  <Blank UId="381" />
+  <Token Text="&gt;=" UId="382" />
+  <Blank UId="383" />
+  <Access Scope="LocalVariable" UId="384">
+    <Symbol UId="385">
+      <Component Name="iActualValue" UId="386" />
+    </Symbol>
+  </Access>
+  <Blank UId="387" />
+  <Token Text="AND" UId="388" />
+  <Blank UId="389" />
+  <Access Scope="LocalVariable" UId="390">
+    <Symbol UId="391">
+      <Component Name="iDataPLC" UId="392" />
+      <Token Text="." UId="393" />
+      <Component Name="EnableAlarmMin" UId="394" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="395" />
+  <NewLine UId="396" />
+  <Blank Num="8" UId="397" />
+  <NewLine UId="398" />
+  <Blank Num="8" UId="399" />
+  <Access Scope="LocalVariable" UId="400">
+    <Symbol UId="401">
+      <Component Name="sMemoAlarmMax" UId="402" />
+    </Symbol>
+  </Access>
+  <Blank UId="403" />
+  <Token Text=":=" UId="404" />
+  <Blank UId="405" />
+  <Access Scope="LocalVariable" UId="406">
+    <Symbol UId="407">
+      <Component Name="iDataHMI" UId="408" />
+      <Token Text="." UId="409" />
+      <Component Name="TargetValue" UId="410" />
+    </Symbol>
+  </Access>
+  <Blank UId="411" />
+  <Token Text="+" UId="412" />
+  <Blank UId="413" />
+  <Access Scope="LocalVariable" UId="414">
+    <Symbol UId="415">
+      <Component Name="iDataHMI" UId="416" />
+      <Token Text="." UId="417" />
+      <Component Name="ThresholdAlarmMax" UId="418" />
+    </Symbol>
+  </Access>
+  <Blank UId="419" />
+  <Token Text="&lt;=" UId="420" />
+  <Blank UId="421" />
+  <Access Scope="LocalVariable" UId="422">
+    <Symbol UId="423">
+      <Component Name="iActualValue" UId="424" />
+    </Symbol>
+  </Access>
+  <Blank UId="425" />
+  <Token Text="AND" UId="426" />
+  <Blank UId="427" />
+  <Access Scope="LocalVariable" UId="428">
+    <Symbol UId="429">
+      <Component Name="iDataPLC" UId="430" />
+      <Token Text="." UId="431" />
+      <Component Name="EnableAlarmMax" UId="432" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="433" />
+  <NewLine UId="434" />
+  <Blank Num="4" UId="435" />
+  <Token Text="ELSE" UId="436" />
+  <NewLine UId="437" />
+  <Blank Num="8" UId="438" />
+  <Access Scope="LocalVariable" UId="439">
+    <Symbol UId="440">
+      <Component Name="sMemoWarningMin" UId="441" />
+    </Symbol>
+  </Access>
+  <Blank UId="442" />
+  <Token Text=":=" UId="443" />
+  <Blank UId="444" />
+  <Access Scope="LiteralConstant" UId="445">
+    <Constant UId="446">
+      <ConstantValue UId="448">FALSE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="449" />
+  <NewLine UId="450" />
+  <Blank Num="8" UId="451" />
+  <Access Scope="LocalVariable" UId="452">
+    <Symbol UId="453">
+      <Component Name="sMemoWarningMax" UId="454" />
+    </Symbol>
+  </Access>
+  <Blank UId="455" />
+  <Token Text=":=" UId="456" />
+  <Blank UId="457" />
+  <Access Scope="LiteralConstant" UId="458">
+    <Constant UId="459">
+      <ConstantValue UId="461">FALSE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="462" />
+  <NewLine UId="463" />
+  <Blank Num="8" UId="464" />
+  <Access Scope="LocalVariable" UId="465">
+    <Symbol UId="466">
+      <Component Name="sMemoAlarmMin" UId="467" />
+    </Symbol>
+  </Access>
+  <Blank Num="3" UId="468" />
+  <Token Text=":=" UId="469" />
+  <Blank UId="470" />
+  <Access Scope="LiteralConstant" UId="471">
+    <Constant UId="472">
+      <ConstantValue UId="474">FALSE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="475" />
+  <NewLine UId="476" />
+  <Blank Num="8" UId="477" />
+  <Access Scope="LocalVariable" UId="478">
+    <Symbol UId="479">
+      <Component Name="sMemoAlarmMax" UId="480" />
+    </Symbol>
+  </Access>
+  <Blank Num="3" UId="481" />
+  <Token Text=":=" UId="482" />
+  <Blank UId="483" />
+  <Access Scope="LiteralConstant" UId="484">
+    <Constant UId="485">
+      <ConstantValue UId="487">FALSE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="488" />
+  <NewLine UId="489" />
+  <Blank Num="4" UId="490" />
+  <Token Text="END_IF" UId="491" />
+  <Token Text=";" UId="492" />
+  <NewLine Num="2" UId="493" />
+  <Token Text="END_REGION" UId="494" />
+  <NewLine Num="2" UId="495" />
+  <Token Text="REGION" UId="496" />
+  <Blank UId="497" />
+  <Text UId="498">Set alarm/warning</Text>
+  <NewLine UId="499" />
+  <Blank Num="4" UId="500" />
+  <LineComment UId="501">
+    <Text UId="502"> Alarme Min</Text>
+  </LineComment>
+  <NewLine UId="503" />
+  <Blank Num="4" UId="504" />
+  <Token Text="IF" UId="505" />
+  <Blank UId="506" />
+  <Access Scope="LocalVariable" UId="507">
+    <Symbol UId="508">
+      <Component Name="sTONAlarmMin" UId="509" />
+      <Token Text="." UId="510" />
+      <Component Name="Q" UId="511" />
+    </Symbol>
+  </Access>
+  <Blank UId="512" />
+  <Token Text="THEN" UId="513" />
+  <NewLine UId="514" />
+  <Blank Num="8" UId="515" />
+  <Access Scope="LocalVariable" UId="516">
+    <Symbol UId="517">
+      <Component Name="ioAlarmMin" UId="518" />
+    </Symbol>
+  </Access>
+  <Blank UId="519" />
+  <Token Text=":=" UId="520" />
+  <Blank UId="521" />
+  <Access Scope="LiteralConstant" UId="522">
+    <Constant UId="523">
+      <ConstantValue UId="525">TRUE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="526" />
+  <NewLine UId="527" />
+  <Blank Num="8" UId="528" />
+  <Access Scope="LocalVariable" UId="529">
+    <Symbol UId="530">
+      <Component Name="ioWarningMin" UId="531" />
+    </Symbol>
+  </Access>
+  <Blank UId="532" />
+  <Token Text=":=" UId="533" />
+  <Blank UId="534" />
+  <Access Scope="LiteralConstant" UId="535">
+    <Constant UId="536">
+      <ConstantValue UId="538">FALSE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="539" />
+  <NewLine UId="540" />
+  <Blank Num="8" UId="541" />
+  <Access Scope="LocalVariable" UId="542">
+    <Symbol UId="543">
+      <Component Name="oDataAction" UId="544" />
+      <Token Text="." UId="545" />
+      <Component Name="BadPartOnFixture" UId="546" />
+    </Symbol>
+  </Access>
+  <Blank UId="547" />
+  <Token Text=":=" UId="548" />
+  <Blank UId="549" />
+  <Access Scope="LocalVariable" UId="550">
+    <Symbol UId="551">
+      <Component Name="iDataPLC" UId="552" />
+      <Token Text="." UId="553" />
+      <Component Name="BadPartOnFixture" UId="554" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="555" />
+  <Blank UId="556" />
+  <LineComment UId="557">
+    <Text UId="558"> Set bad part if alarm</Text>
+  </LineComment>
+  <NewLine UId="559" />
+  <Blank Num="8" UId="560" />
+  <Access Scope="LocalVariable" UId="561">
+    <Symbol UId="562">
+      <Component Name="oDataAction" UId="563" />
+      <Token Text="." UId="564" />
+      <Component Name="ID_Measure" UId="565" />
+    </Symbol>
+  </Access>
+  <Blank UId="566" />
+  <Token Text=":=" UId="567" />
+  <Blank UId="568" />
+  <Access Scope="LocalVariable" UId="569">
+    <Symbol UId="570">
+      <Component Name="iDataHMI" UId="571" />
+      <Token Text="." UId="572" />
+      <Component Name="ID_Measure" UId="573" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="574" />
+  <NewLine UId="575" />
+  <Blank Num="4" UId="576" />
+  <Token Text="ELSE" UId="577" />
+  <NewLine UId="578" />
+  <Blank Num="8" UId="579" />
+  <Access Scope="LocalVariable" UId="580">
+    <Symbol UId="581">
+      <Component Name="oDataAction" UId="582" />
+      <Token Text="." UId="583" />
+      <Component Name="BadPartOnFixture" UId="584" />
+    </Symbol>
+  </Access>
+  <Blank UId="585" />
+  <Token Text=":=" UId="586" />
+  <Blank UId="587" />
+  <Access Scope="LiteralConstant" UId="588">
+    <Constant UId="589">
+      <ConstantValue UId="591">FALSE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="592" />
+  <NewLine UId="593" />
+  <Blank Num="8" UId="594" />
+  <Access Scope="LocalVariable" UId="595">
+    <Symbol UId="596">
+      <Component Name="oDataAction" UId="597" />
+      <Token Text="." UId="598" />
+      <Component Name="ID_Measure" UId="599" />
+    </Symbol>
+  </Access>
+  <Blank UId="600" />
+  <Token Text=":=" UId="601" />
+  <Blank UId="602" />
+  <Access Scope="LiteralConstant" UId="603">
+    <Constant UId="604">
+      <ConstantValue UId="606">0</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="607" />
+  <NewLine UId="608" />
+  <Blank Num="4" UId="609" />
+  <Token Text="END_IF" UId="610" />
+  <Token Text=";" UId="611" />
+  <NewLine UId="612" />
+  <Blank Num="4" UId="613" />
+  <NewLine UId="614" />
+  <Blank Num="4" UId="615" />
+  <LineComment UId="616">
+    <Text UId="617"> Warning Min</Text>
+  </LineComment>
+  <NewLine UId="618" />
+  <Blank Num="4" UId="619" />
+  <Token Text="IF" UId="620" />
+  <Blank UId="621" />
+  <Access Scope="LocalVariable" UId="622">
+    <Symbol UId="623">
+      <Component Name="sTONWarningMin" UId="624" />
+      <Token Text="." UId="625" />
+      <Component Name="Q" UId="626" />
+    </Symbol>
+  </Access>
+  <Blank UId="627" />
+  <Token Text="THEN" UId="628" />
+  <NewLine UId="629" />
+  <Blank Num="8" UId="630" />
+  <Access Scope="LocalVariable" UId="631">
+    <Symbol UId="632">
+      <Component Name="ioWarningMin" UId="633" />
+    </Symbol>
+  </Access>
+  <Blank UId="634" />
+  <Token Text=":=" UId="635" />
+  <Blank UId="636" />
+  <Access Scope="LiteralConstant" UId="637">
+    <Constant UId="638">
+      <ConstantValue UId="640">TRUE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="641" />
+  <NewLine UId="642" />
+  <Blank Num="4" UId="643" />
+  <Token Text="END_IF" UId="644" />
+  <Token Text=";" UId="645" />
+  <NewLine UId="646" />
+  <Blank Num="4" UId="647" />
+  <NewLine UId="648" />
+  <Blank Num="4" UId="649" />
+  <LineComment UId="650">
+    <Text UId="651"> Alarm Max</Text>
+  </LineComment>
+  <NewLine UId="652" />
+  <Blank Num="4" UId="653" />
+  <Token Text="IF" UId="654" />
+  <Blank UId="655" />
+  <Access Scope="LocalVariable" UId="656">
+    <Symbol UId="657">
+      <Component Name="sTONAlarmMax" UId="658" />
+      <Token Text="." UId="659" />
+      <Component Name="Q" UId="660" />
+    </Symbol>
+  </Access>
+  <Blank UId="661" />
+  <Token Text="THEN" UId="662" />
+  <NewLine UId="663" />
+  <Blank Num="8" UId="664" />
+  <Access Scope="LocalVariable" UId="665">
+    <Symbol UId="666">
+      <Component Name="ioAlarmMax" UId="667" />
+    </Symbol>
+  </Access>
+  <Blank UId="668" />
+  <Token Text=":=" UId="669" />
+  <Blank UId="670" />
+  <Access Scope="LiteralConstant" UId="671">
+    <Constant UId="672">
+      <ConstantValue UId="674">TRUE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="675" />
+  <NewLine UId="676" />
+  <Blank Num="8" UId="677" />
+  <Access Scope="LocalVariable" UId="678">
+    <Symbol UId="679">
+      <Component Name="ioWarningMax" UId="680" />
+    </Symbol>
+  </Access>
+  <Blank UId="681" />
+  <Token Text=":=" UId="682" />
+  <Blank UId="683" />
+  <Access Scope="LiteralConstant" UId="684">
+    <Constant UId="685">
+      <ConstantValue UId="687">FALSE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="688" />
+  <NewLine UId="689" />
+  <Blank Num="8" UId="690" />
+  <Access Scope="LocalVariable" UId="691">
+    <Symbol UId="692">
+      <Component Name="oDataAction" UId="693" />
+      <Token Text="." UId="694" />
+      <Component Name="BadPartOnFixture" UId="695" />
+    </Symbol>
+  </Access>
+  <Blank UId="696" />
+  <Token Text=":=" UId="697" />
+  <Blank UId="698" />
+  <Access Scope="LocalVariable" UId="699">
+    <Symbol UId="700">
+      <Component Name="iDataPLC" UId="701" />
+      <Token Text="." UId="702" />
+      <Component Name="BadPartOnFixture" UId="703" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="704" />
+  <Blank UId="705" />
+  <LineComment UId="706">
+    <Text UId="707"> Set bad part if alarm</Text>
+  </LineComment>
+  <NewLine UId="708" />
+  <Blank Num="8" UId="709" />
+  <Access Scope="LocalVariable" UId="710">
+    <Symbol UId="711">
+      <Component Name="oDataAction" UId="712" />
+      <Token Text="." UId="713" />
+      <Component Name="ID_Measure" UId="714" />
+    </Symbol>
+  </Access>
+  <Blank UId="715" />
+  <Token Text=":=" UId="716" />
+  <Blank UId="717" />
+  <Access Scope="LocalVariable" UId="718">
+    <Symbol UId="719">
+      <Component Name="iDataHMI" UId="720" />
+      <Token Text="." UId="721" />
+      <Component Name="ID_Measure" UId="722" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="723" />
+  <NewLine UId="724" />
+  <Blank Num="4" UId="725" />
+  <Token Text="ELSE" UId="726" />
+  <NewLine UId="727" />
+  <Blank Num="8" UId="728" />
+  <Access Scope="LocalVariable" UId="729">
+    <Symbol UId="730">
+      <Component Name="oDataAction" UId="731" />
+      <Token Text="." UId="732" />
+      <Component Name="BadPartOnFixture" UId="733" />
+    </Symbol>
+  </Access>
+  <Blank UId="734" />
+  <Token Text=":=" UId="735" />
+  <Blank UId="736" />
+  <Access Scope="LiteralConstant" UId="737">
+    <Constant UId="738">
+      <ConstantValue UId="740">FALSE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="741" />
+  <NewLine UId="742" />
+  <Blank Num="8" UId="743" />
+  <Access Scope="LocalVariable" UId="744">
+    <Symbol UId="745">
+      <Component Name="oDataAction" UId="746" />
+      <Token Text="." UId="747" />
+      <Component Name="ID_Measure" UId="748" />
+    </Symbol>
+  </Access>
+  <Blank UId="749" />
+  <Token Text=":=" UId="750" />
+  <Blank UId="751" />
+  <Access Scope="LiteralConstant" UId="752">
+    <Constant UId="753">
+      <ConstantValue UId="755">0</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="756" />
+  <NewLine UId="757" />
+  <Blank Num="4" UId="758" />
+  <Token Text="END_IF" UId="759" />
+  <Token Text=";" UId="760" />
+  <NewLine UId="761" />
+  <Blank Num="4" UId="762" />
+  <NewLine UId="763" />
+  <Blank Num="4" UId="764" />
+  <LineComment UId="765">
+    <Text UId="766"> Warning Max</Text>
+  </LineComment>
+  <NewLine UId="767" />
+  <Blank Num="4" UId="768" />
+  <Token Text="IF" UId="769" />
+  <Blank UId="770" />
+  <Access Scope="LocalVariable" UId="771">
+    <Symbol UId="772">
+      <Component Name="sTONWarningMax" UId="773" />
+      <Token Text="." UId="774" />
+      <Component Name="Q" UId="775" />
+    </Symbol>
+  </Access>
+  <Blank UId="776" />
+  <Token Text="THEN" UId="777" />
+  <NewLine UId="778" />
+  <Blank Num="8" UId="779" />
+  <Access Scope="LocalVariable" UId="780">
+    <Symbol UId="781">
+      <Component Name="ioWarningMax" UId="782" />
+    </Symbol>
+  </Access>
+  <Blank UId="783" />
+  <Token Text=":=" UId="784" />
+  <Blank UId="785" />
+  <Access Scope="LiteralConstant" UId="786">
+    <Constant UId="787">
+      <ConstantValue UId="789">TRUE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="790" />
+  <NewLine UId="791" />
+  <Blank Num="4" UId="792" />
+  <Token Text="END_IF" UId="793" />
+  <Token Text=";" UId="794" />
+  <NewLine UId="795" />
+  <Token Text="END_REGION" UId="796" />
+</StructuredText></NetworkSource>
+          <ProgrammingLanguage>SCL</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="5" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="6" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="7" CompositionName="Items">
+                <AttributeList>
+                  <Culture>fr-FR</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="8" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="9" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="A" CompositionName="Items">
+                <AttributeList>
+                  <Culture>fr-FR</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <MultilingualText ID="B" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="C" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="D" CompositionName="Items">
+            <AttributeList>
+              <Culture>fr-FR</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Blocks.FB>
+</Document>

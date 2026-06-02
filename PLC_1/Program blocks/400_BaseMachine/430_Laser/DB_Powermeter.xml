@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V20" />
+  <SW.Blocks.InstanceDB ID="0">
+    <AttributeList>
+      <AutoNumber>false</AutoNumber>
+      <InstanceOfName>FB_Powermeter</InstanceOfName>
+      <InstanceOfType>FB</InstanceOfType>
+      <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+  <Section Name="Input" />
+  <Section Name="Output" />
+  <Section Name="InOut" />
+  <Section Name="Static">
+    <Member Name="sPowerMeterWorkPos" Datatype="Bool" />
+    <Member Name="sPowerMeterHomePos" Datatype="Bool" />
+    <Member Name="sPowerMeterToWorkMoveReq" Datatype="Bool" />
+    <Member Name="sPowerMeterToHomeMoveReq" Datatype="Bool" />
+    <Member Name="sPowerMeterJogMode" Datatype="Bool" />
+    <Member Name="sPowermeterCylinder" Datatype="&quot;FB_CmdCylinder&quot;" />
+    <Member Name="sPowermeterInHomePos" Datatype="Bool">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="sPowermeterInMiddlePos" Datatype="Bool" />
+    <Member Name="sPowermeterInWorkPos" Datatype="Bool" />
+    <Member Name="sPowerMeterCylErrorCode" Datatype="Int" />
+    <Member Name="sPowerMeterHomePosCtrlTimer" Datatype="TON_TIME" Version="1.0" />
+    <Member Name="sPowerMeterWorkPosCtrlTimer" Datatype="TON_TIME" Version="1.0" />
+    <Member Name="sMeasurePowerLaser" Datatype="Bool">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="sRTLaserMeasureON" Datatype="R_TRIG" Version="1.0" />
+    <Member Name="sLaserPowerValue" Datatype="Real">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="sWeightFactor" Datatype="Real" />
+    <Member Name="sAlpha" Datatype="Real" />
+    <Member Name="sDateAndTime" Datatype="DTL" Version="1.0" />
+    <Member Name="sActualMeasPower" Datatype="Real" />
+    <Member Name="sTolMin" Datatype="Real" />
+    <Member Name="sTolMax" Datatype="Real" />
+    <Member Name="sResetMeasures" Datatype="Bool" />
+    <Member Name="sPowerMeterSeq" Datatype="&quot;FB_PowerMeterSeq&quot;" />
+    <Member Name="RT_StartArchive" Datatype="R_TRIG" Version="1.0">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="sArchivePmValues" Datatype="Array[0..4] of Real">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+  </Section>
+</Sections></Interface>
+      <Name>DB_Powermeter</Name>
+      <Namespace />
+      <Number>433</Number>
+      <ProgrammingLanguage>DB</ProgrammingLanguage>
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="3" CompositionName="Items">
+            <AttributeList>
+              <Culture>fr-FR</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <MultilingualText ID="4" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="5" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="6" CompositionName="Items">
+            <AttributeList>
+              <Culture>fr-FR</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Blocks.InstanceDB>
+</Document>

@@ -1,0 +1,3102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V20" />
+  <SW.Types.PlcStruct ID="0">
+    <AttributeList>
+      <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+  <Section Name="None">
+    <Member Name="A_AUTO" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Operating mode AUTOMATIC</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Mode AUTOMATIC</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_MDA" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Operating mode MDA</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Mode MDA</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_JOG" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Operating mode JOG</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Mode JOG</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="f0_3" Datatype="Bool" />
+    <Member Name="A_MCDisable" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Mode change disable</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Désactiver changement mode de fonctionnement</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_MGStop" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Mode group stop</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Groupe de modes de fonctionnement Arrêt</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_MGStopASp" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Mode group stop axes plus spindle</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Groupe de modes de fonctionnement Arrêt axes et broche</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_MGReset" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Mode group reset</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Groupe de modes de fonctionnement Reset</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_TEACHIN" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Machine function TEACH IN</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Fonction machine TEACH IN</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_REPOS" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Machine function REPOS</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Fonction machine REPOS</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_REF" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Machine function REF</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Fonction machine REF</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="f1_3" Datatype="Bool" />
+    <Member Name="f1_4" Datatype="Bool" />
+    <Member Name="f1_5" Datatype="Bool" />
+    <Member Name="A_SingleBlock_B" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Single block type B</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Bloc par bloc type B</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_SingleBlock_A" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Single block type A</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Bloc par bloc type A</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_INC1" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">INC1</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">INC1</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_INC10" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">INC10</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">INC10</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_INC100" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">INC100</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">INC100</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_INC1000" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">INC1000</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">INC1000</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_INC10000" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">INC10000</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">INC10000</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_INCVar" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">INC variable</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Variable INC</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="A_ContManTravel" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Continuous manual travel</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Mode manuel continu</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="f2_7" Datatype="Bool" />
+    <Member Name="f3" Datatype="Byte" />
+    <Member Name="E_MMC_AUTO" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">HMI mode strobe AUTOMATIC</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">HMI mode Strobe AUTOMATIC</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_MMC_MDA" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">HMI mode strobe MDA</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">HMI mode Strobe MDA</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_MMC_JOG" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">HMI mode strobe JOG</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">HMI mode Strobe JOG</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="f4_3" Datatype="Bool" />
+    <Member Name="f4_4" Datatype="Bool" />
+    <Member Name="f4_5" Datatype="Bool" />
+    <Member Name="f4_6" Datatype="Bool" />
+    <Member Name="f4_7" Datatype="Bool" />
+    <Member Name="E_MMC_TEACHIN" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">HMI machine function strobe TEACH IN</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">HMI Fonction machine Strobe TEACH IN</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_MMC_REPOS" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">HMI machine function strobe REPOS</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">HMI Fonction machine Strobe REPOS</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_MMC_REF" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">HMI machine function strobe REF</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">HMI Fonction machine Strobe REF</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="f5_3" Datatype="Bool" />
+    <Member Name="f5_4" Datatype="Bool" />
+    <Member Name="f5_5" Datatype="Bool" />
+    <Member Name="f5_6" Datatype="Bool" />
+    <Member Name="f5_7" Datatype="Bool" />
+    <Member Name="E_AUTO" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Active operating mode AUTOMATIC</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Mode actif AUTOMATIC</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_MDA" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Active operating mode MDA</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Mode actif MDA</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_JOG" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Active operating mode JOG</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Mode actif JOG</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_MGOK" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Mode group ready</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Groupe de modes de fonctionnement prêt</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_MGreseted" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Mode group reset performed</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Groupe de modes de fonctionnement Reset effectué</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_NCKintJOG" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">NCK internal JOG active</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">NCK JOG interne actif</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="f6_6" Datatype="Bool" />
+    <Member Name="E_ChanReset" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">All channels in reset state</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Tous les canaux en mode Reset</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_TEACHIN" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Active machine function TEACH IN</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Fonction machine active TEACH IN</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_REPOS" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Active machine function REPOS</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Fonction machine active REPOS</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_REF" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Active machine function REF</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Fonction machine active REF</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="f7_3" Datatype="Bool" />
+    <Member Name="f7_4" Datatype="Bool" />
+    <Member Name="f7_5" Datatype="Bool" />
+    <Member Name="f7_6" Datatype="Bool" />
+    <Member Name="f7_7" Datatype="Bool" />
+    <Member Name="E_INC1" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">INC1</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">INC1</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_INC10" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">INC10</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">INC10</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_INC100" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">INC100</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">INC100</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_INC1000" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">INC1000</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">INC1000</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_INC10000" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">INC10000</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">INC10000</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_INCVar" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">INC variable</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Variable INC</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_ContManTravelAct" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Continuous manual travel active</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Mode manuel continu actif</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="f8_7" Datatype="Bool" />
+    <Member Name="f9" Datatype="Byte" />
+    <Member Name="E_HMI_INC1" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">INC1 from HMI</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">INC1 depuis IHM</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_HMI_INC10" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">INC10 from HMI</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">INC10 depuis IHM</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_HMI_INC100" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">INC100 from HMI</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">INC100 depuis IHM</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_HMI_INC1000" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">INC1000 from HMI</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">INC1000 depuis IHM</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_HMI_INC10000" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">INC10000 from HMI</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">INC10000 depuis IHM</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_HMI_INCVar" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">INC variable from HMI</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Variable INC depuis IHM</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="E_HMI_ContManTravel" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Continuous manual travel active from HMI</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Course manuelle continue active depuis IHM</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="f10_7" Datatype="Bool" />
+    <Member Name="f11" Datatype="Byte" />
+    <Member Name="f12" Datatype="Array[12..19] of Byte" />
+    <Member Name="MG" Datatype="Array[2..10] of Struct">
+      <Comment>
+        <MultiLanguageText Lang="en-US">next mode group from DBB20, as before</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">groupe de mode suivant depuis DBB20, comme avant</MultiLanguageText>
+      </Comment>
+      <Member Name="A_AUTO" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Operating mode AUTOMATIC</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Mode AUTOMATIC</MultiLanguageText>
+        </Comment>
+        <Subelement Path="3">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Operating mode AUTOMATIC</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Mode AUTOMATIC</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="4">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Operating mode AUTOMATIC</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Mode AUTOMATIC</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="5">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Operating mode AUTOMATIC</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Mode AUTOMATIC</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="6">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Operating mode AUTOMATIC</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Mode AUTOMATIC</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="7">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Operating mode AUTOMATIC</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Mode AUTOMATIC</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="8">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Operating mode AUTOMATIC</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Mode AUTOMATIC</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="9">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Operating mode AUTOMATIC</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Mode AUTOMATIC</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="10">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Operating mode AUTOMATIC</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Mode AUTOMATIC</MultiLanguageText>
+          </Comment>
+        </Subelement>
+      </Member>
+      <Member Name="A_MDA" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Operating mode MDA</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Mode MDA</MultiLanguageText>
+        </Comment>
+        <Subelement Path="3">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Operating mode MDA</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Mode MDA</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="4">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Operating mode MDA</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Mode MDA</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="5">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Operating mode MDA</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Mode MDA</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="6">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Operating mode MDA</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Mode MDA</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="7">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Operating mode MDA</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Mode MDA</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="8">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Operating mode MDA</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Mode MDA</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="9">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Operating mode MDA</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Mode MDA</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="10">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Operating mode MDA</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Mode MDA</MultiLanguageText>
+          </Comment>
+        </Subelement>
+      </Member>
+      <Member Name="A_JOG" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Operating mode JOG</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Mode JOG</MultiLanguageText>
+        </Comment>
+        <Subelement Path="3">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Operating mode JOG</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Mode JOG</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="4">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Operating mode JOG</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Mode JOG</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="5">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Operating mode JOG</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Mode JOG</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="6">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Operating mode JOG</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Mode JOG</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="7">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Operating mode JOG</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Mode JOG</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="8">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Operating mode JOG</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Mode JOG</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="9">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Operating mode JOG</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Mode JOG</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="10">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Operating mode JOG</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Mode JOG</MultiLanguageText>
+          </Comment>
+        </Subelement>
+      </Member>
+      <Member Name="f0_3" Datatype="Bool" />
+      <Member Name="A_MCDisable" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Mode change disable</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Désactiver changement mode de fonctionnement</MultiLanguageText>
+        </Comment>
+        <Subelement Path="3">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Mode change disable</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Désactiver changement mode de fonctionnement</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="4">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Mode change disable</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Désactiver changement mode de fonctionnement</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="5">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Mode change disable</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Désactiver changement mode de fonctionnement</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="6">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Mode change disable</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Désactiver changement mode de fonctionnement</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="7">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Mode change disable</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Désactiver changement mode de fonctionnement</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="8">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Mode change disable</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Désactiver changement mode de fonctionnement</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="9">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Mode change disable</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Désactiver changement mode de fonctionnement</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="10">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Mode change disable</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Désactiver changement mode de fonctionnement</MultiLanguageText>
+          </Comment>
+        </Subelement>
+      </Member>
+      <Member Name="A_MGStop" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Mode group stop</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Groupe de modes de fonctionnement Arrêt</MultiLanguageText>
+        </Comment>
+        <Subelement Path="3">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Mode group stop</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Groupe de modes de fonctionnement Arrêt</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="4">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Mode group stop</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Groupe de modes de fonctionnement Arrêt</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="5">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Mode group stop</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Groupe de modes de fonctionnement Arrêt</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="6">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Mode group stop</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Groupe de modes de fonctionnement Arrêt</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="7">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Mode group stop</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Groupe de modes de fonctionnement Arrêt</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="8">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Mode group stop</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Groupe de modes de fonctionnement Arrêt</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="9">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Mode group stop</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Groupe de modes de fonctionnement Arrêt</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="10">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Mode group stop</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Groupe de modes de fonctionnement Arrêt</MultiLanguageText>
+          </Comment>
+        </Subelement>
+      </Member>
+      <Member Name="A_MGStopASp" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Mode group stop axes plus spindle</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Groupe de modes de fonctionnement Arrêt axes et broche</MultiLanguageText>
+        </Comment>
+        <Subelement Path="3">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Mode group stop axes plus spindle</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Groupe de modes de fonctionnement Arrêt axes et broche</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="4">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Mode group stop axes plus spindle</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Groupe de modes de fonctionnement Arrêt axes et broche</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="5">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Mode group stop axes plus spindle</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Groupe de modes de fonctionnement Arrêt axes et broche</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="6">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Mode group stop axes plus spindle</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Groupe de modes de fonctionnement Arrêt axes et broche</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="7">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Mode group stop axes plus spindle</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Groupe de modes de fonctionnement Arrêt axes et broche</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="8">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Mode group stop axes plus spindle</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Groupe de modes de fonctionnement Arrêt axes et broche</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="9">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Mode group stop axes plus spindle</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Groupe de modes de fonctionnement Arrêt axes et broche</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="10">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Mode group stop axes plus spindle</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Groupe de modes de fonctionnement Arrêt axes et broche</MultiLanguageText>
+          </Comment>
+        </Subelement>
+      </Member>
+      <Member Name="A_MGReset" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Mode group reset</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Groupe de modes de fonctionnement Reset</MultiLanguageText>
+        </Comment>
+        <Subelement Path="3">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Mode group reset</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Groupe de modes de fonctionnement Reset</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="4">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Mode group reset</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Groupe de modes de fonctionnement Reset</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="5">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Mode group reset</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Groupe de modes de fonctionnement Reset</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="6">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Mode group reset</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Groupe de modes de fonctionnement Reset</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="7">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Mode group reset</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Groupe de modes de fonctionnement Reset</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="8">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Mode group reset</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Groupe de modes de fonctionnement Reset</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="9">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Mode group reset</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Groupe de modes de fonctionnement Reset</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="10">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Mode group reset</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Groupe de modes de fonctionnement Reset</MultiLanguageText>
+          </Comment>
+        </Subelement>
+      </Member>
+      <Member Name="A_TEACHIN" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Machine function TEACH IN</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Fonction machine TEACH IN</MultiLanguageText>
+        </Comment>
+        <Subelement Path="3">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Machine function TEACH IN</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Fonction machine TEACH IN</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="4">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Machine function TEACH IN</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Fonction machine TEACH IN</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="5">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Machine function TEACH IN</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Fonction machine TEACH IN</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="6">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Machine function TEACH IN</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Fonction machine TEACH IN</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="7">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Machine function TEACH IN</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Fonction machine TEACH IN</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="8">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Machine function TEACH IN</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Fonction machine TEACH IN</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="9">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Machine function TEACH IN</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Fonction machine TEACH IN</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="10">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Machine function TEACH IN</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Fonction machine TEACH IN</MultiLanguageText>
+          </Comment>
+        </Subelement>
+      </Member>
+      <Member Name="A_REPOS" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Machine function REPOS</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Fonction machine REPOS</MultiLanguageText>
+        </Comment>
+        <Subelement Path="3">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Machine function REPOS</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Fonction machine REPOS</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="4">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Machine function REPOS</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Fonction machine REPOS</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="5">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Machine function REPOS</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Fonction machine REPOS</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="6">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Machine function REPOS</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Fonction machine REPOS</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="7">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Machine function REPOS</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Fonction machine REPOS</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="8">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Machine function REPOS</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Fonction machine REPOS</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="9">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Machine function REPOS</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Fonction machine REPOS</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="10">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Machine function REPOS</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Fonction machine REPOS</MultiLanguageText>
+          </Comment>
+        </Subelement>
+      </Member>
+      <Member Name="A_REF" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Machine function REF</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Fonction machine REF</MultiLanguageText>
+        </Comment>
+        <Subelement Path="3">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Machine function REF</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Fonction machine REF</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="4">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Machine function REF</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Fonction machine REF</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="5">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Machine function REF</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Fonction machine REF</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="6">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Machine function REF</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Fonction machine REF</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="7">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Machine function REF</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Fonction machine REF</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="8">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Machine function REF</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Fonction machine REF</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="9">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Machine function REF</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Fonction machine REF</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="10">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Machine function REF</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Fonction machine REF</MultiLanguageText>
+          </Comment>
+        </Subelement>
+      </Member>
+      <Member Name="f1_3" Datatype="Bool" />
+      <Member Name="f1_4" Datatype="Bool" />
+      <Member Name="f1_5" Datatype="Bool" />
+      <Member Name="A_SingleBlock_B" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Single block type B</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Bloc par bloc type B</MultiLanguageText>
+        </Comment>
+        <Subelement Path="3">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Single block type B</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Bloc par bloc type B</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="4">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Single block type B</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Bloc par bloc type B</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="5">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Single block type B</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Bloc par bloc type B</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="6">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Single block type B</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Bloc par bloc type B</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="7">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Single block type B</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Bloc par bloc type B</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="8">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Single block type B</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Bloc par bloc type B</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="9">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Single block type B</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Bloc par bloc type B</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="10">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Single block type B</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Bloc par bloc type B</MultiLanguageText>
+          </Comment>
+        </Subelement>
+      </Member>
+      <Member Name="A_SingleBlock_A" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Single block type A</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Bloc par bloc type A</MultiLanguageText>
+        </Comment>
+        <Subelement Path="3">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Single block type A</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Bloc par bloc type A</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="4">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Single block type A</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Bloc par bloc type A</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="5">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Single block type A</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Bloc par bloc type A</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="6">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Single block type A</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Bloc par bloc type A</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="7">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Single block type A</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Bloc par bloc type A</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="8">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Single block type A</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Bloc par bloc type A</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="9">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Single block type A</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Bloc par bloc type A</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="10">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Single block type A</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Bloc par bloc type A</MultiLanguageText>
+          </Comment>
+        </Subelement>
+      </Member>
+      <Member Name="A_INC1" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">INC1</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">INC1</MultiLanguageText>
+        </Comment>
+        <Subelement Path="3">
+          <Comment>
+            <MultiLanguageText Lang="en-US">INC1</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">INC1</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="4">
+          <Comment>
+            <MultiLanguageText Lang="en-US">INC1</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">INC1</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="5">
+          <Comment>
+            <MultiLanguageText Lang="en-US">INC1</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">INC1</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="6">
+          <Comment>
+            <MultiLanguageText Lang="en-US">INC1</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">INC1</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="7">
+          <Comment>
+            <MultiLanguageText Lang="en-US">INC1</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">INC1</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="8">
+          <Comment>
+            <MultiLanguageText Lang="en-US">INC1</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">INC1</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="9">
+          <Comment>
+            <MultiLanguageText Lang="en-US">INC1</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">INC1</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="10">
+          <Comment>
+            <MultiLanguageText Lang="en-US">INC1</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">INC1</MultiLanguageText>
+          </Comment>
+        </Subelement>
+      </Member>
+      <Member Name="A_INC10" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">INC10</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">INC10</MultiLanguageText>
+        </Comment>
+        <Subelement Path="3">
+          <Comment>
+            <MultiLanguageText Lang="en-US">INC10</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">INC10</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="4">
+          <Comment>
+            <MultiLanguageText Lang="en-US">INC10</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">INC10</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="5">
+          <Comment>
+            <MultiLanguageText Lang="en-US">INC10</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">INC10</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="6">
+          <Comment>
+            <MultiLanguageText Lang="en-US">INC10</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">INC10</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="7">
+          <Comment>
+            <MultiLanguageText Lang="en-US">INC10</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">INC10</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="8">
+          <Comment>
+            <MultiLanguageText Lang="en-US">INC10</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">INC10</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="9">
+          <Comment>
+            <MultiLanguageText Lang="en-US">INC10</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">INC10</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="10">
+          <Comment>
+            <MultiLanguageText Lang="en-US">INC10</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">INC10</MultiLanguageText>
+          </Comment>
+        </Subelement>
+      </Member>
+      <Member Name="A_INC100" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">INC100</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">INC100</MultiLanguageText>
+        </Comment>
+        <Subelement Path="3">
+          <Comment>
+            <MultiLanguageText Lang="en-US">INC100</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">INC100</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="4">
+          <Comment>
+            <MultiLanguageText Lang="en-US">INC100</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">INC100</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="5">
+          <Comment>
+            <MultiLanguageText Lang="en-US">INC100</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">INC100</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="6">
+          <Comment>
+            <MultiLanguageText Lang="en-US">INC100</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">INC100</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="7">
+          <Comment>
+            <MultiLanguageText Lang="en-US">INC100</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">INC100</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="8">
+          <Comment>
+            <MultiLanguageText Lang="en-US">INC100</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">INC100</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="9">
+          <Comment>
+            <MultiLanguageText Lang="en-US">INC100</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">INC100</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="10">
+          <Comment>
+            <MultiLanguageText Lang="en-US">INC100</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">INC100</MultiLanguageText>
+          </Comment>
+        </Subelement>
+      </Member>
+      <Member Name="A_INC1000" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">INC1000</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">INC1000</MultiLanguageText>
+        </Comment>
+        <Subelement Path="3">
+          <Comment>
+            <MultiLanguageText Lang="en-US">INC1000</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">INC1000</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="4">
+          <Comment>
+            <MultiLanguageText Lang="en-US">INC1000</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">INC1000</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="5">
+          <Comment>
+            <MultiLanguageText Lang="en-US">INC1000</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">INC1000</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="6">
+          <Comment>
+            <MultiLanguageText Lang="en-US">INC1000</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">INC1000</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="7">
+          <Comment>
+            <MultiLanguageText Lang="en-US">INC1000</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">INC1000</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="8">
+          <Comment>
+            <MultiLanguageText Lang="en-US">INC1000</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">INC1000</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="9">
+          <Comment>
+            <MultiLanguageText Lang="en-US">INC1000</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">INC1000</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="10">
+          <Comment>
+            <MultiLanguageText Lang="en-US">INC1000</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">INC1000</MultiLanguageText>
+          </Comment>
+        </Subelement>
+      </Member>
+      <Member Name="A_INC10000" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">INC10000</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">INC10000</MultiLanguageText>
+        </Comment>
+        <Subelement Path="3">
+          <Comment>
+            <MultiLanguageText Lang="en-US">INC10000</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">INC10000</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="4">
+          <Comment>
+            <MultiLanguageText Lang="en-US">INC10000</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">INC10000</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="5">
+          <Comment>
+            <MultiLanguageText Lang="en-US">INC10000</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">INC10000</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="6">
+          <Comment>
+            <MultiLanguageText Lang="en-US">INC10000</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">INC10000</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="7">
+          <Comment>
+            <MultiLanguageText Lang="en-US">INC10000</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">INC10000</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="8">
+          <Comment>
+            <MultiLanguageText Lang="en-US">INC10000</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">INC10000</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="9">
+          <Comment>
+            <MultiLanguageText Lang="en-US">INC10000</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">INC10000</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="10">
+          <Comment>
+            <MultiLanguageText Lang="en-US">INC10000</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">INC10000</MultiLanguageText>
+          </Comment>
+        </Subelement>
+      </Member>
+      <Member Name="A_INCVar" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">INC variable</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Variable INC</MultiLanguageText>
+        </Comment>
+        <Subelement Path="3">
+          <Comment>
+            <MultiLanguageText Lang="en-US">INC variable</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Variable INC</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="4">
+          <Comment>
+            <MultiLanguageText Lang="en-US">INC variable</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Variable INC</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="5">
+          <Comment>
+            <MultiLanguageText Lang="en-US">INC variable</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Variable INC</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="6">
+          <Comment>
+            <MultiLanguageText Lang="en-US">INC variable</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Variable INC</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="7">
+          <Comment>
+            <MultiLanguageText Lang="en-US">INC variable</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Variable INC</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="8">
+          <Comment>
+            <MultiLanguageText Lang="en-US">INC variable</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Variable INC</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="9">
+          <Comment>
+            <MultiLanguageText Lang="en-US">INC variable</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Variable INC</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="10">
+          <Comment>
+            <MultiLanguageText Lang="en-US">INC variable</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Variable INC</MultiLanguageText>
+          </Comment>
+        </Subelement>
+      </Member>
+      <Member Name="A_ContManTravel" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Continuous manual travel</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Mode manuel continu</MultiLanguageText>
+        </Comment>
+        <Subelement Path="3">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Continuous manual travel</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Mode manuel continu</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="4">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Continuous manual travel</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Mode manuel continu</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="5">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Continuous manual travel</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Mode manuel continu</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="6">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Continuous manual travel</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Mode manuel continu</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="7">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Continuous manual travel</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Mode manuel continu</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="8">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Continuous manual travel</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Mode manuel continu</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="9">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Continuous manual travel</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Mode manuel continu</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="10">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Continuous manual travel</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Mode manuel continu</MultiLanguageText>
+          </Comment>
+        </Subelement>
+      </Member>
+      <Member Name="f2_7" Datatype="Bool" />
+      <Member Name="f3" Datatype="Byte" />
+      <Member Name="E_MMC_AUTO" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">HMI mode strobe AUTOMATIC</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">HMI mode Strobe AUTOMATIC</MultiLanguageText>
+        </Comment>
+        <Subelement Path="3">
+          <Comment>
+            <MultiLanguageText Lang="en-US">HMI mode strobe AUTOMATIC</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">HMI mode Strobe AUTOMATIC</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="4">
+          <Comment>
+            <MultiLanguageText Lang="en-US">HMI mode strobe AUTOMATIC</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">HMI mode Strobe AUTOMATIC</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="5">
+          <Comment>
+            <MultiLanguageText Lang="en-US">HMI mode strobe AUTOMATIC</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">HMI mode Strobe AUTOMATIC</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="6">
+          <Comment>
+            <MultiLanguageText Lang="en-US">HMI mode strobe AUTOMATIC</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">HMI mode Strobe AUTOMATIC</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="7">
+          <Comment>
+            <MultiLanguageText Lang="en-US">HMI mode strobe AUTOMATIC</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">HMI mode Strobe AUTOMATIC</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="8">
+          <Comment>
+            <MultiLanguageText Lang="en-US">HMI mode strobe AUTOMATIC</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">HMI mode Strobe AUTOMATIC</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="9">
+          <Comment>
+            <MultiLanguageText Lang="en-US">HMI mode strobe AUTOMATIC</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">HMI mode Strobe AUTOMATIC</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="10">
+          <Comment>
+            <MultiLanguageText Lang="en-US">HMI mode strobe AUTOMATIC</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">HMI mode Strobe AUTOMATIC</MultiLanguageText>
+          </Comment>
+        </Subelement>
+      </Member>
+      <Member Name="E_MMC_MDA" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">HMI mode strobe MDA</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">HMI mode Strobe MDA</MultiLanguageText>
+        </Comment>
+        <Subelement Path="3">
+          <Comment>
+            <MultiLanguageText Lang="en-US">HMI mode strobe MDA</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">HMI mode Strobe MDA</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="4">
+          <Comment>
+            <MultiLanguageText Lang="en-US">HMI mode strobe MDA</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">HMI mode Strobe MDA</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="5">
+          <Comment>
+            <MultiLanguageText Lang="en-US">HMI mode strobe MDA</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">HMI mode Strobe MDA</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="6">
+          <Comment>
+            <MultiLanguageText Lang="en-US">HMI mode strobe MDA</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">HMI mode Strobe MDA</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="7">
+          <Comment>
+            <MultiLanguageText Lang="en-US">HMI mode strobe MDA</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">HMI mode Strobe MDA</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="8">
+          <Comment>
+            <MultiLanguageText Lang="en-US">HMI mode strobe MDA</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">HMI mode Strobe MDA</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="9">
+          <Comment>
+            <MultiLanguageText Lang="en-US">HMI mode strobe MDA</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">HMI mode Strobe MDA</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="10">
+          <Comment>
+            <MultiLanguageText Lang="en-US">HMI mode strobe MDA</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">HMI mode Strobe MDA</MultiLanguageText>
+          </Comment>
+        </Subelement>
+      </Member>
+      <Member Name="E_MMC_JOG" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">HMI mode strobe JOG</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">HMI mode Strobe JOG</MultiLanguageText>
+        </Comment>
+        <Subelement Path="3">
+          <Comment>
+            <MultiLanguageText Lang="en-US">HMI mode strobe JOG</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">HMI mode Strobe JOG</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="4">
+          <Comment>
+            <MultiLanguageText Lang="en-US">HMI mode strobe JOG</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">HMI mode Strobe JOG</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="5">
+          <Comment>
+            <MultiLanguageText Lang="en-US">HMI mode strobe JOG</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">HMI mode Strobe JOG</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="6">
+          <Comment>
+            <MultiLanguageText Lang="en-US">HMI mode strobe JOG</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">HMI mode Strobe JOG</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="7">
+          <Comment>
+            <MultiLanguageText Lang="en-US">HMI mode strobe JOG</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">HMI mode Strobe JOG</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="8">
+          <Comment>
+            <MultiLanguageText Lang="en-US">HMI mode strobe JOG</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">HMI mode Strobe JOG</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="9">
+          <Comment>
+            <MultiLanguageText Lang="en-US">HMI mode strobe JOG</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">HMI mode Strobe JOG</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="10">
+          <Comment>
+            <MultiLanguageText Lang="en-US">HMI mode strobe JOG</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">HMI mode Strobe JOG</MultiLanguageText>
+          </Comment>
+        </Subelement>
+      </Member>
+      <Member Name="f4_3" Datatype="Bool" />
+      <Member Name="f4_4" Datatype="Bool" />
+      <Member Name="f4_5" Datatype="Bool" />
+      <Member Name="f4_6" Datatype="Bool" />
+      <Member Name="f4_7" Datatype="Bool" />
+      <Member Name="E_MMC_TEACHIN" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">HMI machine function strobe TEACH IN</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">HMI Fonction machine Strobe TEACH IN</MultiLanguageText>
+        </Comment>
+        <Subelement Path="3">
+          <Comment>
+            <MultiLanguageText Lang="en-US">HMI machine function strobe TEACH IN</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">HMI Fonction machine Strobe TEACH IN</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="4">
+          <Comment>
+            <MultiLanguageText Lang="en-US">HMI machine function strobe TEACH IN</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">HMI Fonction machine Strobe TEACH IN</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="5">
+          <Comment>
+            <MultiLanguageText Lang="en-US">HMI machine function strobe TEACH IN</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">HMI Fonction machine Strobe TEACH IN</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="6">
+          <Comment>
+            <MultiLanguageText Lang="en-US">HMI machine function strobe TEACH IN</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">HMI Fonction machine Strobe TEACH IN</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="7">
+          <Comment>
+            <MultiLanguageText Lang="en-US">HMI machine function strobe TEACH IN</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">HMI Fonction machine Strobe TEACH IN</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="8">
+          <Comment>
+            <MultiLanguageText Lang="en-US">HMI machine function strobe TEACH IN</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">HMI Fonction machine Strobe TEACH IN</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="9">
+          <Comment>
+            <MultiLanguageText Lang="en-US">HMI machine function strobe TEACH IN</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">HMI Fonction machine Strobe TEACH IN</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="10">
+          <Comment>
+            <MultiLanguageText Lang="en-US">HMI machine function strobe TEACH IN</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">HMI Fonction machine Strobe TEACH IN</MultiLanguageText>
+          </Comment>
+        </Subelement>
+      </Member>
+      <Member Name="E_MMC_REPOS" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">HMI machine function strobe REPOS</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">HMI Fonction machine Strobe REPOS</MultiLanguageText>
+        </Comment>
+        <Subelement Path="3">
+          <Comment>
+            <MultiLanguageText Lang="en-US">HMI machine function strobe REPOS</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">HMI Fonction machine Strobe REPOS</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="4">
+          <Comment>
+            <MultiLanguageText Lang="en-US">HMI machine function strobe REPOS</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">HMI Fonction machine Strobe REPOS</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="5">
+          <Comment>
+            <MultiLanguageText Lang="en-US">HMI machine function strobe REPOS</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">HMI Fonction machine Strobe REPOS</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="6">
+          <Comment>
+            <MultiLanguageText Lang="en-US">HMI machine function strobe REPOS</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">HMI Fonction machine Strobe REPOS</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="7">
+          <Comment>
+            <MultiLanguageText Lang="en-US">HMI machine function strobe REPOS</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">HMI Fonction machine Strobe REPOS</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="8">
+          <Comment>
+            <MultiLanguageText Lang="en-US">HMI machine function strobe REPOS</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">HMI Fonction machine Strobe REPOS</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="9">
+          <Comment>
+            <MultiLanguageText Lang="en-US">HMI machine function strobe REPOS</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">HMI Fonction machine Strobe REPOS</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="10">
+          <Comment>
+            <MultiLanguageText Lang="en-US">HMI machine function strobe REPOS</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">HMI Fonction machine Strobe REPOS</MultiLanguageText>
+          </Comment>
+        </Subelement>
+      </Member>
+      <Member Name="E_MMC_REF" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">HMI machine function strobe REF</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">HMI Fonction machine Strobe REF</MultiLanguageText>
+        </Comment>
+        <Subelement Path="3">
+          <Comment>
+            <MultiLanguageText Lang="en-US">HMI machine function strobe REF</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">HMI Fonction machine Strobe REF</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="4">
+          <Comment>
+            <MultiLanguageText Lang="en-US">HMI machine function strobe REF</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">HMI Fonction machine Strobe REF</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="5">
+          <Comment>
+            <MultiLanguageText Lang="en-US">HMI machine function strobe REF</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">HMI Fonction machine Strobe REF</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="6">
+          <Comment>
+            <MultiLanguageText Lang="en-US">HMI machine function strobe REF</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">HMI Fonction machine Strobe REF</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="7">
+          <Comment>
+            <MultiLanguageText Lang="en-US">HMI machine function strobe REF</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">HMI Fonction machine Strobe REF</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="8">
+          <Comment>
+            <MultiLanguageText Lang="en-US">HMI machine function strobe REF</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">HMI Fonction machine Strobe REF</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="9">
+          <Comment>
+            <MultiLanguageText Lang="en-US">HMI machine function strobe REF</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">HMI Fonction machine Strobe REF</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="10">
+          <Comment>
+            <MultiLanguageText Lang="en-US">HMI machine function strobe REF</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">HMI Fonction machine Strobe REF</MultiLanguageText>
+          </Comment>
+        </Subelement>
+      </Member>
+      <Member Name="f5_3" Datatype="Bool" />
+      <Member Name="f5_4" Datatype="Bool" />
+      <Member Name="f5_5" Datatype="Bool" />
+      <Member Name="f5_6" Datatype="Bool" />
+      <Member Name="f5_7" Datatype="Bool" />
+      <Member Name="E_AUTO" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Active operating mode AUTOMATIC</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Mode actif AUTOMATIC</MultiLanguageText>
+        </Comment>
+        <Subelement Path="3">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Active operating mode AUTOMATIC</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Mode actif AUTOMATIC</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="4">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Active operating mode AUTOMATIC</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Mode actif AUTOMATIC</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="5">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Active operating mode AUTOMATIC</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Mode actif AUTOMATIC</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="6">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Active operating mode AUTOMATIC</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Mode actif AUTOMATIC</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="7">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Active operating mode AUTOMATIC</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Mode actif AUTOMATIC</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="8">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Active operating mode AUTOMATIC</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Mode actif AUTOMATIC</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="9">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Active operating mode AUTOMATIC</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Mode actif AUTOMATIC</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="10">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Active operating mode AUTOMATIC</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Mode actif AUTOMATIC</MultiLanguageText>
+          </Comment>
+        </Subelement>
+      </Member>
+      <Member Name="E_MDA" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Active operating mode MDA</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Mode actif MDA</MultiLanguageText>
+        </Comment>
+        <Subelement Path="3">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Active operating mode MDA</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Mode actif MDA</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="4">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Active operating mode MDA</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Mode actif MDA</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="5">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Active operating mode MDA</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Mode actif MDA</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="6">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Active operating mode MDA</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Mode actif MDA</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="7">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Active operating mode MDA</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Mode actif MDA</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="8">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Active operating mode MDA</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Mode actif MDA</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="9">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Active operating mode MDA</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Mode actif MDA</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="10">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Active operating mode MDA</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Mode actif MDA</MultiLanguageText>
+          </Comment>
+        </Subelement>
+      </Member>
+      <Member Name="E_JOG" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Active operating mode JOG</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Mode actif JOG</MultiLanguageText>
+        </Comment>
+        <Subelement Path="3">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Active operating mode JOG</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Mode actif JOG</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="4">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Active operating mode JOG</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Mode actif JOG</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="5">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Active operating mode JOG</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Mode actif JOG</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="6">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Active operating mode JOG</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Mode actif JOG</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="7">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Active operating mode JOG</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Mode actif JOG</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="8">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Active operating mode JOG</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Mode actif JOG</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="9">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Active operating mode JOG</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Mode actif JOG</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="10">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Active operating mode JOG</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Mode actif JOG</MultiLanguageText>
+          </Comment>
+        </Subelement>
+      </Member>
+      <Member Name="E_MGOK" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Mode group ready</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Groupe de modes de fonctionnement prêt</MultiLanguageText>
+        </Comment>
+        <Subelement Path="3">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Mode group ready</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Groupe de modes de fonctionnement prêt</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="4">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Mode group ready</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Groupe de modes de fonctionnement prêt</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="5">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Mode group ready</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Groupe de modes de fonctionnement prêt</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="6">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Mode group ready</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Groupe de modes de fonctionnement prêt</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="7">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Mode group ready</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Groupe de modes de fonctionnement prêt</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="8">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Mode group ready</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Groupe de modes de fonctionnement prêt</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="9">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Mode group ready</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Groupe de modes de fonctionnement prêt</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="10">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Mode group ready</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Groupe de modes de fonctionnement prêt</MultiLanguageText>
+          </Comment>
+        </Subelement>
+      </Member>
+      <Member Name="E_MGreseted" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Mode group reset</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Groupe de modes de fonctionnement Reset</MultiLanguageText>
+        </Comment>
+        <Subelement Path="3">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Mode group reset</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Groupe de modes de fonctionnement Reset</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="4">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Mode group reset</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Groupe de modes de fonctionnement Reset</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="5">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Mode group reset</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Groupe de modes de fonctionnement Reset</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="6">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Mode group reset</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Groupe de modes de fonctionnement Reset</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="7">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Mode group reset</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Groupe de modes de fonctionnement Reset</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="8">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Mode group reset</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Groupe de modes de fonctionnement Reset</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="9">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Mode group reset</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Groupe de modes de fonctionnement Reset</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="10">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Mode group reset</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Groupe de modes de fonctionnement Reset</MultiLanguageText>
+          </Comment>
+        </Subelement>
+      </Member>
+      <Member Name="E_NCKintJOG" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">NCK internal JOG active</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">NCK JOG interne actif</MultiLanguageText>
+        </Comment>
+        <Subelement Path="3">
+          <Comment>
+            <MultiLanguageText Lang="en-US">NCK internal JOG active</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">NCK JOG interne actif</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="4">
+          <Comment>
+            <MultiLanguageText Lang="en-US">NCK internal JOG active</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">NCK JOG interne actif</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="5">
+          <Comment>
+            <MultiLanguageText Lang="en-US">NCK internal JOG active</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">NCK JOG interne actif</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="6">
+          <Comment>
+            <MultiLanguageText Lang="en-US">NCK internal JOG active</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">NCK JOG interne actif</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="7">
+          <Comment>
+            <MultiLanguageText Lang="en-US">NCK internal JOG active</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">NCK JOG interne actif</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="8">
+          <Comment>
+            <MultiLanguageText Lang="en-US">NCK internal JOG active</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">NCK JOG interne actif</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="9">
+          <Comment>
+            <MultiLanguageText Lang="en-US">NCK internal JOG active</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">NCK JOG interne actif</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="10">
+          <Comment>
+            <MultiLanguageText Lang="en-US">NCK internal JOG active</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">NCK JOG interne actif</MultiLanguageText>
+          </Comment>
+        </Subelement>
+      </Member>
+      <Member Name="f6_6" Datatype="Bool" />
+      <Member Name="E_ChanReset" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">All channels in reset state</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Tous les canaux en mode Reset</MultiLanguageText>
+        </Comment>
+        <Subelement Path="3">
+          <Comment>
+            <MultiLanguageText Lang="en-US">All channels in reset state</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Tous les canaux en mode Reset</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="4">
+          <Comment>
+            <MultiLanguageText Lang="en-US">All channels in reset state</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Tous les canaux en mode Reset</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="5">
+          <Comment>
+            <MultiLanguageText Lang="en-US">All channels in reset state</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Tous les canaux en mode Reset</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="6">
+          <Comment>
+            <MultiLanguageText Lang="en-US">All channels in reset state</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Tous les canaux en mode Reset</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="7">
+          <Comment>
+            <MultiLanguageText Lang="en-US">All channels in reset state</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Tous les canaux en mode Reset</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="8">
+          <Comment>
+            <MultiLanguageText Lang="en-US">All channels in reset state</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Tous les canaux en mode Reset</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="9">
+          <Comment>
+            <MultiLanguageText Lang="en-US">All channels in reset state</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Tous les canaux en mode Reset</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="10">
+          <Comment>
+            <MultiLanguageText Lang="en-US">All channels in reset state</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Tous les canaux en mode Reset</MultiLanguageText>
+          </Comment>
+        </Subelement>
+      </Member>
+      <Member Name="E_TEACHIN" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Active machine function TEACH IN</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Fonction machine active TEACH IN</MultiLanguageText>
+        </Comment>
+        <Subelement Path="3">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Active machine function TEACH IN</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Fonction machine active TEACH IN</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="4">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Active machine function TEACH IN</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Fonction machine active TEACH IN</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="5">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Active machine function TEACH IN</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Fonction machine active TEACH IN</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="6">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Active machine function TEACH IN</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Fonction machine active TEACH IN</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="7">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Active machine function TEACH IN</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Fonction machine active TEACH IN</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="8">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Active machine function TEACH IN</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Fonction machine active TEACH IN</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="9">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Active machine function TEACH IN</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Fonction machine active TEACH IN</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="10">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Active machine function TEACH IN</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Fonction machine active TEACH IN</MultiLanguageText>
+          </Comment>
+        </Subelement>
+      </Member>
+      <Member Name="E_REPOS" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Active machine function REPOS</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Fonction machine active REPOS</MultiLanguageText>
+        </Comment>
+        <Subelement Path="3">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Active machine function REPOS</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Fonction machine active REPOS</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="4">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Active machine function REPOS</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Fonction machine active REPOS</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="5">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Active machine function REPOS</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Fonction machine active REPOS</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="6">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Active machine function REPOS</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Fonction machine active REPOS</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="7">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Active machine function REPOS</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Fonction machine active REPOS</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="8">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Active machine function REPOS</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Fonction machine active REPOS</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="9">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Active machine function REPOS</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Fonction machine active REPOS</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="10">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Active machine function REPOS</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Fonction machine active REPOS</MultiLanguageText>
+          </Comment>
+        </Subelement>
+      </Member>
+      <Member Name="E_REF" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Active machine function REF</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Fonction machine active REF</MultiLanguageText>
+        </Comment>
+        <Subelement Path="3">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Active machine function REF</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Fonction machine active REF</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="4">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Active machine function REF</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Fonction machine active REF</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="5">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Active machine function REF</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Fonction machine active REF</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="6">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Active machine function REF</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Fonction machine active REF</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="7">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Active machine function REF</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Fonction machine active REF</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="8">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Active machine function REF</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Fonction machine active REF</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="9">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Active machine function REF</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Fonction machine active REF</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="10">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Active machine function REF</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Fonction machine active REF</MultiLanguageText>
+          </Comment>
+        </Subelement>
+      </Member>
+      <Member Name="f7_3" Datatype="Bool" />
+      <Member Name="f7_4" Datatype="Bool" />
+      <Member Name="f7_5" Datatype="Bool" />
+      <Member Name="f7_6" Datatype="Bool" />
+      <Member Name="f7_7" Datatype="Bool" />
+      <Member Name="E_INC1" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">INC1</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">INC1</MultiLanguageText>
+        </Comment>
+        <Subelement Path="3">
+          <Comment>
+            <MultiLanguageText Lang="en-US">INC1</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">INC1</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="4">
+          <Comment>
+            <MultiLanguageText Lang="en-US">INC1</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">INC1</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="5">
+          <Comment>
+            <MultiLanguageText Lang="en-US">INC1</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">INC1</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="6">
+          <Comment>
+            <MultiLanguageText Lang="en-US">INC1</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">INC1</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="7">
+          <Comment>
+            <MultiLanguageText Lang="en-US">INC1</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">INC1</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="8">
+          <Comment>
+            <MultiLanguageText Lang="en-US">INC1</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">INC1</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="9">
+          <Comment>
+            <MultiLanguageText Lang="en-US">INC1</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">INC1</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="10">
+          <Comment>
+            <MultiLanguageText Lang="en-US">INC1</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">INC1</MultiLanguageText>
+          </Comment>
+        </Subelement>
+      </Member>
+      <Member Name="E_INC10" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">INC10</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">INC10</MultiLanguageText>
+        </Comment>
+        <Subelement Path="3">
+          <Comment>
+            <MultiLanguageText Lang="en-US">INC10</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">INC10</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="4">
+          <Comment>
+            <MultiLanguageText Lang="en-US">INC10</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">INC10</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="5">
+          <Comment>
+            <MultiLanguageText Lang="en-US">INC10</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">INC10</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="6">
+          <Comment>
+            <MultiLanguageText Lang="en-US">INC10</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">INC10</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="7">
+          <Comment>
+            <MultiLanguageText Lang="en-US">INC10</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">INC10</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="8">
+          <Comment>
+            <MultiLanguageText Lang="en-US">INC10</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">INC10</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="9">
+          <Comment>
+            <MultiLanguageText Lang="en-US">INC10</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">INC10</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="10">
+          <Comment>
+            <MultiLanguageText Lang="en-US">INC10</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">INC10</MultiLanguageText>
+          </Comment>
+        </Subelement>
+      </Member>
+      <Member Name="E_INC100" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">INC100</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">INC100</MultiLanguageText>
+        </Comment>
+        <Subelement Path="3">
+          <Comment>
+            <MultiLanguageText Lang="en-US">INC100</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">INC100</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="4">
+          <Comment>
+            <MultiLanguageText Lang="en-US">INC100</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">INC100</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="5">
+          <Comment>
+            <MultiLanguageText Lang="en-US">INC100</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">INC100</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="6">
+          <Comment>
+            <MultiLanguageText Lang="en-US">INC100</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">INC100</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="7">
+          <Comment>
+            <MultiLanguageText Lang="en-US">INC100</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">INC100</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="8">
+          <Comment>
+            <MultiLanguageText Lang="en-US">INC100</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">INC100</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="9">
+          <Comment>
+            <MultiLanguageText Lang="en-US">INC100</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">INC100</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="10">
+          <Comment>
+            <MultiLanguageText Lang="en-US">INC100</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">INC100</MultiLanguageText>
+          </Comment>
+        </Subelement>
+      </Member>
+      <Member Name="E_INC1000" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">INC1000</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">INC1000</MultiLanguageText>
+        </Comment>
+        <Subelement Path="3">
+          <Comment>
+            <MultiLanguageText Lang="en-US">INC1000</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">INC1000</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="4">
+          <Comment>
+            <MultiLanguageText Lang="en-US">INC1000</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">INC1000</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="5">
+          <Comment>
+            <MultiLanguageText Lang="en-US">INC1000</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">INC1000</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="6">
+          <Comment>
+            <MultiLanguageText Lang="en-US">INC1000</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">INC1000</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="7">
+          <Comment>
+            <MultiLanguageText Lang="en-US">INC1000</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">INC1000</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="8">
+          <Comment>
+            <MultiLanguageText Lang="en-US">INC1000</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">INC1000</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="9">
+          <Comment>
+            <MultiLanguageText Lang="en-US">INC1000</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">INC1000</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="10">
+          <Comment>
+            <MultiLanguageText Lang="en-US">INC1000</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">INC1000</MultiLanguageText>
+          </Comment>
+        </Subelement>
+      </Member>
+      <Member Name="E_INC10000" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">INC10000</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">INC10000</MultiLanguageText>
+        </Comment>
+        <Subelement Path="3">
+          <Comment>
+            <MultiLanguageText Lang="en-US">INC10000</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">INC10000</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="4">
+          <Comment>
+            <MultiLanguageText Lang="en-US">INC10000</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">INC10000</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="5">
+          <Comment>
+            <MultiLanguageText Lang="en-US">INC10000</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">INC10000</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="6">
+          <Comment>
+            <MultiLanguageText Lang="en-US">INC10000</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">INC10000</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="7">
+          <Comment>
+            <MultiLanguageText Lang="en-US">INC10000</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">INC10000</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="8">
+          <Comment>
+            <MultiLanguageText Lang="en-US">INC10000</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">INC10000</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="9">
+          <Comment>
+            <MultiLanguageText Lang="en-US">INC10000</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">INC10000</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="10">
+          <Comment>
+            <MultiLanguageText Lang="en-US">INC10000</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">INC10000</MultiLanguageText>
+          </Comment>
+        </Subelement>
+      </Member>
+      <Member Name="E_INCVar" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">INC variable</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Variable INC</MultiLanguageText>
+        </Comment>
+        <Subelement Path="3">
+          <Comment>
+            <MultiLanguageText Lang="en-US">INC variable</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Variable INC</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="4">
+          <Comment>
+            <MultiLanguageText Lang="en-US">INC variable</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Variable INC</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="5">
+          <Comment>
+            <MultiLanguageText Lang="en-US">INC variable</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Variable INC</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="6">
+          <Comment>
+            <MultiLanguageText Lang="en-US">INC variable</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Variable INC</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="7">
+          <Comment>
+            <MultiLanguageText Lang="en-US">INC variable</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Variable INC</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="8">
+          <Comment>
+            <MultiLanguageText Lang="en-US">INC variable</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Variable INC</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="9">
+          <Comment>
+            <MultiLanguageText Lang="en-US">INC variable</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Variable INC</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="10">
+          <Comment>
+            <MultiLanguageText Lang="en-US">INC variable</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Variable INC</MultiLanguageText>
+          </Comment>
+        </Subelement>
+      </Member>
+      <Member Name="E_ContManTravelAct" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Continuous manual travel active</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Mode manuel continu actif</MultiLanguageText>
+        </Comment>
+        <Subelement Path="3">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Continuous manual travel active</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Mode manuel continu actif</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="4">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Continuous manual travel active</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Mode manuel continu actif</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="5">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Continuous manual travel active</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Mode manuel continu actif</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="6">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Continuous manual travel active</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Mode manuel continu actif</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="7">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Continuous manual travel active</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Mode manuel continu actif</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="8">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Continuous manual travel active</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Mode manuel continu actif</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="9">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Continuous manual travel active</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Mode manuel continu actif</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="10">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Continuous manual travel active</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Mode manuel continu actif</MultiLanguageText>
+          </Comment>
+        </Subelement>
+      </Member>
+      <Member Name="f8_7" Datatype="Bool" />
+      <Member Name="f9" Datatype="Byte" />
+      <Member Name="E_HMI_INC1" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">INC1 from HMI</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">INC1 depuis IHM</MultiLanguageText>
+        </Comment>
+        <Subelement Path="3">
+          <Comment>
+            <MultiLanguageText Lang="en-US">INC1 from HMI</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">INC1 depuis IHM</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="4">
+          <Comment>
+            <MultiLanguageText Lang="en-US">INC1 from HMI</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">INC1 depuis IHM</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="5">
+          <Comment>
+            <MultiLanguageText Lang="en-US">INC1 from HMI</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">INC1 depuis IHM</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="6">
+          <Comment>
+            <MultiLanguageText Lang="en-US">INC1 from HMI</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">INC1 depuis IHM</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="7">
+          <Comment>
+            <MultiLanguageText Lang="en-US">INC1 from HMI</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">INC1 depuis IHM</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="8">
+          <Comment>
+            <MultiLanguageText Lang="en-US">INC1 from HMI</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">INC1 depuis IHM</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="9">
+          <Comment>
+            <MultiLanguageText Lang="en-US">INC1 from HMI</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">INC1 depuis IHM</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="10">
+          <Comment>
+            <MultiLanguageText Lang="en-US">INC1 from HMI</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">INC1 depuis IHM</MultiLanguageText>
+          </Comment>
+        </Subelement>
+      </Member>
+      <Member Name="E_HMI_INC10" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">INC10 from HMI</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">INC10 depuis IHM</MultiLanguageText>
+        </Comment>
+        <Subelement Path="3">
+          <Comment>
+            <MultiLanguageText Lang="en-US">INC10 from HMI</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">INC10 depuis IHM</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="4">
+          <Comment>
+            <MultiLanguageText Lang="en-US">INC10 from HMI</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">INC10 depuis IHM</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="5">
+          <Comment>
+            <MultiLanguageText Lang="en-US">INC10 from HMI</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">INC10 depuis IHM</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="6">
+          <Comment>
+            <MultiLanguageText Lang="en-US">INC10 from HMI</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">INC10 depuis IHM</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="7">
+          <Comment>
+            <MultiLanguageText Lang="en-US">INC10 from HMI</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">INC10 depuis IHM</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="8">
+          <Comment>
+            <MultiLanguageText Lang="en-US">INC10 from HMI</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">INC10 depuis IHM</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="9">
+          <Comment>
+            <MultiLanguageText Lang="en-US">INC10 from HMI</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">INC10 depuis IHM</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="10">
+          <Comment>
+            <MultiLanguageText Lang="en-US">INC10 from HMI</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">INC10 depuis IHM</MultiLanguageText>
+          </Comment>
+        </Subelement>
+      </Member>
+      <Member Name="E_HMI_INC100" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">INC100 from HMI</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">INC100 depuis IHM</MultiLanguageText>
+        </Comment>
+        <Subelement Path="3">
+          <Comment>
+            <MultiLanguageText Lang="en-US">INC100 from HMI</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">INC100 depuis IHM</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="4">
+          <Comment>
+            <MultiLanguageText Lang="en-US">INC100 from HMI</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">INC100 depuis IHM</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="5">
+          <Comment>
+            <MultiLanguageText Lang="en-US">INC100 from HMI</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">INC100 depuis IHM</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="6">
+          <Comment>
+            <MultiLanguageText Lang="en-US">INC100 from HMI</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">INC100 depuis IHM</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="7">
+          <Comment>
+            <MultiLanguageText Lang="en-US">INC100 from HMI</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">INC100 depuis IHM</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="8">
+          <Comment>
+            <MultiLanguageText Lang="en-US">INC100 from HMI</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">INC100 depuis IHM</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="9">
+          <Comment>
+            <MultiLanguageText Lang="en-US">INC100 from HMI</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">INC100 depuis IHM</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="10">
+          <Comment>
+            <MultiLanguageText Lang="en-US">INC100 from HMI</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">INC100 depuis IHM</MultiLanguageText>
+          </Comment>
+        </Subelement>
+      </Member>
+      <Member Name="E_HMI_INC1000" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">INC1000 from HMI</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">INC1000 depuis IHM</MultiLanguageText>
+        </Comment>
+        <Subelement Path="3">
+          <Comment>
+            <MultiLanguageText Lang="en-US">INC1000 from HMI</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">INC1000 depuis IHM</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="4">
+          <Comment>
+            <MultiLanguageText Lang="en-US">INC1000 from HMI</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">INC1000 depuis IHM</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="5">
+          <Comment>
+            <MultiLanguageText Lang="en-US">INC1000 from HMI</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">INC1000 depuis IHM</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="6">
+          <Comment>
+            <MultiLanguageText Lang="en-US">INC1000 from HMI</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">INC1000 depuis IHM</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="7">
+          <Comment>
+            <MultiLanguageText Lang="en-US">INC1000 from HMI</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">INC1000 depuis IHM</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="8">
+          <Comment>
+            <MultiLanguageText Lang="en-US">INC1000 from HMI</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">INC1000 depuis IHM</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="9">
+          <Comment>
+            <MultiLanguageText Lang="en-US">INC1000 from HMI</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">INC1000 depuis IHM</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="10">
+          <Comment>
+            <MultiLanguageText Lang="en-US">INC1000 from HMI</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">INC1000 depuis IHM</MultiLanguageText>
+          </Comment>
+        </Subelement>
+      </Member>
+      <Member Name="E_HMI_INC10000" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">INC10000 from HMI</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">INC10000 depuis IHM</MultiLanguageText>
+        </Comment>
+        <Subelement Path="3">
+          <Comment>
+            <MultiLanguageText Lang="en-US">INC10000 from HMI</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">INC10000 depuis IHM</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="4">
+          <Comment>
+            <MultiLanguageText Lang="en-US">INC10000 from HMI</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">INC10000 depuis IHM</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="5">
+          <Comment>
+            <MultiLanguageText Lang="en-US">INC10000 from HMI</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">INC10000 depuis IHM</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="6">
+          <Comment>
+            <MultiLanguageText Lang="en-US">INC10000 from HMI</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">INC10000 depuis IHM</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="7">
+          <Comment>
+            <MultiLanguageText Lang="en-US">INC10000 from HMI</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">INC10000 depuis IHM</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="8">
+          <Comment>
+            <MultiLanguageText Lang="en-US">INC10000 from HMI</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">INC10000 depuis IHM</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="9">
+          <Comment>
+            <MultiLanguageText Lang="en-US">INC10000 from HMI</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">INC10000 depuis IHM</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="10">
+          <Comment>
+            <MultiLanguageText Lang="en-US">INC10000 from HMI</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">INC10000 depuis IHM</MultiLanguageText>
+          </Comment>
+        </Subelement>
+      </Member>
+      <Member Name="E_HMI_INCVar" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">INC variable from HMI</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Variable INC depuis IHM</MultiLanguageText>
+        </Comment>
+        <Subelement Path="3">
+          <Comment>
+            <MultiLanguageText Lang="en-US">INC variable from HMI</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Variable INC depuis IHM</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="4">
+          <Comment>
+            <MultiLanguageText Lang="en-US">INC variable from HMI</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Variable INC depuis IHM</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="5">
+          <Comment>
+            <MultiLanguageText Lang="en-US">INC variable from HMI</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Variable INC depuis IHM</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="6">
+          <Comment>
+            <MultiLanguageText Lang="en-US">INC variable from HMI</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Variable INC depuis IHM</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="7">
+          <Comment>
+            <MultiLanguageText Lang="en-US">INC variable from HMI</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Variable INC depuis IHM</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="8">
+          <Comment>
+            <MultiLanguageText Lang="en-US">INC variable from HMI</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Variable INC depuis IHM</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="9">
+          <Comment>
+            <MultiLanguageText Lang="en-US">INC variable from HMI</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Variable INC depuis IHM</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="10">
+          <Comment>
+            <MultiLanguageText Lang="en-US">INC variable from HMI</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Variable INC depuis IHM</MultiLanguageText>
+          </Comment>
+        </Subelement>
+      </Member>
+      <Member Name="E_HMI_ContManTravel" Datatype="Bool">
+        <Comment>
+          <MultiLanguageText Lang="en-US">Continuous manual travel active from HMI</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">Course manuelle continue active depuis IHM</MultiLanguageText>
+        </Comment>
+        <Subelement Path="3">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Continuous manual travel active from HMI</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Course manuelle continue active depuis IHM</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="4">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Continuous manual travel active from HMI</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Course manuelle continue active depuis IHM</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="5">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Continuous manual travel active from HMI</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Course manuelle continue active depuis IHM</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="6">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Continuous manual travel active from HMI</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Course manuelle continue active depuis IHM</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="7">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Continuous manual travel active from HMI</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Course manuelle continue active depuis IHM</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="8">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Continuous manual travel active from HMI</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Course manuelle continue active depuis IHM</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="9">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Continuous manual travel active from HMI</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Course manuelle continue active depuis IHM</MultiLanguageText>
+          </Comment>
+        </Subelement>
+        <Subelement Path="10">
+          <Comment>
+            <MultiLanguageText Lang="en-US">Continuous manual travel active from HMI</MultiLanguageText>
+            <MultiLanguageText Lang="fr-FR">Course manuelle continue active depuis IHM</MultiLanguageText>
+          </Comment>
+        </Subelement>
+      </Member>
+      <Member Name="f10_7" Datatype="Bool" />
+      <Member Name="f11" Datatype="Byte" />
+      <Member Name="f12" Datatype="Array[12..19] of Byte" />
+      <Subelement Path="2">
+        <Comment>
+          <MultiLanguageText Lang="en-US">next mode group from DBB20, as before</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">groupe de mode suivant depuis DBB20, comme avant</MultiLanguageText>
+        </Comment>
+      </Subelement>
+      <Subelement Path="3">
+        <Comment>
+          <MultiLanguageText Lang="en-US">next mode group from DBB20, as before</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">groupe de mode suivant depuis DBB20, comme avant</MultiLanguageText>
+        </Comment>
+      </Subelement>
+      <Subelement Path="4">
+        <Comment>
+          <MultiLanguageText Lang="en-US">next mode group from DBB20, as before</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">groupe de mode suivant depuis DBB20, comme avant</MultiLanguageText>
+        </Comment>
+      </Subelement>
+      <Subelement Path="5">
+        <Comment>
+          <MultiLanguageText Lang="en-US">next mode group from DBB20, as before</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">groupe de mode suivant depuis DBB20, comme avant</MultiLanguageText>
+        </Comment>
+      </Subelement>
+      <Subelement Path="6">
+        <Comment>
+          <MultiLanguageText Lang="en-US">next mode group from DBB20, as before</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">groupe de mode suivant depuis DBB20, comme avant</MultiLanguageText>
+        </Comment>
+      </Subelement>
+      <Subelement Path="7">
+        <Comment>
+          <MultiLanguageText Lang="en-US">next mode group from DBB20, as before</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">groupe de mode suivant depuis DBB20, comme avant</MultiLanguageText>
+        </Comment>
+      </Subelement>
+      <Subelement Path="8">
+        <Comment>
+          <MultiLanguageText Lang="en-US">next mode group from DBB20, as before</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">groupe de mode suivant depuis DBB20, comme avant</MultiLanguageText>
+        </Comment>
+      </Subelement>
+      <Subelement Path="9">
+        <Comment>
+          <MultiLanguageText Lang="en-US">next mode group from DBB20, as before</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">groupe de mode suivant depuis DBB20, comme avant</MultiLanguageText>
+        </Comment>
+      </Subelement>
+      <Subelement Path="10">
+        <Comment>
+          <MultiLanguageText Lang="en-US">next mode group from DBB20, as before</MultiLanguageText>
+          <MultiLanguageText Lang="fr-FR">groupe de mode suivant depuis DBB20, comme avant</MultiLanguageText>
+        </Comment>
+      </Subelement>
+    </Member>
+  </Section>
+</Sections></Interface>
+      <Name>LBP_typeModeGroup</Name>
+      <Namespace />
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text>User data type for block LBP_ModeGroup [DB11]</Text>
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="3" CompositionName="Items">
+            <AttributeList>
+              <Culture>fr-FR</Culture>
+              <Text>Type de données utilisateur pour bloc LBP_ModeGroup [DB11]</Text>
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <MultilingualText ID="4" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="5" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text>Mode group signals</Text>
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="6" CompositionName="Items">
+            <AttributeList>
+              <Culture>fr-FR</Culture>
+              <Text>Signaux groupe de modes de fonctionnement</Text>
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Types.PlcStruct>
+</Document>

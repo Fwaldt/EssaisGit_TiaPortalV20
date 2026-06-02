@@ -1,0 +1,164 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V20" />
+  <SW.Blocks.InstanceDB ID="0">
+    <AttributeList>
+      <AutoNumber>false</AutoNumber>
+      <InstanceOfName>FB_Axis</InstanceOfName>
+      <InstanceOfType>FB</InstanceOfType>
+      <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+  <Section Name="Input" />
+  <Section Name="Output" />
+  <Section Name="InOut" />
+  <Section Name="Static">
+    <Member Name="sBrakeTest ZM" Datatype="&quot;FB_BrakeTest&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="sBrakeTest ZL" Datatype="&quot;FB_BrakeTest&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="BrakeTest ZM" Datatype="Struct">
+      <Member Name="sSBTDone" Datatype="Bool">
+        <AttributeList>
+          <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+        </AttributeList>
+      </Member>
+      <Member Name="sStartSBT" Datatype="Bool">
+        <AttributeList>
+          <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+        </AttributeList>
+      </Member>
+      <Member Name="sDone" Datatype="Bool">
+        <AttributeList>
+          <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+        </AttributeList>
+      </Member>
+      <Member Name="sError" Datatype="Bool" />
+      <Member Name="sStateNum" Datatype="Int" />
+      <Member Name="sDiagnoseError" Datatype="Int" />
+      <Member Name="scloseExternalBrake" Datatype="Bool" />
+    </Member>
+    <Member Name="BrakeTest ZL" Datatype="Struct">
+      <Member Name="sSBTDone" Datatype="Bool">
+        <AttributeList>
+          <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+        </AttributeList>
+      </Member>
+      <Member Name="sStartSBT" Datatype="Bool">
+        <AttributeList>
+          <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+        </AttributeList>
+      </Member>
+      <Member Name="sDone" Datatype="Bool">
+        <AttributeList>
+          <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+        </AttributeList>
+      </Member>
+      <Member Name="sError" Datatype="Bool" />
+      <Member Name="sStateNum" Datatype="Int" />
+      <Member Name="sDiagnoseError" Datatype="Int" />
+      <Member Name="scloseExternalBrake" Datatype="Bool" />
+    </Member>
+    <Member Name="sErrorN" Datatype="Array[1..8] of Bool" />
+    <Member Name="sTestStopRequested" Datatype="Bool" />
+    <Member Name="sTestStopStart" Datatype="Bool" />
+    <Member Name="sTestStopError" Datatype="Bool" />
+    <Member Name="sTestStopEnd" Datatype="Bool" />
+    <Member Name="sTestStopDone" Datatype="Bool" />
+    <Member Name="sLedSITestOK" Datatype="Bool" />
+    <Member Name="sLedSITestSlowFlashing" Datatype="Bool" />
+    <Member Name="sLedSITestQuickFlashing" Datatype="Bool" />
+    <Member Name="sTimerTestStopStart" Datatype="TON_TIME" Version="1.0" />
+    <Member Name="sTimerTestStopEnd" Datatype="TON_TIME" Version="1.0" />
+    <Member Name="DisableAxis01_X" Datatype="Bool" Remanence="Retain">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="DisableAxis02_Y" Datatype="Bool" Remanence="Retain">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="DisableAxis03_ZM" Datatype="Bool" Remanence="Retain">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="DisableAxis04_B" Datatype="Bool" Remanence="Retain">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="DisableAxis05_U1" Datatype="Bool" Remanence="Retain">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="DisableAxis06_U2" Datatype="Bool" Remanence="Retain">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="DisableAxis07_V" Datatype="Bool" Remanence="Retain">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="DisableAxis08_W" Datatype="Bool" Remanence="Retain">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="DisableAxis09_ZL" Datatype="Bool" Remanence="Retain">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+  </Section>
+</Sections></Interface>
+      <Name>DB_Axis</Name>
+      <Namespace />
+      <Number>410</Number>
+      <ProgrammingLanguage>DB</ProgrammingLanguage>
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="3" CompositionName="Items">
+            <AttributeList>
+              <Culture>fr-FR</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <MultilingualText ID="4" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="5" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="6" CompositionName="Items">
+            <AttributeList>
+              <Culture>fr-FR</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Blocks.InstanceDB>
+</Document>

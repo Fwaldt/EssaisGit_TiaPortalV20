@@ -1,0 +1,445 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V20" />
+  <SW.Types.PlcStruct ID="0">
+    <AttributeList>
+      <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+  <Section Name="None">
+    <Member Name="MCPNum" Datatype="Int">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Inputs starting here</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Début des entrées</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="MCP1In" Datatype="Struct">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Pointer</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Pointeur</MultiLanguageText>
+      </Comment>
+      <Member Name="DBNo" Datatype="Word" />
+      <Member Name="Addr" Datatype="DWord" />
+    </Member>
+    <Member Name="MCP1Out" Datatype="Struct">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Pointer</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Pointeur</MultiLanguageText>
+      </Comment>
+      <Member Name="DBNo" Datatype="Word" />
+      <Member Name="Addr" Datatype="DWord" />
+    </Member>
+    <Member Name="reservedByte14_25" Datatype="Array[14..25] of Byte" />
+    <Member Name="MCP1BusAdr" Datatype="Int">
+      <StartValue>6</StartValue>
+    </Member>
+    <Member Name="MCP1Timeout" Datatype="S5Time">
+      <StartValue>S5T#700MS</StartValue>
+    </Member>
+    <Member Name="reservedByte30_31" Datatype="Array[30..31] of Byte" />
+    <Member Name="MCP2In" Datatype="Struct">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Pointer</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Pointeur</MultiLanguageText>
+      </Comment>
+      <Member Name="DBNo" Datatype="Word" />
+      <Member Name="Addr" Datatype="DWord" />
+    </Member>
+    <Member Name="MCP2Out" Datatype="Struct">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Pointer</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Pointeur</MultiLanguageText>
+      </Comment>
+      <Member Name="DBNo" Datatype="Word" />
+      <Member Name="Addr" Datatype="DWord" />
+    </Member>
+    <Member Name="reservedByte44_55" Datatype="Array[44..55] of Byte" />
+    <Member Name="MCP2BusAdr" Datatype="Int" />
+    <Member Name="MCP2Timeout" Datatype="S5Time">
+      <StartValue>S5T#700MS</StartValue>
+    </Member>
+    <Member Name="reservedByte60_61" Datatype="Array[60..61] of Byte" />
+    <Member Name="reservedBool62_0" Datatype="Bool" />
+    <Member Name="MCP1Stop" Datatype="Bool" />
+    <Member Name="MCP2Stop" Datatype="Bool" />
+    <Member Name="MCP1NotSend" Datatype="Bool" />
+    <Member Name="MCP2NotSend" Datatype="Bool" />
+    <Member Name="reservedBool62_5" Datatype="Bool" />
+    <Member Name="reservedBool62_6" Datatype="Bool" />
+    <Member Name="MCPBusType" Datatype="Byte">
+      <StartValue>BYTE#16#05</StartValue>
+    </Member>
+    <Member Name="HTIf" Datatype="Int" />
+    <Member Name="HTIn" Datatype="Struct">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Pointer</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Pointeur</MultiLanguageText>
+      </Comment>
+      <Member Name="DBNo" Datatype="Word" />
+      <Member Name="Addr" Datatype="DWord" />
+    </Member>
+    <Member Name="HTOut" Datatype="Struct">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Pointer</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Pointeur</MultiLanguageText>
+      </Comment>
+      <Member Name="DBNo" Datatype="Word" />
+      <Member Name="Addr" Datatype="DWord" />
+    </Member>
+    <Member Name="reservedByte78_95" Datatype="Array[78..95] of Byte" />
+    <Member Name="HTAdr" Datatype="Int">
+      <StartValue>2</StartValue>
+    </Member>
+    <Member Name="reservedByte98_107" Datatype="Array[98..107] of Byte" />
+    <Member Name="reservedBool108_0" Datatype="Bool" />
+    <Member Name="HTStop" Datatype="Bool" />
+    <Member Name="HTNotSend" Datatype="Bool" />
+    <Member Name="NCCyclTimeout" Datatype="S5Time">
+      <StartValue>S5T#200MS</StartValue>
+    </Member>
+    <Member Name="NCRunupTimeout" Datatype="S5Time">
+      <StartValue>S5T#50S</StartValue>
+    </Member>
+    <Member Name="ListMDecGrp" Datatype="Int" />
+    <Member Name="reservedBool116_0" Datatype="Bool" />
+    <Member Name="MMCToIF" Datatype="Bool">
+      <StartValue>TRUE</StartValue>
+    </Member>
+    <Member Name="HWheelMMC" Datatype="Bool">
+      <StartValue>TRUE</StartValue>
+    </Member>
+    <Member Name="reservedBool116_3" Datatype="Bool" />
+    <Member Name="MCP_IF_TCS" Datatype="Bool" />
+    <Member Name="ExtendChanAxMsg" Datatype="Bool" />
+    <Member Name="HMIAxisSel" Datatype="Bool" />
+    <Member Name="DeactivateCtrlEnergy" Datatype="Bool" />
+    <Member Name="MsgUser" Datatype="Int">
+      <StartValue>10</StartValue>
+    </Member>
+    <Member Name="reservedBool120_0" Datatype="Bool" />
+    <Member Name="IRAuxfuT" Datatype="Bool" />
+    <Member Name="IRAuxfuH" Datatype="Bool" />
+    <Member Name="IRAuxfuE" Datatype="Bool" />
+    <Member Name="UserVersion" Datatype="Struct">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Pointer</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Pointeur</MultiLanguageText>
+      </Comment>
+      <Member Name="DBNo" Datatype="Word" />
+      <Member Name="Addr" Datatype="DWord" />
+    </Member>
+    <Member Name="OpKeyNum" Datatype="Int" />
+    <Member Name="Op1KeyIn" Datatype="Struct">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Pointer</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Pointeur</MultiLanguageText>
+      </Comment>
+      <Member Name="DBNo" Datatype="Word" />
+      <Member Name="Addr" Datatype="DWord" />
+    </Member>
+    <Member Name="Op1KeyOut" Datatype="Struct">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Pointer</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Pointeur</MultiLanguageText>
+      </Comment>
+      <Member Name="DBNo" Datatype="Word" />
+      <Member Name="Addr" Datatype="DWord" />
+    </Member>
+    <Member Name="Op1KeyBusAdr" Datatype="Int" />
+    <Member Name="Op2KeyIn" Datatype="Struct">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Pointer</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Pointeur</MultiLanguageText>
+      </Comment>
+      <Member Name="DBNo" Datatype="Word" />
+      <Member Name="Addr" Datatype="DWord" />
+    </Member>
+    <Member Name="Op2KeyOut" Datatype="Struct">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Pointer</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Pointeur</MultiLanguageText>
+      </Comment>
+      <Member Name="DBNo" Datatype="Word" />
+      <Member Name="Addr" Datatype="DWord" />
+    </Member>
+    <Member Name="Op2KeyBusAdr" Datatype="Int" />
+    <Member Name="Op1KeyStop" Datatype="Bool" />
+    <Member Name="Op2KeyStop" Datatype="Bool" />
+    <Member Name="Op1KeyNotSend" Datatype="Bool" />
+    <Member Name="Op2KeyNotSend" Datatype="Bool" />
+    <Member Name="reservedByte159" Datatype="Byte" />
+    <Member Name="IdentMcpBusAdr" Datatype="Int" />
+    <Member Name="IdentMcpProfilNo" Datatype="Byte" />
+    <Member Name="IdentMcpBusType" Datatype="Byte">
+      <StartValue>BYTE#16#05</StartValue>
+    </Member>
+    <Member Name="IdentMcpStrobe" Datatype="Bool" />
+    <Member Name="MaxModeGroup" Datatype="Int">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Outputs starting here</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Début des sorties</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="MaxChan" Datatype="Int" />
+    <Member Name="MaxAxis" Datatype="Int" />
+    <Member Name="ActiveChan" Datatype="Array[1..10] of Bool" />
+    <Member Name="ActiveAxis" Datatype="Array[1..31] of Bool" />
+    <Member Name="MaxNumUserDataInt" Datatype="Int" />
+    <Member Name="MaxNumUserDataHex" Datatype="Int" />
+    <Member Name="MaxNumUserDataReal" Datatype="Int" />
+    <Member Name="IdentMcpType" Datatype="Byte" />
+    <Member Name="IdentMcpLengthIn" Datatype="Byte" />
+    <Member Name="IdentMcpLengthOut" Datatype="Byte" />
+    <Member Name="reservedByte188_199" Datatype="Array[188..199] of Byte">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Static starting here</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Début statique</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="LBPVersionInfo" Datatype="String[44]" />
+    <Member Name="UserVersionInfo" Datatype="String[44]" />
+    <Member Name="GenerateAlarmMsgs" Datatype="Struct">
+      <Member Name="NumActAlarmMsgs" Datatype="UInt" />
+      <Member Name="Error" Datatype="Bool" />
+      <Member Name="StatusID" Datatype="UInt" />
+      <Member Name="Status" Datatype="Word" />
+    </Member>
+    <Member Name="OpUnitCommId" Datatype="UInt">
+      <Comment>
+        <MultiLanguageText Lang="en-US">ID for OpUnitComm</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">ID pour OpUnitComm</MultiLanguageText>
+      </Comment>
+      <StartValue>1</StartValue>
+    </Member>
+    <Member Name="OpUnitInterfaceId" Datatype="HW_ANY">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Hardware identifier of Ethernet interface for OpUnitComm</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Identifiant matériel de l'interface Ethernet pour OpUnitComm</MultiLanguageText>
+      </Comment>
+      <StartValue>262</StartValue>
+    </Member>
+    <Member Name="MCP1ConnectionId" Datatype="CONN_OUC">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Connection identifier for MCP 1</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Identifiant de connexion pour MCP 1</MultiLanguageText>
+      </Comment>
+      <StartValue>1001</StartValue>
+    </Member>
+    <Member Name="MCP2ConnectionId" Datatype="CONN_OUC">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Connection identifier for MCP 2</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Identifiant de connexion pour MCP 2</MultiLanguageText>
+      </Comment>
+      <StartValue>1002</StartValue>
+    </Member>
+    <Member Name="HTConnectionId" Datatype="CONN_OUC">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Connection identifier for handheld unit</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Identifiant de connexion pour terminal portatif</MultiLanguageText>
+      </Comment>
+      <StartValue>1003</StartValue>
+    </Member>
+    <Member Name="Op1KeyConnectionId" Datatype="CONN_OUC">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Connection identifier for Direct Key 1</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Identifiant de connexion pour Direct Key 1</MultiLanguageText>
+      </Comment>
+      <StartValue>1004</StartValue>
+    </Member>
+    <Member Name="Op2KeyConnectionId" Datatype="CONN_OUC">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Connection identifier for Direct Key 2</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Identifiant de connexion pour Direct Key 2</MultiLanguageText>
+      </Comment>
+      <StartValue>1005</StartValue>
+    </Member>
+    <Member Name="IdentConnectionId" Datatype="CONN_OUC">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Connection identifier for identification</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Identifiant de connexion pour identification</MultiLanguageText>
+      </Comment>
+      <StartValue>1006</StartValue>
+    </Member>
+    <Member Name="MCP1LocalUdpPort" Datatype="UInt">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Local UDP port for MCP 1</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Port UDP local pour MCP 1</MultiLanguageText>
+      </Comment>
+      <StartValue>16001</StartValue>
+    </Member>
+    <Member Name="MCP2LocalUdpPort" Datatype="UInt">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Local UDP port for MCP 2</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Port UDP local pour MCP 2</MultiLanguageText>
+      </Comment>
+      <StartValue>16002</StartValue>
+    </Member>
+    <Member Name="HTLocalUdpPort" Datatype="UInt">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Local UDP port for handheld unit</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Port UDP local pour unité de commande portable</MultiLanguageText>
+      </Comment>
+      <StartValue>16003</StartValue>
+    </Member>
+    <Member Name="Op1KeyLocalUdpPort" Datatype="UInt">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Local UDP port for Direct Key 1</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Port UDP local pour Direct Key 1</MultiLanguageText>
+      </Comment>
+      <StartValue>16004</StartValue>
+    </Member>
+    <Member Name="Op2KeyLocalUdpPort" Datatype="UInt">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Local UDP port for Direct Key 2</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Port UDP local pour Direct Key 2</MultiLanguageText>
+      </Comment>
+      <StartValue>16005</StartValue>
+    </Member>
+    <Member Name="IdentLocalUdpPort" Datatype="UInt">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Local UDP port for Ident</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Port UDP local pour Ident</MultiLanguageText>
+      </Comment>
+      <StartValue>16006</StartValue>
+    </Member>
+    <Member Name="MCP1Error" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Error MCP 1</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Erreur MCP 1</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="MCP1Status" Datatype="Word">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Error information MCP 1</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Information erreur MCP 1</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="MCP2Error" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Error MCP 2</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Erreur MCP 2</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="MCP2Status" Datatype="Word">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Error information MCP 2</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Information erreur MCP 2</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="HTError" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Error handheld unit</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Erreur terminal portatif</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="HTStatus" Datatype="Word">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Error information handheld unit</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Information erreur terminal portatif</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="Op1KeyError" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Error Direct Key 1</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Erreur Direct Key 1</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="Op1KeyStatus" Datatype="Word">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Error information Direct Key 1</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Information erreur Direct Key 1</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="Op2KeyError" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Error Direct Key 2</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Erreur Direct Key 2</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="Op2KeyStatus" Datatype="Word">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Error information Direct Key 2</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Information erreur Direct Key 2</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="IdentError" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Error identification</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Identification d'erreur</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="IdentStatus" Datatype="Word">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Error information Identification</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Identification d'erreur Identification</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="MCP1Ready" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">MCP1 connected</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">MCP1 connecté</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="MCP2Ready" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">MCP2 connected</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">MCP2 connecté</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="HTReady" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Handheld unit connected</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Terminal portatif connecté</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="Op1KeyReady" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Direct Key 1 connected</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Direct Key 1 connecté</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="Op2KeyReady" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Direct Key 2 connected</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Direct Key 2 connecté</MultiLanguageText>
+      </Comment>
+    </Member>
+  </Section>
+</Sections></Interface>
+      <Name>LBP_typeConfigData</Name>
+      <Namespace />
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text>User data type for block LBP_ConfigData [DB7]</Text>
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="3" CompositionName="Items">
+            <AttributeList>
+              <Culture>fr-FR</Culture>
+              <Text>Type de données utilisateur pour bloc LBP_ConfigData [DB7]</Text>
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <MultilingualText ID="4" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="5" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text>Configuration parameter</Text>
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="6" CompositionName="Items">
+            <AttributeList>
+              <Culture>fr-FR</Culture>
+              <Text>Paramètre de configuration</Text>
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Types.PlcStruct>
+</Document>

@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V20" />
+  <SW.Types.PlcStruct ID="0">
+    <AttributeList>
+      <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+  <Section Name="None">
+    <Member Name="ledInfo" Datatype="DWord">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Led24..Led0</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Led24..Led0</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="scaleRed" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">when true, red scale LED is on</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">si vrai, la LED d'échelle rouge est allumée</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="scaleGreen" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">when true, green scale LED is on</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">si vrai, la LED d'échelle verte est allumée</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="scaleBlue" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">when true, blue scale LED ist on</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">si vrai, la LED d'échelle bleue est allumée</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="buttonRed" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">when true, red push button LED is on</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">si vrai, la LED rouge du bouton-poussoir est allumée</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="buttonGreen" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">when true, green push button LED is on</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">si vrai, la LED verte du bouton-poussoir est allumée</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="buttonBlue" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">when true, blue push button LED is on</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Si TRUE, la LED bleue du bouton-poussoir est allumée</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="reserved46" Datatype="Bool" />
+    <Member Name="reserved47" Datatype="Bool" />
+    <Member Name="vibrationPattern" Datatype="USInt">
+      <Comment>
+        <MultiLanguageText Lang="en-US">vibration pattern index to be used</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">indice du modèle de vibration à utiliser</MultiLanguageText>
+      </Comment>
+    </Member>
+  </Section>
+</Sections></Interface>
+      <Name>LBP_typePowerrideOutput</Name>
+      <Namespace />
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text>Output image of powerride</Text>
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="3" CompositionName="Items">
+            <AttributeList>
+              <Culture>fr-FR</Culture>
+              <Text>Image des sorties de Powerride</Text>
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <MultilingualText ID="4" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="5" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text>Powerride image</Text>
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="6" CompositionName="Items">
+            <AttributeList>
+              <Culture>fr-FR</Culture>
+              <Text>Image Powerride</Text>
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Types.PlcStruct>
+</Document>

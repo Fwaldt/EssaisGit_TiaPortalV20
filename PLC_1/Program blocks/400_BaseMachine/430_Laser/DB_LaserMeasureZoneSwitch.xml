@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V20" />
+  <SW.Blocks.InstanceDB ID="0">
+    <AttributeList>
+      <InstanceOfName>FB_LaserMeasureZoneSwitch</InstanceOfName>
+      <InstanceOfType>FB</InstanceOfType>
+      <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+  <Section Name="Input" />
+  <Section Name="Output" />
+  <Section Name="InOut" />
+  <Section Name="Static">
+    <Member Name="sMeasure1" Datatype="Bool" Remanence="Retain" />
+    <Member Name="sMeasure2" Datatype="Bool" Remanence="Retain" />
+    <Member Name="sLaser1" Datatype="Bool" Remanence="Retain" />
+    <Member Name="sLaser2" Datatype="Bool" Remanence="Retain" />
+    <Member Name="sLaserArea1Req" Datatype="Bool" Remanence="Retain" />
+    <Member Name="sLaserArea2Req" Datatype="Bool" Remanence="Retain" />
+    <Member Name="sCuttingArea1Req" Datatype="Bool" Remanence="Retain" />
+    <Member Name="sCuttingArea2Req" Datatype="Bool" Remanence="Retain" />
+    <Member Name="sCutBusy" Datatype="Bool" Remanence="Retain" />
+    <Member Name="sCut1" Datatype="Bool" Remanence="Retain" />
+    <Member Name="sCut2" Datatype="Bool" Remanence="Retain" />
+    <Member Name="sX1Pos" Datatype="Real" Remanence="Retain" />
+    <Member Name="sX2Pos" Datatype="Real" Remanence="Retain" />
+    <Member Name="sRT_GateCut1" Datatype="R_TRIG" Version="1.0" />
+    <Member Name="sRT_GateCut2" Datatype="R_TRIG" Version="1.0" />
+    <Member Name="sCondDegageAxe" Datatype="Bool" Remanence="Retain" />
+    <Member Name="sRefAxisActive" Datatype="Bool" Remanence="Retain" />
+  </Section>
+</Sections></Interface>
+      <Name>DB_LaserMeasureZoneSwitch</Name>
+      <Namespace />
+      <Number>91</Number>
+      <ProgrammingLanguage>DB</ProgrammingLanguage>
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="3" CompositionName="Items">
+            <AttributeList>
+              <Culture>fr-FR</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <MultilingualText ID="4" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="5" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="6" CompositionName="Items">
+            <AttributeList>
+              <Culture>fr-FR</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Blocks.InstanceDB>
+</Document>

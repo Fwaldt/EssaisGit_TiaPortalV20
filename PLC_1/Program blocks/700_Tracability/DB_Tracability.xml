@@ -1,0 +1,149 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V20" />
+  <SW.Blocks.InstanceDB ID="0">
+    <AttributeList>
+      <InstanceOfName>FB_Tracability</InstanceOfName>
+      <InstanceOfType>FB</InstanceOfType>
+      <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+  <Section Name="Input">
+    <Member Name="iCondTransfertExtInTo1" Datatype="Bool" />
+    <Member Name="iCondTransfertExtInTo2" Datatype="Bool" />
+    <Member Name="iCondTransfert1To3" Datatype="Bool" />
+    <Member Name="iCondTransfert2To3" Datatype="Bool" />
+    <Member Name="iCondTransfert3To4" Datatype="Bool" />
+    <Member Name="iCondTransfert4To5" Datatype="Bool" />
+    <Member Name="iCondTransfert5To6" Datatype="Bool" />
+    <Member Name="iCondTransfert5To7" Datatype="Bool" />
+    <Member Name="iCondTransfert6ToExtOut" Datatype="Bool" />
+    <Member Name="iCondTransfert7ToExtOut" Datatype="Bool" />
+  </Section>
+  <Section Name="Output" />
+  <Section Name="InOut" />
+  <Section Name="Static">
+    <Member Name="sRT_ConditionExtInTo1" Datatype="R_TRIG" Version="1.0" />
+    <Member Name="sRT_ConditionExtInTo2" Datatype="R_TRIG" Version="1.0">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="sRT_Condition1To3" Datatype="R_TRIG" Version="1.0">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="sRT_Condition2To3" Datatype="R_TRIG" Version="1.0">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="sRT_Condition3To4" Datatype="R_TRIG" Version="1.0">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="sRT_Condition4To5" Datatype="R_TRIG" Version="1.0">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="sRT_Condition5To6" Datatype="R_TRIG" Version="1.0">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="sRT_Condition5To7" Datatype="R_TRIG" Version="1.0">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="sRT_Condition6ToExtOut" Datatype="R_TRIG" Version="1.0">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="sRT_Condition7ToExtOut" Datatype="R_TRIG" Version="1.0">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="sIndex" Datatype="Int" />
+    <Member Name="sCheckTransfertExtInTo1" Datatype="Bool" />
+    <Member Name="sCheckTransfertExtInTo2" Datatype="Bool" />
+    <Member Name="sCheckTransfert1To3" Datatype="Bool" />
+    <Member Name="sCheckTransfert2To3" Datatype="Bool" />
+    <Member Name="sCheckTransfert3To4" Datatype="Bool" />
+    <Member Name="sCheckTransfert4To5" Datatype="Bool" />
+    <Member Name="sCheckTransfert5To6" Datatype="Bool" />
+    <Member Name="sCheckTransfert5To7" Datatype="Bool" />
+    <Member Name="sCheckTransfert6ToExtOut" Datatype="Bool" />
+    <Member Name="sCheckTransfert7ToExtOut" Datatype="Bool" />
+    <Member Name="sLaserTime" Datatype="&quot;FB_TimeCounter&quot;" />
+    <Member Name="sMemoPartDMC" Datatype="Array[0..19] of Byte">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="sIEC_CounterCycleLaser" Datatype="TONR_TIME" Version="1.0" Remanence="Retain">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="sIEC_CounterCycleTime" Datatype="TONR_TIME" Version="1.0" Remanence="Retain">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="sStartCounterCycleLaser" Datatype="Bool" Remanence="Retain">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="sStartCounterCycleTime" Datatype="Bool" Remanence="Retain">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+  </Section>
+</Sections></Interface>
+      <Name>DB_Tracability</Name>
+      <Namespace />
+      <Number>94</Number>
+      <ProgrammingLanguage>DB</ProgrammingLanguage>
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="3" CompositionName="Items">
+            <AttributeList>
+              <Culture>fr-FR</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <MultilingualText ID="4" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="5" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="6" CompositionName="Items">
+            <AttributeList>
+              <Culture>fr-FR</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Blocks.InstanceDB>
+</Document>

@@ -1,0 +1,192 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V20" />
+  <SW.Types.PlcStruct ID="0">
+    <AttributeList>
+      <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+  <Section Name="None">
+    <Member Name="optionalKey1" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">input image n+0 bit 0; KT-IN1</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Image des entrées n+0 bit 0 ; KT-IN1</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="optionalKey2" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">input image n+0 bit 1; KT-IN2</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Image des entrées n+0 bit 1 ; KT-IN2</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="optionalKey3" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">input image n+0 bit 2; KT-IN3</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Image des entrées n+0 bit 2 ; KT-IN3</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="optionalKey4" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">input image n+0 bit 3; KT-IN4</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Image des entrées n+0 bit 3 ; KT-IN4</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="optionalKey5" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">input image n+0 bit 4; KT-IN5</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Image des entrées n+0 bit 4 ; KT-IN5</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="optionalKey6" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">input image n+0 bit 5; KT-IN6</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Image des entrées n+0 bit 5 ; KT-IN6</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="optionalKey7" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">input image n+0 bit 6; KT-IN7</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Image des entrées n+0 bit 6 ; KT-IN7</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="optionalKey8" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">input image n+0 bit 7; KT-IN8</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Image des entrées n+0 bit 7 ; KT-IN8</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="optionalKey9" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">input image n+1 bit 0; KT-IN9</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Image des entrées n+1 bit 0 ; KT-IN9</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="optionalKey10" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">input image n+1 bit 1; KT-IN10</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Image des entrées n+1 bit 1 ; KT-IN10</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="optionalKey11" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">input image n+1 bit 2; KT-IN11</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Image des entrées n+1 bit 2 ; KT-IN11</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="optionalKey12" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">input image n+1 bit 3; KT-IN12</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Image des entrées n+1 bit 3 ; KT-IN12</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="optionalKey13" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">input image n+1 bit 4; KT-IN13</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Image des entrées n+1 bit 4 ; KT-IN13</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="optionalKey14" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">input image n+1 bit 5; KT-IN14</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Image des entrées n+1 bit 5 ; KT-IN14</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="optionalKey15" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">input image n+1 bit 6; KT-IN15</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Image des entrées n+1 bit 6 ; KT-IN15</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="optionalKey16" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">input image n+1 bit 7; KT-IN16</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Image des entrées n+1 bit 7 ; KT-IN16</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="spindleOvr" Datatype="USInt">
+      <Comment>
+        <MultiLanguageText Lang="en-US">input image byte n+2</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Image des entrées octet n+2</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="feedrateOvr" Datatype="USInt">
+      <Comment>
+        <MultiLanguageText Lang="en-US">input image byte n+3</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Image des entrées octet n+3</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="keySwitch0" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">input image n+4 bit 0</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Image des entrées n+4 bit 0</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="keySwitch1" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">input image n+4 bit 1</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Image des entrées n+4 bit 1</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="keySwitch2" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">input image n+4 bit 2</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Image des entrées n+4 bit 2</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="keySwitch3" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">input image n+4 bit 3</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Image des entrées n+4 bit 3</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="reserved44" Datatype="Bool" />
+    <Member Name="reserved45" Datatype="Bool" />
+    <Member Name="reserved46" Datatype="Bool" />
+    <Member Name="reserved47" Datatype="Bool" />
+    <Member Name="reserved50" Datatype="Bool" />
+    <Member Name="reserved51" Datatype="Bool" />
+    <Member Name="reserved52" Datatype="Bool" />
+    <Member Name="reserved53" Datatype="Bool" />
+    <Member Name="reserved54" Datatype="Bool" />
+    <Member Name="reserved55" Datatype="Bool" />
+    <Member Name="reserved56" Datatype="Bool" />
+    <Member Name="reserved57" Datatype="Bool" />
+  </Section>
+</Sections></Interface>
+      <Name>LBP_typeModularMcpBaseInput</Name>
+      <Namespace />
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text>Input image of base signals for modular MCP</Text>
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="3" CompositionName="Items">
+            <AttributeList>
+              <Culture>fr-FR</Culture>
+              <Text>Image des entrées des signaux de base pour MCP modulaires</Text>
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <MultilingualText ID="4" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="5" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text>Modular MCP image</Text>
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="6" CompositionName="Items">
+            <AttributeList>
+              <Culture>fr-FR</Culture>
+              <Text>Image MCP modulaire</Text>
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Types.PlcStruct>
+</Document>

@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V20" />
+  <SW.Blocks.InstanceDB ID="0">
+    <AttributeList>
+      <AutoNumber>false</AutoNumber>
+      <HeaderAuthor>SINUMERIK</HeaderAuthor>
+      <HeaderFamily>SINUMERIK_ONE</HeaderFamily>
+      <HeaderVersion>6.24</HeaderVersion>
+      <InstanceOfName>LBP_typeTMSpindle</InstanceOfName>
+      <InstanceOfType>UDT</InstanceOfType>
+      <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+  <Section Name="Static">
+    <Member Name="IFNo" Datatype="Array[1..16] of Bool" Remanence="Retain" />
+    <Member Name="Quit" Datatype="Array[1..16] of Bool" Remanence="Retain" />
+    <Member Name="TIF" Datatype="Array[1..16] of Struct" Remanence="Retain">
+      <Member Name="Comp" Datatype="Bool" />
+      <Member Name="Perform" Datatype="Bool" />
+      <Member Name="Prepare" Datatype="Bool" />
+      <Member Name="T0" Datatype="Bool" />
+      <Member Name="OldTinDBW42" Datatype="Bool" />
+      <Member Name="ManTIn" Datatype="Bool" />
+      <Member Name="ManTOut" Datatype="Bool" />
+      <Member Name="SpiTRSpi" Datatype="Bool" />
+      <Member Name="PerfStatusError" Datatype="Bool" />
+      <Member Name="n1_1" Datatype="Bool" />
+      <Member Name="n1_2" Datatype="Bool" />
+      <Member Name="n1_3" Datatype="Bool" />
+      <Member Name="n1_4" Datatype="Bool" />
+      <Member Name="n1_5" Datatype="Bool" />
+      <Member Name="n1_6" Datatype="Bool" />
+      <Member Name="DataInDB1072" Datatype="Bool" />
+      <Member Name="Channel" Datatype="Byte" />
+      <Member Name="TMNo" Datatype="Byte" />
+      <Member Name="VdiTcp0" Datatype="DInt" />
+      <Member Name="VdiTcp1" Datatype="DInt" />
+      <Member Name="VdiTcp2" Datatype="DInt" />
+      <Member Name="BufferIdent" Datatype="Int" />
+      <Member Name="BufferNo" Datatype="Int" />
+      <Member Name="SMag" Datatype="Int" />
+      <Member Name="SLoc" Datatype="Int" />
+      <Member Name="TMag" Datatype="Int" />
+      <Member Name="TLoc" Datatype="Int" />
+      <Member Name="LocType" Datatype="Int" />
+      <Member Name="SLeft" Datatype="Int" />
+      <Member Name="SRight" Datatype="Int" />
+      <Member Name="STop" Datatype="Int" />
+      <Member Name="SBottom" Datatype="Int" />
+      <Member Name="TInBuffer" Datatype="Bool" />
+      <Member Name="IgnoreDisabled" Datatype="Bool" />
+      <Member Name="Unload" Datatype="Bool" />
+      <Member Name="Load" Datatype="Bool" />
+      <Member Name="MasterTool" Datatype="Bool" />
+      <Member Name="n38_5" Datatype="Bool" />
+      <Member Name="Exchange_1to1" Datatype="Bool" />
+      <Member Name="HandTool" Datatype="Bool" />
+      <Member Name="Active" Datatype="Bool" />
+      <Member Name="Enabled" Datatype="Bool" />
+      <Member Name="Disabled" Datatype="Bool" />
+      <Member Name="Measured" Datatype="Bool" />
+      <Member Name="Prewarn" Datatype="Bool" />
+      <Member Name="Change" Datatype="Bool" />
+      <Member Name="FixedLoc" Datatype="Bool" />
+      <Member Name="Used" Datatype="Bool" />
+      <Member Name="TNo" Datatype="Int" />
+      <Member Name="OldTBufferNo" Datatype="Int" />
+      <Member Name="MyMag" Datatype="Int" />
+      <Member Name="MyPlace" Datatype="Int" />
+    </Member>
+  </Section>
+</Sections></Interface>
+      <MemoryLayout>Standard</MemoryLayout>
+      <Name>LBP_TMSpindle</Name>
+      <Namespace />
+      <Number>72</Number>
+      <ProgrammingLanguage>DB</ProgrammingLanguage>
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text>Interface between user program and tool management, contains signals for spindle as change position.</Text>
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="3" CompositionName="Items">
+            <AttributeList>
+              <Culture>fr-FR</Culture>
+              <Text>Interface entre programme utilisateur et gestion d'outil, contient des signaux pour broche en tant que position de changement.</Text>
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <MultilingualText ID="4" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="5" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text>Tool management</Text>
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="6" CompositionName="Items">
+            <AttributeList>
+              <Culture>fr-FR</Culture>
+              <Text>Gestion des outils</Text>
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Blocks.InstanceDB>
+</Document>

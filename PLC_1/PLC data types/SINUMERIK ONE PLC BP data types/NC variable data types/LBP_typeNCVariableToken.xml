@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V20" />
+  <SW.Types.PlcStruct ID="0">
+    <AttributeList>
+      <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+  <Section Name="None">
+    <Member Name="syntaxId" Datatype="Byte">
+      <Comment>
+        <MultiLanguageText Lang="en-US">syntax ID</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">ID de syntaxe</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="areaAndUnit" Datatype="Byte">
+      <Comment>
+        <MultiLanguageText Lang="en-US">area and unit</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">zone et unité</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="column" Datatype="Word">
+      <Comment>
+        <MultiLanguageText Lang="en-US">column</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">colonne</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="row" Datatype="Word">
+      <Comment>
+        <MultiLanguageText Lang="en-US">row</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">ligne</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="blockType" Datatype="Byte">
+      <Comment>
+        <MultiLanguageText Lang="en-US">block type</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">type de bloc</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="numberOfRows" Datatype="Byte">
+      <Comment>
+        <MultiLanguageText Lang="en-US">number of rows</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">nombre de lignes</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="dataTypeCode" Datatype="Byte">
+      <Comment>
+        <MultiLanguageText Lang="en-US">data type code</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">code de type de données</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="length" Datatype="Byte">
+      <Comment>
+        <MultiLanguageText Lang="en-US">length of data type</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">longueur de type de données</MultiLanguageText>
+      </Comment>
+    </Member>
+  </Section>
+</Sections></Interface>
+      <Name>LBP_typeNCVariableToken</Name>
+      <Namespace />
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text>User Data Type for LBP_ReadVar[FB2] and LBP_WriteVar[FB3] Input Parameter Addrx</Text>
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="3" CompositionName="Items">
+            <AttributeList>
+              <Culture>fr-FR</Culture>
+              <Text>Type de données utilisateur pour les paramètres d'entrée Addrx LBP_ReadVar[FB2] et LBP_WriteVar[FB3]</Text>
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <MultilingualText ID="4" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="5" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text>LBP_ReadVar and LBP_WriteVar Input Interface</Text>
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="6" CompositionName="Items">
+            <AttributeList>
+              <Culture>fr-FR</Culture>
+              <Text>Interface d'entrée LBP_ReadVar et LBP_WriteVar</Text>
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Types.PlcStruct>
+</Document>

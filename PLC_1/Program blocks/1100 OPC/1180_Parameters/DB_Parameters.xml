@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V20" />
+  <SW.Blocks.InstanceDB ID="0">
+    <AttributeList>
+      <InstanceOfName>FB_Parameters</InstanceOfName>
+      <InstanceOfType>FB</InstanceOfType>
+      <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+  <Section Name="Input" />
+  <Section Name="Output" />
+  <Section Name="InOut" />
+  <Section Name="Static">
+    <Member Name="Shuttle1Enable" Datatype="&quot;UDT_BoolEnable&quot;" />
+    <Member Name="Shuttle2Enable" Datatype="Bool" />
+    <Member Name="GazPressureManual" Datatype="Real" Remanence="Retain" />
+    <Member Name="CoolingVentilatorSetpoint" Datatype="Real" />
+    <Member Name="TemperatureCoolingSetpoint" Datatype="Real" />
+    <Member Name="BlowingSetpoint" Datatype="Real" />
+    <Member Name="sPresenceShuttle1UndrilledPart" Datatype="&quot;FB_HMI_PLC_Pos&quot;" />
+    <Member Name="sPresenceShuttle1UndrilledBw" Datatype="&quot;FB_HMI_PLC_Pos&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="sPresenceShuttle1DrilledPart" Datatype="&quot;FB_HMI_PLC_Pos&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="sPresenceShuttle1DrilledBw" Datatype="&quot;FB_HMI_PLC_Pos&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="sPresenceShuttle2UndrilledPart" Datatype="&quot;FB_HMI_PLC_Pos&quot;" />
+    <Member Name="sPresenceShuttle2UndrilledBw" Datatype="&quot;FB_HMI_PLC_Pos&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="sPresenceShuttle2DrilledPart" Datatype="&quot;FB_HMI_PLC_Pos&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="sPresenceShuttle2DrilledBw" Datatype="&quot;FB_HMI_PLC_Pos&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="sPresenceGripperUndrilledPart" Datatype="&quot;FB_HMI_PLC_Pos&quot;" />
+    <Member Name="sPresenceGripperUndrilledBw" Datatype="&quot;FB_HMI_PLC_Pos&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="sPresenceGripperDrilledPart" Datatype="&quot;FB_HMI_PLC_Pos&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="sPresenceGripperDrilledBw" Datatype="&quot;FB_HMI_PLC_Pos&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="sPresenceFixtureUndrilledPart" Datatype="&quot;FB_HMI_PLC_Pos&quot;" />
+    <Member Name="sPresenceFixtureUndrilledBw" Datatype="&quot;FB_HMI_PLC_Pos&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="sPresenceFixtureDrilledPart" Datatype="&quot;FB_HMI_PLC_Pos&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="sPresenceFixtureDrilledBw" Datatype="&quot;FB_HMI_PLC_Pos&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="sHmiChangeEnable" Datatype="Bool">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+  </Section>
+</Sections></Interface>
+      <Name>DB_Parameters</Name>
+      <Namespace />
+      <Number>109</Number>
+      <ProgrammingLanguage>DB</ProgrammingLanguage>
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="3" CompositionName="Items">
+            <AttributeList>
+              <Culture>fr-FR</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <MultilingualText ID="4" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="5" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="6" CompositionName="Items">
+            <AttributeList>
+              <Culture>fr-FR</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Blocks.InstanceDB>
+</Document>

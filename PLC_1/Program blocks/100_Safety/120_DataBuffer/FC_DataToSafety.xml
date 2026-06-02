@@ -1,0 +1,229 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V20" />
+  <SW.Blocks.FC ID="0">
+    <AttributeList>
+      <AutoNumber>false</AutoNumber>
+      <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+  <Section Name="Input" />
+  <Section Name="Output" />
+  <Section Name="InOut" />
+  <Section Name="Temp" />
+  <Section Name="Constant" />
+  <Section Name="Return">
+    <Member Name="Ret_Val" Datatype="Void" />
+  </Section>
+</Sections></Interface>
+      <MemoryLayout>Optimized</MemoryLayout>
+      <Name>FC_DataToSafety</Name>
+      <Namespace />
+      <Number>10120</Number>
+      <ProgrammingLanguage>SCL</ProgrammingLanguage>
+      <SetENOAutomatically>false</SetENOAutomatically>
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="3" CompositionName="Items">
+            <AttributeList>
+              <Culture>fr-FR</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <SW.Blocks.CompileUnit ID="4" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource><StructuredText xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/StructuredText/v4">
+  <Token Text="REGION" UId="21" />
+  <Blank UId="22" />
+  <Text UId="23">Transfert des datas dans le DB Buffer</Text>
+  <NewLine UId="24" />
+  <Blank Num="4" UId="25" />
+  <Access Scope="GlobalVariable" UId="26">
+    <Symbol UId="27">
+      <Component Name="DB_DataToSafety" UId="28">
+        <BooleanAttribute Name="HasQuotes" UId="29">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="30" />
+      <Component Name="OpenShutterButton" UId="31" />
+    </Symbol>
+  </Access>
+  <Blank UId="32" />
+  <Token Text=":=" UId="33" />
+  <Blank UId="34" />
+  <Access Scope="GlobalVariable" UId="35">
+    <Symbol UId="36">
+      <Component Name="DB_McpKeyboardSignals" UId="37">
+        <BooleanAttribute Name="HasQuotes" UId="38">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="39" />
+      <Component Name="sRemoteOpenShutter" UId="40" />
+      <Token Text="." UId="41" />
+      <Component Name="sKeySWStatus" UId="42" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="43" />
+  <NewLine UId="44" />
+  <Blank Num="4" UId="45" />
+  <Access Scope="GlobalVariable" UId="46">
+    <Symbol UId="47">
+      <Component Name="DB_DataToSafety" UId="48">
+        <BooleanAttribute Name="HasQuotes" UId="49">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="50" />
+      <Component Name="ResetEmergencyStop" UId="51" />
+    </Symbol>
+  </Access>
+  <Blank UId="52" />
+  <Token Text=":=" UId="53" />
+  <Blank UId="54" />
+  <Access Scope="GlobalVariable" UId="55">
+    <Symbol UId="56">
+      <Component Name="MCP1_In" UId="57">
+        <BooleanAttribute Name="HasQuotes" UId="58">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="59" />
+      <Component Name="reset" UId="60" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="61" />
+  <NewLine UId="62" />
+  <Blank Num="4" UId="63" />
+  <Access Scope="GlobalVariable" UId="64">
+    <Symbol UId="65">
+      <Component Name="DB_DataToSafety" UId="66">
+        <BooleanAttribute Name="HasQuotes" UId="67">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="68" />
+      <Component Name="JOG_Mod" UId="69" />
+    </Symbol>
+  </Access>
+  <Blank UId="70" />
+  <Token Text=":=" UId="71" />
+  <Blank UId="72" />
+  <Access Scope="GlobalVariable" UId="73">
+    <Symbol UId="74">
+      <Component Name="LBP_ModeGroup" UId="75">
+        <BooleanAttribute Name="HasQuotes" UId="76">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="77" />
+      <Component Name="E_JOG" UId="78" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="79" />
+  <NewLine UId="80" />
+  <Blank Num="4" UId="81" />
+  <Access Scope="GlobalVariable" UId="82">
+    <Symbol UId="83">
+      <Component Name="DB_DataToSafety" UId="84">
+        <BooleanAttribute Name="HasQuotes" UId="85">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="86" />
+      <Component Name="Activation_Axis" UId="87" />
+    </Symbol>
+  </Access>
+  <Blank UId="88" />
+  <Token Text=":=" UId="89" />
+  <Blank UId="90" />
+  <Access Scope="GlobalVariable" UId="91">
+    <Symbol UId="92">
+      <Component Name="DB_DigitalOutputs" UId="93">
+        <BooleanAttribute Name="HasQuotes" UId="94">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="95" />
+      <Component Name="sAxisActivation" UId="96" />
+      <Token Text="." UId="97" />
+      <Component Name="sSWStatus" UId="98" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="99" />
+  <NewLine UId="100" />
+  <Blank Num="4" UId="101" />
+  <Access Scope="GlobalVariable" UId="102">
+    <Symbol UId="103">
+      <Component Name="DB_DataToSafety" UId="104">
+        <BooleanAttribute Name="HasQuotes" UId="105">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="106" />
+      <Component Name="CloseShutter" UId="107" />
+    </Symbol>
+  </Access>
+  <Blank UId="108" />
+  <Token Text=":=" UId="109" />
+  <Blank UId="110" />
+  <Access Scope="GlobalVariable" UId="111">
+    <Symbol UId="112">
+      <Component Name="DB_DataToSafety" UId="113">
+        <BooleanAttribute Name="HasQuotes" UId="114">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="115" />
+      <Component Name="CloseShutter" UId="116" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="117" />
+  <NewLine UId="118" />
+  <Token Text="END_REGION" UId="119" />
+</StructuredText></NetworkSource>
+          <ProgrammingLanguage>SCL</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="5" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="6" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="7" CompositionName="Items">
+                <AttributeList>
+                  <Culture>fr-FR</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="8" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="9" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="A" CompositionName="Items">
+                <AttributeList>
+                  <Culture>fr-FR</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <MultilingualText ID="B" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="C" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="D" CompositionName="Items">
+            <AttributeList>
+              <Culture>fr-FR</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Blocks.FC>
+</Document>

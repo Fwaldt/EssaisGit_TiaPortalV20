@@ -1,0 +1,335 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V20" />
+  <SW.Blocks.FB ID="0">
+    <AttributeList>
+      <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+  <Section Name="Input" />
+  <Section Name="Output" />
+  <Section Name="InOut" />
+  <Section Name="Static">
+    <Member Name="sDateAndTime" Datatype="DTL" Version="1.0" />
+    <Member Name="sCurrentDT" Datatype="Struct">
+      <Member Name="sYear" Datatype="UInt" />
+      <Member Name="sMonth" Datatype="USInt" />
+      <Member Name="sDay" Datatype="USInt" />
+      <Member Name="sHour" Datatype="USInt" />
+      <Member Name="sMinute" Datatype="USInt" />
+      <Member Name="sSecond" Datatype="USInt" />
+      <Member Name="sNanoSecond" Datatype="UDInt" />
+    </Member>
+  </Section>
+  <Section Name="Temp">
+    <Member Name="tRetVal" Datatype="Int" />
+  </Section>
+  <Section Name="Constant" />
+</Sections></Interface>
+      <MemoryLayout>Optimized</MemoryLayout>
+      <MemoryReserve>100</MemoryReserve>
+      <Name>FB_ReadDateAndTime</Name>
+      <Namespace />
+      <Number>46</Number>
+      <ProgrammingLanguage>SCL</ProgrammingLanguage>
+      <SetENOAutomatically>false</SetENOAutomatically>
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="3" CompositionName="Items">
+            <AttributeList>
+              <Culture>fr-FR</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <SW.Blocks.CompileUnit ID="4" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource><StructuredText xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/StructuredText/v4">
+  <Token Text="REGION" UId="21" />
+  <Blank UId="22" />
+  <Text UId="23">Description header </Text>
+  <NewLine UId="24" />
+  <Blank Num="4" UId="25" />
+  <LineComment UId="26">
+    <Text UId="27">==================================================================================</Text>
+  </LineComment>
+  <NewLine UId="28" />
+  <Blank Num="4" UId="29" />
+  <LineComment UId="30">
+    <Text UId="31"> POSALUX Swiss SA / (C) Copyright 2025</Text>
+  </LineComment>
+  <NewLine UId="32" />
+  <Blank Num="4" UId="33" />
+  <LineComment UId="34">
+    <Text UId="35">----------------------------------------------------------------------------------</Text>
+  </LineComment>
+  <NewLine UId="36" />
+  <Blank Num="4" UId="37" />
+  <LineComment UId="38">
+    <Text UId="39"> Title: FB_ReadDateAndTime</Text>
+  </LineComment>
+  <NewLine UId="40" />
+  <Blank Num="4" UId="41" />
+  <LineComment UId="42">
+    <Text UId="43"> Comment/Function: Reading the date and time of the PLC</Text>
+  </LineComment>
+  <NewLine UId="44" />
+  <Blank Num="4" UId="45" />
+  <LineComment UId="46">
+    <Text UId="47"> Author: Fabien WALDT</Text>
+  </LineComment>
+  <NewLine UId="48" />
+  <Blank Num="4" UId="49" />
+  <LineComment UId="50">
+    <Text UId="51"> Engineering: TIA Portal v20</Text>
+  </LineComment>
+  <NewLine UId="52" />
+  <Blank Num="4" UId="53" />
+  <LineComment UId="54">
+    <Text UId="55">----------------------------------------------------------------------------------</Text>
+  </LineComment>
+  <NewLine UId="56" />
+  <Blank Num="4" UId="57" />
+  <LineComment UId="58">
+    <Text UId="59"> Change log table:</Text>
+  </LineComment>
+  <NewLine UId="60" />
+  <Blank Num="4" UId="61" />
+  <LineComment UId="62">
+    <Text UId="63"> Version  | Date     | Expert in charge | Changes applied</Text>
+  </LineComment>
+  <NewLine UId="64" />
+  <Blank Num="4" UId="65" />
+  <LineComment UId="66">
+    <Text UId="67"> ---------|----------|------------------|-----------------------------------------</Text>
+  </LineComment>
+  <NewLine UId="68" />
+  <Blank Num="4" UId="69" />
+  <LineComment UId="70">
+    <Text UId="71"> 00.00.01 | 20251017 | WFA              | First released version</Text>
+  </LineComment>
+  <NewLine UId="72" />
+  <Blank Num="4" UId="73" />
+  <LineComment UId="74">
+    <Text UId="75"> =================================================================================</Text>
+  </LineComment>
+  <NewLine UId="76" />
+  <Token Text="END_REGION" UId="77" />
+  <NewLine Num="2" UId="78" />
+  <Token Text="REGION" UId="79" />
+  <Blank UId="80" />
+  <Text UId="81">Lecture Date et Heure</Text>
+  <NewLine UId="82" />
+  <Blank Num="4" UId="83" />
+  <Access Scope="LocalVariable" UId="84">
+    <Symbol UId="85">
+      <Component Name="tRetVal" UId="86" />
+    </Symbol>
+  </Access>
+  <Blank UId="87" />
+  <Token Text=":=" UId="88" />
+  <Access Scope="Call" UId="89">
+    <Instruction Name="RD_SYS_T" UId="90">
+      <Token Text="(" UId="91" />
+      <Parameter Name="OUT" UId="92">
+        <Blank UId="93" />
+        <Token Text="=&gt;" UId="94" />
+        <Blank UId="95" />
+        <Access Scope="LocalVariable" UId="96">
+          <Symbol UId="97">
+            <Component Name="sDateAndTime" UId="98" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text=")" UId="100" />
+    </Instruction>
+  </Access>
+  <Token Text=";" UId="101" />
+  <NewLine UId="102" />
+  <Blank Num="4" UId="103" />
+  <Access Scope="LocalVariable" UId="104">
+    <Symbol UId="105">
+      <Component Name="sCurrentDT" UId="106" />
+      <Token Text="." UId="107" />
+      <Component Name="sYear" UId="108" />
+    </Symbol>
+  </Access>
+  <Blank Num="7" UId="109" />
+  <Token Text=":=" UId="110" />
+  <Blank UId="111" />
+  <Access Scope="LocalVariable" UId="112">
+    <Symbol UId="113">
+      <Component Name="sDateAndTime" UId="114" />
+      <Token Text="." UId="115" />
+      <Component Name="YEAR" UId="116" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="117" />
+  <NewLine UId="118" />
+  <Blank Num="4" UId="119" />
+  <Access Scope="LocalVariable" UId="120">
+    <Symbol UId="121">
+      <Component Name="sCurrentDT" UId="122" />
+      <Token Text="." UId="123" />
+      <Component Name="sMonth" UId="124" />
+    </Symbol>
+  </Access>
+  <Blank Num="6" UId="125" />
+  <Token Text=":=" UId="126" />
+  <Blank UId="127" />
+  <Access Scope="LocalVariable" UId="128">
+    <Symbol UId="129">
+      <Component Name="sDateAndTime" UId="130" />
+      <Token Text="." UId="131" />
+      <Component Name="MONTH" UId="132" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="133" />
+  <NewLine UId="134" />
+  <Blank Num="4" UId="135" />
+  <Access Scope="LocalVariable" UId="136">
+    <Symbol UId="137">
+      <Component Name="sCurrentDT" UId="138" />
+      <Token Text="." UId="139" />
+      <Component Name="sHour" UId="140">
+        <BooleanAttribute Name="HasHash" UId="141">true</BooleanAttribute>
+      </Component>
+    </Symbol>
+  </Access>
+  <Blank Num="6" UId="142" />
+  <Token Text=":=" UId="143" />
+  <Blank UId="144" />
+  <Access Scope="LocalVariable" UId="145">
+    <Symbol UId="146">
+      <Component Name="sDateAndTime" UId="147" />
+      <Token Text="." UId="148" />
+      <Component Name="HOUR" UId="149" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="150" />
+  <NewLine UId="151" />
+  <Blank Num="4" UId="152" />
+  <Access Scope="LocalVariable" UId="153">
+    <Symbol UId="154">
+      <Component Name="sCurrentDT" UId="155" />
+      <Token Text="." UId="156" />
+      <Component Name="sMinute" UId="157" />
+    </Symbol>
+  </Access>
+  <Blank Num="5" UId="158" />
+  <Token Text=":=" UId="159" />
+  <Blank UId="160" />
+  <Access Scope="LocalVariable" UId="161">
+    <Symbol UId="162">
+      <Component Name="sDateAndTime" UId="163" />
+      <Token Text="." UId="164" />
+      <Component Name="MINUTE" UId="165" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="166" />
+  <NewLine UId="167" />
+  <Blank Num="4" UId="168" />
+  <Access Scope="LocalVariable" UId="169">
+    <Symbol UId="170">
+      <Component Name="sCurrentDT" UId="171" />
+      <Token Text="." UId="172" />
+      <Component Name="sSecond" UId="173" />
+    </Symbol>
+  </Access>
+  <Blank Num="5" UId="174" />
+  <Token Text=":=" UId="175" />
+  <Blank UId="176" />
+  <Access Scope="LocalVariable" UId="177">
+    <Symbol UId="178">
+      <Component Name="sDateAndTime" UId="179" />
+      <Token Text="." UId="180" />
+      <Component Name="SECOND" UId="181" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="182" />
+  <NewLine UId="183" />
+  <Blank Num="4" UId="184" />
+  <Access Scope="LocalVariable" UId="185">
+    <Symbol UId="186">
+      <Component Name="sCurrentDT" UId="187" />
+      <Token Text="." UId="188" />
+      <Component Name="sNanoSecond" UId="189" />
+    </Symbol>
+  </Access>
+  <Blank UId="190" />
+  <Token Text=":=" UId="191" />
+  <Blank UId="192" />
+  <Access Scope="LocalVariable" UId="193">
+    <Symbol UId="194">
+      <Component Name="sDateAndTime" UId="195" />
+      <Token Text="." UId="196" />
+      <Component Name="NANOSECOND" UId="197" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="198" />
+  <NewLine UId="199" />
+  <Token Text="END_REGION" UId="200" />
+</StructuredText></NetworkSource>
+          <ProgrammingLanguage>SCL</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="5" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="6" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="7" CompositionName="Items">
+                <AttributeList>
+                  <Culture>fr-FR</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="8" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="9" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="A" CompositionName="Items">
+                <AttributeList>
+                  <Culture>fr-FR</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <MultilingualText ID="B" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="C" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="D" CompositionName="Items">
+            <AttributeList>
+              <Culture>fr-FR</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Blocks.FB>
+</Document>

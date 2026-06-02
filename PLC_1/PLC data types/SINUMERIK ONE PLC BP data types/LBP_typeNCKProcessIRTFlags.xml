@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V20" />
+  <SW.Types.PlcStruct ID="0">
+    <AttributeList>
+      <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+  <Section Name="None">
+    <Member Name="IRFromNck" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Interrupt from NCK</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Interruption en provenance du NCK</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="TM" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Tool change</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Changement d'outil</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="InPosition" Datatype="Array[1..31] of Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Axis or spindle position reached</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Position d'axe ou de broche atteinte</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="AuxFunction" Datatype="Array[1..10] of Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Auxiliary function available</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">Fonction auxiliaire disponible</MultiLanguageText>
+      </Comment>
+    </Member>
+  </Section>
+</Sections></Interface>
+      <Name>LBP_typeNCKProcessIRTFlags</Name>
+      <Namespace />
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text>User data type for LBP_NCKProcessIRT[FC3] Output Parameters</Text>
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="3" CompositionName="Items">
+            <AttributeList>
+              <Culture>fr-FR</Culture>
+              <Text>Type de données utilisateur pour LBP_NCKProcessIRT[FC3] Paramètres de sortie</Text>
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <MultilingualText ID="4" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="5" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text>LBP_NCKProcessIRT Output Interface</Text>
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="6" CompositionName="Items">
+            <AttributeList>
+              <Culture>fr-FR</Culture>
+              <Text>LBP_NCKProcessIRT Interface sortie</Text>
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Types.PlcStruct>
+</Document>

@@ -1,0 +1,573 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V20" />
+  <SW.Blocks.FB ID="0">
+    <AttributeList>
+      <AutoNumber>false</AutoNumber>
+      <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+  <Section Name="Input" />
+  <Section Name="Output" />
+  <Section Name="InOut">
+    <Member Name="ioOPC" Datatype="&quot;UDT_OPC_Button&quot;" />
+  </Section>
+  <Section Name="Static">
+    <Member Name="sKeySWStatus" Datatype="Bool" />
+    <Member Name="sKeySWToggleStatus" Datatype="Bool" />
+    <Member Name="sKeyDisable" Datatype="Bool" />
+    <Member Name="sKeySWPositiveFront" Datatype="Bool" />
+    <Member Name="sKeySWNegativeFront" Datatype="Bool" />
+    <Member Name="sKeySWTogglePositiveFront" Datatype="Bool" />
+    <Member Name="sKeySWToggleNegativeFront" Datatype="Bool" />
+    <Member Name="sLedSWStatus" Datatype="Bool" />
+    <Member Name="sLedSWStatusBlink" Datatype="Bool" />
+    <Member Name="sRT_KeySWPositiveFront" Datatype="R_TRIG" Version="1.0">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="sFT_KeySWNegativeFront" Datatype="F_TRIG" Version="1.0">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="sRT_KeySWTogglePositiveFront" Datatype="R_TRIG" Version="1.0">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="sFT_KeySWToggleNegativeFront" Datatype="F_TRIG" Version="1.0">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+  </Section>
+  <Section Name="Temp" />
+  <Section Name="Constant" />
+</Sections></Interface>
+      <MemoryLayout>Optimized</MemoryLayout>
+      <MemoryReserve>100</MemoryReserve>
+      <Name>FB_HmiKeysSignals</Name>
+      <Namespace />
+      <Number>812</Number>
+      <ProgrammingLanguage>SCL</ProgrammingLanguage>
+      <SetENOAutomatically>false</SetENOAutomatically>
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="3" CompositionName="Items">
+            <AttributeList>
+              <Culture>fr-FR</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <SW.Blocks.CompileUnit ID="4" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource><StructuredText xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/StructuredText/v4">
+  <Token Text="REGION" UId="21" />
+  <Blank UId="22" />
+  <Text UId="23">Description header </Text>
+  <NewLine UId="24" />
+  <Blank Num="4" UId="25" />
+  <LineComment UId="26">
+    <Text UId="27">==================================================================================</Text>
+  </LineComment>
+  <NewLine UId="28" />
+  <Blank Num="4" UId="29" />
+  <LineComment UId="30">
+    <Text UId="31"> POSALUX Swiss SA / (C) Copyright 2025</Text>
+  </LineComment>
+  <NewLine UId="32" />
+  <Blank Num="4" UId="33" />
+  <LineComment UId="34">
+    <Text UId="35">----------------------------------------------------------------------------------</Text>
+  </LineComment>
+  <NewLine UId="36" />
+  <Blank Num="4" UId="37" />
+  <LineComment UId="38">
+    <Text UId="39"> Title: FB_HmiKeysSignals </Text>
+  </LineComment>
+  <NewLine UId="40" />
+  <Blank Num="4" UId="41" />
+  <LineComment UId="42">
+    <Text UId="43"> Comment/Function: </Text>
+  </LineComment>
+  <NewLine UId="44" />
+  <Blank Num="4" UId="45" />
+  <LineComment UId="46">
+    <Text UId="47" />
+  </LineComment>
+  <NewLine UId="48" />
+  <Blank Num="4" UId="49" />
+  <LineComment UId="50">
+    <Text UId="51"> Author: Fabien Waldt</Text>
+  </LineComment>
+  <NewLine UId="52" />
+  <Blank Num="4" UId="53" />
+  <LineComment UId="54">
+    <Text UId="55"> Engineering: TIA Portal v19</Text>
+  </LineComment>
+  <NewLine UId="56" />
+  <Blank Num="4" UId="57" />
+  <LineComment UId="58">
+    <Text UId="59">----------------------------------------------------------------------------------</Text>
+  </LineComment>
+  <NewLine UId="60" />
+  <Blank Num="4" UId="61" />
+  <LineComment UId="62">
+    <Text UId="63"> Change log table:</Text>
+  </LineComment>
+  <NewLine UId="64" />
+  <Blank Num="4" UId="65" />
+  <LineComment UId="66">
+    <Text UId="67"> Version  | Date     | Expert in charge | Changes applied</Text>
+  </LineComment>
+  <NewLine UId="68" />
+  <Blank Num="4" UId="69" />
+  <LineComment UId="70">
+    <Text UId="71"> ---------|----------|------------------|------------------------------------</Text>
+  </LineComment>
+  <NewLine UId="72" />
+  <Blank Num="4" UId="73" />
+  <LineComment UId="74">
+    <Text UId="75"> 00.00.01 | 20250911 | WFA              | First released version</Text>
+  </LineComment>
+  <NewLine UId="76" />
+  <Blank Num="4" UId="77" />
+  <LineComment UId="78">
+    <Text UId="79"> ==================================================================================</Text>
+  </LineComment>
+  <NewLine UId="80" />
+  <Token Text="END_REGION" UId="81" />
+  <NewLine Num="2" UId="82" />
+  <Token Text="REGION" UId="83" />
+  <Blank UId="84" />
+  <Text UId="85">Key Enable</Text>
+  <NewLine UId="86" />
+  <Blank Num="4" UId="87" />
+  <Access Scope="LocalVariable" UId="88">
+    <Symbol UId="89">
+      <Component Name="ioOPC" UId="90" />
+      <Token Text="." UId="91" />
+      <Component Name="bEnable" UId="92" />
+    </Symbol>
+  </Access>
+  <Blank UId="93" />
+  <Token Text=":=" UId="94" />
+  <Blank UId="95" />
+  <Token Text="NOT" UId="96" />
+  <Blank UId="97" />
+  <Access Scope="LocalVariable" UId="98">
+    <Symbol UId="99">
+      <Component Name="sKeyDisable" UId="100" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="101" />
+  <NewLine UId="102" />
+  <Token Text="END_REGION" UId="103" />
+  <NewLine Num="2" UId="104" />
+  <Token Text="REGION" UId="105" />
+  <Blank UId="106" />
+  <Text UId="107">Inputs keys</Text>
+  <NewLine UId="108" />
+  <Blank Num="4" UId="109" />
+  <LineComment UId="110">
+    <Text UId="111"> Management of the software input</Text>
+  </LineComment>
+  <NewLine UId="112" />
+  <Blank Num="4" UId="113" />
+  <Token Text="IF" UId="114" />
+  <Blank UId="115" />
+  <Token Text="NOT" UId="116" />
+  <Blank UId="117" />
+  <Access Scope="LocalVariable" UId="118">
+    <Symbol UId="119">
+      <Component Name="sKeyDisable" UId="120" />
+    </Symbol>
+  </Access>
+  <Blank UId="121" />
+  <Token Text="THEN" UId="122" />
+  <NewLine UId="123" />
+  <Blank Num="8" UId="124" />
+  <Access Scope="LocalVariable" UId="125">
+    <Symbol UId="126">
+      <Component Name="sKeySWStatus" UId="127" />
+    </Symbol>
+  </Access>
+  <Blank UId="128" />
+  <Token Text=":=" UId="129" />
+  <Blank UId="130" />
+  <Access Scope="LocalVariable" UId="131">
+    <Symbol UId="132">
+      <Component Name="ioOPC" UId="133" />
+      <Token Text="." UId="134" />
+      <Component Name="bClick" UId="135" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="136" />
+  <NewLine UId="137" />
+  <Blank Num="4" UId="138" />
+  <LineComment UId="139">
+    <Text UId="140"> ELSE</Text>
+  </LineComment>
+  <NewLine UId="141" />
+  <Blank Num="4" UId="142" />
+  <LineComment UId="143">
+    <Text UId="144">     #sKeySWStatus := FALSE;</Text>
+  </LineComment>
+  <NewLine UId="145" />
+  <Blank Num="4" UId="146" />
+  <LineComment UId="147">
+    <Text UId="148">     #sKeySWToggleStatus := FALSE;</Text>
+  </LineComment>
+  <NewLine UId="149" />
+  <Blank Num="4" UId="150" />
+  <Token Text="END_IF" UId="151" />
+  <Token Text=";" UId="152" />
+  <NewLine UId="153" />
+  <Blank Num="4" UId="154" />
+  <NewLine UId="155" />
+  <Blank Num="4" UId="156" />
+  <LineComment UId="157">
+    <Text UId="158"> Reset KeyOPCStatus (bClick from HMI)</Text>
+  </LineComment>
+  <NewLine UId="159" />
+  <Blank Num="4" UId="160" />
+  <Access Scope="LocalVariable" UId="161">
+    <Symbol UId="162">
+      <Component Name="ioOPC" UId="163" />
+      <Token Text="." UId="164" />
+      <Component Name="bClick" UId="165" />
+    </Symbol>
+  </Access>
+  <Blank UId="166" />
+  <Token Text=":=" UId="167" />
+  <Blank UId="168" />
+  <Access Scope="LiteralConstant" UId="169">
+    <Constant UId="170">
+      <ConstantValue UId="172">FALSE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="173" />
+  <NewLine UId="174" />
+  <Blank Num="4" UId="175" />
+  <NewLine UId="176" />
+  <Blank Num="4" UId="177" />
+  <LineComment UId="178">
+    <Text UId="179"> Rising/falling edge detection when pressing the button</Text>
+  </LineComment>
+  <NewLine UId="180" />
+  <Blank Num="4" UId="181" />
+  <Access Scope="LocalVariable" UId="182">
+    <Symbol UId="183">
+      <Component Name="sRT_KeySWPositiveFront" UId="184" />
+    </Symbol>
+  </Access>
+  <Access Scope="Call" UId="185">
+    <Instruction UId="186">
+      <Token Text="(" UId="187" />
+      <Parameter Name="CLK" UId="188">
+        <Blank UId="189" />
+        <Token Text=":=" UId="190" />
+        <Blank UId="191" />
+        <Access Scope="LocalVariable" UId="192">
+          <Symbol UId="193">
+            <Component Name="sKeySWStatus" UId="194" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="195" />
+      <NewLine UId="196" />
+      <Blank Num="27" UId="197" />
+      <Parameter Name="Q" UId="198">
+        <Blank UId="199" />
+        <Token Text="=&gt;" UId="200" />
+        <Blank UId="201" />
+        <Access Scope="LocalVariable" UId="202">
+          <Symbol UId="203">
+            <Component Name="sKeySWPositiveFront" UId="204" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text=")" UId="205" />
+    </Instruction>
+  </Access>
+  <Token Text=";" UId="206" />
+  <NewLine UId="207" />
+  <Blank Num="4" UId="208" />
+  <NewLine UId="209" />
+  <Blank Num="4" UId="210" />
+  <Access Scope="LocalVariable" UId="211">
+    <Symbol UId="212">
+      <Component Name="sFT_KeySWNegativeFront" UId="213" />
+    </Symbol>
+  </Access>
+  <Access Scope="Call" UId="214">
+    <Instruction UId="215">
+      <Token Text="(" UId="216" />
+      <Parameter Name="CLK" UId="217">
+        <Blank UId="218" />
+        <Token Text=":=" UId="219" />
+        <Blank UId="220" />
+        <Access Scope="LocalVariable" UId="221">
+          <Symbol UId="222">
+            <Component Name="sKeySWStatus" UId="223" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="224" />
+      <NewLine UId="225" />
+      <Blank Num="27" UId="226" />
+      <Parameter Name="Q" UId="227">
+        <Blank UId="228" />
+        <Token Text="=&gt;" UId="229" />
+        <Blank UId="230" />
+        <Access Scope="LocalVariable" UId="231">
+          <Symbol UId="232">
+            <Component Name="sKeySWNegativeFront" UId="233" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text=")" UId="234" />
+    </Instruction>
+  </Access>
+  <Token Text=";" UId="235" />
+  <NewLine UId="236" />
+  <Blank Num="4" UId="237" />
+  <NewLine UId="238" />
+  <Blank Num="4" UId="239" />
+  <LineComment UId="240">
+    <Text UId="241"> Toggle state update</Text>
+  </LineComment>
+  <NewLine UId="242" />
+  <Blank Num="4" UId="243" />
+  <Token Text="IF" UId="244" />
+  <Blank UId="245" />
+  <Access Scope="LocalVariable" UId="246">
+    <Symbol UId="247">
+      <Component Name="sKeySWPositiveFront" UId="248" />
+    </Symbol>
+  </Access>
+  <Blank UId="249" />
+  <Token Text="THEN" UId="250" />
+  <NewLine UId="251" />
+  <Blank Num="8" UId="252" />
+  <Access Scope="LocalVariable" UId="253">
+    <Symbol UId="254">
+      <Component Name="sKeySWToggleStatus" UId="255" />
+    </Symbol>
+  </Access>
+  <Blank UId="256" />
+  <Token Text=":=" UId="257" />
+  <Blank UId="258" />
+  <Token Text="NOT" UId="259" />
+  <Blank UId="260" />
+  <Access Scope="LocalVariable" UId="261">
+    <Symbol UId="262">
+      <Component Name="sKeySWToggleStatus" UId="263" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="264" />
+  <NewLine UId="265" />
+  <Blank Num="4" UId="266" />
+  <Token Text="END_IF" UId="267" />
+  <Token Text=";" UId="268" />
+  <NewLine UId="269" />
+  <Blank Num="4" UId="270" />
+  <NewLine UId="271" />
+  <Blank Num="4" UId="272" />
+  <LineComment UId="273">
+    <Text UId="274"> Rising/falling edge detection of the toggle state</Text>
+  </LineComment>
+  <NewLine UId="275" />
+  <Blank Num="4" UId="276" />
+  <Access Scope="LocalVariable" UId="277">
+    <Symbol UId="278">
+      <Component Name="sRT_KeySWTogglePositiveFront" UId="279" />
+    </Symbol>
+  </Access>
+  <Access Scope="Call" UId="280">
+    <Instruction UId="281">
+      <Token Text="(" UId="282" />
+      <Parameter Name="CLK" UId="283">
+        <Blank UId="284" />
+        <Token Text=":=" UId="285" />
+        <Blank UId="286" />
+        <Access Scope="LocalVariable" UId="287">
+          <Symbol UId="288">
+            <Component Name="sKeySWToggleStatus" UId="289" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="290" />
+      <NewLine UId="291" />
+      <Blank Num="33" UId="292" />
+      <Parameter Name="Q" UId="293">
+        <Blank UId="294" />
+        <Token Text="=&gt;" UId="295" />
+        <Blank UId="296" />
+        <Access Scope="LocalVariable" UId="297">
+          <Symbol UId="298">
+            <Component Name="sKeySWTogglePositiveFront" UId="299" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text=")" UId="300" />
+    </Instruction>
+  </Access>
+  <Token Text=";" UId="301" />
+  <NewLine UId="302" />
+  <Blank Num="4" UId="303" />
+  <NewLine UId="304" />
+  <Blank Num="4" UId="305" />
+  <Access Scope="LocalVariable" UId="306">
+    <Symbol UId="307">
+      <Component Name="sFT_KeySWToggleNegativeFront" UId="308" />
+    </Symbol>
+  </Access>
+  <Access Scope="Call" UId="309">
+    <Instruction UId="310">
+      <Token Text="(" UId="311" />
+      <Parameter Name="CLK" UId="312">
+        <Blank UId="313" />
+        <Token Text=":=" UId="314" />
+        <Blank UId="315" />
+        <Access Scope="LocalVariable" UId="316">
+          <Symbol UId="317">
+            <Component Name="sKeySWToggleStatus" UId="318" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="319" />
+      <NewLine UId="320" />
+      <Blank Num="33" UId="321" />
+      <Parameter Name="Q" UId="322">
+        <Blank UId="323" />
+        <Token Text="=&gt;" UId="324" />
+        <Blank UId="325" />
+        <Access Scope="LocalVariable" UId="326">
+          <Symbol UId="327">
+            <Component Name="sKeySWToggleNegativeFront" UId="328" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text=")" UId="329" />
+    </Instruction>
+  </Access>
+  <Token Text=";" UId="330" />
+  <NewLine UId="331" />
+  <Token Text="END_REGION" UId="332" />
+  <NewLine Num="2" UId="333" />
+  <Token Text="REGION" UId="334" />
+  <Blank UId="335" />
+  <Text UId="336">Outputs LED   </Text>
+  <NewLine UId="337" />
+  <Blank Num="4" UId="338" />
+  <Access Scope="LocalVariable" UId="339">
+    <Symbol UId="340">
+      <Component Name="ioOPC" UId="341" />
+      <Token Text="." UId="342" />
+      <Component Name="bIsPressed" UId="343" />
+    </Symbol>
+  </Access>
+  <Blank UId="344" />
+  <Token Text=":=" UId="345" />
+  <Blank UId="346" />
+  <Access Scope="LocalVariable" UId="347">
+    <Symbol UId="348">
+      <Component Name="sLedSWStatus" UId="349" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="350" />
+  <NewLine UId="351" />
+  <Blank Num="4" UId="352" />
+  <NewLine UId="353" />
+  <Blank Num="4" UId="354" />
+  <LineComment UId="355">
+    <Text UId="356"> Blink Status</Text>
+  </LineComment>
+  <NewLine UId="357" />
+  <Blank Num="4" UId="358" />
+  <Access Scope="LocalVariable" UId="359">
+    <Symbol UId="360">
+      <Component Name="ioOPC" UId="361" />
+      <Token Text="." UId="362" />
+      <Component Name="bBlink" UId="363" />
+    </Symbol>
+  </Access>
+  <Blank UId="364" />
+  <Token Text=":=" UId="365" />
+  <Blank UId="366" />
+  <Access Scope="LocalVariable" UId="367">
+    <Symbol UId="368">
+      <Component Name="sLedSWStatusBlink" UId="369" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="370" />
+  <NewLine UId="371" />
+  <Token Text="END_REGION" UId="372" />
+</StructuredText></NetworkSource>
+          <ProgrammingLanguage>SCL</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="5" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="6" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="7" CompositionName="Items">
+                <AttributeList>
+                  <Culture>fr-FR</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="8" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="9" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="A" CompositionName="Items">
+                <AttributeList>
+                  <Culture>fr-FR</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <MultilingualText ID="B" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="C" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="D" CompositionName="Items">
+            <AttributeList>
+              <Culture>fr-FR</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Blocks.FB>
+</Document>

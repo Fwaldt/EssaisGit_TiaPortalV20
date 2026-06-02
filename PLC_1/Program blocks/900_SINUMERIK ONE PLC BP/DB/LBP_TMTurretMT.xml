@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V20" />
+  <SW.Blocks.InstanceDB ID="0">
+    <AttributeList>
+      <AutoNumber>false</AutoNumber>
+      <HeaderAuthor>SINUMERIK</HeaderAuthor>
+      <HeaderFamily>SINUMERIK_ONE</HeaderFamily>
+      <HeaderVersion>6.24</HeaderVersion>
+      <InstanceOfName>LBP_typeTMTurretMT</InstanceOfName>
+      <InstanceOfType>UDT</InstanceOfType>
+      <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+  <Section Name="Static">
+    <Member Name="MTIF" Datatype="Array[1..16] of Struct" Remanence="Retain">
+      <Member Name="DistanceCoding" Datatype="Int" />
+      <Member Name="Places" Datatype="Int" />
+      <Member Name="Distance" Datatype="Real" />
+      <Member Name="NewMTNo" Datatype="Int" />
+      <Member Name="NewPlace" Datatype="Int" />
+      <Member Name="OldMTNo" Datatype="Int" />
+      <Member Name="OldPlace" Datatype="Int" />
+      <Member Name="LocType" Datatype="Int" />
+      <Member Name="SLeft" Datatype="Int" />
+      <Member Name="SRight" Datatype="Int" />
+      <Member Name="STop" Datatype="Int" />
+      <Member Name="SBottom" Datatype="Int" />
+      <Member Name="TInBuffer" Datatype="Bool" />
+      <Member Name="IgnoreDisabled" Datatype="Bool" />
+      <Member Name="Unload" Datatype="Bool" />
+      <Member Name="Load" Datatype="Bool" />
+      <Member Name="MasterTool" Datatype="Bool" />
+      <Member Name="n26_5" Datatype="Bool" />
+      <Member Name="n26_6" Datatype="Bool" />
+      <Member Name="HandTool" Datatype="Bool" />
+      <Member Name="Active" Datatype="Bool" />
+      <Member Name="Enabled" Datatype="Bool" />
+      <Member Name="Disabled" Datatype="Bool" />
+      <Member Name="Measured" Datatype="Bool" />
+      <Member Name="Prewarn" Datatype="Bool" />
+      <Member Name="Change" Datatype="Bool" />
+      <Member Name="FixedLoc" Datatype="Bool" />
+      <Member Name="Used" Datatype="Bool" />
+      <Member Name="TNo" Datatype="Int" />
+      <Member Name="Toolholder" Datatype="Int" />
+      <Member Name="MyMag" Datatype="Int" />
+      <Member Name="MyPlace" Datatype="Int" />
+      <Member Name="reserved" Datatype="Array[1..7] of Int" />
+    </Member>
+  </Section>
+</Sections></Interface>
+      <MemoryLayout>Standard</MemoryLayout>
+      <Name>LBP_TMTurretMT</Name>
+      <Namespace />
+      <Number>1073</Number>
+      <ProgrammingLanguage>DB</ProgrammingLanguage>
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text>Interface between user program and tool management, contains signals for turret (multitool).</Text>
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="3" CompositionName="Items">
+            <AttributeList>
+              <Culture>fr-FR</Culture>
+              <Text>Interface entre programme utilisateur et gestion d'outil, contient des signaux pour tourelle (Multitool).</Text>
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <MultilingualText ID="4" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="5" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text>Tool management</Text>
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="6" CompositionName="Items">
+            <AttributeList>
+              <Culture>fr-FR</Culture>
+              <Text>Gestion des outils</Text>
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Blocks.InstanceDB>
+</Document>

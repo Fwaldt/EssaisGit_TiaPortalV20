@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V20" />
+  <SW.Blocks.GlobalDB ID="0">
+    <AttributeList>
+      <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+  <Section Name="Static">
+    <Member Name="Current" Datatype="Struct" Remanence="Retain">
+      <Member Name="RecipeId" Datatype="DInt" />
+      <Member Name="RecipeVersionGuid" Datatype="String" />
+    </Member>
+    <Member Name="Data" Datatype="Struct">
+      <Member Name="LaserJobListName" Datatype="String" />
+      <Member Name="RecipeId" Datatype="DInt" />
+      <Member Name="RecipeName" Datatype="String" />
+      <Member Name="RecipeVersionGuid" Datatype="String" />
+      <Member Name="Station1" Datatype="Struct">
+        <Member Name="General" Datatype="Struct">
+          <Member Name="Detections" Datatype="Struct">
+            <Member Name="WorkPart" Datatype="Struct">
+              <Member Name="Max" Datatype="LReal" />
+              <Member Name="Min" Datatype="LReal" />
+            </Member>
+          </Member>
+          <Member Name="GazPressure" Datatype="Struct">
+            <Member Name="WorkLaserDefault" Datatype="LReal" />
+          </Member>
+        </Member>
+      </Member>
+    </Member>
+    <Member Name="TransferToPlc" Datatype="Bool" />
+  </Section>
+</Sections></Interface>
+      <MemoryLayout>Optimized</MemoryLayout>
+      <MemoryReserve>100</MemoryReserve>
+      <Name>DB_OPC_Recipe</Name>
+      <Namespace />
+      <Number>134</Number>
+      <ProgrammingLanguage>DB</ProgrammingLanguage>
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="3" CompositionName="Items">
+            <AttributeList>
+              <Culture>fr-FR</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <MultilingualText ID="4" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="5" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="6" CompositionName="Items">
+            <AttributeList>
+              <Culture>fr-FR</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Blocks.GlobalDB>
+</Document>

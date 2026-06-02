@@ -1,0 +1,162 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V20" />
+  <SW.Blocks.GlobalDB ID="0">
+    <AttributeList>
+      <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+  <Section Name="Static">
+    <Member Name="Parts" Datatype="Struct">
+      <Member Name="Out" Datatype="Struct">
+        <Member Name="Station1" Datatype="Struct">
+          <Member Name="LoaderDrilled" Datatype="SInt" />
+          <Member Name="LoaderUndrilled" Datatype="SInt" />
+          <Member Name="ShuttleDrilled" Datatype="SInt" />
+          <Member Name="ShuttleUndrilled" Datatype="SInt" />
+          <Member Name="WorkClamp" Datatype="SInt" />
+        </Member>
+      </Member>
+    </Member>
+    <Member Name="State" Datatype="Struct">
+      <Member Name="Current" Datatype="Struct">
+        <Member Name="CanLockDoor" Datatype="Bool" />
+        <Member Name="CanUnlockDoor" Datatype="Bool" />
+        <Member Name="CncMode" Datatype="Byte" />
+        <Member Name="LoadingMode" Datatype="Byte" />
+        <Member Name="IsDoorLocked" Datatype="Bool" />
+        <Member Name="IsEmptying" Datatype="Bool" />
+        <Member Name="IsInitialized" Datatype="Bool" />
+        <Member Name="IsRunning" Datatype="Bool" />
+        <Member Name="MachineOverride" Datatype="Byte" />
+      </Member>
+      <Member Name="Requests" Datatype="Struct">
+        <Member Name="LoadingMode" Datatype="Struct">
+          <Member Name="RequestChangeMode" Datatype="Bool" />
+          <Member Name="TargetMode" Datatype="Byte" />
+        </Member>
+        <Member Name="RequestLockDoor" Datatype="Bool" />
+        <Member Name="RequestStartAuto" Datatype="Bool" />
+        <Member Name="RequestStartEmptying" Datatype="Bool" />
+        <Member Name="RequestStopAuto" Datatype="Bool" />
+        <Member Name="RequestStopEmptying" Datatype="Bool" />
+        <Member Name="RequestUnlockDoor" Datatype="Bool" />
+      </Member>
+    </Member>
+    <Member Name="Parameters" Datatype="Struct" Remanence="Retain">
+      <Member Name="GasAssistSetPoint" Datatype="Real" />
+      <Member Name="CoolingVentilatorSetpoint" Datatype="Real" />
+      <Member Name="TemperatureCoolingSetpoint" Datatype="Real" />
+      <Member Name="BlowingSetpoint" Datatype="Real" />
+      <Member Name="Shuttle1Enable" Datatype="&quot;UDT_BoolEnable&quot;" />
+      <Member Name="Shuttle2Enable" Datatype="&quot;UDT_BoolEnable&quot;">
+        <AttributeList>
+          <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+        </AttributeList>
+      </Member>
+      <Member Name="ConsecutiveBwIn" Datatype="Int">
+        <AttributeList>
+          <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+        </AttributeList>
+      </Member>
+      <Member Name="Sequence" Datatype="Struct">
+        <Member Name="Shuttle1" Datatype="Struct">
+          <Member Name="Main" Datatype="Int" />
+          <Member Name="ShuttleInt" Datatype="Int" />
+          <Member Name="ShuttleExt" Datatype="Int" />
+          <Member Name="ControlIn" Datatype="Int" />
+          <Member Name="ControlOut" Datatype="Int" />
+          <Member Name="Blowing" Datatype="Int" />
+          <Member Name="IntLoadUnload" Datatype="Int" />
+          <Member Name="ExtLoadUnload" Datatype="Int" />
+          <Member Name="BwLoadUnload" Datatype="Int" />
+          <Member Name="BwControlIn" Datatype="Int" />
+          <Member Name="ActControlIn" Datatype="Int" />
+          <Member Name="ActControlOut" Datatype="Int" />
+          <Member Name="ActBwControlIn" Datatype="Int" />
+        </Member>
+        <Member Name="Shuttle2" Datatype="Struct">
+          <Member Name="Main" Datatype="Int" />
+          <Member Name="ShuttleInt" Datatype="Int" />
+          <Member Name="ShuttleExt" Datatype="Int" />
+          <Member Name="ControlIn" Datatype="Int" />
+          <Member Name="ControlOut" Datatype="Int" />
+          <Member Name="Blowing" Datatype="Int" />
+          <Member Name="IntLoadUnload" Datatype="Int" />
+          <Member Name="ExtLoadUnload" Datatype="Int" />
+          <Member Name="BwLoadUnload" Datatype="Int" />
+          <Member Name="BwControlIn" Datatype="Int" />
+          <Member Name="ActControlIn" Datatype="Int" />
+          <Member Name="ActControlOut" Datatype="Int" />
+          <Member Name="ActBwControlIn" Datatype="Int" />
+        </Member>
+        <Member Name="Fixture" Datatype="Struct">
+          <Member Name="Blowing" Datatype="Int" />
+          <Member Name="Loading" Datatype="Int" />
+          <Member Name="Unloading" Datatype="Int" />
+          <Member Name="V_Init" Datatype="Int" />
+          <Member Name="W_Init" Datatype="Int" />
+        </Member>
+      </Member>
+      <Member Name="Presence" Datatype="Struct">
+        <Member Name="Shuttle1UndrilledPart" Datatype="Bool" />
+        <Member Name="Shuttle1UndrilledBw" Datatype="Bool" />
+        <Member Name="Shuttle1DrilledPart" Datatype="Bool" />
+        <Member Name="Shuttle1DrilledBw" Datatype="Bool" />
+        <Member Name="Shuttle2UndrilledPart" Datatype="Bool" />
+        <Member Name="Shuttle2UndrilledBw" Datatype="Bool" />
+        <Member Name="Shuttle2DrilledPart" Datatype="Bool" />
+        <Member Name="Shuttle2DrilledBw" Datatype="Bool" />
+        <Member Name="GripperUndrilledPart" Datatype="Bool" />
+        <Member Name="GripperUndrilledBw" Datatype="Bool" />
+        <Member Name="GripperDrilledPart" Datatype="Bool" />
+        <Member Name="GripperDrilledBw" Datatype="Bool" />
+        <Member Name="FixtureUndrilledPart" Datatype="Bool" />
+        <Member Name="FixtureUndrilledBw" Datatype="Bool" />
+        <Member Name="FixtureDrilledPart" Datatype="Bool" />
+        <Member Name="FixtureDrilledBw" Datatype="Bool" />
+      </Member>
+    </Member>
+  </Section>
+</Sections></Interface>
+      <MemoryLayout>Optimized</MemoryLayout>
+      <MemoryReserve>100</MemoryReserve>
+      <Name>DB_OPC_Machine</Name>
+      <Namespace />
+      <Number>15</Number>
+      <ProgrammingLanguage>DB</ProgrammingLanguage>
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="3" CompositionName="Items">
+            <AttributeList>
+              <Culture>fr-FR</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <MultilingualText ID="4" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="5" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="6" CompositionName="Items">
+            <AttributeList>
+              <Culture>fr-FR</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Blocks.GlobalDB>
+</Document>

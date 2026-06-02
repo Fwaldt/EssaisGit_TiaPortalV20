@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V20" />
+  <SW.Types.PlcStruct ID="0">
+    <AttributeList>
+      <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+  <Section Name="None">
+    <Member Name="Axis_U" Datatype="Struct">
+      <Member Name="PosExternalLoadUnload" Datatype="Real" />
+      <Member Name="PosExternalLoadUnloadManu" Datatype="Real" />
+      <Member Name="PosPartControl" Datatype="Real" />
+      <Member Name="PosBwControl" Datatype="Real" />
+      <Member Name="PosInternalLoadUnload" Datatype="Real" />
+      <Member Name="PosExtGateExt" Datatype="Real" />
+      <Member Name="PosIntGateExt" Datatype="Real" />
+      <Member Name="PosExtGateInt" Datatype="Real" />
+      <Member Name="PosIntGateInt" Datatype="Real" />
+    </Member>
+    <Member Name="Axis_V" Datatype="Struct">
+      <Member Name="PosLoadUnload" Datatype="Real" />
+      <Member Name="PosSafe" Datatype="Real" />
+    </Member>
+    <Member Name="Axis_W" Datatype="Struct">
+      <Member Name="PosLoadUnload" Datatype="Real" />
+      <Member Name="PosSafe" Datatype="Real" />
+      <Member Name="PosApproach" Datatype="Real" />
+    </Member>
+  </Section>
+</Sections></Interface>
+      <Name>UDT_AxisPosition</Name>
+      <Namespace />
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="3" CompositionName="Items">
+            <AttributeList>
+              <Culture>fr-FR</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <MultilingualText ID="4" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="5" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="6" CompositionName="Items">
+            <AttributeList>
+              <Culture>fr-FR</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Types.PlcStruct>
+</Document>

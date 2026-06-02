@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V20" />
+  <SW.Types.PlcStruct ID="0">
+    <AttributeList>
+      <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+  <Section Name="None">
+    <Member Name="Elapsed" Datatype="Real">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Temps de fonctionnement actuel (en unité de temps)</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="Id" Datatype="Int">
+      <Comment>
+        <MultiLanguageText Lang="en-US">ID de la tache</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="Period" Datatype="Int">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Durée maximale avant maintenance</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="Reset" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Reset Temps de fonctionnement actuel</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="WarningThreshold" Datatype="Int">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Seuil d'avertissement en % (par défaut 80%)</MultiLanguageText>
+      </Comment>
+    </Member>
+  </Section>
+</Sections></Interface>
+      <Name>UDT_OPC_Maintenance</Name>
+      <Namespace />
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="3" CompositionName="Items">
+            <AttributeList>
+              <Culture>fr-FR</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <MultilingualText ID="4" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="5" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="6" CompositionName="Items">
+            <AttributeList>
+              <Culture>fr-FR</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Types.PlcStruct>
+</Document>

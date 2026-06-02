@@ -1,0 +1,320 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V20" />
+  <SW.Blocks.InstanceDB ID="0">
+    <AttributeList>
+      <AutoNumber>false</AutoNumber>
+      <InstanceOfName>FB_DigitalOutputsSonplas</InstanceOfName>
+      <InstanceOfType>FB</InstanceOfType>
+      <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+  <Section Name="Input" />
+  <Section Name="Output" />
+  <Section Name="InOut" />
+  <Section Name="Static">
+    <Member Name="Free_Q0_0" Datatype="&quot;FB_DigitalOutput&quot;" />
+    <Member Name="Operating_Counter" Datatype="&quot;FB_DigitalOutput&quot;" />
+    <Member Name="General_Air_Valve" Datatype="&quot;FB_DigitalOutput&quot;" />
+    <Member Name="Smart_Line_Disable" Datatype="&quot;FB_DigitalOutput&quot;" />
+    <Member Name="Machine_Light" Datatype="&quot;FB_DigitalOutput&quot;" />
+    <Member Name="Machine_Light_Back" Datatype="&quot;FB_DigitalOutput&quot;" />
+    <Member Name="Light_Tower_Orange" Datatype="&quot;FB_DigitalOutput&quot;" />
+    <Member Name="Light_Tower_Red" Datatype="&quot;FB_DigitalOutput&quot;" />
+    <Member Name="Light_Tower_Blue" Datatype="&quot;FB_DigitalOutput&quot;" />
+    <Member Name="Light_Tower_Green" Datatype="&quot;FB_DigitalOutput&quot;" />
+    <Member Name="Light_Tower_White" Datatype="&quot;FB_DigitalOutput&quot;" />
+    <Member Name="Backlight" Datatype="&quot;FB_DigitalOutput&quot;" />
+    <Member Name="Free_Q1_4" Datatype="&quot;FB_DigitalOutput&quot;" />
+    <Member Name="Infeed_ON" Datatype="&quot;FB_DigitalOutput&quot;" />
+    <Member Name="Axis_Activation" Datatype="&quot;FB_DigitalOutput&quot;" />
+    <Member Name="Buzzer_Activation" Datatype="&quot;FB_DigitalOutput&quot;" />
+    <Member Name="Elbaron_Power_ON" Datatype="&quot;FB_DigitalOutput&quot;" />
+    <Member Name="Observation_Camera_Light" Datatype="&quot;FB_DigitalOutput&quot;" />
+    <Member Name="Laser_External_Door_Opening" Datatype="&quot;FB_DigitalOutput&quot;" />
+    <Member Name="Cooling_Start" Datatype="&quot;FB_DigitalOutput&quot;" />
+    <Member Name="X_Axis_Brake_Activation" Datatype="&quot;FB_DigitalOutput&quot;" />
+    <Member Name="Y_Axis_Brake_Activation" Datatype="&quot;FB_DigitalOutput&quot;" />
+    <Member Name="Axis_B_TeachIn_Clamping_Part" Datatype="&quot;FB_DigitalOutput&quot;" />
+    <Member Name="EPO_UPS" Datatype="&quot;FB_DigitalOutput&quot;" />
+    <Member Name="Head_Laser_Start" Datatype="&quot;FB_DigitalOutput&quot;" />
+    <Member Name="Head_Laser_Stop" Datatype="&quot;FB_DigitalOutput&quot;" />
+    <Member Name="Axis_2_Power_Contactor" Datatype="&quot;FB_DigitalOutput&quot;" />
+    <Member Name="GasAssistOn" Datatype="&quot;FB_DigitalOutput&quot;" />
+    <Member Name="Smart_Line_Reset" Datatype="&quot;FB_DigitalOutput&quot;" />
+    <Member Name="XY_Axis_Power_Contactor" Datatype="&quot;FB_DigitalOutput&quot;" />
+    <Member Name="Laser_Air_Pressure_Process" Datatype="&quot;FB_DigitalOutput&quot;" />
+    <Member Name="Bus60V_Power_Contactor" Datatype="&quot;FB_DigitalOutput&quot;" />
+    <Member Name="Free_Q4_0" Datatype="&quot;FB_DigitalOutput&quot;" />
+    <Member Name="Free_Q4_1" Datatype="&quot;FB_DigitalOutput&quot;" />
+    <Member Name="Free_Q4_2" Datatype="&quot;FB_DigitalOutput&quot;" />
+    <Member Name="Free_Q4_3" Datatype="&quot;FB_DigitalOutput&quot;" />
+    <Member Name="Load_Clamp_Closing" Datatype="&quot;FB_DigitalOutput&quot;" />
+    <Member Name="Load_Clamp_Opening" Datatype="&quot;FB_DigitalOutput&quot;" />
+    <Member Name="Unload_Clamp_Closing" Datatype="&quot;FB_DigitalOutput&quot;" />
+    <Member Name="Unload_Clamp_Opening" Datatype="&quot;FB_DigitalOutput&quot;" />
+    <Member Name="Clamping_Opening" Datatype="&quot;FB_DigitalOutput&quot;" />
+    <Member Name="Clamping_Closing" Datatype="&quot;FB_DigitalOutput&quot;" />
+    <Member Name="B_Axis_Brake_Release" Datatype="&quot;FB_DigitalOutput&quot;" />
+    <Member Name="Suction" Datatype="&quot;FB_DigitalOutput&quot;" />
+    <Member Name="Free_Q5_4" Datatype="&quot;FB_DigitalOutput&quot;" />
+    <Member Name="Free_Q5_5" Datatype="&quot;FB_DigitalOutput&quot;" />
+    <Member Name="Free_Q5_6" Datatype="&quot;FB_DigitalOutput&quot;" />
+    <Member Name="Free_Q5_7" Datatype="&quot;FB_DigitalOutput&quot;" />
+    <Member Name="External_Gate_Closing" Datatype="&quot;FB_DigitalOutput&quot;" />
+    <Member Name="External_Gate_Opening" Datatype="&quot;FB_DigitalOutput&quot;" />
+    <Member Name="Internal_Gate_Closing" Datatype="&quot;FB_DigitalOutput&quot;" />
+    <Member Name="Internal_Gate_Opening" Datatype="&quot;FB_DigitalOutput&quot;" />
+    <Member Name="PowerMeter_Retract" Datatype="&quot;FB_DigitalOutput&quot;" />
+    <Member Name="PowerMeter_Advance" Datatype="&quot;FB_DigitalOutput&quot;" />
+    <Member Name="Blowing" Datatype="&quot;FB_DigitalOutput&quot;" />
+    <Member Name="Free_Q8_7" Datatype="&quot;FB_DigitalOutput&quot;" />
+    <Member Name="Free_Q9_0" Datatype="&quot;FB_DigitalOutput&quot;" />
+    <Member Name="Free_Q9_1" Datatype="&quot;FB_DigitalOutput&quot;" />
+    <Member Name="Free_Q9_2" Datatype="&quot;FB_DigitalOutput&quot;" />
+    <Member Name="Free_Q9_3" Datatype="&quot;FB_DigitalOutput&quot;" />
+    <Member Name="Free_Q9_4" Datatype="&quot;FB_DigitalOutput&quot;" />
+    <Member Name="Free_Q9_5" Datatype="&quot;FB_DigitalOutput&quot;" />
+    <Member Name="Free_Q9_6" Datatype="&quot;FB_DigitalOutput&quot;" />
+    <Member Name="Free_Q9_7" Datatype="&quot;FB_DigitalOutput&quot;" />
+    <Member Name="Sonplas_DiagDPCoupler" Datatype="&quot;FB_DigitalOutput&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="Sonplas_Ready" Datatype="&quot;FB_DigitalOutput&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="Sonplas_NoEStop" Datatype="&quot;FB_DigitalOutput&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="Sonplas_DoorsClosed" Datatype="&quot;FB_DigitalOutput&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="Sonplas_RunError" Datatype="&quot;FB_DigitalOutput&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="Sonplas_Free_Q200_5" Datatype="&quot;FB_DigitalOutput&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="Sonplas_Free_Q200_6" Datatype="&quot;FB_DigitalOutput&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="Sonplas_Free_Q200_7" Datatype="&quot;FB_DigitalOutput&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="Sonplas_Free_Q201_0" Datatype="&quot;FB_DigitalOutput&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="Sonplas_Free_Q201_1" Datatype="&quot;FB_DigitalOutput&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="Sonplas_Free_Q201_2" Datatype="&quot;FB_DigitalOutput&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="Sonplas_Free_Q201_3" Datatype="&quot;FB_DigitalOutput&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="Sonplas_Free_Q201_4" Datatype="&quot;FB_DigitalOutput&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="Sonplas_Free_Q201_5" Datatype="&quot;FB_DigitalOutput&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="Sonplas_Free_Q201_6" Datatype="&quot;FB_DigitalOutput&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="Sonplas_Free_Q201_7" Datatype="&quot;FB_DigitalOutput&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="Sonplas_Shuttle1InPos" Datatype="&quot;FB_DigitalOutput&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="Sonplas_Free_Q202_1" Datatype="&quot;FB_DigitalOutput&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="Sonplas_Free_Q202_2" Datatype="&quot;FB_DigitalOutput&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="Sonplas_Free_Q202_3" Datatype="&quot;FB_DigitalOutput&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="Sonplas_Free_Q202_4" Datatype="&quot;FB_DigitalOutput&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="Sonplas_Free_Q202_5" Datatype="&quot;FB_DigitalOutput&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="Sonplas_Part1OK" Datatype="&quot;FB_DigitalOutput&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="Sonplas_Part1NOK" Datatype="&quot;FB_DigitalOutput&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="Sonplas_Shuttle2InPos" Datatype="&quot;FB_DigitalOutput&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="Sonplas_Free_Q203_1" Datatype="&quot;FB_DigitalOutput&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="Sonplas_Free_Q203_2" Datatype="&quot;FB_DigitalOutput&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="Sonplas_Free_Q203_3" Datatype="&quot;FB_DigitalOutput&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="Sonplas_Free_Q203_4" Datatype="&quot;FB_DigitalOutput&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="Sonplas_Free_Q203_5" Datatype="&quot;FB_DigitalOutput&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="Sonplas_Part2OK" Datatype="&quot;FB_DigitalOutput&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="Sonplas_Part2NOK" Datatype="&quot;FB_DigitalOutput&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="Sonplas_ResultAccepted" Datatype="&quot;FB_DigitalOutput&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="Sonplas_Free_Q244_1" Datatype="&quot;FB_DigitalOutput&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="Sonplas_Free_Q244_2" Datatype="&quot;FB_DigitalOutput&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="Sonplas_Free_Q244_3" Datatype="&quot;FB_DigitalOutput&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="Sonplas_Free_Q244_4" Datatype="&quot;FB_DigitalOutput&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="Sonplas_Free_Q244_5" Datatype="&quot;FB_DigitalOutput&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="Sonplas_Free_Q244_6" Datatype="&quot;FB_DigitalOutput&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="Sonplas_Free_Q244_7" Datatype="&quot;FB_DigitalOutput&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+  </Section>
+</Sections></Interface>
+      <Name>DB_DigitalOutputsSonplas</Name>
+      <Namespace />
+      <Number>2104</Number>
+      <ProgrammingLanguage>DB</ProgrammingLanguage>
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="3" CompositionName="Items">
+            <AttributeList>
+              <Culture>fr-FR</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <MultilingualText ID="4" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="5" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="6" CompositionName="Items">
+            <AttributeList>
+              <Culture>fr-FR</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Blocks.InstanceDB>
+</Document>

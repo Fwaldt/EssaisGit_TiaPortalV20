@@ -1,0 +1,308 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V20" />
+  <SW.Blocks.InstanceDB ID="0">
+    <AttributeList>
+      <AutoNumber>false</AutoNumber>
+      <InstanceOfName>FB_DigitalInputs</InstanceOfName>
+      <InstanceOfType>FB</InstanceOfType>
+      <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+  <Section Name="Input" />
+  <Section Name="Output" />
+  <Section Name="InOut" />
+  <Section Name="Static">
+    <Member Name="sFreeI0_0" Datatype="&quot;FB_DigitalInput&quot;" />
+    <Member Name="sX_AxisBrakePressCtrl" Datatype="&quot;FB_DigitalInput&quot;" />
+    <Member Name="sY_AxisBrakePressCtrl" Datatype="&quot;FB_DigitalInput&quot;" />
+    <Member Name="sBreakerCtrl" Datatype="&quot;FB_DigitalInput&quot;" />
+    <Member Name="sCabinetTemperatureCtrl" Datatype="&quot;FB_DigitalInput&quot;" />
+    <Member Name="sUPS_PowerFailure" Datatype="&quot;FB_DigitalInput&quot;" />
+    <Member Name="sAirPressureCtrl" Datatype="&quot;FB_DigitalInput&quot;" />
+    <Member Name="sShutterClosed" Datatype="&quot;FB_DigitalInput&quot;" />
+    <Member Name="sAirDryerOK" Datatype="&quot;FB_DigitalInput&quot;" />
+    <Member Name="sUPS_BatteryOK" Datatype="&quot;FB_DigitalInput&quot;" />
+    <Member Name="sFrontDoorClosed" Datatype="&quot;FB_DigitalInput&quot;" />
+    <Member Name="sInfeedReadyOK_Start" Datatype="&quot;FB_DigitalInput&quot;" />
+    <Member Name="sCoolingOK" Datatype="&quot;FB_DigitalInput&quot;" />
+    <Member Name="sFreeI1_5" Datatype="&quot;FB_DigitalInput&quot;" />
+    <Member Name="sPowerReady" Datatype="&quot;FB_DigitalInput&quot;" />
+    <Member Name="sAlarmI2T" Datatype="&quot;FB_DigitalInput&quot;" />
+    <Member Name="sHeadLaserBusy" Datatype="&quot;FB_DigitalInput&quot;" />
+    <Member Name="sHeadLaserBreaker" Datatype="&quot;FB_DigitalInput&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="sFrontDoorLocked" Datatype="&quot;FB_DigitalInput&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="sUPS_CommonAlarm" Datatype="&quot;FB_DigitalInput&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="sUPS_BatteryLow" Datatype="&quot;FB_DigitalInput&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="sFreeI2_5" Datatype="&quot;FB_DigitalInput&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="sHeadChillerHighPressure" Datatype="&quot;FB_DigitalInput&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="sHeadChillerWaterTemperature" Datatype="&quot;FB_DigitalInput&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="sHeadChillerFlow" Datatype="&quot;FB_DigitalInput&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="sHeadChillerCollectivFault" Datatype="&quot;FB_DigitalInput&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="sHeadChillerWaterLevel" Datatype="&quot;FB_DigitalInput&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="sUPS_ByPassActive" Datatype="&quot;FB_DigitalInput&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="sHeadChillerAmbiantTemperature" Datatype="&quot;FB_DigitalInput&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="sFreeI3_5" Datatype="&quot;FB_DigitalInput&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="sFreeI3_6" Datatype="&quot;FB_DigitalInput&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="sFreeI3_7" Datatype="&quot;FB_DigitalInput&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="sLoadClampOpened" Datatype="&quot;FB_DigitalInput&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="sLoadClampNotClosedWithPart" Datatype="&quot;FB_DigitalInput&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="sUnloadClampOpened" Datatype="&quot;FB_DigitalInput&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="sUPS_Fault" Datatype="&quot;FB_DigitalInput&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="sInternalGateLocked" Datatype="&quot;FB_DigitalInput&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="sExternalGateLocked" Datatype="&quot;FB_DigitalInput&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="sInverterActive" Datatype="&quot;FB_DigitalInput&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="sUnloadClampNotClosedWithPart" Datatype="&quot;FB_DigitalInput&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="sFreeI5_0" Datatype="&quot;FB_DigitalInput&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="sFreeI5_1" Datatype="&quot;FB_DigitalInput&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="sInternalGateOpened" Datatype="&quot;FB_DigitalInput&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="sExternalGateOpened" Datatype="&quot;FB_DigitalInput&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="sPowerMeterBackCtrl" Datatype="&quot;FB_DigitalInput&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="sPowerMeterFrontCtrl" Datatype="&quot;FB_DigitalInput&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="sFreeI5_6" Datatype="&quot;FB_DigitalInput&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="sFreeI5_7" Datatype="&quot;FB_DigitalInput&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="sHeadChillerCutOff" Datatype="&quot;FB_DigitalInput&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="sHeadChillerTemperature" Datatype="&quot;FB_DigitalInput&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="sFreeI6_2" Datatype="&quot;FB_DigitalInput&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="sFreeI6_3" Datatype="&quot;FB_DigitalInput&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="sClampingOpenCtrl" Datatype="&quot;FB_DigitalInput&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="sB_Axis_BrakeReleasedCtrl" Datatype="&quot;FB_DigitalInput&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="sFreeI6_6" Datatype="&quot;FB_DigitalInput&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="sB_AxisReferencePoint" Datatype="&quot;FB_DigitalInput&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="sSourceChillerHighPressure" Datatype="&quot;FB_DigitalInput&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="sSourceChillerWaterTemperature" Datatype="&quot;FB_DigitalInput&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="sSourceChillerFlow" Datatype="&quot;FB_DigitalInput&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="sSourceChillerCollectivFault" Datatype="&quot;FB_DigitalInput&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="sSourceChillerWaterLevel" Datatype="&quot;FB_DigitalInput&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="sSourceChillerAmbiantTemperature" Datatype="&quot;FB_DigitalInput&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="sSourceChillerCutOff" Datatype="&quot;FB_DigitalInput&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="sSourceChillerTemperature" Datatype="&quot;FB_DigitalInput&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+  </Section>
+</Sections></Interface>
+      <Name>DB_DigitalInputs</Name>
+      <Namespace />
+      <Number>2210</Number>
+      <ProgrammingLanguage>DB</ProgrammingLanguage>
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="3" CompositionName="Items">
+            <AttributeList>
+              <Culture>fr-FR</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <MultilingualText ID="4" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="5" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="6" CompositionName="Items">
+            <AttributeList>
+              <Culture>fr-FR</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Blocks.InstanceDB>
+</Document>

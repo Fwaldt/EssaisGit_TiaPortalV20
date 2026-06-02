@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V20" />
+  <SW.Types.PlcStruct ID="0">
+    <AttributeList>
+      <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+  <Section Name="None">
+    <Member Name="keyIndex" Datatype="USInt">
+      <Comment>
+        <MultiLanguageText Lang="en-US">index of key</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">indice de touche</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="red" Datatype="USInt">
+      <Comment>
+        <MultiLanguageText Lang="en-US">intensity of red LED</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">intensité de la LED rouge</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="green" Datatype="USInt">
+      <Comment>
+        <MultiLanguageText Lang="en-US">intensity of green LED</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">intensité de la LED verte</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="blue" Datatype="USInt">
+      <Comment>
+        <MultiLanguageText Lang="en-US">intensity of blue LED</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">intensité de la LED bleue</MultiLanguageText>
+      </Comment>
+    </Member>
+  </Section>
+</Sections></Interface>
+      <Name>LBP_typeModularMcpLedAttribute</Name>
+      <Namespace />
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text>User data type for LBP_typeModularMcpKeypadRecord (sub type)</Text>
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="3" CompositionName="Items">
+            <AttributeList>
+              <Culture>fr-FR</Culture>
+              <Text>Type de données utilisateur pour LBP_typeModularMcpKeypadRecord (sous-type)</Text>
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <MultilingualText ID="4" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="5" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text>Modular MCP image</Text>
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="6" CompositionName="Items">
+            <AttributeList>
+              <Culture>fr-FR</Culture>
+              <Text>Image MCP modulaire</Text>
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Types.PlcStruct>
+</Document>

@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V20" />
+  <SW.Types.PlcStruct ID="0">
+    <AttributeList>
+      <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+  <Section Name="None">
+    <Member Name="pushButton" Datatype="Bool">
+      <Comment>
+        <MultiLanguageText Lang="en-US">true, when push button pressed</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">vrai, lorsque le bouton-poussoir est enfoncé</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="reserved01" Datatype="Bool" />
+    <Member Name="reserved02" Datatype="Bool" />
+    <Member Name="reserved03" Datatype="Bool" />
+    <Member Name="reserved04" Datatype="Bool" />
+    <Member Name="reserved05" Datatype="Bool" />
+    <Member Name="reserved06" Datatype="Bool" />
+    <Member Name="reserved07" Datatype="Bool" />
+    <Member Name="powerrideCounter" Datatype="USInt">
+      <Comment>
+        <MultiLanguageText Lang="en-US">[0..255] Override switch position</MultiLanguageText>
+        <MultiLanguageText Lang="fr-FR">[0..255] Corriger la position du commutateur</MultiLanguageText>
+      </Comment>
+    </Member>
+  </Section>
+</Sections></Interface>
+      <Name>LBP_typePowerrideInput</Name>
+      <Namespace />
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text>Input image of powerride</Text>
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="3" CompositionName="Items">
+            <AttributeList>
+              <Culture>fr-FR</Culture>
+              <Text>Image des entrées de Powerride</Text>
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <MultilingualText ID="4" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="5" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text>Powerride image</Text>
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="6" CompositionName="Items">
+            <AttributeList>
+              <Culture>fr-FR</Culture>
+              <Text>Image Powerride</Text>
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Types.PlcStruct>
+</Document>

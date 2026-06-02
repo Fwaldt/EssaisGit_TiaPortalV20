@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V20" />
+  <SW.Types.PlcStruct ID="0">
+    <AttributeList>
+      <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+  <Section Name="None">
+    <Member Name="U_POS_EXTERNAL_LOAD" Datatype="Real" />
+    <Member Name="U_POS_EXTERNAL_UNLOAD" Datatype="Real" />
+    <Member Name="U_POS_SAS" Datatype="Real" />
+    <Member Name="U_POS_BLOWING" Datatype="Real" />
+    <Member Name="U_POS_DETECTOR_LOAD" Datatype="Real" />
+    <Member Name="U_POS_DETECTOR_UNLOAD" Datatype="Real" />
+    <Member Name="U_POS_INTERNAL_LOADER_LOAD" Datatype="Real" />
+    <Member Name="U_POS_INTERNAL_LOADER_UNLOAD" Datatype="Real" />
+    <Member Name="U_POS_OUT_INTERNAL_LOADER" Datatype="Real" />
+    <Member Name="U_DELTA_POS_INTERN_LOADER_LOAD_UNLOAD" Datatype="Real" />
+    <Member Name="U_POS_SEMI_AUTO" Datatype="Real" />
+    <Member Name="V_POS_SHUTTLE_LOAD" Datatype="Real" />
+    <Member Name="V_POS_SHUTTLE_UNLOAD" Datatype="Real" />
+    <Member Name="V_POS_WASHING" Datatype="Real" />
+    <Member Name="W_POS_UP" Datatype="Real" />
+    <Member Name="W_POS_SHUTTLE_LOAD" Datatype="Real" />
+    <Member Name="W_POS_SHUTTLE_UNLOAD" Datatype="Real" />
+    <Member Name="W_POS_WASHING" Datatype="Real" />
+    <Member Name="X_POS_CHANGE_BW" Datatype="Real" />
+    <Member Name="Y_POS_CHANGE_BW" Datatype="Real" />
+  </Section>
+</Sections></Interface>
+      <Name>UDT_POS_AXES_UVW</Name>
+      <Namespace />
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="3" CompositionName="Items">
+            <AttributeList>
+              <Culture>fr-FR</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <MultilingualText ID="4" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="5" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="6" CompositionName="Items">
+            <AttributeList>
+              <Culture>fr-FR</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Types.PlcStruct>
+</Document>

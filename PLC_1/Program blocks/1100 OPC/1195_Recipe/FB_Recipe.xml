@@ -1,0 +1,644 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V20" />
+  <SW.Blocks.FB ID="0">
+    <AttributeList>
+      <AutoNumber>false</AutoNumber>
+      <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+  <Section Name="Input" />
+  <Section Name="Output" />
+  <Section Name="InOut" />
+  <Section Name="Static" />
+  <Section Name="Temp" />
+  <Section Name="Constant" />
+</Sections></Interface>
+      <MemoryLayout>Optimized</MemoryLayout>
+      <MemoryReserve>100</MemoryReserve>
+      <Name>FB_Recipe</Name>
+      <Namespace />
+      <Number>81</Number>
+      <ProgrammingLanguage>SCL</ProgrammingLanguage>
+      <SetENOAutomatically>false</SetENOAutomatically>
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="3" CompositionName="Items">
+            <AttributeList>
+              <Culture>fr-FR</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <SW.Blocks.CompileUnit ID="4" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource><StructuredText xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/StructuredText/v4">
+  <Token Text="REGION" UId="21" />
+  <Blank UId="22" />
+  <Text UId="23">Description header </Text>
+  <NewLine UId="24" />
+  <Blank Num="4" UId="25" />
+  <LineComment UId="26">
+    <Text UId="27">==================================================================================</Text>
+  </LineComment>
+  <NewLine UId="28" />
+  <Blank Num="4" UId="29" />
+  <LineComment UId="30">
+    <Text UId="31"> POSALUX Swiss SA / (C) Copyright 2026</Text>
+  </LineComment>
+  <NewLine UId="32" />
+  <Blank Num="4" UId="33" />
+  <LineComment UId="34">
+    <Text UId="35">----------------------------------------------------------------------------------</Text>
+  </LineComment>
+  <NewLine UId="36" />
+  <Blank Num="4" UId="37" />
+  <LineComment UId="38">
+    <Text UId="39"> Title: FB_Recipe</Text>
+  </LineComment>
+  <NewLine UId="40" />
+  <Blank Num="4" UId="41" />
+  <LineComment UId="42">
+    <Text UId="43"> Comment/Function: </Text>
+  </LineComment>
+  <NewLine UId="44" />
+  <Blank Num="4" UId="45" />
+  <LineComment UId="46">
+    <Text UId="47" />
+  </LineComment>
+  <NewLine UId="48" />
+  <Blank Num="4" UId="49" />
+  <LineComment UId="50">
+    <Text UId="51"> Author: Fabien WALDT</Text>
+  </LineComment>
+  <NewLine UId="52" />
+  <Blank Num="4" UId="53" />
+  <LineComment UId="54">
+    <Text UId="55"> Engineering: TIA Portal v20</Text>
+  </LineComment>
+  <NewLine UId="56" />
+  <Blank Num="4" UId="57" />
+  <LineComment UId="58">
+    <Text UId="59">----------------------------------------------------------------------------------</Text>
+  </LineComment>
+  <NewLine UId="60" />
+  <Blank Num="4" UId="61" />
+  <LineComment UId="62">
+    <Text UId="63"> Change log table:</Text>
+  </LineComment>
+  <NewLine UId="64" />
+  <Blank Num="4" UId="65" />
+  <LineComment UId="66">
+    <Text UId="67"> Version  | Date     | Expert in charge | Changes applied</Text>
+  </LineComment>
+  <NewLine UId="68" />
+  <Blank Num="4" UId="69" />
+  <LineComment UId="70">
+    <Text UId="71"> ---------|----------|------------------|------------------------------------</Text>
+  </LineComment>
+  <NewLine UId="72" />
+  <Blank Num="4" UId="73" />
+  <LineComment UId="74">
+    <Text UId="75"> 00.00.01 | 20260427 | WFA              | First released version</Text>
+  </LineComment>
+  <NewLine UId="76" />
+  <Blank Num="4" UId="77" />
+  <LineComment UId="78">
+    <Text UId="79"> ==================================================================================</Text>
+  </LineComment>
+  <NewLine UId="80" />
+  <Token Text="END_REGION" UId="81" />
+  <NewLine Num="2" UId="82" />
+  <Token Text="REGION" UId="83" />
+  <Blank UId="84" />
+  <Text UId="85">Current</Text>
+  <NewLine UId="86" />
+  <Blank Num="4" UId="87" />
+  <Access Scope="GlobalVariable" UId="88">
+    <Symbol UId="89">
+      <Component Name="DB_OPC_Recipe" UId="90">
+        <BooleanAttribute Name="HasQuotes" UId="91">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="92" />
+      <Component Name="Current" UId="93" />
+      <Token Text="." UId="94" />
+      <Component Name="RecipeId" UId="95" />
+    </Symbol>
+  </Access>
+  <Blank UId="96" />
+  <Token Text=":=" UId="97" />
+  <Blank UId="98" />
+  <Access Scope="GlobalVariable" UId="99">
+    <Symbol UId="100">
+      <Component Name="DB_OPC_Recipe" UId="101">
+        <BooleanAttribute Name="HasQuotes" UId="102">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="103" />
+      <Component Name="Current" UId="104" />
+      <Token Text="." UId="105" />
+      <Component Name="RecipeId" UId="106" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="107" />
+  <NewLine UId="108" />
+  <Blank Num="4" UId="109" />
+  <Access Scope="GlobalVariable" UId="110">
+    <Symbol UId="111">
+      <Component Name="DB_OPC_Recipe" UId="112">
+        <BooleanAttribute Name="HasQuotes" UId="113">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="114" />
+      <Component Name="Current" UId="115" />
+      <Token Text="." UId="116" />
+      <Component Name="RecipeVersionGuid" UId="117" />
+    </Symbol>
+  </Access>
+  <Blank UId="118" />
+  <Token Text=":=" UId="119" />
+  <Blank UId="120" />
+  <Access Scope="GlobalVariable" UId="121">
+    <Symbol UId="122">
+      <Component Name="DB_OPC_Recipe" UId="123">
+        <BooleanAttribute Name="HasQuotes" UId="124">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="125" />
+      <Component Name="Current" UId="126" />
+      <Token Text="." UId="127" />
+      <Component Name="RecipeVersionGuid" UId="128" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="129" />
+  <NewLine UId="130" />
+  <Token Text="END_REGION" UId="131" />
+  <NewLine Num="2" UId="132" />
+  <Token Text="REGION" UId="133" />
+  <Blank UId="134" />
+  <Text UId="135">Data</Text>
+  <NewLine UId="136" />
+  <Blank Num="4" UId="137" />
+  <Access Scope="GlobalVariable" UId="138">
+    <Symbol UId="139">
+      <Component Name="DB_OPC_Recipe" UId="140">
+        <BooleanAttribute Name="HasQuotes" UId="141">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="142" />
+      <Component Name="Data" UId="143" />
+      <Token Text="." UId="144" />
+      <Component Name="LaserJobListName" UId="145" />
+    </Symbol>
+  </Access>
+  <Blank UId="146" />
+  <Token Text=":=" UId="147" />
+  <Blank UId="148" />
+  <Access Scope="GlobalVariable" UId="149">
+    <Symbol UId="150">
+      <Component Name="DB_OPC_Recipe" UId="151">
+        <BooleanAttribute Name="HasQuotes" UId="152">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="153" />
+      <Component Name="Data" UId="154" />
+      <Token Text="." UId="155" />
+      <Component Name="LaserJobListName" UId="156" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="157" />
+  <NewLine UId="158" />
+  <Blank Num="4" UId="159" />
+  <Access Scope="GlobalVariable" UId="160">
+    <Symbol UId="161">
+      <Component Name="DB_OPC_Recipe" UId="162">
+        <BooleanAttribute Name="HasQuotes" UId="163">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="164" />
+      <Component Name="Data" UId="165" />
+      <Token Text="." UId="166" />
+      <Component Name="RecipeId" UId="167" />
+    </Symbol>
+  </Access>
+  <Blank UId="168" />
+  <Token Text=":=" UId="169" />
+  <Blank UId="170" />
+  <Access Scope="GlobalVariable" UId="171">
+    <Symbol UId="172">
+      <Component Name="DB_OPC_Recipe" UId="173">
+        <BooleanAttribute Name="HasQuotes" UId="174">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="175" />
+      <Component Name="Data" UId="176" />
+      <Token Text="." UId="177" />
+      <Component Name="RecipeId" UId="178" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="179" />
+  <NewLine UId="180" />
+  <Blank Num="4" UId="181" />
+  <Access Scope="GlobalVariable" UId="182">
+    <Symbol UId="183">
+      <Component Name="DB_OPC_Recipe" UId="184">
+        <BooleanAttribute Name="HasQuotes" UId="185">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="186" />
+      <Component Name="Data" UId="187" />
+      <Token Text="." UId="188" />
+      <Component Name="RecipeName" UId="189" />
+    </Symbol>
+  </Access>
+  <Blank UId="190" />
+  <Token Text=":=" UId="191" />
+  <Blank UId="192" />
+  <Access Scope="GlobalVariable" UId="193">
+    <Symbol UId="194">
+      <Component Name="DB_OPC_Recipe" UId="195">
+        <BooleanAttribute Name="HasQuotes" UId="196">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="197" />
+      <Component Name="Data" UId="198" />
+      <Token Text="." UId="199" />
+      <Component Name="RecipeName" UId="200" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="201" />
+  <NewLine UId="202" />
+  <Blank Num="4" UId="203" />
+  <Access Scope="GlobalVariable" UId="204">
+    <Symbol UId="205">
+      <Component Name="DB_OPC_Recipe" UId="206">
+        <BooleanAttribute Name="HasQuotes" UId="207">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="208" />
+      <Component Name="Data" UId="209" />
+      <Token Text="." UId="210" />
+      <Component Name="RecipeVersionGuid" UId="211" />
+    </Symbol>
+  </Access>
+  <Blank UId="212" />
+  <Token Text=":=" UId="213" />
+  <Blank UId="214" />
+  <Access Scope="GlobalVariable" UId="215">
+    <Symbol UId="216">
+      <Component Name="DB_OPC_Recipe" UId="217">
+        <BooleanAttribute Name="HasQuotes" UId="218">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="219" />
+      <Component Name="Data" UId="220" />
+      <Token Text="." UId="221" />
+      <Component Name="RecipeVersionGuid" UId="222" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="223" />
+  <NewLine UId="224" />
+  <Blank Num="4" UId="225" />
+  <NewLine UId="226" />
+  <Blank Num="4" UId="227" />
+  <LineComment UId="228">
+    <Text UId="229"> Station 1</Text>
+  </LineComment>
+  <NewLine UId="230" />
+  <Blank Num="4" UId="231" />
+  <LineComment UId="232">
+    <Text UId="233"> General \ Detections \ WorkPart</Text>
+  </LineComment>
+  <NewLine UId="234" />
+  <Blank Num="4" UId="235" />
+  <Access Scope="GlobalVariable" UId="236">
+    <Symbol UId="237">
+      <Component Name="DB_OPC_Recipe" UId="238">
+        <BooleanAttribute Name="HasQuotes" UId="239">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="240" />
+      <Component Name="Data" UId="241" />
+      <Token Text="." UId="242" />
+      <Component Name="Station1" UId="243" />
+      <Token Text="." UId="244" />
+      <Component Name="General" UId="245" />
+      <Token Text="." UId="246" />
+      <Component Name="Detections" UId="247" />
+      <Token Text="." UId="248" />
+      <Component Name="WorkPart" UId="249" />
+      <Token Text="." UId="250" />
+      <Component Name="Max" UId="251" />
+    </Symbol>
+  </Access>
+  <Blank UId="252" />
+  <Token Text=":=" UId="253" />
+  <Blank UId="254" />
+  <Access Scope="GlobalVariable" UId="255">
+    <Symbol UId="256">
+      <Component Name="DB_OPC_Recipe" UId="257">
+        <BooleanAttribute Name="HasQuotes" UId="258">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="259" />
+      <Component Name="Data" UId="260" />
+      <Token Text="." UId="261" />
+      <Component Name="Station1" UId="262" />
+      <Token Text="." UId="263" />
+      <Component Name="General" UId="264" />
+      <Token Text="." UId="265" />
+      <Component Name="Detections" UId="266" />
+      <Token Text="." UId="267" />
+      <Component Name="WorkPart" UId="268" />
+      <Token Text="." UId="269" />
+      <Component Name="Max" UId="270" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="271" />
+  <NewLine UId="272" />
+  <Blank Num="4" UId="273" />
+  <Access Scope="GlobalVariable" UId="274">
+    <Symbol UId="275">
+      <Component Name="DB_OPC_Recipe" UId="276">
+        <BooleanAttribute Name="HasQuotes" UId="277">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="278" />
+      <Component Name="Data" UId="279" />
+      <Token Text="." UId="280" />
+      <Component Name="Station1" UId="281" />
+      <Token Text="." UId="282" />
+      <Component Name="General" UId="283" />
+      <Token Text="." UId="284" />
+      <Component Name="Detections" UId="285" />
+      <Token Text="." UId="286" />
+      <Component Name="WorkPart" UId="287" />
+      <Token Text="." UId="288" />
+      <Component Name="Min" UId="289" />
+    </Symbol>
+  </Access>
+  <Blank UId="290" />
+  <Token Text=":=" UId="291" />
+  <Blank UId="292" />
+  <Access Scope="GlobalVariable" UId="293">
+    <Symbol UId="294">
+      <Component Name="DB_OPC_Recipe" UId="295">
+        <BooleanAttribute Name="HasQuotes" UId="296">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="297" />
+      <Component Name="Data" UId="298" />
+      <Token Text="." UId="299" />
+      <Component Name="Station1" UId="300" />
+      <Token Text="." UId="301" />
+      <Component Name="General" UId="302" />
+      <Token Text="." UId="303" />
+      <Component Name="Detections" UId="304" />
+      <Token Text="." UId="305" />
+      <Component Name="WorkPart" UId="306" />
+      <Token Text="." UId="307" />
+      <Component Name="Min" UId="308" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="309" />
+  <NewLine UId="310" />
+  <Blank Num="4" UId="311" />
+  <LineComment UId="312">
+    <Text UId="313"> General \ GasPressure</Text>
+  </LineComment>
+  <NewLine UId="314" />
+  <Blank Num="5" UId="315" />
+  <Access Scope="GlobalVariable" UId="316">
+    <Symbol UId="317">
+      <Component Name="DB_OPC_Recipe" UId="318">
+        <BooleanAttribute Name="HasQuotes" UId="319">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="320" />
+      <Component Name="Data" UId="321" />
+      <Token Text="." UId="322" />
+      <Component Name="Station1" UId="323" />
+      <Token Text="." UId="324" />
+      <Component Name="General" UId="325" />
+      <Token Text="." UId="326" />
+      <Component Name="GazPressure" UId="327" />
+      <Token Text="." UId="328" />
+      <Component Name="WorkLaserDefault" UId="329" />
+    </Symbol>
+  </Access>
+  <Blank UId="330" />
+  <Token Text=":=" UId="331" />
+  <Blank UId="332" />
+  <Access Scope="GlobalVariable" UId="333">
+    <Symbol UId="334">
+      <Component Name="DB_OPC_Recipe" UId="335">
+        <BooleanAttribute Name="HasQuotes" UId="336">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="337" />
+      <Component Name="Data" UId="338" />
+      <Token Text="." UId="339" />
+      <Component Name="Station1" UId="340" />
+      <Token Text="." UId="341" />
+      <Component Name="General" UId="342" />
+      <Token Text="." UId="343" />
+      <Component Name="GazPressure" UId="344" />
+      <Token Text="." UId="345" />
+      <Component Name="WorkLaserDefault" UId="346" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="347" />
+  <NewLine UId="348" />
+  <Token Text="END_REGION" UId="349" />
+  <NewLine Num="2" UId="350" />
+  <Token Text="REGION" UId="351" />
+  <Blank UId="352" />
+  <Text UId="353">TransfertToPlc</Text>
+  <NewLine UId="354" />
+  <Blank Num="4" UId="355" />
+  <Token Text="IF" UId="356" />
+  <Blank UId="357" />
+  <Access Scope="GlobalVariable" UId="358">
+    <Symbol UId="359">
+      <Component Name="DB_OPC_Recipe" UId="360">
+        <BooleanAttribute Name="HasQuotes" UId="361">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="362" />
+      <Component Name="TransferToPlc" UId="363" />
+    </Symbol>
+  </Access>
+  <Blank UId="364" />
+  <Token Text="THEN" UId="365" />
+  <NewLine UId="366" />
+  <Blank Num="8" UId="367" />
+  <Access Scope="GlobalVariable" UId="368">
+    <Symbol UId="369">
+      <Component Name="DB_OPC_Recipe" UId="370">
+        <BooleanAttribute Name="HasQuotes" UId="371">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="372" />
+      <Component Name="Current" UId="373" />
+      <Token Text="." UId="374" />
+      <Component Name="RecipeId" UId="375" />
+    </Symbol>
+  </Access>
+  <Blank UId="376" />
+  <Token Text=":=" UId="377" />
+  <Blank UId="378" />
+  <Access Scope="GlobalVariable" UId="379">
+    <Symbol UId="380">
+      <Component Name="DB_OPC_Recipe" UId="381">
+        <BooleanAttribute Name="HasQuotes" UId="382">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="383" />
+      <Component Name="Data" UId="384" />
+      <Token Text="." UId="385" />
+      <Component Name="RecipeId" UId="386" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="387" />
+  <NewLine UId="388" />
+  <Blank Num="8" UId="389" />
+  <Access Scope="GlobalVariable" UId="390">
+    <Symbol UId="391">
+      <Component Name="DB_OPC_Recipe" UId="392">
+        <BooleanAttribute Name="HasQuotes" UId="393">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="394" />
+      <Component Name="Current" UId="395" />
+      <Token Text="." UId="396" />
+      <Component Name="RecipeVersionGuid" UId="397" />
+    </Symbol>
+  </Access>
+  <Blank UId="398" />
+  <Token Text=":=" UId="399" />
+  <Blank UId="400" />
+  <Access Scope="GlobalVariable" UId="401">
+    <Symbol UId="402">
+      <Component Name="DB_OPC_Recipe" UId="403">
+        <BooleanAttribute Name="HasQuotes" UId="404">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="405" />
+      <Component Name="Data" UId="406" />
+      <Token Text="." UId="407" />
+      <Component Name="RecipeVersionGuid" UId="408" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="409" />
+  <NewLine UId="410" />
+  <Blank Num="8" UId="411" />
+  <Access Scope="GlobalVariable" UId="412">
+    <Symbol UId="413">
+      <Component Name="DB_Scanner" UId="414">
+        <BooleanAttribute Name="HasQuotes" UId="415">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="416" />
+      <Component Name="sScannerComm" UId="417" />
+      <Token Text="." UId="418" />
+      <Component Name="iJobListName" UId="419" />
+    </Symbol>
+  </Access>
+  <Blank UId="420" />
+  <Token Text=":=" UId="421" />
+  <Blank UId="422" />
+  <Access Scope="GlobalVariable" UId="423">
+    <Symbol UId="424">
+      <Component Name="DB_OPC_Recipe" UId="425">
+        <BooleanAttribute Name="HasQuotes" UId="426">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="427" />
+      <Component Name="Data" UId="428" />
+      <Token Text="." UId="429" />
+      <Component Name="LaserJobListName" UId="430" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="431" />
+  <NewLine UId="432" />
+  <Blank Num="4" UId="433" />
+  <LineComment UId="434">
+    <Text UId="435">    "DB_HMISetting".GasAssistSetPoint := LREAL_TO_REAL("DB_OPC_Recipe".Data.Station1.General.GazPressure.WorkLaserDefault);   WAF A LIBERER QUAND RECETTE OK</Text>
+  </LineComment>
+  <NewLine UId="436" />
+  <Blank Num="4" UId="437" />
+  <LineComment UId="438">
+    <Text UId="439">    "DB_GestionFixture".sFixturePartControl.iProdOK_LimHigh := LREAL_TO_REAL("DB_OPC_Recipe".Data.Station1.General.Detections.WorkPart.Max);  WAF A LIBERER QUAND RECETTE OK</Text>
+  </LineComment>
+  <NewLine UId="440" />
+  <Blank Num="4" UId="441" />
+  <LineComment UId="442">
+    <Text UId="443">    "DB_GestionFixture".sFixturePartControl.iProdOK_LimLow := LREAL_TO_REAL("DB_OPC_Recipe".Data.Station1.General.Detections.WorkPart.Min);   WAF A LIBERER QUAND RECETTE OK</Text>
+  </LineComment>
+  <NewLine UId="444" />
+  <Blank Num="8" UId="445" />
+  <Access Scope="GlobalVariable" UId="446">
+    <Symbol UId="447">
+      <Component Name="DB_OPC_Recipe" UId="448">
+        <BooleanAttribute Name="HasQuotes" UId="449">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="450" />
+      <Component Name="TransferToPlc" UId="451" />
+    </Symbol>
+  </Access>
+  <Blank UId="452" />
+  <Token Text=":=" UId="453" />
+  <Blank UId="454" />
+  <Access Scope="LiteralConstant" UId="455">
+    <Constant UId="456">
+      <ConstantValue UId="458">FALSE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="459" />
+  <NewLine UId="460" />
+  <Blank Num="4" UId="461" />
+  <Token Text="END_IF" UId="462" />
+  <Token Text=";" UId="463" />
+  <NewLine UId="464" />
+  <Token Text="END_REGION" UId="465" />
+  <NewLine UId="466" />
+</StructuredText></NetworkSource>
+          <ProgrammingLanguage>SCL</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="5" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="6" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="7" CompositionName="Items">
+                <AttributeList>
+                  <Culture>fr-FR</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="8" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="9" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="A" CompositionName="Items">
+                <AttributeList>
+                  <Culture>fr-FR</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <MultilingualText ID="B" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="C" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="D" CompositionName="Items">
+            <AttributeList>
+              <Culture>fr-FR</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Blocks.FB>
+</Document>

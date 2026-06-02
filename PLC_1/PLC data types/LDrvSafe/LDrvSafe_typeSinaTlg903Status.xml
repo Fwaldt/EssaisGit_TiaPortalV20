@@ -1,0 +1,569 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V20" />
+  <SW.Types.PlcStruct ID="0">
+    <AttributeList>
+      <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+  <Section Name="None">
+    <Member Name="STOactive" Datatype="Bool">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="en-US">Safety Function Safe Torque Off active</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="SS1active" Datatype="Bool">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="en-US">Safety Function Safe Stop 1 active</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="SS2active" Datatype="Bool">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="en-US">Safety Function Safe Stop 2 active</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="SOSactive" Datatype="Bool">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="en-US">Safety Function Safe Operating Stop active</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="SLSactive" Datatype="Bool">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="en-US">Safety Function Safely-limited Speed active</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="reserved1" Datatype="Bool">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="en-US">Reserve bit 1</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="SLPactive" Datatype="Bool">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="en-US">Safety Function Safely-limited Position active</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="internalEvent" Datatype="Bool">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="en-US">Internal Event occured (Safety error in SINAMICS)</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="SLAactive" Datatype="Bool">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="en-US">Safety Function Safely-limited Acceleration active</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="SLSbit0Active" Datatype="Bool">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="en-US">One of the the four SLS limits is active; operates together with bit 1</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="SLSbit1Active" Datatype="Bool">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="en-US">One of the the four SLS limits is active; operates together with bit 0</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="reserved3" Datatype="Bool">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="en-US">Reserve bit 3</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="SDIpositiveActive" Datatype="Bool">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="en-US">Safety Function Safe Direction (positive direction) active</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="SDInegativeActive" Datatype="Bool">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="en-US">Safety Function Safe Direction (negative direction) active</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="reserved4" Datatype="Bool">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="en-US">Reserve bit 4</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="SSMactive" Datatype="Bool">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="en-US">Safety Function Safe Speed Monitor; signals, if safe speed is below paramterizable speed limit</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="reserved5" Datatype="Bool">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="en-US">Reserve bit 5</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="reserved6" Datatype="Bool">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="en-US">Reserve bit 6</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="reserved7" Datatype="Bool">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="en-US">Reserve bit 7</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="SLPrangeActive" Datatype="Bool">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="en-US">SLP position range 1 or 2 is active</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="reserved8" Datatype="Bool">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="en-US">Reserve bit 8</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="reserved9" Datatype="Bool">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="en-US">Reserve bit 9</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="safePositionValid" Datatype="Bool">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="en-US">Safe Position is valid</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="safelyReferenced" Datatype="Bool">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="en-US">Drive is safely referenced</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="statusFDI0" Datatype="Bool">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="en-US">Status of Failsafe Digital Input 0</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="statusFDI1" Datatype="Bool">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="en-US">Status of Failsafe Digital Input 1</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="statusFDI2" Datatype="Bool">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="en-US">Status of Failsafe Digital Input 2</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="SS2ESRactive" Datatype="Bool">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="en-US">Safety Function SS2ESR active</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="SS2Eactive" Datatype="Bool">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="en-US">Safety Function SS2E active</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="SOSselected" Datatype="Bool">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="en-US">Safety Function Safe Operating Stop selected (not active yet)</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="SLPupperLimitMaintained" Datatype="Bool">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="en-US">SLP: upper limit maintained</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="SLPlowerLimitMaintained" Datatype="Bool">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="en-US">SLP: lower limit maintained</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="SCA1" Datatype="Bool">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="en-US">Safe Cam 1</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="SCA2" Datatype="Bool">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="en-US">Safe Cam 2</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="SCA3" Datatype="Bool">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="en-US">Safe Cam 3</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="SCA4" Datatype="Bool">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="en-US">Safe Cam 4</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="SCA5" Datatype="Bool">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="en-US">Safe Cam 5</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="SCA6" Datatype="Bool">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="en-US">Safe Cam 6</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="SCA7" Datatype="Bool">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="en-US">Safe Cam 7</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="SCA8" Datatype="Bool">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="en-US">Safe Cam 8</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="SCA9" Datatype="Bool">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="en-US">Safe Cam 9</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="SCA10" Datatype="Bool">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="en-US">Safe Cam 10</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="SCA11" Datatype="Bool">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="en-US">Safe Cam 11</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="SCA12" Datatype="Bool">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="en-US">Safe Cam 12</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="SCA13" Datatype="Bool">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="en-US">Safe Cam 13</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="SCA14" Datatype="Bool">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="en-US">Safe Cam 14</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="SCA15" Datatype="Bool">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="en-US">Safe Cam 15</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="SCA16" Datatype="Bool">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="en-US">Safe Cam 16</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="SCA17" Datatype="Bool">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="en-US">Safe Cam 17</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="SCA18" Datatype="Bool">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="en-US">Safe Cam 18</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="SCA19" Datatype="Bool">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="en-US">Safe Cam 19</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="SCA20" Datatype="Bool">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="en-US">Safe Cam 20</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="SCA21" Datatype="Bool">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="en-US">Safe Cam 21</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="SCA22" Datatype="Bool">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="en-US">Safe Cam 22</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="SCA23" Datatype="Bool">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="en-US">Safe Cam 23</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="SCA24" Datatype="Bool">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="en-US">Safe Cam 24</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="SCA25" Datatype="Bool">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="en-US">Safe Cam 25</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="SCA26" Datatype="Bool">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="en-US">Safe Cam 26</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="SCA27" Datatype="Bool">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="en-US">Safe Cam 27</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="SCA28" Datatype="Bool">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="en-US">Safe Cam 28</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="SCA29" Datatype="Bool">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="en-US">Safe Cam 29</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="SCA30" Datatype="Bool">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="en-US">Safe Cam 30</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="SCAactive" Datatype="Bool">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="en-US">Safety Function Safe Cam active</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="SCAvalid" Datatype="Bool">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="en-US">Safety Function Safe Cam valid</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="variableSLSvalue" Datatype="Int">
+      <AttributeList>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+      </AttributeList>
+      <Comment>
+        <MultiLanguageText Lang="en-US">Actual SLS value for SLS limit 1</MultiLanguageText>
+      </Comment>
+    </Member>
+  </Section>
+</Sections></Interface>
+      <IsFailsafeCompliant>true</IsFailsafeCompliant>
+      <Name>LDrvSafe_typeSinaTlg903Status</Name>
+      <Namespace />
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text>Failsafe user-defined data type for PROFIsafe telegram 903 to get status information of Safety Integrated Functions of SINAMICS</Text>
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="3" CompositionName="Items">
+            <AttributeList>
+              <Culture>fr-FR</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <MultilingualText ID="4" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="5" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text>LDrvSafe_typeSinaTlg903Status</Text>
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="6" CompositionName="Items">
+            <AttributeList>
+              <Culture>fr-FR</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Types.PlcStruct>
+</Document>
