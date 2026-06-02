@@ -1400,924 +1400,964 @@
   </Access>
   <Token Text=";" UId="1030" />
   <NewLine UId="1031" />
-  <Token Text="END_REGION" UId="1032" />
-  <NewLine Num="2" UId="1033" />
-  <Token Text="REGION" UId="1034" />
-  <Blank UId="1035" />
-  <Text UId="1036">Ext Loader</Text>
-  <NewLine UId="1037" />
-  <Blank Num="4" UId="1038" />
-  <Access Scope="GlobalVariable" UId="1039">
-    <Symbol UId="1040">
-      <Component Name="DB_LoaderOptions" UId="1041">
-        <BooleanAttribute Name="HasQuotes" UId="1042">true</BooleanAttribute>
+  <Blank Num="3" UId="1032" />
+  <Access Scope="GlobalVariable" UId="1033">
+    <Symbol UId="1034">
+      <Component Name="DB_WAF" UId="1035">
+        <BooleanAttribute Name="HasQuotes" UId="1036">true</BooleanAttribute>
       </Component>
-      <Token Text="." UId="1043" />
-      <Component Name="ExtLoadUnload" UId="1044" />
-      <Token Text="." UId="1045" />
-      <Component Name="Disabled" UId="1046" />
+      <Token Text="." UId="1037" />
+      <Component Name="bSpy" UId="1038">
+        <Token Text="[" UId="1039" />
+        <Access Scope="LiteralConstant" UId="1040">
+          <Constant UId="1041">
+            <ConstantValue UId="1043">9</ConstantValue>
+          </Constant>
+        </Access>
+        <Token Text="]" UId="1044" />
+      </Component>
     </Symbol>
   </Access>
+  <Blank UId="1045" />
+  <Token Text=":=" UId="1046" />
   <Blank UId="1047" />
-  <Token Text=":=" UId="1048" />
-  <Blank UId="1049" />
-  <Access Scope="LiteralConstant" UId="1050">
-    <Constant UId="1051">
-      <ConstantValue UId="1053">TRUE</ConstantValue>
-    </Constant>
-  </Access>
-  <Token Text=";" UId="1054" />
-  <NewLine UId="1055" />
-  <Blank Num="4" UId="1056" />
-  <NewLine UId="1057" />
-  <Blank Num="4" UId="1058" />
-  <Access Scope="LocalVariable" UId="1059">
-    <Symbol UId="1060">
-      <Component Name="sRT_Sh1_ExtLoadUnloadDone" UId="1061" />
+  <Access Scope="GlobalVariable" UId="1048">
+    <Symbol UId="1049">
+      <Component Name="DB_WAF" UId="1050">
+        <BooleanAttribute Name="HasQuotes" UId="1051">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="1052" />
+      <Component Name="bSpy" UId="1053">
+        <Token Text="[" UId="1054" />
+        <Access Scope="LiteralConstant" UId="1055">
+          <Constant UId="1056">
+            <ConstantValue UId="1058">9</ConstantValue>
+          </Constant>
+        </Access>
+        <Token Text="]" UId="1059" />
+      </Component>
     </Symbol>
   </Access>
-  <Access Scope="Call" UId="1062">
-    <Instruction UId="1063">
-      <Token Text="(" UId="1064" />
-      <Parameter Name="CLK" UId="1065">
-        <Blank UId="1066" />
-        <Token Text=":=" UId="1067" />
-        <Blank UId="1068" />
-        <Access Scope="GlobalVariable" UId="1069">
-          <Symbol UId="1070">
-            <Component Name="DB_LoaderShuttle1" UId="1071">
-              <BooleanAttribute Name="HasQuotes" UId="1072">true</BooleanAttribute>
+  <Token Text=";" UId="1060" />
+  <NewLine UId="1061" />
+  <Token Text="END_REGION" UId="1062" />
+  <NewLine Num="2" UId="1063" />
+  <Token Text="REGION" UId="1064" />
+  <Blank UId="1065" />
+  <Text UId="1066">Ext Loader</Text>
+  <NewLine UId="1067" />
+  <Blank Num="4" UId="1068" />
+  <Access Scope="GlobalVariable" UId="1069">
+    <Symbol UId="1070">
+      <Component Name="DB_LoaderOptions" UId="1071">
+        <BooleanAttribute Name="HasQuotes" UId="1072">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="1073" />
+      <Component Name="ExtLoadUnload" UId="1074" />
+      <Token Text="." UId="1075" />
+      <Component Name="Disabled" UId="1076" />
+    </Symbol>
+  </Access>
+  <Blank UId="1077" />
+  <Token Text=":=" UId="1078" />
+  <Blank UId="1079" />
+  <Access Scope="LiteralConstant" UId="1080">
+    <Constant UId="1081">
+      <ConstantValue UId="1083">TRUE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="1084" />
+  <NewLine UId="1085" />
+  <Blank Num="4" UId="1086" />
+  <NewLine UId="1087" />
+  <Blank Num="4" UId="1088" />
+  <Access Scope="LocalVariable" UId="1089">
+    <Symbol UId="1090">
+      <Component Name="sRT_Sh1_ExtLoadUnloadDone" UId="1091" />
+    </Symbol>
+  </Access>
+  <Access Scope="Call" UId="1092">
+    <Instruction UId="1093">
+      <Token Text="(" UId="1094" />
+      <Parameter Name="CLK" UId="1095">
+        <Blank UId="1096" />
+        <Token Text=":=" UId="1097" />
+        <Blank UId="1098" />
+        <Access Scope="GlobalVariable" UId="1099">
+          <Symbol UId="1100">
+            <Component Name="DB_LoaderShuttle1" UId="1101">
+              <BooleanAttribute Name="HasQuotes" UId="1102">true</BooleanAttribute>
             </Component>
-            <Token Text="." UId="1073" />
-            <Component Name="sExtLoadUnload" UId="1074" />
-            <Token Text="." UId="1075" />
-            <Component Name="sInterface" UId="1076" />
-            <Token Text="." UId="1077" />
-            <Component Name="JobDone" UId="1078" />
+            <Token Text="." UId="1103" />
+            <Component Name="sExtLoadUnload" UId="1104" />
+            <Token Text="." UId="1105" />
+            <Component Name="sInterface" UId="1106" />
+            <Token Text="." UId="1107" />
+            <Component Name="JobDone" UId="1108" />
           </Symbol>
         </Access>
       </Parameter>
-      <Token Text=")" UId="1079" />
+      <Token Text=")" UId="1109" />
     </Instruction>
   </Access>
-  <Token Text=";" UId="1080" />
-  <NewLine UId="1081" />
-  <Blank Num="4" UId="1082" />
-  <Access Scope="LocalVariable" UId="1083">
-    <Symbol UId="1084">
-      <Component Name="sRT_Sh2_ExtLoadUnloadDone" UId="1085" />
+  <Token Text=";" UId="1110" />
+  <NewLine UId="1111" />
+  <Blank Num="4" UId="1112" />
+  <Access Scope="LocalVariable" UId="1113">
+    <Symbol UId="1114">
+      <Component Name="sRT_Sh2_ExtLoadUnloadDone" UId="1115" />
     </Symbol>
   </Access>
-  <Access Scope="Call" UId="1086">
-    <Instruction UId="1087">
-      <Token Text="(" UId="1088" />
-      <Parameter Name="CLK" UId="1089">
-        <Blank UId="1090" />
-        <Token Text=":=" UId="1091" />
-        <Blank UId="1092" />
-        <Access Scope="GlobalVariable" UId="1093">
-          <Symbol UId="1094">
-            <Component Name="DB_LoaderShuttle2" UId="1095">
-              <BooleanAttribute Name="HasQuotes" UId="1096">true</BooleanAttribute>
+  <Access Scope="Call" UId="1116">
+    <Instruction UId="1117">
+      <Token Text="(" UId="1118" />
+      <Parameter Name="CLK" UId="1119">
+        <Blank UId="1120" />
+        <Token Text=":=" UId="1121" />
+        <Blank UId="1122" />
+        <Access Scope="GlobalVariable" UId="1123">
+          <Symbol UId="1124">
+            <Component Name="DB_LoaderShuttle2" UId="1125">
+              <BooleanAttribute Name="HasQuotes" UId="1126">true</BooleanAttribute>
             </Component>
-            <Token Text="." UId="1097" />
-            <Component Name="sExtLoadUnload" UId="1098" />
-            <Token Text="." UId="1099" />
-            <Component Name="sInterface" UId="1100" />
-            <Token Text="." UId="1101" />
-            <Component Name="JobDone" UId="1102" />
+            <Token Text="." UId="1127" />
+            <Component Name="sExtLoadUnload" UId="1128" />
+            <Token Text="." UId="1129" />
+            <Component Name="sInterface" UId="1130" />
+            <Token Text="." UId="1131" />
+            <Component Name="JobDone" UId="1132" />
           </Symbol>
         </Access>
       </Parameter>
-      <Token Text=")" UId="1103" />
+      <Token Text=")" UId="1133" />
     </Instruction>
   </Access>
-  <Token Text=";" UId="1104" />
-  <NewLine UId="1105" />
-  <Blank Num="4" UId="1106" />
-  <NewLine UId="1107" />
-  <Blank Num="4" UId="1108" />
-  <Token Text="IF" UId="1109" />
-  <Blank UId="1110" />
-  <Access Scope="LocalVariable" UId="1111">
-    <Symbol UId="1112">
-      <Component Name="sRT_Sh1_ExtLoadUnloadDone" UId="1113" />
-      <Token Text="." UId="1114" />
-      <Component Name="Q" UId="1115" />
+  <Token Text=";" UId="1134" />
+  <NewLine UId="1135" />
+  <Blank Num="4" UId="1136" />
+  <NewLine UId="1137" />
+  <Blank Num="4" UId="1138" />
+  <Token Text="IF" UId="1139" />
+  <Blank UId="1140" />
+  <Access Scope="LocalVariable" UId="1141">
+    <Symbol UId="1142">
+      <Component Name="sRT_Sh1_ExtLoadUnloadDone" UId="1143" />
+      <Token Text="." UId="1144" />
+      <Component Name="Q" UId="1145" />
     </Symbol>
   </Access>
-  <Blank UId="1116" />
-  <Token Text="THEN" UId="1117" />
-  <NewLine UId="1118" />
-  <Blank Num="8" UId="1119" />
-  <Access Scope="GlobalVariable" UId="1120">
-    <Symbol UId="1121">
-      <Component Name="DB_SonplasMain" UId="1122">
-        <BooleanAttribute Name="HasQuotes" UId="1123">true</BooleanAttribute>
+  <Blank UId="1146" />
+  <Token Text="THEN" UId="1147" />
+  <NewLine UId="1148" />
+  <Blank Num="8" UId="1149" />
+  <Access Scope="GlobalVariable" UId="1150">
+    <Symbol UId="1151">
+      <Component Name="DB_SonplasMain" UId="1152">
+        <BooleanAttribute Name="HasQuotes" UId="1153">true</BooleanAttribute>
       </Component>
-      <Token Text="." UId="1124" />
-      <Component Name="sSonplasLoader" UId="1125" />
-      <Token Text="." UId="1126" />
-      <Component Name="iPartInDMC_CodeShuttle1" UId="1127">
-        <Token Text="[" UId="1128" />
-        <Access Scope="LiteralConstant" UId="1129">
-          <Constant UId="1130">
-            <ConstantValue UId="1132">0</ConstantValue>
+      <Token Text="." UId="1154" />
+      <Component Name="sSonplasLoader" UId="1155" />
+      <Token Text="." UId="1156" />
+      <Component Name="iPartInDMC_CodeShuttle1" UId="1157">
+        <Token Text="[" UId="1158" />
+        <Access Scope="LiteralConstant" UId="1159">
+          <Constant UId="1160">
+            <ConstantValue UId="1162">0</ConstantValue>
           </Constant>
         </Access>
-        <Token Text="]" UId="1133" />
+        <Token Text="]" UId="1163" />
       </Component>
     </Symbol>
   </Access>
-  <Blank UId="1134" />
-  <Token Text=":=" UId="1135" />
-  <Blank UId="1136" />
-  <Access Scope="GlobalVariable" UId="1137">
-    <Symbol UId="1138">
-      <Component Name="DB_SonplasMain" UId="1139">
-        <BooleanAttribute Name="HasQuotes" UId="1140">true</BooleanAttribute>
+  <Blank UId="1164" />
+  <Token Text=":=" UId="1165" />
+  <Blank UId="1166" />
+  <Access Scope="GlobalVariable" UId="1167">
+    <Symbol UId="1168">
+      <Component Name="DB_SonplasMain" UId="1169">
+        <BooleanAttribute Name="HasQuotes" UId="1170">true</BooleanAttribute>
       </Component>
-      <Token Text="." UId="1141" />
-      <Component Name="sSonplasLoader" UId="1142" />
-      <Token Text="." UId="1143" />
-      <Component Name="iPartInDMC_CodeShuttle1" UId="1144">
-        <Token Text="[" UId="1145" />
-        <Access Scope="LiteralConstant" UId="1146">
-          <Constant UId="1147">
-            <ConstantValue UId="1149">0</ConstantValue>
+      <Token Text="." UId="1171" />
+      <Component Name="sSonplasLoader" UId="1172" />
+      <Token Text="." UId="1173" />
+      <Component Name="iPartInDMC_CodeShuttle1" UId="1174">
+        <Token Text="[" UId="1175" />
+        <Access Scope="LiteralConstant" UId="1176">
+          <Constant UId="1177">
+            <ConstantValue UId="1179">0</ConstantValue>
           </Constant>
         </Access>
-        <Token Text="]" UId="1150" />
+        <Token Text="]" UId="1180" />
       </Component>
     </Symbol>
   </Access>
-  <Blank UId="1151" />
-  <Token Text="+" UId="1152" />
-  <Blank UId="1153" />
-  <Access Scope="LiteralConstant" UId="1154">
-    <Constant UId="1155">
-      <ConstantValue UId="1157">1</ConstantValue>
+  <Blank UId="1181" />
+  <Token Text="+" UId="1182" />
+  <Blank UId="1183" />
+  <Access Scope="LiteralConstant" UId="1184">
+    <Constant UId="1185">
+      <ConstantValue UId="1187">1</ConstantValue>
     </Constant>
   </Access>
-  <Token Text=";" UId="1158" />
-  <NewLine UId="1159" />
-  <Blank Num="8" UId="1160" />
-  <Token Text="IF" UId="1161" />
-  <Blank UId="1162" />
-  <Access Scope="GlobalVariable" UId="1163">
-    <Symbol UId="1164">
-      <Component Name="DB_SonplasMain" UId="1165">
-        <BooleanAttribute Name="HasQuotes" UId="1166">true</BooleanAttribute>
+  <Token Text=";" UId="1188" />
+  <NewLine UId="1189" />
+  <Blank Num="8" UId="1190" />
+  <Token Text="IF" UId="1191" />
+  <Blank UId="1192" />
+  <Access Scope="GlobalVariable" UId="1193">
+    <Symbol UId="1194">
+      <Component Name="DB_SonplasMain" UId="1195">
+        <BooleanAttribute Name="HasQuotes" UId="1196">true</BooleanAttribute>
       </Component>
-      <Token Text="." UId="1167" />
-      <Component Name="sSonplasLoader" UId="1168" />
-      <Token Text="." UId="1169" />
-      <Component Name="iPartInDMC_CodeShuttle1" UId="1170">
-        <Token Text="[" UId="1171" />
-        <Access Scope="LiteralConstant" UId="1172">
-          <Constant UId="1173">
-            <ConstantValue UId="1175">0</ConstantValue>
+      <Token Text="." UId="1197" />
+      <Component Name="sSonplasLoader" UId="1198" />
+      <Token Text="." UId="1199" />
+      <Component Name="iPartInDMC_CodeShuttle1" UId="1200">
+        <Token Text="[" UId="1201" />
+        <Access Scope="LiteralConstant" UId="1202">
+          <Constant UId="1203">
+            <ConstantValue UId="1205">0</ConstantValue>
           </Constant>
         </Access>
-        <Token Text="]" UId="1176" />
+        <Token Text="]" UId="1206" />
       </Component>
     </Symbol>
   </Access>
-  <Blank UId="1177" />
-  <Token Text="&gt;" UId="1178" />
-  <Blank UId="1179" />
-  <Access Scope="LiteralConstant" UId="1180">
-    <Constant UId="1181">
-      <ConstantValue UId="1183">99</ConstantValue>
+  <Blank UId="1207" />
+  <Token Text="&gt;" UId="1208" />
+  <Blank UId="1209" />
+  <Access Scope="LiteralConstant" UId="1210">
+    <Constant UId="1211">
+      <ConstantValue UId="1213">99</ConstantValue>
     </Constant>
   </Access>
-  <Blank UId="1184" />
-  <Token Text="THEN" UId="1185" />
-  <NewLine UId="1186" />
-  <Blank Num="12" UId="1187" />
-  <Access Scope="GlobalVariable" UId="1188">
-    <Symbol UId="1189">
-      <Component Name="DB_SonplasMain" UId="1190">
-        <BooleanAttribute Name="HasQuotes" UId="1191">true</BooleanAttribute>
+  <Blank UId="1214" />
+  <Token Text="THEN" UId="1215" />
+  <NewLine UId="1216" />
+  <Blank Num="12" UId="1217" />
+  <Access Scope="GlobalVariable" UId="1218">
+    <Symbol UId="1219">
+      <Component Name="DB_SonplasMain" UId="1220">
+        <BooleanAttribute Name="HasQuotes" UId="1221">true</BooleanAttribute>
       </Component>
-      <Token Text="." UId="1192" />
-      <Component Name="sSonplasLoader" UId="1193" />
-      <Token Text="." UId="1194" />
-      <Component Name="iPartInDMC_CodeShuttle1" UId="1195">
-        <Token Text="[" UId="1196" />
-        <Access Scope="LiteralConstant" UId="1197">
-          <Constant UId="1198">
-            <ConstantValue UId="1200">0</ConstantValue>
+      <Token Text="." UId="1222" />
+      <Component Name="sSonplasLoader" UId="1223" />
+      <Token Text="." UId="1224" />
+      <Component Name="iPartInDMC_CodeShuttle1" UId="1225">
+        <Token Text="[" UId="1226" />
+        <Access Scope="LiteralConstant" UId="1227">
+          <Constant UId="1228">
+            <ConstantValue UId="1230">0</ConstantValue>
           </Constant>
         </Access>
-        <Token Text="]" UId="1201" />
+        <Token Text="]" UId="1231" />
       </Component>
     </Symbol>
   </Access>
-  <Blank UId="1202" />
-  <Token Text=":=" UId="1203" />
-  <Blank UId="1204" />
-  <Access Scope="LiteralConstant" UId="1205">
-    <Constant UId="1206">
-      <ConstantValue UId="1208">0</ConstantValue>
+  <Blank UId="1232" />
+  <Token Text=":=" UId="1233" />
+  <Blank UId="1234" />
+  <Access Scope="LiteralConstant" UId="1235">
+    <Constant UId="1236">
+      <ConstantValue UId="1238">0</ConstantValue>
     </Constant>
   </Access>
-  <Token Text=";" UId="1209" />
-  <NewLine UId="1210" />
-  <Blank Num="8" UId="1211" />
-  <Token Text="END_IF" UId="1212" />
-  <Token Text=";" UId="1213" />
-  <NewLine UId="1214" />
-  <Blank Num="4" UId="1215" />
-  <Token Text="END_IF" UId="1216" />
-  <Token Text=";" UId="1217" />
-  <NewLine UId="1218" />
-  <Blank Num="4" UId="1219" />
-  <NewLine UId="1220" />
-  <Blank Num="4" UId="1221" />
-  <Token Text="IF" UId="1222" />
-  <Blank UId="1223" />
-  <Access Scope="LocalVariable" UId="1224">
-    <Symbol UId="1225">
-      <Component Name="sRT_Sh2_ExtLoadUnloadDone" UId="1226" />
-      <Token Text="." UId="1227" />
-      <Component Name="Q" UId="1228" />
+  <Token Text=";" UId="1239" />
+  <NewLine UId="1240" />
+  <Blank Num="8" UId="1241" />
+  <Token Text="END_IF" UId="1242" />
+  <Token Text=";" UId="1243" />
+  <NewLine UId="1244" />
+  <Blank Num="4" UId="1245" />
+  <Token Text="END_IF" UId="1246" />
+  <Token Text=";" UId="1247" />
+  <NewLine UId="1248" />
+  <Blank Num="4" UId="1249" />
+  <NewLine UId="1250" />
+  <Blank Num="4" UId="1251" />
+  <Token Text="IF" UId="1252" />
+  <Blank UId="1253" />
+  <Access Scope="LocalVariable" UId="1254">
+    <Symbol UId="1255">
+      <Component Name="sRT_Sh2_ExtLoadUnloadDone" UId="1256" />
+      <Token Text="." UId="1257" />
+      <Component Name="Q" UId="1258" />
     </Symbol>
   </Access>
-  <Blank UId="1229" />
-  <Token Text="THEN" UId="1230" />
-  <NewLine UId="1231" />
-  <Blank Num="8" UId="1232" />
-  <Access Scope="GlobalVariable" UId="1233">
-    <Symbol UId="1234">
-      <Component Name="DB_SonplasMain" UId="1235">
-        <BooleanAttribute Name="HasQuotes" UId="1236">true</BooleanAttribute>
+  <Blank UId="1259" />
+  <Token Text="THEN" UId="1260" />
+  <NewLine UId="1261" />
+  <Blank Num="8" UId="1262" />
+  <Access Scope="GlobalVariable" UId="1263">
+    <Symbol UId="1264">
+      <Component Name="DB_SonplasMain" UId="1265">
+        <BooleanAttribute Name="HasQuotes" UId="1266">true</BooleanAttribute>
       </Component>
-      <Token Text="." UId="1237" />
-      <Component Name="sSonplasLoader" UId="1238" />
-      <Token Text="." UId="1239" />
-      <Component Name="iPartInDMC_CodeShuttle2" UId="1240">
-        <Token Text="[" UId="1241" />
-        <Access Scope="LiteralConstant" UId="1242">
-          <Constant UId="1243">
-            <ConstantValue UId="1245">0</ConstantValue>
+      <Token Text="." UId="1267" />
+      <Component Name="sSonplasLoader" UId="1268" />
+      <Token Text="." UId="1269" />
+      <Component Name="iPartInDMC_CodeShuttle2" UId="1270">
+        <Token Text="[" UId="1271" />
+        <Access Scope="LiteralConstant" UId="1272">
+          <Constant UId="1273">
+            <ConstantValue UId="1275">0</ConstantValue>
           </Constant>
         </Access>
-        <Token Text="]" UId="1246" />
+        <Token Text="]" UId="1276" />
       </Component>
     </Symbol>
   </Access>
-  <Blank UId="1247" />
-  <Token Text=":=" UId="1248" />
-  <Blank UId="1249" />
-  <Access Scope="GlobalVariable" UId="1250">
-    <Symbol UId="1251">
-      <Component Name="DB_SonplasMain" UId="1252">
-        <BooleanAttribute Name="HasQuotes" UId="1253">true</BooleanAttribute>
+  <Blank UId="1277" />
+  <Token Text=":=" UId="1278" />
+  <Blank UId="1279" />
+  <Access Scope="GlobalVariable" UId="1280">
+    <Symbol UId="1281">
+      <Component Name="DB_SonplasMain" UId="1282">
+        <BooleanAttribute Name="HasQuotes" UId="1283">true</BooleanAttribute>
       </Component>
-      <Token Text="." UId="1254" />
-      <Component Name="sSonplasLoader" UId="1255" />
-      <Token Text="." UId="1256" />
-      <Component Name="iPartInDMC_CodeShuttle2" UId="1257">
-        <Token Text="[" UId="1258" />
-        <Access Scope="LiteralConstant" UId="1259">
-          <Constant UId="1260">
-            <ConstantValue UId="1262">0</ConstantValue>
+      <Token Text="." UId="1284" />
+      <Component Name="sSonplasLoader" UId="1285" />
+      <Token Text="." UId="1286" />
+      <Component Name="iPartInDMC_CodeShuttle2" UId="1287">
+        <Token Text="[" UId="1288" />
+        <Access Scope="LiteralConstant" UId="1289">
+          <Constant UId="1290">
+            <ConstantValue UId="1292">0</ConstantValue>
           </Constant>
         </Access>
-        <Token Text="]" UId="1263" />
+        <Token Text="]" UId="1293" />
       </Component>
     </Symbol>
   </Access>
-  <Blank UId="1264" />
-  <Token Text="+" UId="1265" />
-  <Blank UId="1266" />
-  <Access Scope="LiteralConstant" UId="1267">
-    <Constant UId="1268">
-      <ConstantValue UId="1270">1</ConstantValue>
+  <Blank UId="1294" />
+  <Token Text="+" UId="1295" />
+  <Blank UId="1296" />
+  <Access Scope="LiteralConstant" UId="1297">
+    <Constant UId="1298">
+      <ConstantValue UId="1300">1</ConstantValue>
     </Constant>
   </Access>
-  <Token Text=";" UId="1271" />
-  <NewLine UId="1272" />
-  <Blank Num="8" UId="1273" />
-  <Token Text="IF" UId="1274" />
-  <Blank UId="1275" />
-  <Access Scope="GlobalVariable" UId="1276">
-    <Symbol UId="1277">
-      <Component Name="DB_SonplasMain" UId="1278">
-        <BooleanAttribute Name="HasQuotes" UId="1279">true</BooleanAttribute>
+  <Token Text=";" UId="1301" />
+  <NewLine UId="1302" />
+  <Blank Num="8" UId="1303" />
+  <Token Text="IF" UId="1304" />
+  <Blank UId="1305" />
+  <Access Scope="GlobalVariable" UId="1306">
+    <Symbol UId="1307">
+      <Component Name="DB_SonplasMain" UId="1308">
+        <BooleanAttribute Name="HasQuotes" UId="1309">true</BooleanAttribute>
       </Component>
-      <Token Text="." UId="1280" />
-      <Component Name="sSonplasLoader" UId="1281" />
-      <Token Text="." UId="1282" />
-      <Component Name="iPartInDMC_CodeShuttle2" UId="1283">
-        <Token Text="[" UId="1284" />
-        <Access Scope="LiteralConstant" UId="1285">
-          <Constant UId="1286">
-            <ConstantValue UId="1288">0</ConstantValue>
+      <Token Text="." UId="1310" />
+      <Component Name="sSonplasLoader" UId="1311" />
+      <Token Text="." UId="1312" />
+      <Component Name="iPartInDMC_CodeShuttle2" UId="1313">
+        <Token Text="[" UId="1314" />
+        <Access Scope="LiteralConstant" UId="1315">
+          <Constant UId="1316">
+            <ConstantValue UId="1318">0</ConstantValue>
           </Constant>
         </Access>
-        <Token Text="]" UId="1289" />
+        <Token Text="]" UId="1319" />
       </Component>
     </Symbol>
   </Access>
-  <Blank UId="1290" />
-  <Token Text="&gt;" UId="1291" />
-  <Blank UId="1292" />
-  <Access Scope="LiteralConstant" UId="1293">
-    <Constant UId="1294">
-      <ConstantValue UId="1296">99</ConstantValue>
+  <Blank UId="1320" />
+  <Token Text="&gt;" UId="1321" />
+  <Blank UId="1322" />
+  <Access Scope="LiteralConstant" UId="1323">
+    <Constant UId="1324">
+      <ConstantValue UId="1326">99</ConstantValue>
     </Constant>
   </Access>
-  <Blank UId="1297" />
-  <Token Text="THEN" UId="1298" />
-  <NewLine UId="1299" />
-  <Blank Num="12" UId="1300" />
-  <Access Scope="GlobalVariable" UId="1301">
-    <Symbol UId="1302">
-      <Component Name="DB_SonplasMain" UId="1303">
-        <BooleanAttribute Name="HasQuotes" UId="1304">true</BooleanAttribute>
+  <Blank UId="1327" />
+  <Token Text="THEN" UId="1328" />
+  <NewLine UId="1329" />
+  <Blank Num="12" UId="1330" />
+  <Access Scope="GlobalVariable" UId="1331">
+    <Symbol UId="1332">
+      <Component Name="DB_SonplasMain" UId="1333">
+        <BooleanAttribute Name="HasQuotes" UId="1334">true</BooleanAttribute>
       </Component>
-      <Token Text="." UId="1305" />
-      <Component Name="sSonplasLoader" UId="1306" />
-      <Token Text="." UId="1307" />
-      <Component Name="iPartInDMC_CodeShuttle2" UId="1308">
-        <Token Text="[" UId="1309" />
-        <Access Scope="LiteralConstant" UId="1310">
-          <Constant UId="1311">
-            <ConstantValue UId="1313">0</ConstantValue>
+      <Token Text="." UId="1335" />
+      <Component Name="sSonplasLoader" UId="1336" />
+      <Token Text="." UId="1337" />
+      <Component Name="iPartInDMC_CodeShuttle2" UId="1338">
+        <Token Text="[" UId="1339" />
+        <Access Scope="LiteralConstant" UId="1340">
+          <Constant UId="1341">
+            <ConstantValue UId="1343">0</ConstantValue>
           </Constant>
         </Access>
-        <Token Text="]" UId="1314" />
+        <Token Text="]" UId="1344" />
       </Component>
     </Symbol>
   </Access>
-  <Blank UId="1315" />
-  <Token Text=":=" UId="1316" />
-  <Blank UId="1317" />
-  <Access Scope="LiteralConstant" UId="1318">
-    <Constant UId="1319">
-      <ConstantValue UId="1321">0</ConstantValue>
+  <Blank UId="1345" />
+  <Token Text=":=" UId="1346" />
+  <Blank UId="1347" />
+  <Access Scope="LiteralConstant" UId="1348">
+    <Constant UId="1349">
+      <ConstantValue UId="1351">0</ConstantValue>
     </Constant>
   </Access>
-  <Token Text=";" UId="1322" />
-  <NewLine UId="1323" />
-  <Blank Num="8" UId="1324" />
-  <Token Text="END_IF" UId="1325" />
-  <Token Text=";" UId="1326" />
-  <NewLine UId="1327" />
-  <Blank Num="4" UId="1328" />
-  <Token Text="END_IF" UId="1329" />
-  <Token Text=";" UId="1330" />
-  <NewLine UId="1331" />
-  <Token Text="END_REGION" UId="1332" />
-  <NewLine UId="1333" />
-  <Blank Num="4" UId="1334" />
-  <NewLine UId="1335" />
-  <LineComment UId="1336">
-    <Text UId="1337"> REGION Shuttle Enable</Text>
-  </LineComment>
-  <NewLine UId="1338" />
-  <LineComment UId="1339">
-    <Text UId="1340">     "DB_HMISetting".Shuttle1Enable := TRUE;</Text>
-  </LineComment>
-  <NewLine UId="1341" />
-  <LineComment UId="1342">
-    <Text UId="1343">     "DB_HMISetting".Shuttle2Enable := TRUE;</Text>
-  </LineComment>
-  <NewLine UId="1344" />
-  <LineComment UId="1345">
-    <Text UId="1346"> END_REGION</Text>
-  </LineComment>
-  <NewLine UId="1347" />
-  <Blank Num="3" UId="1348" />
-  <NewLine UId="1349" />
-  <Token Text="REGION" UId="1350" />
-  <Blank UId="1351" />
-  <Text UId="1352">Misc</Text>
+  <Token Text=";" UId="1352" />
   <NewLine UId="1353" />
-  <Blank Num="7" UId="1354" />
-  <Access Scope="GlobalVariable" UId="1355">
-    <Symbol UId="1356">
-      <Component Name="DB_WorkingModes" UId="1357">
-        <BooleanAttribute Name="HasQuotes" UId="1358">true</BooleanAttribute>
+  <Blank Num="8" UId="1354" />
+  <Token Text="END_IF" UId="1355" />
+  <Token Text=";" UId="1356" />
+  <NewLine UId="1357" />
+  <Blank Num="4" UId="1358" />
+  <Token Text="END_IF" UId="1359" />
+  <Token Text=";" UId="1360" />
+  <NewLine UId="1361" />
+  <Token Text="END_REGION" UId="1362" />
+  <NewLine UId="1363" />
+  <Blank Num="4" UId="1364" />
+  <NewLine UId="1365" />
+  <LineComment UId="1366">
+    <Text UId="1367"> REGION Shuttle Enable</Text>
+  </LineComment>
+  <NewLine UId="1368" />
+  <LineComment UId="1369">
+    <Text UId="1370">     "DB_HMISetting".Shuttle1Enable := TRUE;</Text>
+  </LineComment>
+  <NewLine UId="1371" />
+  <LineComment UId="1372">
+    <Text UId="1373">     "DB_HMISetting".Shuttle2Enable := TRUE;</Text>
+  </LineComment>
+  <NewLine UId="1374" />
+  <LineComment UId="1375">
+    <Text UId="1376"> END_REGION</Text>
+  </LineComment>
+  <NewLine UId="1377" />
+  <Blank Num="3" UId="1378" />
+  <NewLine UId="1379" />
+  <Token Text="REGION" UId="1380" />
+  <Blank UId="1381" />
+  <Text UId="1382">Misc</Text>
+  <NewLine UId="1383" />
+  <Blank Num="7" UId="1384" />
+  <Access Scope="GlobalVariable" UId="1385">
+    <Symbol UId="1386">
+      <Component Name="DB_WorkingModes" UId="1387">
+        <BooleanAttribute Name="HasQuotes" UId="1388">true</BooleanAttribute>
       </Component>
-      <Token Text="." UId="1359" />
-      <Component Name="sDryRun" UId="1360" />
+      <Token Text="." UId="1389" />
+      <Component Name="sDryRun" UId="1390" />
     </Symbol>
   </Access>
-  <Blank UId="1361" />
-  <Token Text=":=" UId="1362" />
-  <Blank UId="1363" />
-  <Access Scope="LiteralConstant" UId="1364">
-    <Constant UId="1365">
-      <ConstantValue UId="1367">FALSE</ConstantValue>
+  <Blank UId="1391" />
+  <Token Text=":=" UId="1392" />
+  <Blank UId="1393" />
+  <Access Scope="LiteralConstant" UId="1394">
+    <Constant UId="1395">
+      <ConstantValue UId="1397">FALSE</ConstantValue>
     </Constant>
   </Access>
-  <Token Text=";" UId="1368" />
-  <NewLine UId="1369" />
-  <Token Text="END_REGION" UId="1370" />
-  <NewLine Num="2" UId="1371" />
-  <Token Text="REGION" UId="1372" />
-  <Blank UId="1373" />
-  <Text UId="1374">Reset Part Position</Text>
-  <NewLine UId="1375" />
-  <Blank Num="4" UId="1376" />
-  <Token Text="IF" UId="1377" />
-  <Blank UId="1378" />
-  <Access Scope="GlobalVariable" UId="1379">
-    <Symbol UId="1380">
-      <Component Name="DB_WAF" UId="1381">
-        <BooleanAttribute Name="HasQuotes" UId="1382">true</BooleanAttribute>
-      </Component>
-      <Token Text="." UId="1383" />
-      <Component Name="ResetPartPosition" UId="1384" />
-    </Symbol>
-  </Access>
-  <Blank UId="1385" />
-  <Token Text="THEN" UId="1386" />
-  <NewLine UId="1387" />
-  <Blank Num="8" UId="1388" />
-  <Access Scope="GlobalVariable" UId="1389">
-    <Symbol UId="1390">
-      <Component Name="DB_PartManagement" UId="1391">
-        <BooleanAttribute Name="HasQuotes" UId="1392">true</BooleanAttribute>
-      </Component>
-      <Token Text="." UId="1393" />
-      <Component Name="sPosition" UId="1394" />
-      <Token Text="." UId="1395" />
-      <Component Name="sShuttle1" UId="1396" />
-      <Token Text="." UId="1397" />
-      <Component Name="Undrilled" UId="1398" />
-      <Token Text="." UId="1399" />
-      <Component Name="Presence" UId="1400" />
-      <Token Text="." UId="1401" />
-      <Component Name="Part" UId="1402" />
-    </Symbol>
-  </Access>
+  <Token Text=";" UId="1398" />
+  <NewLine UId="1399" />
+  <Token Text="END_REGION" UId="1400" />
+  <NewLine Num="2" UId="1401" />
+  <Token Text="REGION" UId="1402" />
   <Blank UId="1403" />
-  <Token Text=":=" UId="1404" />
-  <Blank UId="1405" />
-  <Access Scope="LiteralConstant" UId="1406">
-    <Constant UId="1407">
-      <ConstantValue UId="1409">FALSE</ConstantValue>
-    </Constant>
-  </Access>
-  <Token Text=";" UId="1410" />
-  <NewLine UId="1411" />
-  <Blank Num="8" UId="1412" />
-  <Access Scope="GlobalVariable" UId="1413">
-    <Symbol UId="1414">
-      <Component Name="DB_PartManagement" UId="1415">
-        <BooleanAttribute Name="HasQuotes" UId="1416">true</BooleanAttribute>
+  <Text UId="1404">Reset Part Position</Text>
+  <NewLine UId="1405" />
+  <Blank Num="4" UId="1406" />
+  <Token Text="IF" UId="1407" />
+  <Blank UId="1408" />
+  <Access Scope="GlobalVariable" UId="1409">
+    <Symbol UId="1410">
+      <Component Name="DB_WAF" UId="1411">
+        <BooleanAttribute Name="HasQuotes" UId="1412">true</BooleanAttribute>
       </Component>
-      <Token Text="." UId="1417" />
-      <Component Name="sPosition" UId="1418" />
-      <Token Text="." UId="1419" />
-      <Component Name="sShuttle1" UId="1420" />
-      <Token Text="." UId="1421" />
-      <Component Name="Undrilled" UId="1422" />
+      <Token Text="." UId="1413" />
+      <Component Name="ResetPartPosition" UId="1414" />
+    </Symbol>
+  </Access>
+  <Blank UId="1415" />
+  <Token Text="THEN" UId="1416" />
+  <NewLine UId="1417" />
+  <Blank Num="8" UId="1418" />
+  <Access Scope="GlobalVariable" UId="1419">
+    <Symbol UId="1420">
+      <Component Name="DB_PartManagement" UId="1421">
+        <BooleanAttribute Name="HasQuotes" UId="1422">true</BooleanAttribute>
+      </Component>
       <Token Text="." UId="1423" />
-      <Component Name="Presence" UId="1424" />
+      <Component Name="sPosition" UId="1424" />
       <Token Text="." UId="1425" />
-      <Component Name="BW" UId="1426" />
+      <Component Name="sShuttle1" UId="1426" />
+      <Token Text="." UId="1427" />
+      <Component Name="Undrilled" UId="1428" />
+      <Token Text="." UId="1429" />
+      <Component Name="Presence" UId="1430" />
+      <Token Text="." UId="1431" />
+      <Component Name="Part" UId="1432" />
     </Symbol>
   </Access>
-  <Blank UId="1427" />
-  <Token Text=":=" UId="1428" />
-  <Blank UId="1429" />
-  <Access Scope="LiteralConstant" UId="1430">
-    <Constant UId="1431">
-      <ConstantValue UId="1433">FALSE</ConstantValue>
+  <Blank UId="1433" />
+  <Token Text=":=" UId="1434" />
+  <Blank UId="1435" />
+  <Access Scope="LiteralConstant" UId="1436">
+    <Constant UId="1437">
+      <ConstantValue UId="1439">FALSE</ConstantValue>
     </Constant>
   </Access>
-  <Token Text=";" UId="1434" />
-  <NewLine UId="1435" />
-  <Blank Num="8" UId="1436" />
-  <Access Scope="GlobalVariable" UId="1437">
-    <Symbol UId="1438">
-      <Component Name="DB_PartManagement" UId="1439">
-        <BooleanAttribute Name="HasQuotes" UId="1440">true</BooleanAttribute>
+  <Token Text=";" UId="1440" />
+  <NewLine UId="1441" />
+  <Blank Num="8" UId="1442" />
+  <Access Scope="GlobalVariable" UId="1443">
+    <Symbol UId="1444">
+      <Component Name="DB_PartManagement" UId="1445">
+        <BooleanAttribute Name="HasQuotes" UId="1446">true</BooleanAttribute>
       </Component>
-      <Token Text="." UId="1441" />
-      <Component Name="sPosition" UId="1442" />
-      <Token Text="." UId="1443" />
-      <Component Name="sShuttle1" UId="1444" />
-      <Token Text="." UId="1445" />
-      <Component Name="Drilled" UId="1446" />
       <Token Text="." UId="1447" />
-      <Component Name="Presence" UId="1448" />
+      <Component Name="sPosition" UId="1448" />
       <Token Text="." UId="1449" />
-      <Component Name="Part" UId="1450" />
+      <Component Name="sShuttle1" UId="1450" />
+      <Token Text="." UId="1451" />
+      <Component Name="Undrilled" UId="1452" />
+      <Token Text="." UId="1453" />
+      <Component Name="Presence" UId="1454" />
+      <Token Text="." UId="1455" />
+      <Component Name="BW" UId="1456" />
     </Symbol>
   </Access>
-  <Blank UId="1451" />
-  <Token Text=":=" UId="1452" />
-  <Blank UId="1453" />
-  <Access Scope="LiteralConstant" UId="1454">
-    <Constant UId="1455">
-      <ConstantValue UId="1457">FALSE</ConstantValue>
+  <Blank UId="1457" />
+  <Token Text=":=" UId="1458" />
+  <Blank UId="1459" />
+  <Access Scope="LiteralConstant" UId="1460">
+    <Constant UId="1461">
+      <ConstantValue UId="1463">FALSE</ConstantValue>
     </Constant>
   </Access>
-  <Token Text=";" UId="1458" />
-  <NewLine UId="1459" />
-  <Blank Num="8" UId="1460" />
-  <Access Scope="GlobalVariable" UId="1461">
-    <Symbol UId="1462">
-      <Component Name="DB_PartManagement" UId="1463">
-        <BooleanAttribute Name="HasQuotes" UId="1464">true</BooleanAttribute>
+  <Token Text=";" UId="1464" />
+  <NewLine UId="1465" />
+  <Blank Num="8" UId="1466" />
+  <Access Scope="GlobalVariable" UId="1467">
+    <Symbol UId="1468">
+      <Component Name="DB_PartManagement" UId="1469">
+        <BooleanAttribute Name="HasQuotes" UId="1470">true</BooleanAttribute>
       </Component>
-      <Token Text="." UId="1465" />
-      <Component Name="sPosition" UId="1466" />
-      <Token Text="." UId="1467" />
-      <Component Name="sShuttle1" UId="1468" />
-      <Token Text="." UId="1469" />
-      <Component Name="Drilled" UId="1470" />
       <Token Text="." UId="1471" />
-      <Component Name="Presence" UId="1472" />
+      <Component Name="sPosition" UId="1472" />
       <Token Text="." UId="1473" />
-      <Component Name="BW" UId="1474" />
+      <Component Name="sShuttle1" UId="1474" />
+      <Token Text="." UId="1475" />
+      <Component Name="Drilled" UId="1476" />
+      <Token Text="." UId="1477" />
+      <Component Name="Presence" UId="1478" />
+      <Token Text="." UId="1479" />
+      <Component Name="Part" UId="1480" />
     </Symbol>
   </Access>
-  <Blank UId="1475" />
-  <Token Text=":=" UId="1476" />
-  <Blank UId="1477" />
-  <Access Scope="LiteralConstant" UId="1478">
-    <Constant UId="1479">
-      <ConstantValue UId="1481">FALSE</ConstantValue>
+  <Blank UId="1481" />
+  <Token Text=":=" UId="1482" />
+  <Blank UId="1483" />
+  <Access Scope="LiteralConstant" UId="1484">
+    <Constant UId="1485">
+      <ConstantValue UId="1487">FALSE</ConstantValue>
     </Constant>
   </Access>
-  <Token Text=";" UId="1482" />
-  <NewLine UId="1483" />
-  <Blank Num="8" UId="1484" />
-  <NewLine UId="1485" />
-  <Blank Num="8" UId="1486" />
-  <Access Scope="GlobalVariable" UId="1487">
-    <Symbol UId="1488">
-      <Component Name="DB_PartManagement" UId="1489">
-        <BooleanAttribute Name="HasQuotes" UId="1490">true</BooleanAttribute>
+  <Token Text=";" UId="1488" />
+  <NewLine UId="1489" />
+  <Blank Num="8" UId="1490" />
+  <Access Scope="GlobalVariable" UId="1491">
+    <Symbol UId="1492">
+      <Component Name="DB_PartManagement" UId="1493">
+        <BooleanAttribute Name="HasQuotes" UId="1494">true</BooleanAttribute>
       </Component>
-      <Token Text="." UId="1491" />
-      <Component Name="sPosition" UId="1492" />
-      <Token Text="." UId="1493" />
-      <Component Name="sShuttle2" UId="1494" />
       <Token Text="." UId="1495" />
-      <Component Name="Undrilled" UId="1496" />
+      <Component Name="sPosition" UId="1496" />
       <Token Text="." UId="1497" />
-      <Component Name="Presence" UId="1498" />
+      <Component Name="sShuttle1" UId="1498" />
       <Token Text="." UId="1499" />
-      <Component Name="Part" UId="1500" />
+      <Component Name="Drilled" UId="1500" />
+      <Token Text="." UId="1501" />
+      <Component Name="Presence" UId="1502" />
+      <Token Text="." UId="1503" />
+      <Component Name="BW" UId="1504" />
     </Symbol>
   </Access>
-  <Blank UId="1501" />
-  <Token Text=":=" UId="1502" />
-  <Blank UId="1503" />
-  <Access Scope="LiteralConstant" UId="1504">
-    <Constant UId="1505">
-      <ConstantValue UId="1507">FALSE</ConstantValue>
+  <Blank UId="1505" />
+  <Token Text=":=" UId="1506" />
+  <Blank UId="1507" />
+  <Access Scope="LiteralConstant" UId="1508">
+    <Constant UId="1509">
+      <ConstantValue UId="1511">FALSE</ConstantValue>
     </Constant>
   </Access>
-  <Token Text=";" UId="1508" />
-  <NewLine UId="1509" />
-  <Blank Num="8" UId="1510" />
-  <Access Scope="GlobalVariable" UId="1511">
-    <Symbol UId="1512">
-      <Component Name="DB_PartManagement" UId="1513">
-        <BooleanAttribute Name="HasQuotes" UId="1514">true</BooleanAttribute>
+  <Token Text=";" UId="1512" />
+  <NewLine UId="1513" />
+  <Blank Num="8" UId="1514" />
+  <NewLine UId="1515" />
+  <Blank Num="8" UId="1516" />
+  <Access Scope="GlobalVariable" UId="1517">
+    <Symbol UId="1518">
+      <Component Name="DB_PartManagement" UId="1519">
+        <BooleanAttribute Name="HasQuotes" UId="1520">true</BooleanAttribute>
       </Component>
-      <Token Text="." UId="1515" />
-      <Component Name="sPosition" UId="1516" />
-      <Token Text="." UId="1517" />
-      <Component Name="sShuttle2" UId="1518" />
-      <Token Text="." UId="1519" />
-      <Component Name="Undrilled" UId="1520" />
       <Token Text="." UId="1521" />
-      <Component Name="Presence" UId="1522" />
+      <Component Name="sPosition" UId="1522" />
       <Token Text="." UId="1523" />
-      <Component Name="BW" UId="1524" />
+      <Component Name="sShuttle2" UId="1524" />
+      <Token Text="." UId="1525" />
+      <Component Name="Undrilled" UId="1526" />
+      <Token Text="." UId="1527" />
+      <Component Name="Presence" UId="1528" />
+      <Token Text="." UId="1529" />
+      <Component Name="Part" UId="1530" />
     </Symbol>
   </Access>
-  <Blank UId="1525" />
-  <Token Text=":=" UId="1526" />
-  <Blank UId="1527" />
-  <Access Scope="LiteralConstant" UId="1528">
-    <Constant UId="1529">
-      <ConstantValue UId="1531">FALSE</ConstantValue>
+  <Blank UId="1531" />
+  <Token Text=":=" UId="1532" />
+  <Blank UId="1533" />
+  <Access Scope="LiteralConstant" UId="1534">
+    <Constant UId="1535">
+      <ConstantValue UId="1537">FALSE</ConstantValue>
     </Constant>
   </Access>
-  <Token Text=";" UId="1532" />
-  <NewLine UId="1533" />
-  <Blank Num="8" UId="1534" />
-  <Access Scope="GlobalVariable" UId="1535">
-    <Symbol UId="1536">
-      <Component Name="DB_PartManagement" UId="1537">
-        <BooleanAttribute Name="HasQuotes" UId="1538">true</BooleanAttribute>
+  <Token Text=";" UId="1538" />
+  <NewLine UId="1539" />
+  <Blank Num="8" UId="1540" />
+  <Access Scope="GlobalVariable" UId="1541">
+    <Symbol UId="1542">
+      <Component Name="DB_PartManagement" UId="1543">
+        <BooleanAttribute Name="HasQuotes" UId="1544">true</BooleanAttribute>
       </Component>
-      <Token Text="." UId="1539" />
-      <Component Name="sPosition" UId="1540" />
-      <Token Text="." UId="1541" />
-      <Component Name="sShuttle2" UId="1542" />
-      <Token Text="." UId="1543" />
-      <Component Name="Drilled" UId="1544" />
       <Token Text="." UId="1545" />
-      <Component Name="Presence" UId="1546" />
+      <Component Name="sPosition" UId="1546" />
       <Token Text="." UId="1547" />
-      <Component Name="Part" UId="1548" />
+      <Component Name="sShuttle2" UId="1548" />
+      <Token Text="." UId="1549" />
+      <Component Name="Undrilled" UId="1550" />
+      <Token Text="." UId="1551" />
+      <Component Name="Presence" UId="1552" />
+      <Token Text="." UId="1553" />
+      <Component Name="BW" UId="1554" />
     </Symbol>
   </Access>
-  <Blank UId="1549" />
-  <Token Text=":=" UId="1550" />
-  <Blank UId="1551" />
-  <Access Scope="LiteralConstant" UId="1552">
-    <Constant UId="1553">
-      <ConstantValue UId="1555">FALSE</ConstantValue>
+  <Blank UId="1555" />
+  <Token Text=":=" UId="1556" />
+  <Blank UId="1557" />
+  <Access Scope="LiteralConstant" UId="1558">
+    <Constant UId="1559">
+      <ConstantValue UId="1561">FALSE</ConstantValue>
     </Constant>
   </Access>
-  <Token Text=";" UId="1556" />
-  <NewLine UId="1557" />
-  <Blank Num="8" UId="1558" />
-  <Access Scope="GlobalVariable" UId="1559">
-    <Symbol UId="1560">
-      <Component Name="DB_PartManagement" UId="1561">
-        <BooleanAttribute Name="HasQuotes" UId="1562">true</BooleanAttribute>
+  <Token Text=";" UId="1562" />
+  <NewLine UId="1563" />
+  <Blank Num="8" UId="1564" />
+  <Access Scope="GlobalVariable" UId="1565">
+    <Symbol UId="1566">
+      <Component Name="DB_PartManagement" UId="1567">
+        <BooleanAttribute Name="HasQuotes" UId="1568">true</BooleanAttribute>
       </Component>
-      <Token Text="." UId="1563" />
-      <Component Name="sPosition" UId="1564" />
-      <Token Text="." UId="1565" />
-      <Component Name="sShuttle2" UId="1566" />
-      <Token Text="." UId="1567" />
-      <Component Name="Drilled" UId="1568" />
       <Token Text="." UId="1569" />
-      <Component Name="Presence" UId="1570" />
+      <Component Name="sPosition" UId="1570" />
       <Token Text="." UId="1571" />
-      <Component Name="BW" UId="1572" />
+      <Component Name="sShuttle2" UId="1572" />
+      <Token Text="." UId="1573" />
+      <Component Name="Drilled" UId="1574" />
+      <Token Text="." UId="1575" />
+      <Component Name="Presence" UId="1576" />
+      <Token Text="." UId="1577" />
+      <Component Name="Part" UId="1578" />
     </Symbol>
   </Access>
-  <Blank UId="1573" />
-  <Token Text=":=" UId="1574" />
-  <Blank UId="1575" />
-  <Access Scope="LiteralConstant" UId="1576">
-    <Constant UId="1577">
-      <ConstantValue UId="1579">FALSE</ConstantValue>
+  <Blank UId="1579" />
+  <Token Text=":=" UId="1580" />
+  <Blank UId="1581" />
+  <Access Scope="LiteralConstant" UId="1582">
+    <Constant UId="1583">
+      <ConstantValue UId="1585">FALSE</ConstantValue>
     </Constant>
   </Access>
-  <Token Text=";" UId="1580" />
-  <NewLine UId="1581" />
-  <Blank Num="8" UId="1582" />
-  <NewLine UId="1583" />
-  <Blank Num="8" UId="1584" />
-  <Access Scope="GlobalVariable" UId="1585">
-    <Symbol UId="1586">
-      <Component Name="DB_PartManagement" UId="1587">
-        <BooleanAttribute Name="HasQuotes" UId="1588">true</BooleanAttribute>
+  <Token Text=";" UId="1586" />
+  <NewLine UId="1587" />
+  <Blank Num="8" UId="1588" />
+  <Access Scope="GlobalVariable" UId="1589">
+    <Symbol UId="1590">
+      <Component Name="DB_PartManagement" UId="1591">
+        <BooleanAttribute Name="HasQuotes" UId="1592">true</BooleanAttribute>
       </Component>
-      <Token Text="." UId="1589" />
-      <Component Name="sPosition" UId="1590" />
-      <Token Text="." UId="1591" />
-      <Component Name="sGripper" UId="1592" />
       <Token Text="." UId="1593" />
-      <Component Name="Undrilled" UId="1594" />
+      <Component Name="sPosition" UId="1594" />
       <Token Text="." UId="1595" />
-      <Component Name="Presence" UId="1596" />
+      <Component Name="sShuttle2" UId="1596" />
       <Token Text="." UId="1597" />
-      <Component Name="Part" UId="1598" />
+      <Component Name="Drilled" UId="1598" />
+      <Token Text="." UId="1599" />
+      <Component Name="Presence" UId="1600" />
+      <Token Text="." UId="1601" />
+      <Component Name="BW" UId="1602" />
     </Symbol>
   </Access>
-  <Blank UId="1599" />
-  <Token Text=":=" UId="1600" />
-  <Blank UId="1601" />
-  <Access Scope="LiteralConstant" UId="1602">
-    <Constant UId="1603">
-      <ConstantValue UId="1605">FALSE</ConstantValue>
+  <Blank UId="1603" />
+  <Token Text=":=" UId="1604" />
+  <Blank UId="1605" />
+  <Access Scope="LiteralConstant" UId="1606">
+    <Constant UId="1607">
+      <ConstantValue UId="1609">FALSE</ConstantValue>
     </Constant>
   </Access>
-  <Token Text=";" UId="1606" />
-  <NewLine UId="1607" />
-  <Blank Num="8" UId="1608" />
-  <Access Scope="GlobalVariable" UId="1609">
-    <Symbol UId="1610">
-      <Component Name="DB_PartManagement" UId="1611">
-        <BooleanAttribute Name="HasQuotes" UId="1612">true</BooleanAttribute>
+  <Token Text=";" UId="1610" />
+  <NewLine UId="1611" />
+  <Blank Num="8" UId="1612" />
+  <NewLine UId="1613" />
+  <Blank Num="8" UId="1614" />
+  <Access Scope="GlobalVariable" UId="1615">
+    <Symbol UId="1616">
+      <Component Name="DB_PartManagement" UId="1617">
+        <BooleanAttribute Name="HasQuotes" UId="1618">true</BooleanAttribute>
       </Component>
-      <Token Text="." UId="1613" />
-      <Component Name="sPosition" UId="1614" />
-      <Token Text="." UId="1615" />
-      <Component Name="sGripper" UId="1616" />
-      <Token Text="." UId="1617" />
-      <Component Name="Undrilled" UId="1618" />
       <Token Text="." UId="1619" />
-      <Component Name="Presence" UId="1620" />
+      <Component Name="sPosition" UId="1620" />
       <Token Text="." UId="1621" />
-      <Component Name="BW" UId="1622" />
+      <Component Name="sGripper" UId="1622" />
+      <Token Text="." UId="1623" />
+      <Component Name="Undrilled" UId="1624" />
+      <Token Text="." UId="1625" />
+      <Component Name="Presence" UId="1626" />
+      <Token Text="." UId="1627" />
+      <Component Name="Part" UId="1628" />
     </Symbol>
   </Access>
-  <Blank UId="1623" />
-  <Token Text=":=" UId="1624" />
-  <Blank UId="1625" />
-  <Access Scope="LiteralConstant" UId="1626">
-    <Constant UId="1627">
-      <ConstantValue UId="1629">FALSE</ConstantValue>
+  <Blank UId="1629" />
+  <Token Text=":=" UId="1630" />
+  <Blank UId="1631" />
+  <Access Scope="LiteralConstant" UId="1632">
+    <Constant UId="1633">
+      <ConstantValue UId="1635">FALSE</ConstantValue>
     </Constant>
   </Access>
-  <Token Text=";" UId="1630" />
-  <NewLine UId="1631" />
-  <Blank Num="8" UId="1632" />
-  <Access Scope="GlobalVariable" UId="1633">
-    <Symbol UId="1634">
-      <Component Name="DB_PartManagement" UId="1635">
-        <BooleanAttribute Name="HasQuotes" UId="1636">true</BooleanAttribute>
+  <Token Text=";" UId="1636" />
+  <NewLine UId="1637" />
+  <Blank Num="8" UId="1638" />
+  <Access Scope="GlobalVariable" UId="1639">
+    <Symbol UId="1640">
+      <Component Name="DB_PartManagement" UId="1641">
+        <BooleanAttribute Name="HasQuotes" UId="1642">true</BooleanAttribute>
       </Component>
-      <Token Text="." UId="1637" />
-      <Component Name="sPosition" UId="1638" />
-      <Token Text="." UId="1639" />
-      <Component Name="sGripper" UId="1640" />
-      <Token Text="." UId="1641" />
-      <Component Name="Drilled" UId="1642" />
       <Token Text="." UId="1643" />
-      <Component Name="Presence" UId="1644" />
+      <Component Name="sPosition" UId="1644" />
       <Token Text="." UId="1645" />
-      <Component Name="Part" UId="1646" />
+      <Component Name="sGripper" UId="1646" />
+      <Token Text="." UId="1647" />
+      <Component Name="Undrilled" UId="1648" />
+      <Token Text="." UId="1649" />
+      <Component Name="Presence" UId="1650" />
+      <Token Text="." UId="1651" />
+      <Component Name="BW" UId="1652" />
     </Symbol>
   </Access>
-  <Blank UId="1647" />
-  <Token Text=":=" UId="1648" />
-  <Blank UId="1649" />
-  <Access Scope="LiteralConstant" UId="1650">
-    <Constant UId="1651">
-      <ConstantValue UId="1653">FALSE</ConstantValue>
+  <Blank UId="1653" />
+  <Token Text=":=" UId="1654" />
+  <Blank UId="1655" />
+  <Access Scope="LiteralConstant" UId="1656">
+    <Constant UId="1657">
+      <ConstantValue UId="1659">FALSE</ConstantValue>
     </Constant>
   </Access>
-  <Token Text=";" UId="1654" />
-  <NewLine UId="1655" />
-  <Blank Num="8" UId="1656" />
-  <Access Scope="GlobalVariable" UId="1657">
-    <Symbol UId="1658">
-      <Component Name="DB_PartManagement" UId="1659">
-        <BooleanAttribute Name="HasQuotes" UId="1660">true</BooleanAttribute>
+  <Token Text=";" UId="1660" />
+  <NewLine UId="1661" />
+  <Blank Num="8" UId="1662" />
+  <Access Scope="GlobalVariable" UId="1663">
+    <Symbol UId="1664">
+      <Component Name="DB_PartManagement" UId="1665">
+        <BooleanAttribute Name="HasQuotes" UId="1666">true</BooleanAttribute>
       </Component>
-      <Token Text="." UId="1661" />
-      <Component Name="sPosition" UId="1662" />
-      <Token Text="." UId="1663" />
-      <Component Name="sGripper" UId="1664" />
-      <Token Text="." UId="1665" />
-      <Component Name="Drilled" UId="1666" />
       <Token Text="." UId="1667" />
-      <Component Name="Presence" UId="1668" />
+      <Component Name="sPosition" UId="1668" />
       <Token Text="." UId="1669" />
-      <Component Name="BW" UId="1670" />
+      <Component Name="sGripper" UId="1670" />
+      <Token Text="." UId="1671" />
+      <Component Name="Drilled" UId="1672" />
+      <Token Text="." UId="1673" />
+      <Component Name="Presence" UId="1674" />
+      <Token Text="." UId="1675" />
+      <Component Name="Part" UId="1676" />
     </Symbol>
   </Access>
-  <Blank UId="1671" />
-  <Token Text=":=" UId="1672" />
-  <Blank UId="1673" />
-  <Access Scope="LiteralConstant" UId="1674">
-    <Constant UId="1675">
-      <ConstantValue UId="1677">FALSE</ConstantValue>
+  <Blank UId="1677" />
+  <Token Text=":=" UId="1678" />
+  <Blank UId="1679" />
+  <Access Scope="LiteralConstant" UId="1680">
+    <Constant UId="1681">
+      <ConstantValue UId="1683">FALSE</ConstantValue>
     </Constant>
   </Access>
-  <Token Text=";" UId="1678" />
-  <NewLine UId="1679" />
-  <Blank Num="8" UId="1680" />
-  <NewLine UId="1681" />
-  <Blank Num="8" UId="1682" />
-  <Access Scope="GlobalVariable" UId="1683">
-    <Symbol UId="1684">
-      <Component Name="DB_PartManagement" UId="1685">
-        <BooleanAttribute Name="HasQuotes" UId="1686">true</BooleanAttribute>
+  <Token Text=";" UId="1684" />
+  <NewLine UId="1685" />
+  <Blank Num="8" UId="1686" />
+  <Access Scope="GlobalVariable" UId="1687">
+    <Symbol UId="1688">
+      <Component Name="DB_PartManagement" UId="1689">
+        <BooleanAttribute Name="HasQuotes" UId="1690">true</BooleanAttribute>
       </Component>
-      <Token Text="." UId="1687" />
-      <Component Name="sPosition" UId="1688" />
-      <Token Text="." UId="1689" />
-      <Component Name="sFixture" UId="1690" />
       <Token Text="." UId="1691" />
-      <Component Name="Undrilled" UId="1692" />
+      <Component Name="sPosition" UId="1692" />
       <Token Text="." UId="1693" />
-      <Component Name="Presence" UId="1694" />
+      <Component Name="sGripper" UId="1694" />
       <Token Text="." UId="1695" />
-      <Component Name="Part" UId="1696" />
+      <Component Name="Drilled" UId="1696" />
+      <Token Text="." UId="1697" />
+      <Component Name="Presence" UId="1698" />
+      <Token Text="." UId="1699" />
+      <Component Name="BW" UId="1700" />
     </Symbol>
   </Access>
-  <Blank UId="1697" />
-  <Token Text=":=" UId="1698" />
-  <Blank UId="1699" />
-  <Access Scope="LiteralConstant" UId="1700">
-    <Constant UId="1701">
-      <ConstantValue UId="1703">FALSE</ConstantValue>
+  <Blank UId="1701" />
+  <Token Text=":=" UId="1702" />
+  <Blank UId="1703" />
+  <Access Scope="LiteralConstant" UId="1704">
+    <Constant UId="1705">
+      <ConstantValue UId="1707">FALSE</ConstantValue>
     </Constant>
   </Access>
-  <Token Text=";" UId="1704" />
-  <NewLine UId="1705" />
-  <Blank Num="8" UId="1706" />
-  <Access Scope="GlobalVariable" UId="1707">
-    <Symbol UId="1708">
-      <Component Name="DB_PartManagement" UId="1709">
-        <BooleanAttribute Name="HasQuotes" UId="1710">true</BooleanAttribute>
+  <Token Text=";" UId="1708" />
+  <NewLine UId="1709" />
+  <Blank Num="8" UId="1710" />
+  <NewLine UId="1711" />
+  <Blank Num="8" UId="1712" />
+  <Access Scope="GlobalVariable" UId="1713">
+    <Symbol UId="1714">
+      <Component Name="DB_PartManagement" UId="1715">
+        <BooleanAttribute Name="HasQuotes" UId="1716">true</BooleanAttribute>
       </Component>
-      <Token Text="." UId="1711" />
-      <Component Name="sPosition" UId="1712" />
-      <Token Text="." UId="1713" />
-      <Component Name="sFixture" UId="1714" />
-      <Token Text="." UId="1715" />
-      <Component Name="Undrilled" UId="1716" />
       <Token Text="." UId="1717" />
-      <Component Name="Presence" UId="1718" />
+      <Component Name="sPosition" UId="1718" />
       <Token Text="." UId="1719" />
-      <Component Name="BW" UId="1720" />
+      <Component Name="sFixture" UId="1720" />
+      <Token Text="." UId="1721" />
+      <Component Name="Undrilled" UId="1722" />
+      <Token Text="." UId="1723" />
+      <Component Name="Presence" UId="1724" />
+      <Token Text="." UId="1725" />
+      <Component Name="Part" UId="1726" />
     </Symbol>
   </Access>
-  <Blank UId="1721" />
-  <Token Text=":=" UId="1722" />
-  <Blank UId="1723" />
-  <Access Scope="LiteralConstant" UId="1724">
-    <Constant UId="1725">
-      <ConstantValue UId="1727">FALSE</ConstantValue>
+  <Blank UId="1727" />
+  <Token Text=":=" UId="1728" />
+  <Blank UId="1729" />
+  <Access Scope="LiteralConstant" UId="1730">
+    <Constant UId="1731">
+      <ConstantValue UId="1733">FALSE</ConstantValue>
     </Constant>
   </Access>
-  <Token Text=";" UId="1728" />
-  <NewLine UId="1729" />
-  <Blank Num="8" UId="1730" />
-  <Access Scope="GlobalVariable" UId="1731">
-    <Symbol UId="1732">
-      <Component Name="DB_PartManagement" UId="1733">
-        <BooleanAttribute Name="HasQuotes" UId="1734">true</BooleanAttribute>
+  <Token Text=";" UId="1734" />
+  <NewLine UId="1735" />
+  <Blank Num="8" UId="1736" />
+  <Access Scope="GlobalVariable" UId="1737">
+    <Symbol UId="1738">
+      <Component Name="DB_PartManagement" UId="1739">
+        <BooleanAttribute Name="HasQuotes" UId="1740">true</BooleanAttribute>
       </Component>
-      <Token Text="." UId="1735" />
-      <Component Name="sPosition" UId="1736" />
-      <Token Text="." UId="1737" />
-      <Component Name="sFixture" UId="1738" />
-      <Token Text="." UId="1739" />
-      <Component Name="Drilled" UId="1740" />
       <Token Text="." UId="1741" />
-      <Component Name="Presence" UId="1742" />
+      <Component Name="sPosition" UId="1742" />
       <Token Text="." UId="1743" />
-      <Component Name="Part" UId="1744" />
+      <Component Name="sFixture" UId="1744" />
+      <Token Text="." UId="1745" />
+      <Component Name="Undrilled" UId="1746" />
+      <Token Text="." UId="1747" />
+      <Component Name="Presence" UId="1748" />
+      <Token Text="." UId="1749" />
+      <Component Name="BW" UId="1750" />
     </Symbol>
   </Access>
-  <Blank UId="1745" />
-  <Token Text=":=" UId="1746" />
-  <Blank UId="1747" />
-  <Access Scope="LiteralConstant" UId="1748">
-    <Constant UId="1749">
-      <ConstantValue UId="1751">FALSE</ConstantValue>
+  <Blank UId="1751" />
+  <Token Text=":=" UId="1752" />
+  <Blank UId="1753" />
+  <Access Scope="LiteralConstant" UId="1754">
+    <Constant UId="1755">
+      <ConstantValue UId="1757">FALSE</ConstantValue>
     </Constant>
   </Access>
-  <Token Text=";" UId="1752" />
-  <NewLine UId="1753" />
-  <Blank Num="8" UId="1754" />
-  <Access Scope="GlobalVariable" UId="1755">
-    <Symbol UId="1756">
-      <Component Name="DB_PartManagement" UId="1757">
-        <BooleanAttribute Name="HasQuotes" UId="1758">true</BooleanAttribute>
+  <Token Text=";" UId="1758" />
+  <NewLine UId="1759" />
+  <Blank Num="8" UId="1760" />
+  <Access Scope="GlobalVariable" UId="1761">
+    <Symbol UId="1762">
+      <Component Name="DB_PartManagement" UId="1763">
+        <BooleanAttribute Name="HasQuotes" UId="1764">true</BooleanAttribute>
       </Component>
-      <Token Text="." UId="1759" />
-      <Component Name="sPosition" UId="1760" />
-      <Token Text="." UId="1761" />
-      <Component Name="sFixture" UId="1762" />
-      <Token Text="." UId="1763" />
-      <Component Name="Drilled" UId="1764" />
       <Token Text="." UId="1765" />
-      <Component Name="Presence" UId="1766" />
+      <Component Name="sPosition" UId="1766" />
       <Token Text="." UId="1767" />
-      <Component Name="BW" UId="1768" />
+      <Component Name="sFixture" UId="1768" />
+      <Token Text="." UId="1769" />
+      <Component Name="Drilled" UId="1770" />
+      <Token Text="." UId="1771" />
+      <Component Name="Presence" UId="1772" />
+      <Token Text="." UId="1773" />
+      <Component Name="Part" UId="1774" />
     </Symbol>
   </Access>
-  <Blank UId="1769" />
-  <Token Text=":=" UId="1770" />
-  <Blank UId="1771" />
-  <Access Scope="LiteralConstant" UId="1772">
-    <Constant UId="1773">
-      <ConstantValue UId="1775">FALSE</ConstantValue>
+  <Blank UId="1775" />
+  <Token Text=":=" UId="1776" />
+  <Blank UId="1777" />
+  <Access Scope="LiteralConstant" UId="1778">
+    <Constant UId="1779">
+      <ConstantValue UId="1781">FALSE</ConstantValue>
     </Constant>
   </Access>
-  <Token Text=";" UId="1776" />
-  <NewLine UId="1777" />
-  <Blank Num="8" UId="1778" />
-  <NewLine UId="1779" />
-  <Blank Num="8" UId="1780" />
-  <Access Scope="GlobalVariable" UId="1781">
-    <Symbol UId="1782">
-      <Component Name="DB_WAF" UId="1783">
-        <BooleanAttribute Name="HasQuotes" UId="1784">true</BooleanAttribute>
+  <Token Text=";" UId="1782" />
+  <NewLine UId="1783" />
+  <Blank Num="8" UId="1784" />
+  <Access Scope="GlobalVariable" UId="1785">
+    <Symbol UId="1786">
+      <Component Name="DB_PartManagement" UId="1787">
+        <BooleanAttribute Name="HasQuotes" UId="1788">true</BooleanAttribute>
       </Component>
-      <Token Text="." UId="1785" />
-      <Component Name="ResetPartPosition" UId="1786" />
+      <Token Text="." UId="1789" />
+      <Component Name="sPosition" UId="1790" />
+      <Token Text="." UId="1791" />
+      <Component Name="sFixture" UId="1792" />
+      <Token Text="." UId="1793" />
+      <Component Name="Drilled" UId="1794" />
+      <Token Text="." UId="1795" />
+      <Component Name="Presence" UId="1796" />
+      <Token Text="." UId="1797" />
+      <Component Name="BW" UId="1798" />
     </Symbol>
   </Access>
-  <Blank UId="1787" />
-  <Token Text=":=" UId="1788" />
-  <Blank UId="1789" />
-  <Access Scope="LiteralConstant" UId="1790">
-    <Constant UId="1791">
-      <ConstantValue UId="1793">FALSE</ConstantValue>
+  <Blank UId="1799" />
+  <Token Text=":=" UId="1800" />
+  <Blank UId="1801" />
+  <Access Scope="LiteralConstant" UId="1802">
+    <Constant UId="1803">
+      <ConstantValue UId="1805">FALSE</ConstantValue>
     </Constant>
   </Access>
-  <Token Text=";" UId="1794" />
-  <NewLine UId="1795" />
-  <Blank Num="4" UId="1796" />
-  <Token Text="END_IF" UId="1797" />
-  <Token Text=";" UId="1798" />
-  <NewLine UId="1799" />
-  <Token Text="END_REGION" UId="1800" />
+  <Token Text=";" UId="1806" />
+  <NewLine UId="1807" />
+  <Blank Num="8" UId="1808" />
+  <NewLine UId="1809" />
+  <Blank Num="8" UId="1810" />
+  <Access Scope="GlobalVariable" UId="1811">
+    <Symbol UId="1812">
+      <Component Name="DB_WAF" UId="1813">
+        <BooleanAttribute Name="HasQuotes" UId="1814">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="1815" />
+      <Component Name="ResetPartPosition" UId="1816" />
+    </Symbol>
+  </Access>
+  <Blank UId="1817" />
+  <Token Text=":=" UId="1818" />
+  <Blank UId="1819" />
+  <Access Scope="LiteralConstant" UId="1820">
+    <Constant UId="1821">
+      <ConstantValue UId="1823">FALSE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="1824" />
+  <NewLine UId="1825" />
+  <Blank Num="4" UId="1826" />
+  <Token Text="END_IF" UId="1827" />
+  <Token Text=";" UId="1828" />
+  <NewLine UId="1829" />
+  <Token Text="END_REGION" UId="1830" />
 </StructuredText></NetworkSource>
           <ProgrammingLanguage>SCL</ProgrammingLanguage>
         </AttributeList>

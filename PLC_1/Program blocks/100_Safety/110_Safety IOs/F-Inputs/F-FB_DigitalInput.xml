@@ -822,7 +822,7 @@
     </Access>
     <Access Scope="TypedConstant" UId="25">
       <Constant>
-        <ConstantValue>T#50MS</ConstantValue>
+        <ConstantValue>T#100MS</ConstantValue>
       </Constant>
     </Access>
     <Access Scope="GlobalVariable" UId="26">
