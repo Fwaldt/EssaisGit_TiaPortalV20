@@ -1,0 +1,1219 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V20" />
+  <SW.Blocks.FB ID="0">
+    <AttributeList>
+      <AutoNumber>false</AutoNumber>
+      <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v5">
+  <Section Name="Input" />
+  <Section Name="Output" />
+  <Section Name="InOut" />
+  <Section Name="Static">
+    <Member Name="sOutVacuum1On" Datatype="Bool" />
+    <Member Name="sControlVacuum1" Datatype="&quot;FB_AnalogInputThreshold&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="sCtrlPressureVacuum1" Datatype="&quot;FB_AnalogInputThreshold&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="sAspirationLeft" Datatype="&quot;FB_AnalogInputThreshold&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="sAspirationRight" Datatype="&quot;FB_AnalogInputThreshold&quot;">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="sRT_AspirationKeys" Datatype="R_TRIG" Version="1.0">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="sFT_AspirationKeys" Datatype="F_TRIG" Version="1.0">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+    <Member Name="sAspirationKeys" Datatype="Bool">
+      <AttributeList>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute>
+      </AttributeList>
+    </Member>
+  </Section>
+  <Section Name="Temp" />
+  <Section Name="Constant" />
+</Sections></Interface>
+      <MemoryLayout>Optimized</MemoryLayout>
+      <MemoryReserve>100</MemoryReserve>
+      <Name>FB_Vacuums</Name>
+      <Namespace />
+      <Number>441</Number>
+      <ProgrammingLanguage>SCL</ProgrammingLanguage>
+      <SetENOAutomatically>false</SetENOAutomatically>
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="3" CompositionName="Items">
+            <AttributeList>
+              <Culture>fr-FR</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <SW.Blocks.CompileUnit ID="4" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource><StructuredText xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/StructuredText/v4">
+  <Token Text="REGION" UId="21" />
+  <Blank UId="22" />
+  <Text UId="23">Description header </Text>
+  <NewLine UId="24" />
+  <Blank Num="4" UId="25" />
+  <LineComment UId="26">
+    <Text UId="27">==================================================================================</Text>
+  </LineComment>
+  <NewLine UId="28" />
+  <Blank Num="4" UId="29" />
+  <LineComment UId="30">
+    <Text UId="31"> POSALUX Swiss SA / (C) Copyright 2024</Text>
+  </LineComment>
+  <NewLine UId="32" />
+  <Blank Num="4" UId="33" />
+  <LineComment UId="34">
+    <Text UId="35">----------------------------------------------------------------------------------</Text>
+  </LineComment>
+  <NewLine UId="36" />
+  <Blank Num="4" UId="37" />
+  <LineComment UId="38">
+    <Text UId="39"> Title: Vacuums management</Text>
+  </LineComment>
+  <NewLine UId="40" />
+  <Blank Num="4" UId="41" />
+  <LineComment UId="42">
+    <Text UId="43"> Comment/Function: This function manages the machine's suction system, controlling</Text>
+  </LineComment>
+  <NewLine UId="44" />
+  <Blank Num="4" UId="45" />
+  <LineComment UId="46">
+    <Text UId="47">                   six suction circuits.</Text>
+  </LineComment>
+  <NewLine UId="48" />
+  <Blank Num="4" UId="49" />
+  <LineComment UId="50">
+    <Text UId="51"> Author: Gowsigan SRITHARAN</Text>
+  </LineComment>
+  <NewLine UId="52" />
+  <Blank Num="4" UId="53" />
+  <LineComment UId="54">
+    <Text UId="55"> Engineering: TIA Portal v17</Text>
+  </LineComment>
+  <NewLine UId="56" />
+  <Blank Num="4" UId="57" />
+  <LineComment UId="58">
+    <Text UId="59">----------------------------------------------------------------------------------</Text>
+  </LineComment>
+  <NewLine UId="60" />
+  <Blank Num="4" UId="61" />
+  <LineComment UId="62">
+    <Text UId="63"> Change log table:</Text>
+  </LineComment>
+  <NewLine UId="64" />
+  <Blank Num="4" UId="65" />
+  <LineComment UId="66">
+    <Text UId="67"> Version  | Date     | Expert in charge | Changes applied</Text>
+  </LineComment>
+  <NewLine UId="68" />
+  <Blank Num="4" UId="69" />
+  <LineComment UId="70">
+    <Text UId="71"> ---------|----------|------------------|------------------------------------</Text>
+  </LineComment>
+  <NewLine UId="72" />
+  <Blank Num="4" UId="73" />
+  <LineComment UId="74">
+    <Text UId="75"> 00.00.01 | 20241120 | GSR              | First released version</Text>
+  </LineComment>
+  <NewLine UId="76" />
+  <Blank Num="4" UId="77" />
+  <LineComment UId="78">
+    <Text UId="79"> ---------|----------|------------------|------------------------------------</Text>
+  </LineComment>
+  <NewLine UId="80" />
+  <Blank Num="4" UId="81" />
+  <LineComment UId="82">
+    <Text UId="83"> 00.00.02 | 20250327 | WFA              | Management of only one vacuum</Text>
+  </LineComment>
+  <NewLine UId="84" />
+  <Blank Num="4" UId="85" />
+  <LineComment UId="86">
+    <Text UId="87"> ==================================================================================</Text>
+  </LineComment>
+  <NewLine UId="88" />
+  <Token Text="END_REGION" UId="89" />
+  <NewLine Num="2" UId="90" />
+  <Token Text="REGION" UId="91" />
+  <Blank UId="92" />
+  <Text UId="93">Elbaron vacuum</Text>
+  <NewLine UId="94" />
+  <Blank Num="4" UId="95" />
+  <LineComment UId="96">
+    <Text UId="97"> Deactivation of the MCP button (MCP Keyboard 9) in Auto mode</Text>
+  </LineComment>
+  <NewLine UId="98" />
+  <Blank Num="4" UId="99" />
+  <Access Scope="GlobalVariable" UId="100">
+    <Symbol UId="101">
+      <Component Name="DB_McpKeyboardSignals" UId="102">
+        <BooleanAttribute Name="HasQuotes" UId="103">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="104" />
+      <Component Name="sK9_Aspiration" UId="105" />
+      <Token Text="." UId="106" />
+      <Component Name="sKeyDisable" UId="107" />
+    </Symbol>
+  </Access>
+  <Blank UId="108" />
+  <Token Text=":=" UId="109" />
+  <Blank UId="110" />
+  <Access Scope="GlobalVariable" UId="111">
+    <Symbol UId="112">
+      <Component Name="LBP_ModeGroup" UId="113">
+        <BooleanAttribute Name="HasQuotes" UId="114">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="115" />
+      <Component Name="E_AUTO" UId="116" />
+    </Symbol>
+  </Access>
+  <Blank UId="117" />
+  <Token Text="OR" UId="118" />
+  <Blank UId="119" />
+  <Access Scope="GlobalVariable" UId="120">
+    <Symbol UId="121">
+      <Component Name="DB_GestionWorkingModes" UId="122">
+        <BooleanAttribute Name="HasQuotes" UId="123">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="124" />
+      <Component Name="sMCP_KxxKeysDisable" UId="125" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="126" />
+  <NewLine UId="127" />
+  <Blank Num="4" UId="128" />
+  <Access Scope="GlobalVariable" UId="129">
+    <Symbol UId="130">
+      <Component Name="DB_HmiKeyboardSignals" UId="131">
+        <BooleanAttribute Name="HasQuotes" UId="132">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="133" />
+      <Component Name="sK9_Aspiration" UId="134" />
+      <Token Text="." UId="135" />
+      <Component Name="sKeyDisable" UId="136" />
+    </Symbol>
+  </Access>
+  <Blank UId="137" />
+  <Token Text=":=" UId="138" />
+  <Blank UId="139" />
+  <Access Scope="GlobalVariable" UId="140">
+    <Symbol UId="141">
+      <Component Name="LBP_ModeGroup" UId="142">
+        <BooleanAttribute Name="HasQuotes" UId="143">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="144" />
+      <Component Name="E_AUTO" UId="145" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="146" />
+  <NewLine UId="147" />
+  <Blank Num="4" UId="148" />
+  <NewLine UId="149" />
+  <Blank Num="4" UId="150" />
+  <Access Scope="LocalVariable" UId="151">
+    <Symbol UId="152">
+      <Component Name="sRT_AspirationKeys" UId="153" />
+    </Symbol>
+  </Access>
+  <Access Scope="Call" UId="154">
+    <Instruction UId="155">
+      <Token Text="(" UId="156" />
+      <Parameter Name="CLK" UId="157">
+        <Blank UId="158" />
+        <Token Text=":=" UId="159" />
+        <Blank UId="160" />
+        <Access Scope="GlobalVariable" UId="161">
+          <Symbol UId="162">
+            <Component Name="DB_McpKeyboardSignals" UId="163">
+              <BooleanAttribute Name="HasQuotes" UId="164">true</BooleanAttribute>
+            </Component>
+            <Token Text="." UId="165" />
+            <Component Name="sK9_Aspiration" UId="166" />
+            <Token Text="." UId="167" />
+            <Component Name="sKeySWTogglePositiveFront" UId="168" />
+          </Symbol>
+        </Access>
+        <NewLine UId="169" />
+        <Blank Num="24" UId="170" />
+        <Token Text="OR" UId="171" />
+        <Blank UId="172" />
+        <Access Scope="GlobalVariable" UId="173">
+          <Symbol UId="174">
+            <Component Name="DB_HmiKeyboardSignals" UId="175">
+              <BooleanAttribute Name="HasQuotes" UId="176">true</BooleanAttribute>
+            </Component>
+            <Token Text="." UId="177" />
+            <Component Name="sK9_Aspiration" UId="178" />
+            <Token Text="." UId="179" />
+            <Component Name="sKeySWTogglePositiveFront" UId="180" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text=")" UId="181" />
+    </Instruction>
+  </Access>
+  <Token Text=";" UId="182" />
+  <NewLine UId="183" />
+  <Blank Num="4" UId="184" />
+  <NewLine UId="185" />
+  <Blank Num="4" UId="186" />
+  <Access Scope="LocalVariable" UId="187">
+    <Symbol UId="188">
+      <Component Name="sFT_AspirationKeys" UId="189" />
+    </Symbol>
+  </Access>
+  <Access Scope="Call" UId="190">
+    <Instruction UId="191">
+      <Token Text="(" UId="192" />
+      <Parameter Name="CLK" UId="193">
+        <Blank UId="194" />
+        <Token Text=":=" UId="195" />
+        <Blank UId="196" />
+        <Access Scope="GlobalVariable" UId="197">
+          <Symbol UId="198">
+            <Component Name="DB_McpKeyboardSignals" UId="199">
+              <BooleanAttribute Name="HasQuotes" UId="200">true</BooleanAttribute>
+            </Component>
+            <Token Text="." UId="201" />
+            <Component Name="sK9_Aspiration" UId="202" />
+            <Token Text="." UId="203" />
+            <Component Name="sKeySWToggleNegativeFront" UId="204" />
+          </Symbol>
+        </Access>
+        <NewLine UId="205" />
+        <Blank Num="24" UId="206" />
+        <Token Text="OR" UId="207" />
+        <Blank UId="208" />
+        <Access Scope="GlobalVariable" UId="209">
+          <Symbol UId="210">
+            <Component Name="DB_HmiKeyboardSignals" UId="211">
+              <BooleanAttribute Name="HasQuotes" UId="212">true</BooleanAttribute>
+            </Component>
+            <Token Text="." UId="213" />
+            <Component Name="sK9_Aspiration" UId="214" />
+            <Token Text="." UId="215" />
+            <Component Name="sKeySWToggleNegativeFront" UId="216" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text=")" UId="217" />
+    </Instruction>
+  </Access>
+  <Token Text=";" UId="218" />
+  <NewLine UId="219" />
+  <Blank Num="4" UId="220" />
+  <NewLine UId="221" />
+  <Blank Num="4" UId="222" />
+  <Token Text="IF" UId="223" />
+  <Blank UId="224" />
+  <Access Scope="LocalVariable" UId="225">
+    <Symbol UId="226">
+      <Component Name="sRT_AspirationKeys" UId="227" />
+      <Token Text="." UId="228" />
+      <Component Name="Q" UId="229" />
+    </Symbol>
+  </Access>
+  <Blank UId="230" />
+  <Token Text="THEN" UId="231" />
+  <NewLine UId="232" />
+  <Blank Num="8" UId="233" />
+  <Access Scope="LocalVariable" UId="234">
+    <Symbol UId="235">
+      <Component Name="sAspirationKeys" UId="236" />
+    </Symbol>
+  </Access>
+  <Blank UId="237" />
+  <Token Text=":=" UId="238" />
+  <Blank UId="239" />
+  <Access Scope="LiteralConstant" UId="240">
+    <Constant UId="241">
+      <ConstantValue UId="243">TRUE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="244" />
+  <NewLine UId="245" />
+  <Blank Num="4" UId="246" />
+  <Token Text="ELSIF" UId="247" />
+  <Blank UId="248" />
+  <Access Scope="LocalVariable" UId="249">
+    <Symbol UId="250">
+      <Component Name="sFT_AspirationKeys" UId="251" />
+      <Token Text="." UId="252" />
+      <Component Name="Q" UId="253" />
+    </Symbol>
+  </Access>
+  <Blank UId="254" />
+  <Token Text="THEN" UId="255" />
+  <NewLine UId="256" />
+  <Blank Num="8" UId="257" />
+  <Access Scope="LocalVariable" UId="258">
+    <Symbol UId="259">
+      <Component Name="sAspirationKeys" UId="260" />
+    </Symbol>
+  </Access>
+  <Blank UId="261" />
+  <Token Text=":=" UId="262" />
+  <Blank UId="263" />
+  <Access Scope="LiteralConstant" UId="264">
+    <Constant UId="265">
+      <ConstantValue UId="267">FALSE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="268" />
+  <NewLine UId="269" />
+  <Blank Num="4" UId="270" />
+  <Token Text="END_IF" UId="271" />
+  <Token Text=";" UId="272" />
+  <NewLine UId="273" />
+  <Blank Num="4" UId="274" />
+  <NewLine UId="275" />
+  <Blank Num="4" UId="276" />
+  <LineComment UId="277">
+    <Text UId="278"> Activation of the Elbaron output</Text>
+  </LineComment>
+  <NewLine UId="279" />
+  <Blank Num="4" UId="280" />
+  <Access Scope="GlobalVariable" UId="281">
+    <Symbol UId="282">
+      <Component Name="DB_DigitalOutputs" UId="283">
+        <BooleanAttribute Name="HasQuotes" UId="284">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="285" />
+      <Component Name="sElbaronPowerON" UId="286" />
+      <Token Text="." UId="287" />
+      <Component Name="sSWStatus" UId="288" />
+    </Symbol>
+  </Access>
+  <Blank UId="289" />
+  <Token Text=":=" UId="290" />
+  <NewLine UId="291" />
+  <Blank Num="4" UId="292" />
+  <Access Scope="GlobalVariable" UId="293">
+    <Symbol UId="294">
+      <Component Name="DB_PowerOn" UId="295">
+        <BooleanAttribute Name="HasQuotes" UId="296">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="297" />
+      <Component Name="sMachineReadySoft" UId="298" />
+    </Symbol>
+  </Access>
+  <NewLine UId="299" />
+  <Blank Num="4" UId="300" />
+  <Token Text="AND" UId="301" />
+  <Blank UId="302" />
+  <Token Text="NOT" UId="303" />
+  <Blank UId="304" />
+  <Access Scope="GlobalVariable" UId="305">
+    <Symbol UId="306">
+      <Component Name="DB_Machineshutdown_UPS" UId="307">
+        <BooleanAttribute Name="HasQuotes" UId="308">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="309" />
+      <Component Name="sShutDownAspiration" UId="310" />
+    </Symbol>
+  </Access>
+  <NewLine UId="311" />
+  <Blank Num="4" UId="312" />
+  <Token Text="AND" UId="313" />
+  <Blank UId="314" />
+  <Token Text="(" UId="315" />
+  <Token Text="(" UId="316" />
+  <Token Text="(" UId="317" />
+  <Access Scope="GlobalVariable" UId="318">
+    <Symbol UId="319">
+      <Component Name="LBP_Chan1" UId="320">
+        <BooleanAttribute Name="HasQuotes" UId="321">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="322" />
+      <Component Name="E_ProgRunning" UId="323" />
+    </Symbol>
+  </Access>
+  <NewLine UId="324" />
+  <Blank Num="4" UId="325" />
+  <Token Text="OR" UId="326" />
+  <Blank UId="327" />
+  <Access Scope="GlobalVariable" UId="328">
+    <Symbol UId="329">
+      <Component Name="LBP_Chan1" UId="330">
+        <BooleanAttribute Name="HasQuotes" UId="331">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="332" />
+      <Component Name="E_ProgWait" UId="333" />
+    </Symbol>
+  </Access>
+  <NewLine UId="334" />
+  <Blank Num="4" UId="335" />
+  <Token Text="OR" UId="336" />
+  <Blank UId="337" />
+  <Access Scope="GlobalVariable" UId="338">
+    <Symbol UId="339">
+      <Component Name="LBP_Chan1" UId="340">
+        <BooleanAttribute Name="HasQuotes" UId="341">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="342" />
+      <Component Name="E_ProgStop" UId="343" />
+    </Symbol>
+  </Access>
+  <NewLine UId="344" />
+  <Blank Num="4" UId="345" />
+  <Token Text="OR" UId="346" />
+  <Blank UId="347" />
+  <Access Scope="GlobalVariable" UId="348">
+    <Symbol UId="349">
+      <Component Name="LBP_Chan2" UId="350">
+        <BooleanAttribute Name="HasQuotes" UId="351">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="352" />
+      <Component Name="E_ProgRunning" UId="353" />
+    </Symbol>
+  </Access>
+  <NewLine UId="354" />
+  <Blank Num="4" UId="355" />
+  <Token Text="OR" UId="356" />
+  <Blank UId="357" />
+  <Access Scope="GlobalVariable" UId="358">
+    <Symbol UId="359">
+      <Component Name="LBP_Chan2" UId="360">
+        <BooleanAttribute Name="HasQuotes" UId="361">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="362" />
+      <Component Name="E_ProgWait" UId="363" />
+    </Symbol>
+  </Access>
+  <NewLine UId="364" />
+  <Blank Num="4" UId="365" />
+  <Token Text="OR" UId="366" />
+  <Blank UId="367" />
+  <Access Scope="GlobalVariable" UId="368">
+    <Symbol UId="369">
+      <Component Name="LBP_Chan2" UId="370">
+        <BooleanAttribute Name="HasQuotes" UId="371">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="372" />
+      <Component Name="E_ProgStop" UId="373" />
+    </Symbol>
+  </Access>
+  <Token Text=")" UId="374" />
+  <NewLine UId="375" />
+  <Blank Num="4" UId="376" />
+  <Token Text="AND" UId="377" />
+  <Blank UId="378" />
+  <Access Scope="GlobalVariable" UId="379">
+    <Symbol UId="380">
+      <Component Name="LBP_ModeGroup" UId="381">
+        <BooleanAttribute Name="HasQuotes" UId="382">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="383" />
+      <Component Name="E_AUTO" UId="384" />
+    </Symbol>
+  </Access>
+  <Token Text=")" UId="385" />
+  <NewLine UId="386" />
+  <Blank Num="4" UId="387" />
+  <Token Text="OR" UId="388" />
+  <Blank UId="389" />
+  <Access Scope="LocalVariable" UId="390">
+    <Symbol UId="391">
+      <Component Name="sAspirationKeys" UId="392" />
+    </Symbol>
+  </Access>
+  <Token Text=")" UId="393" />
+  <Token Text=";" UId="394" />
+  <NewLine UId="395" />
+  <Blank Num="4" UId="396" />
+  <NewLine UId="397" />
+  <Blank Num="4" UId="398" />
+  <LineComment UId="399">
+    <Text UId="400"> Keys Elbaron Aspiration</Text>
+  </LineComment>
+  <NewLine UId="401" />
+  <Blank Num="4" UId="402" />
+  <Access Scope="GlobalVariable" UId="403">
+    <Symbol UId="404">
+      <Component Name="DB_McpKeyboardSignals" UId="405">
+        <BooleanAttribute Name="HasQuotes" UId="406">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="407" />
+      <Component Name="sK9_Aspiration" UId="408" />
+      <Token Text="." UId="409" />
+      <Component Name="sKeySWToggleStatus" UId="410" />
+    </Symbol>
+  </Access>
+  <Blank UId="411" />
+  <Token Text=":=" UId="412" />
+  <Blank UId="413" />
+  <Access Scope="GlobalVariable" UId="414">
+    <Symbol UId="415">
+      <Component Name="DB_DigitalOutputs" UId="416">
+        <BooleanAttribute Name="HasQuotes" UId="417">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="418" />
+      <Component Name="sElbaronPowerON" UId="419" />
+      <Token Text="." UId="420" />
+      <Component Name="sSWStatus" UId="421" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="422" />
+  <NewLine UId="423" />
+  <Blank Num="4" UId="424" />
+  <Access Scope="GlobalVariable" UId="425">
+    <Symbol UId="426">
+      <Component Name="DB_HmiKeyboardSignals" UId="427">
+        <BooleanAttribute Name="HasQuotes" UId="428">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="429" />
+      <Component Name="sK9_Aspiration" UId="430" />
+      <Token Text="." UId="431" />
+      <Component Name="sKeySWToggleStatus" UId="432" />
+    </Symbol>
+  </Access>
+  <Blank UId="433" />
+  <Token Text=":=" UId="434" />
+  <Blank UId="435" />
+  <Access Scope="GlobalVariable" UId="436">
+    <Symbol UId="437">
+      <Component Name="DB_DigitalOutputs" UId="438">
+        <BooleanAttribute Name="HasQuotes" UId="439">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="440" />
+      <Component Name="sElbaronPowerON" UId="441" />
+      <Token Text="." UId="442" />
+      <Component Name="sSWStatus" UId="443" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="444" />
+  <NewLine UId="445" />
+  <Blank Num="4" UId="446" />
+  <NewLine UId="447" />
+  <Blank Num="4" UId="448" />
+  <LineComment UId="449">
+    <Text UId="450"> LED Elbaron Aspiration</Text>
+  </LineComment>
+  <NewLine UId="451" />
+  <Blank Num="4" UId="452" />
+  <Access Scope="GlobalVariable" UId="453">
+    <Symbol UId="454">
+      <Component Name="DB_McpKeyboardSignals" UId="455">
+        <BooleanAttribute Name="HasQuotes" UId="456">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="457" />
+      <Component Name="sK9_Aspiration" UId="458" />
+      <Token Text="." UId="459" />
+      <Component Name="sLedSWStatus" UId="460" />
+    </Symbol>
+  </Access>
+  <Blank UId="461" />
+  <Token Text=":=" UId="462" />
+  <Blank UId="463" />
+  <Access Scope="GlobalVariable" UId="464">
+    <Symbol UId="465">
+      <Component Name="DB_DigitalOutputs" UId="466">
+        <BooleanAttribute Name="HasQuotes" UId="467">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="468" />
+      <Component Name="sElbaronPowerON" UId="469" />
+      <Token Text="." UId="470" />
+      <Component Name="sSWStatus" UId="471" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="472" />
+  <NewLine UId="473" />
+  <Blank Num="4" UId="474" />
+  <Access Scope="GlobalVariable" UId="475">
+    <Symbol UId="476">
+      <Component Name="DB_HmiKeyboardSignals" UId="477">
+        <BooleanAttribute Name="HasQuotes" UId="478">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="479" />
+      <Component Name="sK9_Aspiration" UId="480" />
+      <Token Text="." UId="481" />
+      <Component Name="sLedSWStatus" UId="482" />
+    </Symbol>
+  </Access>
+  <Blank UId="483" />
+  <Token Text=":=" UId="484" />
+  <Blank UId="485" />
+  <Access Scope="GlobalVariable" UId="486">
+    <Symbol UId="487">
+      <Component Name="DB_DigitalOutputs" UId="488">
+        <BooleanAttribute Name="HasQuotes" UId="489">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="490" />
+      <Component Name="sElbaronPowerON" UId="491" />
+      <Token Text="." UId="492" />
+      <Component Name="sSWStatus" UId="493" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="494" />
+  <NewLine UId="495" />
+  <Token Text="END_REGION" UId="496" />
+  <NewLine Num="2" UId="497" />
+  <Token Text="REGION" UId="498" />
+  <Blank UId="499" />
+  <Text UId="500">Aspirations control</Text>
+  <NewLine UId="501" />
+  <Blank Num="4" UId="502" />
+  <Access Scope="Call" UId="503">
+    <CallInfo UId="504" BlockType="FB" Name="FB_AnalogInputThreshold">
+      <Instance Scope="LocalVariable" UId="505">
+        <Component Name="sAspirationLeft" UId="506" />
+      </Instance>
+      <Token Text="(" UId="507" />
+      <Parameter Name="iActualValue" UId="508">
+        <Blank UId="509" />
+        <Token Text=":=" UId="510" />
+        <Blank UId="511" />
+        <Access Scope="GlobalVariable" UId="512">
+          <Symbol UId="513">
+            <Component Name="DB_AnalogInputs" UId="514">
+              <BooleanAttribute Name="HasQuotes" UId="515">true</BooleanAttribute>
+            </Component>
+            <Token Text="." UId="516" />
+            <Component Name="sLeftAspiration" UId="517" />
+            <Token Text="." UId="518" />
+            <Component Name="sSWRealValue" UId="519" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="520" />
+      <NewLine UId="521" />
+      <Blank Num="21" UId="522" />
+      <Parameter Name="iStartDelay" UId="523">
+        <Blank UId="524" />
+        <Token Text=":=" UId="525" />
+        <Blank UId="526" />
+        <Access Scope="GlobalVariable" UId="527">
+          <Symbol UId="528">
+            <Component Name="DB_DigitalOutputs" UId="529">
+              <BooleanAttribute Name="HasQuotes" UId="530">true</BooleanAttribute>
+            </Component>
+            <Token Text="." UId="531" />
+            <Component Name="sElbaronPowerON" UId="532" />
+            <Token Text="." UId="533" />
+            <Component Name="sSWStatus" UId="534" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="535" />
+      <NewLine UId="536" />
+      <Blank Num="21" UId="537" />
+      <Parameter Name="ioAlarmMin" UId="538">
+        <Blank UId="539" />
+        <Token Text=":=" UId="540" />
+        <Blank UId="541" />
+        <Access Scope="GlobalVariable" UId="542">
+          <Symbol UId="543">
+            <Component Name="LBP_AlarmMsgs" UId="544">
+              <BooleanAttribute Name="HasQuotes" UId="545">true</BooleanAttribute>
+            </Component>
+            <Token Text="." UId="546" />
+            <Component Name="UserA" UId="547">
+              <Token Text="[" UId="548" />
+              <Access Scope="LiteralConstant" UId="549">
+                <Constant UId="550">
+                  <ConstantValue UId="552">06</ConstantValue>
+                </Constant>
+              </Access>
+              <Token Text="]" UId="553" />
+            </Component>
+            <Token Text="." UId="554" />
+            <Component Name="A70UUxx" UId="555">
+              <Token Text="[" UId="556" />
+              <Access Scope="LiteralConstant" UId="557">
+                <Constant UId="558">
+                  <ConstantValue UId="560">56</ConstantValue>
+                </Constant>
+              </Access>
+              <Token Text="]" UId="561" />
+            </Component>
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="562" />
+      <NewLine UId="563" />
+      <Blank Num="21" UId="564" />
+      <Parameter Name="ioWarningMin" UId="565">
+        <Blank UId="566" />
+        <Token Text=":=" UId="567" />
+        <Blank UId="568" />
+        <Access Scope="GlobalVariable" UId="569">
+          <Symbol UId="570">
+            <Component Name="LBP_AlarmMsgs" UId="571">
+              <BooleanAttribute Name="HasQuotes" UId="572">true</BooleanAttribute>
+            </Component>
+            <Token Text="." UId="573" />
+            <Component Name="UserA" UId="574">
+              <Token Text="[" UId="575" />
+              <Access Scope="LiteralConstant" UId="576">
+                <Constant UId="577">
+                  <ConstantValue UId="579">07</ConstantValue>
+                </Constant>
+              </Access>
+              <Token Text="]" UId="580" />
+            </Component>
+            <Token Text="." UId="581" />
+            <Component Name="A70UUxx" UId="582">
+              <Token Text="[" UId="583" />
+              <Access Scope="LiteralConstant" UId="584">
+                <Constant UId="585">
+                  <ConstantValue UId="587">56</ConstantValue>
+                </Constant>
+              </Access>
+              <Token Text="]" UId="588" />
+            </Component>
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="589" />
+      <NewLine UId="590" />
+      <Blank Num="21" UId="591" />
+      <Parameter Name="ioWarningMax" UId="592">
+        <Blank UId="593" />
+        <Token Text=":=" UId="594" />
+        <Blank UId="595" />
+        <Access Scope="GlobalVariable" UId="596">
+          <Symbol UId="597">
+            <Component Name="LBP_AlarmMsgs" UId="598">
+              <BooleanAttribute Name="HasQuotes" UId="599">true</BooleanAttribute>
+            </Component>
+            <Token Text="." UId="600" />
+            <Component Name="UserA" UId="601">
+              <Token Text="[" UId="602" />
+              <Access Scope="LiteralConstant" UId="603">
+                <Constant UId="604">
+                  <ConstantValue UId="606">07</ConstantValue>
+                </Constant>
+              </Access>
+              <Token Text="]" UId="607" />
+            </Component>
+            <Token Text="." UId="608" />
+            <Component Name="A70UUxx" UId="609">
+              <Token Text="[" UId="610" />
+              <Access Scope="LiteralConstant" UId="611">
+                <Constant UId="612">
+                  <ConstantValue UId="614">57</ConstantValue>
+                </Constant>
+              </Access>
+              <Token Text="]" UId="615" />
+            </Component>
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="616" />
+      <NewLine UId="617" />
+      <Blank Num="21" UId="618" />
+      <Parameter Name="ioAlarmMax" UId="619">
+        <Blank UId="620" />
+        <Token Text=":=" UId="621" />
+        <Blank UId="622" />
+        <Access Scope="GlobalVariable" UId="623">
+          <Symbol UId="624">
+            <Component Name="LBP_AlarmMsgs" UId="625">
+              <BooleanAttribute Name="HasQuotes" UId="626">true</BooleanAttribute>
+            </Component>
+            <Token Text="." UId="627" />
+            <Component Name="UserA" UId="628">
+              <Token Text="[" UId="629" />
+              <Access Scope="LiteralConstant" UId="630">
+                <Constant UId="631">
+                  <ConstantValue UId="633">06</ConstantValue>
+                </Constant>
+              </Access>
+              <Token Text="]" UId="634" />
+            </Component>
+            <Token Text="." UId="635" />
+            <Component Name="A70UUxx" UId="636">
+              <Token Text="[" UId="637" />
+              <Access Scope="LiteralConstant" UId="638">
+                <Constant UId="639">
+                  <ConstantValue UId="641">57</ConstantValue>
+                </Constant>
+              </Access>
+              <Token Text="]" UId="642" />
+            </Component>
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="643" />
+      <NewLine UId="644" />
+      <Blank Num="21" UId="645" />
+      <Parameter Name="oDataAction" UId="646">
+        <Blank UId="647" />
+        <Token Text="=&gt;" UId="648" />
+        <Blank UId="649" />
+        <Access Scope="GlobalVariable" UId="650">
+          <Symbol UId="651">
+            <Component Name="DB_AnalogInputAction" UId="652">
+              <BooleanAttribute Name="HasQuotes" UId="653">true</BooleanAttribute>
+            </Component>
+            <Token Text="." UId="654" />
+            <Component Name="Left_Aspiration" UId="655" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="656" />
+      <NewLine UId="657" />
+      <Blank Num="21" UId="658" />
+      <Parameter Name="iDataPLC" UId="659">
+        <Blank UId="660" />
+        <Token Text=":=" UId="661" />
+        <Blank UId="662" />
+        <Access Scope="GlobalVariable" UId="663">
+          <Symbol UId="664">
+            <Component Name="DB_AnalogInputDataPLC" UId="665">
+              <BooleanAttribute Name="HasQuotes" UId="666">true</BooleanAttribute>
+            </Component>
+            <Token Text="." UId="667" />
+            <Component Name="Left_Aspiration" UId="668" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="669" />
+      <NewLine UId="670" />
+      <Blank Num="21" UId="671" />
+      <Parameter Name="iDataHMI" UId="672">
+        <Blank UId="673" />
+        <Token Text=":=" UId="674" />
+        <Blank UId="675" />
+        <Access Scope="GlobalVariable" UId="676">
+          <Symbol UId="677">
+            <Component Name="DB_AnalogInputDataHMI" UId="678">
+              <BooleanAttribute Name="HasQuotes" UId="679">true</BooleanAttribute>
+            </Component>
+            <Token Text="." UId="680" />
+            <Component Name="Left_Aspiration" UId="681" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text=")" UId="682" />
+    </CallInfo>
+  </Access>
+  <Token Text=";" UId="683" />
+  <NewLine UId="684" />
+  <Blank Num="4" UId="685" />
+  <NewLine UId="686" />
+  <Blank Num="4" UId="687" />
+  <Access Scope="Call" UId="688">
+    <CallInfo UId="689" BlockType="FB" Name="FB_AnalogInputThreshold">
+      <Instance Scope="LocalVariable" UId="690">
+        <Component Name="sAspirationRight" UId="691" />
+      </Instance>
+      <Token Text="(" UId="692" />
+      <Parameter Name="iActualValue" UId="693">
+        <Blank UId="694" />
+        <Token Text=":=" UId="695" />
+        <Blank UId="696" />
+        <Access Scope="GlobalVariable" UId="697">
+          <Symbol UId="698">
+            <Component Name="DB_AnalogInputs" UId="699">
+              <BooleanAttribute Name="HasQuotes" UId="700">true</BooleanAttribute>
+            </Component>
+            <Token Text="." UId="701" />
+            <Component Name="sRightAspiration" UId="702" />
+            <Token Text="." UId="703" />
+            <Component Name="sSWRealValue" UId="704" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="705" />
+      <NewLine UId="706" />
+      <Blank Num="22" UId="707" />
+      <Parameter Name="iStartDelay" UId="708">
+        <Blank UId="709" />
+        <Token Text=":=" UId="710" />
+        <Blank UId="711" />
+        <Access Scope="GlobalVariable" UId="712">
+          <Symbol UId="713">
+            <Component Name="DB_DigitalOutputs" UId="714">
+              <BooleanAttribute Name="HasQuotes" UId="715">true</BooleanAttribute>
+            </Component>
+            <Token Text="." UId="716" />
+            <Component Name="sElbaronPowerON" UId="717" />
+            <Token Text="." UId="718" />
+            <Component Name="sSWStatus" UId="719" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="720" />
+      <NewLine UId="721" />
+      <Blank Num="22" UId="722" />
+      <Parameter Name="ioAlarmMin" UId="723">
+        <Blank UId="724" />
+        <Token Text=":=" UId="725" />
+        <Blank UId="726" />
+        <Access Scope="GlobalVariable" UId="727">
+          <Symbol UId="728">
+            <Component Name="LBP_AlarmMsgs" UId="729">
+              <BooleanAttribute Name="HasQuotes" UId="730">true</BooleanAttribute>
+            </Component>
+            <Token Text="." UId="731" />
+            <Component Name="UserA" UId="732">
+              <Token Text="[" UId="733" />
+              <Access Scope="LiteralConstant" UId="734">
+                <Constant UId="735">
+                  <ConstantValue UId="737">06</ConstantValue>
+                </Constant>
+              </Access>
+              <Token Text="]" UId="738" />
+            </Component>
+            <Token Text="." UId="739" />
+            <Component Name="A70UUxx" UId="740">
+              <Token Text="[" UId="741" />
+              <Access Scope="LiteralConstant" UId="742">
+                <Constant UId="743">
+                  <ConstantValue UId="745">58</ConstantValue>
+                </Constant>
+              </Access>
+              <Token Text="]" UId="746" />
+            </Component>
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="747" />
+      <NewLine UId="748" />
+      <Blank Num="22" UId="749" />
+      <Parameter Name="ioWarningMin" UId="750">
+        <Blank UId="751" />
+        <Token Text=":=" UId="752" />
+        <Blank UId="753" />
+        <Access Scope="GlobalVariable" UId="754">
+          <Symbol UId="755">
+            <Component Name="LBP_AlarmMsgs" UId="756">
+              <BooleanAttribute Name="HasQuotes" UId="757">true</BooleanAttribute>
+            </Component>
+            <Token Text="." UId="758" />
+            <Component Name="UserA" UId="759">
+              <Token Text="[" UId="760" />
+              <Access Scope="LiteralConstant" UId="761">
+                <Constant UId="762">
+                  <ConstantValue UId="764">07</ConstantValue>
+                </Constant>
+              </Access>
+              <Token Text="]" UId="765" />
+            </Component>
+            <Token Text="." UId="766" />
+            <Component Name="A70UUxx" UId="767">
+              <Token Text="[" UId="768" />
+              <Access Scope="LiteralConstant" UId="769">
+                <Constant UId="770">
+                  <ConstantValue UId="772">58</ConstantValue>
+                </Constant>
+              </Access>
+              <Token Text="]" UId="773" />
+            </Component>
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="774" />
+      <NewLine UId="775" />
+      <Blank Num="22" UId="776" />
+      <Parameter Name="ioWarningMax" UId="777">
+        <Blank UId="778" />
+        <Token Text=":=" UId="779" />
+        <Blank UId="780" />
+        <Access Scope="GlobalVariable" UId="781">
+          <Symbol UId="782">
+            <Component Name="LBP_AlarmMsgs" UId="783">
+              <BooleanAttribute Name="HasQuotes" UId="784">true</BooleanAttribute>
+            </Component>
+            <Token Text="." UId="785" />
+            <Component Name="UserA" UId="786">
+              <Token Text="[" UId="787" />
+              <Access Scope="LiteralConstant" UId="788">
+                <Constant UId="789">
+                  <ConstantValue UId="791">07</ConstantValue>
+                </Constant>
+              </Access>
+              <Token Text="]" UId="792" />
+            </Component>
+            <Token Text="." UId="793" />
+            <Component Name="A70UUxx" UId="794">
+              <Token Text="[" UId="795" />
+              <Access Scope="LiteralConstant" UId="796">
+                <Constant UId="797">
+                  <ConstantValue UId="799">59</ConstantValue>
+                </Constant>
+              </Access>
+              <Token Text="]" UId="800" />
+            </Component>
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="801" />
+      <NewLine UId="802" />
+      <Blank Num="22" UId="803" />
+      <Parameter Name="ioAlarmMax" UId="804">
+        <Blank UId="805" />
+        <Token Text=":=" UId="806" />
+        <Blank UId="807" />
+        <Access Scope="GlobalVariable" UId="808">
+          <Symbol UId="809">
+            <Component Name="LBP_AlarmMsgs" UId="810">
+              <BooleanAttribute Name="HasQuotes" UId="811">true</BooleanAttribute>
+            </Component>
+            <Token Text="." UId="812" />
+            <Component Name="UserA" UId="813">
+              <Token Text="[" UId="814" />
+              <Access Scope="LiteralConstant" UId="815">
+                <Constant UId="816">
+                  <ConstantValue UId="818">06</ConstantValue>
+                </Constant>
+              </Access>
+              <Token Text="]" UId="819" />
+            </Component>
+            <Token Text="." UId="820" />
+            <Component Name="A70UUxx" UId="821">
+              <Token Text="[" UId="822" />
+              <Access Scope="LiteralConstant" UId="823">
+                <Constant UId="824">
+                  <ConstantValue UId="826">59</ConstantValue>
+                </Constant>
+              </Access>
+              <Token Text="]" UId="827" />
+            </Component>
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="828" />
+      <NewLine UId="829" />
+      <Blank Num="22" UId="830" />
+      <Parameter Name="oDataAction" UId="831">
+        <Blank UId="832" />
+        <Token Text="=&gt;" UId="833" />
+        <Blank UId="834" />
+        <Access Scope="GlobalVariable" UId="835">
+          <Symbol UId="836">
+            <Component Name="DB_AnalogInputAction" UId="837">
+              <BooleanAttribute Name="HasQuotes" UId="838">true</BooleanAttribute>
+            </Component>
+            <Token Text="." UId="839" />
+            <Component Name="Right_Aspiration" UId="840" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="841" />
+      <NewLine UId="842" />
+      <Blank Num="22" UId="843" />
+      <Parameter Name="iDataPLC" UId="844">
+        <Blank UId="845" />
+        <Token Text=":=" UId="846" />
+        <Blank UId="847" />
+        <Access Scope="GlobalVariable" UId="848">
+          <Symbol UId="849">
+            <Component Name="DB_AnalogInputDataPLC" UId="850">
+              <BooleanAttribute Name="HasQuotes" UId="851">true</BooleanAttribute>
+            </Component>
+            <Token Text="." UId="852" />
+            <Component Name="Right_Aspiration" UId="853" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="854" />
+      <NewLine UId="855" />
+      <Blank Num="22" UId="856" />
+      <Parameter Name="iDataHMI" UId="857">
+        <Blank UId="858" />
+        <Token Text=":=" UId="859" />
+        <Blank UId="860" />
+        <Access Scope="GlobalVariable" UId="861">
+          <Symbol UId="862">
+            <Component Name="DB_AnalogInputDataHMI" UId="863">
+              <BooleanAttribute Name="HasQuotes" UId="864">true</BooleanAttribute>
+            </Component>
+            <Token Text="." UId="865" />
+            <Component Name="Right_Aspiration" UId="866" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text=")" UId="867" />
+    </CallInfo>
+  </Access>
+  <Token Text=";" UId="868" />
+  <NewLine UId="869" />
+  <Token Text="END_REGION" UId="870" />
+</StructuredText></NetworkSource>
+          <ProgrammingLanguage>SCL</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="5" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="6" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="7" CompositionName="Items">
+                <AttributeList>
+                  <Culture>fr-FR</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="8" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="9" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="A" CompositionName="Items">
+                <AttributeList>
+                  <Culture>fr-FR</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <MultilingualText ID="B" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="C" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="D" CompositionName="Items">
+            <AttributeList>
+              <Culture>fr-FR</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Blocks.FB>
+</Document>
