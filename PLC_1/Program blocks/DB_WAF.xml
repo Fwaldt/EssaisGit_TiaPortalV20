@@ -28,6 +28,7 @@
     <Member Name="HMI_Pos" Datatype="Bool" />
     <Member Name="PLC_Pos" Datatype="Bool" />
     <Member Name="NewTag" Datatype="Bool" />
+    <Member Name="NewTag_1" Datatype="Bool" />
   </Section>
 </Sections></Interface>
       <MemoryLayout>Optimized</MemoryLayout>
