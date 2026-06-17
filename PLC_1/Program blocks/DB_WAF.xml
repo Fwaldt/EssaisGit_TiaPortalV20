@@ -29,6 +29,7 @@
     <Member Name="PLC_Pos" Datatype="Bool" />
     <Member Name="NewTag" Datatype="Bool" />
     <Member Name="NewTag_1" Datatype="Bool" />
+    <Member Name="NewTag_2" Datatype="Bool" />
   </Section>
 </Sections></Interface>
       <MemoryLayout>Optimized</MemoryLayout>
