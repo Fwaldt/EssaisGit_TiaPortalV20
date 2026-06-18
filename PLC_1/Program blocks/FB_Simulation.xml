@@ -2353,11 +2353,31 @@
   </Access>
   <Token Text=";" UId="1824" />
   <NewLine UId="1825" />
-  <Blank Num="4" UId="1826" />
-  <Token Text="END_IF" UId="1827" />
-  <Token Text=";" UId="1828" />
-  <NewLine UId="1829" />
-  <Token Text="END_REGION" UId="1830" />
+  <Blank Num="8" UId="1826" />
+  <Access Scope="GlobalVariable" UId="1827">
+    <Symbol UId="1828">
+      <Component Name="DB_WAF" UId="1829">
+        <BooleanAttribute Name="HasQuotes" UId="1830">true</BooleanAttribute>
+      </Component>
+      <Token Text="." UId="1831" />
+      <Component Name="NewTag_2" UId="1832" />
+    </Symbol>
+  </Access>
+  <Blank UId="1833" />
+  <Token Text=":=" UId="1834" />
+  <Blank UId="1835" />
+  <Access Scope="LiteralConstant" UId="1836">
+    <Constant UId="1837">
+      <ConstantValue UId="1839">FALSE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="1840" />
+  <NewLine UId="1841" />
+  <Blank Num="4" UId="1842" />
+  <Token Text="END_IF" UId="1843" />
+  <Token Text=";" UId="1844" />
+  <NewLine UId="1845" />
+  <Token Text="END_REGION" UId="1846" />
 </StructuredText></NetworkSource>
           <ProgrammingLanguage>SCL</ProgrammingLanguage>
         </AttributeList>
