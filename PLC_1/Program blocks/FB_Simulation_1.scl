@@ -114,6 +114,7 @@ BEGIN
 	   "DB_WAF".Sonplas.OperateInOutCollision := TRUE;
 	   "DB_WAF".BwLoader.Safe := TRUE;
 	   "DB_WAF".bSpy[9] := "DB_WAF".bSpy[9];
+// test modif depuis repo Git
 	END_REGION
 	
 	REGION Ext Loader
