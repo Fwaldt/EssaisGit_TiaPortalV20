@@ -1,0 +1,26 @@
+﻿FUNCTION_BLOCK "FB_Nouveau_1"
+{ S7_Optimized_Access := 'TRUE' }
+VERSION : 0.1
+   VAR 
+      "#sExtLoadUnloadTimer1" {InstructionName := 'TON_TIME'; LibVersion := '1.0'; S7_SetPoint := 'False'} : TON_TIME;
+      "#sExtLoadUnloadTimer2" {InstructionName := 'TON_TIME'; LibVersion := '1.0'} : TON_TIME;
+   END_VAR
+
+
+BEGIN
+	REGION Ext Load/Unload Time
+	    // Necessaire pour Dry Run
+	    // #sExtLoadUnloadTimer1(IN := "DB_LoaderShuttle1".sExtLoadUnload.sCurrent_Step_NB = 50
+	    //                       OR "DB_LoaderShuttle1".sExtLoadUnload.sCurrent_Step_NB = 80
+	    //                       OR "DB_LoaderShuttle1".sExtLoadUnload.sCurrent_Step_NB = 110,
+	    //                       PT := t#3s);
+	    // "DB_SonplasMain".sSonplasLoader.iPartInShuttle1Finished := #sExtLoadUnloadTimer1.Q;
+	    
+	    // #sExtLoadUnloadTimer2(IN := "DB_LoaderShuttle2".sExtLoadUnload.sCurrent_Step_NB = 50
+	    //                       OR "DB_LoaderShuttle2".sExtLoadUnload.sCurrent_Step_NB = 80
+	    //                       OR "DB_LoaderShuttle2".sExtLoadUnload.sCurrent_Step_NB = 110,
+	    //                       PT := t#3s);
+	    // "DB_SonplasMain".sSonplasLoader.iPartInShuttle2Finished := #sExtLoadUnloadTimer2.Q;
+	END_REGION
+END_FUNCTION_BLOCK
+
