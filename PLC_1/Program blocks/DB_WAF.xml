@@ -30,6 +30,12 @@
     <Member Name="NewTag" Datatype="Bool" />
     <Member Name="NewTag_1" Datatype="Bool" />
     <Member Name="NewTag_2" Datatype="Bool" />
+    <Member Name="NewTag_3" Datatype="Bool" />
+    <Member Name="NewTag_4" Datatype="Bool" />
+    <Member Name="NewTag_5" Datatype="Bool" />
+    <Member Name="NewTag_6" Datatype="Bool" />
+    <Member Name="NewTag_7" Datatype="Bool" />
+    <Member Name="NewTag_8" Datatype="Bool" />
   </Section>
 </Sections></Interface>
       <MemoryLayout>Optimized</MemoryLayout>
