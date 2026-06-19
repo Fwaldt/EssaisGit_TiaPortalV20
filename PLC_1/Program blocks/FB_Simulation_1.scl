@@ -56,8 +56,8 @@ BEGIN
 	    #sBwLoadUnloadTimer2(IN := "DB_LoaderShuttle2".sBwLoadUnload.sCurrent_Step_NB = 50
 	                         OR "DB_LoaderShuttle2".sBwLoadUnload.sCurrent_Step_NB = 150,
 	                         PT := t#2s);
-	    "DB_BwLoader".sBwCommunication.oLoadJobDone := #sBwLoadUnloadTimer1.Q OR #sBwLoadUnloadTimer2.Q;
-	    "DB_BwLoader".sBwCommunication.oUnloadJobDone := #sBwLoadUnloadTimer1.Q OR #sBwLoadUnloadTimer2.Q;
+	  //  "DB_BwLoader".sBwCommunication.oLoadJobDone := #sBwLoadUnloadTimer1.Q OR #sBwLoadUnloadTimer2.Q;
+	  //  "DB_BwLoader".sBwCommunication.oUnloadJobDone := #sBwLoadUnloadTimer1.Q OR #sBwLoadUnloadTimer2.Q;
 	END_REGION
 	   
 	REGION Part Position  
