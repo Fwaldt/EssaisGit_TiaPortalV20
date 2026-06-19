@@ -1,0 +1,176 @@
+﻿FUNCTION_BLOCK "FB_Simulation_1"
+{ S7_Optimized_Access := 'TRUE' }
+VERSION : 0.1
+   VAR 
+      sExtLoadUnloadTimer1 {InstructionName := 'TON_TIME'; LibVersion := '1.0'; S7_SetPoint := 'False'} : TON_TIME;
+      sExtLoadUnloadTimer2 {InstructionName := 'TON_TIME'; LibVersion := '1.0'} : TON_TIME;
+      sBwLoadUnloadTimer1 {InstructionName := 'TON_TIME'; LibVersion := '1.0'} : TON_TIME;
+      sBwLoadUnloadTimer2 {InstructionName := 'TON_TIME'; LibVersion := '1.0'} : TON_TIME;
+      sTON_UndrilledGripperFull {InstructionName := 'TON_TIME'; LibVersion := '1.0'} : TON_TIME;
+      sTON_UndrilledFixture {InstructionName := 'TON_TIME'; LibVersion := '1.0'} : TON_TIME;
+      sTON_DrilledFixture {InstructionName := 'TON_TIME'; LibVersion := '1.0'} : TON_TIME;
+      sTON_ResetBit {InstructionName := 'TON_TIME'; LibVersion := '1.0'} : TON_TIME;
+      sSeqRun { S7_SetPoint := 'True'} : Bool;
+      sTON_CloseDrilledGripper_1 {InstructionName := 'TON_TIME'; LibVersion := '1.0'} : TON_TIME;
+      sTONCloseFixture {InstructionName := 'TON_TIME'; LibVersion := '1.0'} : TON_TIME;
+      sTONOpenFixture {InstructionName := 'TON_TIME'; LibVersion := '1.0'} : TON_TIME;
+      sTONOpenFixture1 {InstructionName := 'TON_TIME'; LibVersion := '1.0'} : TON_TIME;
+      sTON_CloseDrilledGripper {InstructionName := 'TON_TIME'; LibVersion := '1.0'} : TON_TIME;
+      sTON_WorkinProgress {InstructionName := 'TON_TIME'; LibVersion := '1.0'} : TON_TIME;
+      sTON_OpenUndrilledGripper {InstructionName := 'TON_TIME'; LibVersion := '1.0'} : TON_TIME;
+      sRT_NC_Mode {InstructionName := 'R_TRIG'; LibVersion := '1.0'} : R_TRIG;
+      sStep { S7_SetPoint := 'True'} : Array[0..15] of Bool;
+      sRT_DrillingFinished {InstructionName := 'R_TRIG'; LibVersion := '1.0'; S7_SetPoint := 'False'} : R_TRIG;
+      "sTON_No MCodes" {InstructionName := 'TON_TIME'; LibVersion := '1.0'} : TON_TIME;
+      sRT_TONMCodes {InstructionName := 'R_TRIG'; LibVersion := '1.0'} : R_TRIG;
+      sRT_FIXLoading {InstructionName := 'R_TRIG'; LibVersion := '1.0'} : R_TRIG;
+      sRT_FIXblowing {InstructionName := 'R_TRIG'; LibVersion := '1.0'} : R_TRIG;
+      sRT_MemoLoaderStart {InstructionName := 'R_TRIG'; LibVersion := '1.0'} : R_TRIG;
+      sRT_Sh1_ExtLoadUnloadDone {InstructionName := 'R_TRIG'; LibVersion := '1.0'} : R_TRIG;
+      sRT_Sh2_ExtLoadUnloadDone {InstructionName := 'R_TRIG'; LibVersion := '1.0'} : R_TRIG;
+   END_VAR
+
+
+BEGIN
+	REGION Ext Load/Unload Time
+	    // Necessaire pour Dry Run
+	    #sExtLoadUnloadTimer1(IN:= "DB_LoaderShuttle1".sExtLoadUnload.sCurrent_Step_NB = 50
+	                          OR "DB_LoaderShuttle1".sExtLoadUnload.sCurrent_Step_NB = 80
+	                          OR "DB_LoaderShuttle1".sExtLoadUnload.sCurrent_Step_NB = 110,
+	                          PT:= t#3s);
+	   "DB_SonplasMain".sSonplasLoader.iPartInShuttle1Finished := #sExtLoadUnloadTimer1.Q;
+	   
+	   #sExtLoadUnloadTimer2(IN :=  "DB_LoaderShuttle2".sExtLoadUnload.sCurrent_Step_NB = 50
+	                         OR "DB_LoaderShuttle2".sExtLoadUnload.sCurrent_Step_NB = 80
+	                         OR "DB_LoaderShuttle2".sExtLoadUnload.sCurrent_Step_NB = 110,
+	                         PT := t#3s);
+	   "DB_SonplasMain".sSonplasLoader.iPartInShuttle2Finished := #sExtLoadUnloadTimer2.Q;
+	END_REGION
+	
+	REGION Bw Load/Unload Time
+	    // Necessaire pour Dry Run
+	    #sBwLoadUnloadTimer1(IN := "DB_LoaderShuttle1".sBwLoadUnload.sCurrent_Step_NB = 50
+	                         OR "DB_LoaderShuttle1".sBwLoadUnload.sCurrent_Step_NB = 150,
+	                         PT := t#2s);
+	    
+	    #sBwLoadUnloadTimer2(IN := "DB_LoaderShuttle2".sBwLoadUnload.sCurrent_Step_NB = 50
+	                         OR "DB_LoaderShuttle2".sBwLoadUnload.sCurrent_Step_NB = 150,
+	                         PT := t#2s);
+	  //  "DB_BwLoader".sBwCommunication.oLoadJobDone := #sBwLoadUnloadTimer1.Q OR #sBwLoadUnloadTimer2.Q;
+	  //  "DB_BwLoader".sBwCommunication.oUnloadJobDone := #sBwLoadUnloadTimer1.Q OR #sBwLoadUnloadTimer2.Q;
+	END_REGION
+	   
+	REGION Part Position  
+	   // Necessaire pour Dry Run
+	    IF ("DB_LoaderShuttle1".sControlIn.sInterface.SequenceRun OR "DB_LoaderShuttle2".sControlIn.sInterface.SequenceRun) AND NOT "DB_WAF".CtrlInEnable THEN
+	       IF "DB_WorkingModes".sFilling THEN
+	           "DB_DigitalInputsBW_Station".sUndrilledPartCtrl.sSWStatus := TRUE;
+	           "DB_DigitalInputsBW_Station".sDrilledPartCtrl.sSWStatus := FALSE;
+	       ELSIF "DB_WorkingModes".sNormal THEN
+	           "DB_DigitalInputsBW_Station".sUndrilledPartCtrl.sSWStatus := TRUE;
+	           "DB_DigitalInputsBW_Station".sDrilledPartCtrl.sSWStatus := FALSE;
+	       ELSIF "DB_WorkingModes".sEmptying THEN
+	           "DB_DigitalInputsBW_Station".sUndrilledPartCtrl.sSWStatus := FALSE;
+	           "DB_DigitalInputsBW_Station".sDrilledPartCtrl.sSWStatus := FALSE;
+	       END_IF;
+	   END_IF;
+	   
+	   IF ("DB_LoaderShuttle1".sControlOut.sInterface.SequenceRun OR "DB_LoaderShuttle2".sControlOut.sInterface.SequenceRun) AND NOT "DB_WAF".CtrlOutEnable THEN
+	       IF "DB_WorkingModes".sFilling THEN
+	           "DB_DigitalInputsBW_Station".sUndrilledPartCtrl.sSWStatus := FALSE;
+	           "DB_DigitalInputsBW_Station".sDrilledPartCtrl.sSWStatus := FALSE;
+	       ELSIF "DB_WorkingModes".sNormal THEN
+	           "DB_DigitalInputsBW_Station".sUndrilledPartCtrl.sSWStatus := FALSE;
+	           "DB_DigitalInputsBW_Station".sDrilledPartCtrl.sSWStatus := TRUE;
+	       ELSIF "DB_WorkingModes".sEmptying THEN
+	           "DB_DigitalInputsBW_Station".sUndrilledPartCtrl.sSWStatus := FALSE;
+	           "DB_DigitalInputsBW_Station".sDrilledPartCtrl.sSWStatus := TRUE;
+	       END_IF;
+	   END_IF;
+	 END_REGION
+	
+	 REGION BW Position
+	     // Necessaire pour Dry Run
+	     IF NOT "DB_WAF".CtrlBwEnable THEN
+	         IF "DB_WorkingModes".sNormal THEN
+	             "DB_DigitalInputsBW_Station".sBwCtrl.sSWStatus := TRUE;
+	         ELSIF "DB_WorkingModes".sEmptying THEN
+	             // "DB_DigitalInputsBW_Station".sBwCtrl.sSWStatus := FALSE;
+	             "DB_DigitalInputsBW_Station".sBwCtrl.sSWStatus := "DB_PartManagement".sPosition.sShuttle1.Undrilled.Presence.Part
+	             OR "DB_PartManagement".sPosition.sShuttle1.Undrilled.Presence.Part;
+	         ELSIF "DB_WorkingModes".sFilling THEN
+	             "DB_DigitalInputsBW_Station".sBwCtrl.sSWStatus := TRUE;
+	         END_IF;
+	     END_IF;
+	     END_REGION
+	
+	REGION Drilling Finished
+	   // Necessaire pour Dry Run
+	    #sRT_DrillingFinished(CLK := "DB_PartManagement".sPosition.sFixture.Undrilled.Presence.Part AND "DB_PartManagement".sPosition.sFixture.Undrilled.Presence.BW);
+	    "DB_PartManagement".sPosition.iDrilling_Finished := #sRT_DrillingFinished.Q;
+	END_REGION
+	
+	REGION Interlock
+	   "DB_WAF".Sonplas.OperateInOutCollision := TRUE;
+	   "DB_WAF".BwLoader.Safe := TRUE;
+	   "DB_WAF".bSpy[9] := "DB_WAF".bSpy[9];
+	END_REGION
+	
+	REGION Ext Loader
+	    "DB_LoaderOptions".ExtLoadUnload.Disabled := TRUE;
+	    
+	    #sRT_Sh1_ExtLoadUnloadDone(CLK := "DB_LoaderShuttle1".sExtLoadUnload.sInterface.JobDone);
+	    #sRT_Sh2_ExtLoadUnloadDone(CLK := "DB_LoaderShuttle2".sExtLoadUnload.sInterface.JobDone);
+	    
+	    IF #sRT_Sh1_ExtLoadUnloadDone.Q THEN
+	        "DB_SonplasMain".sSonplasLoader.iPartInDMC_CodeShuttle1[0] := "DB_SonplasMain".sSonplasLoader.iPartInDMC_CodeShuttle1[0] + 1;
+	        IF "DB_SonplasMain".sSonplasLoader.iPartInDMC_CodeShuttle1[0] > 99 THEN
+	            "DB_SonplasMain".sSonplasLoader.iPartInDMC_CodeShuttle1[0] := 0;
+	        END_IF;
+	    END_IF;
+	    
+	    IF #sRT_Sh2_ExtLoadUnloadDone.Q THEN
+	        "DB_SonplasMain".sSonplasLoader.iPartInDMC_CodeShuttle2[0] := "DB_SonplasMain".sSonplasLoader.iPartInDMC_CodeShuttle2[0] + 1;
+	        IF "DB_SonplasMain".sSonplasLoader.iPartInDMC_CodeShuttle2[0] > 99 THEN
+	            "DB_SonplasMain".sSonplasLoader.iPartInDMC_CodeShuttle2[0] := 0;
+	        END_IF;
+	    END_IF;
+	END_REGION
+	    
+	// REGION Shuttle Enable
+	//     "DB_HMISetting".Shuttle1Enable := TRUE;
+	//     "DB_HMISetting".Shuttle2Enable := TRUE;
+	// END_REGION
+	   
+	REGION Misc
+	       "DB_WorkingModes".sDryRun := FALSE;
+	END_REGION
+	
+	REGION Reset Part Position
+	    IF "DB_WAF".ResetPartPosition THEN
+	        "DB_PartManagement".sPosition.sShuttle1.Undrilled.Presence.Part := FALSE;
+	        "DB_PartManagement".sPosition.sShuttle1.Undrilled.Presence.BW := FALSE;
+	        "DB_PartManagement".sPosition.sShuttle1.Drilled.Presence.Part := FALSE;
+	        "DB_PartManagement".sPosition.sShuttle1.Drilled.Presence.BW := FALSE;
+	        
+	        "DB_PartManagement".sPosition.sShuttle2.Undrilled.Presence.Part := FALSE;
+	        "DB_PartManagement".sPosition.sShuttle2.Undrilled.Presence.BW := FALSE;
+	        "DB_PartManagement".sPosition.sShuttle2.Drilled.Presence.Part := FALSE;
+	        "DB_PartManagement".sPosition.sShuttle2.Drilled.Presence.BW := FALSE;
+	        
+	        "DB_PartManagement".sPosition.sGripper.Undrilled.Presence.Part := FALSE;
+	        "DB_PartManagement".sPosition.sGripper.Undrilled.Presence.BW := FALSE;
+	        "DB_PartManagement".sPosition.sGripper.Drilled.Presence.Part := FALSE;
+	        "DB_PartManagement".sPosition.sGripper.Drilled.Presence.BW := FALSE;
+	        
+	        "DB_PartManagement".sPosition.sFixture.Undrilled.Presence.Part := FALSE;
+	        "DB_PartManagement".sPosition.sFixture.Undrilled.Presence.BW := FALSE;
+	        "DB_PartManagement".sPosition.sFixture.Drilled.Presence.Part := FALSE;
+	        "DB_PartManagement".sPosition.sFixture.Drilled.Presence.BW := FALSE;
+	        
+	        "DB_WAF".ResetPartPosition := FALSE;
+	        "DB_WAF".NewTag_2 := FALSE;
+	    END_IF;
+	END_REGION
+END_FUNCTION_BLOCK
+
