@@ -36,6 +36,7 @@
     <Member Name="NewTag_6" Datatype="Bool" />
     <Member Name="NewTag_7" Datatype="Bool" />
     <Member Name="NewTag_8" Datatype="Bool" />
+    <Member Name="NewTag_9" Datatype="Bool" />
   </Section>
 </Sections></Interface>
       <MemoryLayout>Optimized</MemoryLayout>
